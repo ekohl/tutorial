@@ -1,0 +1,702 @@
+
+<!DOCTYPE HTML>
+<html lang="pt" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Modelos do Django · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.4.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../django_admin/" />
+    
+    
+    <link rel="prev" href="../django_start_project/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Escreva para pesquisar" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introdução
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Instalação
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    Configuração do Chromebook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    Como a Internet funciona
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Introdução à linha de comando
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Instalação do Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    Editor de Código
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Introdução ao Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    O que é Django?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Instalação do Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    Seu primeiro projeto Django!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.12" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Modelos do Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django Admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Deploy!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    URLs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django views - hora de criar!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    Introdução ao HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    QuerySets e ORM do Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    Dados dinâmicos em templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Templates do Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - Deixe tudo mais bonito!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Estendendo os templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Amplie sua aplicação
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Formulários do Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    O que vem agora?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Publicado com HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Modelos do Django</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="modelos-do-django">Modelos do Django</h1><p>Queremos criar algo que armazene todos os posts em nosso blog. Mas para fazer isto, temos que falar um pouco sobre <code>objects</code>.</p><h2 id="objetos">Objetos</h2><p>Existe um conceito em programa&#xE7;&#xE3;o chamado <code>programa&#xE7;&#xE3;o orientada a objetos</code>. A ideia &#xE9; que ao inv&#xE9;s de escrever tudo como uma sequ&#xEA;ncia entediante de instru&#xE7;&#xF5;es de programa&#xE7;&#xE3;o, possamos modelar as coisas e definir como elas interagem umas com as outras.</p><p>Ent&#xE3;o o que &#xE9; um objeto? &#xC9; uma cole&#xE7;&#xE3;o de propriedades e a&#xE7;&#xF5;es. Isto pode parecer estranho, mas vamos mostrar um exemplo.</p><p>Se quisermos modelar um gato, podemos criar um objeto <code>Gato</code> que possui propriedades como <code>cor</code>, <code>idade</code>, <code>humor</code> (como bom, mal ou sonolento ;)), e <code>dono</code> (que seria atribu&#xED;do a um objeto de <code>Pessoa</code> &#x2013; ou talvez, no caso de um gato de rua, essa propriedade seja vazia).</p><p><code>Gato</code> tamb&#xE9;m realiza algumas a&#xE7;&#xF5;es: <code>ronronar</code>, <code>arranhar</code> ou <code>alimentar</code>-se (em que podemos dar ao gato alguma <code>ComidaDeGato</code>, que poderia ser um objeto separado com propriedades como <code>sabor</code>).</p><pre><code>        Gato
+        --------
+        cor
+        idade
+        temperamento
+        dono
+        ronronar()
+        arranhar()
+        alimentar(comida_de_gato)
+
+
+        ComidaDeGato
+        ------------
+        sabor</code></pre>
+<p>A ideia b&#xE1;sica &#xE9; descrever coisas reais em c&#xF3;digo a partir de suas propriedades (chamadas de <code>atributos</code>) e a&#xE7;&#xF5;es (chamadas de <code>m&#xE9;todos</code>).</p><p>Como vamos modelar as postagens do blog, ent&#xE3;o? Queremos construir um blog, certo?</p><p>Para isto, precisamos responder as quest&#xF5;es: O que &#xE9; um post de blog? Que propriedades (atributos) ele deve ter?</p><p>Bem, com certeza uma postagem precisa de um texto com seu conte&#xFA;do e um t&#xED;tulo, certo? Tamb&#xE9;m seria legal saber quem a escreveu &#x2013; ent&#xE3;o precisamos de um autor. Finalmente, queremos saber quando a postagem foi criada e publicada. Para ficar chique, vamos fazer em ingl&#xEA;s.</p><pre><code>        Post
+        --------
+        title
+        text
+        author
+        created_date
+        published_date</code></pre>
+<p>Que tipo de a&#xE7;&#xF5;es podem ser feitas com uma postagem? Seria legal ter um <code>m&#xE9;todo</code> que publique a postagem, n&#xE3;o &#xE9; mesmo?</p><p>Ent&#xE3;o, n&#xF3;s precisaremos de um m&#xE9;todo para publicar (<code>publish</code>).</p><p>Como j&#xE1; sabemos o que queremos alcan&#xE7;ar, podemos come&#xE7;ar a modelar em Django!</p><h2 id="modelos-do-django">Modelos do Django</h2><p>Sabendo o que um objeto &#xE9;, criamos um modelo no Django para a postagem do blog.</p><p>Um modelo no Django &#xE9; um tipo especial de objeto -- ele &#xE9; salvo em um <code>banco de dados</code>. Um banco de dados &#xE9; uma cole&#xE7;&#xE3;o de dados. Ele &#xE9; um local em que voc&#xEA; vai salvar dados sobre usu&#xE1;rios, suas postagens, etc. Usaremos um banco de dados chamado SQLite para armazenar as nossas informa&#xE7;&#xF5;es. Este &#xE9; o banco de dados padr&#xE3;o do Django -- e ele ser&#xE1; suficiente neste primeiro momento.</p><p>Voc&#xEA; pode pensar em um modelo de banco de dados como uma planilha com colunas (campos) e linhas (dados).</p><h3 id="criando-uma-aplica&#xE7;&#xE3;o">Criando uma aplica&#xE7;&#xE3;o</h3><p>Para manter tudo arrumado, vamos criar uma aplica&#xE7;&#xE3;o separada dentro do nosso projeto. &#xC9; muito bom ter tudo organizado desde o in&#xED;cio. Para criar uma aplica&#xE7;&#xE3;o, precisamos executar o seguinte comando no prompt (a partir do diret&#xF3;rio <code>djangogirls</code> onde est&#xE1; o arquivo <code>manage.py</code>):</p><p></p><p class="code-label">Mac OS X and Linux:</p><p></p><pre><code>        (myvenv) ~/djangogirls$ python manage.py startapp blog</code></pre>
+<p></p><p class="code-label">Windows:</p><p></p><pre><code>        (myvenv) C:\Users\Name\djangogirls&gt; python manage.py startapp blog</code></pre>
+<p>Voc&#xEA; vai notar que um novo diret&#xF3;rio <code>blog</code> foi criado e que ele cont&#xE9;m v&#xE1;rios arquivos. Algo como a lista abaixo:</p><pre><code>        djangogirls
+        &#x251C;&#x2500;&#x2500; blog
+        &#x2502;   &#x251C;&#x2500;&#x2500; __init__.py
+        &#x2502;   &#x251C;&#x2500;&#x2500; admin.py
+        &#x2502;   &#x251C;&#x2500;&#x2500; apps.py
+        &#x2502;   &#x251C;&#x2500;&#x2500; migrations
+        &#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; __init__.py
+        &#x2502;   &#x251C;&#x2500;&#x2500; models.py
+        &#x2502;   &#x251C;&#x2500;&#x2500; tests.py
+        |   &#x251C;&#x2500;&#x2500; urls.py
+        &#x2502;   &#x2514;&#x2500;&#x2500; views.py
+        &#x251C;&#x2500;&#x2500; db.sqlite3
+        &#x251C;&#x2500;&#x2500; manage.py
+        &#x251C;&#x2500;&#x2500; mysite
+        &#x2502;   &#x251C;&#x2500;&#x2500; __init__.py
+        &#x2502;   &#x251C;&#x2500;&#x2500; settings.py
+        &#x2502;   &#x251C;&#x2500;&#x2500; urls.py
+        &#x2502;   &#x2514;&#x2500;&#x2500; wsgi.py
+        &#x2514;&#x2500;&#x2500; requirements.txt</code></pre>
+<p>Depois de criar uma aplica&#xE7;&#xE3;o, tamb&#xE9;m precisamos dizer ao Django que ele deve us&#xE1;-la. Fazemos isso no arquivo <code>mysite/settings.py</code> -- abra-o no seu editor de c&#xF3;digo. Precisamos encontrar o <code>INSTALLED_APPS</code> e adicionar uma linha com <code>&apos;blog&apos;,</code> logo acima do <code>]</code>. O resultado final ficar&#xE1; assim:</p><p></p><p class="code-label">mysite/settings.py</p><p></p><pre><code class="lang-python">INSTALLED_APPS = [
+    <span class="hljs-string">&apos;django.contrib.admin&apos;</span>,
+    <span class="hljs-string">&apos;django.contrib.auth&apos;</span>,
+    <span class="hljs-string">&apos;django.contrib.contenttypes&apos;</span>,
+    <span class="hljs-string">&apos;django.contrib.sessions&apos;</span>,
+    <span class="hljs-string">&apos;django.contrib.messages&apos;</span>,
+    <span class="hljs-string">&apos;django.contrib.staticfiles&apos;</span>,
+    <span class="hljs-string">&apos;blog&apos;</span>,
+]</code></pre>
+<h3 id="criando-um-modelo-de-postagem-para-o-nosso-blog">Criando um modelo de postagem para o nosso blog</h3><p>No arquivo <code>blog/models.py</code> definimos todos os objetos chamados <code>Modelos</code> -- este &#xE9; um lugar em que vamos definir nossa postagem do blog.</p><p>Vamos abrir <code>blog/models.py</code> no editor de c&#xF3;digo, apagar tudo dele e escrever o seguinte c&#xF3;digo:</p><p></p><p class="code-label">blog/models.py</p><p></p><pre><code class="lang-python"><span class="hljs-keyword">from</span> django.conf <span class="hljs-keyword">import</span> settings
+<span class="hljs-keyword">from</span> django.db <span class="hljs-keyword">import</span> models
+<span class="hljs-keyword">from</span> django.utils <span class="hljs-keyword">import</span> timezone
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Post</span><span class="hljs-params">(models.Model)</span>:</span>
+    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    title = models.CharField(max_length=<span class="hljs-number">200</span>)
+    text = models.TextField()
+    created_date = models.DateTimeField(default=timezone.now)
+    published_date = models.DateTimeField(blank=<span class="hljs-keyword">True</span>, null=<span class="hljs-keyword">True</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">publish</span><span class="hljs-params">(self)</span>:</span>
+        self.published_date = timezone.now()
+        self.save()
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-keyword">return</span> self.title</code></pre>
+<blockquote><p>Certifique-se de que usou dois caracteres de sublinhado (<code>_</code>) em cada lado de <code>str</code>. Esta conven&#xE7;&#xE3;o &#xE9; utilizada frequentemente em Python e, muitas vezes, a chamamos de &quot;dunder&quot; (vem da express&#xE3;o em ingl&#xEA;s &quot;double-underscore&quot; - sublinhado duplo em portugu&#xEA;s).</p></blockquote><p>Parece assustador, n&#xE9;? Mas n&#xE3;o se preocupe, vamos explicar o que essas linhas significam!</p><p>Todas as linhas come&#xE7;ando com <code>from</code> ou <code>import</code> s&#xE3;o linhas que adicionam peda&#xE7;os de outros arquivos. Ent&#xE3;o ao inv&#xE9;s de copiar e colar as mesmas coisas em cada arquivo, podemos incluir algumas partes com <code>from... import ...</code>.</p><p><code>class Post(models.Model):</code> - esta linha define o nosso modelo (&#xE9; um <code>objeto</code>).</p><ul><li><code>class</code> &#xE9; uma palavra-chave especial que indica que estamos definindo um objeto.
+</li>
+<li><code>Post</code> &#xE9; o nome do nosso modelo. N&#xF3;s podemos dar um nome diferente (mas precisamos evitar caracteres especiais e espa&#xE7;os em branco). Sempre inicie o nome de uma classe com uma letra em mai&#xFA;sculo.
+</li>
+<li><code>models.Model</code> significa que o Post &#xE9; um modelo de Django, ent&#xE3;o o Django sabe que ele deve ser salvo no banco de dados.
+</li></ul>
+<p>Agora definiremos as propriedades comentadas acima: <code>title</code>, <code>text</code>, <code>created_date</code>, <code>published_date</code> e <code>author</code>. Para fazer isso, &#xE9; necess&#xE1;rio definir um tipo para cada campo (&#xC9; um texto? Um n&#xFA;mero? Uma data? Uma rela&#xE7;&#xE3;o com outro objeto, por exemplo, um usu&#xE1;rio?)</p><ul><li><code>models.CharField</code> - &#xE9; assim que definimos um texto com um n&#xFA;mero limitado de caracteres.
+</li>
+<li><code>models.TextField</code> - este campo &#xE9; para textos sem um limite fixo. Parece ideal para o conte&#xFA;do de um blog, n&#xE9;?
+</li>
+<li><code>models.DateTimeField</code> - este &#xE9; uma data e hora.
+</li>
+<li><code>models.ForeignKey</code> - este &#xE9; um link para outro modelo.
+</li></ul>
+<p>N&#xF3;s n&#xE3;o explicaremos cada peda&#xE7;o de c&#xF3;digo aqui pois isso levaria muito tempo. Voc&#xEA; deve dar uma olhada na documenta&#xE7;&#xE3;o do Django se quiser saber mais sobre campos de modelos e como definir outras coisas al&#xE9;m das descritas acima (<a href="https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types" target="_blank">https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types</a>).</p><p>E <code>def publish(self):</code>? Esse &#xE9; justamente o m&#xE9;todo <code>publish</code> de que falamos anteriormente. <code>def</code> significa que se trata de uma fun&#xE7;&#xE3;o/m&#xE9;todo e que <code>publish</code> &#xE9; seu nome. Voc&#xEA; pode mudar o nome do m&#xE9;todo, se quiser. A regra para nomes &#xE9; sempre usar letras min&#xFA;sculas e no lugar dos espa&#xE7;os em branco, usar o caractere sublinhado (_). Por exemplo, um m&#xE9;todo que calcula o pre&#xE7;o m&#xE9;dio poderia se chamar <code>calculate_average_price</code> (do ingl&#xEA;s, calcular_preco_medio).</p><p>M&#xE9;todos muitas vezes retornam (<code>return</code>) algo. Um exemplo disto &#xE9; o m&#xE9;todo <code>__str__</code>. Neste caso, quando chamarmos <code>__str__()</code>, obteremos um texto (<strong>string</strong>) com o t&#xED;tulo do Post.</p><p>Lembre-se tamb&#xE9;m de que tanto <code>def publish(self):</code> quanto <code>def __str__(self):</code> s&#xE3;o endentados para dentro da classe. E porque Python &#xE9; sens&#xED;vel a espa&#xE7;os em branco, precisamos endentar todos os nossos m&#xE9;todos para dentro da classe. Caso contr&#xE1;rio, os m&#xE9;todos n&#xE3;o pertencer&#xE3;o &#xE0; classe e voc&#xEA; poder&#xE1; obter um comportamento inesperado.</p><p>Se algo ainda n&#xE3;o est&#xE1; claro sobre modelos, sinta-se livre para perguntar para sua monitora! Sabemos que &#xE9; complicado, especialmente porque voc&#xEA; est&#xE1; aprendendo o que s&#xE3;o objetos e fun&#xE7;&#xF5;es ao mesmo tempo. Mas esperamos que isto se pare&#xE7;a um pouco menos com m&#xE1;gica agora!</p><h3 id="criando-tabelas-para-nossos-modelos-no-banco-de-dados">Criando tabelas para nossos modelos no banco de dados</h3><p>O &#xFA;ltimo passo &#xE9; adicionar nosso novo modelo ao banco de dados. Primeiramente, precisamos fazer com que o Django entenda que fizemos algumas altera&#xE7;&#xF5;es nos nossos modelos. (Acabamos de criar um modelo de Post!) V&#xE1; para o console e digite <code>python manage.py makemigrations blog</code>. Deve ficar assim:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        (myvenv) ~/djangogirls$ python manage.py makemigrations blog
+        Migrations for &apos;blog&apos;:
+          blog/migrations/0001_initial.py:
+
+          - Create model Post</code></pre>
+<p><strong>Observa&#xE7;&#xE3;o:</strong> Lembre-se de salvar os arquivos que voc&#xEA; editar. Caso contr&#xE1;rio, o computador executar&#xE1; uma vers&#xE3;o antiga que pode gerar mensagens de erro inesperadas.</p><p>O Django preparou um arquivo de migra&#xE7;&#xE3;o que precisamos aplicar ao nosso banco de dados. Digite <code>python manage.py migrate blog</code> e a sa&#xED;da deve ser:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        (myvenv) ~/djangogirls$ python manage.py migrate blog
+        Operations to perform:
+          Apply all migrations: blog
+        Running migrations:
+          Applying blog.0001_initial... OK</code></pre>
+<p>Uhuu! Nosso modelo Post j&#xE1; est&#xE1; no banco de dados! Seria legal v&#xEA;-lo, n&#xE9;? V&#xE1; para o pr&#xF3;ximo cap&#xED;tulo para descobrir como nosso Post se parece!</p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../django_start_project/" class="navigation navigation-prev " aria-label="Previous page: Seu primeiro projeto Django!">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../django_admin/" class="navigation navigation-next " aria-label="Next page: Django Admin">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Modelos do Django","level":"1.12","depth":1,"next":{"title":"Django Admin","level":"1.13","depth":1,"path":"django_admin/README.md","ref":"django_admin/README.md","articles":[]},"previous":{"title":"Seu primeiro projeto Django!","level":"1.11","depth":1,"path":"django_start_project/README.md","ref":"django_start_project/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"django_version":"2.2.4"},"language":"pt","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"django_models/README.md","mtime":"2020-06-27T13:00:24.046Z","type":"markdown"},"gitbook":{"version":"3.4.0","time":"2020-06-27T13:00:41.274Z"},"basePath":"..","book":{"language":"pt"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

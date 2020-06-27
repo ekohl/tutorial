@@ -1,0 +1,609 @@
+
+<!DOCTYPE HTML>
+<html lang="ko" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Django란 무엇인가요 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.4.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../django_installation/" />
+    
+    
+    <link rel="prev" href="../python_introduction/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="검색어 입력" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    들어가며
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    설치하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    설치하기 (chromebook)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    인터넷은 어떻게 작동할까요
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Command Line 시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Python 설치하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    코드 에디터
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Python 시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Django란 무엇인가요
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Django 설치하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    나의 첫 번째 Django 프로젝트!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Django 모델
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django 관리자
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    배포하기!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django urls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django 뷰 만들기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    HTML 시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM(Querysets)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    템플릿 동적 데이터
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django 템플릿
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - 예쁘게 만들기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    템플릿 확장하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    애플리케이션 확장하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Django 폼
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    더 나아가기
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKit에 게시
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Django란 무엇인가요</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#xC7A5;&#xACE0;&#xB780;-&#xBB34;&#xC5C7;&#xC778;&#xAC00;&#xC694;">&#xC7A5;&#xACE0;&#xB780; &#xBB34;&#xC5C7;&#xC778;&#xAC00;&#xC694;?</h1><p>Django(<em>/d&#x292;&#xE6;&#x14B;&#x261;o&#x28A;/ jang-goh/&#xC7C1;&#xACE0;/&#xC7A5;&#xACE0;</em>)&#xB294; &#xD30C;&#xC774;&#xC36C;&#xC73C;&#xB85C; &#xB9CC;&#xB4E4;&#xC5B4;&#xC9C4; &#xBB34;&#xB8CC; &#xC624;&#xD508;&#xC18C;&#xC2A4; &#xC6F9; &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158; &#xD504;&#xB808;&#xC784;&#xC6CC;&#xD06C;(web application framework)&#xC785;&#xB2C8;&#xB2E4;. &#xC27D;&#xACE0; &#xBE60;&#xB974;&#xAC8C; &#xC6F9;&#xC0AC;&#xC774;&#xD2B8;&#xB97C; &#xAC1C;&#xBC1C;&#xD560; &#xC218; &#xC788;&#xB3C4;&#xB85D; &#xB3D5;&#xB294; &#xAD6C;&#xC131;&#xC694;&#xC18C;&#xB85C; &#xC774;&#xB8E8;&#xC5B4;&#xC9C4; &#xC6F9; &#xD504;&#xB808;&#xC784;&#xC6CC;&#xD06C;&#xB78D;&#xB2C8;&#xB2E4;.</p><p>&#xC6F9;&#xC0AC;&#xC774;&#xD2B8;&#xB97C; &#xAD6C;&#xCD95;&#xD560; &#xB54C;, &#xBE44;&#xC2B7;&#xD55C; &#xC720;&#xD615;&#xC758; &#xC694;&#xC18C;&#xB4E4;&#xC774; &#xD56D;&#xC0C1; &#xD544;&#xC694;&#xD569;&#xB2C8;&#xB2E4;. &#xD68C;&#xC6D0;&#xAC00;&#xC785;, &#xB85C;&#xADF8;&#xC778;, &#xB85C;&#xADF8;&#xC544;&#xC6C3;&#xACFC; &#xAC19;&#xC774; &#xC0AC;&#xC6A9;&#xC790; &#xC778;&#xC99D;&#xC744; &#xB2E4;&#xB8E8;&#xB294; &#xBC29;&#xBC95;&#xC774;&#xB098; &#xC6F9;&#xC0AC;&#xC774;&#xD2B8;&#xC758; &#xAD00;&#xB9AC;&#xC790; &#xD328;&#xB110;, &#xD3FC;, &#xD30C;&#xC77C; &#xC5C5;&#xB85C;&#xB4DC;&#xC640; &#xAC19;&#xC740; &#xAC83;&#xB4E4; &#xB9D0;&#xC774;&#xC9C0;&#xC694;.</p><p>&#xADF8;&#xB7F0;&#xB370; &#xC815;&#xB9D0; &#xB2E4;&#xD589;&#xC774;&#xAC8C;&#xB3C4;, &#xC624;&#xB798;&#xC804;&#xC5D0; &#xC5B4;&#xB5A4; &#xC6F9; &#xAC1C;&#xBC1C;&#xC790;&#xB4E4;&#xC774; &#xC0C8;&#xB85C;&#xC6B4; &#xC6F9; &#xC0AC;&#xC774;&#xD2B8;&#xB97C; &#xAC1C;&#xBC1C;&#xD560; &#xB54C; &#xC11C;&#xB85C; &#xBE44;&#xC2B7;&#xD55C; &#xBB38;&#xC81C;&#xB4E4;&#xC5D0; &#xC9C1;&#xBA74;&#xD55C;&#xB2E4;&#xB294; &#xAC83;&#xC744; &#xAE68;&#xB2EC;&#xC558;&#xC2B5;&#xB2C8;&#xB2E4;. &#xADF8;&#xB798;&#xC11C; &#xD300;&#xC744; &#xC870;&#xC9C1;&#xD588;&#xACE0;&#xC694;. &#xBC14;&#xB85C; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xB294; &#xAD6C;&#xC131;&#xC694;&#xC18C;&#xB4E4;&#xC744; &#xAC16;&#xCD98; &#xC5EC;&#xB7EC; &#xD504;&#xB808;&#xC784;&#xC6CC;&#xD06C;&#xB97C; &#xB9CC;&#xB4E4;&#xC5C8;&#xB2F5;&#xB2C8;&#xB2E4;. &#xC7A5;&#xACE0;&#xB3C4; &#xADF8;&#xC911;&#xC5D0; &#xD558;&#xB098;&#xC778; &#xAC70;&#xC8E0;. &#xB2E4;&#xC2DC; &#xBC1C;&#xBA85;&#xD574;&#xC57C; &#xD558;&#xB294; &#xBB38;&#xC81C;&#xB85C;&#xBD80;&#xD130; &#xD574;&#xBC29;&#xAC10;&#xC744; &#xC8FC;&#xACE0;&#xC694;. &#xC0C8;&#xB85C;&#xC6B4; &#xC6F9;&#xC0AC;&#xC774;&#xD2B8;&#xB97C; &#xAC1C;&#xBC1C;&#xD560; &#xB54C; &#xB4A4;&#xB530;&#xB974;&#xB294; &#xAC04;&#xC811;&#xBE44;&#xC6A9;&#xC758; &#xBD80;&#xB2F4;&#xC744; &#xB35C;&#xC5B4;&#xC900;&#xB2F5;&#xB2C8;&#xB2E4;.</p><h2 id="&#xC65C;-&#xD504;&#xB808;&#xC784;&#xC6CC;&#xD06C;&#xAC00;-&#xD544;&#xC694;&#xD55C;&#xAC00;&#xC694;">&#xC65C; &#xD504;&#xB808;&#xC784;&#xC6CC;&#xD06C;&#xAC00; &#xD544;&#xC694;&#xD55C;&#xAC00;&#xC694;?</h2><p>&#xC7A5;&#xACE0;&#xB77C;&#xB294; &#xAC83;&#xC774; &#xC2E4;&#xC81C;&#xB85C; &#xBB34;&#xC5C7;&#xC744; &#xC704;&#xD55C; &#xAC83;&#xC778;&#xC9C0; &#xC774;&#xD574;&#xD558;&#xAE30; &#xC704;&#xD574;&#xC11C;&#xB294; &#xC11C;&#xBC84;&#xC5D0; &#xB300;&#xD574;&#xC11C; &#xC790;&#xC138;&#xD788; &#xC0B4;&#xD3B4;&#xBCFC; &#xD544;&#xC694;&#xAC00; &#xC788;&#xC5B4;&#xC694;. &#xBA3C;&#xC800; &#xC11C;&#xBC84;&#xAC00; &#xC5EC;&#xB7EC;&#xBD84;&#xC5D0;&#xAC8C; &#xC6F9; &#xD398;&#xC774;&#xC9C0;&#xB97C; &#xC81C;&#xACF5;&#xD558;&#xAE38; &#xC6D0;&#xD558;&#xB294;&#xC9C0; &#xC54C;&#xC544;&#xC57C; &#xD574;&#xC694;.</p><p>&#xD3B8;&#xC9C0;(request, &#xC694;&#xCCAD;)&#xAC00; &#xB3C4;&#xCC29;&#xD588;&#xB294;&#xC9C0; &#xD655;&#xC778;&#xD574;&#xC8FC;&#xB294; &#xBA54;&#xC77C;&#xBC15;&#xC2A4;(port, &#xD3EC;&#xD2B8;)&#xAC00; &#xC788;&#xB2E4;&#xACE0; &#xC0C1;&#xC0C1;&#xD574;&#xBCF4;&#xC138;&#xC694;. &#xC774; &#xAC83;&#xC740; &#xC6F9; &#xC11C;&#xBC84;&#xAC00; &#xD574;&#xC8FC;&#xB294; &#xC77C;&#xC774;&#xC5D0;&#xC694;. &#xC6F9; &#xC11C;&#xBC84;&#xB294; &#xBC1B;&#xC740; &#xD3B8;&#xC9C0;&#xB97C; &#xC77D;&#xACE0; &#xC6F9; &#xD398;&#xC774;&#xC9C0;&#xC640; &#xD568;&#xAED8; &#xB2F5;&#xC7A5;&#xC744; &#xC900;&#xB2F5;&#xB2C8;&#xB2E4;. &#xADF8;&#xB7F0;&#xB370; &#xBB34;&#xC5B8;&#xAC00;&#xB97C; &#xC8FC;&#xACE0; &#xC2F6;&#xC744; &#xB54C;&#xB294; &#xADF8; &#xC548;&#xC5D0; &#xB0B4;&#xC6A9;&#xC774; &#xC788;&#xC5B4;&#xC57C; &#xD558;&#xC8E0;. &#xC7A5;&#xACE0;&#xB294; &#xADF8; &#xD2B9;&#xC815; &#xCF58;&#xD150;&#xCE20;&#xB97C; &#xB9CC;&#xB4E4; &#xC218; &#xC788;&#xB294; &#xC5ED;&#xD560;&#xC744; &#xD569;&#xB2C8;&#xB2E4;.</p><h2 id="&#xB204;&#xAD70;&#xAC00;&#xAC00;-&#xC11C;&#xBC84;&#xC5D0;-&#xC6F9;-&#xC0AC;&#xC774;&#xD2B8;&#xB97C;-&#xC694;&#xCCAD;&#xD558;&#xBA74;-&#xC5B4;&#xB5A4;-&#xC77C;&#xC774;-&#xBC8C;&#xC5B4;&#xC9C8;&#xAE4C;&#xC694;">&#xB204;&#xAD70;&#xAC00;&#xAC00; &#xC11C;&#xBC84;&#xC5D0; &#xC6F9; &#xC0AC;&#xC774;&#xD2B8;&#xB97C; &#xC694;&#xCCAD;&#xD558;&#xBA74; &#xC5B4;&#xB5A4; &#xC77C;&#xC774; &#xBC8C;&#xC5B4;&#xC9C8;&#xAE4C;&#xC694;?</h2><p>&#xC6F9; &#xC11C;&#xBC84;&#xC5D0; &#xC694;&#xCCAD;&#xC774; &#xC624;&#xBA74; &#xC7A5;&#xACE0;&#xB85C; &#xC804;&#xB2EC;&#xB429;&#xB2C8;&#xB2E4;. &#xC7A5;&#xACE0; <strong>urlresolver</strong>&#xB294; &#xC6F9; &#xD398;&#xC774;&#xC9C0;&#xC758; &#xC8FC;&#xC18C;&#xB97C; &#xAC00;&#xC838;&#xC640; &#xBB34;&#xC5C7;&#xC744; &#xD560;&#xC9C0; &#xD655;&#xC778;&#xD569;&#xB2C8;&#xB2E4;.(<em>urlresolver</em>&#xB294; &#xC6F9; &#xC0AC;&#xC774;&#xD2B8; &#xC8FC;&#xC18C;&#xC778; URL(Uniform Resource Locator)&#xB97C; &#xD1B5;&#xD574; &#xC774;&#xD574;&#xD569;&#xB2C8;&#xB2E4;). &#xC774; urlreslover&#xB294; &#xADF8;&#xB9AC; &#xB611;&#xB611;&#xD558;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;. &#xD328;&#xD134; &#xBAA9;&#xB85D;&#xC744; &#xAC00;&#xC838;&#xC640; URL&#xACFC; &#xB9DE;&#xB294;&#xC9C0; &#xCC98;&#xC74C;&#xBD80;&#xD130; &#xD558;&#xB098;&#xC529; &#xB300;&#xC870;&#xD574; &#xC2DD;&#xBCC4;&#xD569;&#xB2C8;&#xB2E4;. &#xB9CC;&#xC57D; &#xC77C;&#xCE58;&#xD558;&#xB294; &#xD328;&#xD134;&#xC774;&#xC788;&#xC73C;&#xBA74;, &#xC7A5;&#xACE0;&#xB294; &#xD574;&#xB2F9; &#xC694;&#xCCAD;&#xC744; &#xAD00;&#xB828;&#xB41C; &#xD568;&#xC218;(<em>view</em>)&#xC5D0; &#xB118;&#xACA8;&#xC90D;&#xB2C8;&#xB2E4;</p><p>&#xC9D1;&#xBC30;&#xC6D0;&#xC744; &#xC0DD;&#xAC01;&#xD574;&#xBCF4;&#xC138;&#xC694;. &#xC9D1;&#xBC30;&#xC6D0;&#xC740; &#xAC70;&#xB9AC;&#xB97C; &#xAC78;&#xC73C;&#xBA70; &#xC9D1;&#xC9D1;&#xC774; &#xD3B8;&#xC9C0;&#xC640; &#xB300;&#xC870;&#xD574;&#xC11C; &#xC8FC;&#xC18C;&#xC640; &#xBC88;&#xC9C0;&#xB97C; &#xD655;&#xC778;&#xD569;&#xB2C8;&#xB2E4;. &#xC8FC;&#xC18C;&#xC640; &#xBC88;&#xC9C0;&#xAC00; &#xC77C;&#xCE58;&#xD558;&#xBA74; &#xADF8;&#xACF3;&#xC5D0; &#xD3B8;&#xC9C0;&#xB97C; &#xBC30;&#xB2EC;&#xD569;&#xB2C8;&#xB2E4;. <em>urlresolver</em>&#xAC00; &#xBC14;&#xB85C; &#xC9D1;&#xBC30;&#xC6D0;&#xACFC; &#xAC19;&#xC740; &#xC5ED;&#xD560;&#xC744; &#xD569;&#xB2C8;&#xB2E4;.</p><p>&#xBAA8;&#xB4E0; &#xC7AC;&#xBBF8;&#xB09C; &#xC77C;&#xB4E4;&#xC740; <em>view</em> &#xD568;&#xC218;&#xC5D0;&#xC11C; &#xCC98;&#xB9AC;&#xB429;&#xB2C8;&#xB2E4;: &#xD2B9;&#xC815; &#xC815;&#xBCF4;&#xB97C; &#xB370;&#xC774;&#xD130;&#xBCA0;&#xC774;&#xC2A4;&#xC5D0;&#xC11C; &#xCC3E;&#xC744; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xADF8;&#xB7F0;&#xB370; &#xB9CC;&#xC57D; &#xC0AC;&#xC6A9;&#xC790;&#xAC00; &#xB370;&#xC774;&#xD130;&#xB97C; &#xBC14;&#xAFD4;&#xB2EC;&#xB77C;&#xACE0; &#xC218;&#xC815;&#xC744; &#xC694;&#xCCAD;&#xD55C;&#xB2E4;&#xBA74; &#xC5B4;&#xB5BB;&#xAC8C; &#xB420;&#xAE4C;&#xC694;? &quot;&#xC81C; &#xC9C1;&#xC5C5;&#xC5D0; &#xB300;&#xD55C; &#xC124;&#xBA85;&#xC744; &#xBC14;&#xAFD4;&#xC8FC;&#xC138;&#xC694;.&quot;&#xC640; &#xAC19;&#xC740; &#xD3B8;&#xC9C0;&#xB97C; &#xBC1B;&#xC558;&#xB2E4;&#xACE0; &#xC0DD;&#xAC01;&#xD574;&#xBD05;&#xC2DC;&#xB2E4;. <em>view</em>&#xD568;&#xC218;&#xB294; &#xC218;&#xC815;&#xD560; &#xC218; &#xC788;&#xB294; &#xAD8C;&#xD55C;&#xC774; &#xC788;&#xB294;&#xC9C0; &#xD655;&#xC778;&#xD558;&#xACE0; &#xB098;&#xC11C;, &#xC9C1;&#xC5C5;&#xC5D0; &#xB300;&#xD55C; &#xC124;&#xBA85;&#xC744; &#xC218;&#xC815;&#xD574; &#xB2E4;&#xC2DC; &#xB2F5;&#xC7A5;&#xC744; &#xC8FC;&#xACA0;&#xC9C0;&#xC694;. &quot;&#xC644;&#xB8CC;&#xD588;&#xC2B5;&#xB2C8;&#xB2E4;!&quot; &#xB77C;&#xACE0;&#xC694;. &#xADF8;&#xB7EC;&#xACE0; &#xB098;&#xC11C; <em>view</em>&#xB294; &#xB2F5;&#xC7A5;&#xC744; &#xC0DD;&#xC131;&#xD558;&#xC5EC;, &#xC7A5;&#xACE0;&#xB294; &#xADF8; &#xB2F5;&#xC7A5;&#xC744; &#xADF8; &#xC0AC;&#xC6A9;&#xC790;&#xC758; &#xC6F9; &#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xC5D0; &#xBCF4;&#xB0B4;&#xC8FC;&#xB294; &#xC5ED;&#xD560;&#xC744; &#xD569;&#xB2C8;&#xB2E4;.</p><p>&#xBB3C;&#xB860; &#xC9C0;&#xAE08;&#xAE4C;&#xC9C0;&#xC758; &#xC124;&#xBA85;&#xC740; &#xC544;&#xC8FC; &#xAC04;&#xB2E8;&#xD788; &#xC124;&#xBA85;&#xD55C; &#xAC83;&#xC5D0; &#xBD88;&#xACFC;&#xD574;&#xC694;. &#xD558;&#xC9C0;&#xB9CC; &#xBAA8;&#xB4E0; &#xAE30;&#xC220;&#xC801;&#xC778; &#xBD80;&#xBD84;&#xAE4C;&#xC9C0; &#xC790;&#xC138;&#xD788; &#xC54C; &#xD544;&#xC694;&#xAC00; &#xC5C6;&#xB2F5;&#xB2C8;&#xB2E4;. &#xC774; &#xC815;&#xB3C4; &#xC544;&#xB294; &#xAC83;&#xB9CC;&#xC73C;&#xB85C;&#xB3C4; &#xCDA9;&#xBD84;&#xD558;&#xB2F5;&#xB2C8;&#xB2E4;.</p><p>&#xC880; &#xB354; &#xC790;&#xC138;&#xD788; &#xC544;&#xB294; &#xAC83;&#xBCF4;&#xB2E4;, &#xC9C0;&#xAE08;&#xBD80;&#xD130;&#xB294; &#xC7A5;&#xACE0;&#xB97C; &#xC774;&#xC6A9;&#xD574; &#xAC04;&#xB2E8;&#xD55C; &#xAC83;&#xBD80;&#xD130; &#xB9CC;&#xB4E4;&#xC5B4;&#xBD10;&#xC694;. &#xADF8;&#xB807;&#xAC8C; &#xD558;&#xBA74;&#xC11C; &#xC911;&#xC694;&#xD55C; &#xBAA8;&#xB4E0; &#xAC83;&#xB4E4;&#xC744; &#xD558;&#xB098;&#xC529; &#xBC30;&#xC6CC;&#xB098;&#xAC00;&#xB3C4;&#xB85D; &#xD574;&#xC694;.</p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../python_introduction/" class="navigation navigation-prev " aria-label="Previous page: Python 시작하기">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../django_installation/" class="navigation navigation-next " aria-label="Next page: Django 설치하기">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Django란 무엇인가요","level":"1.9","depth":1,"next":{"title":"Django 설치하기","level":"1.10","depth":1,"path":"django_installation/README.md","ref":"django_installation/README.md","articles":[]},"previous":{"title":"Python 시작하기","level":"1.8","depth":1,"path":"python_introduction/README.md","ref":"python_introduction/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"django_version":"2.2.4"},"language":"ko","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"django/README.md","mtime":"2020-06-27T13:00:23.974Z","type":"markdown"},"gitbook":{"version":"3.4.0","time":"2020-06-27T13:00:41.274Z"},"basePath":"..","book":{"language":"ko"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

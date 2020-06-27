@@ -1,0 +1,701 @@
+
+<!DOCTYPE HTML>
+<html lang="el" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Μοντέλα (models) του Django · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.4.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../django_admin/" />
+    
+    
+    <link rel="prev" href="../django_start_project/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Αναζήτηση για ..." />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Εισαγωγή
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Εγκατάσταση
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    Εγκατάσταση (chromebook)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    Πως λειτουργεί το διαδίκτυο
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Εισαγωγή στην γραμμή εντολών
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Εγκατάσταση Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    Επεξεργαστής Κώδικα
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Εισαγωγή στην Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Τι είναι το Django;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Εγκατάσταση του Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    Το πρώτο σου Django project!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.12" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Μοντέλα (models) του Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Διαχείριση μέσω Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Ανεβάστε!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django urls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django views - ώρα να δημιουργήσετε!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    Εισαγωγή στην HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM (Querysets)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    Δυναμικά δεδομένα στα templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - κάντε το όμορφο
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Επεκτείνοντας τα templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Επεκτείνοντας την εφαρμογή σας
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Φόρμες Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    Τι υπάρχει μετά;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Δημοσιεύτηκε με το HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Μοντέλα (models) του Django</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="django-&#x3BC;&#x3BF;&#x3BD;&#x3C4;&#x3AD;&#x3BB;&#x3B1;-models">Django &#x3BC;&#x3BF;&#x3BD;&#x3C4;&#x3AD;&#x3BB;&#x3B1; (models)</h1><p>&#x391;&#x3C5;&#x3C4;&#x3CC; &#x3C0;&#x3BF;&#x3C5; &#x3B8;&#x3AD;&#x3BB;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3BD;&#x3B1; &#x3B4;&#x3B7;&#x3BC;&#x3B9;&#x3BF;&#x3C5;&#x3C1;&#x3B3;&#x3AE;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3C4;&#x3CE;&#x3C1;&#x3B1; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3BA;&#x3AC;&#x3C4;&#x3B9; &#x3C0;&#x3BF;&#x3C5; &#x3B8;&#x3B1; &#x3B1;&#x3C0;&#x3BF;&#x3B8;&#x3B7;&#x3BA;&#x3B5;&#x3CD;&#x3B5;&#x3B9; &#x3CC;&#x3BB;&#x3B5;&#x3C2; &#x3C4;&#x3B9;&#x3C2; &#x3B1;&#x3BD;&#x3B1;&#x3C1;&#x3C4;&#x3AE;&#x3C3;&#x3B5;&#x3B9;&#x3C2; &#x3C4;&#x3BF;&#x3C5; blog &#x3BC;&#x3B1;&#x3C2;. &#x391;&#x3BB;&#x3BB;&#x3AC; &#x3B3;&#x3B9;&#x3B1; &#x3BD;&#x3B1; &#x3B5;&#x3AF;&#x3BC;&#x3B1;&#x3C3;&#x3C4;&#x3B5; &#x3C3;&#x3B5; &#x3B8;&#x3AD;&#x3C3;&#x3B7; &#x3BD;&#x3B1; &#x3C4;&#x3BF; &#x3BA;&#x3AC;&#x3BD;&#x3BF;&#x3C5;&#x3BC;&#x3B5;, &#x3C0;&#x3C1;&#x3AD;&#x3C0;&#x3B5;&#x3B9; &#x3BD;&#x3B1; &#x3BC;&#x3B9;&#x3BB;&#x3AE;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3BB;&#x3AF;&#x3B3;&#x3BF; &#x3B3;&#x3B9;&#x3B1; &#x3C4;&#x3BF; &#x3C4;&#x3B9; &#x3BF;&#x3BD;&#x3BF;&#x3BC;&#x3AC;&#x3B6;&#x3BF;&#x3C5;&#x3BC;&#x3B5; <code>&quot;&#x3B1;&#x3BD;&#x3C4;&#x3B9;&#x3BA;&#x3B5;&#x3AF;&#x3BC;&#x3B5;&#x3BD;&#x3B1;&quot; (objects)</code>.</p><h2 id="objects">Objects</h2><p>&#x3A5;&#x3C0;&#x3AC;&#x3C1;&#x3C7;&#x3B5;&#x3B9; &#x3BC;&#x3B9;&#x3B1; &#x3AD;&#x3BD;&#x3BD;&#x3BF;&#x3B9;&#x3B1; &#x3C3;&#x3C4;&#x3BF;&#x3BD; &#x3C0;&#x3C1;&#x3BF;&#x3B3;&#x3C1;&#x3B1;&#x3BC;&#x3BC;&#x3B1;&#x3C4;&#x3B9;&#x3C3;&#x3BC;&#x3CC; &#x3C0;&#x3BF;&#x3C5; &#x3BF;&#x3BD;&#x3BF;&#x3BC;&#x3AC;&#x3B6;&#x3B5;&#x3C4;&#x3B1;&#x3B9; <code>&quot;&#x391;&#x3BD;&#x3C4;&#x3B9;&#x3BA;&#x3B5;&#x3B9;&#x3BC;&#x3B5;&#x3BD;&#x3BF;&#x3C3;&#x3C4;&#x3C1;&#x3B1;&#x3C6;&#x3AE;&#x3C2; &#x3C0;&#x3C1;&#x3BF;&#x3B3;&#x3C1;&#x3B1;&#x3BC;&#x3BC;&#x3B1;&#x3C4;&#x3B9;&#x3C3;&#x3BC;&#x3CC;&#x3C2;</code>. &#x397; &#x3B9;&#x3B4;&#x3AD;&#x3B1; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3CC;&#x3C4;&#x3B9; &#x3B1;&#x3BD;&#x3C4;&#x3AF; &#x3BD;&#x3B1; &#x3B3;&#x3C1;&#x3AC;&#x3C6;&#x3B5;&#x3C4;&#x3B5; &#x3C4;&#x3B1; &#x3C0;&#x3AC;&#x3BD;&#x3C4;&#x3B1; &#x3C9;&#x3C2; &#x3BC;&#x3B9;&#x3B1; &#x3B2;&#x3B1;&#x3C1;&#x3B5;&#x3C4;&#x3AE; &#x3B1;&#x3BA;&#x3BF;&#x3BB;&#x3BF;&#x3C5;&#x3B8;&#x3AF;&#x3B1; &#x3B1;&#x3C0;&#x3CC; &#x3C0;&#x3C1;&#x3BF;&#x3B3;&#x3C1;&#x3B1;&#x3BC;&#x3BC;&#x3B1;&#x3C4;&#x3B9;&#x3C3;&#x3C4;&#x3B9;&#x3BA;&#x3AD;&#x3C2; &#x3B5;&#x3BD;&#x3C4;&#x3BF;&#x3BB;&#x3AD;&#x3C2;, &#x3BC;&#x3C0;&#x3BF;&#x3C1;&#x3BF;&#x3CD;&#x3BC;&#x3B5; &#x3BD;&#x3B1; &#x3BC;&#x3BF;&#x3BD;&#x3C4;&#x3B5;&#x3BB;&#x3BF;&#x3C0;&#x3BF;&#x3B9;&#x3AE;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3C4;&#x3B1; &#x3C0;&#x3C1;&#x3AC;&#x3B3;&#x3BC;&#x3B1;&#x3C4;&#x3B1; &#x3BA;&#x3B1;&#x3B9; &#x3BD;&#x3B1; &#x3BA;&#x3B1;&#x3B8;&#x3BF;&#x3C1;&#x3AF;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3C0;&#x3C9;&#x3C2; &#x3B1;&#x3BB;&#x3BB;&#x3B7;&#x3BB;&#x3B5;&#x3C0;&#x3B9;&#x3B4;&#x3C1;&#x3BF;&#x3CD;&#x3BD; &#x3BC;&#x3B5;&#x3C4;&#x3B1;&#x3BE;&#x3CD; &#x3C4;&#x3BF;&#x3C5;&#x3C2;.</p><p>&#x386;&#x3C1;&#x3B1;, &#x3C4;&#x3B9; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3AD;&#x3BD;&#x3B1; &#x3B1;&#x3BD;&#x3C4;&#x3B9;&#x3BA;&#x3B5;&#x3AF;&#x3BC;&#x3B5;&#x3BD;&#x3BF;; &#x395;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3BC;&#x3B9;&#x3B1; &#x3C3;&#x3C5;&#x3BB;&#x3BB;&#x3BF;&#x3B3;&#x3AE; &#x3B1;&#x3C0;&#x3CC; &#x3B9;&#x3B4;&#x3B9;&#x3CC;&#x3C4;&#x3B7;&#x3C4;&#x3B5;&#x3C2; &#x3BA;&#x3B1;&#x3B9; &#x3C3;&#x3C5;&#x3BC;&#x3C0;&#x3B5;&#x3C1;&#x3B9;&#x3C6;&#x3BF;&#x3C1;&#x3AD;&#x3C2;. &#x391;&#x3BA;&#x3BF;&#x3CD;&#x3B3;&#x3B5;&#x3C4;&#x3B1;&#x3B9; &#x3C0;&#x3B1;&#x3C1;&#x3AC;&#x3BE;&#x3B5;&#x3BD;&#x3BF;, &#x3B1;&#x3BB;&#x3BB;&#x3AC; &#x3B8;&#x3B1; &#x3C3;&#x3B1;&#x3C2; &#x3B4;&#x3CE;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3AD;&#x3BD;&#x3B1; &#x3C0;&#x3B1;&#x3C1;&#x3AC;&#x3B4;&#x3B5;&#x3B9;&#x3B3;&#x3BC;&#x3B1;.</p><p>&#x395;&#x3AC;&#x3BD; &#x3B8;&#x3AD;&#x3BB;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3BD;&#x3B1; &#x3BC;&#x3BF;&#x3BD;&#x3C4;&#x3B5;&#x3BB;&#x3BF;&#x3C0;&#x3BF;&#x3B9;&#x3AE;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3BC;&#x3B9;&#x3B1; &#x3B3;&#x3AC;&#x3C4;&#x3B1;, &#x3B8;&#x3B1; &#x3B4;&#x3B7;&#x3BC;&#x3B9;&#x3BF;&#x3C5;&#x3C1;&#x3B3;&#x3AE;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3AD;&#x3BD;&#x3B1; &#x3B1;&#x3BD;&#x3C4;&#x3B9;&#x3BA;&#x3B5;&#x3AF;&#x3BC;&#x3B5;&#x3BD;&#x3BF; <code>&#x393;&#x3AC;&#x3C4;&#x3B1;</code> &#x3C4;&#x3BF; &#x3BF;&#x3C0;&#x3BF;&#x3AF;&#x3BF; &#x3AD;&#x3C7;&#x3B5;&#x3B9; &#x3BA;&#x3AC;&#x3C0;&#x3BF;&#x3B9;&#x3B5;&#x3C2; &#x3B9;&#x3B4;&#x3B9;&#x3CC;&#x3C4;&#x3B7;&#x3C4;&#x3B5;&#x3C2; &#x3CC;&#x3C0;&#x3C9;&#x3C2; <code>&#x3C7;&#x3C1;&#x3CE;&#x3BC;&#x3B1;</code>, <code>&#x3B7;&#x3BB;&#x3B9;&#x3BA;&#x3AF;&#x3B1;</code>, <code>&#x3B4;&#x3B9;&#x3AC;&#x3B8;&#x3B5;&#x3C3;&#x3B7;</code> (&#x3CC;&#x3C0;&#x3C9;&#x3C2; &#x3BA;&#x3B1;&#x3BB;&#x3AE;, &#x3BA;&#x3B1;&#x3BA;&#x3AE;, &#x3BD;&#x3C5;&#x3C3;&#x3C4;&#x3B1;&#x3B3;&#x3BC;&#x3AD;&#x3BD;&#x3B7; :)), &#x3BA;&#x3B1;&#x3B9; <code>&#x3B9;&#x3B4;&#x3B9;&#x3BF;&#x3BA;&#x3C4;&#x3AE;&#x3C4;&#x3B7;&#x3C2;</code>(&#x3C0;&#x3BF;&#x3C5; &#x3B8;&#x3B1; &#x3BC;&#x3C0;&#x3BF;&#x3C1;&#x3B5;&#x3AF; &#x3BD;&#x3B1; &#x3B1;&#x3BD;&#x3B1;&#x3C4;&#x3B5;&#x3B8;&#x3B5;&#x3AF; &#x3C3;&#x3B5; &#x3AD;&#x3BD;&#x3B1; &#x3B1;&#x3BD;&#x3C4;&#x3B9;&#x3BA;&#x3B5;&#x3AF;&#x3BC;&#x3B5;&#x3BD;&#x3BF; <code>&#x3AC;&#x3C4;&#x3BF;&#x3BC;&#x3BF;</code> &#x3AE; &#x3AF;&#x3C3;&#x3C9;&#x3C2;, &#x3C3;&#x3C4;&#x3B7;&#x3BD; &#x3C0;&#x3B5;&#x3C1;&#x3AF;&#x3C0;&#x3C4;&#x3C9;&#x3C3;&#x3B7; &#x3BC;&#x3B9;&#x3B1;&#x3C2; &#x3B1;&#x3B4;&#x3AD;&#x3C3;&#x3C0;&#x3BF;&#x3C4;&#x3B7;&#x3C2; &#x3B3;&#x3AC;&#x3C4;&#x3B1;&#x3C2;, &#x3B1;&#x3C5;&#x3C4;&#x3AE; &#x3B7; &#x3B9;&#x3B4;&#x3B9;&#x3CC;&#x3C4;&#x3B7;&#x3C4;&#x3B1; &#x3B8;&#x3B1; &#x3BC;&#x3C0;&#x3BF;&#x3C1;&#x3BF;&#x3CD;&#x3C3;&#x3B5; &#x3BD;&#x3B1; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3AC;&#x3B4;&#x3B5;&#x3B9;&#x3B1;).</p><p>&#x388;&#x3C0;&#x3B5;&#x3B9;&#x3C4;&#x3B1; &#x3B7; <code>&#x3B3;&#x3AC;&#x3C4;&#x3B1;</code> &#x3AD;&#x3C7;&#x3B5;&#x3B9; &#x3BA;&#x3AC;&#x3C0;&#x3BF;&#x3B9;&#x3B5;&#x3C2; &#x3B4;&#x3C1;&#x3AC;&#x3C3;&#x3B5;&#x3B9;&#x3C2; <code>&#x3B3;&#x3BF;&#x3C5;&#x3C1;&#x3B3;&#x3BF;&#x3CD;&#x3C1;&#x3B9;&#x3C3;&#x3BC;&#x3B1;</code>, <code>&#x3BE;&#x3CD;&#x3C3;&#x3B9;&#x3BC;&#x3BF;</code> &#x3AE; <code>&#x3C4;&#x3AC;&#x3B9;&#x3C3;&#x3BC;&#x3B1;</code>( &#x3C3;&#x3B5; &#x3B1;&#x3C5;&#x3C4;&#x3AE; &#x3C4;&#x3B7;&#x3BD; &#x3C0;&#x3B5;&#x3C1;&#x3AF;&#x3C0;&#x3C4;&#x3C9;&#x3C3;&#x3B7;, &#x3B8;&#x3B1; &#x3B4;&#x3CE;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3C3;&#x3C4;&#x3B7;&#x3BD; &#x3B3;&#x3AC;&#x3C4;&#x3B1; &#x3BB;&#x3AF;&#x3B3;&#x3B7; <code>&#x3B3;&#x3B1;&#x3C4;&#x3BF;&#x3C4;&#x3C1;&#x3BF;&#x3C6;&#x3AE;</code>, &#x3C0;&#x3BF;&#x3C5; &#x3B8;&#x3B1; &#x3BC;&#x3C0;&#x3BF;&#x3C1;&#x3BF;&#x3CD;&#x3C3;&#x3B5; &#x3BD;&#x3B1; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3AD;&#x3BD;&#x3B1; &#x3BE;&#x3B5;&#x3C7;&#x3C9;&#x3C1;&#x3B9;&#x3C3;&#x3C4;&#x3CC; &#x3B1;&#x3BD;&#x3C4;&#x3B9;&#x3BA;&#x3B5;&#x3AF;&#x3BC;&#x3B5;&#x3BD;&#x3BF; &#x3BC;&#x3B5; &#x3B9;&#x3B4;&#x3B9;&#x3CC;&#x3C4;&#x3B7;&#x3C4;&#x3B5;&#x3C2;, &#x3CC;&#x3C0;&#x3C9;&#x3C2; <code>&#x3B3;&#x3B5;&#x3CD;&#x3C3;&#x3B7;</code>).</p><pre><code>        Cat
+        --------
+        color
+        age
+        mood
+        owner
+        purr()
+        scratch()
+        feed(cat_food)
+
+
+        CatFood
+        --------
+        taste</code></pre>
+<p>&#x392;&#x3B1;&#x3C3;&#x3B9;&#x3BA;&#x3AC; &#x3B7; &#x3B9;&#x3B4;&#x3AD;&#x3B1; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3BD;&#x3B1; &#x3C0;&#x3B5;&#x3C1;&#x3B9;&#x3B3;&#x3C1;&#x3AC;&#x3C8;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3C4;&#x3B1; &#x3B1;&#x3BB;&#x3B7;&#x3B8;&#x3B9;&#x3BD;&#x3AC; &#x3C0;&#x3C1;&#x3AC;&#x3B3;&#x3BC;&#x3B1;&#x3C4;&#x3B1; &#x3C3;&#x3C4;&#x3BF;&#x3BD; &#x3BA;&#x3CE;&#x3B4;&#x3B9;&#x3BA;&#x3B1; &#x3BC;&#x3B5; &#x3B9;&#x3B4;&#x3B9;&#x3CC;&#x3C4;&#x3B7;&#x3C4;&#x3B5;&#x3C2; (&#x3C0;&#x3BF;&#x3C5; &#x3BF;&#x3BD;&#x3BF;&#x3BC;&#x3AC;&#x3B6;&#x3BF;&#x3BD;&#x3C4;&#x3B1;&#x3B9; <code>object properties</code>) &#x3BA;&#x3B1;&#x3B9; &#x3C3;&#x3C5;&#x3BC;&#x3C0;&#x3B5;&#x3C1;&#x3B9;&#x3C6;&#x3BF;&#x3C1;&#x3AD;&#x3C2; (&#x3C0;&#x3BF;&#x3C5; &#x3BF;&#x3BD;&#x3BF;&#x3BC;&#x3AC;&#x3B6;&#x3BF;&#x3BD;&#x3C4;&#x3B1;&#x3B9; <code>methods</code>).</p><p>&#x3A0;&#x3CE;&#x3C2; &#x3B8;&#x3B1; &#x3BC;&#x3BF;&#x3BD;&#x3C4;&#x3B5;&#x3BB;&#x3BF;&#x3C0;&#x3BF;&#x3B9;&#x3AE;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3C4;&#x3CC;&#x3C4;&#x3B5; &#x3C4;&#x3B9;&#x3C2; &#x3B1;&#x3BD;&#x3B1;&#x3C1;&#x3C4;&#x3AE;&#x3C3;&#x3B5;&#x3B9;&#x3C2; &#x3C4;&#x3BF;&#x3C5; blog; &#x398;&#x3AD;&#x3BB;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3BD;&#x3B1; &#x3BA;&#x3B1;&#x3C4;&#x3B1;&#x3C3;&#x3BA;&#x3B5;&#x3C5;&#x3AC;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3AD;&#x3BD;&#x3B1; blog, &#x3C3;&#x3C9;&#x3C3;&#x3C4;&#x3AC;;</p><p>&#x3A0;&#x3C1;&#x3AD;&#x3C0;&#x3B5;&#x3B9; &#x3BD;&#x3B1; &#x3B4;&#x3CE;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3B1;&#x3C0;&#x3AC;&#x3BD;&#x3C4;&#x3B7;&#x3C3;&#x3B7; &#x3C3;&#x3C4;&#x3BF; &#x3B5;&#x3C1;&#x3CE;&#x3C4;&#x3B7;&#x3BC;&#x3B1;: &#x3C4;&#x3B9; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3BC;&#x3AF;&#x3B1; &#x3B1;&#x3BD;&#x3AC;&#x3C1;&#x3C4;&#x3B7;&#x3C3;&#x3B7; &#x3C3;&#x3C4;&#x3BF; blog; &#x3A4;&#x3B9; &#x3B9;&#x3B4;&#x3B9;&#x3CC;&#x3C4;&#x3B7;&#x3C4;&#x3B5;&#x3C2; &#x3C0;&#x3C1;&#x3AD;&#x3C0;&#x3B5;&#x3B9; &#x3BD;&#x3B1; &#x3AD;&#x3C7;&#x3B5;&#x3B9;;</p><p>&#x39B;&#x3BF;&#x3B9;&#x3C0;&#x3CC;&#x3BD;, &#x3C3;&#x3AF;&#x3B3;&#x3BF;&#x3C5;&#x3C1;&#x3B1; &#x3BC;&#x3AF;&#x3B1; &#x3B1;&#x3BD;&#x3AC;&#x3C1;&#x3C4;&#x3B7;&#x3C3;&#x3B7; &#x3C3;&#x3C4;&#x3BF; blog &#x3BC;&#x3B1;&#x3C2; &#x3C7;&#x3C1;&#x3B5;&#x3B9;&#x3AC;&#x3B6;&#x3B5;&#x3C4;&#x3B1;&#x3B9; &#x3BA;&#x3AC;&#x3C0;&#x3BF;&#x3B9;&#x3BF; &#x3BA;&#x3B5;&#x3AF;&#x3BC;&#x3B5;&#x3BD;&#x3BF; &#x3BC;&#x3B5; &#x3C4;&#x3BF; &#x3C0;&#x3B5;&#x3C1;&#x3B9;&#x3B5;&#x3C7;&#x3CC;&#x3BC;&#x3B5;&#x3BD;&#x3CC; &#x3C4;&#x3BF;&#x3C5; &#x3BA;&#x3B1;&#x3B9; &#x3AD;&#x3BD;&#x3B1;&#x3BD; &#x3C4;&#x3AF;&#x3C4;&#x3BB;&#x3BF;, &#x3C3;&#x3C9;&#x3C3;&#x3C4;&#x3AC;; &#x398;&#x3B1; &#x3AE;&#x3C4;&#x3B1;&#x3BD; &#x3B5;&#x3C0;&#x3AF;&#x3C3;&#x3B7;&#x3C2; &#x3C9;&#x3C1;&#x3B1;&#x3AF;&#x3BF; &#x3BD;&#x3B1; &#x3BE;&#x3AD;&#x3C1;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3C0;&#x3BF;&#x3B9;&#x3BF;&#x3C2; &#x3C4;&#x3BF; &#x3AD;&#x3B3;&#x3C1;&#x3B1;&#x3C8;&#x3B5; &#x3B1;&#x3C5;&#x3C4;&#x3CC;. &#x388;&#x3C4;&#x3C3;&#x3B9; &#x3C7;&#x3C1;&#x3B5;&#x3B9;&#x3B1;&#x3B6;&#x3CC;&#x3BC;&#x3B1;&#x3C3;&#x3C4;&#x3B5; &#x3AD;&#x3BD;&#x3B1;&#x3BD; &#x3C3;&#x3C5;&#x3B3;&#x3B3;&#x3C1;&#x3B1;&#x3C6;&#x3AD;&#x3B1;. &#x3A4;&#x3AD;&#x3BB;&#x3BF;&#x3C2;, &#x3B8;&#x3AD;&#x3BB;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3BD;&#x3B1; &#x3B3;&#x3BD;&#x3C9;&#x3C1;&#x3AF;&#x3B6;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3C0;&#x3CC;&#x3C4;&#x3B5; &#x3B4;&#x3B7;&#x3BC;&#x3B9;&#x3BF;&#x3C5;&#x3C1;&#x3B3;&#x3AE;&#x3B8;&#x3B7;&#x3BA;&#x3B5; &#x3BA;&#x3B1;&#x3B9; &#x3B4;&#x3B7;&#x3BC;&#x3BF;&#x3C3;&#x3B9;&#x3B5;&#x3CD;&#x3C4;&#x3B7;&#x3BA;&#x3B5; &#x3B7; &#x3C3;&#x3C5;&#x3B3;&#x3BA;&#x3B5;&#x3BA;&#x3C1;&#x3B9;&#x3BC;&#x3AD;&#x3BD;&#x3B7; &#x3B1;&#x3BD;&#x3AC;&#x3C1;&#x3C4;&#x3B7;&#x3C3;&#x3B7;.</p><pre><code>        Post
+        --------
+        title
+        text
+        author
+        created_date
+        published_date</code></pre>
+<p>&#x3A4;&#x3B9; &#x3B5;&#x3AF;&#x3B4;&#x3BF;&#x3C5;&#x3C2; &#x3C0;&#x3C1;&#x3AC;&#x3B3;&#x3BC;&#x3B1;&#x3C4;&#x3B1; &#x3B8;&#x3B1; &#x3BC;&#x3C0;&#x3BF;&#x3C1;&#x3BF;&#x3CD;&#x3C3;&#x3B1;&#x3BD; &#x3BD;&#x3B1; &#x3B3;&#x3AF;&#x3BD;&#x3BF;&#x3C5;&#x3BD; &#x3BC;&#x3B5; &#x3BC;&#x3B9;&#x3B1; &#x3B1;&#x3BD;&#x3AC;&#x3C1;&#x3C4;&#x3B7;&#x3C3;&#x3B7; &#x3C3;&#x3C4;&#x3BF; blog; &#x398;&#x3B1; &#x3AE;&#x3C4;&#x3B1;&#x3BD; &#x3C9;&#x3C1;&#x3B1;&#x3AF;&#x3BF; &#x3BD;&#x3B1; &#x3AD;&#x3C7;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3BA;&#x3AC;&#x3C0;&#x3BF;&#x3B9;&#x3B1; <code>method</code> &#x3C0;&#x3BF;&#x3C5; &#x3B4;&#x3B7;&#x3BC;&#x3BF;&#x3C3;&#x3B9;&#x3B5;&#x3CD;&#x3B5;&#x3B9; &#x3C4;&#x3B7;&#x3BD; &#x3B1;&#x3BD;&#x3AC;&#x3C1;&#x3C4;&#x3B7;&#x3C3;&#x3B7;, &#x3C3;&#x3C9;&#x3C3;&#x3C4;&#x3AC;;</p><p>&#x388;&#x3C4;&#x3C3;&#x3B9;, &#x3B8;&#x3B1; &#x3C7;&#x3C1;&#x3B5;&#x3B9;&#x3B1;&#x3C3;&#x3C4;&#x3BF;&#x3CD;&#x3BC;&#x3B5; &#x3BC;&#x3B9;&#x3B1; &#x3BC;&#x3AD;&#x3B8;&#x3BF;&#x3B4;&#x3BF; <code>publish</code>.</p><p>&#x394;&#x3B5;&#x3B4;&#x3BF;&#x3BC;&#x3AD;&#x3BD;&#x3BF;&#x3C5; &#x3CC;&#x3C4;&#x3B9; &#x3B3;&#x3BD;&#x3C9;&#x3C1;&#x3AF;&#x3B6;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3AE;&#x3B4;&#x3B7; &#x3C4;&#x3B9; &#x3B8;&#x3AD;&#x3BB;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3BD;&#x3B1; &#x3B5;&#x3C0;&#x3B9;&#x3C4;&#x3CD;&#x3C7;&#x3BF;&#x3C5;&#x3BC;&#x3B5;, &#x3B1;&#x3C2; &#x3BE;&#x3B5;&#x3BA;&#x3B9;&#x3BD;&#x3AE;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3C4;&#x3B7; &#x3BC;&#x3BF;&#x3BD;&#x3C4;&#x3B5;&#x3BB;&#x3BF;&#x3C0;&#x3BF;&#x3AF;&#x3B7;&#x3C3;&#x3B7; &#x3C3;&#x3C4;&#x3BF; Django!</p><h2 id="django-model">Django model</h2><p>&#x393;&#x3BD;&#x3C9;&#x3C1;&#x3AF;&#x3B6;&#x3BF;&#x3BD;&#x3C4;&#x3B1;&#x3C2; &#x3C4;&#x3B9; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3AD;&#x3BD;&#x3B1; &#x3B1;&#x3BD;&#x3C4;&#x3B9;&#x3BA;&#x3B5;&#x3AF;&#x3BC;&#x3B5;&#x3BD;&#x3BF;, &#x3BC;&#x3C0;&#x3BF;&#x3C1;&#x3BF;&#x3CD;&#x3BC;&#x3B5; &#x3BD;&#x3B1; &#x3B4;&#x3B7;&#x3BC;&#x3B9;&#x3BF;&#x3C5;&#x3C1;&#x3B3;&#x3AE;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3AD;&#x3BD;&#x3B1; &#x3BC;&#x3BF;&#x3BD;&#x3C4;&#x3AD;&#x3BB;&#x3BF; Django &#x3B3;&#x3B9;&#x3B1; &#x3C4;&#x3B7;&#x3BD; &#x3B1;&#x3BD;&#x3AC;&#x3C1;&#x3C4;&#x3B7;&#x3C3;&#x3B7; &#x3C3;&#x3C4;&#x3BF; blog &#x3BC;&#x3B1;&#x3C2;.</p><p>&#x388;&#x3BD;&#x3B1; &#x3BC;&#x3BF;&#x3BD;&#x3C4;&#x3AD;&#x3BB;&#x3BF; &#x3C3;&#x3C4;&#x3BF; Django &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3AD;&#x3BD;&#x3B1; &#x3B9;&#x3B4;&#x3B9;&#x3B1;&#x3AF;&#x3C4;&#x3B5;&#x3C1;&#x3BF; &#x3B5;&#x3AF;&#x3B4;&#x3BF;&#x3C2; &#x3B1;&#x3BD;&#x3C4;&#x3B9;&#x3BA;&#x3B5;&#x3B9;&#x3BC;&#x3AD;&#x3BD;&#x3BF;&#x3C5; &#x3C4;&#x3BF; &#x3BF;&#x3C0;&#x3BF;&#x3AF;&#x3BF; &#x3B1;&#x3C0;&#x3BF;&#x3B8;&#x3B7;&#x3BA;&#x3B5;&#x3CD;&#x3B5;&#x3C4;&#x3B1;&#x3B9; &#x3C3;&#x3C4;&#x3B7; &#x3B2;&#x3AC;&#x3C3;&#x3B7; &#x3B4;&#x3B5;&#x3B4;&#x3BF;&#x3BC;&#x3AD;&#x3BD;&#x3C9;&#x3BD; <code>database</code>. &#x397; &#x3B2;&#x3AC;&#x3C3;&#x3B7; &#x3B4;&#x3B5;&#x3B4;&#x3BF;&#x3BC;&#x3AD;&#x3BD;&#x3C9;&#x3BD; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3BC;&#x3B9;&#x3B1; &#x3C3;&#x3C5;&#x3BB;&#x3BB;&#x3BF;&#x3B3;&#x3AE; &#x3B4;&#x3B5;&#x3B4;&#x3BF;&#x3BC;&#x3AD;&#x3BD;&#x3C9;&#x3BD;. &#x395;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3B5;&#x3BA;&#x3B5;&#x3AF; &#x3CC;&#x3C0;&#x3BF;&#x3C5; &#x3B8;&#x3B1; &#x3B1;&#x3C0;&#x3BF;&#x3B8;&#x3B7;&#x3BA;&#x3B5;&#x3C5;&#x3C4;&#x3BF;&#x3CD;&#x3BD; &#x3CC;&#x3BB;&#x3B5;&#x3C2; &#x3BF;&#x3B9; &#x3C0;&#x3BB;&#x3B7;&#x3C1;&#x3BF;&#x3C6;&#x3BF;&#x3C1;&#x3AF;&#x3B5;&#x3C2; &#x3B3;&#x3B9;&#x3B1; &#x3C4;&#x3BF;&#x3C5;&#x3C2; &#x3C7;&#x3C1;&#x3AE;&#x3C3;&#x3C4;&#x3B5;&#x3C2;, &#x3C4;&#x3B9;&#x3C2; &#x3B1;&#x3BD;&#x3B1;&#x3C1;&#x3C4;&#x3AE;&#x3C3;&#x3B5;&#x3B9;&#x3C2; &#x3C3;&#x3C4;&#x3BF; blog, &#x3BA;&#x3BB;&#x3C0;. &#x398;&#x3B1; &#x3C7;&#x3C1;&#x3B7;&#x3C3;&#x3B9;&#x3BC;&#x3BF;&#x3C0;&#x3BF;&#x3B9;&#x3AE;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3C4;&#x3B7;&#x3BD; &#x3B2;&#x3AC;&#x3C3;&#x3B7; &#x3B4;&#x3B5;&#x3B4;&#x3BF;&#x3BC;&#x3AD;&#x3BD;&#x3C9;&#x3BD; SQLite &#x3B3;&#x3B9;&#x3B1; &#x3C4;&#x3B7;&#x3BD; &#x3B1;&#x3C0;&#x3BF;&#x3B8;&#x3AE;&#x3BA;&#x3B5;&#x3C5;&#x3C3;&#x3B7; &#x3C4;&#x3C9;&#x3BD; &#x3B4;&#x3B5;&#x3B4;&#x3BF;&#x3BC;&#x3AD;&#x3BD;&#x3C9;&#x3BD; &#x3BC;&#x3B1;&#x3C2;. &#x391;&#x3C5;&#x3C4;&#x3CC;&#x3C2; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3B7; &#x3C0;&#x3C1;&#x3BF;&#x3B5;&#x3C0;&#x3B9;&#x3BB;&#x3B5;&#x3B3;&#x3BC;&#x3AD;&#x3BD;&#x3B7; &#x3B2;&#x3AC;&#x3C3;&#x3B7; &#x3B4;&#x3B5;&#x3B4;&#x3BF;&#x3BC;&#x3AD;&#x3BD;&#x3C9;&#x3BD; &#x3C4;&#x3BF;&#x3C5; Django. &#x395;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3B1;&#x3C1;&#x3BA;&#x3B5;&#x3C4;&#x3CC; &#x3B3;&#x3B9;&#x3B1; &#x3B5;&#x3BC;&#x3AC;&#x3C2; &#x3B3;&#x3B9;&#x3B1; &#x3C4;&#x3B7;&#x3BD; &#x3CE;&#x3C1;&#x3B1;.</p><p>&#x39C;&#x3C0;&#x3BF;&#x3C1;&#x3B5;&#x3AF;&#x3C4;&#x3B5; &#x3BD;&#x3B1; &#x3C3;&#x3BA;&#x3B5;&#x3C6;&#x3C4;&#x3B5;&#x3AF;&#x3C4;&#x3B5; &#x3AD;&#x3BD;&#x3B1; &#x3BC;&#x3BF;&#x3BD;&#x3C4;&#x3AD;&#x3BB;&#x3BF; &#x3C4;&#x3B7;&#x3C2; &#x3B2;&#x3AC;&#x3C3;&#x3B7;&#x3C2; &#x3B4;&#x3B5;&#x3B4;&#x3BF;&#x3BC;&#x3AD;&#x3BD;&#x3C9;&#x3BD; &#x3C9;&#x3C2; &#x3AD;&#x3BD;&#x3B1; &#x3C5;&#x3C0;&#x3BF;&#x3BB;&#x3BF;&#x3B3;&#x3B9;&#x3C3;&#x3C4;&#x3B9;&#x3BA;&#x3CC; &#x3C6;&#x3CD;&#x3BB;&#x3BB;&#x3BF; &#x3BC;&#x3B5; &#x3C3;&#x3C4;&#x3AE;&#x3BB;&#x3B5;&#x3C2; (&#x3C0;&#x3B5;&#x3B4;&#x3AF;&#x3B1;) &#x3BA;&#x3B1;&#x3B9; &#x3B3;&#x3C1;&#x3B1;&#x3BC;&#x3BC;&#x3AD;&#x3C2; (&#x3B4;&#x3B5;&#x3B4;&#x3BF;&#x3BC;&#x3AD;&#x3BD;&#x3B1;).</p><h3 id="&#x3B4;&#x3B7;&#x3BC;&#x3B9;&#x3BF;&#x3C5;&#x3C1;&#x3B3;&#x3AF;&#x3B1;-&#x3BC;&#x3B9;&#x3B1;&#x3C2;-&#x3B5;&#x3C6;&#x3B1;&#x3C1;&#x3BC;&#x3BF;&#x3B3;&#x3AE;&#x3C2;">&#x394;&#x3B7;&#x3BC;&#x3B9;&#x3BF;&#x3C5;&#x3C1;&#x3B3;&#x3AF;&#x3B1; &#x3BC;&#x3B9;&#x3B1;&#x3C2; &#x3B5;&#x3C6;&#x3B1;&#x3C1;&#x3BC;&#x3BF;&#x3B3;&#x3AE;&#x3C2;</h3><p>&#x393;&#x3B9;&#x3B1; &#x3BD;&#x3B1; &#x3BA;&#x3C1;&#x3B1;&#x3C4;&#x3AE;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3C4;&#x3B1; &#x3C0;&#x3AC;&#x3BD;&#x3C4;&#x3B1; &#x3C4;&#x3B1;&#x3BA;&#x3C4;&#x3BF;&#x3C0;&#x3BF;&#x3B9;&#x3B7;&#x3BC;&#x3AD;&#x3BD;&#x3B1;, &#x3B8;&#x3B1; &#x3B4;&#x3B7;&#x3BC;&#x3B9;&#x3BF;&#x3C5;&#x3C1;&#x3B3;&#x3AE;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3BC;&#x3B9;&#x3B1; &#x3BE;&#x3B5;&#x3C7;&#x3C9;&#x3C1;&#x3B9;&#x3C3;&#x3C4;&#x3AE; &#x3B5;&#x3C6;&#x3B1;&#x3C1;&#x3BC;&#x3BF;&#x3B3;&#x3AE; &#x3BC;&#x3AD;&#x3C3;&#x3B1; &#x3C3;&#x3C4;&#x3BF; project &#x3BC;&#x3B1;&#x3C2;. &#x395;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3C0;&#x3BF;&#x3BB;&#x3CD; &#x3C9;&#x3C1;&#x3B1;&#x3AF;&#x3BF; &#x3BD;&#x3B1; &#x3AD;&#x3C7;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3C4;&#x3B1; &#x3C0;&#x3AC;&#x3BD;&#x3C4;&#x3B1; &#x3BF;&#x3C1;&#x3B3;&#x3B1;&#x3BD;&#x3C9;&#x3BC;&#x3AD;&#x3BD;&#x3B1; &#x3B1;&#x3C0;&#x3CC; &#x3C4;&#x3B7;&#x3BD; &#x3B1;&#x3C1;&#x3C7;&#x3AE;. &#x393;&#x3B9;&#x3B1; &#x3C4;&#x3B7;&#x3BD; &#x3B4;&#x3B7;&#x3BC;&#x3B9;&#x3BF;&#x3C5;&#x3C1;&#x3B3;&#x3AF;&#x3B1; &#x3BC;&#x3B9;&#x3B1;&#x3C2; &#x3B5;&#x3C6;&#x3B1;&#x3C1;&#x3BC;&#x3BF;&#x3B3;&#x3AE;&#x3C2; &#x3B8;&#x3B1; &#x3C7;&#x3C1;&#x3B5;&#x3B9;&#x3B1;&#x3C3;&#x3C4;&#x3B5;&#x3AF; &#x3BD;&#x3B1; &#x3C4;&#x3C1;&#x3AD;&#x3BE;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3C4;&#x3B7;&#x3BD; &#x3B1;&#x3BA;&#x3CC;&#x3BB;&#x3BF;&#x3C5;&#x3B8;&#x3B7; &#x3B5;&#x3BD;&#x3C4;&#x3BF;&#x3BB;&#x3AE; &#x3C3;&#x3C4;&#x3B7;&#x3BD; &#x3BA;&#x3BF;&#x3BD;&#x3C3;&#x3CC;&#x3BB;&#x3B1; (&#x3B1;&#x3C0;&#x3CC; &#x3C4;&#x3BF;&#x3BD; &#x3C6;&#x3AC;&#x3BA;&#x3B5;&#x3BB;&#x3BF; <code>djangogirls</code> &#x3CC;&#x3C0;&#x3BF;&#x3C5; &#x3B2;&#x3C1;&#x3AF;&#x3C3;&#x3BA;&#x3B5;&#x3C4;&#x3B1;&#x3B9; &#x3C4;&#x3BF; &#x3B1;&#x3C1;&#x3C7;&#x3B5;&#x3AF;&#x3BF; <code>manage.py</code>):</p><p></p><p class="code-label">Mac OS X and Linux:</p><p></p><pre><code>        (myvenv) ~/djangogirls$ python manage.py startapp blog</code></pre>
+<p></p><p class="code-label">Windows:</p><p></p><pre><code>        (myvenv) C:\Users\Name\djangogirls&gt; python manage.py startapp blog</code></pre>
+<p>&#x398;&#x3B1; &#x3C0;&#x3B1;&#x3C1;&#x3B1;&#x3C4;&#x3B7;&#x3C1;&#x3AE;&#x3C3;&#x3B5;&#x3C4;&#x3B5; &#x3CC;&#x3C4;&#x3B9; &#x3AD;&#x3BD;&#x3B1;&#x3C2; &#x3BD;&#x3AD;&#x3BF;&#x3C2; &#x3C6;&#x3AC;&#x3BA;&#x3B5;&#x3BB;&#x3BF;&#x3C2; &#x3BC;&#x3B5; &#x3C4;&#x3BF; &#x3CC;&#x3BD;&#x3BF;&#x3BC;&#x3B1; <code>blog</code> &#x3B4;&#x3B7;&#x3BC;&#x3B9;&#x3BF;&#x3C5;&#x3C1;&#x3B3;&#x3AE;&#x3B8;&#x3B7;&#x3BA;&#x3B5; &#x3BA;&#x3B1;&#x3B9; &#x3C0;&#x3B5;&#x3C1;&#x3B9;&#x3AD;&#x3C7;&#x3B5;&#x3B9; &#x3AD;&#x3BD;&#x3B1;&#x3BD; &#x3B1;&#x3C1;&#x3B9;&#x3B8;&#x3BC;&#x3CC; &#x3B1;&#x3C1;&#x3C7;&#x3B5;&#x3AF;&#x3C9;&#x3BD;. &#x39F;&#x3B9; &#x3C6;&#x3AC;&#x3BA;&#x3B5;&#x3BB;&#x3BF;&#x3B9; &#x3BA;&#x3B1;&#x3B9; &#x3C4;&#x3B1; &#x3B1;&#x3C1;&#x3C7;&#x3B5;&#x3AF;&#x3B1; &#x3C3;&#x3C4;&#x3BF; project &#x3BC;&#x3B1;&#x3C2; &#x3C0;&#x3C1;&#x3AD;&#x3C0;&#x3B5;&#x3B9; &#x3BD;&#x3B1; &#x3BC;&#x3BF;&#x3B9;&#x3AC;&#x3B6;&#x3BF;&#x3C5;&#x3BD; &#x3BA;&#x3AC;&#x3C0;&#x3C9;&#x3C2; &#x3AD;&#x3C4;&#x3C3;&#x3B9;:</p><pre><code>        djangogirls
+        &#x251C;&#x2500;&#x2500; blog
+        &#x2502;   &#x251C;&#x2500;&#x2500; __init__.py
+        &#x2502;   &#x251C;&#x2500;&#x2500; admin.py
+        &#x2502;   &#x251C;&#x2500;&#x2500; apps.py
+        &#x2502;   &#x251C;&#x2500;&#x2500; migrations
+        &#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; __init__.py
+        &#x2502;   &#x251C;&#x2500;&#x2500; models.py
+        &#x2502;   &#x251C;&#x2500;&#x2500; tests.py
+        &#x2502;   &#x2514;&#x2500;&#x2500; views.py
+        &#x251C;&#x2500;&#x2500; db.sqlite3
+        &#x251C;&#x2500;&#x2500; manage.py
+        &#x251C;&#x2500;&#x2500; mysite
+        &#x2502;   &#x251C;&#x2500;&#x2500; __init__.py
+        &#x2502;   &#x251C;&#x2500;&#x2500; settings.py
+        &#x2502;   &#x251C;&#x2500;&#x2500; urls.py
+        &#x2502;   &#x2514;&#x2500;&#x2500; wsgi.py
+        &#x2514;&#x2500;&#x2500; requirements.txt</code></pre>
+<p>&#x39C;&#x3B5;&#x3C4;&#x3AC; &#x3C4;&#x3B7;&#x3BD; &#x3B4;&#x3B7;&#x3BC;&#x3B9;&#x3BF;&#x3C5;&#x3C1;&#x3B3;&#x3AF;&#x3B1; &#x3BC;&#x3AF;&#x3B1;&#x3C2; &#x3B5;&#x3C6;&#x3B1;&#x3C1;&#x3BC;&#x3BF;&#x3B3;&#x3AE;&#x3C2;, &#x3C0;&#x3C1;&#x3AD;&#x3C0;&#x3B5;&#x3B9; &#x3B5;&#x3C0;&#x3AF;&#x3C3;&#x3B7;&#x3C2; &#x3BD;&#x3B1; &#x3C0;&#x3BF;&#x3CD;&#x3BC;&#x3B5; &#x3C3;&#x3C4;&#x3BF; Django &#x3CC;&#x3C4;&#x3B9; &#x3C0;&#x3C1;&#x3AD;&#x3C0;&#x3B5;&#x3B9; &#x3BD;&#x3B1; &#x3C4;&#x3B7; &#x3C7;&#x3C1;&#x3B7;&#x3C3;&#x3B9;&#x3BC;&#x3BF;&#x3C0;&#x3BF;&#x3B9;&#x3AE;&#x3C3;&#x3B5;&#x3B9;. &#x3A4;&#x3BF; &#x3BA;&#x3AC;&#x3BD;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3B1;&#x3C5;&#x3C4;&#x3CC; &#x3BC;&#x3AD;&#x3C3;&#x3B1; &#x3C3;&#x3C4;&#x3BF; &#x3B1;&#x3C1;&#x3C7;&#x3B5;&#x3AF;&#x3BF; <code>mysite/settings.py</code>. &#x391;&#x3BD;&#x3BF;&#x3AF;&#x3BE;&#x3C4;&#x3B5; &#x3C4;&#x3BF;. &#x3A0;&#x3C1;&#x3AD;&#x3C0;&#x3B5;&#x3B9; &#x3BD;&#x3B1; &#x3B2;&#x3C1;&#x3BF;&#x3CD;&#x3BC;&#x3B5; &#x3C4;&#x3B7;&#x3BD; &#x3BB;&#x3AF;&#x3C3;&#x3C4;&#x3B1; <code>INSTALLED_APPS</code> &#x3BA;&#x3B1;&#x3B9; &#x3BD;&#x3B1; &#x3C0;&#x3C1;&#x3BF;&#x3C3;&#x3B8;&#x3AD;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3B5;&#x3BA;&#x3B5;&#x3AF; &#x3C4;&#x3BF; &#x3B5;&#x3BE;&#x3AE;&#x3C2;: <code>&apos;blog&apos;,</code> &#x3C0;&#x3AC;&#x3BD;&#x3C9; &#x3B1;&#x3C0;&#x3CC; &#x3C4;&#x3BF; <code>]</code>. &#x388;&#x3C4;&#x3C3;&#x3B9; &#x3C4;&#x3BF; &#x3C4;&#x3B5;&#x3BB;&#x3B9;&#x3BA;&#x3CC; &#x3C0;&#x3C1;&#x3BF;&#x3CA;&#x3CC;&#x3BD; &#x3C0;&#x3C1;&#x3AD;&#x3C0;&#x3B5;&#x3B9; &#x3BD;&#x3B1; &#x3BC;&#x3BF;&#x3B9;&#x3AC;&#x3B6;&#x3B5;&#x3B9; &#x3BA;&#x3AC;&#x3C0;&#x3C9;&#x3C2; &#x3AD;&#x3C4;&#x3C3;&#x3B9;:</p><p></p><p class="code-label">mysite/settings.py</p><p></p><pre><code class="lang-python">INSTALLED_APPS = [
+    <span class="hljs-string">&apos;django.contrib.admin&apos;</span>,
+    <span class="hljs-string">&apos;django.contrib.auth&apos;</span>,
+    <span class="hljs-string">&apos;django.contrib.contenttypes&apos;</span>,
+    <span class="hljs-string">&apos;django.contrib.sessions&apos;</span>,
+    <span class="hljs-string">&apos;django.contrib.messages&apos;</span>,
+    <span class="hljs-string">&apos;django.contrib.staticfiles&apos;</span>,
+    <span class="hljs-string">&apos;blog&apos;</span>,
+]</code></pre>
+<h3 id="&#x3B4;&#x3B7;&#x3BC;&#x3B9;&#x3BF;&#x3C5;&#x3C1;&#x3B3;&#x3AF;&#x3B1;-&#x3B5;&#x3BD;&#x3CC;&#x3C2;-post-model">&#x394;&#x3B7;&#x3BC;&#x3B9;&#x3BF;&#x3C5;&#x3C1;&#x3B3;&#x3AF;&#x3B1; &#x3B5;&#x3BD;&#x3CC;&#x3C2; post model</h3><p>&#x39C;&#x3AD;&#x3C3;&#x3B1; &#x3C3;&#x3C4;&#x3BF; &#x3B1;&#x3C1;&#x3C7;&#x3B5;&#x3AF;&#x3BF; <code>blog/models.py</code> &#x3BF;&#x3C1;&#x3AF;&#x3B6;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3CC;&#x3BB;&#x3B1; &#x3C4;&#x3B1; objects &#x3BC;&#x3B5; &#x3C4;&#x3BF; &#x3CC;&#x3BD;&#x3BF;&#x3BC;&#x3B1; <code>Models</code>. &#x391;&#x3C5;&#x3C4;&#x3CC; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3AD;&#x3BD;&#x3B1; &#x3BC;&#x3AD;&#x3C1;&#x3BF;&#x3C2; &#x3CC;&#x3C0;&#x3BF;&#x3C5; &#x3B8;&#x3B1; &#x3BF;&#x3C1;&#x3AF;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3C4;&#x3BF; post &#x3BC;&#x3BF;&#x3BD;&#x3C4;&#x3AD;&#x3BB;&#x3BF; &#x3BC;&#x3B1;&#x3C2;.</p><p>&#x391;&#x3C2; &#x3B1;&#x3BD;&#x3BF;&#x3AF;&#x3BE;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3C4;&#x3BF; &#x3B1;&#x3C1;&#x3C7;&#x3B5;&#x3AF;&#x3BF; <code>blog/models.py</code>, &#x3B4;&#x3B9;&#x3B1;&#x3B3;&#x3C1;&#x3AC;&#x3C8;&#x3C4;&#x3B5; &#x3C4;&#x3B1; &#x3C0;&#x3B5;&#x3C1;&#x3B9;&#x3B5;&#x3C7;&#x3CC;&#x3BC;&#x3B5;&#x3BD;&#x3B1; &#x3C4;&#x3BF;&#x3C5; &#x3BA;&#x3B1;&#x3B9; &#x3B3;&#x3C1;&#x3AC;&#x3C8;&#x3C4;&#x3B5; &#x3C4;&#x3B1; &#x3B5;&#x3BE;&#x3AE;&#x3C2;:</p><p></p><p class="code-label">blog/models.py</p><p></p><pre><code class="lang-python"><span class="hljs-keyword">from</span> django.conf <span class="hljs-keyword">import</span> settings
+<span class="hljs-keyword">from</span> django.db <span class="hljs-keyword">import</span> models
+<span class="hljs-keyword">from</span> django.utils <span class="hljs-keyword">import</span> timezone
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Post</span><span class="hljs-params">(models.Model)</span>:</span>
+    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    title = models.CharField(max_length=<span class="hljs-number">200</span>)
+    text = models.TextField()
+    created_date = models.DateTimeField(default=timezone.now)
+    published_date = models.DateTimeField(blank=<span class="hljs-keyword">True</span>, null=<span class="hljs-keyword">True</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">publish</span><span class="hljs-params">(self)</span>:</span>
+        self.published_date = timezone.now()
+        self.save()
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-keyword">return</span> self.title</code></pre>
+<blockquote><p>&#x3A3;&#x3B9;&#x3B3;&#x3BF;&#x3C5;&#x3C1;&#x3B5;&#x3C5;&#x3C4;&#x3B5;&#x3AF;&#x3C4;&#x3B5; &#x3CC;&#x3C4;&#x3B9; &#x3C7;&#x3C1;&#x3B7;&#x3C3;&#x3B9;&#x3BC;&#x3BF;&#x3C0;&#x3BF;&#x3B9;&#x3B5;&#x3AF;&#x3C4;&#x3B5; &#x3B4;&#x3CD;&#x3BF; &#x3C6;&#x3BF;&#x3C1;&#x3AD;&#x3C2; &#x3C4;&#x3B7;&#x3BD; &#x3BA;&#x3AC;&#x3C4;&#x3C9; &#x3C0;&#x3B1;&#x3CD;&#x3BB;&#x3B1; (<code>_</code>) &#x3C3;&#x3B5; &#x3BA;&#x3AC;&#x3B8;&#x3B5; &#x3C0;&#x3BB;&#x3B5;&#x3C5;&#x3C1;&#x3AC; &#x3C4;&#x3BF;&#x3C5; <code>str</code>. &#x391;&#x3C5;&#x3C4;&#x3CC; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3B1;&#x3C0;&#x3B1;&#x3C1;&#x3B1;&#x3AF;&#x3C4;&#x3B7;&#x3C4;&#x3BF; &#x3BA;&#x3B1;&#x3B9; &#x3C3;&#x3C5;&#x3C7;&#x3BD;&#x3AC; &#x3B8;&#x3B1; &#x3C4;&#x3BF; &#x3C3;&#x3C5;&#x3BD;&#x3B1;&#x3BD;&#x3C4;&#x3AC;&#x3C4;&#x3B5; &#x3C3;&#x3C4;&#x3B7;&#x3BD; Python. &#x3A3;&#x3C5;&#x3BD;&#x3B7;&#x3B8;&#x3AF;&#x3B6;&#x3B5;&#x3C4;&#x3B1;&#x3B9; &#x3BD;&#x3B1; &#x3BF;&#x3BD;&#x3BF;&#x3BC;&#x3AC;&#x3B6;&#x3B5;&#x3C4;&#x3B1;&#x3B9; &quot;dunder&quot; (&#x3C3;&#x3CD;&#x3BD;&#x3C4;&#x3BC;&#x3B7;&#x3C3;&#x3B7; &#x3B3;&#x3B9;&#x3B1; &quot;double-underscore&quot;).</p></blockquote><p>&#x39C;&#x3B7; &#x3C6;&#x3BF;&#x3B2;&#x3AC;&#x3C3;&#x3C4;&#x3B5;. &#x398;&#x3B1; &#x3B5;&#x3BE;&#x3B7;&#x3B3;&#x3AE;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3C4;&#x3B9; &#x3C3;&#x3C5;&#x3BC;&#x3B2;&#x3B1;&#x3AF;&#x3BD;&#x3B5;&#x3B9;!</p><p>&#x38C;&#x3BB;&#x3B5;&#x3C2; &#x3BF;&#x3B9; &#x3B3;&#x3C1;&#x3B1;&#x3BC;&#x3BC;&#x3AD;&#x3C2; &#x3C0;&#x3BF;&#x3C5; &#x3BE;&#x3B5;&#x3BA;&#x3B9;&#x3BD;&#x3BF;&#x3CD;&#x3BD; &#x3BC;&#x3B5; &#x3C4;&#x3B9;&#x3C2; &#x3BB;&#x3AD;&#x3BE;&#x3B5;&#x3B9;&#x3C2; <code>from</code> &#x3AE; <code>import</code> &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3B3;&#x3C1;&#x3B1;&#x3BC;&#x3BC;&#x3AD;&#x3C2; &#x3C0;&#x3BF;&#x3C5; &#x3B5;&#x3B9;&#x3C3;&#x3AC;&#x3B3;&#x3BF;&#x3C5;&#x3BD; &#x3BB;&#x3B5;&#x3B9;&#x3C4;&#x3BF;&#x3C5;&#x3C1;&#x3B3;&#x3AF;&#x3B5;&#x3C2; &#x3B1;&#x3C0;&#x3CC; &#x3AC;&#x3BB;&#x3BB;&#x3B1; Python &#x3B1;&#x3C1;&#x3C7;&#x3B5;&#x3AF;&#x3B1; (&#x3B1;&#x3C5;&#x3C4;&#x3AC; &#x3BC;&#x3B5; &#x3C4;&#x3B7;&#x3BD; &#x3BA;&#x3B1;&#x3C4;&#x3AC;&#x3BB;&#x3B7;&#x3BE;&#x3B7; .py). &#x388;&#x3C4;&#x3C3;&#x3B9; &#x3B1;&#x3BD;&#x3C4;&#x3AF; &#x3BD;&#x3B1; &#x3BA;&#x3AC;&#x3BD;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3B1;&#x3BD;&#x3C4;&#x3B9;&#x3B3;&#x3C1;&#x3B1;&#x3C6;&#x3AE;-&#x3B5;&#x3C0;&#x3B9;&#x3BA;&#x3CC;&#x3BB;&#x3BB;&#x3B7;&#x3C3;&#x3B7; &#x3BA;&#x3CE;&#x3B4;&#x3B9;&#x3BA;&#x3B1;, &#x3C0;&#x3BF;&#x3BB;&#x3CD; &#x3B1;&#x3C0;&#x3BB;&#x3AC; &#x3C3;&#x3C5;&#x3BC;&#x3C0;&#x3B5;&#x3C1;&#x3B9;&#x3BB;&#x3B1;&#x3BC;&#x3B2;&#x3AC;&#x3BD;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3BA;&#x3CE;&#x3B4;&#x3B9;&#x3BA;&#x3B1; &#x3B1;&#x3C0;&#x3CC; &#x3AC;&#x3BB;&#x3BB;&#x3B1; &#x3B1;&#x3C1;&#x3C7;&#x3B5;&#x3AF;&#x3B1; &#x3BC;&#x3B5; &#x3C4;&#x3B7; &#x3C7;&#x3C1;&#x3AE;&#x3C3;&#x3B7; &#x3C4;&#x3BF;&#x3C5; <code>from ... import ...</code>.</p><p><code>class Post(models.Model):</code> &#x2013; &#x3B1;&#x3C5;&#x3C4;&#x3AE; &#x3B7; &#x3B3;&#x3C1;&#x3B1;&#x3BC;&#x3BC;&#x3AE; &#x3BF;&#x3C1;&#x3AF;&#x3B6;&#x3B5;&#x3B9; &#x3C4;&#x3BF; &#x3BC;&#x3BF;&#x3BD;&#x3C4;&#x3AD;&#x3BB;&#x3BF; &#x3BC;&#x3B1;&#x3C2; (&#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3BC;&#x3B9;&#x3B1; &#x3BA;&#x3BB;&#x3AC;&#x3C3;&#x3B7; &#x3C0;&#x3BF;&#x3C5; &#x3BC;&#x3B5; &#x3C4;&#x3B7; &#x3C3;&#x3B5;&#x3B9;&#x3C1;&#x3AC; &#x3C4;&#x3B7;&#x3C2; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3BA;&#x3B1;&#x3B9; &#x3B1;&#x3C5;&#x3C4;&#x3AE; &#x3AD;&#x3BD;&#x3B1; <code>object</code>).</p><ul><li>&#x397; &#x3BB;&#x3AD;&#x3BE;&#x3B7; <code>class</code> &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3BC;&#x3B9;&#x3B1; &#x3B9;&#x3B4;&#x3B9;&#x3B1;&#x3AF;&#x3C4;&#x3B5;&#x3C1;&#x3B7; &#x3BB;&#x3AD;&#x3BE;&#x3B7;-&#x3BA;&#x3BB;&#x3B5;&#x3B9;&#x3B4;&#x3AF; &#x3C0;&#x3BF;&#x3C5; &#x3BA;&#x3B1;&#x3B8;&#x3BF;&#x3C1;&#x3AF;&#x3B6;&#x3B5;&#x3B9; &#x3C4;&#x3BF;&#x3BD; &#x3BF;&#x3C1;&#x3B9;&#x3C3;&#x3BC;&#x3CC; &#x3BC;&#x3B9;&#x3B1;&#x3C2; &#x3BA;&#x3BB;&#x3AC;&#x3C3;&#x3B7;&#x3C2;.
+</li>
+<li>&#x397; &#x3BB;&#x3AD;&#x3BE;&#x3B7; <code>Post</code> &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3C4;&#x3BF; &#x3CC;&#x3BD;&#x3BF;&#x3BC;&#x3B1; &#x3C4;&#x3BF;&#x3C5; &#x3BC;&#x3BF;&#x3BD;&#x3C4;&#x3AD;&#x3BB;&#x3BF;&#x3C5; &#x3BC;&#x3B1;&#x3C2;. &#x39C;&#x3C0;&#x3BF;&#x3C1;&#x3BF;&#x3CD;&#x3BC;&#x3B5; &#x3BD;&#x3B1; &#x3C4;&#x3BF;&#x3C5; &#x3B4;&#x3CE;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3CC;&#x3C0;&#x3BF;&#x3B9;&#x3BF; &#x3CC;&#x3BD;&#x3BF;&#x3BC;&#x3B1; &#x3B8;&#x3AD;&#x3BB;&#x3BF;&#x3C5;&#x3BC;&#x3B5; (&#x3B1;&#x3BB;&#x3BB;&#x3AC; &#x3C0;&#x3C1;&#x3AD;&#x3C0;&#x3B5;&#x3B9; &#x3BD;&#x3B1; &#x3B1;&#x3C0;&#x3BF;&#x3C6;&#x3B5;&#x3CD;&#x3B3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3B9;&#x3B4;&#x3B9;&#x3B1;&#x3AF;&#x3C4;&#x3B5;&#x3C1;&#x3BF;&#x3C5;&#x3C2; &#x3C7;&#x3B1;&#x3C1;&#x3B1;&#x3BA;&#x3C4;&#x3AE;&#x3C1;&#x3B5;&#x3C2; &#x3BA;&#x3B1;&#x3B9; &#x3BA;&#x3B5;&#x3BD;&#x3AC;). &#x3A0;&#x3AC;&#x3BD;&#x3C4;&#x3B1; &#x3C4;&#x3BF; &#x3CC;&#x3BD;&#x3BF;&#x3BC;&#x3B1; &#x3BC;&#x3B9;&#x3B1;&#x3C2; &#x3BA;&#x3BB;&#x3AC;&#x3C3;&#x3B7;&#x3C2; &#x3BD;&#x3B1; &#x3BE;&#x3B5;&#x3BA;&#x3B9;&#x3BD;&#x3AC;&#x3B5;&#x3B9; &#x3BC;&#x3B5; &#x3AD;&#x3BD;&#x3B1; &#x3BA;&#x3B5;&#x3C6;&#x3B1;&#x3BB;&#x3B1;&#x3AF;&#x3BF; &#x3B3;&#x3C1;&#x3AC;&#x3BC;&#x3BC;&#x3B1;.
+</li>
+<li>&#x397; &#x3B3;&#x3C1;&#x3B1;&#x3BC;&#x3BC;&#x3AE; <code>models.Model</code> &#x3C3;&#x3B7;&#x3BC;&#x3B1;&#x3AF;&#x3BD;&#x3B5;&#x3B9; &#x3CC;&#x3C4;&#x3B9; &#x3C4;&#x3BF; Post &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3AD;&#x3BD;&#x3B1; Django Model. &#x39C;&#x3B5; &#x3B1;&#x3C5;&#x3C4;&#x3CC; &#x3C4;&#x3BF;&#x3BD; &#x3C4;&#x3C1;&#x3CC;&#x3C0;&#x3BF; &#x3C4;&#x3BF; Django &#x3B8;&#x3B1; &#x3BE;&#x3AD;&#x3C1;&#x3B5;&#x3B9; &#x3CC;&#x3C4;&#x3B9; &#x3B8;&#x3B1; &#x3C0;&#x3C1;&#x3AD;&#x3C0;&#x3B5;&#x3B9; &#x3BD;&#x3B1; &#x3B1;&#x3C0;&#x3BF;&#x3B8;&#x3B7;&#x3BA;&#x3B5;&#x3CD;&#x3B5;&#x3C4;&#x3B1;&#x3B9; &#x3C3;&#x3B5; &#x3BC;&#x3B9;&#x3B1; &#x3B2;&#x3AC;&#x3C3;&#x3B7; &#x3B4;&#x3B5;&#x3B4;&#x3BF;&#x3BC;&#x3AD;&#x3BD;&#x3C9;&#x3BD;.
+</li></ul>
+<p>&#x3A4;&#x3CE;&#x3C1;&#x3B1; &#x3BF;&#x3C1;&#x3AF;&#x3B6;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3C4;&#x3B1; properties &#x3C0;&#x3BF;&#x3C5; &#x3BB;&#x3AD;&#x3B3;&#x3B1;&#x3BC;&#x3B5;: <code>title</code>, <code>text</code>, <code>created_date</code>, <code>published_date</code> &#x3BA;&#x3B1;&#x3B9; <code>author</code>. &#x393;&#x3B9;&#x3B1; &#x3BD;&#x3B1; &#x3C4;&#x3BF; &#x3BA;&#x3AC;&#x3BD;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3B1;&#x3C5;&#x3C4;&#x3CC; &#x3B8;&#x3B1; &#x3C0;&#x3C1;&#x3AD;&#x3C0;&#x3B5;&#x3B9; &#x3BD;&#x3B1; &#x3BF;&#x3C1;&#x3AF;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3C4;&#x3BF;&#x3BD; &#x3C4;&#x3CD;&#x3C0;&#x3BF; &#x3C4;&#x3B9;&#x3BC;&#x3CE;&#x3BD; &#x3C0;&#x3BF;&#x3C5; &#x3B8;&#x3B1; &#x3B4;&#x3AD;&#x3C7;&#x3B5;&#x3C4;&#x3B1;&#x3B9; &#x3C4;&#x3BF; &#x3BA;&#x3AC;&#x3B8;&#x3B5; &#x3C0;&#x3B5;&#x3B4;&#x3AF;&#x3BF; (&#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3BA;&#x3B5;&#x3AF;&#x3BC;&#x3B5;&#x3BD;&#x3BF;; &#x3B1;&#x3C1;&#x3B9;&#x3B8;&#x3BC;&#x3CC;&#x3C2;; &#x3B7;&#x3BC;&#x3B5;&#x3C1;&#x3BF;&#x3BC;&#x3B7;&#x3BD;&#x3AF;&#x3B1;; &#x3BA;&#x3AC;&#x3C0;&#x3BF;&#x3B9;&#x3B1; &#x3C3;&#x3C5;&#x3C3;&#x3C7;&#x3AD;&#x3C4;&#x3B9;&#x3C3;&#x3B7; &#x3BC;&#x3B5; &#x3AD;&#x3BD;&#x3B1; &#x3AC;&#x3BB;&#x3BB;&#x3BF; object, &#x3CC;&#x3C0;&#x3C9;&#x3C2; &#x3AD;&#x3BD;&#x3B1;&#x3C2; &#x3C7;&#x3C1;&#x3AE;&#x3C3;&#x3C4;&#x3B7;&#x3C2;;)</p><ul><li><code>models.CharField</code> &#x2013; &#x3AD;&#x3C4;&#x3C3;&#x3B9; &#x3B4;&#x3B7;&#x3BB;&#x3CE;&#x3BD;&#x3B5;&#x3C4;&#x3B5; &#x3CC;&#x3C4;&#x3B9; &#x3B8;&#x3AD;&#x3BB;&#x3B5;&#x3C4;&#x3B5; &#x3BD;&#x3B1; &#x3BF;&#x3C1;&#x3AF;&#x3C3;&#x3B5;&#x3C4;&#x3B5; &#x3AD;&#x3BD;&#x3B1; &#x3BA;&#x3B5;&#x3AF;&#x3BC;&#x3B5;&#x3BD;&#x3BF; &#x3BC;&#x3B5; &#x3C3;&#x3C5;&#x3B3;&#x3BA;&#x3B5;&#x3BA;&#x3C1;&#x3B9;&#x3BC;&#x3AD;&#x3BD;&#x3BF; &#x3B1;&#x3C1;&#x3B9;&#x3B8;&#x3BC;&#x3CC; &#x3C7;&#x3B1;&#x3C1;&#x3B1;&#x3BA;&#x3C4;&#x3AE;&#x3C1;&#x3C9;&#x3BD;.
+</li>
+<li><code>models.TextField</code>- &#x3B1;&#x3C5;&#x3C4;&#x3CC; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3B3;&#x3B9;&#x3B1; &#x3BC;&#x3B5;&#x3B3;&#x3AC;&#x3BB;&#x3B1; &#x3BA;&#x3B5;&#x3AF;&#x3BC;&#x3B5;&#x3BD;&#x3B1; &#x3C7;&#x3C9;&#x3C1;&#x3AF;&#x3C2; &#x3CC;&#x3C1;&#x3B9;&#x3BF;. &#x391;&#x3BA;&#x3BF;&#x3CD;&#x3B3;&#x3B5;&#x3C4;&#x3B1;&#x3B9; &#x3B9;&#x3B4;&#x3B1;&#x3BD;&#x3B9;&#x3BA;&#x3CC; &#x3B3;&#x3B9;&#x3B1; &#x3C0;&#x3B5;&#x3C1;&#x3B9;&#x3B5;&#x3C7;&#x3CC;&#x3BC;&#x3B5;&#x3BD;&#x3BF; &#x3B4;&#x3B7;&#x3BC;&#x3BF;&#x3C3;&#x3B9;&#x3B5;&#x3CD;&#x3C3;&#x3B5;&#x3C9;&#x3BD; blog, &#x3AD;&#x3C4;&#x3C3;&#x3B9; &#x3B4;&#x3B5;&#x3BD; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9;;
+</li>
+<li><code>models.DateTimeField</code>- &#x3B1;&#x3C5;&#x3C4;&#x3CC; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3B3;&#x3B9;&#x3B1; &#x3B7;&#x3BC;&#x3B5;&#x3C1;&#x3BF;&#x3BC;&#x3B7;&#x3BD;&#x3AF;&#x3B1; &#x3BA;&#x3B1;&#x3B9; &#x3CE;&#x3C1;&#x3B1;.
+</li>
+<li><code>models.ForeignKey</code>- &#x3B1;&#x3C5;&#x3C4;&#x3CC; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3AD;&#x3BD;&#x3B1;&#x3C2; &#x3C3;&#x3CD;&#x3BD;&#x3B4;&#x3B5;&#x3C3;&#x3BC;&#x3BF;&#x3C2; &#x3B3;&#x3B9;&#x3B1; &#x3AD;&#x3BD;&#x3B1; &#x3AC;&#x3BB;&#x3BB;&#x3BF; &#x3BC;&#x3BF;&#x3BD;&#x3C4;&#x3AD;&#x3BB;&#x3BF;.
+</li></ul>
+<p>&#x394;&#x3B5;&#x3BD; &#x3B8;&#x3B1; &#x3B5;&#x3BE;&#x3B7;&#x3B3;&#x3AE;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3BA;&#x3AC;&#x3B8;&#x3B5; &#x3BA;&#x3BF;&#x3BC;&#x3BC;&#x3AC;&#x3C4;&#x3B9; &#x3C4;&#x3BF;&#x3C5; &#x3BA;&#x3CE;&#x3B4;&#x3B9;&#x3BA;&#x3B1; &#x3B4;&#x3B9;&#x3CC;&#x3C4;&#x3B9; &#x3B8;&#x3B1; &#x3C0;&#x3AC;&#x3C1;&#x3B5;&#x3B9; &#x3B1;&#x3C1;&#x3BA;&#x3B5;&#x3C4;&#x3CC; &#x3C7;&#x3C1;&#x3CC;&#x3BD;&#x3BF;. &#x398;&#x3B1; &#x3C0;&#x3C1;&#x3AD;&#x3C0;&#x3B5;&#x3B9; &#x3BD;&#x3B1; &#x3C1;&#x3AF;&#x3BE;&#x3B5;&#x3C4;&#x3B5; &#x3BC;&#x3B9;&#x3B1; &#x3BC;&#x3B1;&#x3C4;&#x3B9;&#x3AC; &#x3C3;&#x3C4;o documentation &#x3C4;&#x3BF;&#x3C5; Django &#x3B1;&#x3BD; &#x3B8;&#x3AD;&#x3BB;&#x3B5;&#x3C4;&#x3B5; &#x3BD;&#x3B1; &#x3BC;&#x3AC;&#x3B8;&#x3B5;&#x3C4;&#x3B5; &#x3C0;&#x3B5;&#x3C1;&#x3B9;&#x3C3;&#x3C3;&#x3CC;&#x3C4;&#x3B5;&#x3C1;&#x3B1; &#x3C3;&#x3C7;&#x3B5;&#x3C4;&#x3B9;&#x3BA;&#x3AC; &#x3BC;&#x3B5; &#x3C4;&#x3B1; &#x3C0;&#x3B5;&#x3B4;&#x3AF;&#x3B1; &#x3C4;&#x3C9;&#x3BD; &#x3BC;&#x3BF;&#x3BD;&#x3C4;&#x3AD;&#x3BB;&#x3C9;&#x3BD; &#x3BA;&#x3B1;&#x3B9; &#x3C0;&#x3C9;&#x3C2; &#x3BD;&#x3B1; &#x3BF;&#x3C1;&#x3AF;&#x3B6;&#x3B5;&#x3C4;&#x3B5; &#x3C0;&#x3C1;&#x3AC;&#x3B3;&#x3BC;&#x3B1;&#x3C4;&#x3B1; &#x3B5;&#x3BA;&#x3C4;&#x3CC;&#x3C2; &#x3B1;&#x3C0;&#x3CC; &#x3B1;&#x3C5;&#x3C4;&#x3AC; &#x3C0;&#x3BF;&#x3C5; &#x3B1;&#x3BD;&#x3B1;&#x3C6;&#x3AD;&#x3C1;&#x3B8;&#x3B7;&#x3BA;&#x3B1;&#x3BD; &#x3C0;&#x3B1;&#x3C1;&#x3B1;&#x3C0;&#x3AC;&#x3BD;&#x3C9; (<a href="https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types" target="_blank">https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types</a>).</p><p>&#x3A4;&#x3B9; &#x3B3;&#x3AF;&#x3BD;&#x3B5;&#x3C4;&#x3B1;&#x3B9; &#x3BC;&#x3B5; &#x3C4;&#x3B7;&#x3BD; &#x3BC;&#x3AD;&#x3B8;&#x3BF;&#x3B4;&#x3BF; <code>def publish(self):</code>; &#x391;&#x3C5;&#x3C4;&#x3AE; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3B1;&#x3BA;&#x3C1;&#x3B9;&#x3B2;&#x3CE;&#x3C2; &#x3B7; &#x3BC;&#x3AD;&#x3B8;&#x3BF;&#x3B4;&#x3BF;&#x3C2; <code>publish</code> &#x3B3;&#x3B9;&#x3B1; &#x3C4;&#x3B7;&#x3BD; &#x3BF;&#x3C0;&#x3BF;&#x3AF;&#x3B1; &#x3BC;&#x3B9;&#x3BB;&#x3BF;&#x3CD;&#x3C3;&#x3B1;&#x3BC;&#x3B5; &#x3C0;&#x3C1;&#x3B9;&#x3BD;. <code>def</code> &#x3C3;&#x3B7;&#x3BC;&#x3B1;&#x3AF;&#x3BD;&#x3B5;&#x3B9; &#x3BF;&#x3C1;&#x3AF;&#x3B6;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3BC;&#x3B9;&#x3B1; &#x3C3;&#x3C5;&#x3BD;&#x3AC;&#x3C1;&#x3C4;&#x3B7;&#x3C3;&#x3B7;/&#x3BC;&#x3AD;&#x3B8;&#x3BF;&#x3B4;&#x3BF; (&#x3B1;&#x3BD;&#x3AC;&#x3BB;&#x3BF;&#x3B3;&#x3B1; &#x3B1;&#x3BD; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3BC;&#x3AD;&#x3C1;&#x3BF;&#x3C2; &#x3C4;&#x3B7;&#x3B5; &#x3BA;&#x3BB;&#x3AC;&#x3C3;&#x3B7;&#x3C2; &#x3AE; &#x3CC;&#x3C7;&#x3B9;) &#x3BA;&#x3B1;&#x3B9; <code>publish</code> &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3C4;&#x3BF; &#x3CC;&#x3BD;&#x3BF;&#x3BC;&#x3B1; &#x3C4;&#x3B7;&#x3C2;. &#x39C;&#x3C0;&#x3BF;&#x3C1;&#x3B5;&#x3AF;&#x3C4;&#x3B5; &#x3BD;&#x3B1; &#x3B1;&#x3BB;&#x3BB;&#x3AC;&#x3BE;&#x3B5;&#x3C4;&#x3B5; &#x3C4;&#x3BF; &#x3CC;&#x3BD;&#x3BF;&#x3BC;&#x3B1; &#x3C4;&#x3B7;&#x3C2; &#x3BC;&#x3B5;&#x3B8;&#x3CC;&#x3B4;&#x3BF;&#x3C5; &#x3B1;&#x3BD; &#x3B8;&#x3AD;&#x3BB;&#x3B5;&#x3C4;&#x3B5;. &#x39F; &#x3BA;&#x3B1;&#x3BD;&#x3CC;&#x3BD;&#x3B1;&#x3C2; &#x3BF;&#x3BD;&#x3BF;&#x3BC;&#x3B1;&#x3C3;&#x3AF;&#x3B1;&#x3C2; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3CC;&#x3C4;&#x3B9; &#x3C7;&#x3C1;&#x3B7;&#x3C3;&#x3B9;&#x3BC;&#x3BF;&#x3C0;&#x3BF;&#x3B9;&#x3BF;&#x3CD;&#x3BC;&#x3B5; &#x3C0;&#x3B5;&#x3B6;&#x3AC; &#x3B3;&#x3C1;&#x3AC;&#x3BC;&#x3BC;&#x3B1;&#x3C4;&#x3B1; &#x3BA;&#x3B1;&#x3B9; &#x3BA;&#x3AC;&#x3C4;&#x3C9; &#x3C0;&#x3B1;&#x3CD;&#x3BB;&#x3B5;&#x3C2; &#x3B1;&#x3BD;&#x3C4;&#x3AF; &#x3B3;&#x3B9;&#x3B1; &#x3BA;&#x3B5;&#x3BD;&#x3AC;. &#x391;&#x3BD; &#x3C7;&#x3C1;&#x3B7;&#x3C3;&#x3B9;&#x3BC;&#x3BF;&#x3C0;&#x3BF;&#x3B9;&#x3AE;&#x3C3;&#x3B5;&#x3C4;&#x3B5; &#x3BA;&#x3B5;&#x3BD;&#x3AC; &#x3C4;&#x3CC;&#x3C4;&#x3B5; &#x3BB;&#x3AC;&#x3B2;&#x3B5;&#x3C4;&#x3B5; &#x3C3;&#x3C6;&#x3AC;&#x3BB;&#x3BC;&#x3B1;. &#x393;&#x3B9;&#x3B1; &#x3C0;&#x3B1;&#x3C1;&#x3AC;&#x3B4;&#x3B5;&#x3B9;&#x3B3;&#x3BC;&#x3B1;, &#x3BC;&#x3B9;&#x3B1; &#x3BC;&#x3AD;&#x3B8;&#x3BF;&#x3B4;&#x3BF;&#x3C2; &#x3C0;&#x3BF;&#x3C5; &#x3C5;&#x3C0;&#x3BF;&#x3BB;&#x3BF;&#x3B3;&#x3AF;&#x3B6;&#x3B5;&#x3B9; &#x3C4;&#x3B7;&#x3BD; &#x3BC;&#x3AD;&#x3C3;&#x3B7; &#x3C4;&#x3B9;&#x3BC;&#x3AE; &#x3B8;&#x3B1; &#x3BB;&#x3B5;&#x3B3;&#x3CC;&#x3C4;&#x3B1;&#x3BD; <code>calculate_average_price</code>.</p><p>&#x39F;&#x3B9; &#x3BC;&#x3AD;&#x3B8;&#x3BF;&#x3B4;&#x3BF;&#x3B9; &#x3C3;&#x3C5;&#x3C7;&#x3BD;&#x3AC; &#x3BA;&#x3AC;&#x3BD;&#x3BF;&#x3C5;&#x3BD; <code>return</code> &#x3BA;&#x3AC;&#x3C4;&#x3B9;, &#x3B4;&#x3B7;&#x3BB;&#x3B1;&#x3B4;&#x3AE; &#x3B5;&#x3C0;&#x3B9;&#x3C3;&#x3C4;&#x3C1;&#x3AD;&#x3C6;&#x3BF;&#x3C5;&#x3BD; &#x3BC;&#x3B9;&#x3B1; &#x3C4;&#x3B9;&#x3BC;&#x3AE; &#x3AE; &#x3BF;&#x3C4;&#x3B9;&#x3B4;&#x3AE;&#x3C0;&#x3BF;&#x3C4;&#x3B5; &#x3AC;&#x3BB;&#x3BB;&#x3BF;. &#x39C;&#x3C0;&#x3BF;&#x3C1;&#x3B5;&#x3AF; &#x3CC;&#x3BC;&#x3C9;&#x3C2; &#x3BA;&#x3B1;&#x3B9; &#x3CC;&#x3C7;&#x3B9;. &#x3A5;&#x3C0;&#x3AC;&#x3C1;&#x3C7;&#x3B5;&#x3B9; &#x3AD;&#x3BD;&#x3B1; &#x3C0;&#x3B1;&#x3C1;&#x3AC;&#x3B4;&#x3B5;&#x3B9;&#x3B3;&#x3BC;&#x3B1; &#x3B1;&#x3C5;&#x3C4;&#x3BF;&#x3CD; &#x3C3;&#x3C4;&#x3B7; &#x3BC;&#x3AD;&#x3B8;&#x3BF;&#x3B4;&#x3BF; <code>__str__</code>. &#x3A3;&#x3B5; &#x3B1;&#x3C5;&#x3C4;&#x3CC; &#x3C4;&#x3BF; &#x3C3;&#x3B5;&#x3BD;&#x3AC;&#x3C1;&#x3B9;&#x3BF;, &#x3CC;&#x3C4;&#x3B1;&#x3BD; &#x3BA;&#x3B1;&#x3BB;&#x3BF;&#x3CD;&#x3BC;&#x3B5; &#x3C4;&#x3B7;&#x3BD; <code>__str__()</code> &#x3B8;&#x3B1; &#x3BB;&#x3AC;&#x3B2;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3AD;&#x3BD;&#x3B1; &#x3BA;&#x3B5;&#x3AF;&#x3BC;&#x3B5;&#x3BD;&#x3BF; (<strong>string</strong>) &#x3BC;&#x3B5; &#x3C4;&#x3BF;&#x3BD; &#x3C4;&#x3AF;&#x3C4;&#x3BB;&#x3BF; &#x3C4;&#x3BF;&#x3C5; post.</p><p>&#x395;&#x3C0;&#x3AF;&#x3C3;&#x3B7;&#x3C2; &#x3C0;&#x3C1;&#x3BF;&#x3C3;&#x3AD;&#x3BE;&#x3C4;&#x3B5; &#x3CC;&#x3C4;&#x3B9; &#x3BA;&#x3B1;&#x3B9; &#x3C4;&#x3BF; <code>def publish(self):</code> &#x3BA;&#x3B1;&#x3B9; &#x3C4;&#x3BF; <code>def __str__(self):</code> &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3B4;&#x3B7;&#x3BB;&#x3C9;&#x3BC;&#x3AD;&#x3BD;&#x3B1; &#x3BC;&#x3AD;&#x3C3;&#x3B1; &#x3C3;&#x3C4;&#x3B7;&#x3BD; &#x3BA;&#x3BB;&#x3AC;&#x3C3;&#x3B7; &#x3BC;&#x3B1;&#x3C2; (&#x3BC;&#x3B5; &#x3BA;&#x3B5;&#x3BD;&#x3AC; &#x3AE; &#x3BC;&#x3B5; tab). &#x395;&#x3C0;&#x3B5;&#x3B9;&#x3B4;&#x3AE; &#x3B7; Python &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3B5;&#x3C5;&#x3B1;&#x3AF;&#x3C3;&#x3B8;&#x3B7;&#x3C4;&#x3B7; &#x3C3;&#x3C4;&#x3B1; &#x3BA;&#x3B5;&#x3BD;&#x3AC; (&#x3C3;&#x3C4;&#x3BF;&#x3C5;&#x3C2; &#x3BA;&#x3B5;&#x3BD;&#x3BF;&#x3CD;&#x3C2; &#x3C7;&#x3B1;&#x3C1;&#x3B1;&#x3BA;&#x3C4;&#x3AE;&#x3C1;&#x3B5;&#x3C2;), &#x3B8;&#x3B1; &#x3C0;&#x3C1;&#x3AD;&#x3C0;&#x3B5;&#x3B9; &#x3BD;&#x3B1; &quot;&#x3B2;&#x3AC;&#x3BB;&#x3BF;&#x3C5;&#x3BC;&#x3B5;&quot; &#x3C4;&#x3B9;&#x3C2; &#x3BC;&#x3B5;&#x3B8;&#x3CC;&#x3B4;&#x3BF;&#x3C5;&#x3C2; &#x3BC;&#x3B1;&#x3C2; &#x3BC;&#x3AD;&#x3C3;&#x3B1; &#x3C3;&#x3C4;&#x3B7;&#x3BD; &#x3BA;&#x3BB;&#x3AC;&#x3C3;&#x3B7;. &#x391;&#x3BB;&#x3BB;&#x3B9;&#x3CE;&#x3C2;, &#x3BF;&#x3B9; &#x3BC;&#x3AD;&#x3B8;&#x3BF;&#x3B4;&#x3BF;&#x3B9; &#x3B4;&#x3B5;&#x3BD; &#x3B8;&#x3B1; &#x3B1;&#x3BD;&#x3AE;&#x3BA;&#x3BF;&#x3C5;&#x3BD; &#x3C3;&#x3C4;&#x3B7;&#x3BD; &#x3BA;&#x3BB;&#x3AC;&#x3C3;&#x3B7; &#x3BA;&#x3B1;&#x3B9; &#x3BC;&#x3C0;&#x3BF;&#x3C1;&#x3B5;&#x3AF; &#x3BD;&#x3B1; &#x3C3;&#x3C5;&#x3BD;&#x3B1;&#x3BD;&#x3C4;&#x3AE;&#x3C3;&#x3B5;&#x3C4;&#x3B5; &#x3B1;&#x3C0;&#x3C1;&#x3CC;&#x3BF;&#x3C0;&#x3C4;&#x3B7; &#x3C3;&#x3C5;&#x3BC;&#x3C0;&#x3B5;&#x3C1;&#x3B9;&#x3C6;&#x3BF;&#x3C1;&#x3AC;.</p><p>&#x395;&#x3AC;&#x3BD; &#x3BA;&#x3AC;&#x3C4;&#x3B9; &#x3B1;&#x3BA;&#x3CC;&#x3BC;&#x3B1; &#x3B4;&#x3B5;&#x3BD; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3BE;&#x3B5;&#x3BA;&#x3AC;&#x3B8;&#x3B1;&#x3C1;&#x3BF; &#x3C3;&#x3C7;&#x3B5;&#x3C4;&#x3B9;&#x3BA;&#x3AC; &#x3BC;&#x3B5; &#x3C4;&#x3B1; &#x3BC;&#x3BF;&#x3BD;&#x3C4;&#x3AD;&#x3BB;&#x3B1;, &#x3BC;&#x3B7; &#x3B4;&#x3B9;&#x3C3;&#x3C4;&#x3AC;&#x3C3;&#x3B5;&#x3C4;&#x3B5; &#x3BD;&#x3B1; &#x3C1;&#x3C9;&#x3C4;&#x3AE;&#x3C3;&#x3B5;&#x3C4;&#x3B5; &#x3C4;&#x3BF;&#x3BD; &#x3B5;&#x3C0;&#x3B9;&#x3C4;&#x3B7;&#x3C1;&#x3B7;&#x3C4;&#x3AE; &#x3C3;&#x3B1;&#x3C2;! &#x39E;&#x3AD;&#x3C1;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3CC;&#x3C4;&#x3B9; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3C0;&#x3B5;&#x3C1;&#x3AF;&#x3C0;&#x3BB;&#x3BF;&#x3BA;&#x3BF;, &#x3B5;&#x3B9;&#x3B4;&#x3B9;&#x3BA;&#x3AC; &#x3CC;&#x3C4;&#x3B1;&#x3BD; &#x3BC;&#x3B1;&#x3B8;&#x3B1;&#x3AF;&#x3BD;&#x3B5;&#x3C4;&#x3B5; &#x3C4;&#x3B9; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3C4;&#x3B1; &#x3B1;&#x3BD;&#x3C4;&#x3B9;&#x3BA;&#x3B5;&#x3AF;&#x3BC;&#x3B5;&#x3BD;&#x3B1; &#x3BA;&#x3B1;&#x3B9; &#x3C3;&#x3C5;&#x3BD;&#x3B1;&#x3C1;&#x3C4;&#x3AE;&#x3C3;&#x3B5;&#x3B9;&#x3C2; &#x3C4;&#x3B1;&#x3C5;&#x3C4;&#x3CC;&#x3C7;&#x3C1;&#x3BF;&#x3BD;&#x3B1;. &#x391;&#x3BB;&#x3BB;&#x3AC; &#x3B5;&#x3BB;&#x3C0;&#x3AF;&#x3B6;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3BD;&#x3B1; &#x3BC;&#x3BF;&#x3B9;&#x3AC;&#x3B6;&#x3B5;&#x3B9; &#x3BB;&#x3B9;&#x3B3;&#x3CC;&#x3C4;&#x3B5;&#x3C1;&#x3BF; &#x3BC;&#x3B1;&#x3B3;&#x3B9;&#x3BA;&#x3CC; &#x3B3;&#x3B9;&#x3B1; &#x3B5;&#x3C3;&#x3AC;&#x3C2; &#x3C4;&#x3CE;&#x3C1;&#x3B1;!</p><h3 id="&#x3B4;&#x3B7;&#x3BC;&#x3B9;&#x3BF;&#x3C5;&#x3C1;&#x3B3;&#x3AF;&#x3B1;-&#x3C0;&#x3B9;&#x3BD;&#x3AC;&#x3BA;&#x3C9;&#x3BD;-&#x3B3;&#x3B9;&#x3B1;-&#x3BC;&#x3BF;&#x3BD;&#x3C4;&#x3AD;&#x3BB;&#x3B1;-&#x3C3;&#x3C4;&#x3B7;&#x3BD;-&#x3B2;&#x3AC;&#x3C3;&#x3B7;-&#x3B4;&#x3B5;&#x3B4;&#x3BF;&#x3BC;&#x3AD;&#x3BD;&#x3C9;&#x3BD;-&#x3C3;&#x3B1;&#x3C2;">&#x394;&#x3B7;&#x3BC;&#x3B9;&#x3BF;&#x3C5;&#x3C1;&#x3B3;&#x3AF;&#x3B1; &#x3C0;&#x3B9;&#x3BD;&#x3AC;&#x3BA;&#x3C9;&#x3BD; &#x3B3;&#x3B9;&#x3B1; &#x3BC;&#x3BF;&#x3BD;&#x3C4;&#x3AD;&#x3BB;&#x3B1; &#x3C3;&#x3C4;&#x3B7;&#x3BD; &#x3B2;&#x3AC;&#x3C3;&#x3B7; &#x3B4;&#x3B5;&#x3B4;&#x3BF;&#x3BC;&#x3AD;&#x3BD;&#x3C9;&#x3BD; &#x3C3;&#x3B1;&#x3C2;</h3><p>&#x3A4;&#x3BF; &#x3C4;&#x3B5;&#x3BB;&#x3B5;&#x3C5;&#x3C4;&#x3B1;&#x3AF;&#x3BF; &#x3B2;&#x3AE;&#x3BC;&#x3B1; &#x3B5;&#x3B4;&#x3CE; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3BD;&#x3B1; &#x3C0;&#x3C1;&#x3BF;&#x3C3;&#x3B8;&#x3AD;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3C4;&#x3BF; &#x3BD;&#x3AD;&#x3BF; &#x3BC;&#x3BF;&#x3BD;&#x3C4;&#x3AD;&#x3BB;&#x3BF; &#x3BC;&#x3B1;&#x3C2; &#x3C3;&#x3C4;&#x3B7;&#x3BD; &#x3B2;&#x3AC;&#x3C3;&#x3B7; &#x3B4;&#x3B5;&#x3B4;&#x3BF;&#x3BC;&#x3AD;&#x3BD;&#x3C9;&#x3BD; &#x3BC;&#x3B1;&#x3C2;. &#x3A0;&#x3C1;&#x3CE;&#x3C4;&#x3B1; &#x3C0;&#x3C1;&#x3AD;&#x3C0;&#x3B5;&#x3B9; &#x3BD;&#x3B1; &#x3B5;&#x3BD;&#x3B7;&#x3BC;&#x3B5;&#x3C1;&#x3CE;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3C4;&#x3BF; Django &#x3CC;&#x3C4;&#x3B9; &#x3AD;&#x3C7;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3BA;&#x3AC;&#x3C0;&#x3BF;&#x3B9;&#x3B5;&#x3C2; &#x3B1;&#x3BB;&#x3BB;&#x3B1;&#x3B3;&#x3AD;&#x3C2; &#x3C3;&#x3C4;&#x3BF; &#x3BC;&#x3BF;&#x3BD;&#x3C4;&#x3AD;&#x3BB;&#x3BF; &#x3BC;&#x3B1;&#x3C2;. (&#x39C;&#x3CC;&#x3BB;&#x3B9;&#x3C2; &#x3C4;&#x3BF; &#x3B4;&#x3B7;&#x3BC;&#x3B9;&#x3BF;&#x3C5;&#x3C1;&#x3B3;&#x3AE;&#x3C3;&#x3B1;&#x3BC;&#x3B5;!) &#x3A0;&#x3B7;&#x3B3;&#x3B1;&#x3AF;&#x3BD;&#x3B5;&#x3C4;&#x3B5; &#x3C3;&#x3C4;&#x3BF; &#x3C0;&#x3B1;&#x3C1;&#x3AC;&#x3B8;&#x3C5;&#x3C1;&#x3BF; &#x3C4;&#x3B7;&#x3C2; &#x3BA;&#x3BF;&#x3BD;&#x3C3;&#x3CC;&#x3BB;&#x3B1;&#x3C2; &#x3C3;&#x3B1;&#x3C2; &#x3BA;&#x3B1;&#x3B9; &#x3C0;&#x3BB;&#x3B7;&#x3BA;&#x3C4;&#x3C1;&#x3BF;&#x3BB;&#x3BF;&#x3B3;&#x3AE;&#x3C3;&#x3C4;&#x3B5; <code>python manage.py makemigrations blog</code>. &#x398;&#x3B1; &#x3BC;&#x3BF;&#x3B9;&#x3AC;&#x3B6;&#x3B5;&#x3B9; &#x3BA;&#x3AC;&#x3C0;&#x3C9;&#x3C2; &#x3AD;&#x3C4;&#x3C3;&#x3B9;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        (myvenv) ~/djangogirls$ python manage.py makemigrations blog
+        Migrations for &apos;blog&apos;:
+          blog/migrations/0001_initial.py:
+
+          - Create model Post</code></pre>
+<p><strong>&#x3A3;&#x3B7;&#x3BC;&#x3B5;&#x3AF;&#x3C9;&#x3C3;&#x3B7;:</strong> &#x398;&#x3C5;&#x3BC;&#x3B7;&#x3B8;&#x3B5;&#x3AF;&#x3C4;&#x3B5; &#x3BD;&#x3B1; &#x3B1;&#x3C0;&#x3BF;&#x3B8;&#x3B7;&#x3BA;&#x3B5;&#x3CD;&#x3B5;&#x3C4;&#x3B5; &#x3C4;&#x3B1; &#x3B1;&#x3C1;&#x3C7;&#x3B5;&#x3AF;&#x3B1; &#x3C0;&#x3BF;&#x3C5; &#x3B5;&#x3C0;&#x3B5;&#x3BE;&#x3B5;&#x3C1;&#x3B3;&#x3AC;&#x3B6;&#x3B5;&#x3C3;&#x3C4;&#x3B5;. &#x391;&#x3BB;&#x3BB;&#x3B9;&#x3CE;&#x3C2;, &#x3BF; &#x3C5;&#x3C0;&#x3BF;&#x3BB;&#x3BF;&#x3B3;&#x3B9;&#x3C3;&#x3C4;&#x3AE;&#x3C2; &#x3C3;&#x3B1;&#x3C2; &#x3B8;&#x3B1; &#x3B5;&#x3BA;&#x3C4;&#x3B5;&#x3BB;&#x3AD;&#x3C3;&#x3B5;&#x3B9; &#x3C4;&#x3B9;&#x3C2; &#x3C0;&#x3C1;&#x3BF;&#x3B7;&#x3B3;&#x3BF;&#x3CD;&#x3BC;&#x3B5;&#x3BD;&#x3B5;&#x3C2; &#x3B5;&#x3BA;&#x3B4;&#x3CC;&#x3C3;&#x3B5;&#x3B9;&#x3C2; &#x3C0;&#x3BF;&#x3C5; &#x3BC;&#x3C0;&#x3BF;&#x3C1;&#x3B5;&#x3AF; &#x3BD;&#x3B1; &#x3C3;&#x3B1;&#x3C2; &#x3B4;&#x3CE;&#x3C3;&#x3B5;&#x3B9; &#x3BC;&#x3B7;&#x3BD;&#x3CD;&#x3BC;&#x3B1;&#x3C4;&#x3B1; &#x3B1;&#x3C0;&#x3C1;&#x3CC;&#x3BF;&#x3C0;&#x3C4;&#x3C9;&#x3BD; &#x3C3;&#x3C6;&#x3B1;&#x3BB;&#x3BC;&#x3AC;&#x3C4;&#x3C9;&#x3BD;.</p><p>&#x3A4;&#x3BF; Django &#x3C0;&#x3C1;&#x3BF;&#x3B5;&#x3C4;&#x3BF;&#x3AF;&#x3BC;&#x3B1;&#x3C3;&#x3B5; &#x3AD;&#x3BD;&#x3B1; &#x3B1;&#x3C1;&#x3C7;&#x3B5;&#x3AF;&#x3BF; migration &#x3B3;&#x3B9;&#x3B1; &#x3B5;&#x3BC;&#x3AC;&#x3C2; &#x3C0;&#x3BF;&#x3C5; &#x3C0;&#x3C1;&#x3AD;&#x3C0;&#x3B5;&#x3B9; &#x3C4;&#x3CE;&#x3C1;&#x3B1; &#x3BD;&#x3B1; &#x3B5;&#x3C6;&#x3B1;&#x3C1;&#x3BC;&#x3CC;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3C3;&#x3C4;&#x3B7;&#x3BD; &#x3B2;&#x3AC;&#x3C3;&#x3B7; &#x3B4;&#x3B5;&#x3B4;&#x3BF;&#x3BC;&#x3AD;&#x3BD;&#x3C9;&#x3BD; &#x3BC;&#x3B1;&#x3C2;. &#x3A0;&#x3BB;&#x3B7;&#x3BA;&#x3C4;&#x3C1;&#x3BF;&#x3BB;&#x3BF;&#x3B3;&#x3AE;&#x3C3;&#x3C4;&#x3B5; <code>python manage.py migrate blog</code> &#x3BA;&#x3B1;&#x3B9; &#x3C4;o &#x3B1;&#x3C0;&#x3BF;&#x3C4;&#x3B5;&#x3BB;&#x3AD;&#x3C3;&#x3BC;&#x3B1;&#x3C4;&#x3B1; &#x3C0;&#x3C1;&#x3AD;&#x3C0;&#x3B5;&#x3B9; &#x3BD;&#x3B1; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3CC;&#x3C0;&#x3C9;&#x3C2; &#x3C0;&#x3B1;&#x3C1;&#x3B1;&#x3BA;&#x3AC;&#x3C4;&#x3C9;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        (myvenv) ~/djangogirls$ python manage.py migrate blog
+        Operations to perform:
+          Apply all migrations: blog
+        Running migrations:
+          Applying blog.0001_initial... OK</code></pre>
+<p>&#x396;&#x3AE;&#x3C4;&#x3C9;! &#x3A4;&#x3BF; Post &#x3BC;&#x3BF;&#x3BD;&#x3C4;&#x3AD;&#x3BB;&#x3BF; &#x3BC;&#x3B1;&#x3C2; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3C3;&#x3C4;&#x3B7;&#x3BD; &#x3B2;&#x3AC;&#x3C3;&#x3B7; &#x3B4;&#x3B5;&#x3B4;&#x3BF;&#x3BC;&#x3AD;&#x3BD;&#x3C9;&#x3BD;! &#x398;&#x3B1; &#x3AE;&#x3C4;&#x3B1;&#x3BD; &#x3C9;&#x3C1;&#x3B1;&#x3AF;&#x3BF; &#x3BD;&#x3B1; &#x3C4;&#x3BF; &#x3B4;&#x3BF;&#x3CD;&#x3BC;&#x3B5;, &#x3C3;&#x3C9;&#x3C3;&#x3C4;&#x3AC;; &#x3A0;&#x3B7;&#x3B3;&#x3B1;&#x3AF;&#x3BD;&#x3B5;&#x3C4;&#x3B5; &#x3C3;&#x3C4;&#x3BF; &#x3B5;&#x3C0;&#x3CC;&#x3BC;&#x3B5;&#x3BD;&#x3BF; &#x3BA;&#x3B5;&#x3C6;&#x3AC;&#x3BB;&#x3B1;&#x3B9;&#x3BF; &#x3B3;&#x3B9;&#x3B1; &#x3BD;&#x3B1; &#x3B4;&#x3B5;&#x3AF;&#x3C4;&#x3B5; &#x3C0;&#x3C9;&#x3C2; &#x3BC;&#x3BF;&#x3B9;&#x3AC;&#x3B6;&#x3B5;&#x3B9; &#x3B7; &#x3B1;&#x3BD;&#x3AC;&#x3C1;&#x3C4;&#x3B7;&#x3C3;&#x3B7; &#x3C3;&#x3B1;&#x3C2;!</p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../django_start_project/" class="navigation navigation-prev " aria-label="Previous page: Το πρώτο σου Django project!">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../django_admin/" class="navigation navigation-next " aria-label="Next page: Διαχείριση μέσω Django admin">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Μοντέλα (models) του Django","level":"1.12","depth":1,"next":{"title":"Διαχείριση μέσω Django admin","level":"1.13","depth":1,"path":"django_admin/README.md","ref":"django_admin/README.md","articles":[]},"previous":{"title":"Το πρώτο σου Django project!","level":"1.11","depth":1,"path":"django_start_project/README.md","ref":"django_start_project/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"django_version":"2.2.4"},"language":"el","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"django_models/README.md","mtime":"2020-06-27T13:00:23.714Z","type":"markdown"},"gitbook":{"version":"3.4.0","time":"2020-06-27T13:00:41.274Z"},"basePath":"..","book":{"language":"el"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

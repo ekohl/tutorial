@@ -1,0 +1,617 @@
+
+<!DOCTYPE HTML>
+<html lang="zh" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>模板中的动态数据 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.4.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../django_templates/" />
+    
+    
+    <link rel="prev" href="../django_orm/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    互联网是如何工作的？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    命令行介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Python的安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    代码编辑器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Python 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Django 是什么？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Django安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    你的第一个Django 项目 ！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Django模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    部署！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django urls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django视图 - 抓紧时间去创建！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    HTML简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM (查询集)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.18" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    模板中的动态数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - 让其更漂亮
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    模板扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    扩展您的应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Django表单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    接下来呢？
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本書使用 HonKit 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >模板中的动态数据</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x6A21;&#x677F;&#x4E2D;&#x7684;&#x52A8;&#x6001;&#x6570;&#x636E;">&#x6A21;&#x677F;&#x4E2D;&#x7684;&#x52A8;&#x6001;&#x6570;&#x636E;</h1><p>&#x6211;&#x4EEC;&#x5DF2;&#x6709;&#x7684;&#x51E0;&#x4EF6;&#xFF1A; <code>Post</code> &#x6A21;&#x578B;&#x5B9A;&#x4E49;&#x5728; <code>models.py</code> &#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x6709; <code>post_list</code> <code>views.py</code> &#x548C;&#x6DFB;&#x52A0;&#x7684;&#x6A21;&#x677F;&#x4E2D;&#x3002; &#x4F46;&#x5B9E;&#x9645;&#x4E0A;&#x6211;&#x4EEC;&#x5982;&#x4F55;&#x4F7F;&#x6211;&#x4EEC;&#x7684;&#x5E16;&#x5B50;&#x51FA;&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x7684; HTML &#x6A21;&#x677F;&#x4E0A;&#x5462;&#xFF1F; &#x56E0;&#x4E3A;&#x90A3;&#x662F;&#x6211;&#x4EEC;&#x6240;&#x60F3;&#x8981;&#x7684;&#xFF1A; &#x83B7;&#x53D6;&#x4E00;&#x4E9B;&#x5185;&#x5BB9; &#xFF08;&#x4FDD;&#x5B58;&#x5728;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x6A21;&#x578B;&#xFF09; &#x7136;&#x540E;&#x5728;&#x6211;&#x4EEC;&#x7684;&#x6A21;&#x677F;&#x4E2D;&#x5F88;&#x6F02;&#x4EAE;&#x7684;&#x5C55;&#x793A;&#xFF0C;&#x5BF9;&#x5417;&#xFF1F;</p><p>&#x8FD9;&#x5C31;&#x662F; <em>views</em> &#x5E94;&#x8BE5;&#x505A;&#x7684;&#xFF1A; &#x8FDE;&#x63A5;&#x6A21;&#x578B;&#x548C;&#x6A21;&#x677F;&#x3002; &#x5728;&#x6211;&#x4EEC;&#x7684; <code>post_list</code> <em>&#x89C6;&#x56FE;</em> &#x4E2D;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x83B7;&#x53D6;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x663E;&#x793A;&#x7684;&#x6A21;&#x578B;&#xFF0C;&#x5E76;&#x5C06;&#x5B83;&#x4EEC;&#x4F20;&#x9012;&#x5230;&#x6A21;&#x677F;&#x4E2D;&#x53BB;&#x3002; &#x6240;&#x4EE5;&#x57FA;&#x672C;&#x4E0A;&#x5728; <em>&#x89C6;&#x56FE;</em> &#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x51B3;&#x5B9A;&#x4EC0;&#x4E48; &#xFF08;&#x6A21;&#x578B;&#xFF09; &#x5C06;&#x663E;&#x793A;&#x5728;&#x6A21;&#x677F;&#x4E2D;&#x3002;</p><p>&#x597D;&#x5427;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x5B83;&#x5462;&#xFF1F;</p><p>&#x6211;&#x4EEC;&#x9700;&#x8981;&#x6253;&#x5F00;&#x6211;&#x4EEC;&#x7684; <code>blog/views.py</code>&#x3002;&#x5230;&#x76EE;&#x524D;&#x4E3A;&#x6B62; <code>post_list</code> <em>view</em> &#x770B;&#x8D77;&#x6765;&#x50CF;&#x8FD9;&#x6837;&#xFF1A;</p><pre><code>        from django.shortcuts import render
+
+        def post_list(request):
+            return render(request, &apos;blog/post_list.html&apos;, {})</code></pre>
+<p>&#x8FD8;&#x8BB0;&#x5F97;&#x5F53;&#x6211;&#x4EEC;&#x8C08;&#x8BBA;&#x8FC7;&#x5BFC;&#x5165;&#x5728;&#x4E0D;&#x540C;&#x6587;&#x4EF6;&#x4E2D;&#x7F16;&#x5199;&#x7684;&#x4EE3;&#x7801;&#x5417;&#xFF1F; &#x73B0;&#x5728;&#x662F;&#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x5BFC;&#x5165;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x5199;&#x5728; <code>models.py</code> &#x91CC;&#x7684;&#x6A21;&#x578B;&#x7684;&#x65F6;&#x5019;&#x4E86;&#x3002; &#x6211;&#x4EEC;&#x5C06;&#x6DFB;&#x52A0;&#x8FD9;&#x884C; <code>from .models import Post</code>&#xFF0C;&#x50CF;&#x8FD9;&#x6837;&#xFF1A;</p><pre><code>        from django.shortcuts import render
+        from .models import Post</code></pre>
+<p><code>from</code> &#x540E;&#x9762;&#x7684;&#x70B9;&#x53F7;&#x610F;&#x5473;&#x7740; <em>&#x5F53;&#x524D;&#x76EE;&#x5F55;</em> &#x6216; <em>&#x5F53;&#x524D;&#x7684;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;</em>&#x3002; &#x56E0;&#x4E3A; <code>views.py</code> &#x548C; <code>models.py</code> &#x662F;&#x5728;&#x540C;&#x4E00;&#x76EE;&#x5F55;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x8981;&#x4F7F;&#x7528; <code>.</code> &#x548C; &#x6587;&#x4EF6;&#x7684;&#x540D;&#x79F0;&#xFF08;&#x65E0; <code>.py</code>) &#x3002; &#x7136;&#x540E;&#x6211;&#x4EEC;&#x5BFC;&#x5165;&#x6A21;&#x578B;&#xFF08;<code>Post</code>).</p><p>&#x4F46;&#x63A5;&#x4E0B;&#x6765;&#x662F;&#x4EC0;&#x4E48;&#x5462;&#xFF1F;&#x4E3A;&#x4E86;&#x8BA9;&#x5B9E;&#x9645;&#x7684;&#x535A;&#x5BA2;&#x5E16;&#x5B50;&#x4ECE; <code>Post</code> &#x6A21;&#x578B;&#x91CC;&#x83B7;&#x53D6;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4E00;&#x79CD;&#x53EB;&#x505A; <code>QuerySet</code>&#x7684;&#x4E1C;&#x897F;.</p><h2 id="queryset-&#x67E5;&#x8BE2;&#x96C6;">QuerySet &#x67E5;&#x8BE2;&#x96C6;</h2><p>&#x60A8;&#x5E94;&#x8BE5;&#x5DF2;&#x7ECF;&#x719F;&#x6089; Queryset &#x662F;&#x5982;&#x4F55;&#x5DE5;&#x4F5C;&#x7684;&#x3002;&#x6211;&#x4EEC;&#x5728; <a href="../django_orm/">Django ORM (Queryset) &#x7AE0;&#x8282;</a>&#x8C08;&#x8BBA;&#x8FC7;&#x5B83;.</p><p>&#x6240;&#x4EE5;&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x5BF9;&#x5DF2;&#x7ECF;&#x53D1;&#x8868;&#x5E76;&#x8FDB;&#x884C;&#x7531; <code>published_date</code>&#x6392;&#x5E8F;&#x7684;&#x535A;&#x5BA2;&#x5217;&#x8868;&#x611F;&#x5174;&#x8DA3;&#xFF0C;&#x5BF9;&#x5417;&#xFF1F;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x5728; QuerySets &#x67E5;&#x8BE2;&#x96C6;&#x4E00;&#x8282;&#x91CC;&#x8FD9;&#x4E48;&#x5E72;&#x8FC7;&#xFF01;</p><pre><code>        Post.objects.filter(published_date__lte=timezone.now()).order_by(&apos;published_date&apos;)</code></pre>
+<p>&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x628A;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x63D2;&#x5165; <code>blog/views.py</code> &#x6587;&#x4EF6;&#xFF0C;&#x6DFB;&#x52A0;&#x5230;&#x51FD;&#x6570; <code>def post_list(request)</code>&#x91CC;&#x53BB;&#xFF1A;</p><pre><code>        from django.shortcuts import render
+        from django.utils import timezone
+        from .models import Post
+
+        def post_list(request):
+            posts = Post.objects.filter(published_date__lte=timezone.now()).order_by(&apos;published_date&apos;)
+            return render(request, &apos;blog/post_list.html&apos;, {})</code></pre>
+<p>&#x8BF7;&#x6CE8;&#x610F;&#x6211;&#x4EEC;&#x4E3A;&#x8FD9;&#x91CC;&#x7684; QuerySet&#x67E5;&#x8BE2;&#x96C6;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A; <em>&#x53D8;&#x91CF;</em>&#xFF1A; <code>posts</code>&#x3002;&#x5C06;&#x6B64;&#x89C6;&#x4E3A;&#x6211;&#x4EEC;&#x7684; QuerySet &#x7684;&#x540D;&#x5B57;&#x3002;&#x4ECE;&#x73B0;&#x5728;&#x5F00;&#x59CB;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x540D;&#x5B57;&#x5F15;&#x7528;&#x5B83;&#x3002;</p><p>&#x540C;&#x65F6;&#xFF0C;&#x4EE3;&#x7801;&#x4E2D;&#x4F7F;&#x7528;&#x4E86; <code>timezone.now()</code> &#x51FD;&#x6570;&#xFF0C;&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x5BFC;&#x5165; <code>timezone</code>.</p><p>&#x6700;&#x540E;&#x8FD8;&#x6CA1;&#x6709;&#x5B8C;&#x6210;&#x7684;&#x90E8;&#x5206;&#x662F;&#x4F20;&#x9012; <code>posts</code> &#x67E5;&#x8BE2;&#x96C6;&#x5230;&#x6A21;&#x677F;&#x4E2D; &#xFF08;&#x6211;&#x4EEC;&#x5C06;&#x5728;&#x4E0B;&#x4E00;&#x7AE0;&#x4E2D;&#x4ECB;&#x7ECD;&#x5982;&#x4F55;&#x663E;&#x793A;&#x5B83;&#xFF09;&#x3002;</p><p>&#x5728;<code>render</code> &#x51FD;&#x6570;&#x4E2D;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x6709;&#x4E86; <code>&#x8BF7;&#x6C42;</code> &#xFF08;&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x4E92;&#x8054;&#x7F51;&#x4ECE;&#x7528;&#x6237;&#x63A5;&#x6536;&#x7684;&#x4E00;&#x5207;&#xFF09; &#x548C;&#x6A21;&#x677F;&#x6587;&#x4EF6; <code>&apos;blog/post_list.html&apos;</code> &#x53C2;&#x6570;&#x3002; &#x6700;&#x540E;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x770B;&#x8D77;&#x6765;&#x50CF;&#x8FD9;&#x6837;&#xFF1A; <code>{}</code> &#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x5176;&#x4E2D;&#x6DFB;&#x52A0;&#x4E00;&#x4E9B;&#x6A21;&#x677F;&#x8981;&#x4F7F;&#x7528;&#x7684;&#x4E1C;&#x897F;&#x3002; &#x6211;&#x4EEC;&#x9700;&#x8981;&#x7ED9;&#x5B83;&#x4EEC;&#x8D77;&#x540D;&#x5B57; &#xFF08;&#x6211;&#x4EEC;&#x6682;&#x4E14;&#x6CBF;&#x7528; <code>&apos;posts&apos;</code> :)&#xFF09;&#x3002; &#x5B83;&#x5E94;&#x8BE5;&#x770B;&#x8D77;&#x6765;&#x50CF;&#x8FD9;&#x6837;&#xFF1A; <code>{&apos;posts&apos;: posts}</code>&#x3002; &#x8BF7;&#x6CE8;&#x610F;&#xFF0C;<code>:</code> &#x4E4B;&#x524D;&#x7684;&#x90E8;&#x5206;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#xFF1B;&#x4F60;&#x9700;&#x8981;&#x5C06;&#x5B83;&#x7528;&#x5F15;&#x53F7;&#x5305;&#x56F4; <code>&apos;&apos;</code>.</p><p>&#x6240;&#x4EE5;&#x6700;&#x540E;&#x6211;&#x4EEC;&#x7684; <code>blog/views.py</code> &#x6587;&#x4EF6;&#x5E94;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p><pre><code>        from django.shortcuts import render
+        from django.utils import timezone
+        from .models import Post
+
+        def post_list(request):
+            posts = Post.objects.filter(published_date__lte=timezone.now()).order_by(&apos;published_date&apos;)
+            return render(request, &apos;blog/post_list.html&apos;, {&apos;posts&apos;: posts})</code></pre>
+<p>&#x5C31;&#x662F;&#x5B83; &#xFF01;&#x73B0;&#x5728;&#x56DE;&#x5230;&#x6211;&#x4EEC;&#x7684;&#x6A21;&#x677F;&#x5E76;&#x663E;&#x793A;&#x6B64;QuerySet&#x67E5;&#x8BE2;&#x96C6;&#xFF01;</p><p>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x4E86;&#x89E3;&#x66F4;&#x591A;&#x5173;&#x4E8E;QuerySert&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x90A3;&#x4E48;&#x4F60;&#x53EF;&#x5728;&#x8FD9;&#x91CC;&#x5F97;&#x5230;&#x5E2E;&#x52A9;&#xFF1A;<a href="https://docs.djangoproject.com/en/1.8/ref/models/querysets/" target="_blank">https://docs.djangoproject.com/en/1.8/ref/models/querysets/</a></p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../django_orm/" class="navigation navigation-prev " aria-label="Previous page: Django ORM (查询集)">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../django_templates/" class="navigation navigation-next " aria-label="Next page: Django模板">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"模板中的动态数据","level":"1.18","depth":1,"next":{"title":"Django模板","level":"1.19","depth":1,"path":"django_templates/README.md","ref":"django_templates/README.md","articles":[]},"previous":{"title":"Django ORM (查询集)","level":"1.17","depth":1,"path":"django_orm/README.md","ref":"django_orm/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"django_version":"2.2.4"},"language":"zh","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"dynamic_data_in_templates/README.md","mtime":"2020-06-27T13:00:24.210Z","type":"markdown"},"gitbook":{"version":"3.4.0","time":"2020-06-27T13:00:41.274Z"},"basePath":"..","book":{"language":"zh"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

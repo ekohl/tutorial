@@ -1,0 +1,665 @@
+
+<!DOCTYPE HTML>
+<html lang="ru" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Твой первый проект на Django! · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.4.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../django_models/" />
+    
+    
+    <link rel="prev" href="../django_installation/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Введите условия поиска" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Введение
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Установка
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    Установка (chromebook)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    Как работает Интернет
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Знакомство с командной строкой
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Установка Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    Текстовый редактор
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Введение в Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Что же представляет из себя Django?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Установка Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Твой первый проект на Django!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Модели Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Администрирование Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Публикация в Интернет!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    URL-адреса Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Представления в Django – время создавать!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    Введение в HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM (Querysets)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    Динамически изменяющиеся данные в шаблонах
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Шаблоны Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - сделай это красивым
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Расширение шаблона
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Расширяем свое приложение
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Формы в Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    Что дальше?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Опубликовано с помощью HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Твой первый проект на Django!</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x442;&#x432;&#x43E;&#x439;-&#x43F;&#x435;&#x440;&#x432;&#x44B;&#x439;-&#x43F;&#x440;&#x43E;&#x435;&#x43A;&#x442;-&#x43D;&#x430;-django">&#x422;&#x432;&#x43E;&#x439; &#x43F;&#x435;&#x440;&#x432;&#x44B;&#x439; &#x43F;&#x440;&#x43E;&#x435;&#x43A;&#x442; &#x43D;&#x430; Django!</h1><blockquote><p>&#x427;&#x430;&#x441;&#x442;&#x44C; &#x44D;&#x442;&#x43E;&#x439; &#x433;&#x43B;&#x430;&#x432;&#x44B; &#x43E;&#x441;&#x43D;&#x43E;&#x432;&#x430;&#x43D;&#x430; &#x43D;&#x430; &#x443;&#x447;&#x435;&#x431;&#x43D;&#x44B;&#x445; &#x43F;&#x43E;&#x441;&#x43E;&#x431;&#x438;&#x44F;&#x445; Geek Girls Carrots (<a href="https://github.com/ggcarrots/django-carrots" target="_blank">https://github.com/ggcarrots/django-carrots</a>).</p><p>&#x41E;&#x442;&#x434;&#x435;&#x43B;&#x44C;&#x43D;&#x44B;&#x435; &#x447;&#x430;&#x441;&#x442;&#x438; &#x44D;&#x442;&#x43E;&#x439; &#x433;&#x43B;&#x430;&#x432;&#x44B; &#x43E;&#x441;&#x43D;&#x43E;&#x432;&#x430;&#x43D;&#x44B; &#x43D;&#x430; &#x443;&#x447;&#x435;&#x431;&#x43D;&#x43E;&#x43C; &#x43F;&#x43E;&#x441;&#x43E;&#x431;&#x438;&#x438; <a href="http://django-marcador.keimlink.de/" target="_blank">django-marcador </a>, &#x43B;&#x438;&#x446;&#x435;&#x43D;&#x437;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x43D;&#x43D;&#x43E;&#x43C; &#x43F;&#x43E;&#x434; Creative Commons Attribution-ShareAlike 4.0 International License. &#x420;&#x443;&#x43A;&#x43E;&#x432;&#x43E;&#x434;&#x441;&#x442;&#x432;&#x43E; django-marcador &#x437;&#x430;&#x449;&#x438;&#x449;&#x435;&#x43D;&#x43E; &#x430;&#x432;&#x442;&#x43E;&#x440;&#x441;&#x43A;&#x438;&#x43C; &#x43F;&#x440;&#x430;&#x432;&#x43E;&#x43C; Markus Zapke-Gr&#xFC;ndemann et al.</p></blockquote><p>&#x41C;&#x44B; &#x441;&#x43E;&#x431;&#x438;&#x440;&#x430;&#x435;&#x43C;&#x441;&#x44F; &#x441;&#x43E;&#x437;&#x434;&#x430;&#x442;&#x44C; &#x43F;&#x440;&#x43E;&#x441;&#x442;&#x43E;&#x439; &#x431;&#x43B;&#x43E;&#x433;!</p><p>&#x41F;&#x435;&#x440;&#x432;&#x44B;&#x439; &#x448;&#x430;&#x433; &#x2014; &#x441;&#x43E;&#x437;&#x434;&#x430;&#x442;&#x44C; &#x43D;&#x43E;&#x432;&#x44B;&#x439; &#x43F;&#x440;&#x43E;&#x435;&#x43A;&#x442; Django. &#x412; &#x441;&#x443;&#x449;&#x43D;&#x43E;&#x441;&#x442;&#x438;, &#x44D;&#x442;&#x43E; &#x437;&#x43D;&#x430;&#x447;&#x438;&#x442;, &#x447;&#x442;&#x43E; &#x43C;&#x44B; &#x437;&#x430;&#x43F;&#x443;&#x441;&#x442;&#x438;&#x43C; &#x43D;&#x435;&#x441;&#x43A;&#x43E;&#x43B;&#x44C;&#x43A;&#x43E; &#x441;&#x442;&#x430;&#x43D;&#x434;&#x430;&#x440;&#x442;&#x43D;&#x44B;&#x445; &#x441;&#x43A;&#x440;&#x438;&#x43F;&#x442;&#x43E;&#x432; &#x438;&#x437; &#x43F;&#x43E;&#x441;&#x442;&#x430;&#x432;&#x43A;&#x438; Django, &#x43A;&#x43E;&#x442;&#x43E;&#x440;&#x44B;&#x435; &#x441;&#x43E;&#x437;&#x434;&#x430;&#x434;&#x443;&#x442; &#x434;&#x43B;&#x44F; &#x43D;&#x430;&#x441; &#x441;&#x43A;&#x435;&#x43B;&#x435;&#x442; &#x43F;&#x440;&#x43E;&#x435;&#x43A;&#x442;&#x430;. &#x42D;&#x442;&#x43E; &#x43F;&#x440;&#x43E;&#x441;&#x442;&#x43E; &#x43A;&#x443;&#x447;&#x430; &#x43A;&#x430;&#x442;&#x430;&#x43B;&#x43E;&#x433;&#x43E;&#x432; &#x438; &#x444;&#x430;&#x439;&#x43B;&#x43E;&#x432;, &#x43A;&#x43E;&#x442;&#x43E;&#x440;&#x44B;&#x435; &#x43C;&#x44B; &#x438;&#x441;&#x43F;&#x43E;&#x43B;&#x44C;&#x437;&#x443;&#x435;&#x43C; &#x43F;&#x43E;&#x437;&#x436;&#x435;.</p><p>&#x41D;&#x430;&#x437;&#x432;&#x430;&#x43D;&#x438;&#x44F; &#x44D;&#x442;&#x438;&#x445; &#x43A;&#x430;&#x442;&#x430;&#x43B;&#x43E;&#x433;&#x43E;&#x432; &#x438; &#x444;&#x430;&#x439;&#x43B;&#x43E;&#x432; &#x43E;&#x447;&#x435;&#x43D;&#x44C; &#x432;&#x430;&#x436;&#x43D;&#x44B; &#x434;&#x43B;&#x44F; Django. &#x422;&#x44B; &#x43D;&#x435; &#x434;&#x43E;&#x43B;&#x436;&#x43D;&#x430; &#x43F;&#x435;&#x440;&#x435;&#x438;&#x43C;&#x435;&#x43D;&#x43E;&#x432;&#x44B;&#x432;&#x430;&#x442;&#x44C; &#x438;&#x445;. &#x41F;&#x435;&#x440;&#x435;&#x43C;&#x435;&#x449;&#x430;&#x442;&#x44C; &#x438;&#x445; &#x432; &#x434;&#x440;&#x443;&#x433;&#x43E;&#x435; &#x43C;&#x435;&#x441;&#x442;&#x43E; &#x442;&#x43E;&#x436;&#x435; &#x43D;&#x435; &#x441;&#x430;&#x43C;&#x430;&#x44F; &#x443;&#x434;&#x430;&#x447;&#x43D;&#x430;&#x44F; &#x438;&#x434;&#x435;&#x44F;. Django &#x43D;&#x435;&#x43E;&#x431;&#x445;&#x43E;&#x434;&#x438;&#x43C;&#x430; &#x43E;&#x43F;&#x440;&#x435;&#x434;&#x435;&#x43B;&#x435;&#x43D;&#x43D;&#x430;&#x44F; &#x441;&#x442;&#x440;&#x443;&#x43A;&#x442;&#x443;&#x440;&#x430;, &#x447;&#x442;&#x43E;&#x431;&#x44B; &#x438;&#x43C;&#x435;&#x442;&#x44C; &#x432;&#x43E;&#x437;&#x43C;&#x43E;&#x436;&#x43D;&#x43E;&#x441;&#x442;&#x44C; &#x43D;&#x430;&#x439;&#x442;&#x438; &#x432;&#x430;&#x436;&#x43D;&#x44B;&#x435; &#x432;&#x435;&#x449;&#x438;.</p><blockquote><p>&#x41D;&#x435; &#x437;&#x430;&#x431;&#x443;&#x434;&#x44C;: &#x442;&#x44B; &#x434;&#x43E;&#x43B;&#x436;&#x43D;&#x430; &#x437;&#x430;&#x43F;&#x443;&#x441;&#x43A;&#x430;&#x442;&#x44C; &#x432;&#x441;&#x435; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x44B; &#x432; virtualenv. &#x415;&#x441;&#x43B;&#x438; &#x442;&#x44B; &#x43D;&#x435; &#x432;&#x438;&#x434;&#x438;&#x448;&#x44C; &#x432; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x43D;&#x43E;&#x439; &#x441;&#x442;&#x440;&#x43E;&#x43A;&#x435; &#x43F;&#x440;&#x435;&#x444;&#x438;&#x43A;&#x441;&#x430; <code>(myvenv)</code>, &#x442;&#x43E; &#x43D;&#x435;&#x43E;&#x431;&#x445;&#x43E;&#x434;&#x438;&#x43C;&#x43E; &#x430;&#x43A;&#x442;&#x438;&#x432;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C; virtualenv. &#x41C;&#x44B; &#x43E;&#x431;&#x44A;&#x44F;&#x441;&#x43D;&#x44F;&#x43B;&#x438;, &#x43A;&#x430;&#x43A; &#x44D;&#x442;&#x43E; &#x441;&#x434;&#x435;&#x43B;&#x430;&#x442;&#x44C;, &#x432; &#x440;&#x430;&#x437;&#x434;&#x435;&#x43B;&#x435; <strong>&#x420;&#x430;&#x431;&#x43E;&#x442;&#x430;&#x435;&#x43C; &#x441; virtualenv</strong> &#x433;&#x43B;&#x430;&#x432;&#x44B; <strong>&#x423;&#x441;&#x442;&#x430;&#x43D;&#x43E;&#x432;&#x43A;&#x430; Django</strong>. &#x414;&#x43B;&#x44F; &#x44D;&#x442;&#x43E;&#x433;&#x43E; &#x43D;&#x443;&#x436;&#x43D;&#x43E; &#x43D;&#x430;&#x431;&#x440;&#x430;&#x442;&#x44C; <code>myvenv\Scripts\activate</code> &#x432; Windows &#x438;&#x43B;&#x438; <code>source myvenv/bin/activate</code> &#x432; Mac OS / Linux.</p></blockquote><sec data-title="OS X &#x438;&#x43B;&#x438; Linux" data-id="django_start_project_OSX_Linux" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>OS X &#x438;&#x43B;&#x438; Linux<a class="pull-right section atTitle btn btn-default" target="django_start_project_OSX_Linux"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="django_start_project_OSX_Linux"><div class="panel-body">
+
+
+<p>&#x412; &#x43A;&#x43E;&#x43D;&#x441;&#x43E;&#x43B;&#x438; Mac OS &#x438;&#x43B;&#x438; Linux &#x43D;&#x443;&#x436;&#x43D;&#x43E; &#x437;&#x430;&#x43F;&#x443;&#x441;&#x442;&#x438;&#x442;&#x44C; &#x441;&#x43B;&#x435;&#x434;&#x443;&#x44E;&#x449;&#x443;&#x44E; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x443; (<strong>&#x43D;&#x435; &#x437;&#x430;&#x431;&#x443;&#x434;&#x44C; &#x434;&#x43E;&#x431;&#x430;&#x432;&#x438;&#x442;&#x44C; &#x442;&#x43E;&#x447;&#x43A;&#x443; <code>.</code> &#x432; &#x43A;&#x43E;&#x43D;&#x446;&#x435;</strong>):</p><p></p><p class="code-label">command-line</p><p></p><pre><code>(myvenv) ~/djangogirls$ django-admin startproject mysite .</code></pre>
+<blockquote><p>&#x422;&#x43E;&#x447;&#x43A;&#x430; <code>.</code> &#x43A;&#x440;&#x430;&#x439;&#x43D;&#x435; &#x432;&#x430;&#x436;&#x43D;&#x430;, &#x43F;&#x43E;&#x442;&#x43E;&#x43C;&#x443; &#x447;&#x442;&#x43E; &#x433;&#x43E;&#x432;&#x43E;&#x440;&#x438;&#x442; &#x441;&#x43A;&#x440;&#x438;&#x43F;&#x442;&#x443; &#x443;&#x441;&#x442;&#x430;&#x43D;&#x43E;&#x432;&#x438;&#x442;&#x44C; Django &#x432; &#x432;&#x430;&#x448;&#x435;&#x43C; &#x442;&#x435;&#x43A;&#x443;&#x449;&#x435;&#x43C; &#x43A;&#x430;&#x442;&#x430;&#x43B;&#x43E;&#x433;&#x435; (&#x43A;&#x43E;&#x442;&#x43E;&#x440;&#x44B;&#x439; &#x438; &#x43E;&#x431;&#x43E;&#x437;&#x43D;&#x430;&#x447;&#x430;&#x435;&#x442;&#x441;&#x44F; &#x441;&#x43E;&#x43A;&#x440;&#x430;&#x449;&#x451;&#x43D;&#x43D;&#x43E; &#x442;&#x43E;&#x447;&#x43A;&#x43E;&#x439; <code>.</code>)</p><p><strong>&#x41F;&#x440;&#x438;&#x43C;&#x435;&#x447;&#x430;&#x43D;&#x438;&#x435;:</strong> &#x43F;&#x440;&#x438; &#x432;&#x432;&#x43E;&#x434;&#x435; &#x43F;&#x440;&#x438;&#x432;&#x435;&#x434;&#x451;&#x43D;&#x43D;&#x43E;&#x439; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x44B; &#x43F;&#x43E;&#x43C;&#x43D;&#x438;, &#x447;&#x442;&#x43E; &#x442;&#x435;&#x431;&#x435; &#x43D;&#x443;&#x436;&#x43D;&#x43E; &#x43D;&#x430;&#x431;&#x438;&#x440;&#x430;&#x442;&#x44C; &#x442;&#x43E;&#x43B;&#x44C;&#x43A;&#x43E; &#x447;&#x430;&#x441;&#x442;&#x44C;, &#x43D;&#x430;&#x447;&#x438;&#x43D;&#x430;&#x44E;&#x449;&#x443;&#x44E;&#x441;&#x44F; &#x441; <code>django-admin</code>. <code>(myvenv) ~/djangogirls$</code> &#x2014; &#x44D;&#x442;&#x43E; &#x43F;&#x440;&#x43E;&#x441;&#x442;&#x43E; &#x43F;&#x440;&#x438;&#x43C;&#x435;&#x440; &#x441;&#x442;&#x440;&#x43E;&#x43A;&#x438;-&#x43F;&#x440;&#x438;&#x433;&#x43B;&#x430;&#x448;&#x435;&#x43D;&#x438;&#x44F; &#x442;&#x435;&#x440;&#x43C;&#x438;&#x43D;&#x430;&#x43B;&#x430;.</p></blockquote></div></div></div></sec>
+
+
+<sec data-title="Windows" data-id="django_start_project_windows" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Windows<a class="pull-right section atTitle btn btn-default" target="django_start_project_windows"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="django_start_project_windows"><div class="panel-body">
+
+
+<p>&#x412; Windows &#x437;&#x430;&#x43F;&#x443;&#x441;&#x442;&#x438; &#x441;&#x43B;&#x435;&#x434;&#x443;&#x44E;&#x449;&#x443;&#x44E; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x443; (<strong>&#x43D;&#x435; &#x437;&#x430;&#x431;&#x443;&#x434;&#x44C; &#x434;&#x43E;&#x431;&#x430;&#x432;&#x438;&#x442;&#x44C; &#x442;&#x43E;&#x447;&#x43A;&#x443; <code>.</code> &#x432; &#x43A;&#x43E;&#x43D;&#x446;&#x435;</strong>):</p><p></p><p class="code-label">command-line</p><p></p><pre><code>(myvenv) C:\Users\Name\djangogirls&gt; django-admin.exe startproject mysite .</code></pre>
+<blockquote><p>&#x422;&#x43E;&#x447;&#x43A;&#x430; <code>.</code> &#x43A;&#x440;&#x430;&#x439;&#x43D;&#x435; &#x432;&#x430;&#x436;&#x43D;&#x430;, &#x43F;&#x43E;&#x442;&#x43E;&#x43C;&#x443; &#x447;&#x442;&#x43E; &#x433;&#x43E;&#x432;&#x43E;&#x440;&#x438;&#x442; &#x441;&#x43A;&#x440;&#x438;&#x43F;&#x442;&#x443; &#x443;&#x441;&#x442;&#x430;&#x43D;&#x43E;&#x432;&#x438;&#x442;&#x44C; Django &#x432; &#x432;&#x430;&#x448;&#x435;&#x43C; &#x442;&#x435;&#x43A;&#x443;&#x449;&#x435;&#x43C; &#x43A;&#x430;&#x442;&#x430;&#x43B;&#x43E;&#x433;&#x435; (&#x43A;&#x43E;&#x442;&#x43E;&#x440;&#x44B;&#x439; &#x438; &#x43E;&#x431;&#x43E;&#x437;&#x43D;&#x430;&#x447;&#x430;&#x435;&#x442;&#x441;&#x44F; &#x441;&#x43E;&#x43A;&#x440;&#x430;&#x449;&#x451;&#x43D;&#x43D;&#x43E; &#x442;&#x43E;&#x447;&#x43A;&#x43E;&#x439; <code>.</code>)</p><p><strong>&#x41F;&#x440;&#x438;&#x43C;&#x435;&#x447;&#x430;&#x43D;&#x438;&#x435;:</strong> &#x43F;&#x440;&#x438; &#x432;&#x432;&#x43E;&#x434;&#x435; &#x43F;&#x440;&#x438;&#x432;&#x435;&#x434;&#x451;&#x43D;&#x43D;&#x43E;&#x439; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x44B; &#x43F;&#x43E;&#x43C;&#x43D;&#x438;, &#x447;&#x442;&#x43E; &#x442;&#x435;&#x431;&#x435; &#x43D;&#x443;&#x436;&#x43D;&#x43E; &#x43D;&#x430;&#x431;&#x438;&#x440;&#x430;&#x442;&#x44C; &#x442;&#x43E;&#x43B;&#x44C;&#x43A;&#x43E; &#x447;&#x430;&#x441;&#x442;&#x44C;, &#x43D;&#x430;&#x447;&#x438;&#x43D;&#x430;&#x44E;&#x449;&#x443;&#x44E;&#x441;&#x44F; &#x441; <code>django-admin.exe</code>. <code>(myvenv) C:\Users\Name\djangogirls&gt;</code> &#x2014; &#x44D;&#x442;&#x43E; &#x43F;&#x440;&#x43E;&#x441;&#x442;&#x43E; &#x43F;&#x440;&#x438;&#x43C;&#x435;&#x440; &#x43F;&#x440;&#x438;&#x433;&#x43B;&#x430;&#x448;&#x435;&#x43D;&#x438;&#x44F; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x43D;&#x43E;&#x439; &#x441;&#x442;&#x440;&#x43E;&#x43A;&#x438;.</p></blockquote></div></div></div></sec>
+
+
+<p><code>django-admin.py</code> &#x2014; &#x44D;&#x442;&#x43E; &#x441;&#x43A;&#x440;&#x438;&#x43F;&#x442;, &#x43A;&#x43E;&#x442;&#x43E;&#x440;&#x44B;&#x439; &#x441;&#x43E;&#x437;&#x434;&#x430;&#x441;&#x442; &#x43D;&#x435;&#x43E;&#x431;&#x445;&#x43E;&#x434;&#x438;&#x43C;&#x443;&#x44E; &#x441;&#x442;&#x440;&#x443;&#x43A;&#x442;&#x443;&#x440;&#x443; &#x434;&#x438;&#x440;&#x435;&#x43A;&#x442;&#x43E;&#x440;&#x438;&#x439; &#x438; &#x444;&#x430;&#x439;&#x43B;&#x44B; &#x434;&#x43B;&#x44F; &#x43D;&#x430;&#x441;. &#x422;&#x435;&#x43F;&#x435;&#x440;&#x44C; &#x443; &#x442;&#x432;&#x43E;&#x435;&#x433;&#x43E; &#x43F;&#x440;&#x43E;&#x435;&#x43A;&#x442;&#x430; &#x434;&#x43E;&#x43B;&#x436;&#x43D;&#x430; &#x431;&#x44B;&#x442;&#x44C; &#x441;&#x43B;&#x435;&#x434;&#x443;&#x44E;&#x449;&#x430;&#x44F; &#x441;&#x442;&#x440;&#x443;&#x43A;&#x442;&#x443;&#x440;&#x430;:</p><pre><code>djangogirls
+&#x251C;&#x2500;&#x2500;&#x2500;manage.py
+&#x251C;&#x2500;&#x2500;&#x2500;mysite
+&#x2502;        settings.py
+&#x2502;        urls.py
+&#x2502;        wsgi.py
+&#x2502;        __init__.py
+&#x2514;&#x2500;&#x2500;&#x2500;requirements.txt</code></pre>
+<blockquote><p><strong>&#x41F;&#x440;&#x438;&#x43C;&#x435;&#x447;&#x430;&#x43D;&#x438;&#x435;:</strong> &#x432; &#x441;&#x432;&#x43E;&#x435;&#x439; &#x441;&#x442;&#x440;&#x443;&#x43A;&#x442;&#x443;&#x440;&#x435; &#x434;&#x438;&#x440;&#x435;&#x43A;&#x442;&#x43E;&#x440;&#x438;&#x439; &#x442;&#x44B; &#x442;&#x430;&#x43A;&#x436;&#x435; &#x443;&#x432;&#x438;&#x434;&#x438;&#x448;&#x44C; &#x440;&#x430;&#x43D;&#x435;&#x435; &#x441;&#x43E;&#x437;&#x434;&#x430;&#x43D;&#x43D;&#x443;&#x44E; &#x43D;&#x430;&#x43C;&#x438; &#x434;&#x438;&#x440;&#x435;&#x43A;&#x442;&#x43E;&#x440;&#x438;&#x44E; &#x441; &#x432;&#x438;&#x440;&#x442;&#x443;&#x430;&#x43B;&#x44C;&#x43D;&#x44B;&#x43C; &#x43E;&#x43A;&#x440;&#x443;&#x436;&#x435;&#x43D;&#x438;&#x435;&#x43C;.</p></blockquote><p><code>manage.py</code> &#x2014; &#x44D;&#x442;&#x43E; &#x434;&#x440;&#x443;&#x433;&#x43E;&#x439; &#x441;&#x43A;&#x440;&#x438;&#x43F;&#x442;, &#x43A;&#x43E;&#x442;&#x43E;&#x440;&#x44B;&#x439; &#x43F;&#x43E;&#x43C;&#x43E;&#x433;&#x430;&#x435;&#x442; &#x441; &#x443;&#x43F;&#x440;&#x430;&#x432;&#x43B;&#x435;&#x43D;&#x438;&#x435;&#x43C; &#x441;&#x430;&#x439;&#x442;&#x43E;&#x43C;. &#x421; &#x43F;&#x43E;&#x43C;&#x43E;&#x449;&#x44C;&#x44E; &#x43D;&#x435;&#x433;&#x43E; &#x43C;&#x44B;, &#x43F;&#x43E;&#x43C;&#x438;&#x43C;&#x43E; &#x43F;&#x440;&#x43E;&#x447;&#x435;&#x433;&#x43E;, &#x441;&#x43C;&#x43E;&#x436;&#x435;&#x43C; &#x437;&#x430;&#x43F;&#x443;&#x441;&#x442;&#x438;&#x442;&#x44C; &#x432;&#x435;&#x431;-&#x441;&#x435;&#x440;&#x432;&#x435;&#x440; &#x43D;&#x430; &#x442;&#x432;&#x43E;&#x435;&#x43C; &#x43A;&#x43E;&#x43C;&#x43F;&#x44C;&#x44E;&#x442;&#x435;&#x440;&#x435; &#x431;&#x435;&#x437; &#x443;&#x441;&#x442;&#x430;&#x43D;&#x43E;&#x432;&#x43A;&#x438; &#x434;&#x43E;&#x43F;&#x43E;&#x43B;&#x43D;&#x438;&#x442;&#x435;&#x43B;&#x44C;&#x43D;&#x44B;&#x445; &#x43F;&#x440;&#x43E;&#x433;&#x440;&#x430;&#x43C;&#x43C;.</p><p>&#x424;&#x430;&#x439;&#x43B; <code>settings.py</code> &#x441;&#x43E;&#x434;&#x435;&#x440;&#x436;&#x438;&#x442; &#x43D;&#x430;&#x441;&#x442;&#x440;&#x43E;&#x439;&#x43A;&#x438; &#x434;&#x43B;&#x44F; &#x442;&#x432;&#x43E;&#x435;&#x433;&#x43E; &#x432;&#x435;&#x431;-&#x441;&#x430;&#x439;&#x442;&#x430;.</p><p>&#x41F;&#x43E;&#x43C;&#x43D;&#x438;&#x448;&#x44C; &#x43D;&#x430;&#x448;&#x443; &#x430;&#x43D;&#x430;&#x43B;&#x43E;&#x433;&#x438;&#x44E; &#x441; &#x43F;&#x43E;&#x447;&#x442;&#x430;&#x43B;&#x44C;&#x43E;&#x43D;&#x43E;&#x43C;? &#x424;&#x430;&#x439;&#x43B; <code>urls.py</code> &#x441;&#x43E;&#x434;&#x435;&#x440;&#x436;&#x438;&#x442; &#x441;&#x43F;&#x438;&#x441;&#x43E;&#x43A; &#x448;&#x430;&#x431;&#x43B;&#x43E;&#x43D;&#x43E;&#x432;, &#x43F;&#x43E; &#x43A;&#x43E;&#x442;&#x43E;&#x440;&#x44B;&#x43C; &#x43E;&#x440;&#x438;&#x435;&#x43D;&#x442;&#x438;&#x440;&#x443;&#x435;&#x442;&#x441;&#x44F; <code>urlresolver</code>.</p><p>&#x414;&#x430;&#x432;&#x430;&#x439; &#x43F;&#x43E;&#x43A;&#x430; &#x437;&#x430;&#x431;&#x443;&#x434;&#x435;&#x43C; &#x43F;&#x440;&#x43E; &#x43E;&#x441;&#x442;&#x430;&#x43B;&#x44C;&#x43D;&#x44B;&#x435; &#x444;&#x430;&#x439;&#x43B;&#x44B; &#x2014; &#x43C;&#x44B; &#x43D;&#x435; &#x431;&#x443;&#x434;&#x435;&#x43C; &#x438;&#x445; &#x438;&#x437;&#x43C;&#x435;&#x43D;&#x44F;&#x442;&#x44C;. &#x422;&#x43E;&#x43B;&#x44C;&#x43A;&#x43E; &#x43D;&#x435; &#x443;&#x434;&#x430;&#x43B;&#x438; &#x438;&#x445; &#x441;&#x43B;&#x443;&#x447;&#x430;&#x439;&#x43D;&#x43E;!</p><h2 id="&#x438;&#x437;&#x43C;&#x435;&#x43D;&#x44F;&#x435;&#x43C;-&#x43D;&#x430;&#x441;&#x442;&#x440;&#x43E;&#x439;&#x43A;&#x438;">&#x418;&#x437;&#x43C;&#x435;&#x43D;&#x44F;&#x435;&#x43C; &#x43D;&#x430;&#x441;&#x442;&#x440;&#x43E;&#x439;&#x43A;&#x438;</h2><p>&#x414;&#x430;&#x432;&#x430;&#x439; &#x432;&#x43D;&#x435;&#x441;&#x451;&#x43C; &#x438;&#x437;&#x43C;&#x435;&#x43D;&#x435;&#x43D;&#x438;&#x44F; &#x432; <code>mysite/settings.py</code>. &#x41E;&#x442;&#x43A;&#x440;&#x43E;&#x439; &#x444;&#x430;&#x439;&#x43B; &#x432; &#x442;&#x435;&#x43A;&#x441;&#x442;&#x43E;&#x432;&#x43E;&#x43C; &#x440;&#x435;&#x434;&#x430;&#x43A;&#x442;&#x43E;&#x440;&#x435;, &#x43A;&#x43E;&#x442;&#x43E;&#x440;&#x44B;&#x439; &#x442;&#x44B; &#x432;&#x44B;&#x431;&#x440;&#x430;&#x43B;&#x430; &#x440;&#x430;&#x43D;&#x435;&#x435;.</p><p><strong>&#x41F;&#x440;&#x438;&#x43C;&#x435;&#x447;&#x430;&#x43D;&#x438;&#x435;:</strong> &#x43F;&#x43E;&#x43C;&#x43D;&#x438;, &#x447;&#x442;&#x43E; <code>settings.py</code> &#x2014; &#x441;&#x430;&#x43C;&#x44B;&#x439; &#x43E;&#x431;&#x44B;&#x447;&#x43D;&#x44B;&#x439; &#x444;&#x430;&#x439;&#x43B;. &#x422;&#x44B; &#x43C;&#x43E;&#x436;&#x435;&#x448;&#x44C; &#x43E;&#x442;&#x43A;&#x440;&#x44B;&#x442;&#x44C; &#x435;&#x433;&#x43E; &#x438;&#x437; &#x441;&#x432;&#x43E;&#x435;&#x433;&#x43E; &#x440;&#x435;&#x434;&#x430;&#x43A;&#x442;&#x43E;&#x440;&#x430; &#x43A;&#x43E;&#x434;&#x430;, &#x438;&#x441;&#x43F;&#x43E;&#x43B;&#x44C;&#x437;&#x443;&#x44F; &#x43C;&#x435;&#x43D;&#x44E; &#xAB;&#x424;&#x430;&#x439;&#x43B; -&gt; &#x41E;&#x442;&#x43A;&#x440;&#x44B;&#x442;&#x44C;&#xBB;. &#x41F;&#x440;&#x438; &#x44D;&#x442;&#x43E;&#x43C; &#x442;&#x44B; &#x443;&#x432;&#x438;&#x434;&#x438;&#x448;&#x44C; &#x43E;&#x431;&#x44B;&#x447;&#x43D;&#x43E;&#x435; &#x43E;&#x43A;&#x43D;&#x43E;, &#x432; &#x43A;&#x43E;&#x442;&#x43E;&#x440;&#x43E;&#x43C; &#x442;&#x44B; &#x43C;&#x43E;&#x436;&#x435;&#x448;&#x44C; &#x43F;&#x435;&#x440;&#x435;&#x439;&#x442;&#x438; &#x43A; &#x441;&#x432;&#x43E;&#x435;&#x43C;&#x443; &#x444;&#x430;&#x439;&#x43B;&#x443; <code>settings.py</code> &#x438; &#x432;&#x44B;&#x431;&#x440;&#x430;&#x442;&#x44C; &#x435;&#x433;&#x43E;. &#x41B;&#x438;&#x431;&#x43E; &#x442;&#x44B; &#x43C;&#x43E;&#x436;&#x435;&#x448;&#x44C; &#x43E;&#x442;&#x43A;&#x440;&#x44B;&#x442;&#x44C; &#x44D;&#x442;&#x43E;&#x442; &#x444;&#x430;&#x439;&#x43B;, &#x43F;&#x435;&#x440;&#x435;&#x439;&#x434;&#x44F; &#x432; &#x434;&#x438;&#x440;&#x435;&#x43A;&#x442;&#x43E;&#x440;&#x438;&#x44E; &#x43F;&#x440;&#x43E;&#x435;&#x43A;&#x442;&#x430; djangogirls &#x43D;&#x430; &#x442;&#x432;&#x43E;&#x451;&#x43C; &#x440;&#x430;&#x431;&#x43E;&#x447;&#x435;&#x43C; &#x441;&#x442;&#x43E;&#x43B;&#x435; &#x438; &#x449;&#x451;&#x43B;&#x43A;&#x43D;&#x443;&#x432; &#x43F;&#x43E; &#x43D;&#x435;&#x43C;&#x443; &#x43F;&#x440;&#x430;&#x432;&#x43E;&#x439; &#x43A;&#x43D;&#x43E;&#x43F;&#x43A;&#x43E;&#x439; &#x43C;&#x44B;&#x448;&#x438;; &#x437;&#x430;&#x442;&#x435;&#x43C; &#x432;&#x44B;&#x431;&#x435;&#x440;&#x438; &#x441;&#x432;&#x43E;&#x439; &#x440;&#x435;&#x434;&#x430;&#x43A;&#x442;&#x43E;&#x440; &#x43A;&#x43E;&#x434;&#x430; &#x438;&#x437; &#x43F;&#x440;&#x435;&#x434;&#x43B;&#x43E;&#x436;&#x435;&#x43D;&#x43D;&#x43E;&#x433;&#x43E; &#x441;&#x43F;&#x438;&#x441;&#x43A;&#x430;. &#x412;&#x430;&#x436;&#x43D;&#x43E; &#x432;&#x44B;&#x431;&#x440;&#x430;&#x442;&#x44C; &#x438;&#x43C;&#x435;&#x43D;&#x43D;&#x43E; &#x440;&#x435;&#x434;&#x430;&#x43A;&#x442;&#x43E;&#x440;, &#x43F;&#x43E;&#x441;&#x43A;&#x43E;&#x43B;&#x44C;&#x43A;&#x443; &#x443; &#x442;&#x435;&#x431;&#x44F; &#x43C;&#x43E;&#x433;&#x443;&#x442; &#x431;&#x44B;&#x442;&#x44C; &#x443;&#x441;&#x442;&#x430;&#x43D;&#x43E;&#x432;&#x43B;&#x435;&#x43D;&#x44B; &#x43F;&#x440;&#x43E;&#x433;&#x440;&#x430;&#x43C;&#x43C;&#x44B;, &#x43A;&#x43E;&#x442;&#x43E;&#x440;&#x44B;&#x435; &#x43E;&#x442;&#x43A;&#x440;&#x43E;&#x44E;&#x442; &#x43D;&#x430;&#x448; &#x444;&#x430;&#x439;&#x43B;, &#x43D;&#x43E; &#x43D;&#x435; &#x43F;&#x43E;&#x437;&#x432;&#x43E;&#x43B;&#x44F;&#x442; &#x435;&#x433;&#x43E; &#x438;&#x437;&#x43C;&#x435;&#x43D;&#x438;&#x442;&#x44C;.</p><p>&#x411;&#x44B;&#x43B;&#x43E; &#x431;&#x44B; &#x43D;&#x435;&#x43F;&#x43B;&#x43E;&#x445;&#x43E; &#x443;&#x441;&#x442;&#x430;&#x43D;&#x43E;&#x432;&#x438;&#x442;&#x44C; &#x43A;&#x43E;&#x440;&#x440;&#x435;&#x43A;&#x442;&#x43D;&#x44B;&#x439; &#x447;&#x430;&#x441;&#x43E;&#x432;&#x43E;&#x439; &#x43F;&#x43E;&#x44F;&#x441; &#x43D;&#x430; &#x43D;&#x430;&#x448;&#x435;&#x43C; &#x441;&#x430;&#x439;&#x442;&#x435;. &#x41F;&#x435;&#x440;&#x435;&#x439;&#x434;&#x438; &#x43A; <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" target="_blank">&#x441;&#x43F;&#x438;&#x441;&#x43A;&#x443; &#x447;&#x430;&#x441;&#x43E;&#x432;&#x44B;&#x445; &#x43F;&#x43E;&#x44F;&#x441;&#x43E;&#x432; &#x432;&#x438;&#x43A;&#x438;&#x43F;&#x435;&#x434;&#x438;&#x438;</a> &#x438; &#x441;&#x43A;&#x43E;&#x43F;&#x438;&#x440;&#x443;&#x439; &#x43D;&#x430;&#x437;&#x432;&#x430;&#x43D;&#x438;&#x435; &#x441;&#x432;&#x43E;&#x435;&#x433;&#x43E; &#x447;&#x430;&#x441;&#x43E;&#x432;&#x43E;&#x433;&#x43E; &#x43F;&#x43E;&#x44F;&#x441;&#x430; (TZ) (&#x43D;&#x430;&#x43F;&#x440;&#x438;&#x43C;&#x435;&#x440;, <code>Europe/Moscow</code>).</p><p>&#x412; &#x444;&#x430;&#x439;&#x43B;&#x435; settings.py &#x43D;&#x430;&#x439;&#x434;&#x438; &#x441;&#x442;&#x440;&#x43E;&#x43A;&#x443;, &#x441;&#x43E;&#x434;&#x435;&#x440;&#x436;&#x430;&#x449;&#x443;&#x44E; <code>TIME_ZONE</code>, &#x438; &#x438;&#x437;&#x43C;&#x435;&#x43D;&#x438; &#x435;&#x451; &#x432; &#x441;&#x43E;&#x43E;&#x442;&#x432;&#x435;&#x442;&#x441;&#x442;&#x432;&#x438;&#x438; &#x441;&#x43E; &#x441;&#x432;&#x43E;&#x438;&#x43C; &#x447;&#x430;&#x441;&#x43E;&#x432;&#x44B;&#x43C; &#x43F;&#x43E;&#x44F;&#x441;&#x43E;&#x43C;:</p><p></p><p class="code-label">mysite/settings.py</p><p></p><pre><code class="lang-python">TIME_ZONE = <span class="hljs-string">&apos;Europe/Moscow&apos;</span></code></pre>
+<p>&#x41A;&#x43E;&#x434; &#x44F;&#x437;&#x44B;&#x43A;&#x430; &#x441;&#x43E;&#x441;&#x442;&#x43E;&#x438;&#x442; &#x438;&#x437; &#x441;&#x43E;&#x43A;&#x440;&#x430;&#x449;&#x451;&#x43D;&#x43D;&#x43E;&#x433;&#x43E; &#x43D;&#x430;&#x437;&#x432;&#x430;&#x43D;&#x438;&#x44F; &#x44F;&#x437;&#x44B;&#x43A;&#x430;, &#x43D;&#x430;&#x43F;&#x440;&#x438;&#x43C;&#x435;&#x440; <code>en</code> &#x434;&#x43B;&#x44F; &#x430;&#x43D;&#x433;&#x43B;&#x438;&#x439;&#x441;&#x43A;&#x43E;&#x433;&#x43E; &#x438;&#x43B;&#x438; <code>ru</code> &#x434;&#x43B;&#x44F; &#x440;&#x443;&#x441;&#x441;&#x43A;&#x43E;&#x433;&#x43E;, &#x438; &#x43A;&#x43E;&#x434;&#x430; &#x441;&#x442;&#x440;&#x430;&#x43D;&#x44B;, &#x43D;&#x430;&#x43F;&#x440;&#x438;&#x43C;&#x435;&#x440;, <code>ru</code> &#x434;&#x43B;&#x44F; &#x420;&#x43E;&#x441;&#x441;&#x438;&#x438; &#x438;&#x43B;&#x438; <code>ch</code> &#x434;&#x43B;&#x44F; &#x428;&#x432;&#x435;&#x439;&#x446;&#x430;&#x440;&#x438;&#x438;. &#x422;&#x435;&#x431;&#x435; &#x43F;&#x43E;&#x43D;&#x430;&#x434;&#x43E;&#x431;&#x438;&#x442;&#x441;&#x44F; &#x44D;&#x442;&#x430; &#x43D;&#x430;&#x441;&#x442;&#x440;&#x43E;&#x439;&#x43A;&#x430;, &#x435;&#x441;&#x43B;&#x438; &#x442;&#x44B; &#x445;&#x43E;&#x447;&#x435;&#x448;&#x44C;, &#x447;&#x442;&#x43E;&#x431;&#x44B; &#x432;&#x441;&#x435; &#x432;&#x441;&#x442;&#x440;&#x43E;&#x435;&#x43D;&#x43D;&#x44B;&#x435; &#x43A;&#x43D;&#x43E;&#x43F;&#x43A;&#x438; &#x438; &#x443;&#x432;&#x435;&#x434;&#x43E;&#x43C;&#x43B;&#x435;&#x43D;&#x438;&#x44F; &#x43E;&#x442; Django &#x431;&#x44B;&#x43B;&#x438; &#x43D;&#x430; &#x442;&#x432;&#x43E;&#x451;&#x43C; &#x44F;&#x437;&#x44B;&#x43A;&#x435;. &#x422;&#x430;&#x43A;&#x438;&#x43C; &#x43E;&#x431;&#x440;&#x430;&#x437;&#x43E;&#x43C;, &#x43D;&#x430;&#x434;&#x43F;&#x438;&#x441;&#x44C; &#x43D;&#x430; &#x43A;&#x43D;&#x43E;&#x43F;&#x43A;&#x435; &#xAB;Cancel&#xBB; &#x431;&#x443;&#x434;&#x435;&#x442; &#x43F;&#x435;&#x440;&#x435;&#x432;&#x435;&#x434;&#x435;&#x43D;&#x430; &#x43D;&#x430; &#x437;&#x430;&#x434;&#x430;&#x43D;&#x43D;&#x44B;&#x439; &#x442;&#x43E;&#x431;&#x43E;&#x439; &#x44F;&#x437;&#x44B;&#x43A;. <a href="https://docs.djangoproject.com/en/1.11/ref/settings/#language-code" target="_blank">Django &#x43F;&#x43E;&#x441;&#x442;&#x430;&#x432;&#x43B;&#x44F;&#x435;&#x442;&#x441;&#x44F; &#x441; &#x431;&#x43E;&#x43B;&#x44C;&#x448;&#x438;&#x43C; &#x43D;&#x430;&#x431;&#x43E;&#x440;&#x43E;&#x43C; &#x433;&#x43E;&#x442;&#x43E;&#x432;&#x44B;&#x445; &#x43F;&#x435;&#x440;&#x435;&#x432;&#x43E;&#x434;&#x43E;&#x432;</a>.</p><p>&#x418;&#x437;&#x43C;&#x435;&#x43D;&#x438; &#x44F;&#x437;&#x44B;&#x43A;, &#x43E;&#x442;&#x440;&#x435;&#x434;&#x430;&#x43A;&#x442;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x432; &#x441;&#x43B;&#x435;&#x434;&#x443;&#x44E;&#x449;&#x443;&#x44E; &#x441;&#x442;&#x440;&#x43E;&#x43A;&#x443;:</p><p></p><p class="code-label">mysite/settings.py</p><p></p><pre><code class="lang-python">LANGUAGE_CODE = <span class="hljs-string">&apos;ru-ru&apos;</span></code></pre>
+<p>&#x41D;&#x430;&#x43C; &#x442;&#x430;&#x43A;&#x436;&#x435; &#x43D;&#x435;&#x43E;&#x431;&#x445;&#x43E;&#x434;&#x438;&#x43C;&#x43E; &#x434;&#x43E;&#x431;&#x430;&#x432;&#x438;&#x442;&#x44C; &#x432; &#x43D;&#x430;&#x441;&#x442;&#x440;&#x43E;&#x439;&#x43A;&#x438; &#x438;&#x43D;&#x444;&#x43E;&#x440;&#x43C;&#x430;&#x446;&#x438;&#x44E; &#x43E; &#x440;&#x430;&#x441;&#x43F;&#x43E;&#x43B;&#x43E;&#x436;&#x435;&#x43D;&#x438;&#x438; &#x441;&#x442;&#x430;&#x442;&#x438;&#x447;&#x435;&#x441;&#x43A;&#x438;&#x445; &#x444;&#x430;&#x439;&#x43B;&#x43E;&#x432; (&#x43C;&#x44B; &#x43F;&#x43E;&#x437;&#x43D;&#x430;&#x43A;&#x43E;&#x43C;&#x438;&#x43C;&#x441;&#x44F; &#x441;&#x43E; &#x441;&#x442;&#x430;&#x442;&#x438;&#x447;&#x435;&#x441;&#x43A;&#x438;&#x43C;&#x438; &#x444;&#x430;&#x439;&#x43B;&#x430;&#x43C;&#x438; &#x438; CSS &#x432; &#x441;&#x43B;&#x435;&#x434;&#x443;&#x44E;&#x449;&#x438;&#x445; &#x433;&#x43B;&#x430;&#x432;&#x430;&#x445;). &#x421;&#x43F;&#x443;&#x441;&#x442;&#x438;&#x441;&#x44C; &#x432; <em>&#x43A;&#x43E;&#x43D;&#x435;&#x446;</em> &#x444;&#x430;&#x439;&#x43B;&#x430; &#x438; &#x43F;&#x43E;&#x441;&#x43B;&#x435; &#x43F;&#x435;&#x440;&#x435;&#x43C;&#x435;&#x43D;&#x43D;&#x43E;&#x439; <code>STATIC_URL</code> &#x434;&#x43E;&#x431;&#x430;&#x432;&#x44C; &#x43D;&#x43E;&#x432;&#x443;&#x44E; &#x2014; <code>STATIC_ROOT</code>:</p><p></p><p class="code-label">mysite/settings.py</p><p></p><pre><code class="lang-python">STATIC_URL = <span class="hljs-string">&apos;/static/&apos;</span>
+STATIC_ROOT = os.path.join(BASE_DIR, <span class="hljs-string">&apos;static&apos;</span>)</code></pre>
+<p>&#x41A;&#x43E;&#x433;&#x434;&#x430; &#x43D;&#x430;c&#x442;&#x440;&#x43E;&#x439;&#x43A;&#x430; <code>DEBUG</code> &#x438;&#x43C;&#x435;&#x435;&#x442; &#x437;&#x43D;&#x430;&#x447;&#x435;&#x43D;&#x438;&#x435; <code>True</code>, &#x430; &#x43D;&#x430;&#x441;&#x442;&#x440;&#x43E;&#x439;&#x43A;&#x430; <code>ALLOWED_HOSTS</code> &#x43F;&#x443;&#x441;&#x442;&#x430;, &#x438;&#x43C;&#x44F; &#x445;&#x43E;&#x441;&#x442; &#x442;&#x432;&#x43E;&#x435;&#x433;&#x43E; &#x432;&#x435;&#x431;-&#x441;&#x430;&#x439;&#x442;&#x430; &#x441;&#x432;&#x435;&#x440;&#x44F;&#x435;&#x442;&#x441;&#x44F; &#x441;&#x43E; &#x441;&#x43F;&#x438;&#x441;&#x43A;&#x43E;&#x43C; <code>[&apos;localhost&apos;, &apos;127.0.0.1&apos;, &apos;[::1]&apos;]</code>.
+&#x41D;&#x438; &#x43E;&#x434;&#x43D;&#x43E; &#x438;&#x437; &#x437;&#x43D;&#x430;&#x447;&#x435;&#x43D;&#x438;&#x439; &#x43D;&#x435; &#x441;&#x43E;&#x43E;&#x442;&#x432;&#x435;&#x442;&#x441;&#x442;&#x432;&#x443;&#x435;&#x442; &#x438;&#x43C;&#x435;&#x43D;&#x438; &#x445;&#x43E;&#x441;&#x442;&#x430; &#x43D;&#x430; PythonAnywhere &#x43F;&#x440;&#x438; &#x43F;&#x443;&#x431;&#x43B;&#x438;&#x43A;&#x430;&#x446;&#x438;&#x438; &#x43D;&#x430;&#x448;&#x435;&#x433;&#x43E; &#x43F;&#x440;&#x438;&#x43B;&#x43E;&#x436;&#x435;&#x43D;&#x438;&#x44F;, &#x43F;&#x43E;&#x44D;&#x442;&#x43E;&#x43C;&#x443; &#x43D;&#x430;&#x43C; &#x43D;&#x435;&#x43E;&#x431;&#x445;&#x43E;&#x434;&#x438;&#x43C;&#x43E; &#x438;&#x437;&#x43C;&#x435;&#x43D;&#x438;&#x442;&#x44C; &#x441;&#x43B;&#x435;&#x434;&#x443;&#x44E;&#x449;&#x443;&#x44E; &#x43D;&#x430;&#x441;&#x442;&#x440;&#x43E;&#x439;&#x43A;&#x443;:</p><p></p><p class="code-label">mysite/settings.py</p><p></p><pre><code class="lang-python">ALLOWED_HOSTS = [<span class="hljs-string">&apos;127.0.0.1&apos;</span>, <span class="hljs-string">&apos;.pythonanywhere.com&apos;</span>]</code></pre>
+<blockquote><p><strong>&#x41F;&#x440;&#x438;&#x43C;&#x435;&#x447;&#x430;&#x43D;&#x438;&#x435;</strong>: &#x412; &#x441;&#x43B;&#x443;&#x447;&#x430;&#x435; &#x435;&#x441;&#x43B;&#x438; &#x432;&#x44B; &#x438;&#x441;&#x43F;&#x43E;&#x43B;&#x44C;&#x437;&#x443;&#x435;&#x442;&#x435; Chromebook, &#x434;&#x43E;&#x431;&#x430;&#x432;&#x44C;&#x442;&#x435; &#x441;&#x43B;&#x435;&#x434;&#x443;&#x44E;&#x449;&#x443;&#x44E; &#x441;&#x442;&#x440;&#x43E;&#x43A;&#x443; &#x432; &#x43A;&#x43E;&#x43D;&#x435;&#x446; &#x444;&#x430;&#x439;&#x43B;&#x430; settings.py:
+<code>MESSAGE_STORAGE = &apos;django.contrib.messages.storage.session.SessionStorage&apos;</code></p></blockquote><h2 id="&#x43D;&#x430;&#x441;&#x442;&#x440;&#x43E;&#x439;&#x43A;&#x430;-&#x431;&#x430;&#x437;&#x44B;-&#x434;&#x430;&#x43D;&#x43D;&#x44B;&#x445;">&#x41D;&#x430;&#x441;&#x442;&#x440;&#x43E;&#x439;&#x43A;&#x430; &#x431;&#x430;&#x437;&#x44B; &#x434;&#x430;&#x43D;&#x43D;&#x44B;&#x445;</h2><p>&#x421;&#x443;&#x449;&#x435;&#x441;&#x442;&#x432;&#x443;&#x435;&#x442; &#x43C;&#x43D;&#x43E;&#x436;&#x435;&#x441;&#x442;&#x432;&#x43E; &#x440;&#x430;&#x437;&#x43B;&#x438;&#x447;&#x43D;&#x44B;&#x445; &#x431;&#x430;&#x437; &#x434;&#x430;&#x43D;&#x43D;&#x44B;&#x445;, &#x43A;&#x43E;&#x442;&#x43E;&#x440;&#x44B;&#x435; &#x43C;&#x43E;&#x433;&#x443;&#x442; &#x445;&#x440;&#x430;&#x43D;&#x438;&#x442;&#x44C; &#x434;&#x430;&#x43D;&#x43D;&#x44B;&#x435; &#x434;&#x43B;&#x44F; &#x442;&#x432;&#x43E;&#x435;&#x433;&#x43E; &#x441;&#x430;&#x439;&#x442;&#x430;. &#x41C;&#x44B; &#x431;&#x443;&#x434;&#x435;&#x43C; &#x438;&#x441;&#x43F;&#x43E;&#x43B;&#x44C;&#x437;&#x43E;&#x432;&#x430;&#x442;&#x44C; &#x441;&#x442;&#x430;&#x43D;&#x434;&#x430;&#x440;&#x442;&#x43D;&#x443;&#x44E; &#x2014; <code>sqlite3</code>.</p><p>&#x41E;&#x43D;&#x430; &#x443;&#x436;&#x435; &#x432;&#x44B;&#x431;&#x440;&#x430;&#x43D;&#x430; &#x43F;&#x43E; &#x443;&#x43C;&#x43E;&#x43B;&#x447;&#x430;&#x43D;&#x438;&#x44E; &#x432; &#x444;&#x430;&#x439;&#x43B;&#x435; <code>mysite/settings.py</code>:</p><p></p><p class="code-label">mysite/settings.py</p><p></p><pre><code class="lang-python">DATABASES = {
+    <span class="hljs-string">&apos;default&apos;</span>: {
+        <span class="hljs-string">&apos;ENGINE&apos;</span>: <span class="hljs-string">&apos;django.db.backends.sqlite3&apos;</span>,
+        <span class="hljs-string">&apos;NAME&apos;</span>: os.path.join(BASE_DIR, <span class="hljs-string">&apos;db.sqlite3&apos;</span>),
+    }
+}</code></pre>
+<p>&#x427;&#x442;&#x43E;&#x431;&#x44B; &#x441;&#x43E;&#x437;&#x434;&#x430;&#x442;&#x44C; &#x431;&#x430;&#x437;&#x443; &#x434;&#x430;&#x43D;&#x43D;&#x44B;&#x445; &#x434;&#x43B;&#x44F; &#x43D;&#x430;&#x448;&#x435;&#x433;&#x43E; &#x431;&#x43B;&#x43E;&#x433;&#x430;, &#x43D;&#x430;&#x431;&#x435;&#x440;&#x438; &#x432; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x43D;&#x43E;&#x439; &#x441;&#x442;&#x440;&#x43E;&#x43A;&#x435; &#x441;&#x43B;&#x435;&#x434;&#x443;&#x44E;&#x449;&#x435;&#x435;: <code>python manage.py migrate</code> (&#x43C;&#x44B; &#x434;&#x43E;&#x43B;&#x436;&#x43D;&#x44B; &#x431;&#x44B;&#x442;&#x44C; &#x432; &#x434;&#x438;&#x440;&#x435;&#x43A;&#x442;&#x43E;&#x440;&#x438;&#x438; <code>djangogirls</code>, &#x433;&#x434;&#x435; &#x440;&#x430;&#x441;&#x43F;&#x43E;&#x43B;&#x43E;&#x436;&#x435;&#x43D; &#x444;&#x430;&#x439;&#x43B; <code>manage.py</code>). &#x415;&#x441;&#x43B;&#x438; &#x432;&#x441;&#x451; &#x43F;&#x440;&#x43E;&#x448;&#x43B;&#x43E; &#x443;&#x441;&#x43F;&#x435;&#x448;&#x43D;&#x43E;, &#x442;&#x43E; &#x442;&#x44B; &#x443;&#x432;&#x438;&#x434;&#x438;&#x448;&#x44C; &#x441;&#x43B;&#x435;&#x434;&#x443;&#x44E;&#x449;&#x438;&#x439; &#x440;&#x435;&#x437;&#x443;&#x43B;&#x44C;&#x442;&#x430;&#x442;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>(myvenv) ~/djangogirls$ python manage.py migrate
+Operations to perform:
+  Apply all migrations: auth, admin, contenttypes, sessions
+Running migrations:
+  Rendering model states... DONE
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying sessions.0001_initial... OK</code></pre>
+<p>&#x412;&#x43E;&#x442; &#x438; &#x432;&#x441;&#x451;! &#x41F;&#x440;&#x438;&#x448;&#x43B;&#x43E; &#x432;&#x440;&#x435;&#x43C;&#x44F; &#x437;&#x430;&#x43F;&#x443;&#x441;&#x442;&#x438;&#x442;&#x44C; &#x432;&#x435;&#x431;-&#x441;&#x435;&#x440;&#x432;&#x435;&#x440; &#x438; &#x43F;&#x43E;&#x441;&#x43C;&#x43E;&#x442;&#x440;&#x435;&#x442;&#x44C;, &#x440;&#x430;&#x431;&#x43E;&#x442;&#x430;&#x435;&#x442; &#x43B;&#x438; &#x43D;&#x430;&#x448; &#x432;&#x435;&#x431;-&#x441;&#x430;&#x439;&#x442;!</p><h2 id="&#x437;&#x430;&#x43F;&#x443;&#x441;&#x43A;-&#x432;&#x435;&#x431;-&#x441;&#x435;&#x440;&#x432;&#x435;&#x440;&#x430;">&#x417;&#x430;&#x43F;&#x443;&#x441;&#x43A; &#x432;&#x435;&#x431;-&#x441;&#x435;&#x440;&#x432;&#x435;&#x440;&#x430;</h2><p>&#x422;&#x44B; &#x434;&#x43E;&#x43B;&#x436;&#x43D;&#x430; &#x431;&#x44B;&#x442;&#x44C; &#x432; &#x434;&#x438;&#x440;&#x435;&#x43A;&#x442;&#x43E;&#x440;&#x438;&#x438;, &#x433;&#x434;&#x435; &#x440;&#x430;&#x441;&#x43F;&#x43E;&#x43B;&#x43E;&#x436;&#x435;&#x43D; &#x444;&#x430;&#x439;&#x43B; <code>manage.py</code> (&#x432; &#x43D;&#x430;&#x448;&#x435;&#x43C; &#x441;&#x43B;&#x443;&#x447;&#x430;&#x435; &#x2014; <code>djangogirls</code>). &#x417;&#x430;&#x43F;&#x443;&#x441;&#x442;&#x438;&#x43C; &#x432;&#x435;&#x431;-&#x441;&#x435;&#x440;&#x432;&#x435;&#x440; &#x438;&#x437; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x43D;&#x43E;&#x439; &#x441;&#x442;&#x440;&#x43E;&#x43A;&#x438;: <code>python manage.py runserver</code>:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>(myvenv) ~/djangogirls$ python manage.py runserver</code></pre>
+<p>&#x415;&#x441;&#x43B;&#x438; &#x442;&#x44B; &#x440;&#x430;&#x431;&#x43E;&#x442;&#x430;&#x435;&#x448;&#x44C; &#x432; Windows, &#x438; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x430; &#x43F;&#x430;&#x434;&#x430;&#x435;&#x442; &#x441; &#x43E;&#x448;&#x438;&#x431;&#x43A;&#x43E;&#x439; <code>UnicodeDecodeError</code>, &#x438;&#x441;&#x43F;&#x43E;&#x43B;&#x44C;&#x437;&#x443;&#x439; &#x432;&#x43C;&#x435;&#x441;&#x442;&#x43E; &#x43D;&#x435;&#x451; &#x434;&#x440;&#x443;&#x433;&#x443;&#x44E;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>(myvenv) ~/djangogirls$ python manage.py runserver 0:8000</code></pre>
+<p>&#x422;&#x435;&#x43F;&#x435;&#x440;&#x44C; &#x442;&#x435;&#x431;&#x435; &#x43D;&#x443;&#x436;&#x43D;&#x43E; &#x43F;&#x440;&#x43E;&#x432;&#x435;&#x440;&#x438;&#x442;&#x44C;, &#x440;&#x430;&#x431;&#x43E;&#x442;&#x430;&#x435;&#x442; &#x43B;&#x438; &#x432;&#x435;&#x431;-&#x441;&#x430;&#x439;&#x442; &#x2014; &#x43E;&#x442;&#x43A;&#x440;&#x43E;&#x439; &#x431;&#x440;&#x430;&#x443;&#x437;&#x435;&#x440; (Firefox, Chrome, Safari, Internet Explorer &#x438;&#x43B;&#x438; &#x43B;&#x44E;&#x431;&#x43E;&#x439; &#x434;&#x440;&#x443;&#x433;&#x43E;&#x439;) &#x438; &#x43D;&#x430;&#x431;&#x435;&#x440;&#x438; &#x441;&#x43B;&#x435;&#x434;&#x443;&#x44E;&#x449;&#x438;&#x439; &#x430;&#x434;&#x440;&#x435;&#x441;:</p><p></p><p class="code-label">browser</p><p></p><pre><code>http://127.0.0.1:8000/</code></pre>
+<p>&#x415;&#x441;&#x43B;&#x438; &#x442;&#x44B; &#x438;&#x441;&#x43F;&#x43E;&#x43B;&#x44C;&#x437;&#x443;&#x435;&#x448;&#x44C; Chromebook &#x438;&#x43B;&#x438; Cloud9, &#x432;&#x43C;&#x435;&#x441;&#x442;&#x43E; &#x44D;&#x442;&#x43E;&#x433;&#x43E; &#x43D;&#x430;&#x436;&#x43C;&#x438; &#x43D;&#x430; &#x441;&#x441;&#x44B;&#x43B;&#x43A;&#x443; &#x432;&#x43E; &#x432;&#x441;&#x43F;&#x43B;&#x44B;&#x432;&#x430;&#x44E;&#x449;&#x435;&#x43C; &#x43E;&#x43A;&#x43D;&#x435;, &#x43A;&#x43E;&#x442;&#x43E;&#x440;&#x430;&#x44F; &#x434;&#x43E;&#x43B;&#x436;&#x43D;&#x430; &#x43F;&#x43E;&#x44F;&#x432;&#x438;&#x442;&#x44C;&#x441;&#x44F; &#x432; &#x43F;&#x440;&#x430;&#x432;&#x43E;&#x43C; &#x432;&#x435;&#x440;&#x445;&#x43D;&#x435;&#x43C; &#x443;&#x433;&#x43B;&#x443; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x43D;&#x43E;&#x433;&#x43E; &#x43E;&#x43A;&#x43D;&#x430;, &#x432; &#x43A;&#x43E;&#x442;&#x43E;&#x440;&#x43E;&#x43C; &#x437;&#x430;&#x43F;&#x443;&#x449;&#x435;&#x43D; &#x432;&#x435;&#x431; &#x441;&#x435;&#x440;&#x432;&#x435;&#x440;. &#x421;&#x441;&#x44B;&#x43B;&#x43A;&#x430; &#x43C;&#x43E;&#x436;&#x435;&#x442; &#x432;&#x44B;&#x433;&#x43B;&#x44F;&#x434;&#x435;&#x442;&#x44C; &#x442;&#x430;&#x43A;:</p><p></p><p class="code-label">browser</p><p></p><pre><code>https://&lt;&#x441;&#x442;&#x440;&#x430;&#x43D;&#x43D;&#x44B;&#x435; &#x431;&#x443;&#x43A;&#x432;&#x44B; &#x438; &#x446;&#x438;&#x444;&#x440;&#x44B;&gt;.vfs.cloud9.us-west-2.amazonaws.com</code></pre>
+<p>&#x41F;&#x43E;&#x437;&#x434;&#x440;&#x430;&#x432;&#x43B;&#x44F;&#x435;&#x43C;! &#x422;&#x44B; &#x442;&#x43E;&#x43B;&#x44C;&#x43A;&#x43E; &#x447;&#x442;&#x43E; &#x441;&#x43E;&#x437;&#x434;&#x430;&#x43B;&#x430; &#x441;&#x432;&#x43E;&#x439; &#x43F;&#x435;&#x440;&#x432;&#x44B;&#x439; &#x432;&#x435;&#x431;-&#x441;&#x430;&#x439;&#x442; &#x438; &#x437;&#x430;&#x43F;&#x443;&#x441;&#x442;&#x438;&#x43B;&#x430; &#x435;&#x433;&#x43E; &#x43D;&#x430; &#x432;&#x435;&#x431;-&#x441;&#x435;&#x440;&#x432;&#x435;&#x440;&#x435;! &#x41D;&#x443; &#x43D;&#x435; &#x43A;&#x440;&#x443;&#x442;&#x43E; &#x43B;&#x438;?</p><p><a href="images/it_worked2.png">&#x421;&#x440;&#x430;&#x431;&#x43E;&#x442;&#x430;&#x43B;&#x43E;!</a></p><p>&#x41F;&#x43E;&#x43A;&#x430; &#x440;&#x430;&#x431;&#x43E;&#x442;&#x430;&#x435;&#x442; &#x432;&#x435;&#x431;-&#x441;&#x435;&#x440;&#x432;&#x435;&#x440;, &#x432; &#x442;&#x435;&#x440;&#x43C;&#x438;&#x43D;&#x430;&#x43B;&#x435; &#x43D;&#x435; &#x431;&#x443;&#x434;&#x435;&#x442; &#x43F;&#x440;&#x438;&#x433;&#x43B;&#x430;&#x448;&#x435;&#x43D;&#x438;&#x44F; &#x434;&#x43B;&#x44F; &#x432;&#x432;&#x43E;&#x434;&#x430; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;. &#x422;&#x44B; &#x432;&#x441;&#x451; &#x435;&#x449;&#x451; &#x441;&#x43C;&#x43E;&#x436;&#x435;&#x448;&#x44C; &#x432;&#x432;&#x435;&#x441;&#x442;&#x438; &#x442;&#x435;&#x43A;&#x441;&#x442;, &#x43D;&#x43E; &#x43D;&#x435; &#x441;&#x43C;&#x43E;&#x436;&#x435;&#x448;&#x44C; &#x432;&#x44B;&#x43F;&#x43E;&#x43B;&#x43D;&#x438;&#x442;&#x44C; &#x43D;&#x438;&#x43A;&#x430;&#x43A;&#x443;&#x44E; &#x434;&#x440;&#x443;&#x433;&#x443;&#x44E; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x443;. &#x42D;&#x442;&#x43E; &#x43F;&#x440;&#x43E;&#x438;&#x441;&#x445;&#x43E;&#x434;&#x438;&#x442; &#x43F;&#x43E;&#x442;&#x43E;&#x43C;&#x443;, &#x447;&#x442;&#x43E; &#x441;&#x435;&#x440;&#x432;&#x435;&#x440; &#x43F;&#x440;&#x43E;&#x434;&#x43E;&#x43B;&#x436;&#x430;&#x435;&#x442; &#x440;&#x430;&#x431;&#x43E;&#x442;&#x443;, &quot;&#x441;&#x43B;&#x443;&#x448;&#x430;&#x44F;&quot; &#x432;&#x445;&#x43E;&#x434;&#x44F;&#x449;&#x438;&#x435; &#x437;&#x430;&#x43F;&#x440;&#x43E;&#x441;&#x44B;.</p><blockquote><p>&#x41C;&#x44B; &#x440;&#x430;&#x441;&#x441;&#x43C;&#x430;&#x442;&#x440;&#x438;&#x432;&#x430;&#x43B;&#x438;, &#x43A;&#x430;&#x43A; &#x440;&#x430;&#x431;&#x43E;&#x442;&#x430;&#x44E;&#x442; &#x432;&#x435;&#x431;-&#x441;&#x435;&#x440;&#x432;&#x435;&#x440;&#x430;, &#x432; &#x433;&#x43B;&#x430;&#x432;&#x435; <b>&#x41A;&#x430;&#x43A; &#x440;&#x430;&#x431;&#x43E;&#x442;&#x430;&#x435;&#x442; &#x438;&#x43D;&#x442;&#x435;&#x440;&#x43D;&#x435;&#x442;</b>.</p></blockquote><p>&#x412;&#x435;&#x431;-&#x441;&#x435;&#x440;&#x432;&#x435;&#x440; &#x437;&#x430;&#x439;&#x43C;&#x451;&#x442; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x43D;&#x443;&#x44E; &#x441;&#x442;&#x440;&#x43E;&#x43A;&#x443;, &#x43F;&#x43E;&#x43A;&#x430; &#x442;&#x44B; &#x435;&#x433;&#x43E; &#x43D;&#x435; &#x43E;&#x441;&#x442;&#x430;&#x43D;&#x43E;&#x432;&#x438;&#x448;&#x44C;. &#x427;&#x442;&#x43E;&#x431;&#x44B; &#x438; &#x434;&#x430;&#x43B;&#x44C;&#x448;&#x435; &#x438;&#x43C;&#x435;&#x442;&#x44C; &#x432;&#x43E;&#x437;&#x43C;&#x43E;&#x436;&#x43D;&#x43E;&#x441;&#x442;&#x44C; &#x43D;&#x430;&#x431;&#x438;&#x440;&#x430;&#x442;&#x44C; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x44B;, &#x43E;&#x442;&#x43A;&#x440;&#x43E;&#x439; &#x435;&#x449;&#x451; &#x43E;&#x434;&#x43D;&#x43E; &#x43E;&#x43A;&#x43D;&#x43E; &#x442;&#x435;&#x440;&#x43C;&#x438;&#x43D;&#x430;&#x43B;&#x430; &#x438; &#x430;&#x43A;&#x442;&#x438;&#x432;&#x438;&#x440;&#x443;&#x439; &#x432; &#x43D;&#x451;&#x43C; &#x432;&#x438;&#x440;&#x442;&#x443;&#x430;&#x43B;&#x44C;&#x43D;&#x43E;&#x435; &#x43E;&#x43A;&#x440;&#x443;&#x436;&#x435;&#x43D;&#x438;&#x435;. &#x427;&#x442;&#x43E;&#x431;&#x44B; &#x43E;&#x441;&#x442;&#x430;&#x43D;&#x43E;&#x432;&#x438;&#x442;&#x44C; &#x432;&#x435;&#x431;-&#x441;&#x435;&#x440;&#x432;&#x435;&#x440;, &#x43F;&#x435;&#x440;&#x435;&#x439;&#x434;&#x438; &#x43E;&#x431;&#x440;&#x430;&#x442;&#x43D;&#x43E; &#x432; &#x43E;&#x43A;&#x43D;&#x43E;, &#x432; &#x43A;&#x43E;&#x442;&#x43E;&#x440;&#x43E;&#x43C; &#x43E;&#x43D; &#x440;&#x430;&#x431;&#x43E;&#x442;&#x430;&#x435;&#x442;, &#x438; &#x43D;&#x430;&#x436;&#x43C;&#x438; CTRL + C &#x2014; &#x43A;&#x43D;&#x43E;&#x43F;&#x43A;&#x438; Control &#x438; C &#x432;&#x43C;&#x435;&#x441;&#x442;&#x435; (&#x432; Windows &#x43C;&#x43E;&#x436;&#x435;&#x442; &#x43F;&#x43E;&#x442;&#x440;&#x435;&#x431;&#x43E;&#x432;&#x430;&#x442;&#x44C;&#x441;&#x44F; &#x43D;&#x430;&#x436;&#x430;&#x442;&#x44C; &#x43A;&#x43B;&#x430;&#x432;&#x438;&#x448;&#x438; Ctrl + Break).</p><p>&#x413;&#x43E;&#x442;&#x43E;&#x432;&#x430; &#x43A; &#x441;&#x43B;&#x435;&#x434;&#x443;&#x44E;&#x449;&#x435;&#x43C;&#x443; &#x448;&#x430;&#x433;&#x443;? &#x41F;&#x440;&#x438;&#x448;&#x43B;&#x43E; &#x432;&#x440;&#x435;&#x43C;&#x44F; &#x441;&#x43E;&#x437;&#x434;&#x430;&#x442;&#x44C; &#x441;&#x43E;&#x434;&#x435;&#x440;&#x436;&#x438;&#x43C;&#x43E;&#x435; &#x434;&#x43B;&#x44F; &#x43D;&#x430;&#x448;&#x435;&#x433;&#x43E; &#x431;&#x43B;&#x43E;&#x433;&#x430;!</p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../django_installation/" class="navigation navigation-prev " aria-label="Previous page: Установка Django">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../django_models/" class="navigation navigation-next " aria-label="Next page: Модели Django">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Твой первый проект на Django!","level":"1.11","depth":1,"next":{"title":"Модели Django","level":"1.12","depth":1,"path":"django_models/README.md","ref":"django_models/README.md","articles":[]},"previous":{"title":"Установка Django","level":"1.10","depth":1,"path":"django_installation/README.md","ref":"django_installation/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"django_version":"2.2.4"},"language":"ru","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"django_start_project/README.md","mtime":"2020-06-27T13:00:24.086Z","type":"markdown"},"gitbook":{"version":"3.4.0","time":"2020-06-27T13:00:41.274Z"},"basePath":"..","book":{"language":"ru"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,797 @@
+
+<!DOCTYPE HTML>
+<html lang="bg" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Инсталиране на Django · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.4.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../django_start_project/" />
+    
+    
+    <link rel="prev" href="../django/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Въведение
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Инсталиране
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../installation/">
+            
+                <a href="../installation/#command-line">
+            
+                    
+                    Команден ред
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../installation/">
+            
+                <a href="../installation/#python">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../installation/">
+            
+                <a href="../installation/#code-editor">
+            
+                    
+                    Редактор на код
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../installation/">
+            
+                <a href="../installation/#virtualenv">
+            
+                    
+                    Виртуална среда
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../installation/">
+            
+                <a href="../installation/#django">
+            
+                    
+                    Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../installation/">
+            
+                <a href="../installation/#git">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../installation/">
+            
+                <a href="../installation/#github">
+            
+                    
+                    GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../installation/">
+            
+                <a href="../installation/#pythonanywhere">
+            
+                    
+                    PythonAnywhere
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    Инсталиране (chromebook)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    Как работи интернет
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Въведение в команден ред
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Инсталиране на Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    Редактор на код
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Въведение в Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Какво е Django?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Инсталиране на Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    Вашият първи проект с Django!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Django модели
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Администриране на Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Внедряване!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django URL адреси
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django изгледи - време за създаване!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    Въведение в HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM (Querysets)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    Динамични данни в шаблони
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django шаблони
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - направи го красиво
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Разширяване на шаблони
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Разшири своето приложение
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Django Форми
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    Какво следва?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Инсталиране на Django</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x438;&#x43D;&#x441;&#x442;&#x430;&#x43B;&#x438;&#x440;&#x430;&#x43D;&#x435;-&#x43D;&#x430;-django">&#x418;&#x43D;&#x441;&#x442;&#x430;&#x43B;&#x438;&#x440;&#x430;&#x43D;&#x435; &#x43D;&#x430; Django</h1><blockquote><p><strong>&#x417;&#x430;&#x431;&#x435;&#x43B;&#x435;&#x436;&#x43A;&#x430;</strong> &#x410;&#x43A;&#x43E; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x442;&#x435; Chromebook, &#x43F;&#x440;&#x43E;&#x43F;&#x443;&#x441;&#x43D;&#x435;&#x442;&#x435; &#x442;&#x430;&#x437;&#x438; &#x433;&#x43B;&#x430;&#x432;&#x430; &#x438; &#x441;&#x435; &#x443;&#x432;&#x435;&#x440;&#x435;&#x442;&#x435;, &#x447;&#x435; &#x441;&#x43B;&#x435;&#x434;&#x432;&#x430;&#x442;&#x435; &#x438;&#x43D;&#x441;&#x442;&#x440;&#x443;&#x43A;&#x446;&#x438;&#x438;&#x442;&#x435; <a href="../chromebook_setup/">&#x41D;&#x430;&#x441;&#x442;&#x440;&#x43E;&#x439;&#x43A;&#x430; &#x43D;&#x430; Chromebook</a>.</p><p><strong>&#x417;&#x430;&#x431;&#x435;&#x43B;&#x435;&#x436;&#x43A;&#x430;</strong> &#x410;&#x43A;&#x43E; &#x432;&#x435;&#x447;&#x435; &#x441;&#x442;&#x435; &#x43C;&#x438;&#x43D;&#x430;&#x43B;&#x438; &#x43F;&#x440;&#x435;&#x437; &#x441;&#x442;&#x44A;&#x43F;&#x43A;&#x438;&#x442;&#x435; &#x437;&#x430; &#x438;&#x43D;&#x441;&#x442;&#x430;&#x43B;&#x438;&#x440;&#x430;&#x43D;&#x435;, &#x442;&#x43E;&#x433;&#x430;&#x432;&#x430; &#x432;&#x435;&#x447;&#x435; &#x441;&#x442;&#x435; &#x43D;&#x430;&#x43F;&#x440;&#x430;&#x432;&#x438;&#x43B;&#x438; &#x442;&#x43E;&#x432;&#x430; - &#x43C;&#x43E;&#x436;&#x435;&#x442;&#x435; &#x434;&#x430; &#x43F;&#x440;&#x435;&#x43C;&#x438;&#x43D;&#x435;&#x442;&#x435; &#x43D;&#x430;&#x43F;&#x440;&#x430;&#x432;&#x43E; &#x43A;&#x44A;&#x43C; &#x441;&#x43B;&#x435;&#x434;&#x432;&#x430;&#x449;&#x430;&#x442;&#x430; &#x433;&#x43B;&#x430;&#x432;&#x430;!</p><p>&#x427;&#x430;&#x441;&#x442; &#x43E;&#x442; &#x442;&#x43E;&#x437;&#x438; &#x440;&#x430;&#x437;&#x434;&#x435;&#x43B; &#x435; &#x431;&#x430;&#x437;&#x438;&#x440;&#x430;&#x43D; &#x43D;&#x430; &#x443;&#x440;&#x43E;&#x446;&#x438; &#x43E;&#x442; Geek Girls Carrots (<a href="https://github.com/ggcarrots/django-carrots" target="_blank">https://github.com/ggcarrots/django-carrots</a>).</p><p>&#x427;&#x430;&#x441;&#x442; &#x43E;&#x442; &#x442;&#x43E;&#x437;&#x438; &#x440;&#x430;&#x437;&#x434;&#x435;&#x43B; &#x435; &#x431;&#x430;&#x437;&#x438;&#x440;&#x430;&#x43D; &#x43D;&#x430; <a href="http://django-marcador.keimlink.de/" target="_blank"> django-marcador    &#x443;&#x440;&#x43E;&#x43A; </a> &#x43B;&#x438;&#x446;&#x435;&#x43D;&#x437;&#x438;&#x440;&#x430;&#x43D; &#x441;&#x44A;&#x433;&#x43B;&#x430;&#x441;&#x43D;&#x43E; Creative Commons    Attribution-ShareAlike 4.0 &#x43C;&#x435;&#x436;&#x434;&#x443;&#x43D;&#x430;&#x440;&#x43E;&#x434;&#x435;&#x43D; &#x43B;&#x438;&#x446;&#x435;&#x43D;&#x437;. &#x423;&#x440;&#x43E;&#x43A;&#x44A;&#x442; &#x437;&#x430; &#x434;&#x436;&#x430;&#x43D;&#x433;&#x43E;-&#x43C;&#x430;&#x440;&#x43A;&#x430;&#x434;&#x43E;&#x440; &#x435; &#x437;&#x430;&#x449;&#x438;&#x442;&#x435;&#x43D; &#x441; &#x430;&#x432;&#x442;&#x43E;&#x440;&#x441;&#x43A;&#x43E; &#x43F;&#x440;&#x430;&#x432;&#x43E; &#x43E;&#x442; Markus Zapke-Gr&#xFC;ndemann et al.</p></blockquote><h2 id="&#x432;&#x438;&#x440;&#x442;&#x443;&#x430;&#x43B;&#x43D;&#x430;-&#x441;&#x440;&#x435;&#x434;&#x430;">&#x412;&#x438;&#x440;&#x442;&#x443;&#x430;&#x43B;&#x43D;&#x430; &#x441;&#x440;&#x435;&#x434;&#x430;</h2><p>&#x41F;&#x440;&#x435;&#x434;&#x438; &#x434;&#x430; &#x438;&#x43D;&#x441;&#x442;&#x430;&#x43B;&#x438;&#x440;&#x430;&#x43C;&#x435; Django, &#x449;&#x435; &#x432;&#x438; &#x43D;&#x430;&#x43A;&#x430;&#x440;&#x430;&#x43C;&#x435; &#x434;&#x430; &#x438;&#x43D;&#x441;&#x442;&#x430;&#x43B;&#x438;&#x440;&#x430;&#x442;&#x435; &#x438;&#x437;&#x43A;&#x43B;&#x44E;&#x447;&#x438;&#x442;&#x435;&#x43B;&#x43D;&#x43E; &#x43F;&#x43E;&#x43B;&#x435;&#x437;&#x435;&#x43D; &#x438;&#x43D;&#x441;&#x442;&#x440;&#x443;&#x43C;&#x435;&#x43D;&#x442;, &#x43A;&#x43E;&#x439;&#x442;&#x43E; &#x434;&#x430; &#x432;&#x438; &#x43F;&#x43E;&#x43C;&#x43E;&#x433;&#x43D;&#x435; &#x434;&#x430; &#x43F;&#x43E;&#x434;&#x434;&#x44A;&#x440;&#x436;&#x430;&#x442;&#x435; &#x441;&#x440;&#x435;&#x434;&#x430;&#x442;&#x430; &#x441;&#x438; &#x43D;&#x430; &#x43A;&#x43E;&#x434;&#x438;&#x440;&#x430;&#x43D;&#x435; &#x43F;&#x43E;&#x434;&#x440;&#x435;&#x434;&#x435;&#x43D;&#x430; &#x43D;&#x430; &#x432;&#x430;&#x448;&#x438;&#x44F; &#x43A;&#x43E;&#x43C;&#x43F;&#x44E;&#x442;&#x44A;&#x440;. &#x412;&#x44A;&#x437;&#x43C;&#x43E;&#x436;&#x43D;&#x43E; &#x435; &#x434;&#x430; &#x43F;&#x440;&#x43E;&#x43F;&#x443;&#x441;&#x43D;&#x435;&#x442;&#x435; &#x442;&#x430;&#x437;&#x438; &#x441;&#x442;&#x44A;&#x43F;&#x43A;&#x430;, &#x43D;&#x43E; &#x441;&#x438;&#x43B;&#x43D;&#x43E; &#x441;&#x435; &#x43F;&#x440;&#x435;&#x43F;&#x43E;&#x440;&#x44A;&#x447;&#x432;&#x430;. &#x41A;&#x430;&#x442;&#x43E; &#x437;&#x430;&#x43F;&#x43E;&#x447;&#x43D;&#x435;&#x442;&#x435; &#x441; &#x432;&#x44A;&#x437;&#x43C;&#x43E;&#x436;&#x43D;&#x43E; &#x43D;&#x430;&#x439;-&#x434;&#x43E;&#x431;&#x440;&#x430;&#x442;&#x430; &#x43D;&#x430;&#x441;&#x442;&#x440;&#x43E;&#x439;&#x43A;&#x430;, &#x449;&#x435; &#x432;&#x438; &#x441;&#x43F;&#x435;&#x441;&#x442;&#x438; &#x43C;&#x43D;&#x43E;&#x433;&#x43E; &#x43F;&#x440;&#x43E;&#x431;&#x43B;&#x435;&#x43C;&#x438; &#x432; &#x431;&#x44A;&#x434;&#x435;&#x449;&#x435;!</p><p>&#x422;&#x430;&#x43A;&#x430; &#x447;&#x435;, &#x43D;&#x435;&#x43A;&#x430; &#x441;&#x44A;&#x437;&#x434;&#x430;&#x434;&#x435;&#x43C; <strong>&#x432;&#x438;&#x440;&#x442;&#x443;&#x430;&#x43B;&#x43D;&#x430; &#x441;&#x440;&#x435;&#x434;&#x430;</strong> (&#x43D;&#x430;&#x440;&#x438;&#x447;&#x430;&#x43D;&#x430; &#x43E;&#x449;&#x435; <em>virtualenv</em>). Virtualenv &#x449;&#x435; &#x438;&#x437;&#x43E;&#x43B;&#x438;&#x440;&#x430; &#x432;&#x430;&#x448;&#x430;&#x442;&#x430; &#x43D;&#x430;&#x441;&#x442;&#x440;&#x43E;&#x439;&#x43A;&#x430; &#x43D;&#x430; Python/Django &#x43D;&#x430; &#x431;&#x430;&#x437;&#x430; &#x43F;&#x440;&#x43E;&#x435;&#x43A;&#x442;. &#x422;&#x43E;&#x432;&#x430; &#x43E;&#x437;&#x43D;&#x430;&#x447;&#x430;&#x432;&#x430;, &#x447;&#x435; &#x432;&#x441;&#x438;&#x447;&#x43A;&#x438; &#x43F;&#x440;&#x43E;&#x43C;&#x435;&#x43D;&#x438;, &#x43A;&#x43E;&#x438;&#x442;&#x43E; &#x43F;&#x440;&#x430;&#x432;&#x438;&#x442;&#x435; &#x432; &#x435;&#x434;&#x438;&#x43D; &#x443;&#x435;&#x431;&#x441;&#x430;&#x439;&#x442;, &#x43D;&#x44F;&#x43C;&#x430; &#x434;&#x430; &#x437;&#x430;&#x441;&#x435;&#x433;&#x43D;&#x430;&#x442; &#x434;&#x440;&#x443;&#x433;&#x438;, &#x43A;&#x43E;&#x438;&#x442;&#x43E; &#x441;&#x44A;&#x449;&#x43E; &#x440;&#x430;&#x437;&#x440;&#x430;&#x431;&#x43E;&#x442;&#x432;&#x430;&#x442;&#x435;. &#x42F;&#x43A;&#x43E;, &#x43D;&#x430;&#x43B;&#x438;?</p><p>&#x412;&#x441;&#x438;&#x447;&#x43A;&#x43E;, &#x43A;&#x43E;&#x435;&#x442;&#x43E; &#x442;&#x440;&#x44F;&#x431;&#x432;&#x430; &#x434;&#x430; &#x43D;&#x430;&#x43F;&#x440;&#x430;&#x432;&#x438;&#x442;&#x435;, &#x435; &#x434;&#x430; &#x43D;&#x430;&#x43C;&#x435;&#x440;&#x438;&#x442;&#x435; &#x434;&#x438;&#x440;&#x435;&#x43A;&#x442;&#x43E;&#x440;&#x438;&#x44F;, &#x432; &#x43A;&#x43E;&#x44F;&#x442;&#x43E; &#x438;&#x441;&#x43A;&#x430;&#x442;&#x435; &#x434;&#x430; &#x441;&#x44A;&#x437;&#x434;&#x430;&#x434;&#x435;&#x442;&#x435; <code>virtualenv</code>; &#x432;&#x430;&#x448;&#x430;&#x442;&#x430; &#x43D;&#x430;&#x447;&#x430;&#x43B;&#x43D;&#x430; &#x434;&#x438;&#x440;&#x435;&#x43A;&#x442;&#x43E;&#x440;&#x438;&#x44F;, &#x43D;&#x430;&#x43F;&#x440;&#x438;&#x43C;&#x435;&#x440;. &#x412; Windows &#x43C;&#x43E;&#x436;&#x435; &#x434;&#x430; &#x438;&#x437;&#x433;&#x43B;&#x435;&#x436;&#x434;&#x430; &#x43A;&#x430;&#x442;&#x43E; <code>C:\Users\Name</code> (&#x43A;&#x44A;&#x434;&#x435;&#x442;&#x43E; <code>Name</code> &#x435; &#x438;&#x43C;&#x435;&#x442;&#x43E; &#x43D;&#x430; &#x432;&#x430;&#x448;&#x438;&#x44F; &#x43B;&#x43E;&#x433;&#x438;&#x43D;).</p><blockquote><p><strong>&#x417;&#x410;&#x411;&#x415;&#x41B;&#x415;&#x416;&#x41A;&#x410;:</strong> &#x412; Windows &#x441;&#x435; &#x443;&#x432;&#x435;&#x440;&#x435;&#x442;&#x435;, &#x447;&#x435; &#x442;&#x430;&#x437;&#x438; &#x434;&#x438;&#x440;&#x435;&#x43A;&#x442;&#x43E;&#x440;&#x438;&#x44F; &#x43D;&#x435; &#x441;&#x44A;&#x434;&#x44A;&#x440;&#x436;&#x430; &#x430;&#x43A;&#x446;&#x435;&#x43D;&#x442;&#x438;&#x440;&#x430;&#x43D;&#x438; &#x438;&#x43B;&#x438; &#x441;&#x43F;&#x435;&#x446;&#x438;&#x430;&#x43B;&#x43D;&#x438; &#x437;&#x43D;&#x430;&#x446;&#x438;; &#x430;&#x43A;&#x43E; &#x432;&#x430;&#x448;&#x435;&#x442;&#x43E; &#x43F;&#x43E;&#x442;&#x440;&#x435;&#x431;&#x438;&#x442;&#x435;&#x43B;&#x441;&#x43A;&#x43E; &#x438;&#x43C;&#x435; &#x441;&#x44A;&#x434;&#x44A;&#x440;&#x436;&#x430; &#x441;&#x438;&#x43C;&#x432;&#x43E;&#x43B;&#x438; &#x441; &#x443;&#x434;&#x430;&#x440;&#x435;&#x43D;&#x438;&#x435;, &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x439;&#x442;&#x435; &#x434;&#x440;&#x443;&#x433;&#x430; &#x434;&#x438;&#x440;&#x435;&#x43A;&#x442;&#x43E;&#x440;&#x438;&#x44F;, &#x43D;&#x430;&#x43F;&#x440;&#x438;&#x43C;&#x435;&#x440;, <code>C:\djangogirls</code>.</p></blockquote><p>&#x417;&#x430; &#x442;&#x43E;&#x437;&#x438; &#x443;&#x440;&#x43E;&#x43A; &#x449;&#x435; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x43C;&#x435; &#x43D;&#x43E;&#x432;&#x430; &#x434;&#x438;&#x440;&#x435;&#x43A;&#x442;&#x43E;&#x440;&#x438;&#x44F; <code>djangogirls</code> &#x43E;&#x442; &#x432;&#x430;&#x448;&#x430;&#x442;&#x430; &#x434;&#x43E;&#x43C;&#x430;&#x448;&#x43D;&#x430; &#x434;&#x438;&#x440;&#x435;&#x43A;&#x442;&#x43E;&#x440;&#x438;&#x44F;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>    $ mkdir djangogirls
+    $ cd djangogirls</code></pre>
+<p>&#x429;&#x435; &#x43D;&#x430;&#x43F;&#x440;&#x430;&#x432;&#x438;&#x43C; virtualenv, &#x43D;&#x430;&#x440;&#x435;&#x447;&#x435;&#x43D; <code>myvenv</code>. &#x41E;&#x431;&#x449;&#x430;&#x442;&#x430; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x430; &#x449;&#x435; &#x431;&#x44A;&#x434;&#x435; &#x432;&#x44A;&#x432; &#x444;&#x43E;&#x440;&#x43C;&#x430;&#x442;&#x430;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>    $ python3 -m venv myvenv</code></pre>
+<sec data-title="Virtual environment: Windows" data-id="virtualenv_installation_windows" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Virtual environment: Windows<a class="pull-right section atTitle btn btn-default" target="virtualenv_installation_windows"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="virtualenv_installation_windows"><div class="panel-body">
+
+
+<p>&#x417;&#x430; &#x434;&#x430; &#x441;&#x44A;&#x437;&#x434;&#x430;&#x434;&#x435;&#x442;&#x435; &#x43D;&#x43E;&#x432; <code>virtualenv</code>, &#x442;&#x440;&#x44F;&#x431;&#x432;&#x430; &#x434;&#x430; &#x43E;&#x442;&#x432;&#x43E;&#x440;&#x438;&#x442;&#x435; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x43D;&#x438;&#x44F; &#x440;&#x435;&#x434; &#x438; &#x434;&#x430; &#x441;&#x442;&#x430;&#x440;&#x442;&#x438;&#x440;&#x430;&#x442;&#x435; <code>python -m venv myvenv</code>. &#x429;&#x435; &#x438;&#x437;&#x433;&#x43B;&#x435;&#x436;&#x434;&#x430; &#x442;&#x430;&#x43A;&#x430;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>    C:\Users\Name\djangogirls&gt; python -m venv myvenv</code></pre>
+<p>&#x41A;&#x44A;&#x434;&#x435;&#x442;&#x43E; <code>myvenv</code> &#x435; &#x438;&#x43C;&#x435;&#x442;&#x43E; &#x43D;&#x430; &#x432;&#x430;&#x448;&#x430;&#x442;&#x430; <code>virtualenv</code>. &#x41C;&#x43E;&#x436;&#x435;&#x442;&#x435; &#x434;&#x430; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x442;&#x435; &#x432;&#x441;&#x44F;&#x43A;&#x43E; &#x434;&#x440;&#x443;&#x433;&#x43E; &#x438;&#x43C;&#x435;, &#x43D;&#x43E; &#x441;&#x435; &#x43F;&#x440;&#x438;&#x434;&#x44A;&#x440;&#x436;&#x430;&#x439;&#x442;&#x435; &#x43A;&#x44A;&#x43C; &#x43C;&#x430;&#x43B;&#x43A;&#x438; &#x431;&#x443;&#x43A;&#x432;&#x438; &#x438; &#x43D;&#x435; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x439;&#x442;&#x435; &#x438;&#x43D;&#x442;&#x435;&#x440;&#x432;&#x430;&#x43B;&#x438;, &#x443;&#x434;&#x430;&#x440;&#x435;&#x43D;&#x438;&#x44F; &#x438;&#x43B;&#x438; &#x441;&#x43F;&#x435;&#x446;&#x438;&#x430;&#x43B;&#x43D;&#x438; &#x437;&#x43D;&#x430;&#x446;&#x438;. &#x421;&#x44A;&#x449;&#x43E; &#x442;&#x430;&#x43A;&#x430; &#x435; &#x434;&#x43E;&#x431;&#x440;&#x435; &#x438;&#x43C;&#x435;&#x442;&#x43E; &#x434;&#x430; &#x431;&#x44A;&#x434;&#x435; &#x43A;&#x440;&#x430;&#x442;&#x43A;&#x43E; - &#x449;&#x435; &#x433;&#x43E; &#x43F;&#x440;&#x435;&#x43F;&#x440;&#x430;&#x449;&#x430;&#x442;&#x435; &#x43C;&#x43D;&#x43E;&#x433;&#x43E;!</p></div></div></div></sec>
+
+
+<sec data-title="Virtual environment: Linux and OS X" data-id="virtualenv_installation_linuxosx" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Virtual environment: Linux and OS X<a class="pull-right section atTitle btn btn-default" target="virtualenv_installation_linuxosx"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="virtualenv_installation_linuxosx"><div class="panel-body">
+
+
+<p>&#x41C;&#x43E;&#x436;&#x435;&#x43C; &#x434;&#x430; &#x441;&#x44A;&#x437;&#x434;&#x430;&#x434;&#x435;&#x43C; <code>virtualenv</code> &#x438; &#x432; Linux &#x438; OS X, &#x43A;&#x430;&#x442;&#x43E; &#x43F;&#x443;&#x441;&#x43D;&#x435;&#x43C; <code>python3 -m venv myvenv</code>. &#x429;&#x435; &#x438;&#x437;&#x433;&#x43B;&#x435;&#x436;&#x434;&#x430; &#x442;&#x430;&#x43A;&#x430;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>    $ python3 -m venv myvenv</code></pre>
+<p><code>myvenv</code> &#x435; &#x438;&#x43C;&#x435;&#x442;&#x43E; &#x43D;&#x430; &#x432;&#x430;&#x448;&#x430;&#x442;&#x430; <code>virtualenv</code>. &#x41C;&#x43E;&#x436;&#x435;&#x442;&#x435; &#x434;&#x430; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x442;&#x435; &#x432;&#x441;&#x44F;&#x43A;&#x43E; &#x434;&#x440;&#x443;&#x433;&#x43E; &#x438;&#x43C;&#x435;, &#x43D;&#x43E; &#x441;&#x435; &#x43F;&#x440;&#x438;&#x434;&#x44A;&#x440;&#x436;&#x430;&#x439;&#x442;&#x435; &#x43A;&#x44A;&#x43C; &#x43C;&#x430;&#x43B;&#x43A;&#x438; &#x431;&#x443;&#x43A;&#x432;&#x438; &#x438; &#x43D;&#x435; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x439;&#x442;&#x435; &#x438;&#x43D;&#x442;&#x435;&#x440;&#x432;&#x430;&#x43B;&#x438;. &#x421;&#x44A;&#x449;&#x43E; &#x442;&#x430;&#x43A;&#x430; &#x435; &#x434;&#x43E;&#x431;&#x440;&#x435; &#x438;&#x43C;&#x435;&#x442;&#x43E; &#x434;&#x430; &#x431;&#x44A;&#x434;&#x435; &#x43A;&#x440;&#x430;&#x442;&#x43A;&#x43E;, &#x43F;&#x43E;&#x43D;&#x435;&#x436;&#x435; &#x449;&#x435; &#x433;&#x43E; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x442;&#x435; &#x447;&#x435;&#x441;&#x442;&#x43E;!</p><blockquote><p><strong>&#x417;&#x410;&#x411;&#x415;&#x41B;&#x415;&#x416;&#x41A;&#x410;:</strong> &#x412; &#x43D;&#x44F;&#x43A;&#x43E;&#x438; &#x432;&#x435;&#x440;&#x441;&#x438;&#x438; &#x43D;&#x430; Debian/Ubuntu &#x43C;&#x43E;&#x436;&#x435; &#x434;&#x430; &#x43F;&#x43E;&#x43B;&#x443;&#x447;&#x438;&#x442;&#x435; &#x441;&#x43B;&#x435;&#x434;&#x43D;&#x430;&#x442;&#x430; &#x433;&#x440;&#x435;&#x448;&#x43A;&#x430;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>    The virtual environment was not created successfully because ensurepip is not available.  On Debian/Ubuntu systems, you need to install the python3-venv package using the following command.
+       apt install python3-venv
+    You may need to use sudo with that command.  After installing the python3-venv package, recreate your virtual environment.</code></pre>
+<p></p><p>&#x412; &#x442;&#x43E;&#x437;&#x438; &#x441;&#x43B;&#x443;&#x447;&#x430;&#x439; &#x441;&#x43B;&#x435;&#x434;&#x432;&#x430;&#x439;&#x442;&#x435; &#x438;&#x43D;&#x441;&#x442;&#x440;&#x443;&#x43A;&#x446;&#x438;&#x438;&#x442;&#x435; &#x43F;&#x43E;-&#x433;&#x43E;&#x440;&#x435; &#x438; &#x438;&#x43D;&#x441;&#x442;&#x430;&#x43B;&#x438;&#x440;&#x430;&#x439;&#x442;&#x435; &#x43F;&#x430;&#x43A;&#x435;&#x442;&#x430; <code>python3-venv</code>: </p><p class="code-label">command-line</p><p></p><pre><code>    $ sudo apt install python3-venv</code></pre>
+<p></p><p><strong>&#x417;&#x410;&#x411;&#x415;&#x41B;&#x415;&#x416;&#x41A;&#x410;:</strong> &#x41F;&#x440;&#x438; &#x43D;&#x44F;&#x43A;&#x43E;&#x438; &#x432;&#x435;&#x440;&#x441;&#x438;&#x438; &#x43D;&#x430; Debian/Ubuntu &#x438;&#x43D;&#x438;&#x446;&#x438;&#x438;&#x440;&#x430;&#x43D;&#x435;&#x442;&#x43E; &#x43D;&#x430; &#x432;&#x438;&#x440;&#x442;&#x443;&#x430;&#x43B;&#x43D;&#x430;&#x442;&#x430; &#x441;&#x440;&#x435;&#x434;&#x430; &#x43A;&#x430;&#x442;&#x43E; &#x442;&#x430;&#x437;&#x438; &#x432; &#x43C;&#x43E;&#x43C;&#x435;&#x43D;&#x442;&#x430; &#x434;&#x430;&#x432;&#x430; &#x441;&#x43B;&#x435;&#x434;&#x43D;&#x430;&#x442;&#x430; &#x433;&#x440;&#x435;&#x448;&#x43A;&#x430;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>    Error: Command &apos;[&apos;/home/eddie/Slask/tmp/venv/bin/python3&apos;, &apos;-Im&apos;, &apos;ensurepip&apos;, &apos;--upgrade&apos;, &apos;--default-pip&apos;]&apos; returned non-zero exit status 1</code></pre>
+<p></p><p>&#x417;&#x430; &#x434;&#x430; &#x437;&#x430;&#x43E;&#x431;&#x438;&#x43A;&#x43E;&#x43B;&#x438;&#x442;&#x435; &#x442;&#x43E;&#x432;&#x430;, &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x439;&#x442;&#x435; &#x432;&#x43C;&#x435;&#x441;&#x442;&#x43E; &#x442;&#x43E;&#x432;&#x430; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x430;&#x442;&#x430; <code>virtualenv</code>.</p><p></p><p class="code-label">command-line</p><p></p><pre><code>    $ sudo apt install python-virtualenv
+    $ virtualenv --python=python3.6 myvenv</code></pre>
+<p></p><p><strong>&#x417;&#x410;&#x411;&#x415;&#x41B;&#x415;&#x416;&#x41A;&#x410;:</strong> &#x410;&#x43A;&#x43E; &#x43F;&#x43E;&#x43B;&#x443;&#x447;&#x438;&#x442;&#x435; &#x433;&#x440;&#x435;&#x448;&#x43A;&#x430; &#x43A;&#x430;&#x442;&#x43E;</p><p></p><p class="code-label">command-line</p><p></p><pre><code>    E: Unable to locate package python3-venv</code></pre>
+<p></p><p>&#x432;&#x43C;&#x435;&#x441;&#x442;&#x43E; &#x442;&#x43E;&#x432;&#x430; &#x441;&#x442;&#x430;&#x440;&#x442;&#x438;&#x440;&#x430;&#x439;&#x442;&#x435;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>    sudo apt install python3.6-venv</code></pre>
+</blockquote></div></div></div></sec>
+
+
+<h2 id="&#x440;&#x430;&#x431;&#x43E;&#x442;&#x430;-&#x441;-virtualenv">&#x420;&#x430;&#x431;&#x43E;&#x442;&#x430; &#x441; virtualenv</h2><p>&#x41A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x430;&#x442;&#x430; &#x43F;&#x43E;-&#x433;&#x43E;&#x440;&#x435; &#x449;&#x435; &#x441;&#x44A;&#x437;&#x434;&#x430;&#x434;&#x435; &#x434;&#x438;&#x440;&#x435;&#x43A;&#x442;&#x43E;&#x440;&#x438;&#x44F; &#x441; &#x438;&#x43C;&#x435; <code>myvenv</code> (&#x438;&#x43B;&#x438; &#x43A;&#x430;&#x43A;&#x432;&#x43E;&#x442;&#x43E; &#x438;&#x43C;&#x435; &#x441;&#x442;&#x435; &#x441;&#x438; &#x438;&#x437;&#x431;&#x440;&#x430;&#x43B;&#x438;), &#x43A;&#x43E;&#x44F;&#x442;&#x43E; &#x441;&#x44A;&#x434;&#x44A;&#x440;&#x436;&#x430; &#x43D;&#x430;&#x448;&#x430;&#x442;&#x430; &#x432;&#x438;&#x440;&#x442;&#x443;&#x430;&#x43B;&#x43D;&#x430; &#x441;&#x440;&#x435;&#x434;&#x430; (&#x43F;&#x43E; &#x441;&#x44A;&#x449;&#x435;&#x441;&#x442;&#x432;&#x43E; &#x43A;&#x443;&#x43F; &#x434;&#x438;&#x440;&#x435;&#x43A;&#x442;&#x43E;&#x440;&#x438;&#x438; &#x438; &#x444;&#x430;&#x439;&#x43B;&#x43E;&#x432;&#x435;).</p><sec data-title="Working with virtualenv: Windows" data-id="virtualenv_windows" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Working with virtualenv: Windows<a class="pull-right section atTitle btn btn-default" target="virtualenv_windows"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="virtualenv_windows"><div class="panel-body">
+
+
+<p>&#x421;&#x442;&#x430;&#x440;&#x442;&#x438;&#x440;&#x430;&#x439;&#x442;&#x435; &#x432;&#x438;&#x440;&#x442;&#x443;&#x430;&#x43B;&#x43D;&#x430;&#x442;&#x430; &#x441;&#x438; &#x441;&#x440;&#x435;&#x434;&#x430; &#x43A;&#x430;&#x442;&#x43E; &#x43D;&#x430;&#x43F;&#x438;&#x448;&#x435;&#x442;&#x435;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>    C:\Users\Name\djangogirls&gt; myvenv\Scripts\activate</code></pre>
+<blockquote><p><strong>&#x417;&#x430;&#x431;&#x435;&#x43B;&#x435;&#x436;&#x43A;&#x430;:</strong> &#x41F;&#x440;&#x438; Windows 10 &#x43C;&#x43E;&#x436;&#x435;&#x442;&#x435; &#x434;&#x430; &#x43F;&#x43E;&#x43B;&#x443;&#x447;&#x438;&#x442;&#x435; &#x433;&#x440;&#x435;&#x448;&#x43A;&#x430; &#x432; &#x43F;&#x440;&#x43E;&#x437;&#x43E;&#x440;&#x435;&#x446;&#x430; &#x43D;&#x430; PowerShell <code>execution of scripts is disabled on this system</code>. &#x412; &#x442;&#x43E;&#x437;&#x438; &#x441;&#x43B;&#x443;&#x447;&#x430;&#x439; &#x442;&#x440;&#x44F;&#x431;&#x432;&#x430; &#x434;&#x430; &#x43E;&#x442;&#x432;&#x43E;&#x440;&#x438;&#x442;&#x435; &#x43D;&#x43E;&#x432; &#x43F;&#x440;&#x43E;&#x437;&#x43E;&#x440;&#x435;&#x446; &#x43D;&#x430; PowerShell &#x43A;&#x430;&#x442;&#x43E; &#x438;&#x437;&#x431;&#x435;&#x440;&#x435;&#x442;&#x435; &quot;Run as Administrator.&quot; &#x421;&#x43B;&#x435;&#x434; &#x442;&#x43E;&#x432;&#x430; &#x43D;&#x430;&#x43F;&#x438;&#x448;&#x435;&#x442;&#x435; &#x441;&#x43B;&#x435;&#x434;&#x43D;&#x430;&#x442;&#x430; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x430; &#x43F;&#x440;&#x435;&#x434;&#x438; &#x434;&#x430; &#x441;&#x442;&#x430;&#x440;&#x442;&#x438;&#x440;&#x430;&#x442;&#x435; &#x432;&#x438;&#x440;&#x442;&#x443;&#x430;&#x43B;&#x43D;&#x430;&#x442;&#x430; &#x441;&#x438; &#x441;&#x440;&#x435;&#x434;&#x430;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>    C:\WINDOWS\system32&gt; Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+        &#x41F;&#x440;&#x43E;&#x43C;&#x44F;&#x43D;&#x430; &#x43F;&#x440;&#x438; &#x43F;&#x43E;&#x43B;&#x438;&#x442;&#x438;&#x43A;&#x430;&#x442;&#x430; &#x43D;&#x430; &#x438;&#x437;&#x43F;&#x44A;&#x43B;&#x43D;&#x435;&#x43D;&#x438;&#x435;&#x442;&#x43E;
+        &#x41F;&#x43E;&#x43B;&#x438;&#x442;&#x438;&#x43A;&#x430;&#x442;&#x430; &#x43D;&#x430; &#x438;&#x437;&#x43F;&#x44A;&#x43B;&#x43D;&#x435;&#x43D;&#x438;&#x435;&#x442;&#x43E; &#x432;&#x438; &#x43F;&#x440;&#x435;&#x434;&#x43F;&#x430;&#x437;&#x432;&#x430; &#x43E;&#x442; &#x441;&#x43A;&#x440;&#x438;&#x43F;&#x442;&#x43E;&#x432;&#x435; &#x43D;&#x430; &#x43A;&#x43E;&#x438;&#x442;&#x43E; &#x43D;&#x44F;&#x43C;&#x430;&#x442;&#x435; &#x434;&#x43E;&#x432;&#x435;&#x440;&#x438;&#x435;. &#x41F;&#x440;&#x438; &#x43F;&#x440;&#x43E;&#x43C;&#x44F;&#x43D;&#x430; &#x43D;&#x430; &#x43F;&#x43E;&#x43B;&#x438;&#x442;&#x438;&#x43A;&#x430;&#x442;&#x430; &#x43D;&#x430; &#x438;&#x437;&#x43F;&#x44A;&#x43B;&#x43D;&#x435;&#x43D;&#x438;&#x435; &#x43C;&#x43E;&#x436;&#x435; &#x434;&#x430; &#x431;&#x44A;&#x434;&#x435;&#x442;&#x435; &#x438;&#x437;&#x43B;&#x43E;&#x436;&#x435;&#x43D;&#x438; &#x43D;&#x430; &#x43E;&#x43F;&#x430;&#x441;&#x435;&#x43D; &#x440;&#x438;&#x441;&#x43A; &#x43E;&#x43F;&#x438;&#x441;&#x430;&#x43D; &#x432; &#x442;&#x435;&#x43C;&#x430;&#x442;&#x430; about_Execution_Policies help &#x432; http://go.microsoft.com/fwlink/?LinkID=135170. &#x418;&#x441;&#x43A;&#x430;&#x442;&#x435; &#x43B;&#x438; &#x434;&#x430; &#x43F;&#x440;&#x43E;&#x43C;&#x435;&#x43D;&#x438;&#x442;&#x435; &#x43F;&#x43E;&#x43B;&#x438;&#x442;&#x438;&#x43A;&#x430;&#x442;&#x430; &#x43D;&#x430; &#x438;&#x437;&#x43F;&#x44A;&#x43B;&#x43D;&#x435;&#x43D;&#x438;&#x435;&#x442;&#x43E;? [Y] &#x414;&#x410; [A] &#x414;&#x430; &#x43D;&#x430; &#x432;&#x441;&#x438;&#x447;&#x43A;&#x43E; [N] &#x41D;&#x435; [L] &#x41D;&#x435; &#x43D;&#x430; &#x432;&#x441;&#x438;&#x447;&#x43A;&#x43E; [S] &#x41F;&#x440;&#x435;&#x43A;&#x440;&#x430;&#x442;&#x438; [?] &#x41F;&#x43E;&#x43C;&#x43E;&#x449; (&#x43F;&#x43E; &#x43F;&#x43E;&#x434;&#x440;&#x430;&#x437;&#x431;&#x438;&#x440;&#x430;&#x43D;&#x435; &#x435; &quot;N&quot;): A</code></pre>
+</blockquote><!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
+
+
+<blockquote><p><strong>&#x417;&#x430;&#x431;&#x435;&#x43B;&#x435;&#x436;&#x43A;&#x430;:</strong> &#x417;&#x430; &#x43F;&#x43E;&#x442;&#x440;&#x435;&#x431;&#x438;&#x442;&#x435;&#x43B;&#x438;&#x442;&#x435; &#x43D;&#x430; &#x43F;&#x43E;&#x43F;&#x443;&#x43B;&#x44F;&#x440;&#x43D;&#x438;&#x44F;&#x442; &#x440;&#x435;&#x434;&#x430;&#x43A;&#x442;&#x43E;&#x440; VS Code, &#x43A;&#x43E;&#x439;&#x442;&#x43E; &#x438;&#x434;&#x432;&#x430; &#x441; &#x438;&#x43D;&#x442;&#x435;&#x433;&#x440;&#x438;&#x440;&#x430;&#x43D; &#x442;&#x435;&#x440;&#x43C;&#x438;&#x43D;&#x430;&#x43B; &#x431;&#x430;&#x437;&#x438;&#x440;&#x430;&#x43D; &#x43D;&#x430; windows powershell, &#x438; &#x430;&#x43A;&#x43E; &#x438;&#x441;&#x43A;&#x430;&#x442;&#x435; &#x434;&#x430; &#x441;&#x435; &#x43F;&#x440;&#x438;&#x434;&#x44A;&#x440;&#x436;&#x430;&#x442;&#x435; &#x43A;&#x44A;&#x43C; &#x438;&#x43D;&#x442;&#x435;&#x433;&#x440;&#x438;&#x440;&#x430;&#x43D;&#x438;&#x44F; &#x442;&#x435;&#x440;&#x43C;&#x438;&#x43D;&#x430;&#x43B;, &#x442;&#x440;&#x44F;&#x431;&#x432;&#x430; &#x434;&#x430; &#x43D;&#x430;&#x43F;&#x438;&#x448;&#x435;&#x442;&#x435; &#x441;&#x43B;&#x435;&#x434;&#x43D;&#x430;&#x442;&#x430; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x430; &#x437;&#x430; &#x434;&#x430; &#x430;&#x43A;&#x442;&#x438;&#x432;&#x438;&#x440;&#x430;&#x442;&#x435; &#x432;&#x438;&#x440;&#x442;&#x443;&#x430;&#x43B;&#x43D;&#x430;&#x442;&#x430; &#x441;&#x438; &#x441;&#x440;&#x435;&#x434;&#x430;:</p><pre><code>    $ . myvenv\Scripts\activate.ps1</code></pre>
+<p></p><p>&#x41F;&#x440;&#x435;&#x434;&#x438;&#x43C;&#x441;&#x442;&#x432;&#x43E;&#x442;&#x43E; &#x435;, &#x447;&#x435; &#x43D;&#x435; &#x442;&#x440;&#x44F;&#x431;&#x432;&#x430; &#x434;&#x430; &#x441;&#x43C;&#x435;&#x43D;&#x44F;&#x442;&#x435; &#x43F;&#x440;&#x43E;&#x437;&#x43E;&#x440;&#x446;&#x438;&#x442;&#x435; &#x43C;&#x435;&#x436;&#x434;&#x443; IDE &#x438; command-line.</p></blockquote></div></div></div></sec>
+
+
+<sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Working with virtualenv: Linux and OS X<a class="pull-right section atTitle btn btn-default" target="virtualenv_linuxosx"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="virtualenv_linuxosx"><div class="panel-body">
+
+
+<p>&#x421;&#x442;&#x430;&#x440;&#x442;&#x438;&#x440;&#x430;&#x439;&#x442;&#x435; &#x432;&#x438;&#x440;&#x442;&#x443;&#x430;&#x43B;&#x43D;&#x430;&#x442;&#x430; &#x441;&#x438; &#x441;&#x440;&#x435;&#x434;&#x430; &#x43A;&#x430;&#x442;&#x43E; &#x43D;&#x430;&#x43F;&#x438;&#x448;&#x435;&#x442;&#x435;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>    $ source myvenv/bin/activate</code></pre>
+<p>&#x41F;&#x43E;&#x43C;&#x43D;&#x435;&#x442;&#x435;, &#x447;&#x435; &#x442;&#x440;&#x44F;&#x431;&#x432;&#x430; &#x434;&#x430; &#x437;&#x430;&#x43C;&#x435;&#x441;&#x442;&#x438;&#x442;&#x435; <code>myvenv</code> &#x441; &#x438;&#x43C;&#x435;&#x442;&#x43E; &#x43D;&#x430; &#x432;&#x430;&#x448;&#x430;&#x442;&#x430; &#x438;&#x437;&#x431;&#x440;&#x430;&#x43D;&#x430; <code>virtualenv</code>.</p><blockquote><p><strong>&#x417;&#x430;&#x431;&#x435;&#x43B;&#x435;&#x436;&#x43A;&#x430;:</strong> &#x43F;&#x43E;&#x43D;&#x44F;&#x43A;&#x43E;&#x433;&#x430; <code>source</code> &#x43C;&#x43E;&#x436;&#x435; &#x434;&#x430; &#x43D;&#x435; &#x435; &#x43D;&#x430; &#x43B;&#x438;&#x446;&#x435;. &#x412; &#x442;&#x435;&#x437;&#x438; &#x441;&#x43B;&#x443;&#x447;&#x430;&#x438; &#x442;&#x440;&#x44F;&#x431;&#x432;&#x430; &#x434;&#x430; &#x43D;&#x430;&#x43F;&#x440;&#x430;&#x432;&#x438;&#x442;&#x435; &#x441;&#x43B;&#x435;&#x434;&#x43D;&#x43E;&#x442;&#x43E;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>    $ . myvenv/bin/activate</code></pre>
+</blockquote></div></div></div></sec>
+
+
+<p>&#x429;&#x435; &#x440;&#x430;&#x437;&#x431;&#x435;&#x440;&#x435;&#x442;&#x435;, &#x447;&#x435; &#x432;&#x438;&#x440;&#x442;&#x443;&#x430;&#x43B;&#x43D;&#x430;&#x442;&#x430; &#x432;&#x438; &#x441;&#x440;&#x435;&#x434;&#x430; &#x435; &#x441;&#x442;&#x430;&#x440;&#x442;&#x438;&#x440;&#x430;&#x43D;&#x430; &#x43A;&#x430;&#x442;&#x43E; &#x432;&#x438;&#x434;&#x438;&#x442;&#x435; &#x43F;&#x43E;&#x434;&#x441;&#x43A;&#x430;&#x437;&#x432;&#x430;&#x43D;&#x435;&#x442;&#x43E; &#x432; &#x43A;&#x43E;&#x43D;&#x437;&#x43E;&#x43B;&#x430;&#x442;&#x430; &#x432;&#x438;, &#x43A;&#x43E;&#x435;&#x442;&#x43E; &#x437;&#x430;&#x43F;&#x43E;&#x447;&#x432;&#x430; &#x441; <code>(myvenv)</code>.</p><p>&#x41A;&#x43E;&#x433;&#x430;&#x442;&#x43E; &#x440;&#x430;&#x431;&#x43E;&#x442;&#x438;&#x442;&#x435; &#x43E;&#x442; &#x432;&#x438;&#x440;&#x442;&#x443;&#x430;&#x43B;&#x43D;&#x430; &#x441;&#x440;&#x435;&#x434;&#x430;, <code>python</code> &#x430;&#x432;&#x442;&#x43E;&#x43C;&#x430;&#x442;&#x438;&#x447;&#x43D;&#x43E; &#x449;&#x435; &#x441;&#x435; &#x43D;&#x430;&#x441;&#x43E;&#x447;&#x438; &#x43A;&#x44A;&#x43C; &#x43F;&#x440;&#x430;&#x432;&#x438;&#x43B;&#x43D;&#x430;&#x442;&#x430; &#x432;&#x435;&#x440;&#x441;&#x438;&#x44F;, &#x442;&#x430;&#x43A;&#x430; &#x447;&#x435; &#x43C;&#x43E;&#x436;&#x435; &#x434;&#x430; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x442;&#x435; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x430; <code>python</code> &#x432;&#x43C;&#x435;&#x441;&#x442;&#x43E; <code>python3</code>.</p><p>&#x414;&#x43E;&#x431;&#x440;&#x435;, &#x441;&#x435;&#x433;&#x430; &#x438;&#x43C;&#x430;&#x43C;&#x435; &#x432;&#x441;&#x438;&#x447;&#x43A;o &#x43D;&#x435;&#x43E;&#x431;&#x445;&#x43E;&#x434;&#x438;&#x43C;&#x43E; &#x43D;&#x430; &#x435;&#x434;&#x43D;&#x43E; &#x43C;&#x44F;&#x441;&#x442;&#x43E;. &#x41D;&#x430;&#x439;-&#x43D;&#x430;&#x43A;&#x440;&#x430;&#x44F; &#x43C;&#x43E;&#x436;&#x435; &#x434;&#x430; &#x438;&#x43D;&#x441;&#x442;&#x430;&#x43B;&#x438;&#x440;&#x430;&#x43C;&#x435; Django!</p><h2 id="django">&#x418;&#x43D;&#x441;&#x442;&#x430;&#x43B;&#x438;&#x440;&#x430;&#x43D;&#x435; &#x43D;&#x430; Django</h2><p>&#x421;&#x435;&#x433;&#x430; &#x441;&#x43B;&#x435;&#x434; &#x43A;&#x430;&#x442;&#x43E; &#x438;&#x43C;&#x430;&#x442;&#x435; &#x441;&#x442;&#x430;&#x440;&#x442;&#x438;&#x440;&#x430;&#x43D;&#x430; <code>virtualenv</code> &#x43C;&#x43E;&#x436;&#x435; &#x434;&#x430; &#x438;&#x43D;&#x441;&#x442;&#x430;&#x43B;&#x438;&#x440;&#x430;&#x442;&#x435; Django.</p><p>&#x41F;&#x440;&#x435;&#x434;&#x438; &#x434;&#x430; &#x43D;&#x430;&#x43F;&#x440;&#x430;&#x432;&#x438;&#x43C; &#x442;&#x43E;&#x432;&#x430; &#x43E;&#x431;&#x430;&#x447;&#x435; &#x449;&#x435; &#x43F;&#x440;&#x43E;&#x432;&#x435;&#x440;&#x438;&#x43C; &#x434;&#x430;&#x43B;&#x438; &#x438;&#x43C;&#x430;&#x43C;&#x435; &#x438;&#x43D;&#x441;&#x442;&#x430;&#x43B;&#x438;&#x440;&#x430;&#x43D;&#x430; &#x43F;&#x43E;&#x441;&#x43B;&#x435;&#x434;&#x43D;&#x430;&#x442;&#x430; &#x432;&#x435;&#x440;&#x441;&#x438;&#x44F; &#x43D;&#x430; <code>pip</code>, &#x441;&#x43E;&#x444;&#x442;&#x443;&#x435;&#x440;&#x44A;&#x442;, &#x43A;&#x43E;&#x439;&#x442;&#x43E; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x43C;&#x435; &#x434;&#x430; &#x438;&#x43D;&#x441;&#x442;&#x430;&#x43B;&#x438;&#x440;&#x430;&#x43C;&#x435; Django:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>    (myvenv) ~$ python -m pip install --upgrade pip</code></pre>
+<h3 id="&#x438;&#x43D;&#x441;&#x442;&#x430;&#x43B;&#x438;&#x440;&#x430;&#x43D;&#x435;-&#x43D;&#x430;-&#x43F;&#x430;&#x43A;&#x435;&#x442;&#x438;-&#x441;-&#x438;&#x437;&#x438;&#x441;&#x43A;&#x432;&#x430;&#x43D;&#x438;&#x44F;">&#x418;&#x43D;&#x441;&#x442;&#x430;&#x43B;&#x438;&#x440;&#x430;&#x43D;&#x435; &#x43D;&#x430; &#x43F;&#x430;&#x43A;&#x435;&#x442;&#x438; &#x441; &#x438;&#x437;&#x438;&#x441;&#x43A;&#x432;&#x430;&#x43D;&#x438;&#x44F;</h3><p>&#x424;&#x430;&#x439;&#x43B;&#x430; &#x441;&#x44A;&#x434;&#x44A;&#x440;&#x436;&#x430; &#x43B;&#x438;&#x441;&#x442; &#x43E;&#x442; &#x437;&#x430;&#x432;&#x438;&#x441;&#x438;&#x43C;&#x43E;&#x441;&#x442;&#x438;, &#x43A;&#x43E;&#x438;&#x442;&#x43E; &#x434;&#x430; &#x441;&#x435; &#x438;&#x43D;&#x441;&#x442;&#x430;&#x43B;&#x438;&#x440;&#x430;&#x442; &#x441; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x430;&#x442;&#x430; <code>pip install</code>:</p><p>&#x41F;&#x44A;&#x440;&#x432;&#x43E; &#x441;&#x44A;&#x437;&#x434;&#x430;&#x439;&#x442;&#x435; &#x444;&#x430;&#x439;&#x43B; &#x441; &#x438;&#x43C;&#x435; <code>requirements.txt</code> &#x432; &#x43F;&#x430;&#x43F;&#x43A;&#x430; <code>djangogirls</code>, &#x43A;&#x430;&#x442;&#x43E; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x442;&#x435; IDE &#x438;&#x43D;&#x441;&#x442;&#x430;&#x43B;&#x438;&#x440;&#x430;&#x43D; &#x43F;&#x43E;-&#x440;&#x430;&#x43D;&#x43E;. &#x422;&#x43E;&#x432;&#x430; &#x441;&#x442;&#x430;&#x432;&#x430; &#x43A;&#x430;&#x442;&#x43E; &#x43E;&#x442;&#x432;&#x43E;&#x440;&#x438;&#x442;&#x435; &#x43D;&#x43E;&#x432; &#x444;&#x430;&#x439;&#x43B; &#x432; &#x440;&#x435;&#x434;&#x430;&#x43A;&#x442;&#x43E;&#x440;&#x430; &#x438; &#x441;&#x43B;&#x435;&#x434; &#x442;&#x43E;&#x432;&#x430; &#x433;&#x43E; &#x437;&#x430;&#x43F;&#x430;&#x437;&#x438;&#x442;&#x435; &#x43A;&#x430;&#x442;&#x43E; <code>requirements.txt</code> &#x432; &#x43F;&#x430;&#x43F;&#x43A;&#x430; <code>djangogirls/</code>. &#x412;&#x430;&#x448;&#x430;&#x442;&#x430; &#x434;&#x438;&#x440;&#x435;&#x43A;&#x442;&#x43E;&#x440;&#x438;&#x44F; &#x442;&#x440;&#x44F;&#x431;&#x432;&#x430; &#x434;&#x430; &#x438;&#x437;&#x433;&#x43B;&#x435;&#x436;&#x434;&#x430; &#x442;&#x430;&#x43A;&#x430;:</p><pre><code>    djangogirls
+    &#x251C;&#x2500;&#x2500; myvenv
+    &#x2502;   &#x2514;&#x2500;&#x2500; ...
+    &#x2514;&#x2500;&#x2500;&#x2500;requirements.txt</code></pre>
+<p>&#x412;&#x44A;&#x432; &#x432;&#x430;&#x448;&#x438;&#x44F;&#x442; <code>djangogirls/requirements.txt</code> &#x444;&#x430;&#x439;&#x43B; &#x442;&#x440;&#x44F;&#x431;&#x432;&#x430; &#x434;&#x430; &#x434;&#x43E;&#x431;&#x430;&#x432;&#x438;&#x442;&#x435; &#x441;&#x43B;&#x435;&#x434;&#x43D;&#x43E;&#x442;&#x43E;:</p><p></p><p class="code-label">djangogirls/requirements.txt</p><p></p><pre><code>    Django~=2.2.4</code></pre>
+<p>&#x421;&#x435;&#x433;&#x430; &#x43D;&#x430;&#x43F;&#x438;&#x448;&#x435;&#x442;&#x435; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x430; <code>pip install -r requirements.txt</code> &#x437;&#x430; &#x434;&#x430; &#x438;&#x43D;&#x441;&#x442;&#x430;&#x43B;&#x438;&#x440;&#x430;&#x442;&#x435; Django.</p><p></p><p class="code-label">command-line</p><p></p><pre><code>    (myvenv) ~$ pip install -r requirements.txt
+    Collecting Django~=2.2.4 (from -r requirements.txt (line 1))
+      Downloading Django-2.2.4-py3-none-any.whl (7.1MB)
+    Installing collected packages: Django
+    Successfully installed Django-2.2.4</code></pre>
+<sec data-title="Installing Django: Windows" data-id="django_err_windows" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Installing Django: Windows<a class="pull-right section atTitle btn btn-default" target="django_err_windows"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="django_err_windows"><div class="panel-body">
+
+
+<blockquote><p>&#x410;&#x43A;&#x43E; &#x441;&#x435; &#x43F;&#x43E;&#x44F;&#x432;&#x438; &#x433;&#x440;&#x435;&#x448;&#x43A;&#x430; &#x43A;&#x43E;&#x433;&#x430;&#x442;&#x43E; &#x438;&#x437;&#x432;&#x438;&#x43A;&#x430;&#x442;&#x435; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x430; pip &#x43D;&#x430; Windows &#x43F;&#x43B;&#x430;&#x442;&#x444;&#x43E;&#x440;&#x43C;&#x430;, &#x43F;&#x440;&#x43E;&#x432;&#x435;&#x440;&#x435;&#x442;&#x435; &#x434;&#x430;&#x43B;&#x438; &#x438;&#x43C;&#x435;&#x442;&#x43E; &#x43D;&#x430; &#x43F;&#x44A;&#x442;&#x44F; &#x43D;&#x430; &#x43F;&#x440;&#x43E;&#x435;&#x43A;&#x442;&#x430; &#x432;&#x438; &#x441;&#x44A;&#x434;&#x44A;&#x440;&#x436;&#x430; &#x43F;&#x440;&#x430;&#x437;&#x43D;&#x43E; &#x43C;&#x44F;&#x441;&#x442;&#x43E;, &#x437;&#x43D;&#x430;&#x43A; &#x437;&#x430; &#x443;&#x434;&#x430;&#x440;&#x435;&#x43D;&#x438;&#x435; &#x438;&#x43B;&#x438; &#x434;&#x440;&#x443;&#x433;&#x438; &#x441;&#x43F;&#x435;&#x446;&#x438;&#x430;&#x43B;&#x43D;&#x438; &#x437;&#x43D;&#x430;&#x446;&#x438;. (&#x43D;&#x430;&#x43F;&#x440;&#x438;&#x43C;&#x435;&#x440; , <code>C:\Users\User Name\djangogirls</code>). &#x410;&#x43A;&#x43E; &#x441;&#x44A;&#x434;&#x44A;&#x440;&#x436;&#x430;, &#x43C;&#x43E;&#x43B;&#x44F; &#x43F;&#x43E;&#x43C;&#x438;&#x441;&#x43B;&#x435;&#x442;&#x435; &#x437;&#x430; &#x434;&#x440;&#x443;&#x433;&#x43E; &#x43C;&#x44F;&#x441;&#x442;&#x43E; &#x431;&#x435;&#x437; &#x440;&#x430;&#x437;&#x441;&#x442;&#x43E;&#x44F;&#x43D;&#x438;&#x435;, &#x437;&#x43D;&#x430;&#x43A; &#x437;&#x430; &#x443;&#x434;&#x430;&#x440;&#x435;&#x43D;&#x438;&#x435; &#x438;&#x43B;&#x438; &#x434;&#x440;&#x443;&#x433;&#x438; &#x441;&#x43F;&#x435;&#x446;&#x438;&#x430;&#x43B;&#x43D;&#x438; &#x437;&#x43D;&#x430;&#x446;&#x438; (&#x43F;&#x440;&#x435;&#x434;&#x43B;&#x43E;&#x436;&#x435;&#x43D;&#x438;&#x435;: <code>C:\djangogirls</code>). &#x421;&#x44A;&#x437;&#x434;&#x430;&#x439;&#x442;&#x435; &#x43D;&#x43E;&#x432;&#x430; &#x432;&#x438;&#x440;&#x442;&#x443;&#x430;&#x43B;&#x43D;&#x430; &#x441;&#x440;&#x435;&#x434;&#x430; &#x432; &#x43D;&#x43E;&#x432;&#x430;&#x442;&#x430; &#x434;&#x438;&#x440;&#x435;&#x43A;&#x442;&#x43E;&#x440;&#x438;&#x44F;, &#x441;&#x43B;&#x435;&#x434; &#x442;&#x43E;&#x432;&#x430; &#x438;&#x437;&#x442;&#x440;&#x438;&#x439;&#x442;&#x435; &#x441;&#x442;&#x430;&#x440;&#x430;&#x442;&#x430; &#x438; &#x43E;&#x43F;&#x438;&#x442;&#x430;&#x439;&#x442;&#x435; &#x43E;&#x442;&#x43D;&#x43E;&#x432;&#x43E; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x430;&#x442;&#x430;. (&#x41F;&#x440;&#x435;&#x43C;&#x435;&#x441;&#x442;&#x432;&#x430;&#x43D;&#x435;&#x442;&#x43E; &#x43D;&#x430; &#x43F;&#x430;&#x43F;&#x43A;&#x430;&#x442;&#x430; &#x441; &#x432;&#x438;&#x440;&#x442;&#x443;&#x430;&#x43B;&#x43D;&#x430; &#x441;&#x440;&#x435;&#x434;&#x430; &#x43D;&#x44F;&#x43C;&#x430; &#x434;&#x430; &#x440;&#x430;&#x431;&#x43E;&#x442;&#x438;, &#x442;&#x44A;&#x439; &#x43A;&#x430;&#x442;&#x43E; &#x432;&#x438;&#x440;&#x442;&#x443;&#x430;&#x43B;&#x43D;&#x430;&#x442;&#x430; &#x441;&#x440;&#x435;&#x434;&#x430; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430; &#x430;&#x431;&#x441;&#x43E;&#x43B;&#x44E;&#x442;&#x43D;&#x438; &#x43F;&#x44A;&#x442;&#x435;&#x43A;&#x438;.)</p></blockquote></div></div></div></sec>
+
+
+<sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Installing Django: Windows 8 and Windows 10<a class="pull-right section atTitle btn btn-default" target="django_err_windows8and10"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="django_err_windows8and10"><div class="panel-body">
+
+
+<blockquote><p>&#x412;&#x430;&#x448;&#x438;&#x44F;&#x442; command line &#x43C;&#x43E;&#x436;&#x435; &#x434;&#x430; &#x437;&#x430;&#x431;&#x438;&#x435; &#x441;&#x43B;&#x435;&#x434; &#x43A;&#x430;&#x442;&#x43E; &#x441;&#x435; &#x43E;&#x43F;&#x438;&#x442;&#x430;&#x442;&#x435; &#x434;&#x430; &#x438;&#x43D;&#x441;&#x442;&#x430;&#x43B;&#x438;&#x440;&#x430;&#x442;&#x435; Django. &#x410;&#x43A;&#x43E; &#x442;&#x43E;&#x432;&#x430; &#x441;&#x435; &#x441;&#x43B;&#x443;&#x447;&#x438; &#x43D;&#x430;&#x43F;&#x438;&#x448;&#x435;&#x442;&#x435; &#x441;&#x43B;&#x435;&#x434;&#x43D;&#x430;&#x442;&#x430; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x430; &#x432;&#x43C;&#x435;&#x441;&#x442;&#x43E; &#x433;&#x43E;&#x440;&#x43D;&#x430;&#x442;&#x430;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>    C:\Users\Name\djangogirls&gt; python -m pip install -r requirements.txt</code></pre>
+</blockquote></div></div></div></sec>
+
+
+<sec data-title="Installing Django: Linux" data-id="django_err_linux" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Installing Django: Linux<a class="pull-right section atTitle btn btn-default" target="django_err_linux"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="django_err_linux"><div class="panel-body">
+
+
+<blockquote><p>&#x410;&#x43A;&#x43E; &#x43F;&#x43E;&#x43B;&#x443;&#x447;&#x438;&#x442;&#x435; &#x433;&#x440;&#x435;&#x448;&#x43A;&#x430; &#x43F;&#x440;&#x438; &#x438;&#x437;&#x432;&#x438;&#x43A;&#x432;&#x430;&#x43D;&#x435; &#x43D;&#x430; pip &#x43F;&#x440;&#x438; Ubuntu 12.04 &#x43D;&#x430;&#x43F;&#x438;&#x448;&#x435;&#x442;&#x435; &#x441;&#x43B;&#x435;&#x434;&#x43D;&#x430;&#x442;&#x430; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x430; <code>python -m pip install -U --force-reinstall pip</code> &#x437;&#x430; &#x434;&#x430; &#x43E;&#x43F;&#x440;&#x430;&#x432;&#x438;&#x442;&#x435; &#x438;&#x43D;&#x441;&#x442;&#x430;&#x43B;&#x430;&#x446;&#x438;&#x44F;&#x442;&#x430; &#x43D;&#x430; pip &#x432;&#x44A;&#x432; &#x432;&#x438;&#x440;&#x442;&#x443;&#x430;&#x43B;&#x43D;&#x430;&#x442;&#x430; &#x441;&#x440;&#x435;&#x434;&#x430;.</p></blockquote></div></div></div></sec>
+
+
+<p>&#x422;&#x43E;&#x432;&#x430; &#x435;! &#x421;&#x435;&#x433;&#x430; &#x432;&#x435;&#x447;&#x435; (&#x43D;&#x430;&#x439;-&#x43D;&#x430;&#x43A;&#x440;&#x430;&#x44F;) &#x441;&#x442;&#x435; &#x433;&#x43E;&#x442;&#x43E;&#x432;&#x438; &#x434;&#x430; &#x441;&#x44A;&#x437;&#x434;&#x430;&#x434;&#x435;&#x442;&#x435; Django &#x430;&#x43F;&#x43B;&#x438;&#x43A;&#x430;&#x446;&#x438;&#x44F;!</p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../django/" class="navigation navigation-prev " aria-label="Previous page: Какво е Django?">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../django_start_project/" class="navigation navigation-next " aria-label="Next page: Вашият първи проект с Django!">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Инсталиране на Django","level":"1.10","depth":1,"next":{"title":"Вашият първи проект с Django!","level":"1.11","depth":1,"path":"django_start_project/README.md","ref":"django_start_project/README.md","articles":[]},"previous":{"title":"Какво е Django?","level":"1.9","depth":1,"path":"django/README.md","ref":"django/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"django_version":"2.2.4"},"language":"bg","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"django_installation/README.md","mtime":"2020-06-27T13:00:23.610Z","type":"markdown"},"gitbook":{"version":"3.4.0","time":"2020-06-27T13:00:41.274Z"},"basePath":"..","book":{"language":"bg"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

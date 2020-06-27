@@ -1,0 +1,764 @@
+
+<!DOCTYPE HTML>
+<html lang="ko" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Django 폼 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.4.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../whats_next/" />
+    
+    
+    <link rel="prev" href="../extend_your_application/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="검색어 입력" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    들어가며
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    설치하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    설치하기 (chromebook)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    인터넷은 어떻게 작동할까요
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Command Line 시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Python 설치하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    코드 에디터
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Python 시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Django란 무엇인가요
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Django 설치하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    나의 첫 번째 Django 프로젝트!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Django 모델
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django 관리자
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    배포하기!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django urls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django 뷰 만들기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    HTML 시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM(Querysets)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    템플릿 동적 데이터
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django 템플릿
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - 예쁘게 만들기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    템플릿 확장하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    애플리케이션 확장하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.24" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Django 폼
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    더 나아가기
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKit에 게시
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Django 폼</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#xC7A5;&#xACE0;-&#xD3FC;">&#xC7A5;&#xACE0; &#xD3FC;</h1><p>&#xD55C; &#xAC00;&#xC9C0;&#xB9CC; &#xB354; &#xD558;&#xBA74; &#xC6F9;&#xC0AC;&#xC774;&#xD2B8;&#xAC00; &#xC644;&#xC131;&#xB429;&#xB2C8;&#xB2E4;. &#xBC14;&#xB85C; &#xBE14;&#xB85C;&#xADF8; &#xAE00;&#xC744; &#xCD94;&#xAC00;&#xD558;&#xAC70;&#xB098; &#xC218;&#xC815;&#xD558;&#xB294; &#xBA4B;&#xC9C4; &#xAE30;&#xB2A5;&#xC744; &#xCD94;&#xAC00;&#xD558;&#xB294; &#xAC83;&#xC774;&#xC8E0;. &#xC7A5;&#xACE0;&#xC758; <code>&#xAD00;&#xB9AC;&#xC790;</code> &#xAE30;&#xB2A5;&#xB3C4; &#xCDA9;&#xBD84;&#xD788; &#xBA4B;&#xC788;&#xAE30;&#xB294; &#xD558;&#xC9C0;&#xB9CC;, &#xC880; &#xB354; &#xC785;&#xB9DB;&#xC5D0; &#xB9DE;&#xAC8C; &#xBC14;&#xAFB8;&#xACE0; &#xC608;&#xC058;&#xAC8C; &#xAFB8;&#xBBF8;&#xAE30;&#xC5D0;&#xB294; &#xC880; &#xD55C;&#xACC4;&#xAC00; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. <code>&#xD3FC;(&#xC591;&#xC2DD;, forms)</code>&#xC73C;&#xB85C; &#xAC15;&#xB825;&#xD55C; &#xC778;&#xD130;&#xD398;&#xC774;&#xC2A4;&#xB97C; &#xB9CC;&#xB4E4; &#xC218; &#xC788;&#xC5B4;&#xC694;. - &#xC6B0;&#xB9AC;&#xAC00; &#xC0C1;&#xC0C1;&#xD560; &#xC218; &#xC788;&#xB294; &#xAC70;&#xC758; &#xBAA8;&#xB4E0; &#xAC83;&#xC744; &#xD560; &#xC218; &#xC788;&#xAC70;&#xB4E0;&#xC694;!</p><p>&#xC7A5;&#xACE0; &#xD3FC;&#xC774; &#xC815;&#xB9D0; &#xBA4B;&#xC9C4; &#xAC83;&#xC740; &#xC544;&#xBB34;&#xB7F0; &#xC900;&#xBE44; &#xC5C6;&#xC774;&#xB3C4; &#xC591;&#xC2DD;&#xC744; &#xB9CC;&#xB4E4; &#xC218; &#xC788;&#xACE0;, <code>ModelForm</code>&#xC744; &#xC0DD;&#xC131;&#xD574; &#xC790;&#xB3D9;&#xC73C;&#xB85C; &#xBAA8;&#xB378;&#xC5D0; &#xACB0;&#xACFC;&#xBB3C;&#xC744; &#xC800;&#xC7A5;&#xD560; &#xC218; &#xC788;&#xB2E4;&#xB294; &#xAC70;&#xC608;&#xC694;.</p><p>&#xC774; &#xAE30;&#xB2A5;&#xC774; &#xC9C0;&#xAE08; &#xC6B0;&#xB9AC;&#xAC00; &#xD560; &#xB0B4;&#xC6A9;&#xC774;&#xC5D0;&#xC694;. &#xD3FC;&#xC744; &#xD558;&#xB098; &#xB9CC;&#xB4E4;&#xC5B4;&#xC11C; <code>Post</code> &#xBAA8;&#xB378;&#xC5D0; &#xC801;&#xC6A9;&#xD574;&#xBD05;&#xC2DC;&#xB2E4;.</p><p>&#xC7A5;&#xACE0;&#xC758; &#xBAA8;&#xB4E0; &#xC911;&#xC694;&#xD55C; &#xBD80;&#xBD84;&#xACFC; &#xB9C8;&#xCC2C;&#xAC00;&#xC9C0;&#xB85C;, &#xD3FC;&#xB3C4; &#xD3FC;&#xB9CC;&#xC758; <code>forms.py</code>.&#xB77C;&#xB294; &#xD30C;&#xC77C;&#xC744; &#xB9CC;&#xB4E4;&#xC5B4;&#xC694;.</p><p>&#xC6B0;&#xB9AC;&#xB294; &#xC774; &#xC774;&#xB984;&#xC73C;&#xB85C; <code>blog</code> &#xB514;&#xB809;&#xD1A0;&#xB9AC; &#xC548;&#xC5D0; &#xD30C;&#xC77C;&#xC744; &#xB9CC;&#xB4E4; &#xAC70;&#xC5D0;&#xC694;.</p><pre><code>blog
+ &#x2514;&#x2500;&#x2500; forms.py</code></pre>
+<p>&#xC88B;&#xC544;&#xC694;. &#xC774;&#xC81C; &#xC774; &#xD30C;&#xC77C;&#xC744; &#xC5F4;&#xACE0; &#xC544;&#xB798; &#xCF54;&#xB4DC;&#xB97C; &#xC791;&#xC131;&#xD558;&#xC138;&#xC694;. :</p><p></p><p class="code-label">blog/forms.py</p><p></p><pre><code class="lang-python"><span class="hljs-keyword">from</span> django <span class="hljs-keyword">import</span> forms
+
+<span class="hljs-keyword">from</span> .models <span class="hljs-keyword">import</span> Post
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PostForm</span><span class="hljs-params">(forms.ModelForm)</span>:</span>
+
+    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Meta</span>:</span>
+        model = Post
+        fields = (<span class="hljs-string">&apos;title&apos;</span>, <span class="hljs-string">&apos;text&apos;</span>,)</code></pre>
+<p>&#xC704; &#xCF54;&#xB4DC;&#xB97C; &#xBCF4;&#xBA74; &#xCCAB; &#xBC88;&#xC9F8;&#xB85C; forms model&#xC744; import &#xD574;&#xC57C; &#xD558;&#xACE0; (<code>from django import forms</code>), &#xADF8;&#xB2E4;&#xC74C;&#xC73C;&#xB85C; <code>Post</code> model&#xB3C4; import &#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;. (<code>from .models import Post</code>).</p><p><code>PostForm</code> &#xC740; &#xC774;&#xBBF8; &#xB2E4;&#xB4E4; &#xC608;&#xC0C1; &#xD558;&#xC168;&#xB4EF;&#xC774; &#xC6B0;&#xB9AC;&#xAC00; &#xB9CC;&#xB4E4; &#xD3FC;&#xC758; &#xC774;&#xB984;&#xC774;&#xC5D0;&#xC694;. &#xADF8;&#xB9AC;&#xACE0; &#xC7A5;&#xACE0;&#xC5D0; &#xC774; &#xD3FC;&#xC774; <code>ModelForm</code>&#xC774;&#xB77C;&#xB294; &#xAC83;&#xC744; &#xC54C;&#xB824;&#xC918;&#xC57C;&#xD574;&#xC694;. (&#xADF8;&#xB7EC;&#xBA74; &#xC7A5;&#xACE0;&#xAC00; &#xBB54;&#xAC00; &#xB9C8;&#xC220;&#xC744; &#xBD80;&#xB9B4; &#xAC70;&#xC5D0;&#xC694;) - <code>forms.ModelForm</code>&#xC740; ModelForm&#xC774;&#xB77C;&#xB294; &#xAC83;&#xC744; &#xC54C;&#xB824;&#xC8FC;&#xB294; &#xAD6C;&#xBB38;&#xC774;&#xC5D0;&#xC694;.</p><p>&#xC790;, &#xC774;&#xC81C; &#xB2E4;&#xC74C;&#xC73C;&#xB85C; <code>class Meta</code>&#xAC00; &#xB098;&#xC624;&#xB294;&#xB370;&#xC694;, &#xC774; &#xAD6C;&#xBB38;&#xC740; &#xC774; &#xD3FC;&#xC744; &#xB9CC;&#xB4E4;&#xAE30; &#xC704;&#xD574;&#xC11C; &#xC5B4;&#xB5A4; model&#xC774; &#xC4F0;&#xC5EC;&#xC57C; &#xD558;&#xB294;&#xC9C0; &#xC7A5;&#xACE0;&#xC5D0; &#xC54C;&#xB824;&#xC8FC;&#xB294; &#xAD6C;&#xBB38;&#xC785;&#xB2C8;&#xB2E4;. (<code>model = Post</code>).</p><p>&#xB9C8;&#xC9C0;&#xB9C9;&#xC73C;&#xB85C;, &#xC774; &#xD3FC;&#xC5D0; &#xD544;&#xB4DC;&#xB97C; &#xB123;&#xC73C;&#xBA74; &#xC644;&#xC131;&#xB418;&#xACA0;&#xC8E0;. &#xC774;&#xBC88; &#xD3FC;&#xC5D0;&#xC11C;&#xB294; <code>title</code>&#xACFC; <code>text</code>&#xB9CC; &#xBCF4;&#xC5EC;&#xC9C0;&#xAC8C; &#xD574; &#xBD05;&#xC2DC;&#xB2E4;. - <code>author</code>&#xB294; &#xD604;&#xC7AC; &#xB85C;&#xADF8;&#xC778; &#xD558;&#xACE0; &#xC788;&#xB294; &#xC0AC;&#xB78C;&#xC774; &#xB420; &#xAC83;&#xC774;&#xACE0; (&#xBC14;&#xB85C; &#xB2F9;&#xC2E0;&#xC774;&#xC694;!) &#xADF8;&#xB9AC;&#xACE0; <code>created_date</code>&#xB294; &#xAE00;&#xC774; &#xB4F1;&#xB85D;&#xB418;&#xB294; &#xC2DC;&#xAC04;&#xC774; &#xB420; &#xAC83;&#xC785;&#xB2C8;&#xB2E4;. (&#xC608;&#xB97C; &#xB4E4;&#xC5B4;, &#xCF54;&#xB4DC; &#xC0C1;&#xC5D0;&#xC11C;&#xC694;), &#xB410;&#xC8E0;?</p><p>&#xB9C8;&#xCCE4;&#xC2B5;&#xB2C8;&#xB2E4;! &#xC774;&#xC81C; <em>&#xBDF0;</em> &#xC5D0;&#xC11C; &#xC774; &#xD3FC;&#xC744; &#xC0AC;&#xC6A9;&#xD574; &#xD15C;&#xD50C;&#xB9BF;&#xC5D0;&#xC11C; &#xBCF4;&#xC5EC;&#xC8FC;&#xAE30;&#xB9CC; &#xD558;&#xBA74; &#xB418;&#xB124;&#xC694;.</p><p>&#xB2E4;&#xC74C;&#xC5D0;&#xB294; &#xB9C1;&#xD06C;, URL, &#xBDF0; &#xADF8;&#xB9AC;&#xACE0; &#xD15C;&#xD50C;&#xB9BF;&#xC744; &#xB9CC;&#xB4E4; &#xAC70;&#xC5D0;&#xC694;.</p><h2 id="&#xD3FC;&#xACFC;-&#xD398;&#xC774;&#xC9C0;-&#xB9C1;&#xD06C;">&#xD3FC;&#xACFC; &#xD398;&#xC774;&#xC9C0; &#xB9C1;&#xD06C;</h2><p><code>blog/templates/blog/base.html</code> &#xD30C;&#xC77C;&#xC744; &#xC5F4;&#xC5B4;&#xBD05;&#xC2DC;&#xB2E4;. <code>page-header</code> &#xB77C;&#xB294; <code>div</code> class&#xC5D0; &#xB9C1;&#xD06C;&#xB97C; &#xD558;&#xB098; &#xCD94;&#xAC00;&#xD560; &#xAC70;&#xC5D0;&#xC694;.</p><p></p><p class="code-label">blog/templates/blog/base.html</p><p></p><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_new&apos; %}&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;top-menu&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-plus&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre>
+<p>&#xC774; &#xC0C8;&#xB85C;&#xC6B4; &#xBDF0;&#xB294; <code>post_new</code>&#xC785;&#xB2C8;&#xB2E4;. &#xBD80;&#xD2B8;&#xC2A4;&#xD2B8;&#xB7A9; &#xD14C;&#xB9C8;&#xC5D0; &#xC788;&#xB294; <code>glyphicon glyphicon-plus</code> &#xD074;&#xB798;&#xC2A4;&#xB85C; &#xB354;&#xD558;&#xAE30; &#xAE30;&#xD638;&#xAC00; &#xBCF4;&#xC774;&#xAC8C; &#xB418;&#xB294;&#xB370;&#xC694;.</p><p>&#xC704; &#xAD6C;&#xBB38;&#xC744; &#xCD94;&#xAC00;&#xD558;&#xACE0; &#xB098;&#xBA74;, &#xC774;&#xC81C; html &#xD30C;&#xC77C;&#xC774; &#xC544;&#xB798;&#xCC98;&#xB7FC; &#xBCF4;&#xC77C; &#xAC70;&#xC608;&#xC694;.</p><p></p><p class="code-label">blog/templates/blog/base.html</p><p></p><pre><code class="lang-html">{% load static %}
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Django Girls blog<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&apos;//fonts.googleapis.com/css?family=Lobster&amp;subset=latin,latin-ext&apos;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&apos;stylesheet&apos;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&apos;text/css&apos;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% static &apos;css/blog.css&apos; %}&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-header&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_new&apos; %}&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;top-menu&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-plus&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/&quot;</span>&gt;</span>Django Girls Blog<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content container&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-md-8&quot;</span>&gt;</span>
+                    {% block content %}
+                    {% endblock %}
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre>
+<p>&#xD398;&#xC774;&#xC9C0;&#xB97C; &#xC800;&#xC7A5;&#xD558;&#xACE0; &#xB098;&#xC11C; <a href="http://127.0.0.1:8000" target="_blank">http://127.0.0.1:8000</a> &#xD398;&#xC774;&#xC9C0;&#xB97C; &#xC0C8;&#xB85C;&#xACE0;&#xCE68; &#xD574;&#xBCF4;&#xBA74;, <code>NoReverseMatch</code>&#xC774;&#xB77C;&#xB294; &#xC5D0;&#xB7EC;&#xAC00; &#xB098;&#xD0C0;&#xB098;&#xC8E0;?</p><h2 id="url">URL</h2><p>&#xC774;&#xC81C; <code>blog/urls.py</code>&#xB97C; &#xC5F4;&#xACE0; &#xC544;&#xB798; &#xAD6C;&#xBB38;&#xC744; &#xCD94;&#xAC00;&#xD558;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;.</p><p></p><p class="code-label">blog/urls.py</p><p></p><pre><code class="lang-python">path(<span class="hljs-string">&apos;post/new&apos;</span>, views.post_new, name=<span class="hljs-string">&apos;post_new&apos;</span>),</code></pre>
+<p>&#xC804;&#xCCB4; &#xCF54;&#xB4DC;&#xB294; &#xC544;&#xB798;&#xC640; &#xAC19;&#xC744; &#xAC70;&#xC608;&#xC694;.</p><p></p><p class="code-label">blog/urls.py</p><p></p><pre><code class="lang-python"><span class="hljs-keyword">from</span> django.urls <span class="hljs-keyword">import</span> path 
+<span class="hljs-keyword">from</span> . <span class="hljs-keyword">import</span> views
+
+urlpatterns = [
+    path(<span class="hljs-string">&apos;&apos;</span>, views.post_list, name=<span class="hljs-string">&apos;post_list&apos;</span>),
+    path(<span class="hljs-string">&apos;post/&lt;int:pk&gt;/&apos;</span>, views.post_detail, name=<span class="hljs-string">&apos;post_detail&apos;</span>),
+    path(<span class="hljs-string">&apos;post/new/&apos;</span>, views.post_new, name=<span class="hljs-string">&apos;post_new&apos;</span>),
+]</code></pre>
+<p>&#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xC5D0; &#xC0AC;&#xC774;&#xD2B8;&#xB97C; &#xB2E4;&#xC2DC; &#xBD88;&#xB7EC;&#xC624;&#xBA74; <code>AttributeError</code>&#xAC00; &#xBCF4;&#xC774;&#xAC8C; &#xB429;&#xB2C8;&#xB2E4;. &#xC65C;&#xB0D0;&#xD558;&#xBA74;, &#xC544;&#xC9C1; <code>post_new</code>&#xBDF0;&#xB97C; &#xAD6C;&#xD604;&#xD558;&#xC9C0; &#xC54A;&#xC558;&#xAE30; &#xB54C;&#xBB38;&#xC774;&#xC8E0;. &#xC774;&#xC81C; &#xD558;&#xB098; &#xB354; &#xCD94;&#xAC00;&#xD574;&#xBD05;&#xC2DC;&#xB2E4;.</p><h2 id="postnew-view"><code>post_new</code> view</h2><p><code>blog/views.py</code>&#xD30C;&#xC77C;&#xC744; &#xC5F4;&#xC5B4;&#xC11C; <code>from</code>&#xC904;&#xC5D0; &#xC544;&#xB798;&#xC640; &#xAC19;&#xC740; &#xCF54;&#xB4DC;&#xB97C; &#xCD94;&#xAC00;&#xD569;&#xB2C8;&#xB2E4;.</p><p></p><p class="code-label">blog/views.py</p><p></p><pre><code class="lang-python"><span class="hljs-keyword">from</span> .forms <span class="hljs-keyword">import</span> PostForm</code></pre>
+<p>&#xADF8;&#xB9AC;&#xACE0; <em>view</em>&#xC5D0; &#xCD94;&#xAC00;&#xD569;&#xB2C8;&#xB2E4;.</p><p></p><p class="code-label">blog/views.py</p><p></p><pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">post_new</span><span class="hljs-params">(request)</span>:</span>
+    form = PostForm()
+    <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;blog/post_edit.html&apos;</span>, {<span class="hljs-string">&apos;form&apos;</span>: form})</code></pre>
+<p>&#xC0C8; <code>Post</code> &#xD3FC;&#xC744; &#xCD94;&#xAC00;&#xD558;&#xAE30; &#xC704;&#xD574; <code>PostForm()</code> &#xD568;&#xC218;&#xB97C; &#xD638;&#xCD9C;&#xD558;&#xB3C4;&#xB85D; &#xD558;&#xC5EC; &#xD15C;&#xD50C;&#xB9BF;&#xC5D0; &#xB118;&#xAE41;&#xB2C8;&#xB2E4;. &#xACE7; <em>view</em> &#xB85C; &#xB2E4;&#xC2DC; &#xB3CC;&#xC544;&#xC640;&#xC11C; &#xC774; &#xC791;&#xC5C5;&#xC744; &#xD558;&#xACA0;&#xC9C0;&#xB9CC;, &#xC9C0;&#xAE08; &#xB2F9;&#xC7A5;&#xC740; &#xD3FC;&#xC744; &#xC704;&#xD55C; &#xD15C;&#xD50C;&#xB9BF;&#xC744; &#xBA3C;&#xC800; &#xBE68;&#xB9AC; &#xB9CC;&#xB4E4;&#xC5B4;&#xBCF4;&#xB3C4;&#xB85D; &#xD560;&#xAC8C;&#xC694;.</p><h2 id="&#xD15C;&#xD50C;&#xB9BF;">&#xD15C;&#xD50C;&#xB9BF;</h2><p>&#xC774;&#xBC88;&#xC5D0;&#xB294; <code>blog/templates/blog</code> &#xB514;&#xB809;&#xD130;&#xB9AC; &#xC548;&#xC5D0; <code>post_edit.html</code> &#xD30C;&#xC77C;&#xC744; &#xC0DD;&#xC131;&#xD574; &#xD3FC;&#xC774; &#xC791;&#xB3D9;&#xD560; &#xC218; &#xC788;&#xAC8C; &#xB9CC;&#xB4E4; &#xAC70;&#xC5D0;&#xC694;.</p><ul><li>&#xBA3C;&#xC800; &#xD3FC;&#xC774; &#xBCF4;&#xC5EC;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;. &#xADF8; &#xC608;&#xB85C;, <code>{% raw %}{{ form.as_p }}{% endraw %}</code>&#xB85C; &#xAC04;&#xB2E8;&#xD788; &#xB9CC;&#xB4E4; &#xC218; &#xC788;&#xC5B4;&#xC694;&#x2026;.
+</li>
+<li>&#xC704; &#xCF54;&#xB4DC;&#xB97C; HTML &#xD0DC;&#xADF8;&#xB85C; &#xD3FC;&#xC744; &#xAC10;&#xC2F8;&#xC138;&#xC694;. <code>&lt;form method=&quot;POST&quot;&gt;...&lt;/form&gt;</code>
+</li>
+<li><code>Save</code> &#xBC84;&#xD2BC;&#xC774; &#xD544;&#xC694;&#xD569;&#xB2C8;&#xB2E4;. &#xC774;&#xAC83;&#xC740; HTML &#xBC84;&#xD2BC;&#xC73C;&#xB85C; &#xB9CC;&#xB4E4; &#xC218; &#xC788;&#xC5B4;&#xC694;: <code>&lt;button type=&quot;submit&quot;&gt;Save&lt;/button&gt;</code>
+</li>
+<li>&#xB9C8;&#xC9C0;&#xB9C9;&#xC73C;&#xB85C; <code>&lt;form ...&gt;</code>&#xC744; &#xC5F4;&#xC5B4; <code>{% raw %}{% csrf_token %}{% endraw %}</code>&#xB97C; &#xCD94;&#xAC00;&#xD558;&#xC138;&#xC694;. &#xC774; &#xC791;&#xC5C5;&#xC740; &#xD3FC; &#xBCF4;&#xC548;&#xC744; &#xC704;&#xD574; &#xC911;&#xC694;&#xD558;&#xB2F5;&#xB2C8;&#xB2E4;! &#xC774; &#xC791;&#xC5C5;&#xC744; &#xBE7C;&#xBA39;&#xACE0; &#xC800;&#xC7A5;&#xD558;&#xBA74; &#xC7A5;&#xACE0;&#xB294; &#xC774;&#xB807;&#xAC8C; &#xBD88;&#xD3C9;&#xD560; &#xAC70;&#xC5D0;&#xC694;.
+</li></ul>
+<p><img alt="CSFR Forbidden page" src="images/csrf2.png"></p><p>&#xB124;, &#xC774;&#xC81C; <code>post_edit.html</code> &#xD30C;&#xC77C;&#xC758; HTML&#xC744; &#xD655;&#xC778;&#xD574;&#xBCFC;&#xAC8C;&#xC694;.</p><p></p><p class="code-label">blog/templates/blog/post_edit.html</p><p></p><pre><code class="lang-html">{% extends &apos;blog/base.html&apos; %}
+
+{% block content %}
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>New post<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">method</span>=<span class="hljs-string">&quot;POST&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;post-form&quot;</span>&gt;</span>{% csrf_token %}
+        {{ form.as_p }}
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;submit&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;save btn btn-default&quot;</span>&gt;</span>Save<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+{% endblock %}</code></pre>
+<p>&#xB2E4; &#xC791;&#xC131;&#xD588;&#xC73C;&#xBA74; &#xD654;&#xBA74;&#xC744; &#xB2E4;&#xC2DC; &#xBD88;&#xB7EC;&#xC635;&#xC2DC;&#xB2E4;. &#xD3FC;&#xC774; &#xC774;&#xB807;&#xAC8C; &#xB098;&#xD0C0;&#xB0AC;&#xB098;&#xC694;!</p><p><img alt="New form" src="images/new_form2.png"></p><p>&#xC7A0;&#xAE50;&#xB9CC;&#xC694;! <code>title</code>&#xACFC; <code>text</code>&#xD544;&#xB4DC;&#xC5D0; &#xC544;&#xBB34;&#xAC70;&#xB098; &#xC785;&#xB825;&#xD558;&#xACE0; &#xC800;&#xC7A5;&#xD574;&#xBCF4;&#xC138;&#xC694;. &#xC5B4;&#xB5BB;&#xAC8C; &#xB410;&#xB098;&#xC694;?</p><p>&#xAE00;&#xC774; &#xC0AC;&#xB77C;&#xC84C;&#xC5B4;&#xC694;! &#xD55C;&#xBC88; &#xB354; &#xD574;&#xBD10;&#xB3C4; &#xB0B4;&#xAC00; &#xC785;&#xB825;&#xD55C; &#xAE00;&#xB4E4;&#xC740; &#xC5B4;&#xB514;&#xB860;&#xAC00;&#xB85C; &#xC0AC;&#xB77C;&#xC9C0;&#xACE0;&#xB294; &#xC0C8; &#xAE00;&#xC774; &#xCD94;&#xAC00;&#xB418;&#xC9C0; &#xC54A;&#xC544;&#xC694;. &#xBB50;&#xAC00; &#xC798;&#xBABB;&#xB41C; &#xAC78;&#xAE4C;&#xC694;?</p><p>&#xC5EC;&#xB7EC;&#xBD84;&#xC774; &#xC798;&#xBABB;&#xD55C; &#xAC8C; &#xC5C6;&#xB2F5;&#xB2C8;&#xB2E4;. &#xB2E8;&#xC9C0; <em>view</em> &#xCD94;&#xAC00; &#xC791;&#xC5C5;&#xC774; &#xD544;&#xC694;&#xD560; &#xBFD0;&#xC774;&#xC5D0;&#xC694;.</p><h2 id="&#xD3FC;-&#xC800;&#xC7A5;&#xD558;&#xAE30;">&#xD3FC; &#xC800;&#xC7A5;&#xD558;&#xAE30;</h2><p><code>blog/views.py</code>&#xB97C; &#xB2E4;&#xC2DC; &#xC5EC;&#xC138;&#xC694;. &#xC9C0;&#xAE08; &#xC5EC;&#xB7EC;&#xBD84;&#xC774; &#xBCF4;&#xACE0; &#xC788;&#xB294; <code>post_new</code>&#xBDF0;&#xB294; &#xC544;&#xB798;&#xC640; &#xAC19;&#xC744; &#xAC70;&#xC5D0;&#xC694;.</p><p></p><p class="code-label">blog/views.py</p><p></p><pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">post_new</span><span class="hljs-params">(request)</span>:</span>
+    form = PostForm()
+    <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;blog/post_edit.html&apos;</span>, {<span class="hljs-string">&apos;form&apos;</span>: form})</code></pre>
+<p>&#xD3FC;&#xC744; &#xC81C;&#xCD9C;&#xD560; &#xB54C;, &#xAC19;&#xC740; &#xBDF0;&#xB97C; &#xBD88;&#xB7EC;&#xC635;&#xB2C8;&#xB2E4;. &#xC774;&#xB54C; <code>request</code>&#xC5D0;&#xB294; &#xC6B0;&#xB9AC;&#xAC00; &#xC785;&#xB825;&#xD588;&#xB358; &#xB370;&#xC774;&#xD130;&#xB4E4;&#xC744; &#xAC00;&#xC9C0;&#xACE0; &#xC788;&#xB294;&#xB370;, <code>request.POST</code>&#xAC00; &#xC774; &#xB370;&#xC774;&#xD130;&#xB97C; &#xAC00;&#xC9C0;&#xACE0; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. (<code>POST</code>&#xB294; &#xAE00; &#xB370;&#xC774;&#xD130;&#xB97C; &quot;&#xB4F1;&#xB85D;&#xD558;&#xB294;(posting)&quot;&#xD558;&#xB294; &#xAC83;&#xC744; &#xC758;&#xBBF8;&#xD569;&#xB2C8;&#xB2E4;. &#xBE14;&#xB85C;&#xADF8; &quot;&#xAE00;&quot;&#xC744; &#xC758;&#xBBF8;&#xD558;&#xB294; &quot;post&quot;&#xC640; &#xAD00;&#xB828;&#xC774; &#xC5C6;&#xC5B4;&#xC694;) HTML&#xC5D0;&#xC11C; <code>&lt;form&gt;</code>&#xC815;&#xC758;&#xC5D0; <code>method=&quot;POST&quot;</code>&#xB77C;&#xB294; &#xC18D;&#xC131;&#xC774; &#xC788;&#xB358; &#xAC83;&#xC774; &#xAE30;&#xC5B5;&#xB098;&#xB098;&#xC694;? &#xC774;&#xB807;&#xAC8C; POST&#xB85C; &#xB118;&#xACA8;&#xC9C4; &#xD3FC; &#xD544;&#xB4DC;&#xC758; &#xAC12;&#xB4E4;&#xC740; &#xC774;&#xC81C; <code>request.POST</code>&#xC5D0; &#xC800;&#xC7A5;&#xB429;&#xB2C8;&#xB2E4;. <code>POST</code>&#xB85C; &#xB41C; &#xAC12;&#xC744; &#xB2E4;&#xB978; &#xAC70;&#xB85C; &#xBC14;&#xAFB8;&#xBA74; &#xC548; &#xB3FC;&#xC694;. <code>method</code> &#xC18D;&#xC131;&#xC758; &#xAC12;&#xC73C;&#xB85C; &#xB123;&#xC744; &#xC218; &#xC788;&#xB294; &#xC720;&#xD6A8;&#xD55C; &#xAC12; &#xC911;&#xC5D0; <code>GET</code>&#xAC19;&#xC740; &#xAC83;&#xB3C4; &#xC788;&#xC9C0;&#xB9CC;, post&#xC640; &#xC5B4;&#xB5A4; &#xCC28;&#xC774;&#xC810;&#xC774; &#xC788;&#xB294;&#xC9C0; &#xB4F1;&#xC5D0; &#xB300;&#xD574;&#xC11C; &#xB2E4;&#xB8E8;&#xAE30;&#xC5D0;&#xB294; &#xB108;&#xBB34; &#xAE38;&#xC5B4;&#xC9C8; &#xAC83; &#xAC19;&#xC544; &#xC0DD;&#xB7B5;&#xD560;&#xAC8C;&#xC694;)</p><p>&#xC774;&#xC81C; <em>view</em> &#xC5D0;&#xC11C; &#xB450; &#xC0C1;&#xD669;&#xC73C;&#xB85C; &#xB098;&#xB204;&#xC5B4; &#xCC98;&#xB9AC;&#xD574;&#xBCFC;&#xAC8C;&#xC694;.</p><ul><li>&#xCCAB; &#xBC88;&#xC9F8;: &#xCC98;&#xC74C; &#xD398;&#xC774;&#xC9C0;&#xC5D0; &#xC811;&#xC18D;&#xD588;&#xC744; &#xB54C;&#xC785;&#xB2C8;&#xB2E4;. &#xB2F9;&#xC5F0;&#xD788; &#xC6B0;&#xB9AC;&#xAC00; &#xC0C8; &#xAE00;&#xC744; &#xC4F8; &#xC218; &#xC788;&#xAC8C; &#xD3FC;&#xC774; &#xBE44;&#xC5B4;&#xC788;&#xC5B4;&#xC57C;&#xACA0;&#xC8E0;.
+</li>
+<li>&#xB450; &#xBC88;&#xC9F8;: &#xD3FC;&#xC5D0; &#xC785;&#xB825;&#xB41C; &#xB370;&#xC774;&#xD130;&#xB97C; <em>view</em> &#xD398;&#xC774;&#xC9C0;&#xB85C; &#xAC00;&#xC9C0;&#xACE0; &#xC62C; &#xB54C;&#xC785;&#xB2C8;&#xB2E4;. &#xC5EC;&#xAE30;&#xC11C; &#xC870;&#xAC74;&#xBB38;&#xC744; &#xCD94;&#xAC00;&#xC2DC;&#xCF1C;&#xC57C; &#xD574;&#xC694;. (<code>if</code>&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xC138;&#xC694;)
+</li></ul>
+<p></p><p class="code-label">blog/views.py</p><p></p><pre><code class="lang-python"><span class="hljs-keyword">if</span> request.method == <span class="hljs-string">&quot;POST&quot;</span>:
+    [...]
+<span class="hljs-keyword">else</span>:
+    form = PostForm()</code></pre>
+<p>&#xC774;&#xC81C; &#xC0DD;&#xB7B5;&#xB41C; <code>[...]</code>&#xBD80;&#xBD84;&#xC5D0; &#xCF54;&#xB4DC;&#xB97C; &#xCD94;&#xAC00;&#xD574;&#xBD05;&#xC2DC;&#xB2E4;. &#xB9CC;&#xC57D; <code>method</code>&#xAC00; <code>POST</code>&#xB77C;&#xBA74;, &#xD3FC;&#xC5D0;&#xC11C; &#xBC1B;&#xC740; &#xB370;&#xC774;&#xD130;&#xB97C; <code>PostForm</code>&#xC73C;&#xB85C; &#xB118;&#xACA8;&#xC918;&#xC57C;&#xACA0;&#xC8E0;? &#xC774;&#xB807;&#xAC8C; &#xC791;&#xC131;&#xD558;&#xBA74; &#xB429;&#xB2C8;&#xB2E4;.</p><p></p><p class="code-label">blog/views.py</p><p></p><pre><code class="lang-python">form = PostForm(request.POST)</code></pre>
+<p>&#xCC38; &#xC27D;&#xC8E0;! &#xB2E4;&#xC74C;&#xC5D0;&#xB294; &#xD3FC;&#xC5D0; &#xB4E4;&#xC5B4;&#xC788;&#xB294; &#xAC12;&#xB4E4;&#xC774; &#xC62C;&#xBC14;&#xB978;&#xC9C0;&#xB97C; &#xD655;&#xC778;&#xD574;&#xC57C;&#xD569;&#xB2C8;&#xB2E4;.(&#xBAA8;&#xB4E0; &#xD544;&#xB4DC;&#xC5D0;&#xB294; &#xAC12;&#xC774; &#xC788;&#xC5B4;&#xC57C;&#xD558;&#xACE0; &#xC798;&#xBABB;&#xB41C; &#xAC12;&#xC774; &#xC788;&#xB2E4;&#xBA74; &#xC800;&#xC7A5;&#xD558;&#xBA74; &#xB418;&#xC9C0; &#xC54A;&#xC544;&#xC57C;&#xD574;&#xC694;) &#xC774;&#xB97C; &#xC704;&#xD574; <code>form.is_valid()</code>&#xC744; &#xC0AC;&#xC6A9;&#xD560;&#xAC70;&#xC5D0;&#xC694;.</p><p>&#xD3FC;&#xC5D0; &#xC785;&#xB825;&#xB41C; &#xAC12;&#xC774; &#xC62C;&#xBC14;&#xB978;&#xC9C0; &#xD655;&#xC778;&#xD55C; &#xB2E4;&#xC74C;, &#xC800;&#xC7A5;&#xB418;&#xB294;&#xAC70;&#xC8E0;!</p><p></p><p class="code-label">blog/views.py</p><p></p><pre><code class="lang-python"><span class="hljs-keyword">if</span> form.is_valid():
+    post = form.save(commit=<span class="hljs-keyword">False</span>)
+    post.author = request.user
+    post.published_date = timezone.now()
+    post.save()</code></pre>
+<p>&#xC77C;&#xBC18;&#xC801;&#xC73C;&#xB85C; &#xC774; &#xC791;&#xC5C5;&#xC744; &#xB450; &#xB2E8;&#xACC4;&#xB85C; &#xB098;&#xB20C; &#xC218; &#xC788;&#xC5B4;&#xC694;. <code>form.save()</code>&#xB85C; &#xD3FC;&#xC744; &#xC800;&#xC7A5;&#xD558;&#xB294; &#xC791;&#xC5C5;&#xACFC; &#xC791;&#xC131;&#xC790;&#xB97C; &#xCD94;&#xAC00;&#xD558;&#xB294; &#xC791;&#xC5C5;&#xC785;&#xB2C8;&#xB2E4;. (<code>PostForm</code>&#xC5D0;&#xB294; <code>&#xC791;&#xC131;&#xC790;(author)</code> &#xD544;&#xB4DC;&#xAC00; &#xC5C6;&#xC9C0;&#xB9CC;, &#xD544;&#xB4DC; &#xAC12;&#xC774; &#xD544;&#xC694;&#xD558;&#xC8E0;!) <code>commit=False</code>&#xB780; &#xB118;&#xACA8;&#xC9C4; &#xB370;&#xC774;&#xD130;&#xB97C; &#xBC14;&#xB85C; <code>Post</code> &#xBAA8;&#xB378;&#xC5D0; &#xC800;&#xC7A5;&#xD558;&#xC9C0;&#xB294; &#xB9D0;&#xB77C;&#xB294; &#xB73B;&#xC785;&#xB2C8;&#xB2E4;. &#xC65C;&#xB0D0;&#xD558;&#xBA74;, &#xC791;&#xC131;&#xC790;&#xB97C; &#xCD94;&#xAC00;&#xD55C; &#xB2E4;&#xC74C; &#xC800;&#xC7A5;&#xD574;&#xC57C; &#xD558;&#xB2C8;&#xAE4C;&#xC694;. &#xB300;&#xBD80;&#xBD84;&#xC758; &#xACBD;&#xC6B0;&#xC5D0;&#xB294; <code>commit=False</code>&#xB97C; &#xC4F0;&#xC9C0; &#xC54A;&#xACE0; &#xBC14;&#xB85C; <code>form.save()</code>&#xB97C; &#xC0AC;&#xC6A9;&#xD574;&#xC11C; &#xC800;&#xC7A5;&#xD574;&#xC694;. &#xB2E4;&#xB9CC; &#xC5EC;&#xAE30;&#xC11C;&#xB294; &#xC791;&#xC131;&#xC790; &#xC815;&#xBCF4;&#xB97C; &#xCD94;&#xAC00;&#xD558;&#xACE0; &#xC800;&#xC7A5;&#xD574;&#xC57C; &#xD558;&#xBBC0;&#xB85C; <code>commit=False</code>&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xB294; &#xAC70;&#xC608;&#xC694;. <code>post.save()</code>&#xB294; &#xBCC0;&#xACBD;&#xC0AC;&#xD56D;(&#xC791;&#xC131;&#xC790; &#xC815;&#xBCF4;&#xB97C; &#xD3EC;&#xD568;)&#xC744; &#xC720;&#xC9C0;&#xD560; &#xAC83;&#xC774;&#xACE0; &#xC0C8; &#xBE14;&#xB85C;&#xADF8; &#xAE00;&#xC774; &#xB9CC;&#xB4E4;&#xC5B4;&#xC9C8; &#xAC70;&#xC5D0;&#xC694;!</p><p>&#xB05D;&#xC73C;&#xB85C;, &#xC0C8; &#xBE14;&#xB85C;&#xADF8; &#xAE00;&#xC744; &#xC791;&#xC131;&#xD55C; &#xB2E4;&#xC74C;&#xC5D0; <code>post_detail</code>&#xD398;&#xC774;&#xC9C0;&#xB85C; &#xC774;&#xB3D9;&#xD560; &#xC218; &#xC788;&#xC73C;&#xBA74; &#xC88B;&#xACA0;&#xC8E0;? &#xC774; &#xC791;&#xC5C5;&#xC744; &#xD558;&#xB824;&#xBA74; &#xD55C; &#xAC00;&#xC9C0;&#xB97C; &#xB354; &#xBD88;&#xB7EC;&#xC640;&#xC57C; &#xD574;&#xC694;.</p><pre><code class="lang-python"><span class="hljs-keyword">from</span> django.shortcuts <span class="hljs-keyword">import</span> redirect</code></pre>
+<p>&#xC704; &#xCF54;&#xB4DC;&#xB97C; &#xC5EC;&#xB7EC;&#xBD84;&#xC758; &#xD30C;&#xC77C; &#xB9E8; &#xC704;&#xC5D0; &#xCD94;&#xAC00;&#xD558;&#xC138;&#xC694;. &#xADF8;&#xB9AC;&#xACE0; &#xC0C8;&#xB85C; &#xC791;&#xC131;&#xD55C; &#xAE00;&#xC744; &#xBCFC; &#xC218; &#xC788;&#xB3C4;&#xB85D; <code>post_detail</code>&#xD398;&#xC774;&#xC9C0;&#xB85C; &#xAC00;&#xB77C;&#xACE0; &#xC218;&#xC815;&#xD569;&#xC2DC;&#xB2E4;.</p><p></p><p class="code-label">blog/views.py</p><p></p><pre><code class="lang-python"><span class="hljs-keyword">return</span> redirect(<span class="hljs-string">&apos;post_detail&apos;</span>, pk=post.pk)</code></pre>
+<p><code>post_detail</code>&#xC740; &#xC6B0;&#xB9AC;&#xAC00; &#xC774;&#xB3D9;&#xD574;&#xC57C; &#xD560; &#xBDF0;&#xC758; &#xC774;&#xB984;&#xC774;&#xC5D0;&#xC694; <em>post_detail &#xBDF0;</em> &#xB294; <code>pk</code>&#xBCC0;&#xC218;&#xAC00; &#xD544;&#xC694;&#xD55C; &#xAC70; &#xAE30;&#xC5B5;&#xD558;&#xACE0; &#xC788;&#xACA0;&#xC8E0;? <code>pk=post.pk</code>&#xB97C; &#xC0AC;&#xC6A9;&#xD574;&#xC11C; &#xBDF0;&#xC5D0;&#xAC8C; &#xAC12;&#xC744; &#xB118;&#xACA8;&#xC904; &#xAC70;&#xC5D0;&#xC694;. &#xC5EC;&#xAE30;&#xC11C; <code>post</code>&#xB294; &#xC0C8;&#xB85C; &#xC0DD;&#xC131;&#xD55C; &#xBE14;&#xB85C;&#xADF8; &#xAE00;&#xC774;&#xC5D0;&#xC694;.</p><p>&#xC798;&#xD588;&#xC5B4;&#xC694;. &#xB108;&#xBB34; &#xC124;&#xBA85;&#xC774; &#xAE38;&#xC5B4;&#xC84C;&#xB124;&#xC694;. &#xC774;&#xC81C; <em>view</em> &#xC804;&#xCCB4; &#xCF54;&#xB4DC;&#xB97C; &#xD655;&#xC778;&#xD560;&#xAC8C;&#xC694;.</p><p></p><p class="code-label">blog/views.py</p><p></p><pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">post_new</span><span class="hljs-params">(request)</span>:</span>
+    <span class="hljs-keyword">if</span> request.method == <span class="hljs-string">&quot;POST&quot;</span>:
+        form = PostForm(request.POST)
+        <span class="hljs-keyword">if</span> form.is_valid():
+            post = form.save(commit=<span class="hljs-keyword">False</span>)
+            post.author = request.user
+            post.published_date = timezone.now()
+            post.save()
+            <span class="hljs-keyword">return</span> redirect(<span class="hljs-string">&apos;post_detail&apos;</span>, pk=post.pk)
+    <span class="hljs-keyword">else</span>:
+        form = PostForm()
+    <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;blog/post_edit.html&apos;</span>, {<span class="hljs-string">&apos;form&apos;</span>: form})</code></pre>
+<p>&#xC798; &#xC791;&#xB3D9;&#xD558;&#xB294;&#xC9C0; &#xD655;&#xC778;&#xD574;&#xBCF4;&#xC138;&#xC694;. <a href="http://127.0.0.1:8000/post/new/" target="_blank">http://127.0.0.1:8000/post/new/</a> &#xD398;&#xC774;&#xC9C0;&#xB85C; &#xC811;&#xC18D;&#xD574;&#xC11C; <code>title</code>&#xACFC; <code>text</code>&#xB97C; &#xC785;&#xB825;&#xD558;&#xACE0;, &#xC800;&#xC7A5;&#xD558;&#xC138;&#xC694;&#x2026;. &#xADF8;&#xB9AC;&#xACE0;&#x2026;. &#xC9DC;&#xC794;!!! &#xC0C8;&#xB85C;&#xC6B4; &#xBE14;&#xB85C;&#xADF8; &#xAE00;&#xC774; &#xCD94;&#xAC00;&#xB418;&#xACE0; <code>post_detail</code>&#xD398;&#xC774;&#xC9C0;&#xAC00; &#xB098;&#xD0C0;&#xB0AC;&#xC5B4;&#xC694;!</p><p>&#xBE14;&#xB85C;&#xADF8; &#xAE00;&#xC744; &#xC800;&#xC7A5;&#xD558;&#xAE30; &#xC804;&#xC5D0; &#xAC8C;&#xC2DC;&#xC77C;&#xC744; &#xC124;&#xC815;&#xD558;&#xACE0; &#xC2F6;&#xC744; &#xAC70;&#xC5D0;&#xC694;. &#xCD94;&#xD6C4; <strong>&#xC7A5;&#xACE0;&#xAC78;&#xC2A4; &#xD29C;&#xD1A0;&#xB9AC;&#xC5BC;</strong> &#xC911; &#xAC8C;&#xC2DC;&#xAE00; &#xCD94;&#xAC00;&#xD558;&#xAE30; &#xBC84;&#xD2BC; &#xB9CC;&#xB4E4;&#xAE30;&#xC5D0;&#xC11C; &#xD655;&#xC778;&#xD560; &#xC218; &#xC788;&#xC5B4;&#xC694;.</p><p>&#xBAA8;&#xB450; &#xC798;&#xD574;&#xB0C8;&#xC5B4;&#xC694;!</p><blockquote><p>&#xC7A5;&#xACE0; &#xAD00;&#xB9AC;&#xC790; &#xC778;&#xD130;&#xD398;&#xC774;&#xC2A4;&#xCC98;&#xB7FC; &#xB85C;&#xADF8;&#xC778;&#xB41C; &#xC0C1;&#xD0DC;&#xB77C;&#xACE0; &#xC0DD;&#xAC01;&#xD574;&#xBD05;&#xC2DC;&#xB2E4;. &#xD558;&#xC9C0;&#xB9CC; &#xC0AC;&#xC6A9;&#xC790;&#xAC00; &#xB85C;&#xADF8;&#xC544;&#xC6C3;&#xB418;&#xB294; &#xC0C1;&#xD669;&#xC774; &#xBC1C;&#xC0DD;&#xD558;&#xAE30;&#xB3C4; &#xD558;&#xC8E0;. (&#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xAC00; &#xB2EB;&#xD788;&#xAC70;&#xB098;, DB&#xAC00; &#xC7AC;&#xC2DC;&#xC791;&#xB41C;&#xB2E4;&#xB4E0;&#xAC00; &#xB4F1;) &#xB9CC;&#xC57D; &#xB85C;&#xADF8;&#xC778;&#xB418;&#xC9C0; &#xC54A;&#xC740; &#xC0C1;&#xD0DC;&#xC5D0;&#xC11C; &#xC0C8; &#xAE00;&#xC744; &#xC800;&#xC7A5;&#xD55C;&#xB2E4;&#xBA74;, &#xC0AC;&#xC6A9;&#xC790;&#xAC00; &#xB85C;&#xADF8;&#xC778;&#xB418;&#xC5B4;&#xC788;&#xC9C0; &#xC54A;&#xC544; &#xB204;&#xAC00; &#xAE00;&#xC744; &#xC791;&#xC131;&#xD558;&#xC600;&#xB294;&#xC9C0; &#xC54C; &#xC218; &#xC5C6;&#xC5B4;&#xC694;. &#xADF8;&#xB798;&#xC11C; &#xAE00;&#xC744; &#xC800;&#xC7A5;&#xD560; &#xB54C; &#xC624;&#xB958;&#xAC00; &#xBC1C;&#xC0DD;&#xD558;&#xACE0;, &#xB85C;&#xADF8;&#xC778;&#xC2DC;&#xD0A4;&#xB3C4;&#xB85D; <a href="http://127.0.0.1:8000/admin" target="_blank">http://127.0.0.1:8000/admin</a> &#xAD00;&#xB9AC;&#xC790; &#xD398;&#xC774;&#xC9C0;&#xAC00; &#xB098;&#xD0C0;&#xB098;&#xAC8C; &#xB420; &#xAC70;&#xC5D0;&#xC694;. &#xC774; &#xBB38;&#xC81C;&#xB294; &#xAE08;&#xBC29; &#xD574;&#xACB0;&#xD560; &#xC218; &#xC788;&#xC5B4;&#xC694;. &#xD29C;&#xD1A0;&#xB9AC;&#xC5BC;&#xC744; &#xB9C8;&#xCE5C; &#xD6C4; &#xC7A5;&#xACE0;&#xAC78;&#xC2A4; &#xC2EC;&#xD654; &#xD29C;&#xD1A0;&#xB9AC;&#xC5BC; - &#xBCF4;&#xC548; &#xCD94;&#xAC00;&#xD558;&#xAE30; &#xC7A5;&#xC5D0;&#xC11C; &#xC2E4;&#xC2B5;&#xD560; &#xC218; &#xC788;&#xC5B4;&#xC694;.</p></blockquote><p><img alt="Logged in error" src="images/post_create_error.png"></p><h2 id="&#xD3FC;-&#xAC80;&#xC99D;&#xD558;&#xAE30;">&#xD3FC; &#xAC80;&#xC99D;&#xD558;&#xAE30;</h2><p>&#xC7A5;&#xACE0; &#xD3FC;&#xC774; &#xC5BC;&#xB9C8;&#xB098; &#xBA4B;&#xC9C4;&#xC9C0; &#xC54C;&#xC544;&#xBCFC; &#xCC28;&#xB840;&#xC5D0;&#xC694;. &#xBE14;&#xB85C;&#xADF8; &#xAE00;&#xC740; <code>title</code>&#xACFC; <code>text</code>&#xD544;&#xB4DC;&#xAC00; &#xBC18;&#xB4DC;&#xC2DC; &#xC788;&#xC5B4;&#xC57C; &#xD574;&#xC694;. &#xC6B0;&#xB9AC;&#xAC00; &#xB9CC;&#xB4E0; <code>Post</code>&#xBAA8;&#xB378;&#xC5D0;&#xC11C;&#xB294; &#xC774; &#xD544;&#xB4DC; &#xAC12;&#xB4E4;&#xC774; &#xD544;&#xC694; &#xC5C6;&#xB2E4;&#xACE0; &#xD588;&#xC9C0;&#xB9CC;(<code>published_date</code>&#xB294; &#xC81C;&#xC678;&#xD558;&#xACE0;) &#xC7A5;&#xACE0;&#xB294; &#xBAA8;&#xB450; &#xAE30;&#xBCF8;&#xAC12;&#xC73C;&#xB85C; &#xC124;&#xC815;&#xB418;&#xC5B4; &#xC788;&#xB2E4;&#xACE0; &#xC0DD;&#xAC01;&#xD569;&#xB2C8;&#xB2E4;.</p><p><code>title</code>&#xACFC; <code>text</code>&#xC5C6;&#xC774; &#xD3FC;&#xC744; &#xC800;&#xC7A5;&#xD574;&#xBCF4;&#xC138;&#xC694;. &#xC5B4;&#xB5BB;&#xAC8C; &#xB420;&#xC9C0; &#xC0DD;&#xAC01;&#xD574;&#xBCF4;&#xC138;&#xC694;!</p><p><img alt="Form validation" src="images/form_validation2.png"></p><p>&#xC7A5;&#xACE0;&#xB294; &#xBAA8;&#xB4E0; &#xD544;&#xB4DC;&#xC758; &#xAC12;&#xC774; &#xC62C;&#xBC14;&#xB978;&#xC9C0; &#xAC80;&#xC99D;&#xD560; &#xC218; &#xC788;&#xB2F5;&#xB2C8;&#xB2E4;. &#xC815;&#xB9D0; &#xBA4B;&#xC9C0;&#xC8E0;?</p><h2 id="&#xD3FC;-&#xC218;&#xC815;&#xD558;&#xAE30;">&#xD3FC; &#xC218;&#xC815;&#xD558;&#xAE30;</h2><p>&#xC9C0;&#xAE08;&#xAE4C;&#xC9C0; &#xC0C8; &#xD3FC;&#xC744; &#xCD94;&#xAC00;&#xD558;&#xB294; &#xBC29;&#xBC95;&#xC5D0; &#xB300;&#xD574; &#xBC30;&#xC6E0;&#xC5B4;&#xC694;. &#xD558;&#xC9C0;&#xB9CC; &#xC774;&#xBBF8; &#xC788;&#xB358; &#xAE00;&#xC744; &#xC218;&#xC815;&#xD558;&#xB824;&#xBA74; &#xC5B4;&#xB5BB;&#xAC8C; &#xD574;&#xC57C; &#xD560;&#xAE4C;&#xC694;? &#xC774;&#xAC83;&#xB3C4; &#xC55E;&#xC11C; &#xD588;&#xB358; &#xAC83;&#xACFC; &#xB9E4;&#xC6B0; &#xBE44;&#xC2B7;&#xD574;&#xC694;. &#xBE68;&#xB9AC;&#xD574;&#xBCF4;&#xB3C4;&#xB85D; &#xD569;&#xC2DC;&#xB2E4;! (&#xB9CC;&#xC57D; &#xC774;&#xD574;&#xD558;&#xC9C0; &#xBABB;&#xD558;&#xB294; &#xBD80;&#xBD84;&#xC774; &#xC788;&#xB2E4;&#xBA74;, &#xC5EC;&#xB7EC;&#xBD84;&#xC758; &#xCF54;&#xCE58;&#xC5D0;&#xAC8C; &#xC774;&#xC804; &#xC7A5;&#xC758; &#xB0B4;&#xC6A9;&#xC5D0; &#xAD00;&#xD574;&#xC11C; &#xBB3C;&#xC5B4;&#xBCF4;&#xACE0; &#xCC28;&#xB840;&#xB300;&#xB85C; &#xD558;&#xB098;&#xC529; &#xD574;&#xACB0;&#xD574; &#xB098;&#xAC00;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;)</p><p><code>blog/templates/blog/post_detail.html</code>&#xD30C;&#xC77C;&#xC744; &#xC5F4;&#xC5B4; &#xC544;&#xB798; &#xB0B4;&#xC6A9;&#xC744; &#xCD94;&#xAC00;&#xD558;&#xC138;&#xC694;.</p><p></p><p class="code-label">blog/templates/blog/post_detail.html</p><p></p><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-default&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_edit&apos; pk=post.pk %}&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-pencil&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre>
+<p>&#xC774;&#xC81C; &#xD15C;&#xD50C;&#xB9BF;&#xC774; &#xC544;&#xB798;&#xC640; &#xAC19;&#xC774; &#xBCF4;&#xC77C; &#xAC70;&#xC5D0;&#xC694;.</p><p></p><p class="code-label">blog/templates/blog/post_detail.html</p><p></p><pre><code class="lang-html">{% extends &apos;blog/base.html&apos; %}
+
+{% block content %}
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;post&quot;</span>&gt;</span>
+        {% if post.published_date %}
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;date&quot;</span>&gt;</span>
+                {{ post.published_date }}
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        {% endif %}
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-default&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_edit&apos; pk=post.pk %}&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-pencil&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>{{ post.title }}<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{{ post.text|linebreaksbr }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+{% endblock %}</code></pre>
+<p><code>blog/urls.py</code>&#xC5D0; &#xB2E4;&#xC74C; &#xCF54;&#xB4DC;&#xB97C; &#xCD94;&#xAC00;&#xD569;&#xB2C8;&#xB2E4;.</p><p></p><p class="code-label">blog/urls.py</p><p></p><pre><code class="lang-python">    path(<span class="hljs-string">&apos;post/&lt;int:pk&gt;/edit/&apos;</span>, views.post_edit, name=<span class="hljs-string">&apos;post_edit&apos;</span>),</code></pre>
+<p>&#xC6B0;&#xB9AC;&#xB294; <code>blog/templates/blog/post_edit.html</code> &#xD15C;&#xD50C;&#xB9BF;&#xC744; &#xC7AC;&#xC0AC;&#xC6A9;&#xD560; &#xAC70;&#xC5D0;&#xC694;. &#xB9C8;&#xC9C0;&#xB9C9;&#xC73C;&#xB85C; &#xD560; &#xC77C;&#xC740; <em>view</em> &#xB97C; &#xB9CC;&#xB4DC;&#xB294; &#xAC83;&#xC785;&#xB2C8;&#xB2E4;.</p><p><code>blog/views.py</code>&#xD30C;&#xC77C;&#xC744; &#xC5F4;&#xC5B4;&#xC11C; &#xD30C;&#xC77C; &#xB9E8; &#xBC11;&#xC5D0; &#xCF54;&#xB4DC;&#xB97C; &#xCD94;&#xAC00;&#xD574;&#xBD05;&#xC2DC;&#xB2E4;.</p><p></p><p class="code-label">blog/views.py</p><p></p><pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">post_edit</span><span class="hljs-params">(request, pk)</span>:</span>
+    post = get_object_or_404(Post, pk=pk)
+    <span class="hljs-keyword">if</span> request.method == <span class="hljs-string">&quot;POST&quot;</span>:
+        form = PostForm(request.POST, instance=post)
+        <span class="hljs-keyword">if</span> form.is_valid():
+            post = form.save(commit=<span class="hljs-keyword">False</span>)
+            post.author = request.user
+            post.published_date = timezone.now()
+            post.save()
+            <span class="hljs-keyword">return</span> redirect(<span class="hljs-string">&apos;post_detail&apos;</span>, pk=post.pk)
+    <span class="hljs-keyword">else</span>:
+        form = PostForm(instance=post)
+    <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;blog/post_edit.html&apos;</span>, {<span class="hljs-string">&apos;form&apos;</span>: form})</code></pre>
+<p>&#xC74C;&#x2026;. &#xCF54;&#xB4DC;&#xAC00; <code>post_new</code>&#xC640; &#xAC70;&#xC758; &#xBE44;&#xC2B7;&#xD574; &#xBCF4;&#xC774;&#xC9C0; &#xC54A;&#xB098;&#xC694;? &#xD558;&#xC9C0;&#xB9CC; &#xC644;&#xC804;&#xD788; &#xAC19;&#xC9C0;&#xB294; &#xC54A;&#xC544;&#xC694;.</p><ul><li>&#xCCAB; &#xBC88;&#xC9F8;: url&#xB85C;&#xBD80;&#xD130; &#xCD94;&#xAC00;&#xB85C; <code>pk</code> &#xB9E4;&#xAC1C;&#xBCC0;&#xC218;&#xB97C; &#xBC1B;&#xC544;&#xC11C; &#xCC98;&#xB9AC;&#xD569;&#xB2C8;&#xB2E4;.
+</li>
+<li>&#xB450; &#xBC88;&#xC9F8;: <code>get_object_or_404(Post, pk=pk)</code>&#xB97C; &#xD638;&#xCD9C;&#xD558;&#xC5EC; &#xC218;&#xC815;&#xD558;&#xACE0;&#xC790; &#xD558;&#xB294; &#xAE00;&#xC758; <code>Post</code> &#xBAA8;&#xB378; <code>&#xC778;&#xC2A4;&#xD134;&#xC2A4;(instance)</code>&#xB85C; &#xAC00;&#xC838;&#xC635;&#xB2C8;&#xB2E4;. (<code>pk</code>&#xB85C; &#xC6D0;&#xD558;&#xB294; &#xAE00;&#xC744; &#xCC3E;&#xC2B5;&#xB2C8;&#xB2E4;) &#xC774;&#xB807;&#xAC8C; &#xAC00;&#xC838;&#xC628; &#xB370;&#xC774;&#xD130;&#xB97C; &#xD3FC;&#xC744; &#xB9CC;&#xB4E4; &#xB54C;&#xC640;(&#xAE00;&#xC744; &#xC218;&#xC815;&#xD560; &#xB54C; &#xD3FC;&#xC5D0; &#xC774;&#xC804;&#xC5D0; &#xC785;&#xB825;&#xD588;&#xB358; &#xB370;&#xC774;&#xD130;&#xAC00; &#xC788;&#xC5B4;&#xC57C; &#xD558;&#xACA0;&#xC8E0;?) &#xD3FC;&#xC744; &#xC800;&#xC7A5;&#xD560; &#xB54C; &#xC0AC;&#xC6A9;&#xD558;&#xAC8C; &#xB429;&#xB2C8;&#xB2E4;.
+</li></ul>
+<p></p><p class="code-label">blog/views.py</p><p></p><pre><code class="lang-python">form = PostForm(request.POST, instance=post)</code></pre>
+<p>&#xADF8;&#xB9AC;&#xACE0; &#xD3FC;&#xC5D0; &#xC544;&#xB798;&#xC640; &#xAC19;&#xC774; &#xC218;&#xC815;&#xD558;&#xC138;&#xC694;.</p><p></p><p class="code-label">blog/views.py</p><p></p><pre><code class="lang-python">form = PostForm(instance=post)</code></pre>
+<p>&#xC798;&#xD588;&#xC5B4;&#xC694;. &#xC774;&#xC81C; &#xC798; &#xC791;&#xB3D9;&#xD558;&#xB294;&#xC9C0; &#xD655;&#xC778;&#xD574;&#xBCF4;&#xC138;&#xC694;! <code>post_detail</code>&#xD398;&#xC774;&#xC9C0;&#xB85C; &#xAC00;&#xBCF4;&#xC138;&#xC694;. &#xC6B0;&#xCE21; &#xC0C1;&#xB2E8;&#xC5D0; &#xC218;&#xC815; &#xBC84;&#xD2BC;&#xC774; &#xC788;&#xC5B4;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;.</p><p><img alt="Edit button" src="images/edit_button2.png"></p><p>&#xC218;&#xC815; &#xBC84;&#xD2BC;&#xC744; &#xB204;&#xB974;&#xBA74; &#xC6B0;&#xB9AC;&#xAC00; &#xC4F4; &#xBE14;&#xB85C;&#xADF8; &#xAE00;&#xC774; &#xB4E4;&#xC5B4;&#xAC00; &#xC788;&#xB294; &#xD3FC;&#xC744; &#xBCFC; &#xC218; &#xC788;&#xC744; &#xAC70;&#xC5D0;&#xC694;.</p><p><img alt="Edit form" src="images/edit_form2.png"></p><p>&#xC790;&#xC720;&#xB86D;&#xAC8C; &#xC81C;&#xBAA9;&#xACFC; &#xD14D;&#xC2A4;&#xD2B8;&#xB97C; &#xC218;&#xC815;&#xD558;&#xACE0; &#xC800;&#xC7A5;&#xD574;&#xBCF4;&#xC138;&#xC694;!</p><p>&#xCD95;&#xD558;&#xD569;&#xB2C8;&#xB2E4;! &#xC5EC;&#xB7EC;&#xBD84;&#xC758; &#xC5B4;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC774; &#xC810;&#xC810; &#xB354; &#xC644;&#xBCBD;&#xD574;&#xC9C0;&#xACE0; &#xC788;&#xC5B4;&#xC694;!</p><p>&#xC7A5;&#xACE0; &#xD3FC;&#xC5D0; &#xB300;&#xD574; &#xC790;&#xC138;&#xD55C; &#xC815;&#xBCF4;&#xAC00; &#xD544;&#xC694;&#xD558;&#xB2E4;&#xBA74; &#xACF5;&#xC2DD; &#xBB38;&#xC11C;&#xB97C; &#xC77D;&#xC5B4;&#xBCF4;&#xC138;&#xC694;. :
+<a href="https://docs.djangoproject.com/en/2.0/topics/forms/" target="_blank">https://docs.djangoproject.com/en/2.0/topics/forms/</a></p><h2 id="&#xBCF4;&#xC548;">&#xBCF4;&#xC548;</h2><p>&#xB9C1;&#xD06C;&#xB97C; &#xD074;&#xB9AD;&#xD574; &#xC0C8;&#xB85C;&#xC6B4; &#xD3EC;&#xC2A4;&#xD2B8;&#xAC00; &#xB098;&#xC624;&#xAC8C; &#xB9CC;&#xB4DC;&#xB294; &#xAC83;&#xC740; &#xBA4B;&#xC9C4; &#xC77C;&#xC774;&#xC5D0;&#xC694;! &#xC9C0;&#xAE08;&#xC740; &#xC6F9;&#xC0AC;&#xC774;&#xD2B8;&#xB97C; &#xBC29;&#xBB38;&#xD558;&#xB294; &#xB204;&#xAD6C;&#xB4E0;&#xC9C0; &#xAE00;&#xC744; &#xC4F8; &#xC218; &#xC788;&#xC9C0;&#xB9CC;, &#xADF8;&#xB807;&#xAC8C; &#xD558;&#xACE0; &#xC2F6;&#xC9C0; &#xC54A;&#xC744; &#xC218; &#xC788;&#xC5B4;&#xC694;. &#xB098;&#xC5D0;&#xAC8C;&#xB9CC; &#xBCF4;&#xC774;&#xACE0; &#xB2E4;&#xB978; &#xC0AC;&#xB78C;&#xC5D0;&#xAC8C;&#xB294; &#xBCF4;&#xC774;&#xC9C0; &#xC54A;&#xB294; &#xBC84;&#xD2BC;&#xC744; &#xB9CC;&#xB4E4;&#xC5B4; &#xBCFC;&#xAC8C;&#xC694;.</p><p><code>blog/templates/blog/base.html</code> &#xD30C;&#xC77C;&#xC5D0;&#xC11C;, <code>page-header</code> <code>div</code>&#xB97C; &#xCC3E;&#xC544; &#xC544;&#xB798;&#xC640; &#xAC19;&#xC774; &#xC791;&#xC131;&#xB41C; &#xC575;&#xCEE4; &#xD0DC;&#xADF8;(Anchor Tag)&#xB97C; &#xCC3E;&#xC2B5;&#xB2C8;&#xB2E4;.</p><p></p><p class="code-label">blog/templates/blog/base.html</p><p></p><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_new&apos; %}&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;top-menu&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-plus&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre>
+<p>&#xC5EC;&#xAE30;&#xC5D0; <code>{% if %}</code>&#xD0DC;&#xADF8;&#xB97C; &#xCD94;&#xAC00;&#xD574; &#xAD00;&#xB9AC;&#xC790;&#xB85C; &#xB85C;&#xADF8;&#xC778;&#xD55C; &#xC720;&#xC800;&#xB4E4;&#xB9CC; &#xB9C1;&#xD06C;&#xAC00; &#xBCF4;&#xC77C; &#xC218; &#xC788;&#xAC8C; &#xB9CC;&#xB4E4; &#xAC70;&#xC5D0;&#xC694;. &#xADF8;&#xAC8C;, &#xBC14;&#xB85C; &#xC5EC;&#xB7EC;&#xBD84;&#xC774;&#xC8E0;! <code>&lt;a&gt;</code>&#xD0DC;&#xADF8;&#xB97C; &#xC544;&#xB798;&#xC640; &#xAC19;&#xC774; &#xBCC0;&#xACBD;&#xD558;&#xC138;&#xC694;.</p><p></p><p class="code-label">blog/templates/blog/base.html</p><p></p><pre><code class="lang-html">{% if user.is_authenticated %}
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_new&apos; %}&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;top-menu&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-plus&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+{% endif %}</code></pre>
+<p>&#xC774; <code>{% if %}</code>&#xB294; &#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xC5D0; &#xD398;&#xC774;&#xC9C0;&#xB97C; &#xC694;&#xCCAD; &#xD558;&#xB294; &#xC0AC;&#xC6A9;&#xC790;&#xAC00; &#xB85C;&#xADF8;&#xC778; &#xD558;&#xB294; &#xACBD;&#xC6B0; &#xB9C1;&#xD06C;&#xAC00; &#xBC1C;&#xC0DD;&#xB429;&#xB2C8;&#xB2E4;. &#xC774;&#xB294; &#xC0C8; &#xAC8C;&#xC2DC;&#xAE00;&#xC744; &#xC644;&#xC804;&#xD788; &#xBCF4;&#xD638;&#xD574;&#xC8FC;&#xB294; &#xAC83;&#xC740; &#xC544;&#xB2C8;&#xC9C0;&#xB9CC;, &#xBC14;&#xB78C;&#xC9C1;&#xD55C; &#xBC29;&#xBC95;&#xC785;&#xB2C8;&#xB2E4;. &#xC774; &#xBD80;&#xBD84;&#xC740; &#xC7A5;&#xACE0;&#xAC78;&#xC2A4; &#xC2EC;&#xD654; &#xD29C;&#xD1A0;&#xB9AC;&#xC5BC;&#xC5D0;&#xC11C; &#xC880;&#xB354; &#xC790;&#xC138;&#xD788; &#xB2E4;&#xB8F0;&#xAC70;&#xC5D0;&#xC694;.</p><p>&#xC138;&#xBD80; &#xD398;&#xC774;&#xC9C0;&#xC5D0; &#xC788;&#xB294; &#xC218;&#xC815; &#xC544;&#xC774;&#xCF58;&#xC774; &#xAE30;&#xC5B5;&#xB098;&#xC8E0;? &#xC774;&#xBC88;&#xC5D0;&#xB3C4; &#xB3D9;&#xC77C;&#xD558;&#xAC8C; &#xB2E4;&#xB978; &#xC0AC;&#xB78C;&#xB4E4;&#xC774; &#xAC8C;&#xC2DC;&#xAE00;&#xC744; &#xC218;&#xC815;&#xD558;&#xC9C0; &#xBABB;&#xD558;&#xAC8C; &#xD560; &#xAC70;&#xC5D0;&#xC694;.</p><p><code>blog/templates/blog/post_detail.html</code>&#xD30C;&#xC77C;&#xC744; &#xC5F4;&#xC5B4; &#xC544;&#xB798;&#xC640; &#xAC19;&#xC774; &#xC791;&#xC131;&#xB41C; &#xB77C;&#xC778;&#xC744; &#xCC3E;&#xC544;&#xC8FC;&#xC138;&#xC694;.</p><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-default&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_edit&apos; pk=post.pk %}&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-pencil&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre>
+<p>&#xC774;&#xB807;&#xAC8C; &#xBC14;&#xAFB8;&#xC138;&#xC694;.</p><p></p><p class="code-label">blog/templates/blog/post_detail.html</p><p></p><pre><code class="lang-html">{% if user.is_authenticated %}
+     <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-default&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_edit&apos; pk=post.pk %}&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-pencil&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+{% endif %}</code></pre>
+<p>&#xB85C;&#xADF8;&#xC778;&#xD588;&#xAE30; &#xB54C;&#xBB38;&#xC5D0;, &#xD398;&#xC774;&#xC9C0; &#xC0C8;&#xB85C;&#xACE0;&#xCE68;&#xC744; &#xD574;&#xB3C4; &#xC544;&#xBB34;&#xAC83;&#xB3C4; &#xD45C;&#xC2DC;&#xB418;&#xC9C0; &#xC54A;&#xC744; &#xAC70;&#xC5D0;&#xC694;. &#xC0C8;&#xB85C;&#xC6B4; &#xBE0C;&#xB77C;&#xC6B0;&#xC800; &#xB610;&#xB294; &#xC2DC;&#xD06C;&#xB9BF; &#xCC3D;&#xC744; &#xC2E4;&#xD589;&#xD574; &#xBCF4;&#xC138;&#xC694;. &#xB9C1;&#xD06C;&#xC640; &#xC544;&#xC774;&#xCF58;&#xC774; &#xBCF4;&#xC774;&#xC9C0; &#xC54A;&#xAC8C; &#xB418;&#xC5C8;&#xC5B4;&#xC694;!</p><h2 id="&#xD55C;-&#xAC00;&#xC9C0;&#xB9CC;-&#xB354;-&#xBC30;&#xD3EC;&#xD558;&#xC138;&#xC694;">&#xD55C; &#xAC00;&#xC9C0;&#xB9CC; &#xB354;: &#xBC30;&#xD3EC;&#xD558;&#xC138;&#xC694;!</h2><p>&#xBAA8;&#xB4E0; &#xC791;&#xC5C5;&#xC744; &#xB05D;&#xB9C8;&#xCCE4;&#xC73C;&#xBA74; PythonAnywhere&#xB85C; &#xBC30;&#xD3EC;&#xD574;&#xC57C;&#xC8E0;!</p><ul><li>&#xC81C;&#xC77C; &#xBA3C;&#xC800; &#xCF54;&#xB4DC;&#xB97C; &#xCEE4;&#xBC0B;&#xD558;&#xACE0; GitHub&#xB85C; &#xD478;&#xC2DC;&#xD569;&#xB2C8;&#xB2E4;.
+</li></ul>
+<p></p><p class="code-label">command-line</p><p></p><pre><code>$ git status
+$ git add --all .
+$ git status
+$ git commit -m &quot;Added views to create/edit blog post inside the site.&quot;
+$ git push</code></pre>
+<ul><li>&#xADF8; &#xB2E4;&#xC74C; <a href="https://www.pythonanywhere.com/consoles/" target="_blank">PythonAnywhere Bash console</a>&#xC744; &#xC5EC;&#xC138;&#xC694;. :
+</li></ul>
+<p></p><p class="code-label">command-line</p><p></p><pre><code>$ cd my-first-blog
+$ git pull
+[...]</code></pre>
+<ul><li>&#xB9C8;&#xC9C0;&#xB9C9;&#xC73C;&#xB85C; <a href="https://www.pythonanywhere.com/web_app_setup/" target="_blank">Web tab</a>&#xC5D0;&#xC11C; <strong>Reload</strong>&#xB97C; &#xB204;&#xB974;&#xC138;&#xC694;.
+</li></ul>
+<p>&#xC774;&#xC81C; &#xBC30;&#xD3EC;&#xAC00; &#xC644;&#xB8CC; &#xB418;&#xC5C8;&#xC5B4;&#xC694;. &#xC798; &#xC791;&#xB3D9;&#xB418;&#xB294;&#xC9C0; &#xD655;&#xC778;&#xD558;&#xC138;&#xC694;! &#xCD95;&#xD558;&#xD569;&#xB2C8;&#xB2E4;. :)</p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../extend_your_application/" class="navigation navigation-prev " aria-label="Previous page: 애플리케이션 확장하기">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../whats_next/" class="navigation navigation-next " aria-label="Next page: 더 나아가기">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Django 폼","level":"1.24","depth":1,"next":{"title":"더 나아가기","level":"1.25","depth":1,"path":"whats_next/README.md","ref":"whats_next/README.md","articles":[]},"previous":{"title":"애플리케이션 확장하기","level":"1.23","depth":1,"path":"extend_your_application/README.md","ref":"extend_your_application/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"django_version":"2.2.4"},"language":"ko","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"django_forms/README.md","mtime":"2020-06-27T13:00:23.978Z","type":"markdown"},"gitbook":{"version":"3.4.0","time":"2020-06-27T13:00:41.274Z"},"basePath":"..","book":{"language":"ko"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

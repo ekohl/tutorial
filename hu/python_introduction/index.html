@@ -1,0 +1,930 @@
+
+<!DOCTYPE HTML>
+<html lang="hu" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Bevezetés a Pythonba · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.4.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../django/" />
+    
+    
+    <link rel="prev" href="../code_editor/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Bevezetés
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Installáció
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    Hogy működik az Internet?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Bevezetés a parancssor használatába
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    A Python telepítése
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    Kódszerkesztő (editor)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Bevezetés a Pythonba
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Mi a Django?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Django telepítés
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    Az első Django projekted!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Django modellek
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Deploy!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django url-ek
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django views - itt az ideje alkotni!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    Bevezetés a HTML-be
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM és QuerySet-ek
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    Dinamikus adatok a template-ben
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django sablonok (template)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - Tegyük széppé!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Template-kiegészítés
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Egészítsd ki az applikációdat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Django űrlapok
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    Következő lépések
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Bevezetés a Pythonba</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="bevezet&#xE9;s-a-pythonba">Bevezet&#xE9;s a Pythonba</h1><blockquote><p>Ez a fejezet r&#xE9;szben a Geek Girls Carrots (<a href="https://github.com/ggcarrots/django-carrots" target="_blank">https://github.com/ggcarrots/django-carrots</a>) tutorialjain alapszik.</p></blockquote><p>&#xCD;rjunk egy kis k&#xF3;dot!</p><h2 id="a-python-parancssor">A Python parancssor</h2><p>Hogy elkezdhess a Pythonnal ismerkedni, sz&#xFC;ks&#xE9;ged lesz a <em>parancssorra</em>. M&#xE1;r tudod, hogyan kell -- megtanultad a <a href="../intro_to_command_line/"> Bevezet&#xE9;s a parancssor haszn&#xE1;lat&#xE1;ba</a> fejezetben.</p><p>Ha k&#xE9;sz vagy, k&#xF6;vesd az al&#xE1;bbi utas&#xED;t&#xE1;sokat.</p><p>Egy Python konzolt szeretn&#xE9;nk megnyitni. G&#xE9;peld be a <code>python</code> parancsot Windowson, vagy a <code>python3</code> parancsot, ha Mac vagy Linux van a g&#xE9;peden, &#xE9;s nyomj <code>enter</code>t.</p><pre><code>        $ python3
+        Python 3.4.3 (...)
+        Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+        &gt;&gt;&gt;</code></pre>
+<h2 id="az-els&#x151;-python-parancsod">Az els&#x151; Python parancsod!</h2><p>Miut&#xE1;n futtattad a Python parancsot, a parancssor megv&#xE1;ltozott: <code>&gt;&gt;&gt;</code>. Ez azt jelenti, hogy mostant&#xF3;l csak a Python nyelv parancsait haszn&#xE1;lhatjuk. Nem kell be&#xED;rnod ezt: <code>&gt;&gt;&gt;</code> - a Python megcsin&#xE1;lja helyetted.</p><p>Ha b&#xE1;rmikor szeretn&#xE9;l kil&#xE9;pni a Python konzolb&#xF3;l, csak g&#xE9;peld be, hogy <code>exit()</code>, vagy haszn&#xE1;ld a <code>Ctrl + Z</code> billenty&#x171;kombin&#xE1;ci&#xF3;t Windos-ra, vagy a <code>Ctrl + D</code>-t Mac-re/Linux-ra. Ezut&#xE1;n m&#xE1;r nem fogod l&#xE1;tni a <code>&gt;&gt;&gt;</code> jelet.</p><p>Most &#xE9;pp nem szeretn&#xE9;nk kil&#xE9;pni a Python konzolb&#xF3;l. Ink&#xE1;bb t&#xF6;bbet szeretn&#xE9;nk tanulni r&#xF3;la. Kezdj&#xFC;nk valami nagyon egyszer&#x171;vel. P&#xE9;ld&#xE1;ul kezdj&#xFC;nk valami matekkel, mint pl. <code>2 + 3</code> majd <code>enter</code>.</p><pre><code>        &gt;&gt;&gt; 2 + 3
+        5</code></pre>
+<p>Szuper! L&#xE1;ttad, ahogy el&#x151;ugrott a v&#xE1;lasz? A Python tud matekozni! Kipr&#xF3;b&#xE1;lhatsz m&#xE1;s parancsokat is, mint p&#xE9;ld&#xE1;ul:</p><ul><li><code>4 * 5</code>
+</li>
+<li><code>5 - 1</code>
+</li>
+<li><code>40 / 2</code>
+</li></ul>
+<p>Sz&#xF3;rakozz egy kicsit ezzel azt&#xE1;n gyere vissza ide :).</p><p>Amint l&#xE1;tod, a Python j&#xF3; sz&#xE1;mol&#xF3;g&#xE9;p. Ha k&#xED;v&#xE1;ncsi vagy, mire j&#xF3; m&#xE9;g...</p><h2 id="stringek">Stringek</h2><p>Mi a helyzet a neveddel? G&#xE9;peld be a neved id&#x151;z&#xE9;jelbe t&#xE9;ve:</p><pre><code>        &gt;&gt;&gt; &quot;Ola&quot;
+        &apos;Ola&apos;</code></pre>
+<p>&#xC9;pp most hoztad l&#xE9;tre az els&#x151; stringedet! Ez egy karakter-sorozat amit a sz&#xE1;m&#xED;t&#xF3;g&#xE9;p fel tud dolgozni. A string kezdet&#xE9;t &#xE9;s v&#xE9;g&#xE9;t ugyanazzal a karakterrel jel&#xF6;lj&#xFC;k. Ez lehet szimpla (<code>&apos;</code>) vagy dupla (<code>&quot;</code>) id&#xE9;z&#x151;jel (nincs k&#xFC;l&#xF6;nbs&#xE9;g!) Az id&#xE9;z&#x151;jelek mondj&#xE1;k meg a Pythonnak, hogy ami k&#xF6;zt&#xFC;k van, az egy string.</p><p>A stringeket &#xF6;ssze is lehet f&#x171;zni. Pr&#xF3;b&#xE1;ld ki ezt:</p><pre><code>        &gt;&gt;&gt; &quot;Hi there &quot; + &quot;Ola&quot;
+        &apos;Hi there Ola&apos;</code></pre>
+<p>Sokszoros&#xED;tani is lehet &#x151;ket:</p><pre><code>        &gt;&gt;&gt; &quot;Ola&quot; * 3
+        &apos;OlaOlaOla&apos;</code></pre>
+<p>Ha aposztr&#xF3;fot szeretn&#xE9;l a stringedbe tenni, k&#xE9;tf&#xE9;lek&#xE9;ppen teheted meg.</p><p>Id&#xE9;z&#x151;jel seg&#xED;ts&#xE9;g&#xE9;vel:</p><pre><code>        &gt;&gt;&gt; &quot;Runnin&apos; down the hill&quot;
+        &quot;Runnin&apos; down the hill&quot;</code></pre>
+<p>vagy pedig escape karakterrel (``) az aposztr&#xF3;f el&#x151;tt:</p><pre><code>        &gt;&gt;&gt; &apos;Runnin\&apos; down the hill&apos;
+        &quot;Runnin&apos; down the hill&quot;</code></pre>
+<p>J&#xF3;, mi? Ha nagybet&#x171;kkel szeretn&#xE9;d l&#xE1;tni a neved, csak g&#xE9;peld be ezt:</p><pre><code>        &gt;&gt;&gt; &quot;Ola&quot;.upper()
+        &apos;OLA&apos;</code></pre>
+<p>&#xC9;pp most haszn&#xE1;ltad az <code>upper</code> <strong>functiont</strong> (f&#xFC;ggv&#xE9;nyt) a stringeden! A f&#xFC;ggv&#xE9;ny, (mint p&#xE9;ld&#xE1;ul az <code>upper()</code>), egy utas&#xED;t&#xE1;ssorozat, amit a Python v&#xE9;grehajt egy adott objektumon (<code>&quot;Ola&quot;</code>), amikor a f&#xFC;ggv&#xE9;nyt megh&#xED;vod.</p><p>Ha szeretn&#xE9;d tudni, hogy h&#xE1;ny bet&#x171;b&#x151;l &#xE1;ll a neved, arra is van f&#xFC;ggv&#xE9;ny!</p><pre><code>        &gt;&gt;&gt; len(&quot;Ola&quot;)
+        3</code></pre>
+<p>&#xC9;rdekel, mi&#xE9;rt van az, hogy n&#xE9;ha a f&#xFC;ggv&#xE9;nyeket &#xFA;gy h&#xED;vjuk meg, hogy a string ut&#xE1;n egy <code>.</code> j&#xF6;n, majd a f&#xFC;ggv&#xE9;ny neve (mint p&#xE9;ld&#xE1;ul <code>&quot;Ola&quot;.upper()</code>), m&#xE1;skor pedig el&#x151;bb a f&#xFC;ggv&#xE9;ny neve j&#xF6;n, azt&#xE1;n a string a z&#xE1;r&#xF3;jelben? Nos, ez az&#xE9;rt van mert n&#xE9;ha a f&#xFC;ggv&#xE9;nyek objektumokhoz tartoznak, mint az <code>upper()</code>, amit csak azokon az objektumokon h&#xED;vhatunk meg. Ebben az esetben a f&#xFC;ggv&#xE9;nyt <strong>met&#xF3;dusnak</strong> (method) nevezz&#xFC;k. M&#xE1;skor a f&#xFC;ggv&#xE9;ny nem tartozik egy bizonyos t&#xED;pus&#xFA; objektumhoz, hanem t&#xF6;bbf&#xE9;le t&#xED;pus&#xFA; objektumon is meg lehet h&#xED;vni, mint p&#xE9;ld&#xE1;ul a <code>len()</code>. Ez&#xE9;rt volt az hogy az <code>&quot;Ola&quot;</code>-t param&#xE9;terk&#xE9;nt adtuk &#xE1;t a <code>len</code> f&#xFC;ggv&#xE9;nynek.</p><h3 id="&#xF6;sszefoglal&#xF3;">&#xD6;sszefoglal&#xF3;</h3><p>Ok&#xE9;, el&#xE9;g a stringekb&#x151;l. Teh&#xE1;t ezid&#xE1;ig a k&#xF6;vetkez&#x151;kr&#x151;l tanult&#xE1;l:</p><ul><li><strong>a parancssor</strong> - ha parancsokat (k&#xF3;dot) &#xED;runk be a Python parancssorba, a Python v&#xE9;grehajtja azokat
+</li>
+<li><strong>sz&#xE1;mok &#xE9;s stringek</strong> - a Pythonban a sz&#xE1;mokat matematikai m&#x171;veletekhez, a stringeket sz&#xF6;veg objektumokhoz haszn&#xE1;ljuk
+</li>
+<li><strong>oper&#xE1;torok</strong> - mint a + &#xE9;s a *, k&#xE9;t &#xE9;rt&#xE9;kb&#x151;l egy &#xFA;jat hoznak l&#xE9;tre
+</li>
+<li><strong>f&#xFC;ggv&#xE9;nyek</strong> - mint az upper() &#xE9;s a len(), objektumokon hajtanak v&#xE9;gre m&#x171;veleteket.
+</li></ul>
+<p>Ezek voln&#xE1;nak az alapjai minden programoz&#xE1;si nyelvnek. K&#xE9;szen &#xE1;llsz valami bonyolultabbra? Rajta!</p><h2 id="hib&#xE1;k">Hib&#xE1;k</h2><p>N&#xE9;zz&#xFC;nk valami &#xFA;jat. Vajon megkaphatjuk-e egy sz&#xE1;m hossz&#xE1;t ugyan&#xFA;gy, mint a nev&#xFC;nk hossz&#xE1;t? &#xCD;rd be, hogy <code>len(304023)</code>, majd &#xFC;ss <code>enter</code>-t:</p><pre><code>        &gt;&gt;&gt; len(304023)
+        Traceback (most recent call last):
+          File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+        TypeError: object of type &apos;int&apos; has no len()</code></pre>
+<p>Megkaptuk az els&#x151; hib&#xE1;nkat! Azt mondja, az &quot;int&quot; t&#xED;pus&#xFA; (integerek, eg&#xE9;sz sz&#xE1;mok) objektumoknak nincs hosszuk. Most akkor mit tehet&#xFC;nk? Tal&#xE1;n le&#xED;rhatjuk a sz&#xE1;munkat stringk&#xE9;nt? A stringeknek van hosszuk, nem?</p><pre><code>        &gt;&gt;&gt; len(str(304023))
+        6</code></pre>
+<p>M&#x171;k&#xF6;d&#xF6;tt! Haszn&#xE1;ltuk a <code>str</code> f&#xFC;ggv&#xE9;nyt a <code>len</code> f&#xFC;ggv&#xE9;ny belsej&#xE9;ben. A <code>str()</code> f&#xFC;ggv&#xE9;ny stringg&#xE9; alak&#xED;t egy tetsz&#x151;leges t&#xED;pus&#xFA; objektumot.</p><ul><li>A <code>str</code> f&#xFC;ggv&#xE9;ny <strong>stringg&#xE9;</strong> alak&#xED;tja a dolgokat
+</li>
+<li>Az <code>int</code> f&#xFC;ggv&#xE9;ny <strong>integerr&#xE9;</strong> alak&#xED;tja a dolgokat
+</li></ul>
+<blockquote><p>Fontos: sz&#xE1;mokat (integereket) stringg&#xE9; b&#xE1;rmikor alak&#xED;thatunk, de stringet sz&#xE1;mm&#xE1; nem felt&#xE9;tlen&#xFC;l - m&#xE9;gis mi lenne az <code>int(&apos;hello&apos;)</code> eredm&#xE9;nye?</p></blockquote><h2 id="v&#xE1;ltoz&#xF3;k">V&#xE1;ltoz&#xF3;k</h2><p>A programoz&#xE1;sban nagyon fontos a v&#xE1;ltoz&#xF3; fogalma. A v&#xE1;ltoz&#xF3; egy n&#xE9;v egy objektumra, amit majd k&#xE9;s&#x151;bb &#xFA;jra felhaszn&#xE1;lhatunk. A programoz&#xF3;k arra haszn&#xE1;lj&#xE1;k a v&#xE1;ltoz&#xF3;kat, hogy adatokat t&#xE1;roljanak vel&#xFC;k, hogy a k&#xF3;djukat olvashat&#xF3;bb&#xE1; tegy&#xE9;k, &#xE9;s hogy ne kelljen megjegyezni&#xFC;k mindenr&#x151;l, hogy micsoda.</p><p>Tegy&#xFC;k fel, hogy l&#xE9;trehozt&#xE1;l egy v&#xE1;ltoz&#xF3;t, aminek a neve <code>name</code>:</p><pre><code>        &gt;&gt;&gt; name = &quot;Ola&quot;</code></pre>
+<p>L&#xE1;tod? Egyszer&#x171;! Csak ennyi: name egyenl&#x151; Ola.</p><p>Amint l&#xE1;thatod, a program nem adott vissza semmilyen eredm&#xE9;nyt, az eddigiekkel ellent&#xE9;tben. Honnan tudjuk &#xED;gy, hogy a v&#xE1;ltoz&#xF3; l&#xE9;trej&#xF6;tt? Egyszer&#x171;en &#xED;rd be, hogy <code>name</code>, majd &#xFC;ss <code>enter</code>-t:</p><pre><code>        &gt;&gt;&gt; name
+        &apos;Ola&apos;</code></pre>
+<p>Jupp&#xED;&#xED;&#xED;! Az els&#x151; v&#xE1;ltoz&#xF3;d :)! &#xC9;s b&#xE1;rmikor megv&#xE1;ltoztathatod, hogy mit tartalmaz:</p><pre><code>        &gt;&gt;&gt; name = &quot;Sonja&quot;
+        &gt;&gt;&gt; name
+        &apos;Sonja&apos;</code></pre>
+<p>&#xC9;s f&#xFC;ggv&#xE9;nyekben is haszn&#xE1;lhatod:</p><pre><code>        &gt;&gt;&gt; len(name)
+        5</code></pre>
+<p>Szuper, ugye? Term&#xE9;szetesen a v&#xE1;ltoz&#xF3;k b&#xE1;rmilyen &#xE9;rt&#xE9;ket felvehetnek, p&#xE9;ld&#xE1;ul sz&#xE1;m-&#xE9;rt&#xE9;keket is. Pr&#xF3;b&#xE1;ld ki:</p><pre><code>        &gt;&gt;&gt; a = 4
+        &gt;&gt;&gt; b = 6
+        &gt;&gt;&gt; a * b
+        24</code></pre>
+<p>De mi van akkor, ha rossz nevet haszn&#xE1;lunk? Kital&#xE1;lod? Pr&#xF3;b&#xE1;ljuk ki!</p><pre><code>        &gt;&gt;&gt; city = &quot;Tokyo&quot;
+        &gt;&gt;&gt; ctiy
+        Traceback (most recent call last):
+          File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+        NameError: name &apos;ctiy&apos; is not defined</code></pre>
+<p>Egy hiba! Amint l&#xE1;tod a Pythonban k&#xFC;l&#xF6;nb&#xF6;z&#x151; t&#xED;pus&#xFA; hib&#xE1;k vannak, ezt p&#xE9;ld&#xE1;ul &#xFA;gy h&#xED;vj&#xE1;k hogy <strong>NameError</strong>. A Python ezt a hib&#xE1;t dobja, ha olyan v&#xE1;ltoz&#xF3;ra hivatkozol, ami nem volt m&#xE9;g l&#xE9;trehozva. Ha majd tal&#xE1;lkozol ezzel a hib&#xE1;val, mindig ellen&#x151;rizd a k&#xF3;dod, hogy nem &#xED;rt&#xE1;l-e el egy nevet.</p><p>J&#xE1;tssz egy kicsit a v&#xE1;ltoz&#xF3;kkal, hogy l&#xE1;sd, mi mindenre vagy k&#xE9;pes vel&#xFC;k!</p><h2 id="a-print-f&#xFC;ggv&#xE9;ny">A print f&#xFC;ggv&#xE9;ny</h2><p>Pr&#xF3;b&#xE1;ld ki ezt:</p><pre><code>        &gt;&gt;&gt; name = &apos;Maria&apos;
+        &gt;&gt;&gt; name
+        &apos;Maria&apos;
+        &gt;&gt;&gt; print(name)
+        Maria</code></pre>
+<p>Amikor be&#xED;rod, hogy <code>name</code>, a Python interpreter a &quot;name&quot; v&#xE1;ltoz&#xF3; sz&#xF6;veges <em>reprezent&#xE1;ci&#xF3;j&#xE1;val</em> t&#xE9;r vissza, ami a M-a-r-i-a bet&#x171;kb&#x151;l &#xE1;ll, id&#xE9;z&#x151;jelek k&#xF6;z&#xF6;tt. Amikor azt &#xED;rod: <code>print(name)</code>, a Python &quot;kinyomtatja&quot; a v&#xE1;ltoz&#xF3; tartalm&#xE1;t a k&#xE9;perny&#x151;re, id&#xE9;z&#x151;jelek n&#xE9;lk&#xFC;l, ami sokkal eleg&#xE1;nsabb.</p><p>Amint majd l&#xE1;tni fogjuk, a <code>print()</code> hasznos lesz f&#xFC;ggv&#xE9;nyek belsej&#xE9;ben is, vagy amikor t&#xF6;bb sorba szeretn&#xE9;nk nyomtatni.</p><h2 id="list&#xE1;k">List&#xE1;k</h2><p>A stringek &#xE9;s az integerek mellett a Python m&#xE9;g sok m&#xE1;s t&#xED;pus&#xFA; objektumot ismer. Most megmutatunk egy &#xFA;jat, amit &#xFA;gy h&#xED;vnak: <strong>lista</strong>. A lista olyan, amilyennek elk&#xE9;pzeled: egy objektum, ami m&#xE1;s objektumok list&#xE1;ja :)</p><p>Hozzunk l&#xE9;tre egy list&#xE1;t:</p><pre><code>        &gt;&gt;&gt; []
+        []</code></pre>
+<p>Igen, ez egy &#xFC;res lista. Nem t&#xFA;l hasznos, ugye? Most hozzunk l&#xE9;tre egy list&#xE1;t a lott&#xF3;sz&#xE1;mokkal. Nem akarjuk folyton ism&#xE9;telni magunkat, &#xFA;gyhogy egyenesen egy v&#xE1;ltoz&#xF3;ba tessz&#xFC;k:</p><pre><code>        &gt;&gt;&gt; lottery = [3, 42, 12, 19, 30, 59]</code></pre>
+<p>Igen, van egy list&#xE1;nk! Mit lehet vele csin&#xE1;lni? N&#xE9;zz&#xFC;k meg, h&#xE1;ny lott&#xF3;sz&#xE1;m van a list&#xE1;ban. Van tipped, melyik f&#xFC;ggv&#xE9;nyt fogjuk erre haszn&#xE1;lni? Biztos tudod!</p><pre><code>        &gt;&gt;&gt; len(lottery)
+        6</code></pre>
+<p>Igen! A <code>len()</code> megadja, hogy h&#xE1;ny objektum van a list&#xE1;ban. Hasnzos, ugye? Most akkor rendezz&#xFC;k sorba a list&#xE1;t:</p><pre><code>        &gt;&gt;&gt; lottery.sort()</code></pre>
+<p>Ez nem ad vissza semmit, csak megv&#xE1;ltoztatta a sz&#xE1;mok sorrendj&#xE9;t a list&#xE1;ban. &#xCD;rassuk ki a list&#xE1;t, hogy l&#xE1;ssuk, mi t&#xF6;rt&#xE9;nt:</p><pre><code>        &gt;&gt;&gt; print(lottery)
+        [3, 12, 19, 30, 42, 59]</code></pre>
+<p>Amint l&#xE1;tod, a sz&#xE1;mok a list&#xE1;ban most n&#xF6;vekv&#x151; sorrendben vannak. Gratula!</p><p>Esetleg szeretn&#xE9;d ford&#xED;tott sorrendbe rendezni? Csin&#xE1;ljuk meg!</p><pre><code>        &gt;&gt;&gt; lottery.reverse()
+        &gt;&gt;&gt; print(lottery)
+        [59, 42, 30, 19, 12, 3]</code></pre>
+<p>K&#xF6;nny&#x171;, ugye? Ha hozz&#xE1; akarsz adni valamit a list&#xE1;hoz, a k&#xF6;vetkez&#x151; paranccsal teheted:</p><pre><code>        &gt;&gt;&gt; lottery.append(199)
+        &gt;&gt;&gt; print(lottery)
+        [59, 42, 30, 19, 12, 3, 199]</code></pre>
+<p>Ha p&#xE9;ld&#xE1;ul csak az els&#x151; sz&#xE1;mot akarod l&#xE1;tni, arra haszn&#xE1;lhatod az <strong>indexel&#xE9;st</strong>. Az index egy sz&#xE1;m ami megmondja, h&#xE1;nyadikk&#xE9;nt fordul el&#x151; egy elem a list&#xE1;ban. A programoz&#xF3;k szeretik 0-t&#xF3;l kezdeni a sz&#xE1;mol&#xE1;st, ez&#xE9;rt a lista els&#x151; eleme a 0-dik index&#x171; helyen van, a k&#xF6;vetkez&#x151; az 1-n&#xE9;l &#xE9;s &#xED;gy tov&#xE1;bb. Pr&#xF3;b&#xE1;ld ki ezt:</p><pre><code>        &gt;&gt;&gt; print(lottery[0])
+        59
+        &gt;&gt;&gt; print(lottery[1])
+        42</code></pre>
+<p>Amint l&#xE1;tod, a list&#xE1;ban el&#x151;fordul&#xF3; k&#xFC;l&#xF6;nb&#xF6;z&#x151; objektumokat el&#xE9;rhetj&#xFC;k a lista nev&#xE9;nek, illetve az objektum index&#xE9;nek megjel&#xF6;l&#xE9;s&#xE9;vel, ahol az indexet sz&#xF6;gletes z&#xE1;r&#xF3;jelbe &#xED;rjuk.</p><p>Ahhoz, hogy valamit kit&#xF6;r&#xF6;lj&#xFC;nk a list&#xE1;b&#xF3;l, sz&#xFC;ks&#xE9;g&#xFC;nk van az <strong>index</strong> fogalm&#xE1;ra, amint azt az el&#x151;bb tanultuk, valamint a <code>pop()</code> parancsra. N&#xE9;zz&#xFC;nk egy p&#xE9;ld&#xE1;t hogy meger&#x151;s&#xED;ts&#xFC;k az eddig tanultakat; ki fogjuk t&#xF6;r&#xF6;lni az els&#x151; elemet a list&#xE1;nkb&#xF3;l.</p><pre><code>        &gt;&gt;&gt; print(lottery)
+        [59, 42, 30, 19, 12, 3, 199]
+        &gt;&gt;&gt; print(lottery[0])
+        59
+        &gt;&gt;&gt; lottery.pop(0)
+        &gt;&gt;&gt; print(lottery)
+        [42, 30, 19, 12, 3, 199]</code></pre>
+<p>M&#x171;k&#xF6;dik, mint a var&#xE1;zslat!</p><p>Sz&#xF3;rakoz&#xE1;sb&#xF3;l pr&#xF3;b&#xE1;lj el&#xE9;rni k&#xFC;l&#xF6;nb&#xF6;z&#x151; index&#x171; elemeket: 6, 7, 1000, -1, -6 vagy -1000. Meg tudod-e mondani az eredm&#xE9;nyt el&#x151;re? &#xC9;rtelmes-e az eredm&#xE9;ny?</p><p>Ebben a Python dokument&#xE1;ci&#xF3;ban megtal&#xE1;lod a list&#xE1;kra &#xE9;rtelmezett &#xF6;sszes met&#xF3;dust: <a href="https://docs.python.org/3/tutorial/datastructures.html" target="_blank">https://docs.python.org/3/tutorial/datastructures.html</a></p><h2 id="sz&#xF3;t&#xE1;rak">Sz&#xF3;t&#xE1;rak</h2><p>A sz&#xF3;t&#xE1;r (dictionary) hasonl&#xF3; a list&#xE1;hoz, de a sz&#xF3;t&#xE1;r elemeit nem indexekkel hanem kulcsokkal (key) &#xE9;rj&#xFC;k el. A kulcs lehet b&#xE1;rmilyen string vagy sz&#xE1;m. Az &#xFC;res sz&#xF3;t&#xE1;r l&#xE9;trehoz&#xE1;s&#xE1;ra szolg&#xE1;l&#xF3; utas&#xED;t&#xE1;s a k&#xF6;vetkez&#x151;:</p><pre><code>        &gt;&gt;&gt; {}
+        {}</code></pre>
+<p>&#xC9;pp most defini&#xE1;lt&#xE1;l egy &#xFC;res sz&#xF3;t&#xE1;rat. Hurr&#xE1;!</p><p>Most pedig pr&#xF3;b&#xE1;ld ki a k&#xF6;vetkez&#x151; parancsot (&#xE9;s pr&#xF3;b&#xE1;ld meg haszn&#xE1;lni a saj&#xE1;t adataidat):</p><pre><code>        &gt;&gt;&gt; participant = {&apos;name&apos;: &apos;Ola&apos;, &apos;country&apos;: &apos;Poland&apos;, &apos;favorite_numbers&apos;: [7, 42, 92]}</code></pre>
+<p>Ezzel a paranccsal l&#xE9;trehozt&#xE1;l egy sz&#xF3;t&#xE1;r-v&#xE1;ltoz&#xF3;t aminek a neve <code>participant</code>, &#xE9;s ami tartalmaz h&#xE1;rom kulcs-&#xE9;rt&#xE9;k (key-value) p&#xE1;rt:</p><ul><li>A <code>name</code> kulcs az <code>&apos;Ola&apos;</code> &#xE9;rt&#xE9;kre mutat (ami egy <code>string</code> t&#xED;pus&#xFA; objektum),
+</li>
+<li><code>country</code> a <code>&apos;Poland&apos;</code>-ra mutat (szint&#xE9;n <code>string</code> t&#xED;pus&#xFA;),
+</li>
+<li>&#xE9;s <code>favorite_numbers</code> a <code>[7, 42, 92]</code> objektumra mutat (ami egy <code>lista</code> benne h&#xE1;rom elemmel).
+</li></ul>
+<p>Lek&#xE9;rdezheted az egyes kulcsokhoz tartoz&#xF3; &#xE9;rt&#xE9;keket a k&#xF6;vetkez&#x151; szintaxist haszn&#xE1;lva:</p><pre><code>        &gt;&gt;&gt; print(participant[&apos;name&apos;])
+        Ola</code></pre>
+<p>L&#xE1;tod, nagyon hasonl&#xED;t a list&#xE1;khoz. Csak &#xE9;pp nem kell indexeket megjegyezned - csup&#xE1;n neveket.</p><p>Vajon mi t&#xF6;rt&#xE9;nik, ha olyan kulcshoz tartoz&#xF3; &#xE9;rt&#xE9;ket k&#xE9;rdez&#xFC;nk le a Pythont&#xF3;l, ami nem l&#xE9;tezik? N&#xE9;zz&#xFC;k meg!</p><pre><code>        &gt;&gt;&gt; participant[&apos;age&apos;]
+        Traceback (most recent call last):
+          File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+        KeyError: &apos;age&apos;</code></pre>
+<p>J&#xE9;&#xE9;, egy &#xFA;jabb hiba! Ez&#xFA;ttal <strong>KeyError</strong>. A Python seg&#xED;t&#x151;k&#xE9;sz, &#xE9;s megmondja, hogy az <code>&apos;age&apos;</code> kulcsn&#xE1;l nem tal&#xE1;lhat&#xF3; &#xE9;rt&#xE9;k a sz&#xF3;t&#xE1;rban.</p><p>Mikor haszn&#xE1;ljunk sz&#xF3;t&#xE1;rakat &#xE9;s mikor list&#xE1;kat? Nos, ez egy &#xE9;rdekes k&#xE9;rd&#xE9;s. Gondolkozz el egy kicsit, &#xE9;s pr&#xF3;b&#xE1;ld meg magadt&#xF3;l kital&#xE1;lni, miel&#x151;tt elolvasod az al&#xE1;bbi v&#xE1;laszt.</p><ul><li>Csak elemek rendezett sorozat&#xE1;ra van sz&#xFC;ks&#xE9;ged? Haszn&#xE1;lj list&#xE1;t.
+</li>
+<li>Kulcs &#xE9;s &#xE9;rt&#xE9;k p&#xE1;rokra van sz&#xFC;ks&#xE9;ged, amiket majd le tudsz k&#xE9;rdezni hat&#xE9;konyan (kulcs alapj&#xE1;n)? Haszn&#xE1;lj sz&#xF3;t&#xE1;rat.
+</li></ul>
+<p>A sz&#xF3;t&#xE1;rak, ugyan&#xFA;gy mint a list&#xE1;k, <em>m&#xF3;dos&#xED;that&#xF3;k</em>, ami azt jelenti, hogy az objektumot meg lehet v&#xE1;ltoztatni l&#xE9;trehoz&#xE1;s ut&#xE1;n. Hozz&#xE1; lehet adni egy kulcs-&#xE9;rt&#xE9;k p&#xE1;rt a sz&#xF3;t&#xE1;rhoz a l&#xE9;trehoz&#xE1;sa ut&#xE1;n, pl:</p><pre><code>        &gt;&gt;&gt; participant[&apos;favorite_language&apos;] = &apos;Python&apos;</code></pre>
+<p>Ugyan&#xFA;gy, mint a list&#xE1;kn&#xE1;l, a <code>len()</code> met&#xF3;dus visszaadja a sz&#xF3;t&#xE1;r hossz&#xE1;t, azaz a kulcs-&#xE9;rt&#xE9;k p&#xE1;rok sz&#xE1;m&#xE1;t. Rajta, pr&#xF3;b&#xE1;ld ki a k&#xF6;vetkez&#x151; parancsot:</p><pre><code>        &gt;&gt;&gt; len(participant)
+        4</code></pre>
+<p>Rem&#xE9;lem most m&#xE1;r vil&#xE1;gos :) K&#xE9;szen &#xE1;llsz az &#xFA;jabb m&#xF3;k&#xE1;ra a sz&#xF3;t&#xE1;rakkal? Ugorj a k&#xF6;vetkez&#x151; sorhoz, &#xE9;s l&#xE1;ss leny&#x171;g&#xF6;z&#x151; dolgokat.</p><p>Haszn&#xE1;ld a <code>pop()</code> parancsot, hogy kit&#xF6;r&#xF6;lj egy elemet a sz&#xF3;t&#xE1;rb&#xF3;l. Mondjuk ki akarod t&#xF6;r&#xF6;lni a <code>&apos;favorite_numbers&apos;</code> kulcsn&#xE1;l tal&#xE1;lhat&#xF3; elemet. Csak &#xED;rd be a k&#xF6;vetkez&#x151;t:</p><pre><code>        &gt;&gt;&gt; participant.pop(&apos;favorite_numbers&apos;)
+        &gt;&gt;&gt; participant
+        {&apos;country&apos;: &apos;Poland&apos;, &apos;favorite_language&apos;: &apos;Python&apos;, &apos;name&apos;: &apos;Ola&apos;}</code></pre>
+<p>Amint azt a kimenetb&#x151;l l&#xE1;tod, a &apos;favorite_numbers&apos; kulcshoz tartoz&#xF3; elem elt&#x171;nt a sz&#xF3;t&#xE1;rb&#xF3;l.</p><p>Az el&#x151;bbihez hasonl&#xF3;an, meg is tudod v&#xE1;ltoztatni egy kulcsn&#xE1;l a hozz&#xE1; tartoz&#xF3; &#xE9;rt&#xE9;ket a sz&#xF3;t&#xE1;rban. &#xCD;rd ezt:</p><pre><code>        &gt;&gt;&gt; participant[&apos;country&apos;] = &apos;Germany&apos;
+        &gt;&gt;&gt; participant
+        {&apos;country&apos;: &apos;Germany&apos;, &apos;favorite_language&apos;: &apos;Python&apos;, &apos;name&apos;: &apos;Ola&apos;}</code></pre>
+<p>Amint l&#xE1;tod, a <code>&apos;country&apos;</code> kulcsn&#xE1;l lev&#x151; &#xE9;rt&#xE9;k megv&#xE1;ltozott <code>&apos;Poland&apos;</code>-r&#xF3;l <code>&apos;Germany&apos;</code>-ra. :) Izgalmas, ugye? Hurr&#xE1;! Most ism&#xE9;t tanult&#xE1;l egy nagyszer&#x171; dolgot.</p><h3 id="&#xF6;sszefoglal&#xF3;">&#xD6;sszefoglal&#xF3;</h3><p>Nagyszer&#x171;! Most m&#xE1;r tudsz egy csom&#xF3; mindent a programoz&#xE1;sr&#xF3;l. Ebben az utols&#xF3; r&#xE9;szben a k&#xF6;vetkez&#x151;kr&#x151;l tanult&#xE1;l:</p><ul><li><strong>hib&#xE1;k</strong> - tudod, hogyan olvasd &#xE9;s &#xE9;rtsd meg a hib&#xE1;kat, amiket a Python ad, amikor nem tudja &#xE9;rtelmezni a parancsodat
+</li>
+<li><strong>v&#xE1;ltoz&#xF3;k</strong> - nevek az objektumokhoz, hogy a k&#xF3;d k&#xF6;nnyebben &#xED;rhat&#xF3; &#xE9;s k&#xF6;nnyebben olvashat&#xF3; legyen
+</li>
+<li><strong>list&#xE1;k</strong> - lista meghat&#xE1;rozott sorrendben l&#xE9;v&#x151; objektumokb&#xF3;l
+</li>
+<li><strong>sz&#xF3;t&#xE1;rak</strong> - objektumok, amiket kulcs-&#xE9;rt&#xE9;k p&#xE1;rokk&#xE9;nt t&#xE1;rolunk
+</li></ul>
+<p>Felk&#xE9;sz&#xFC;lt&#xE9;l a k&#xF6;vetkez&#x151; r&#xE9;szre? :)</p><h2 id="dolgok-&#xF6;sszehasonl&#xED;t&#xE1;sa">Dolgok &#xF6;sszehasonl&#xED;t&#xE1;sa</h2><p>A sz&#xE1;m&#xED;t&#xE1;stechnik&#xE1;ban nagyon fontos, hogy &#xF6;ssze tudjunk hasonl&#xED;tani dolgokat. Mik a legegyszer&#x171;bb dolgok, amiket &#xF6;ssze tudunk hasonl&#xED;tani? H&#xE1;t a sz&#xE1;mok. N&#xE9;zz&#xFC;k meg ez hogy m&#x171;k&#xF6;dik:</p><pre><code>        &gt;&gt;&gt; 5 &gt; 2
+        True
+        &gt;&gt;&gt; 3 &lt; 1
+        False
+        &gt;&gt;&gt; 5 &gt; 2 * 2
+        True
+        &gt;&gt;&gt; 1 == 1
+        True
+        &gt;&gt;&gt; 5 != 2
+        True</code></pre>
+<p>Adtunk a Pythonnak n&#xE9;h&#xE1;ny sz&#xE1;mot, hogy &#xF6;sszehasonl&#xED;tsa azokat. Amint l&#xE1;tod, a Python nem csak sz&#xE1;mokat, de m&#x171;veleti eredm&#xE9;nyeket is &#xF6;ssze tud hasonl&#xED;tani. J&#xF3;, ugye?</p><p>Azon gondolkozol, mi&#xE9;rt kellett k&#xE9;t egyenl&#x151;s&#xE9;g jelet <code>==</code> tenni, amikor azt n&#xE9;zt&#xFC;k, hogy k&#xE9;t sz&#xE1;m egyenl&#x151;-e? Az egyetlen <code>=</code> jelet arra haszn&#xE1;ljuk, hogy a v&#xE1;ltoz&#xF3;knak &#xE9;rt&#xE9;ket adjunk. Mindig, de <strong>mindig</strong> k&#xE9;t <code>==</code> jelet kell haszn&#xE1;lni ha k&#xE9;t dolog egyenl&#x151;s&#xE9;g&#xE9;t akarod tesztelni. Azt is ki tudjuk fejezni, hogy k&#xE9;t dolog nem egyenl&#x151;. Erre a <code>!=</code> szimb&#xF3;lumot haszn&#xE1;ljuk, amint az al&#xE1;bbi p&#xE9;ld&#xE1;ban is.</p><p>Adj a Pythonnak k&#xE9;t &#xFA;j parancsot:</p><pre><code>        &gt;&gt;&gt; 6 &gt;= 12 / 2
+        True
+        &gt;&gt;&gt; 3 &lt;= 2
+        False</code></pre>
+<p>A <code>&gt;</code> &#xE9;s a <code>&lt;</code> egyszer&#x171;ek, de vajon a <code>&gt;=</code> &#xE9;s a <code>&lt;=</code> mit jelentenek? Ezeket &#xFA;gy kell olvasni, hogy:</p><ul><li>x <code>&gt;</code> y azt jelenti: x nagyobb, mint y
+</li>
+<li>x <code>&lt;</code> y azt jelenti: x kisebb, mint y
+</li>
+<li>x <code>&lt;=</code> y azt jelenti: x kisebb vagy egyenl&#x151; y-nal
+</li>
+<li>x <code>&gt;=</code> y azt jelenti: x nagyobb vagy egyenl&#x151; y-nal
+</li></ul>
+<p>Nagyszer&#x171;! Szeretn&#xE9;l m&#xE9;g egy p&#xE9;ld&#xE1;t? Pr&#xF3;b&#xE1;ld ki ezt:</p><pre><code>        &gt;&gt;&gt; 6 &gt; 2 and 2 &lt; 3
+        True
+        &gt;&gt;&gt; 3 &gt; 2 and 2 &lt; 1
+        False
+        &gt;&gt;&gt; 3 &gt; 2 or 2 &lt; 1
+        True</code></pre>
+<p>Annyi &#xF6;sszehasonl&#xED;t&#xE1;st kombin&#xE1;lhatsz &#xF6;ssze, amennyit csak akarsz, &#xE9;s a Python kisz&#xE1;molja az eredm&#xE9;nyt. Okos, ugye?</p><ul><li><strong>and</strong> (azaz: &#xE9;s) - amikor az <code>and</code> oper&#xE1;tort haszn&#xE1;lod, a kifejez&#xE9;s mindk&#xE9;t oldal&#xE1;n igaz &#xE9;rt&#xE9;knek kell &#xE1;llnia ahhoz, hogy az eredm&#xE9;ny igaz legyen
+</li>
+<li><strong>or</strong> (azaz: vagy) - amikor az <code>or</code> oper&#xE1;tort haszn&#xE1;lod, el&#xE9;g csak az egyik oldalon igaz &#xE9;rt&#xE9;knek &#xE1;llnia ahhoz, hogy az eredm&#xE9;ny igaz legyen
+</li></ul>
+<p>Hallottad m&#xE1;r azt a kifejez&#xE9;st hogy &quot;alm&#xE1;kat narancsokkal &#xF6;sszehasonl&#xED;tani&quot;? N&#xE9;zz&#xFC;k meg ennek a python-beli megfelel&#x151;j&#xE9;t:</p><pre><code>        &gt;&gt;&gt; 1 &gt; &apos;django&apos;
+        Traceback (most recent call last):
+          File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+        TypeError: &apos;&gt;&apos; not supported between instances of &apos;int&apos; and &apos;str&apos;</code></pre>
+<p>L&#xE1;thatod, hogy ugyan&#xFA;gy, mint a kifejez&#xE9;sekn&#xE9;l, a Python nem tudja &#xF6;sszehasonl&#xED;tani a sz&#xE1;mot (<code>int</code>) a stringgel (<code>str</code>). Ehelyett <strong>TypeError</strong> t&#xED;pus&#xFA; hib&#xE1;t dob, azaz megmondja, hogy k&#xE9;t k&#xFC;l&#xF6;nb&#xF6;z&#x151; t&#xED;pust nem lehet egym&#xE1;ssal &#xF6;sszehasonl&#xED;tani.</p><h2 id="boolean-logikai">Boolean (Logikai)</h2><p>V&#xE9;letlen&#xFC;l &#xE9;pp megismerkedt&#xE9;l egy &#xFA;jabb Python t&#xED;pussal. &#xDA;gy h&#xED;vj&#xE1;k: <strong>Boolean</strong> -- &#xE9;s val&#xF3;sz&#xED;n&#x171;leg ez a legegyszer&#x171;bb t&#xED;pus ami l&#xE9;tezik.</p><p>Egy Boolean objektum k&#xE9;t lehets&#xE9;ges &#xE9;rt&#xE9;ket vehet fel: - Igaz - Hamis</p><p>De ahhoz, hogy a Python meg&#xE9;rtse, pontosan &#xED;gy kell &#xED;rni: &apos;True&apos; (az els&#x151; bet&#x171; nagybet&#x171;, a t&#xF6;bbi kisbet&#x171;). <strong>true, TRUE, tRUE mind nem j&#xF3;k -- csak az True helyes.</strong> (&#xC9;s ugyan&#xED;gy a &apos;False&apos; eset&#xE9;ben)</p><p>A Booleanok is lehetnek v&#xE1;ltoz&#xF3;k! N&#xE9;zd:</p><pre><code>        &gt;&gt;&gt; a = True
+        &gt;&gt;&gt; a
+        True</code></pre>
+<p>S&#x151;t, ezt is &#xED;rhatod:</p><pre><code>        &gt;&gt;&gt; a = 2 &gt; 5
+        &gt;&gt;&gt; a
+        False</code></pre>
+<p>Gyakorold egy kicsit &#xE9;s j&#xE1;tssz a Booleanokkal, pl pr&#xF3;b&#xE1;ld ki a k&#xF6;vetkez&#x151; parancsokat:</p><ul><li><code>True and True</code>
+</li>
+<li><code>False and True</code>
+</li>
+<li><code>True or 1 == 1</code>
+</li>
+<li><code>1 != 2</code>
+</li></ul>
+<p>Gratul&#xE1;lunk! A Booleanok a programoz&#xE1;s egyik legmen&#x151;bb elemei, &#xE9;s te &#xE9;pp megtanultad haszn&#xE1;lni &#x151;ket!</p><h1 id="mentsd-el">Mentsd el!</h1><p>Eg&#xE9;sz mostanig a python interpreterbe &#xED;rk&#xE1;ltuk a parancsokat, ami arra korl&#xE1;toz minket hogy, egyszerre csak egy sort &#xED;rjunk. A gyakorlatban a programokat f&#xE1;jlba mentj&#xFC;k, &#xE9;s ut&#xE1;na futtatjuk a programnyelv <strong>interpreter</strong>-e vagy <strong>compiler</strong>-e r&#xE9;v&#xE9;n. Mi mindeddig a Python <strong>interpreter</strong>-&#xE9;vel futtatuk a programjainkat, soronk&#xE9;nt. A k&#xF6;vetkez&#x151; feladatokhoz t&#xF6;bbsoros programokra is sz&#xFC;ks&#xE9;g&#xFC;nk lesz, &#xFA;gyhogy gyorsan:</p><ul><li>L&#xE9;pj&#xFC;nk ki a Python interpreterb&#x151;l
+</li>
+<li>Nyissunk meg egy k&#xF3;dszerkeszt&#x151;t
+</li>
+<li>Mens&#xFC;nk el benne valami k&#xF3;dot egy python f&#xE1;jlba
+</li>
+<li>&#xC9;s futtassuk!
+</li></ul>
+<p>Ahhoz hogy kil&#xE9;pj&#xFC;nk a Python interpreterb&#x151;l, egyszer&#x171;en &#xED;rjuk be, hogy <code>exit()</code>:</p><pre><code>        &gt;&gt;&gt; exit()
+        $</code></pre>
+<p>Ezzel visszat&#xE9;rt&#xFC;nk a parancssorba.</p><p>Egy el&#x151;z&#x151; r&#xE9;szben m&#xE1;r kiv&#xE1;lasztottuk a kedvenc <a href="../code_editor/">k&#xF3;dszerkeszt&#x151;</a>nket. Most nyissuk meg az editort &#xE9;s az &#xFA;j &#xFC;res f&#xE1;jlba &#xED;rjuk bele:</p><pre><code class="lang-python">    print(<span class="hljs-string">&apos;Hello, Django girls!&apos;</span>)</code></pre>
+<p>Mostanra m&#xE1;r tapasztalt Python programoz&#xF3; lett&#xE9;l, &#xFA;gyhogy &#xED;rj valami k&#xF3;dot, amit ma tanult&#xE1;l.</p><p>Most ments&#xFC;k el a f&#xE1;jlt, &#xE9;s adjunk neki valami jellemz&#x151; nevet. Nevezz&#xFC;nk <strong>python_intro.py</strong>-nak, &#xE9;s ments&#xFC;k el a desktopra. B&#xE1;rhogy nevezhetj&#xFC;k a f&#xE1;jlt, de a kiterjeszt&#xE9;s fontos, hogy <strong>.py</strong> legyen. A <strong>.py</strong> kiterjeszt&#xE9;s megmondja az oper&#xE1;ci&#xF3;s rendszer&#xFC;nknek, hogy <strong>python futtathat&#xF3; programf&#xE1;jl</strong>-lal van dolga.</p><blockquote><p><strong>Megj.</strong> Vegy&#xFC;k &#xE9;szre a k&#xF3;d editorok legnagyszer&#x171;bb tulajdons&#xE1;g&#xE1;t: a sz&#xED;neket! A Python konzolban minden egysz&#xED;n&#x171; volt, most a <code>print</code> f&#xFC;ggv&#xE9;ny m&#xE1;s sz&#xED;n&#x171;, mint a string. Ezt &#xFA;gy h&#xED;vj&#xE1;k: &quot;syntax highlighting&quot; (szintaxis-kiemel&#xE9;s), &#xE9;s k&#xF3;dol&#xE1;shoz nagyon hasznos. A k&#xF3;d sz&#xED;ne mindenf&#xE9;le utal&#xE1;sokat hordoz mag&#xE1;ban, pl. egy lez&#xE1;ratlan string vagy egy el&#xED;r&#xE1;s egy kulcssz&#xF3; nev&#xE9;ben (pl. a <code>def</code> a f&#xFC;ggv&#xE9;nyekn&#xE9;l, amint l&#xE1;tni fogjuk mindj&#xE1;rt). Ez az egyik oka annak, hogy k&#xF3;dszerkeszt&#x151;t haszn&#xE1;luk :)</p></blockquote><p>Most hogy a f&#xE1;jl el van mentve, itt az ideje, hogy lefuttassuk. Felhasz&#xE1;lva a tud&#xE1;sodat a parancssoros r&#xE9;szb&#x151;l, navig&#xE1;lj a termin&#xE1;lban a desktopra a <strong>k&#xF6;nyvt&#xE1;rv&#xE1;lt&#xE1;s</strong> parancs seg&#xED;ts&#xE9;g&#xE9;vel.</p><sec data-title="OS X" data-id="python_OSX" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>OS X<a class="pull-right section atTitle btn btn-default" target="python_OSX"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_OSX"><div class="panel-body">
+
+
+<p>Mac-en a parancs valahogy &#xED;gy n&#xE9;z ki:</p><p></p><p class="code-label">parancssor</p><p></p><pre><code>$ cd ~/Desktop</code></pre>
+</div></div></div></sec>
+
+
+<sec data-title="Linux" data-id="python_linux" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Linux<a class="pull-right section atTitle btn btn-default" target="python_linux"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_linux"><div class="panel-body">
+
+
+<p>Linuxon &#xED;gy (A &quot;Desktop&quot; lehet, hogy le van ford&#xED;tva a te nyelvedre):</p><p></p><p class="code-label">parancssor</p><p></p><pre><code>$ cd ~/Desktop</code></pre>
+</div></div></div></sec>
+
+
+<sec data-title="Windows" data-id="python_windows" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Windows<a class="pull-right section atTitle btn btn-default" target="python_windows"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_windows"><div class="panel-body">
+
+
+<p>Windowson &#xED;gy n&#xE9;z ki:</p><p></p><p class="code-label">parancssor</p><p></p><pre><code>&gt; cd %HomePath%\Desktop</code></pre>
+</div></div></div></sec>
+
+
+<p>Ha megakadt&#xE1;l volna, k&#xE9;rj nyugodtan seg&#xED;ts&#xE9;get.</p><p>Most pedig futtasd le a Python k&#xF3;dot, &#xED;gy:</p><p></p><p class="code-label">parancssor</p><p></p><pre><code>$ python3 python_intro.py
+Hello, Django girls!</code></pre>
+<p>Note: Windows-on &apos;python3&apos; n&#xE9;ven nem tal&#xE1;lhat&#xF3; parancs. Helyette haszn&#xE1;ld a &apos;python&apos; n&#xE9;ven:</p><p></p><p class="code-label">parancssor</p><p></p><pre><code class="lang-python">&gt; python python_intro.py</code></pre>
+<p>Rendben! &#xC9;pp lefuttattad az els&#x151; Python programodat f&#xE1;jlb&#xF3;l. J&#xF3; &#xE9;rz&#xE9;s, ugye?</p><p>Most akkor tov&#xE1;bbmehet&#xFC;nk egy &#xFA;jabb kulcsfontoss&#xE1;g&#xFA; programoz&#xE1;si elemre:</p><h2 id="ifelifelse">If...elif...else</h2><p>Sokszor el&#x151;fordul a programoz&#xE1;sban, hogy egyes k&#xF3;dr&#xE9;szleteknek csak akkor kell lefutniuk, ha bizonyos felt&#xE9;telek teljes&#xFC;lnek. Ez&#xE9;rt vannak a Pythonban az <strong>if statement</strong>ek (if &#xE1;ll&#xED;t&#xE1;sok).</p><p>Cser&#xE9;ld ki a <strong>python_intro.py</strong> f&#xE1;jlban l&#xE9;v&#x151; k&#xF3;dot erre:</p><pre><code class="lang-python">    <span class="hljs-keyword">if</span> <span class="hljs-number">3</span> &gt; <span class="hljs-number">2</span>:</code></pre>
+<p>Ha ezt elmented &#xE9;s lefuttatod, ezt a hiba&#xFC;zenetet fogod l&#xE1;tni:</p><pre><code>        $ python3 python_intro.py
+        File &quot;python_intro.py&quot;, line 2
+                 ^
+        SyntaxError: unexpected EOF while parsing</code></pre>
+<p>A Python arra sz&#xE1;m&#xED;t, hogy tov&#xE1;bbi utas&#xED;t&#xE1;sokat kap arra az esetre, ha a <code>3 &gt; 2</code> teljes&#xFC;l, vagyis <code>True</code> lesz. Vegy&#xFC;k r&#xE1; a Pythont, hogy ki&#xED;rja: &quot;It works!&quot; (&quot;M&#x171;k&#xF6;dik!&quot;). V&#xE1;ltoztasd meg erre a <strong>python_intro.py</strong> f&#xE1;jlban l&#xE9;v&#x151; k&#xF3;dot:</p><pre><code class="lang-python">    <span class="hljs-keyword">if</span> <span class="hljs-number">3</span> &gt; <span class="hljs-number">2</span>:
+        print(<span class="hljs-string">&apos;It works!&apos;</span>)</code></pre>
+<p>Megfigyelted, hogy a k&#xF6;vetkez&#x151; sort 4 sz&#xF3;k&#xF6;zzel indent&#xE1;ltuk? Erre az&#xE9;rt van sz&#xFC;ks&#xE9;g, hogy a Python tudja, melyik k&#xF3;dr&#xE9;szletet kell lefuttatnia, ha a felt&#xE9;tel teljes&#xFC;l. Egy sz&#xF3;k&#xF6;zt is haszn&#xE1;lhatn&#xE1;l, de szinte az &#xF6;sszes Python programoz&#xF3; 4 sz&#xF3;k&#xF6;zt haszn&#xE1;l, hogy rendezetten n&#xE9;zzen ki a k&#xF3;d. Egy <code>tab</code> is 4 sz&#xF3;k&#xF6;znek sz&#xE1;m&#xED;t.</p><p>Mentsd el, &#xE9;s futtasd le m&#xE9;g egyszer:</p><pre><code>        $ python3 python_intro.py
+        It works!</code></pre>
+<p>Note: Eml&#xE9;kezz arra, hogy Windows-on, &apos;python3&apos; n&#xE9;ven nem tal&#xE1;lhat&#xF3; parancs. Ha n&#xE1;lad is ez a helyzet, mostant&#xF3;l helyettes&#xED;tsd &apos;python3&apos;-t &apos;python&apos;-al a file-ok futtat&#xE1;s&#xE1;hoz.</p><h3 id="mi-t&#xF6;rt&#xE9;nik-ha-egy-felt&#xE9;tel-nem-teljes&#xFC;l-vagyis-nem-true">Mi t&#xF6;rt&#xE9;nik, ha egy felt&#xE9;tel nem teljes&#xFC;l (vagyis nem True)?</h3><p>A kor&#xE1;bbi p&#xE9;ld&#xE1;kban a k&#xF3;d csak akkor futott le, ha a felt&#xE9;tel teljes&#xFC;lt. De a Pythonnak van <code>elif</code> &#xE9;s <code>else</code> statementje is:</p><pre><code class="lang-python">    <span class="hljs-keyword">if</span> <span class="hljs-number">5</span> &gt; <span class="hljs-number">2</span>:
+        print(<span class="hljs-string">&apos;5 is indeed greater than 2&apos;</span>)
+    <span class="hljs-keyword">else</span>:
+        print(<span class="hljs-string">&apos;5 is not greater than 2&apos;</span>)</code></pre>
+<p>Ha ezt lefuttatod, a k&#xF6;vetkez&#x151;t kapod:</p><pre><code>        $ python3 python_intro.py
+        5 is indeed greater than 2</code></pre>
+<p>Ha a 2 nagyobb lenne, mint az 5, a m&#xE1;sodik parancs futott volna le. Egyszer&#x171;, igaz? N&#xE9;zz&#xFC;k, hogy m&#x171;k&#xF6;dik az <code>elif</code>:</p><pre><code class="lang-python">    name = <span class="hljs-string">&apos;Sonja&apos;</span>
+    <span class="hljs-keyword">if</span> name == <span class="hljs-string">&apos;Ola&apos;</span>:
+        print(<span class="hljs-string">&apos;Hey Ola!&apos;</span>)
+    <span class="hljs-keyword">elif</span> name == <span class="hljs-string">&apos;Sonja&apos;</span>:
+        print(<span class="hljs-string">&apos;Hey Sonja!&apos;</span>)
+    <span class="hljs-keyword">else</span>:
+        print(<span class="hljs-string">&apos;Hey anonymous!&apos;</span>)</code></pre>
+<p>lefuttatva:</p><pre><code>        $ python3 python_intro.py
+        Hey Sonja!</code></pre>
+<p>L&#xE1;tod, mi t&#xF6;rt&#xE9;nt itt? Az <code>elif</code> arra j&#xF3;, hogy plusz felt&#xE9;teleket &#xED;rhass a k&#xF3;dodba, ami akkor fut le, ha a kor&#xE1;bbi felt&#xE9;telek nem teljes&#xFC;lnek.</p><p>Az els&#x151; <code>if</code> statement ut&#xE1;n annyi <code>elif</code> &#xE1;ll&#xED;t&#xE1;st &#xED;rhatsz, amennyit csak akarsz. P&#xE9;ld&#xE1;ul:</p><pre><code class="lang-python">    volume = <span class="hljs-number">57</span>
+    <span class="hljs-keyword">if</span> volume &lt; <span class="hljs-number">20</span>:
+        print(<span class="hljs-string">&quot;It&apos;s kinda quiet.&quot;</span>)
+    <span class="hljs-keyword">elif</span> <span class="hljs-number">20</span> &lt;= volume &lt; <span class="hljs-number">40</span>:
+        print(<span class="hljs-string">&quot;It&apos;s nice for background music&quot;</span>)
+    <span class="hljs-keyword">elif</span> <span class="hljs-number">40</span> &lt;= volume &lt; <span class="hljs-number">60</span>:
+        print(<span class="hljs-string">&quot;Perfect, I can hear all the details&quot;</span>)
+    <span class="hljs-keyword">elif</span> <span class="hljs-number">60</span> &lt;= volume &lt; <span class="hljs-number">80</span>:
+        print(<span class="hljs-string">&quot;Nice for parties&quot;</span>)
+    <span class="hljs-keyword">elif</span> <span class="hljs-number">80</span> &lt;= volume &lt; <span class="hljs-number">100</span>:
+        print(<span class="hljs-string">&quot;A bit loud!&quot;</span>)
+    <span class="hljs-keyword">else</span>:
+        print(<span class="hljs-string">&quot;My ears are hurting! :(&quot;</span>)</code></pre>
+<p>A Python sorban mindegyik felt&#xE9;telt megn&#xE9;zi, &#xE9;s ki&#xED;rja:</p><pre><code>        $ python3 python_intro.py
+        Perfect, I can hear all the details</code></pre>
+<h2 id="megjegyz&#xE9;sek">Megjegyz&#xE9;sek</h2><p>A megjegyz&#xE9;sek olyan sorok amelyek <code>#</code>-el kezd&#x151;dnek. B&#xE1;rmit be&#xED;rhatsz a <code>#</code> ut&#xE1;n, &#xE9;s Python figyelmen k&#xED;v&#xFC;l fogja hagyni. Megjegyz&#xE9;sek seg&#xED;thetnek abban hogy a k&#xF3;dod m&#xE1;sok sz&#xE1;m&#xE1;ra &#xE9;rthet&#x151; legyen.</p><p>L&#xE1;ssuk, hogyan n&#xE9;z ki:</p><p></p><p class="code-label">python_intro.py</p><p></p><pre><code class="lang-python"><span class="hljs-comment"># Hanger&#x151; be&#xE1;ll&#xED;t&#xE1;sa, ha t&#xFA;l hangos vagy t&#xFA;l halk</span>
+<span class="hljs-keyword">if</span> volume &lt; <span class="hljs-number">20</span> <span class="hljs-keyword">or</span> volume &gt; <span class="hljs-number">80</span>:
+    volume = <span class="hljs-number">50</span>
+    print(<span class="hljs-string">&quot;That&apos;s better!&quot;</span>)</code></pre>
+<p>Nem kell minden sorhoz megjegyz&#xE9;st &#xED;rnod, de nagyon hasznosak annak elmagyar&#xE1;z&#xE1;s&#xE1;hoz hogy mi&#xE9;rt csin&#xE1;l valamit a k&#xF3;dod, vagy hogy &#xF6;sszefoglal&#xF3;t ny&#xFA;jtson amikor valami bonyolult feladatot v&#xE9;gez.</p><h3 id="&#xF6;sszefoglal&#xF3;">&#xD6;sszefoglal&#xF3;</h3><p>Az el&#x151;z&#x151; h&#xE1;rom feladatban ezekr&#x151;l tanult&#xE1;l:</p><ul><li><strong>dolgok &#xF6;sszehasonl&#xED;t&#xE1;sa</strong> - Pythonban a <code>&gt;</code>, <code>&gt;=</code>, <code>==</code>, <code>&lt;=</code>, <code>&lt;</code> jelekkel, &#xE9;s az <code>and</code>, <code>or</code> oper&#xE1;torokkal hasonl&#xED;thatsz &#xF6;ssze dolgokat
+</li>
+<li><strong>Boolean</strong> - egy olyan fajta objektum, ami csak k&#xE9;t &#xE9;rt&#xE9;ket vehet fel: <code>True</code> vagy <code>False</code>
+</li>
+<li><strong>F&#xE1;jlok elment&#xE9;se</strong> - a k&#xF3;dot f&#xE1;jlokban is t&#xE1;rolhatod, &#xED;gy hosszabb programokat is lefuttathatsz.
+</li>
+<li><strong>if...elif...else</strong> - &#xE1;ll&#xED;t&#xE1;sok, amik arra j&#xF3;k, hogy a k&#xF3;d csak bizonyos felt&#xE9;telek teljes&#xFC;l&#xE9;se eset&#xE9;n fusson le.
+</li>
+<li><strong>comments</strong> - sorok, amelyeket Python nem futtat le, amelyekkel dokument&#xE1;lni tudod a k&#xF3;dodat.
+</li></ul>
+<p>El&#xE9;rkezt&#xFC;nk a fejezet utols&#xF3; r&#xE9;sz&#xE9;hez!</p><h2 id="a-saj&#xE1;t-f&#xFC;ggv&#xE9;nyeidhez">A saj&#xE1;t f&#xFC;ggv&#xE9;nyeidhez!</h2><p>Eml&#xE9;kszel p&#xE9;ld&#xE1;ul a <code>len()</code> f&#xFC;gv&#xE9;nyre, amit lefuttathatsz Pythonban? J&#xF3; h&#xED;r&#xFC;nk van - most megtanulod, hogyan &#xED;rhatsz saj&#xE1;t f&#xFC;ggv&#xE9;nyeket!</p><p>A f&#xFC;ggv&#xE9;ny utas&#xED;t&#xE1;sok sorozata, amit a Python lefuttat. Minden Python f&#xFC;ggv&#xE9;ny a <code>def</code> kulcssz&#xF3;val kezd&#x151;dik, van neve, &#xE9;s lehetnek param&#xE9;terei. Kezdj&#xFC;k egy k&#xF6;nny&#x171;vel. Cser&#xE9;ld ki a <strong>python_intro.py</strong> k&#xF3;dj&#xE1;t erre:</p><pre><code class="lang-python">    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hi</span><span class="hljs-params">()</span>:</span>
+        print(<span class="hljs-string">&apos;Hi there!&apos;</span>)
+        print(<span class="hljs-string">&apos;How are you?&apos;</span>)
+
+    hi()</code></pre>
+<p>Ok&#xE9;, k&#xE9;sz is az els&#x151; f&#xFC;ggv&#xE9;ny!</p><p>Tal&#xE1;n elgondolkodt&#xE1;l, mi&#xE9;rt &#xED;rtuk a f&#xFC;ggv&#xE9;ny nev&#xE9;t a f&#xE1;jl alj&#xE1;ra. Erre az&#xE9;rt van sz&#xFC;ks&#xE9;g, mert a Python fel&#xFC;lr&#x151;l lefel&#xE9; olvassa be &#xE9;s futtatja le a f&#xE1;jlt. Teh&#xE1;t ahhoz, hogy haszn&#xE1;lni tudjuk a f&#xFC;ggv&#xE9;ny&#xFC;nket, &#xFA;jra le kell &#xED;rnunk a f&#xE1;jl alj&#xE1;n.</p><p>Futtassuk le, &#xE9;s n&#xE9;zz&#xFC;k meg, mi t&#xF6;rt&#xE9;nik:</p><pre><code>        $ python3 python_intro.py
+        Hi there!
+        How are you?</code></pre>
+<p>Megjegyz&#xE9;s: ha nem m&#x171;k&#xF6;d&#xF6;tt, ne ess p&#xE1;nikba! A hiba&#xFC;zenet seg&#xED;t kital&#xE1;lni, hogy mi a baj:</p><ul><li>Ha <code>NameError</code>-t kapsz, val&#xF3;szin&#x171;leg valamit elg&#xE9;pelt&#xE9;l, ellen&#x151;rizd, hogy ugyan azt a nevet haszn&#xE1;ltad amikor l&#xE9;trehoztad a f&#xFC;ggv&#xE9;nyt <code>def hi():</code>-al &#xE9;s amikor megh&#xED;vtad <code>hi()</code>-al.
+</li>
+<li>Ha <code>IndentationError</code> hib&#xE1;t kapsz, ellen&#x151;rizd, hogz mind a k&#xE9;t <code>print</code> sor elej&#xE9;n azonos mennyis&#xE9;g&#x171; &#xFC;res hely (sz&#xF3;k&#xF6;z karakter) van: python sz&#xE1;m&#xE1;ra a f&#xFC;ggv&#xE9;nyen bell&#xFC;li &#xF6;sszes k&#xF3;dnak sz&#xE9;pen illesztve kell lennie.
+</li>
+<li>Ha nincs egy&#xE1;ltal&#xE1;n semmilyen kimenet, ellen&#x151;rizd hogy az utols&#xF3; <code>hi()</code> <em>nincs</em> indent&#xE1;lva - ha &#xED;gy lenne, az a sor is a f&#xFC;ggv&#xE9;ny r&#xE9;sze lesz &#xE9;s ez&#xE9;rt soha nem fog lefutni.
+</li></ul>
+<p>Most &#xED;rjuk meg az els&#x151; olyan f&#xFC;ggv&#xE9;nyt, aminek vannak param&#xE9;terei. Az el&#x151;z&#x151; p&#xE9;ld&#xE1;t fogjuk haszn&#xE1;lni - egy f&#xFC;ggv&#xE9;ny, ami k&#xF6;sz&#xF6;n annak, aki futtatja, de most nevet is adunk hozz&#xE1;:</p><pre><code class="lang-python">    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hi</span><span class="hljs-params">(name)</span>:</span></code></pre>
+<p>Ahogy l&#xE1;thattad, a f&#xFC;ggv&#xE9;ny most kapott egy param&#xE9;tert, amit <code>name</code>-nek h&#xED;vunk:</p><pre><code class="lang-python">    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hi</span><span class="hljs-params">(name)</span>:</span>
+        <span class="hljs-keyword">if</span> name == <span class="hljs-string">&apos;Ola&apos;</span>:
+            print(<span class="hljs-string">&apos;Hi Ola!&apos;</span>)
+        <span class="hljs-keyword">elif</span> name == <span class="hljs-string">&apos;Sonja&apos;</span>:
+            print(<span class="hljs-string">&apos;Hi Sonja!&apos;</span>)
+        <span class="hljs-keyword">else</span>:
+            print(<span class="hljs-string">&apos;Hi anonymous!&apos;</span>)
+
+    hi()</code></pre>
+<p>Fontos: a <code>print</code> f&#xFC;ggv&#xE9;ny 4 sz&#xF3;k&#xF6;zzel van indent&#xE1;lva az <code>if</code> statementen bel&#xFC;l. Erre az&#xE9;rt van sz&#xFC;ks&#xE9;g, hogy ez a f&#xFC;ggv&#xE9;ny a felt&#xE9;tel teljes&#xFC;l&#xE9;se eset&#xE9;n fusson le. N&#xE9;zz&#xFC;k, hogy m&#x171;k&#xF6;dik:</p><pre><code>        $ python3 python_intro.py
+        Traceback (most recent call last):
+        File &quot;python_intro.py&quot;, line 10, in &lt;module&gt;
+          hi()
+        TypeError: hi() missing 1 required positional argument: &apos;name&apos;</code></pre>
+<p>Hopp&#xE1;, egy hiba. Szerencs&#xE9;re a Python el&#xE9;g hasznos hiba&#xFC;zeneteket ad nek&#xFC;nk. Azt mondja, a <code>hi()</code> f&#xFC;ggv&#xE9;nynek (vagyis annak, amit az el&#x151;bb defini&#xE1;ltunk) egy k&#xF6;telez&#x151; param&#xE9;tere van (amit <code>name</code>-nek h&#xED;vnak), &#xE9;s ezt elfelejtett&#xFC;k beadni, amikor megh&#xED;vtuk a f&#xFC;ggv&#xE9;nyt. Jav&#xED;tsuk ki a f&#xE1;jl alj&#xE1;n:</p><pre><code class="lang-python">    hi(<span class="hljs-string">&quot;Ola&quot;</span>)</code></pre>
+<p>&#xC9;s futtassuk le &#xFA;jra:</p><pre><code>        $ python3 python_intro.py
+        Hi Ola!</code></pre>
+<p>&#xC9;s ha megv&#xE1;ltoztatjuk a nevet?</p><pre><code class="lang-python">    hi(<span class="hljs-string">&quot;Sonja&quot;</span>)</code></pre>
+<p>Futtasd le:</p><pre><code>        $ python3 python_intro.py
+        Hi Sonja!</code></pre>
+<p>Mit gondolsz, mi fog t&#xF6;rt&#xE9;nni, ha egy harmadik nevet &#xED;rsz be? Pr&#xF3;b&#xE1;ld ki, &#xE9;s n&#xE9;zd meg, j&#xF3;l gondoltad-e. Ezt kell kapnod:</p><pre><code>        Hi anonymous!</code></pre>
+<p>Ez fantasztikus, nem? &#xCD;gy nem kell &#xE1;lland&#xF3;an ism&#xE9;telned magad, ha meg szeretn&#xE9;d v&#xE1;ltoztatni az ember nev&#xE9;t, akinek a f&#xFC;ggv&#xE9;ny k&#xF6;sz&#xF6;n. Pont emiatt van sz&#xFC;ks&#xE9;g&#xFC;nk f&#xFC;ggv&#xE9;nyekre - soha ne ism&#xE9;teld meg a k&#xF3;dodat!</p><p>Most csin&#xE1;ljunk valami okosabbat - t&#xF6;bb mint k&#xE9;t n&#xE9;v van a vil&#xE1;gon, &#xE9;s neh&#xE9;z lenne mindegyikhez egy k&#xFC;l&#xF6;n felt&#xE9;telt &#xED;rni, nem?</p><pre><code class="lang-python">    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hi</span><span class="hljs-params">(name)</span>:</span>
+        print(<span class="hljs-string">&apos;Hi &apos;</span> + name + <span class="hljs-string">&apos;!&apos;</span>)
+
+    hi(<span class="hljs-string">&quot;Rachel&quot;</span>)</code></pre>
+<p>Most h&#xED;vjuk meg a k&#xF3;dot:</p><pre><code>        $ python3 python_intro.py
+        Hi Rachel!</code></pre>
+<p>Gratul&#xE1;lunk! Megtanultad, hogy kell f&#xFC;ggv&#xE9;nyeket &#xED;rni :)</p><h2 id="ciklusok-loopok">Ciklusok (loopok)</h2><p>Ez m&#xE1;r t&#xE9;nyleg az utols&#xF3; r&#xE9;sz. Gyors volt, nem igaz? :)</p><p>A programoz&#xF3;k nem szeretik ism&#xE9;telni magukat. A programoz&#xE1;s arr&#xF3;l sz&#xF3;l, hogy dolgokat automatiz&#xE1;ljunk, &#xED;gy nem kell minden alkalommal k&#xE9;zzel be&#xED;rni mindenkinek a nev&#xE9;t, akit &#xFC;dv&#xF6;z&#xF6;lni akarunk. Ilyenkor j&#xF6;nnek j&#xF3;l a ciklusok.</p><p>M&#xE9;g eml&#xE9;kszel a list&#xE1;kra? &#xCD;rjunk egy list&#xE1;t l&#xE1;nyokb&#xF3;l:</p><pre><code class="lang-python">    girls = [<span class="hljs-string">&apos;Rachel&apos;</span>, <span class="hljs-string">&apos;Monica&apos;</span>, <span class="hljs-string">&apos;Phoebe&apos;</span>, <span class="hljs-string">&apos;Ola&apos;</span>, <span class="hljs-string">&apos;You&apos;</span>]</code></pre>
+<p>Mindegyik&#xFC;ket &#xFC;dv&#xF6;z&#xF6;lni szeretn&#xE9;nk. Ehhez m&#xE1;r megvan a <code>hi</code> f&#xFC;ggv&#xE9;ny&#xFC;nk, tegy&#xFC;k bele egy loopba:</p><pre><code class="lang-python">    <span class="hljs-keyword">for</span> name <span class="hljs-keyword">in</span> girls:</code></pre>
+<p>A <code>for</code> statement hasonl&#xF3;an m&#x171;k&#xF6;dik, mint az <code>if</code> statement; mindkett&#x151; alatt 4 sz&#xF3;k&#xF6;zzel kell indent&#xE1;lni a k&#xF6;vetkez&#x151; sort.</p><p>Itt a teljes k&#xF3;d, ami a f&#xE1;jlban lesz:</p><pre><code class="lang-python">    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hi</span><span class="hljs-params">(name)</span>:</span>
+        print(<span class="hljs-string">&apos;Hi &apos;</span> + name + <span class="hljs-string">&apos;!&apos;</span>)
+
+    girls = [<span class="hljs-string">&apos;Rachel&apos;</span>, <span class="hljs-string">&apos;Monica&apos;</span>, <span class="hljs-string">&apos;Phoebe&apos;</span>, <span class="hljs-string">&apos;Ola&apos;</span>, <span class="hljs-string">&apos;You&apos;</span>]
+    <span class="hljs-keyword">for</span> name <span class="hljs-keyword">in</span> girls:
+        hi(name)
+        print(<span class="hljs-string">&apos;Next girl&apos;</span>)</code></pre>
+<p>&#xC9;s amikor futtatjuk:</p><pre><code>        $ python3 python_intro.py
+        Hi Rachel!
+        Next girl
+        Hi Monica!
+        Next girl
+        Hi Phoebe!
+        Next girl
+        Hi Ola!
+        Next girl
+        Hi You!
+        Next girl</code></pre>
+<p>Amint l&#xE1;thattad, minden, amit indent&#xE1;lva a <code>for</code> statementbe tett&#xE9;l, megism&#xE9;tl&#x151;dik a <code>girls</code> lista minden elem&#xE9;vel.</p><p>A <code>for</code>-t sz&#xE1;mokon is haszn&#xE1;lhatod, a <code>range</code> f&#xFC;ggv&#xE9;nnyel:</p><pre><code>        for i in range(1, 6):
+            print(i)</code></pre>
+<p>Ezt kapjuk:</p><pre><code>        1
+        2
+        3
+        4
+        5</code></pre>
+<p>A <code>range</code> f&#xFC;ggv&#xE9;ny l&#xE9;trehoz egy egym&#xE1;s ut&#xE1;n k&#xF6;vetkez&#x151; sz&#xE1;mokb&#xF3;l &#xE1;ll&#xF3; list&#xE1;t (ezeket a sz&#xE1;mokat te adod meg param&#xE9;terk&#xE9;nt).</p><p>Figyeld meg, hogy a k&#xE9;t sz&#xE1;m k&#xF6;z&#xFC;l a m&#xE1;sodik m&#xE1;r nincs benne a list&#xE1;ban, amit a Python visszaad (vagyis a <code>range(1, 6)</code> 1-t&#x151;l 5-ig sz&#xE1;mol, de nem tartalmazza a 6-ot). Ez az&#xE9;rt van, mert a &quot;range&quot; f&#xE9;lig nyitott, ez pedig azt jelenti, hogy az els&#x151; &#xE9;rt&#xE9;ket tartalmazza, de az utols&#xF3;t m&#xE1;r nem.</p><h2 id="&#xF6;sszefoglal&#xF3;">&#xD6;sszefoglal&#xF3;</h2><p>Meg is vagyunk. <strong>Szuper vagy!</strong> Ez egy neh&#xE9;z fejezet volt, b&#xFC;szke lehetsz magadra. Mi nagyon b&#xFC;szk&#xE9;k vagyunk r&#xE1;d, ami&#xE9;rt id&#xE1;ig eljutott&#xE1;l!</p><p>Most tal&#xE1;n tarthatn&#xE1;l egy kis sz&#xFC;netet - ny&#xFA;jt&#xF3;zkodj, s&#xE9;t&#xE1;lj egy kicsit, pihentesd a szemeidet - miel&#x151;tt tov&#xE1;bbmenn&#xE9;nk a k&#xF6;vetkez&#x151; fejezetre. :)</p><p><a href="images/cupcake.png">Cupcake</a></p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../code_editor/" class="navigation navigation-prev " aria-label="Previous page: Kódszerkesztő (editor)">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../django/" class="navigation navigation-next " aria-label="Next page: Mi a Django?">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Bevezetés a Pythonba","level":"1.7","depth":1,"next":{"title":"Mi a Django?","level":"1.8","depth":1,"path":"django/README.md","ref":"django/README.md","articles":[]},"previous":{"title":"Kódszerkesztő (editor)","level":"1.6","depth":1,"path":"code_editor/README.md","ref":"code_editor/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"django_version":"2.2.4"},"language":"hu","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"python_introduction/README.md","mtime":"2020-06-27T13:00:23.906Z","type":"markdown"},"gitbook":{"version":"3.4.0","time":"2020-06-27T13:00:41.274Z"},"basePath":"..","book":{"language":"hu"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,620 @@
+
+<!DOCTYPE HTML>
+<html lang="sk" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Django admin · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.4.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../deploy/" />
+    
+    
+    <link rel="prev" href="../django_models/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Úvod
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Inštalácia
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    Inštalácia (chromebook)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    Ako funguje Internet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Úvod do príkazového riadku
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Inštalácia Pythonu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    Editor kódu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Úvod do jazyka Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Čo je Django?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Inštalácia Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    Tvoj prvý Django projekt!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Django modely
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.13" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Nasadenie!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django url
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django views - čas tvoriť!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    Úvod do HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM (tvorba dotazov)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    Dynamické dáta v šablónach
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Šablóny Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - skrášli to
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Rozširovanie šablón
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Ako rozšíriť aplikáciu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Formuláre Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    Čo ďalej?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Django admin</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="django-admin">Django admin</h1><p>Na prid&#xE1;vanie, editovanie a mazanie postov, ktor&#xE9; sme pr&#xE1;ve namodelovali, budeme pou&#x17E;&#xED;va&#x165; Django admina.</p><p>Otvorme s&#xFA;bor <code>blog/admin.py</code> a nahra&#x10F;me jeho obsah t&#xFD;mto:</p><p></p><p class="code-label">blog/admin.py</p><p></p><pre><code class="lang-python"><span class="hljs-keyword">from</span> django.contrib <span class="hljs-keyword">import</span> admin
+<span class="hljs-keyword">from</span> .models <span class="hljs-keyword">import</span> Post
+
+admin.site.register(Post)</code></pre>
+<p>Ako vid&#xED;&#x161;, importujeme model Post definovan&#xFD; v predch&#xE1;dzaj&#xFA;cej kapitole. Aby bol n&#xE1;&#x161; model vidite&#x13E;n&#xFD; na adminskej str&#xE1;nke, mus&#xED;me ho zaregistrova&#x165; pomocou <code>admin.site.register(Post)</code>.</p><p>OK, je &#x10D;as pozrie&#x165; sa na n&#xE1;&#x161; Post model. Nezabudni v konzole spusti&#x165; web server pomocou pr&#xED;kazu <code>python manage.py runserver</code>. V prehliada&#x10D;i zadaj adresu <a href="http://127.0.0.1:8000/admin/" target="_blank">http://127.0.0.1:8000/admin/</a>. Zobraz&#xED; sa ti tak&#xE1;to prihlasovacia str&#xE1;nka:</p><p><img alt="Prihlasovacia str&#xE1;nka" src="images/login_page2.png"></p><p>Pre prihl&#xE1;senie mus&#xED;&#x161; vytvori&#x165; <em>superusera</em> - u&#x17E;&#xED;vate&#x13E;a, ktor&#xFD; m&#xE1; kontrolu nad v&#x161;etk&#xFD;m na str&#xE1;nke. Vr&#xE1;&#x165; sa do pr&#xED;kazov&#xE9;ho riadku, nap&#xED;&#x161; <code>python manage.py createsuperuser</code> a stla&#x10D; enter.</p><blockquote><p>Ak chce&#x161; zada&#x165; viac pr&#xED;kazov, k&#xFD;m web server be&#x17E;&#xED;, otvor nov&#xE9; okno termin&#xE1;lu a aktivuj svoj virtualenv. Ako p&#xED;sa&#x165; pr&#xED;kazy sme si povedali v kapitole <strong>Tvoj prv&#xFD; Django projekt!</strong> v odstavci <strong>Spustenie webov&#xE9;ho serveru</strong>.</p></blockquote><p></p><p class="code-label">Mac OS X or Linux:</p><p></p><pre><code>        (myvenv) ~/djangogirls$ python manage.py createsuperuser</code></pre>
+<p></p><p class="code-label">Windows:</p><p></p><pre><code>        (myvenv) C:\Users\Name\djangogirls&gt; python manage.py createsuperuser</code></pre>
+<p>Po v&#xFD;zve zadaj svoje meno (mal&#xE9; p&#xED;smen&#xE1;, bez medzier), emailov&#xFA; adresu a heslo. <strong>Netr&#xE1;p sa, &#x17E;e nevid&#xED;&#x161; heslo ktor&#xE9; zad&#xE1;va&#x161; - tak to m&#xE1; by&#x165;.</strong> Len ho zadaj a stla&#x10D; <code>enter</code>. V&#xFD;stup by mal vyzera&#x165; asi takto (kde u&#x17E;&#xED;vate&#x13E;sk&#xE9; meno a email by mali by&#x165; tvoje vlastn&#xE9;):</p><pre><code>        Username: admin
+        Email address: admin@admin.com
+        Password:
+        Password (again):
+        Superuser created successfully.</code></pre>
+<p>Vr&#xE1;&#x165; sa do prehliada&#x10D;a. Prihl&#xE1;s sa zvolen&#xFD;mi &#xFA;dajmi ako superuser, mala by sa ti zobrazi&#x165; n&#xE1;stenka (dashboard) Django admina.</p><p><img alt="Django admin" src="images/django_admin3.png"></p><p>Prejdi do Postov a trochu experimentuj. Pridaj p&#xE4;&#x165; &#x10D;i &#x161;es&#x165; blog postov. Netr&#xE1;p sa ve&#x13E;mi s obsahom - treb&#xE1;rs skop&#xED;ruj a vlo&#x17E; text z tohto tutorialu, nech u&#x161;etr&#xED;&#x161; &#x10D;as. :)</p><p>Uisti sa, &#x17E;e aspo&#x148; dva alebo tri posty (ale nie v&#x161;etky) maj&#xFA; nastaven&#xFD; d&#xE1;tum publikovania. Bude to nesk&#xF4;r u&#x17E;ito&#x10D;n&#xE9;.</p><p><img alt="Django admin" src="images/edit_post3.png"></p><p>Ak chce&#x161; vedie&#x165; viac o Django admine, pozri si dokument&#xE1;ciu Djanga: <a href="https://docs.djangoproject.com/en/1.11/ref/contrib/admin/" target="_blank">https://docs.djangoproject.com/en/1.11/ref/contrib/admin/</a></p><p>Teraz je asi vhodn&#xFD; &#x10D;as da&#x165; si k&#xE1;vu (alebo &#x10D;aj), alebo nie&#x10D;o pod zub a nabra&#x165; trochu energie. Pr&#xE1;ve si vytvorila svoj prv&#xFD; Django model - zasl&#xFA;&#x17E;i&#x161; si trochu oddychu!</p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../django_models/" class="navigation navigation-prev " aria-label="Previous page: Django modely">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../deploy/" class="navigation navigation-next " aria-label="Next page: Nasadenie!">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Django admin","level":"1.13","depth":1,"next":{"title":"Nasadenie!","level":"1.14","depth":1,"path":"deploy/README.md","ref":"deploy/README.md","articles":[]},"previous":{"title":"Django modely","level":"1.12","depth":1,"path":"django_models/README.md","ref":"django_models/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"django_version":"2.2.4"},"language":"sk","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"django_admin/README.md","mtime":"2020-06-27T13:00:24.114Z","type":"markdown"},"gitbook":{"version":"3.4.0","time":"2020-06-27T13:00:41.274Z"},"basePath":"..","book":{"language":"sk"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

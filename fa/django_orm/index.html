@@ -1,0 +1,756 @@
+
+<!DOCTYPE HTML>
+<html lang="fa" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>ORM در جنگو · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.4.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../dynamic_data_in_templates/" />
+    
+    
+    <link rel="prev" href="../html/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="چیزی برای جستجو بنویسید" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    معرفی
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    نصب و راه‌اندازی
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../installation/">
+            
+                <a href="../installation/#command-line">
+            
+                    
+                    خط فرمان
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../installation/">
+            
+                <a href="../installation/#python">
+            
+                    
+                    پایتون
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../installation/">
+            
+                <a href="../installation/#code-editor">
+            
+                    
+                    ویرایشگر کد
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../installation/">
+            
+                <a href="../installation/#virtualenv">
+            
+                    
+                    محیط مجازی
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../installation/">
+            
+                <a href="../installation/#django">
+            
+                    
+                    جنگو
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../installation/">
+            
+                <a href="../installation/#git">
+            
+                    
+                    گیت
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../installation/">
+            
+                <a href="../installation/#github">
+            
+                    
+                    GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../installation/">
+            
+                <a href="../installation/#pythonanywhere">
+            
+                    
+                    PythonAnywhere
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    نصب و راه اندازی (کروم بوک)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    اینترنت چگونه کار می‌کند
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    آشنایی با خط فرمان
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    نصب و راه اندازی پایتون
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    ویرایشگر کد
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    آشنایی با پایتون
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    جنگو چیست?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    نصب و راه اندازی جنگو
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    اولین پروژه جنگو شما!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    مدل در جنگو
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    پنل مدیریت در جنگو
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    فاز دیپلوی!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    URL ها در جنگو
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    ساخت view در جنگو!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    آشنایی با HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.18" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    ORM در جنگو
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    داده های پویا در templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    templates در جنگو
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - آن را زیبا کنید
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    توسعه template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    برنامه خود را توسعه دهید
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    فرم در جنگو
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    گام بعدی چیست؟
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            انتشار یافته توسط HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >ORM در جنگو</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="orm-&#x648;-querysets-&#x62F;&#x631;-&#x62C;&#x646;&#x6AF;&#x648;">ORM &#x648; QuerySets &#x62F;&#x631; &#x62C;&#x646;&#x6AF;&#x648;</h1><p>&#x62F;&#x631; &#x627;&#x6CC;&#x646; &#x641;&#x635;&#x644; &#x634;&#x645;&#x627; &#x646;&#x62D;&#x648;&#x647; &#x627;&#x62A;&#x635;&#x627;&#x644; &#x62C;&#x646;&#x6AF;&#x648; &#x628;&#x647; &#x67E;&#x627;&#x6CC;&#x6AF;&#x627;&#x647; &#x62F;&#x627;&#x62F;&#x647; &#x648; &#x631;&#x648;&#x634; &#x630;&#x62E;&#x6CC;&#x631;&#x647; &#x627;&#x637;&#x644;&#x627;&#x639;&#x627;&#x62A; &#x62F;&#x631; &#x622;&#x646; &#x631;&#x627; &#x6CC;&#x627;&#x62F; &#x62E;&#x648;&#x627;&#x647;&#x6CC;&#x62F; &#x6AF;&#x631;&#x641;&#x62A;. &#x628;&#x6AF;&#x630;&#x627;&#x631;&#x6CC;&#x62F; &#x634;&#x631;&#x648;&#x639; &#x6A9;&#x646;&#x6CC;&#x645;!</p><h2 id="queryset-&#x686;&#x6CC;&#x633;&#x62A;&#x61F;">QuerySet &#x686;&#x6CC;&#x633;&#x62A;&#x61F;</h2><p>&#x628;&#x647; &#x635;&#x648;&#x631;&#x62A; &#x62E;&#x644;&#x627;&#x635;&#x647;&#x60C; &#x6A9;&#x648;&#x626;&#x631;&#x6CC;&#x200C;&#x633;&#x62A; &#x644;&#x6CC;&#x633;&#x62A;&#x6CC; &#x627;&#x632; &#x62A;&#x639;&#x62F;&#x627;&#x62F;&#x6CC; &#x634;&#x6CC;&#x621; &#x645;&#x631;&#x628;&#x648;&#x637; &#x628;&#x647; &#x6CC;&#x6A9; &#x645;&#x62F;&#x644; &#x62E;&#x627;&#x635; &#x627;&#x633;&#x62A;. &#x6A9;&#x648;&#x626;&#x631;&#x6CC;&#x200C;&#x633;&#x62A; &#x628;&#x647; &#x634;&#x645;&#x627; &#x627;&#x6CC;&#x646; &#x627;&#x645;&#x6A9;&#x627;&#x646; &#x631;&#x627; &#x645;&#x6CC;&#x200C;&#x62F;&#x647;&#x62F; &#x6A9;&#x647; &#x62F;&#x627;&#x62F;&#x647;&#x200C;&#x647;&#x627; &#x631;&#x627; &#x627;&#x632; &#x67E;&#x627;&#x6CC;&#x6AF;&#x627;&#x647; &#x62F;&#x627;&#x62F;&#x647; &#x628;&#x62E;&#x648;&#x627;&#x646;&#x6CC;&#x62F;&#x60C; &#x641;&#x6CC;&#x644;&#x62A;&#x631; &#x6A9;&#x646;&#x6CC;&#x62F; &#x6CC;&#x627; &#x622;&#x646;&#x200C;&#x647;&#x627; &#x631;&#x627; &#x645;&#x631;&#x62A;&#x628; &#x6A9;&#x646;&#x6CC;&#x62F;.</p><p>&#x633;&#x627;&#x62F;&#x647;&#x200C;&#x62A;&#x631;&#x6CC;&#x646; &#x631;&#x627;&#x647; &#x641;&#x647;&#x645;&#x6CC;&#x62F;&#x646; &#x622;&#x646;&#x60C; &#x645;&#x62B;&#x627;&#x644; &#x627;&#x633;&#x62A;. &#x67E;&#x633; &#x634;&#x631;&#x648;&#x639; &#x645;&#x6CC;&#x200C;&#x6A9;&#x646;&#x6CC;&#x645;.&#x622;&#x645;&#x627;&#x62F;&#x647;&#x200C;&#x627;&#x6CC;&#x62F;&#x61F;</p><h2 id="&#x6A9;&#x646;&#x633;&#x648;&#x644;-&#x62E;&#x637;-&#x641;&#x631;&#x645;&#x627;&#x646;-&#x62C;&#x646;&#x6AF;&#x648;">&#x6A9;&#x646;&#x633;&#x648;&#x644; &#x62E;&#x637; &#x641;&#x631;&#x645;&#x627;&#x646; &#x62C;&#x646;&#x6AF;&#x648;</h2><p>&#x6A9;&#x646;&#x633;&#x648;&#x644;&#x200C;&#x647;&#x627;&#x6CC; &#x644;&#x648;&#x6A9;&#x627;&#x644; &#x62E;&#x648;&#x62F; &#x631;&#x627; &#x628;&#x627;&#x632; &#x6A9;&#x631;&#x62F;&#x647; (&#x646;&#x647; &#x62F;&#x631; PythonAnywhere) &#x648; &#x627;&#x6CC;&#x646; &#x62F;&#x633;&#x62A;&#x648;&#x631; &#x631;&#x627; &#x62A;&#x627;&#x6CC;&#x67E; &#x6A9;&#x646;&#x6CC;&#x62F;:</p><p></p><p class="code-label">&#x62E;&#x637; &#x641;&#x631;&#x645;&#x627;&#x646;</p><p></p><pre><code>        (myvenv) ~/djangogirls$ python manage.py shell</code></pre>
+<p>&#x628;&#x627;&#x6CC;&#x62F; &#x67E;&#x627;&#x633;&#x62E;&#x6CC; &#x645;&#x627;&#x646;&#x646;&#x62F; &#x632;&#x6CC;&#x631; &#x62F;&#x631;&#x6CC;&#x627;&#x641;&#x62A; &#x6A9;&#x646;&#x6CC;&#x62F;:</p><p></p><p class="code-label">&#x62E;&#x637; &#x641;&#x631;&#x645;&#x627;&#x646;</p><p></p><pre><code class="lang-python">(InteractiveConsole)
+&gt;&gt;&gt;</code></pre>
+<p>&#x634;&#x645;&#x627; &#x62F;&#x631; &#x62D;&#x627;&#x644; &#x62D;&#x627;&#x636;&#x631; &#x62F;&#x631; &#x6A9;&#x646;&#x633;&#x648;&#x644; &#x62A;&#x639;&#x627;&#x645;&#x644;&#x6CC; &#x62C;&#x646;&#x6AF;&#x648; &#x647;&#x633;&#x62A;&#x6CC;&#x62F;. &#x627;&#x6CC;&#x646; &#x645;&#x62D;&#x644; &#x6A9;&#x627;&#x645;&#x644;&#x627;&#x64B; &#x634;&#x628;&#x6CC;&#x647; &#x628;&#x647; &#x645;&#x62D;&#x6CC;&#x637; &#x62A;&#x639;&#x627;&#x645;&#x644;&#x6CC; &#x67E;&#x627;&#x6CC;&#x62A;&#x648;&#x646; &#x645;&#x6CC;&#x200C;&#x628;&#x627;&#x634;&#x62F; &#x628;&#x627; &#x627;&#x6CC;&#x646; &#x62A;&#x641;&#x627;&#x648;&#x62A; &#x6A9;&#x647; &#x686;&#x646;&#x62F; &#x648;&#x6CC;&#x698;&#x6AF;&#x6CC; &#x62C;&#x627;&#x62F;&#x648;&#x6CC;&#x6CC; &#x62C;&#x646;&#x6AF;&#x648; &#x631;&#x627; &#x62F;&#x631; &#x628;&#x631; &#x62F;&#x627;&#x631;&#x62F;. :) &#x634;&#x645;&#x627; &#x645;&#x6CC;&#x200C;&#x62A;&#x648;&#x627;&#x646;&#x6CC;&#x62F; &#x62A;&#x645;&#x627;&#x645;&#x6CC; &#x62F;&#x633;&#x62A;&#x648;&#x631;&#x627;&#x62A; &#x67E;&#x627;&#x6CC;&#x62A;&#x648;&#x646; &#x631;&#x627; &#x62F;&#x631; &#x627;&#x6CC;&#x646;&#x62C;&#x627; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x6A9;&#x646;&#x6CC;&#x62F;.</p><h3 id="&#x62A;&#x645;&#x627;&#x645;-&#x627;&#x634;&#x6CC;&#x627;&#x621;">&#x62A;&#x645;&#x627;&#x645; &#x627;&#x634;&#x6CC;&#x627;&#x621;</h3><p>&#x62F;&#x631; &#x627;&#x628;&#x62A;&#x62F;&#x627; &#x62A;&#x645;&#x627;&#x645;&#x6CC; &#x67E;&#x633;&#x62A; &#x647;&#x627; &#x631;&#x627; &#x646;&#x645;&#x627;&#x6CC;&#x634; &#x645;&#x6CC; &#x62F;&#x647;&#x6CC;&#x645;. &#x628;&#x627; &#x62F;&#x633;&#x62A;&#x648;&#x631; &#x632;&#x6CC;&#x631; &#x645;&#x6CC; &#x62A;&#x648;&#x627;&#x646; &#x627;&#x6CC;&#x646; &#x6A9;&#x627;&#x631; &#x631;&#x627; &#x627;&#x646;&#x62C;&#x627;&#x645; &#x62F;&#x627;&#x62F;:</p><p></p><p class="code-label">&#x62E;&#x637; &#x641;&#x631;&#x645;&#x627;&#x646;</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.all()
+Traceback (most recent call last):
+      File <span class="hljs-string">&quot;&lt;console&gt;&quot;</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+NameError: name <span class="hljs-string">&apos;Post&apos;</span> <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> defined</code></pre>
+<p>&#x627;&#x648;&#x647; &#x627;&#x648;&#x647;! &#x628;&#x647; &#x62E;&#x637;&#x627; &#x62E;&#x648;&#x631;&#x62F;&#x6CC;&#x645;. &#x627;&#x6CC;&#x646; &#x62E;&#x637;&#x627; &#x628;&#x647; &#x627;&#x6CC;&#x646; &#x645;&#x639;&#x646;&#x6CC; &#x627;&#x633;&#x62A; &#x6A9;&#x647; &#x647;&#x6CC;&#x686; &#x67E;&#x633;&#x62A;&#x6CC; &#x648;&#x62C;&#x648;&#x62F; &#x646;&#x62F;&#x627;&#x631;&#x62F;. &#x62F;&#x631;&#x633;&#x62A; &#x627;&#x633;&#x62A;! &#x641;&#x631;&#x627;&#x645;&#x648;&#x634; &#x6A9;&#x631;&#x62F;&#x6CC;&#x645; &#x6A9;&#x647; &#x67E;&#x633;&#x62A; &#x647;&#x627; &#x631;&#x627; import &#x6A9;&#x646;&#x6CC;&#x645;!</p><p></p><p class="code-label">&#x62E;&#x637; &#x641;&#x631;&#x645;&#x627;&#x646;</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">from</span> blog.models <span class="hljs-keyword">import</span> Post</code></pre>
+<p>&#x645;&#x62F;&#x644; <code>Post</code> &#x631;&#x627; &#x627;&#x632; <code>blog.models</code> &#x641;&#x631;&#x627;&#x62E;&#x648;&#x627;&#x646;&#x6CC; &#x645;&#x6CC;&#x200C;&#x6A9;&#x646;&#x6CC;&#x645;. &#x62D;&#x627;&#x644;&#x627; &#x62F;&#x648;&#x628;&#x627;&#x631;&#x647; &#x62A;&#x645;&#x627;&#x645;&#x6CC; &#x67E;&#x633;&#x62A;&#x200C;&#x647;&#x627; &#x631;&#x627; &#x646;&#x645;&#x627;&#x6CC;&#x634; &#x645;&#x6CC;&#x200C;&#x62F;&#x647;&#x6CC;&#x645;:</p><p></p><p class="code-label">&#x62E;&#x637; &#x641;&#x631;&#x645;&#x627;&#x646;</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.all()
+&lt;QuerySet [&lt;Post: my post title&gt;, &lt;Post: another post title&gt;]&gt;</code></pre>
+<p>&#x644;&#x6CC;&#x633;&#x62A;&#x6CC; &#x627;&#x632; &#x67E;&#x633;&#x62A;&#x200C;&#x647;&#x627;&#x6CC;&#x6CC; &#x6A9;&#x647; &#x642;&#x628;&#x644;&#x627; &#x627;&#x6CC;&#x62C;&#x627;&#x62F; &#x6A9;&#x631;&#x62F;&#x647; &#x628;&#x648;&#x62F;&#x6CC;&#x645; &#x62F;&#x631;&#x633;&#x62A; &#x634;&#x62F;! &#x645;&#x627; &#x627;&#x6CC;&#x646; &#x67E;&#x633;&#x62A;&#x200C;&#x647;&#x627; &#x631;&#x627; &#x628;&#x627; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x627;&#x632; &#x635;&#x641;&#x62D;&#x647; &#x645;&#x62F;&#x6CC;&#x631;&#x6CC;&#x62A; &#x62C;&#x646;&#x6AF;&#x648; &#x627;&#x6CC;&#x62C;&#x627;&#x62F; &#x6A9;&#x631;&#x62F;&#x647;&#x200C;&#x628;&#x648;&#x62F;&#x6CC;&#x645;. &#x627;&#x645;&#x627; &#x62D;&#x627;&#x644;&#x627; &#x645;&#x6CC;&#x200C;&#x62E;&#x648;&#x627;&#x647;&#x6CC;&#x645; &#x67E;&#x633;&#x62A; &#x62C;&#x62F;&#x6CC;&#x62F;&#x6CC; &#x628;&#x627; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x627;&#x632; &#x67E;&#x627;&#x6CC;&#x62A;&#x648;&#x646; &#x62F;&#x631;&#x633;&#x62A; &#x6A9;&#x646;&#x6CC;&#x645;. &#x686;&#x637;&#x648;&#x631; &#x627;&#x6CC;&#x646; &#x6A9;&#x627;&#x631; &#x631;&#x627; &#x627;&#x646;&#x62C;&#x627;&#x645; &#x645;&#x6CC;&#x200C;&#x62F;&#x647;&#x6CC;&#x645;&#x61F;</p><h3 id="&#x633;&#x627;&#x62E;&#x62A;&#x646;-&#x634;&#x6CC;&#x621;">&#x633;&#x627;&#x62E;&#x62A;&#x646; &#x634;&#x6CC;&#x621;</h3><p>&#x628;&#x647; &#x635;&#x648;&#x631;&#x62A; &#x632;&#x6CC;&#x631; &#x645;&#x6CC;&#x200C;&#x62A;&#x648;&#x627;&#x646; &#x6CC;&#x6A9; &#x634;&#x6CC;&#x621; &#x62C;&#x62F;&#x6CC;&#x62F; &#x627;&#x632; &#x646;&#x648;&#x639; Post &#x62F;&#x631; &#x67E;&#x627;&#x6CC;&#x6AF;&#x627;&#x647; &#x62F;&#x627;&#x62F;&#x647; &#x627;&#x6CC;&#x62C;&#x627;&#x62F; &#x6A9;&#x631;&#x62F;:</p><p></p><p class="code-label">&#x62E;&#x637; &#x641;&#x631;&#x645;&#x627;&#x646;</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.create(author=me, title=<span class="hljs-string">&apos;Sample title&apos;</span>, text=<span class="hljs-string">&apos;Test&apos;</span>)</code></pre>
+<p>&#x627;&#x645;&#x627; &#x645;&#x627; &#x62F;&#x631; &#x627;&#x6CC;&#x646;&#x62C;&#x627; &#x6CC;&#x6A9; &#x639;&#x646;&#x635;&#x631; &#x6AF;&#x645; &#x634;&#x62F;&#x647; &#x62F;&#x627;&#x631;&#x6CC;&#x645;: <code>&#x646;&#x648;&#x6CC;&#x633;&#x646;&#x62F;&#x647;</code>. &#x646;&#x6CC;&#x627;&#x632; &#x647;&#x633;&#x62A; &#x6A9;&#x647; &#x6CC;&#x6A9; &#x646;&#x645;&#x648;&#x646;&#x647; &#x627;&#x632; &#x645;&#x62F;&#x644; <code>User</code> &#x631;&#x627; &#x628;&#x647; &#x639;&#x646;&#x648;&#x627;&#x646; &#x646;&#x648;&#x6CC;&#x633;&#x646;&#x62F;&#x647; &#x628;&#x631;&#x627;&#x6CC; &#x633;&#x627;&#x62E;&#x62A; &#x634;&#x6CC;&#x621; &#x62C;&#x62F;&#x6CC;&#x62F; &#x62A;&#x639;&#x631;&#x6CC;&#x641; &#x6A9;&#x646;&#x6CC;&#x645;. &#x646;&#x62D;&#x648;&#x647; &#x627;&#x646;&#x62C;&#x627;&#x645; &#x6A9;&#x627;&#x631; &#x628;&#x647; &#x635;&#x648;&#x631;&#x62A; &#x632;&#x6CC;&#x631; &#x645;&#x6CC; &#x628;&#x627;&#x634;&#x62F;.</p><p>&#x628;&#x6CC;&#x627;&#x6CC;&#x6CC;&#x62F; &#x627;&#x648;&#x644; &#x645;&#x62F;&#x644; User &#x631;&#x627; &#x641;&#x631;&#x627;&#x62E;&#x648;&#x627;&#x646;&#x6CC; &#x6A9;&#x646;&#x6CC;&#x645;:</p><p></p><p class="code-label">&#x62E;&#x637; &#x641;&#x631;&#x645;&#x627;&#x646;</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">from</span> django.contrib.auth.models <span class="hljs-keyword">import</span> User</code></pre>
+<p>&#x686;&#x647; &#x6A9;&#x627;&#x631;&#x628;&#x631;&#x627;&#x646;&#x6CC; &#x62F;&#x631; &#x67E;&#x627;&#x6CC;&#x6AF;&#x627;&#x647; &#x62F;&#x627;&#x62F;&#x647; &#x62F;&#x627;&#x631;&#x6CC;&#x645;&#x61F; &#x627;&#x6CC;&#x646; &#x631;&#x627; &#x627;&#x645;&#x62A;&#x62D;&#x627;&#x646; &#x6A9;&#x646;&#x6CC;&#x62F;:</p><p></p><p class="code-label">&#x62E;&#x637; &#x641;&#x631;&#x645;&#x627;&#x646;</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>User.objects.all()
+&lt;QuerySet [&lt;User: ola&gt;]&gt;</code></pre>
+<p>&#x627;&#x6CC;&#x646; &#x647;&#x645;&#x627;&#x646; &#x6A9;&#x627;&#x631;&#x628;&#x631; &#x627;&#x635;&#x644;&#x6CC; &#x6CC;&#x627; superuser &#x627;&#x633;&#x62A; &#x6A9;&#x647; &#x6A9;&#x645;&#x6CC; &#x642;&#x628;&#x644;&#x200C;&#x62A;&#x631; &#x633;&#x627;&#x62E;&#x62A;&#x647;&#x200C;&#x627;&#x6CC;&#x645;! &#x62D;&#x627;&#x644;&#x627; &#x628;&#x6CC;&#x627;&#x6CC;&#x6CC;&#x62F; &#x646;&#x645;&#x648;&#x646;&#x647; &#x627;&#x6CC; &#x627;&#x632; &#x631;&#x648;&#x6CC; &#x6A9;&#x627;&#x631;&#x628;&#x631; &#x627;&#x635;&#x644;&#x6CC; &#x628;&#x633;&#x627;&#x632;&#x6CC;&#x645; (&#x627;&#x6CC;&#x646; &#x62E;&#x637; &#x631;&#x627; &#x645;&#x637;&#x627;&#x628;&#x642; &#x646;&#x627;&#x645; &#x6A9;&#x627;&#x631;&#x628;&#x631; &#x627;&#x635;&#x644;&#x6CC; &#x6A9;&#x647; &#x642;&#x628;&#x644;&#x627;&#x64B; &#x648;&#x627;&#x631;&#x62F; &#x6A9;&#x631;&#x62F;&#x647;&#x200C;&#x627;&#x6CC;&#x62F; &#x62A;&#x63A;&#x6CC;&#x6CC;&#x631; &#x62F;&#x647;&#x6CC;&#x62F;):</p><p></p><p class="code-label">&#x62E;&#x637; &#x641;&#x631;&#x645;&#x627;&#x646;</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>me = User.objects.get(username=<span class="hljs-string">&apos;ola&apos;</span>)</code></pre>
+<p>&#x647;&#x645;&#x627;&#x646; &#x637;&#x648;&#x631; &#x6A9;&#x647; &#x645;&#x6CC;&#x200C;&#x628;&#x6CC;&#x646;&#x6CC;&#x62F; &#x645;&#x627; &#x6CC;&#x6A9; <code>&#x6A9;&#x627;&#x631;&#x628;&#x631;</code> &#x631;&#x627; &#x628;&#x647; &#x6A9;&#x645;&#x6A9; &#x62F;&#x633;&#x62A;&#x648;&#x631; <code>get</code> &#x648; &#x628;&#x627; &#x627;&#x631;&#x62C;&#x627;&#x639; &#x62F;&#x627;&#x62F;&#x646; &#x645;&#x642;&#x62F;&#x627;&#x631; &apos;ola&apos; &#x628;&#x647; &#x645;&#x62A;&#x63A;&#x6CC;&#x631; <code>username</code> &#x641;&#x631;&#x627;&#x62E;&#x648;&#x627;&#x646;&#x6CC; &#x6A9;&#x631;&#x62F;&#x6CC;&#x645;. &#x62E;&#x6CC;&#x644;&#x6CC; &#x62F;&#x642;&#x6CC;&#x642;!</p><p>&#x627;&#x644;&#x627;&#x646; &#x645;&#x627; &#x645;&#x6CC;&#x200C;&#x62A;&#x648;&#x627;&#x646;&#x6CC;&#x645; &#x67E;&#x633;&#x62A; &#x62E;&#x648;&#x62F; &#x631;&#x627; &#x627;&#x6CC;&#x62C;&#x627;&#x62F; &#x6A9;&#x646;&#x6CC;&#x645;:</p><p></p><p class="code-label">&#x62E;&#x637; &#x641;&#x631;&#x645;&#x627;&#x646;</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.create(author=me, title=<span class="hljs-string">&apos;Sample title&apos;</span>, text=<span class="hljs-string">&apos;Test&apos;</span>)
+&lt;Post: Sample title&gt;</code></pre>
+<p>&#x647;&#x648;&#x631;&#x627;! &#x645;&#x6CC;&#x200C;&#x62E;&#x648;&#x627;&#x647;&#x6CC;&#x62F; &#x627;&#x645;&#x62A;&#x62D;&#x627;&#x646; &#x6A9;&#x646;&#x6CC;&#x645; &#x6A9;&#x647; &#x622;&#x6CC;&#x627; &#x62F;&#x631;&#x633;&#x62A; &#x6A9;&#x627;&#x631; &#x645;&#x6CC;&#x200C;&#x6A9;&#x646;&#x62F;&#x61F;</p><p></p><p class="code-label">&#x62E;&#x637; &#x641;&#x631;&#x645;&#x627;&#x646;</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.all()
+&lt;QuerySet [&lt;Post: my post title&gt;, &lt;Post: another post title&gt;, &lt;Post: Sample title&gt;]&gt;</code></pre>
+<p>&#x628;&#x646;&#x627;&#x628;&#x631;&#x627;&#x6CC;&#x646; &#x6CC;&#x6A9; &#x67E;&#x633;&#x62A; &#x62F;&#x6CC;&#x6AF;&#x631; &#x62F;&#x631; &#x644;&#x6CC;&#x633;&#x62A; &#x62E;&#x648;&#x627;&#x647;&#x6CC;&#x645; &#x62F;&#x627;&#x634;&#x62A;!</p><h3 id="&#x627;&#x636;&#x627;&#x641;&#x647;-&#x6A9;&#x631;&#x62F;&#x646;-&#x67E;&#x633;&#x62A;-&#x647;&#x627;&#x6CC;-&#x628;&#x6CC;&#x634;&#x62A;&#x631;">&#x627;&#x636;&#x627;&#x641;&#x647; &#x6A9;&#x631;&#x62F;&#x646; &#x67E;&#x633;&#x62A; &#x647;&#x627;&#x6CC; &#x628;&#x6CC;&#x634;&#x62A;&#x631;</h3><p>&#x62D;&#x627;&#x644;&#x627; &#x628;&#x631;&#x627;&#x6CC; &#x62A;&#x641;&#x631;&#x6CC;&#x62D; &#x647;&#x645; &#x6A9;&#x647; &#x634;&#x62F;&#x647; &#x645;&#x6CC;&#x200C;&#x62A;&#x648;&#x627;&#x646;&#x6CC;&#x62F; &#x67E;&#x633;&#x62A;&#x200C;&#x647;&#x627;&#x6CC; &#x628;&#x6CC;&#x634;&#x62A;&#x631;&#x6CC; &#x628;&#x633;&#x627;&#x632;&#x6CC;&#x62F; &#x62A;&#x627; &#x628;&#x627; &#x646;&#x62D;&#x648;&#x647; &#x6A9;&#x627;&#x631;&#x6A9;&#x631;&#x62F; &#x622;&#x646; &#x628;&#x647;&#x62A;&#x631; &#x622;&#x634;&#x646;&#x627; &#x634;&#x648;&#x6CC;&#x62F;. &#x62F;&#x648; &#x6CC;&#x627; &#x633;&#x647; &#x67E;&#x633;&#x62A; &#x62F;&#x6CC;&#x6AF;&#x631;&#x628;&#x633;&#x627;&#x632;&#x6CC;&#x62F; &#x648; &#x633;&#x67E;&#x633; &#x628;&#x647; &#x645;&#x631;&#x62D;&#x644;&#x647; &#x628;&#x639;&#x62F; &#x628;&#x631;&#x648;&#x6CC;&#x62F;.</p><h3 id="&#x641;&#x6CC;&#x644;&#x62A;&#x631;-&#x6A9;&#x631;&#x62F;&#x646;-&#x627;&#x634;&#x6CC;&#x627;&#x621;">&#x641;&#x6CC;&#x644;&#x62A;&#x631; &#x6A9;&#x631;&#x62F;&#x646; &#x627;&#x634;&#x6CC;&#x627;&#x621;</h3><p>&#x628;&#x62E;&#x634; &#x645;&#x647;&#x645;&#x6CC; &#x627;&#x632; QuerySet&#x60C; &#x62A;&#x648;&#x627;&#x646;&#x627;&#x6CC;&#x6CC; &#x641;&#x6CC;&#x644;&#x62A;&#x631; &#x6A9;&#x631;&#x62F;&#x646; &#x622;&#x646; &#x627;&#x633;&#x62A;. &#x62F;&#x631; &#x627;&#x6CC;&#x646;&#x62C;&#x627; &#x645;&#x6CC;&#x200C;&#x62E;&#x648;&#x627;&#x647;&#x6CC;&#x645; &#x62A;&#x645;&#x627;&#x645; &#x67E;&#x633;&#x62A;&#x200C;&#x647;&#x627;&#x6CC;&#x6CC; &#x6A9;&#x647; &#x6A9;&#x627;&#x631;&#x628;&#x631; ola &#x633;&#x627;&#x62E;&#x62A;&#x647; &#x627;&#x633;&#x62A; &#x631;&#x627; &#x67E;&#x6CC;&#x62F;&#x627; &#x6A9;&#x646;&#x6CC;&#x645;. &#x62F;&#x631; &#x627;&#x6CC;&#x646;&#x62C;&#x627; &#x627;&#x632; &#x639;&#x628;&#x627;&#x631;&#x62A; <code>filter</code> &#x628;&#x647; &#x62C;&#x627;&#x6CC; <code>all</code> &#x62F;&#x631; <code>Post.objects.all()</code> &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x645;&#x6CC;&#x200C;&#x6A9;&#x646;&#x6CC;&#x645;. &#x62F;&#x631; &#x67E;&#x631;&#x627;&#x646;&#x62A;&#x632; &#x645;&#x627; &#x634;&#x631;&#x637;&#x6CC; (&#x634;&#x631;&#x627;&#x6CC;&#x637;&#x6CC;) &#x6A9;&#x647; &#x644;&#x627;&#x632;&#x645; &#x627;&#x633;&#x62A; &#x648;&#x62C;&#x648;&#x62F; &#x62F;&#x627;&#x634;&#x62A;&#x647; &#x628;&#x627;&#x634;&#x62F; &#x62A;&#x627; &#x634;&#x6CC;&#x621; &#x645;&#x648;&#x631;&#x62F; &#x646;&#x638;&#x631; &#x628;&#x647; QuerySet &#x627;&#x636;&#x627;&#x641;&#x647; &#x634;&#x648;&#x62F; &#x631;&#x627; &#x628;&#x6CC;&#x627;&#x646; &#x645;&#x6CC;&#x200C;&#x6A9;&#x646;&#x6CC;&#x645;. &#x62F;&#x631; &#x627;&#x6CC;&#x646;&#x62C;&#x627;&#x60C; &#x634;&#x631;&#x637; &#x645;&#x627; &#x627;&#x6CC;&#x646; &#x627;&#x633;&#x62A; &#x6A9;&#x647; <code>author</code> &#x628;&#x631;&#x627;&#x628;&#x631; &#x628;&#x627; <code>me</code> &#x628;&#x627;&#x634;&#x62F;. &#x646;&#x62D;&#x648;&#x647; &#x646;&#x648;&#x634;&#x62A;&#x646; &#x622;&#x646; &#x62F;&#x631; &#x62C;&#x646;&#x6AF;&#x648; &#x628;&#x647; &#x627;&#x6CC;&#x646; &#x635;&#x648;&#x631;&#x62A; &#x627;&#x633;&#x62A; <code>author=me</code>. &#x627;&#x644;&#x627;&#x646; &#x6CC;&#x6A9; &#x6A9;&#x62F; &#x628;&#x647; &#x635;&#x648;&#x631;&#x62A; &#x632;&#x6CC;&#x631; &#x62F;&#x627;&#x631;&#x6CC;&#x645;:</p><p></p><p class="code-label">&#x62E;&#x637; &#x641;&#x631;&#x645;&#x627;&#x646;</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.filter(author=me)
+&lt;QuerySet [&lt;Post: Sample title&gt;, &lt;Post: Post number <span class="hljs-number">2</span>&gt;, &lt;Post: My <span class="hljs-number">3</span>rd post!&gt;, &lt;Post: <span class="hljs-number">4</span>th title of post&gt;]&gt;</code></pre>
+<p>&#x6CC;&#x627; &#x634;&#x627;&#x6CC;&#x62F; &#x645;&#x627; &#x628;&#x62E;&#x648;&#x627;&#x647;&#x6CC;&#x645; &#x62A;&#x645;&#x627;&#x645; &#x67E;&#x633;&#x62A;&#x200C;&#x647;&#x627;&#x6CC;&#x6CC; &#x6A9;&#x647; &#x62F;&#x631; &#x641;&#x6CC;&#x644;&#x62F; <code>title</code> &#x6A9;&#x644;&#x645;&#x647; &apos;title&apos; &#x631;&#x627; &#x62F;&#x627;&#x634;&#x62A;&#x647; &#x628;&#x627;&#x634;&#x646;&#x62F; &#x67E;&#x6CC;&#x62F;&#x627; &#x6A9;&#x646;&#x6CC;&#x645;&#x61F;</p><p></p><p class="code-label">&#x62E;&#x637; &#x641;&#x631;&#x645;&#x627;&#x646;</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.filter(title__contains=<span class="hljs-string">&apos;title&apos;</span>)
+&lt;QuerySet [&lt;Post: Sample title&gt;, &lt;Post: <span class="hljs-number">4</span>th title of post&gt;]&gt;</code></pre>
+<blockquote><p><strong>&#x646;&#x6A9;&#x62A;&#x647;</strong> &#x62F;&#x642;&#x62A; &#x6A9;&#x646;&#x6CC;&#x62F; &#x6A9;&#x647; &#x6F2;&#x62A;&#x627; &#x6A9;&#x627;&#x631;&#x627;&#x6A9;&#x62A;&#x631; underscore ( <code>&#x640;</code>) &#x62F;&#x631; &#x645;&#x6CC;&#x627;&#x646; <code>title</code> &#x648; <code>contains</code> &#x648;&#x62C;&#x648;&#x62F; &#x62F;&#x627;&#x631;&#x62F;. ORM &#x62C;&#x646;&#x6AF;&#x648; &#x627;&#x632; &#x627;&#x6CC;&#x646; &#x642;&#x627;&#x646;&#x648;&#x646; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x645;&#x6CC;&#x200C;&#x6A9;&#x646;&#x62F; &#x62A;&#x627; &#x639;&#x645;&#x644;&#x6CC;&#x627;&#x62A; &#x6CC;&#x627; &#x641;&#x6CC;&#x644;&#x62A;&#x631; &#x645;&#x648;&#x631;&#x62F; &#x646;&#x638;&#x631; &#x631;&#x627; (&quot;contains&quot;) &#x627;&#x632; &#x646;&#x627;&#x645; &#x641;&#x6CC;&#x644;&#x62F; (&quot;title&quot;) &#x62C;&#x62F;&#x627; &#x6A9;&#x646;&#x62F;. &#x627;&#x6AF;&#x631; &#x641;&#x642;&#x637; &#x627;&#x632; &#x6CC;&#x6A9; underscore &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x6A9;&#x646;&#x6CC;&#x62F; &#x62E;&#x637;&#x627;&#x6CC;&#x6CC; &#x645;&#x627;&#x646;&#x646;&#x62F; &#x627;&#x6CC;&#x646; &#x62F;&#x631;&#x6CC;&#x627;&#x641;&#x62A; &#x62E;&#x648;&#x627;&#x647;&#x6CC;&#x62F; &#x6A9;&#x631;&#x62F; &quot;FieldError: Cannot resolve keyword title_contains&quot;.</p></blockquote><p>&#x647;&#x645;&#x686;&#x646;&#x6CC;&#x646; &#x645;&#x6CC;&#x200C;&#x62A;&#x648;&#x627;&#x646;&#x6CC;&#x62F; &#x644;&#x6CC;&#x633;&#x62A;&#x6CC; &#x627;&#x632; &#x62A;&#x645;&#x627;&#x645; &#x67E;&#x633;&#x62A;&#x200C;&#x647;&#x627;&#x6CC; &#x645;&#x646;&#x62A;&#x634;&#x631; &#x634;&#x62F;&#x647; &#x62F;&#x631;&#x6CC;&#x627;&#x641;&#x62A; &#x6A9;&#x646;&#x6CC;&#x62F;. &#x645;&#x627; &#x627;&#x6CC;&#x646; &#x6A9;&#x627;&#x631; &#x631;&#x627; &#x628;&#x627; &#x641;&#x6CC;&#x644;&#x62A;&#x631; &#x6A9;&#x631;&#x62F;&#x646; &#x647;&#x645;&#x647; &#x67E;&#x633;&#x62A;&#x200C;&#x647;&#x627;&#x6CC;&#x6CC; &#x6A9;&#x647; &#x628;&#x631;&#x627;&#x6CC; &#x622;&#x646;&#x200C;&#x647;&#x627; <code>published_date</code> &#x62A;&#x639;&#x6CC;&#x6CC;&#x646; &#x6A9;&#x631;&#x62F;&#x647; &#x628;&#x648;&#x62F;&#x6CC;&#x645; &#x627;&#x646;&#x62C;&#x627;&#x645; &#x645;&#x6CC;&#x200C;&#x62F;&#x647;&#x6CC;&#x645;:</p><p></p><p class="code-label">&#x62E;&#x637; &#x641;&#x631;&#x645;&#x627;&#x646;</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">from</span> django.utils <span class="hljs-keyword">import</span> timezone
+<span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.filter(published_date__lte=timezone.now())
+&lt;QuerySet []&gt;</code></pre>
+<p>&#x645;&#x62A;&#x627;&#x633;&#x641;&#x627;&#x646;&#x647; &#x67E;&#x633;&#x62A; &#x647;&#x627;&#x6CC;&#x6CC; &#x6A9;&#x647; &#x627;&#x632; &#x637;&#x631;&#x6CC;&#x642; &#x6A9;&#x646;&#x633;&#x648;&#x644; &#x67E;&#x627;&#x6CC;&#x62A;&#x648;&#x646; &#x627;&#x636;&#x627;&#x641;&#x647; &#x6A9;&#x631;&#x62F;&#x647;&#x200C;&#x627;&#x6CC;&#x645; &#x647;&#x646;&#x648;&#x632; &#x645;&#x646;&#x62A;&#x634;&#x631; &#x646;&#x634;&#x62F;&#x647;&#x200C;&#x627;&#x646;&#x62F;. &#x627;&#x645;&#x627; &#x645;&#x6CC;&#x200C;&#x62A;&#x648;&#x627;&#x646;&#x6CC;&#x645; &#x627;&#x6CC;&#x646; &#x648;&#x636;&#x639;&#x6CC;&#x62A; &#x631;&#x627; &#x62A;&#x63A;&#x6CC;&#x6CC;&#x631; &#x62F;&#x647;&#x6CC;&#x645;! &#x627;&#x628;&#x62A;&#x62F;&#x627; &#x6CC;&#x6A9; &#x646;&#x633;&#x62E;&#x647; &#x627;&#x632; &#x67E;&#x633;&#x62A;&#x200C;&#x647;&#x627;&#x6CC;&#x6CC; &#x6A9;&#x647; &#x645;&#x6CC;&#x200C;&#x62E;&#x648;&#x627;&#x647;&#x6CC;&#x645; &#x645;&#x646;&#x62A;&#x634;&#x631; &#x6A9;&#x646;&#x6CC;&#x645; &#x62A;&#x647;&#x6CC;&#x647; &#x645;&#x6CC;&#x200C;&#x6A9;&#x646;&#x6CC;&#x645;:</p><p></p><p class="code-label">&#x62E;&#x637; &#x641;&#x631;&#x645;&#x627;&#x646;</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>post = Post.objects.get(title=<span class="hljs-string">&quot;Sample title&quot;</span>)</code></pre>
+<p>&#x648; &#x62D;&#x627;&#x644;&#x627; &#x628;&#x627; &#x645;&#x62A;&#x62F; <code>publish</code> &#x622;&#x646; &#x631;&#x627; &#x645;&#x646;&#x62A;&#x634;&#x631; &#x645;&#x6CC; &#x6A9;&#x646;&#x6CC;&#x645;:</p><p></p><p class="code-label">&#x62E;&#x637; &#x641;&#x631;&#x645;&#x627;&#x646;</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>post.publish()</code></pre>
+<p>&#x627;&#x644;&#x627;&#x646; &#x62F;&#x648;&#x628;&#x627;&#x631;&#x647; &#x633;&#x639;&#x6CC; &#x6A9;&#x646;&#x6CC;&#x62F; &#x644;&#x6CC;&#x633;&#x62A;&#x6CC; &#x627;&#x632; &#x67E;&#x633;&#x62A;&#x200C;&#x647;&#x627;&#x6CC; &#x645;&#x646;&#x62A;&#x634;&#x631; &#x634;&#x62F;&#x647; &#x631;&#x627; &#x646;&#x645;&#x627;&#x6CC;&#x634; &#x62F;&#x647;&#x6CC;&#x62F; (&#x62F;&#x6A9;&#x645;&#x647; &#x62C;&#x647;&#x62A; &#x628;&#x627;&#x644;&#x627; &#x62F;&#x631; &#x6A9;&#x6CC;&#x628;&#x648;&#x631;&#x62F; &#x631;&#x627; &#x6F3; &#x628;&#x627;&#x631; &#x632;&#x62F;&#x647; &#x648; <code>enter</code> &#x6A9;&#x646;&#x6CC;&#x62F;):</p><p></p><p class="code-label">&#x62E;&#x637; &#x641;&#x631;&#x645;&#x627;&#x646;</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.filter(published_date__lte=timezone.now())
+&lt;QuerySet [&lt;Post: Sample title&gt;]&gt;</code></pre>
+<h3 id="&#x645;&#x631;&#x62A;&#x628;&#x200C;&#x633;&#x627;&#x632;&#x6CC;-&#x627;&#x634;&#x6CC;&#x627;&#x621;-ordering-objects">&#x645;&#x631;&#x62A;&#x628;&#x200C;&#x633;&#x627;&#x632;&#x6CC; &#x627;&#x634;&#x6CC;&#x627;&#x621; (Ordering objects)</h3><p>QuerySet &#x647;&#x627; &#x647;&#x645;&#x686;&#x646;&#x6CC;&#x646; &#x628;&#x647; &#x634;&#x645;&#x627; &#x627;&#x62C;&#x627;&#x632;&#x647; &#x645;&#x6CC;&#x200C;&#x62F;&#x647;&#x646;&#x62F; &#x644;&#x6CC;&#x633;&#x62A;&#x6CC; &#x627;&#x632; &#x627;&#x634;&#x6CC;&#x627;&#x621; &#x631;&#x627; &#x645;&#x631;&#x62A;&#x628; &#x6A9;&#x646;&#x6CC;&#x62F;. &#x628;&#x6CC;&#x627;&#x6CC;&#x6CC;&#x62F; &#x622;&#x646;&#x200C;&#x647;&#x627; &#x631;&#x627; &#x628;&#x631; &#x627;&#x633;&#x627;&#x633; <code>created_date</code>&#x60C; &#x645;&#x631;&#x62A;&#x628; &#x6A9;&#x646;&#x6CC;&#x645;:</p><p></p><p class="code-label">&#x62E;&#x637; &#x641;&#x631;&#x645;&#x627;&#x646;</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.order_by(<span class="hljs-string">&apos;created_date&apos;</span>)
+&lt;QuerySet [&lt;Post: Sample title&gt;, &lt;Post: Post number <span class="hljs-number">2</span>&gt;, &lt;Post: My <span class="hljs-number">3</span>rd post!&gt;, &lt;Post: <span class="hljs-number">4</span>th title of post&gt;]&gt;</code></pre>
+<p>&#x647;&#x645;&#x686;&#x646;&#x6CC;&#x646; &#x628;&#x627; &#x627;&#x636;&#x627;&#x641;&#x647; &#x6A9;&#x631;&#x62F;&#x646; <code>-</code> &#x62F;&#x631; &#x627;&#x628;&#x62A;&#x62F;&#x627;&#x6CC; &#x62F;&#x633;&#x62A;&#x648;&#x631; &#x645;&#x6CC;&#x200C;&#x62A;&#x648;&#x627;&#x646;&#x6CC;&#x645; &#x627;&#x634;&#x6CC;&#x627;&#x621; &#x631;&#x627; &#x628;&#x647; &#x635;&#x648;&#x631;&#x62A; &#x645;&#x639;&#x6A9;&#x648;&#x633; &#x645;&#x631;&#x62A;&#x628; &#x6A9;&#x646;&#x6CC;&#x645;:</p><p></p><p class="code-label">&#x62E;&#x637; &#x641;&#x631;&#x645;&#x627;&#x646;</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.order_by(<span class="hljs-string">&apos;-created_date&apos;</span>)
+&lt;QuerySet [&lt;Post: <span class="hljs-number">4</span>th title of post&gt;,  &lt;Post: My <span class="hljs-number">3</span>rd post!&gt;, &lt;Post: Post number <span class="hljs-number">2</span>&gt;, &lt;Post: Sample title&gt;]&gt;</code></pre>
+<h3 id="&#x6A9;&#x648;&#x626;&#x631;&#x6CC;&#x200C;&#x647;&#x627;&#x6CC;-&#x67E;&#x6CC;&#x686;&#x6CC;&#x62F;&#x647;-&#x627;&#x632;-&#x637;&#x631;&#x6CC;&#x642;-&#x632;&#x646;&#x62C;&#x6CC;&#x631;&#x647;-&#x62A;&#x648;&#x627;&#x628;&#x639;">&#x6A9;&#x648;&#x626;&#x631;&#x6CC;&#x200C;&#x647;&#x627;&#x6CC; &#x67E;&#x6CC;&#x686;&#x6CC;&#x62F;&#x647; &#x627;&#x632; &#x637;&#x631;&#x6CC;&#x642; &#x632;&#x646;&#x62C;&#x6CC;&#x631;&#x647; &#x62A;&#x648;&#x627;&#x628;&#x639;</h3><p>&#x647;&#x645;&#x627;&#x646;&#x637;&#x648;&#x631; &#x6A9;&#x647; &#x62F;&#x6CC;&#x62F;&#x6CC;&#x62F; &#x628;&#x631;&#x62E;&#x6CC; &#x627;&#x632; &#x62A;&#x648;&#x627;&#x628;&#x639; &#x62F;&#x631; <code>Post.objects</code>&#x60C; &#x6CC;&#x6A9; &#x6A9;&#x648;&#x626;&#x631;&#x6CC; &#x633;&#x62A; &#x628;&#x627;&#x632; &#x645;&#x6CC;&#x200C;&#x6AF;&#x631;&#x62F;&#x627;&#x646;&#x646;&#x62F;. &#x647;&#x645;&#x627;&#x646; &#x62A;&#x627;&#x628;&#x639; &#x645;&#x6CC;&#x200C;&#x62A;&#x648;&#x627;&#x646;&#x62F; &#x645;&#x62C;&#x62F;&#x62F;&#x627;&#x64B; &#x628;&#x631; &#x631;&#x648;&#x6CC; &#x6CC;&#x6A9; &#x6A9;&#x648;&#x626;&#x631;&#x6CC; &#x633;&#x62A; &#x627;&#x639;&#x645;&#x627;&#x644; &#x634;&#x648;&#x62F; &#x648; &#x6A9;&#x648;&#x626;&#x631;&#x6CC; &#x633;&#x62A; &#x62F;&#x6CC;&#x6AF;&#x631;&#x6CC; &#x628;&#x631;&#x6AF;&#x631;&#x62F;&#x627;&#x646;&#x62F;. &#x628;&#x646;&#x627;&#x628;&#x631;&#x627;&#x6CC;&#x646;&#x60C; &#x634;&#x645;&#x627; &#x645;&#x6CC;&#x200C;&#x62A;&#x648;&#x627;&#x646;&#x6CC;&#x62F; &#x62A;&#x627;&#x62B;&#x6CC;&#x631; &#x622;&#x646;&#x200C;&#x647;&#x627; &#x631;&#x627; &#x628;&#x647; &#x635;&#x648;&#x631;&#x62A; <strong>&#x632;&#x646;&#x62C;&#x6CC;&#x631;&#x647;&#x200C;&#x627;&#x6CC;</strong> &#x628;&#x627; &#x647;&#x645; &#x62A;&#x631;&#x6A9;&#x6CC;&#x628; &#x6A9;&#x646;&#x6CC;&#x62F;:</p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.filter(published_date__lte=timezone.now()).order_by(<span class="hljs-string">&apos;published_date&apos;</span>)
+&lt;QuerySet [&lt;Post: Post number <span class="hljs-number">2</span>&gt;, &lt;Post: My <span class="hljs-number">3</span>rd post!&gt;, &lt;Post: <span class="hljs-number">4</span>th title of post&gt;, &lt;Post: Sample title&gt;]&gt;</code></pre>
+<p>&#x627;&#x6CC;&#x646; &#x631;&#x648;&#x634; &#x648;&#x627;&#x642;&#x639;&#x627;&#x64B; &#x642;&#x62F;&#x631;&#x62A;&#x645;&#x646;&#x62F; &#x627;&#x633;&#x62A; &#x648; &#x628;&#x647; &#x634;&#x645;&#x627; &#x627;&#x62C;&#x627;&#x632;&#x647; &#x645;&#x6CC;&#x200C;&#x62F;&#x647;&#x62F; &#x6A9;&#x648;&#x626;&#x631;&#x6CC;&#x200C;&#x647;&#x627;&#x6CC; &#x67E;&#x6CC;&#x686;&#x6CC;&#x62F;&#x647;&#x200C;&#x627;&#x6CC; &#x628;&#x633;&#x627;&#x632;&#x6CC;&#x62F;.</p><p>&#x645;&#x648;&#x641;&#x642; &#x634;&#x62F;&#x6CC;&#x645;! &#x634;&#x645;&#x627; &#x627;&#x644;&#x627;&#x646; &#x628;&#x631;&#x627;&#x6CC; &#x642;&#x633;&#x645;&#x62A; &#x628;&#x639;&#x62F;&#x6CC; &#x622;&#x645;&#x627;&#x62F;&#x647; &#x647;&#x633;&#x62A;&#x6CC;&#x62F;. &#x628;&#x631;&#x627;&#x6CC; &#x628;&#x633;&#x62A;&#x646; &#x67E;&#x648;&#x633;&#x62A;&#x647; (shell) &#x62F;&#x633;&#x62A;&#x648;&#x631; &#x632;&#x6CC;&#x631; &#x631;&#x627; &#x62A;&#x627;&#x6CC;&#x67E; &#x6A9;&#x646;&#x6CC;&#x62F;:</p><p></p><p class="code-label">&#x62E;&#x637; &#x641;&#x631;&#x645;&#x627;&#x646;</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>exit()</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../html/" class="navigation navigation-prev " aria-label="Previous page: آشنایی با HTML">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../dynamic_data_in_templates/" class="navigation navigation-next " aria-label="Next page: داده های پویا در templates">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ORM در جنگو","level":"1.18","depth":1,"next":{"title":"داده های پویا در templates","level":"1.19","depth":1,"path":"dynamic_data_in_templates/README.md","ref":"dynamic_data_in_templates/README.md","articles":[]},"previous":{"title":"آشنایی با HTML","level":"1.17","depth":1,"path":"html/README.md","ref":"html/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"django_version":"2.2.4"},"language":"fa","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"django_orm/README.md","mtime":"2020-06-27T13:00:23.814Z","type":"markdown"},"gitbook":{"version":"3.4.0","time":"2020-06-27T13:00:41.274Z"},"basePath":"..","book":{"language":"fa"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,739 @@
+
+<!DOCTYPE HTML>
+<html lang="cs" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Django formuláře · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.4.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../whats_next/" />
+    
+    
+    <link rel="prev" href="../extend_your_application/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Vyhledat" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Úvod
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Instalace
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    Jak funguje internet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Úvod do příkazové řádky
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Instalace Pythonu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    Editor zdrojového kódu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Úvod do Pythonu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Co je Django?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Instalace Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    Tvůj první Django projekt!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Django modely
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Nasazení!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django views -- je čas začít tvořit!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    Úvod do HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM (tvorba dotazů)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    Dynamická data v šablonách
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django šablony
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - udělejte svou aplikaci hezčí
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Rozšíření šablon
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Rozšíření vaší aplikace
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.23" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Django formuláře
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    Co dál?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Publikováno pomocí HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Django formuláře</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="django-formul&#xE1;&#x159;e">Django formul&#xE1;&#x159;e</h1><p>Posledn&#xED; v&#x11B;c, kterou chceme ud&#x11B;lat na na&#x161;ich webov&#xFD;ch str&#xE1;nk&#xE1;ch, je vytvo&#x159;it pohodln&#xFD; zp&#x16F;sob, jak p&#x159;id&#xE1;vat a upravovat p&#x159;&#xED;sp&#x11B;vky na blogu. Django <code>admin</code> je super, ale je t&#x11B;&#x17E;k&#xE9; ho p&#x159;izp&#x16F;sobit a upravit do hez&#x10D;&#xED; podoby. S <code>formul&#xE1;&#x159;i</code> budeme m&#xED;t absolutn&#xED; moc nad na&#x161;&#xED;m rozhran&#xED;m - m&#x16F;&#x17E;eme d&#x11B;lat t&#xE9;m&#x11B;&#x159; cokoliv, co si dok&#xE1;&#x17E;eme p&#x159;edstavit!</p><p>P&#x11B;kn&#xE1; v&#x11B;c na Django formul&#xE1;&#x159;&#xED;ch je, &#x17E;e je m&#x16F;&#x17E;eme definovat &#xFA;pln&#x11B; od po&#x10D;&#xE1;tku nebo vytvo&#x159;it <code>ModelForm</code>, kter&#xFD; ulo&#x17E;&#xED; v&#xFD;sledek z formul&#xE1;&#x159;e pomoc&#xED; modelu.</p><p>To je p&#x159;esn&#x11B; to, co chceme ud&#x11B;lat: vytvo&#x159;&#xED;me formul&#xE1;&#x159; pro n&#xE1;&#x161; model <code>Post</code>.</p><p>Stejn&#x11B; jako v&#x161;echny d&#x16F;le&#x17E;it&#xE9; &#x10D;&#xE1;sti Djanga maj&#xED; formul&#xE1;&#x159;e sv&#xE9; vlastn&#xED; soubory: <code>forms.py</code>.</p><p>V na&#x161;em adres&#xE1;&#x159;i pot&#x159;ebujeme vytvo&#x159;it soubor s n&#xE1;zvem <code>blog</code>.</p><pre><code>blog
+ &#x2514;&#x2500;&#x2500; forms.py</code></pre>
+<p>OK, otev&#x159;i ho a zadej n&#xE1;sleduj&#xED;c&#xED; k&#xF3;d:</p><pre><code class="lang-python"> <span class="hljs-keyword">from</span> django <span class="hljs-keyword">import</span> forms
+
+ <span class="hljs-keyword">from</span> .models <span class="hljs-keyword">import</span> Post
+
+ <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PostForm</span><span class="hljs-params">(forms.ModelForm)</span>:</span>
+     <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Meta</span>:</span>
+         model = Post
+         fields = (<span class="hljs-string">&apos;title&apos;</span>, <span class="hljs-string">&apos;text&apos;</span>,)</code></pre>
+<p>Mus&#xED;me nejd&#x159;&#xED;ve importovat Django formul&#xE1;&#x159;e (<code>from django import forms</code>) a samoz&#x159;ejm&#x11B; n&#xE1;&#x161; <code>Post</code> model (<code>from .models import Post</code>).</p><p><code>PostForm</code>, jak asi p&#x159;edpokl&#xE1;d&#xE1;&#x161;, je jm&#xE9;no na&#x161;eho formul&#xE1;&#x159;e. Mus&#xED;me &#x159;&#xED;ct Djangu, &#x17E;e tento formul&#xE1;&#x159; je <code>ModelForm</code> (tak pro n&#xE1;s bude moci Django ud&#x11B;lat n&#x11B;co magick&#xE9;ho) - zodpov&#x11B;dn&#xFD; za to bude <code>forms.ModelForm</code>.</p><p>D&#xE1;le zde m&#xE1;me <code>t&#x159;&#xED;du Meta</code>, kde &#x159;ekneme Djangu, kter&#xFD; model by m&#x11B;l b&#xFD;t pou&#x17E;it k vytvo&#x159;en&#xED; tohoto formul&#xE1;&#x159;e (<code>model = Post</code>).</p><p>Nakonec m&#x16F;&#x17E;eme Djangu &#x159;&#xED;ct, co se m&#xE1; st&#xE1;t s jednotliv&#xFD;mi poli na&#x161;eho formul&#xE1;&#x159;e. V tomto p&#x159;&#xED;pad&#x11B; chceme pouze zobrazit pole <code>nadpis/title</code> a <code>text</code> - <code>autor</code> by m&#x11B;l b&#xFD;t &#x10D;lov&#x11B;k, kter&#xFD; je aktu&#xE1;ln&#x11B; p&#x159;ihl&#xE1;&#x161;en (ty!) a <code>created_date</code> by m&#x11B;lo b&#xFD;t automaticky nastaveno, kdy&#x17E; vytvo&#x159;&#xED;me p&#x159;&#xED;sp&#x11B;vek (tj. v k&#xF3;du).</p><p>A je to! V&#x161;e, co te&#x10F; mus&#xED;me ud&#x11B;lat, je pou&#x17E;&#xED;t formul&#xE1;&#x159; ve <em>view</em> a zobrazit ho v &#x161;ablon&#x11B;.</p><p>Tak&#x17E;e je&#x161;t&#x11B; jednou: budeme vytv&#xE1;&#x159;et odkaz na str&#xE1;nky, URL, pohled a &#x161;ablonu.</p><h2 id="odkaz-na-str&#xE1;nku-s-formul&#xE1;&#x159;em">Odkaz na str&#xE1;nku s formul&#xE1;&#x159;em</h2><p>Je tedy &#x10D;as otev&#x159;&#xED;t soubor <code>blog/templates/blog/base.html</code>. P&#x159;id&#xE1;me odkaz do <code>div</code> s n&#xE1;zvem <code>page-header</code>:</p><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_new&apos; %}&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;top-menu&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-plus&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre>
+<p>V&#x161;imni si, &#x17E;e chceme zavolat n&#xE1;&#x161; nov&#xFD; view <code>post_new</code>.</p><p>Po p&#x159;id&#xE1;n&#xED; &#x159;&#xE1;dku by m&#x11B;l tv&#x16F;j html soubor vypadat takto:</p><pre><code class="lang-html">{% load staticfiles %}
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Django Girls blog<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css&quot;</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css&quot;</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&apos;//fonts.googleapis.com/css?family=Lobster&amp;subset=latin,latin-ext&apos;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&apos;stylesheet&apos;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&apos;text/css&apos;</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% static &apos;css/blog.css&apos; %}&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-header&quot;</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_new&apos; %}&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;top-menu&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-plus&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/&quot;</span>&gt;</span>Django Girls Blog<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content container&quot;</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row&quot;</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-md-8&quot;</span>&gt;</span>
+                     {% block content %}
+                     {% endblock %}
+                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre>
+<p>Po ulo&#x17E;en&#xED; a obnoven&#xED; str&#xE1;nky <a href="http://127.0.0.1:8000" target="_blank">http://127.0.0.1:8000</a> patrn&#x11B; uvid&#xED;&#x161; zn&#xE1;mou <code>NoReverseMatch</code> chybu.</p><h2 id="url">URL</h2><p>Otev&#x159;i <code>blog/urls.py</code> a p&#x159;idej &#x159;&#xE1;dek:</p><pre><code class="lang-python">url(<span class="hljs-string">r&apos;^post/new/$&apos;</span>, views.post_new, name=<span class="hljs-string">&apos;post_new&apos;</span>),</code></pre>
+<p>V&#xFD;sledn&#xFD; k&#xF3;d bude vypadat takto:</p><pre><code class="lang-python"> <span class="hljs-keyword">from</span> django.conf.urls <span class="hljs-keyword">import</span> url
+ <span class="hljs-keyword">from</span> . <span class="hljs-keyword">import</span> views
+
+urlpatterns = [
+     url(<span class="hljs-string">r&apos;^$&apos;</span>, views.post_list, name=<span class="hljs-string">&apos;post_list&apos;</span>),
+     url(<span class="hljs-string">r&apos;^post/(?P&lt;pk&gt;[0-9]+)/$&apos;</span>, views.post_detail, name=<span class="hljs-string">&apos;post_detail&apos;</span>),
+     url(<span class="hljs-string">r&apos;^post/new/$&apos;</span>, views.post_new, name=<span class="hljs-string">&apos;post_new&apos;</span>),
+]</code></pre>
+<p>Po aktualizaci webu vid&#xED;me <code>AttributeError</code>, proto&#x17E;e nem&#xE1;me implementovan&#xFD; <code>post_new</code> view. P&#x159;id&#xE1;me ho pr&#xE1;v&#x11B; te&#x10F;.</p><h2 id="postnew-view">post_new view</h2><p>Mus&#xED;me otev&#x159;&#xED;t soubor <code>blog/views.py</code> a p&#x159;idat n&#xE1;sleduj&#xED;c&#xED; &#x159;&#xE1;dky:</p><pre><code class="lang-python"><span class="hljs-keyword">from</span> .forms <span class="hljs-keyword">import</span> PostForm</code></pre>
+<p>a n&#xE1;&#x161; <em>view</em>:</p><pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">post_new</span><span class="hljs-params">(request)</span>:</span>
+     form = PostForm()
+     <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;blog/post_edit.html&apos;</span>, {<span class="hljs-string">&apos;form&apos;</span>: form})</code></pre>
+<p>Chce&#x161;-li vytvo&#x159;it nov&#xFD; formul&#xE1;&#x159; <code>Post</code>, mus&#xED;&#x161; zavolat <code>PostForm()</code> a p&#x159;edat ho do &#x161;ablony. Za chvilku se vr&#xE1;t&#xED;me k tomuto <em>view</em>, ale te&#x10F; poj&#x10F;me rychle vytvo&#x159;it &#x161;ablonu formul&#xE1;&#x159;e.</p><h2 id="&#x161;ablona">&#x160;ablona</h2><p>Mus&#xED;me vytvo&#x159;it soubor <code>post_edit.html</code> v adres&#xE1;&#x159;i <code>blog/templates/blog</code>. Pro vytvo&#x159;en&#xED; formul&#xE1;&#x159;e pot&#x159;ebujeme ud&#x11B;lat n&#x11B;kolik v&#x11B;c&#xED;:</p><ul><li>mus&#xED;me zobrazit formul&#xE1;&#x159;. M&#x16F;&#x17E;eme to ud&#x11B;lat nap&#x159;&#xED;klad jednoduch&#xFD;m <code>{% raw %}{{ form.as_p }}{% endraw %}</code>.
+</li>
+<li>formul&#xE1;&#x159; mus&#xED;me obalit HTML zna&#x10D;kou (p&#x159;idej &#x159;&#xE1;dek nad formul&#xE1;&#x159;): <code>&lt; method=&quot;POST&quot; &gt;... &lt; / form &gt;</code>
+</li>
+<li>pot&#x159;ebujeme tla&#x10D;&#xED;tko <code>Ulo&#x17E;it</code>. Vytvo&#x159;&#xED;me HTML tla&#x10D;&#xED;tko: <code>&lt; button type=&quot;submit&quot;&gt; Ulo&#x17E;it &lt; / button&gt;</code>
+</li>
+<li>a nakonec t&#x11B;sn&#x11B; za otev&#xED;rac&#xED; zna&#x10D;ku <code>&lt; form... &gt;</code> mus&#xED;me p&#x159;idat <code>{% raw %}{% csrf_token %}{% endraw %}</code>. Toto je velmi d&#x16F;le&#x17E;it&#xE9;, proto&#x17E;e tak vytvo&#x159;&#xED;me bezpe&#x10D;n&#x11B;j&#x161;&#xED; formul&#xE1;&#x159;! Django si bude st&#x11B;&#x17E;ovat v okam&#x17E;iku, kdy se pokus&#xED;&#x161; ulo&#x17E;it formul&#xE1;&#x159;, pokud zapomene&#x161; na tuto &#x10D;&#xE1;st:
+</li></ul>
+<p><a href="images/csrf2.png">CSFR zak&#xE1;zan&#xE1; str&#xE1;nka</a></p><p>Poj&#x10F;me se nyn&#xED; pod&#xED;vat, jak by m&#x11B;lo vypadat HTML v <code>post_edit.html</code>:</p><pre><code class="lang-html">{% extends &apos;blog/base.html&apos; %}
+
+{% block content %}
+     <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>New post<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">method</span>=<span class="hljs-string">&quot;POST&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;post-form&quot;</span>&gt;</span>{% csrf_token %}
+         {{ form.as_p }}
+         <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;submit&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;save btn btn-default&quot;</span>&gt;</span>Save<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+{% endblock %}</code></pre>
+<p>&#x10C;as aktualizovat na&#x161;&#xED; str&#xE1;nku! Hur&#xE1;! Zobrazil se formul&#xE1;&#x159;!</p><p><a href="images/new_form2.png">Nov&#xFD; formul&#xE1;&#x159;</a></p><p>Ale je&#x161;t&#x11B; chvilku po&#x10D;kej! Kdy&#x17E; n&#x11B;co zad&#xE1;&#x161; do pol&#xED; <code>titulek</code> a <code>text</code> a pokus&#xED;&#x161; se formul&#xE1;&#x159; ulo&#x17E;it - co se stane?</p><p>Nic! Jsme op&#x11B;t na stejn&#xE9; str&#xE1;nce, n&#xE1;&#x161; text je pry&#x10D;... a nep&#x159;idal se &#x17E;&#xE1;dn&#xFD; nov&#xFD; p&#x159;&#xED;sp&#x11B;vek. Tak co se stalo?</p><p>Odpov&#x11B;&#x10F; je: nic. Mus&#xED;me je&#x161;t&#x11B; trochu zapracovat na na&#x161;em <em>view</em>.</p><h2 id="ukl&#xE1;d&#xE1;n&#xED;-formul&#xE1;&#x159;e">Ukl&#xE1;d&#xE1;n&#xED; formul&#xE1;&#x159;e</h2><p>Otev&#x159;i znovu <code>blog/views.py</code>. V&#x161;e, co m&#xE1;me aktu&#xE1;ln&#x11B; v <code>post_new</code>, je toto:</p><pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">post_new</span><span class="hljs-params">(request)</span>:</span>
+     form = PostForm()
+     <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;blog/post_edit.html&apos;</span>, {<span class="hljs-string">&apos;form&apos;</span>: form})</code></pre>
+<p>Kdy&#x17E; ode&#x161;leme formul&#xE1;&#x159;, vr&#xE1;t&#xED;me se zp&#x11B;t na ten sam&#xFD; view, ale tentokr&#xE1;t obdr&#x17E;&#xED;me n&#x11B;jak&#xE1; dal&#x161;&#xED; data v <code>request</code>, p&#x159;esn&#x11B;ji v <code>request.POST</code> (pojmenov&#xE1;n&#xED; nem&#xE1; nic spole&#x10D;n&#xE9;ho s na&#x161;&#xED;m &quot;post&quot; v blogu, vych&#xE1;z&#xED; to z toho, &#x17E;e &quot;zas&#xED;l&#xE1;me&quot; data). Pamatuje&#x161; si, &#x17E;e v na&#x161;em HTML souboru ve <code>&lt;form&gt;</code> jsme definovali prom&#x11B;nnou <code>method=&quot;POST&quot;</code>? V&#x161;echna pole z formul&#xE1;&#x159;e jsou nyn&#xED; k dispozici v prom&#x11B;nn&#xE9; <code>request.POST</code>. Nem&#x11B;la bys p&#x159;ejmenov&#xE1;vat <code>POST</code> na n&#x11B;co jin&#xE9;ho (jedin&#xE1; dal&#x161;&#xED; platn&#xE1; hodnota prom&#x11B;nn&#xE9; <code>method</code> je <code>GET</code>, ale te&#x10F; tady nebudeme vysv&#x11B;tlovat rozd&#xED;ly).</p><p>Tak&#x17E;e v na&#x161;em <em>view</em> m&#xE1;me dv&#x11B; samostatn&#xE9; situace ke zpracov&#xE1;n&#xED;. Prvn&#xED;: kdy&#x17E; na&#x10D;teme str&#xE1;nku poprv&#xE9; a chceme dostat pr&#xE1;zdn&#xFD; formul&#xE1;&#x159;. Druhou: kdy&#x17E; se vr&#xE1;t&#xED;me zp&#x11B;t do na&#x161;eho <em>view</em> s vypln&#x11B;n&#xFD;mi daty formul&#xE1;&#x159;e. Tak&#x17E;e mus&#xED;me p&#x159;idat podm&#xED;nku (pou&#x17E;ijeme na to <code>if</code>).</p><pre><code class="lang-python"><span class="hljs-keyword">if</span> request.method == <span class="hljs-string">&quot;POST&quot;</span>:
+     [...]
+<span class="hljs-keyword">else</span>:
+     form = PostForm()</code></pre>
+<p>Te&#x10F; je &#x10D;as k vypln&#x11B;n&#xED; mezer <code>[...]</code>. Je-li <code>method</code> <code>POST</code>, chceme vytvo&#x159;it <code>PostForm</code> s &#xFA;daji z formul&#xE1;&#x159;e, &#x17E;e? Ud&#x11B;lejme to:</p><pre><code class="lang-python">form = PostForm(request.POST)</code></pre>
+<p>Snadn&#xE9;! Dal&#x161;&#xED; v&#x11B;c&#xED; je zjistit, zda-li je formul&#xE1;&#x159; v po&#x159;&#xE1;dku (v&#x161;echna po&#x17E;adovan&#xE1; pole jsou vypln&#x11B;na a neobsahuj&#xED; &#x161;patn&#xE9; hodnoty). Ud&#x11B;l&#xE1;me to pomoc&#xED; <code>form.is_valid()</code>.</p><p>Zkontrolujeme, je-li formul&#xE1;&#x159; platn&#xFD;, a pokud ano, m&#x16F;&#x17E;eme ho ulo&#x17E;it!</p><pre><code class="lang-python"><span class="hljs-keyword">if</span> form.is_valid():
+     post = form.save(commit=<span class="hljs-keyword">False</span>)
+     post.author = request.user
+     post.published_date = timezone.now()
+     post.save()</code></pre>
+<p>V podstat&#x11B;, tady m&#xE1;me dv&#x11B; v&#x11B;ci: ukl&#xE1;d&#xE1;me formul&#xE1;&#x159; pomoc&#xED; <code>form.save</code> a p&#x159;id&#xE1;v&#xE1;me autora (vzhledem k tomu, &#x17E;e v <code>PostForm</code> nebylo &#x17E;&#xE1;dn&#xE9; pole <code>Autor</code> a toto pole je po&#x17E;adov&#xE1;no!). <code>commit=False</code> znamen&#xE1;, &#x17E;e je&#x161;t&#x11B; nechceme <code>Post</code> ulo&#x17E;it pomoc&#xED; modelu - chceme nejd&#x159;&#xED;ve p&#x159;idat autora. V&#x11B;t&#x161;inu &#x10D;asu bude&#x161; pou&#x17E;&#xED;vat <code>form.save()</code>, bez <code>commit=False</code>, ale v tomto p&#x159;&#xED;pad&#x11B; to pot&#x159;ebujeme takto ud&#x11B;lat. <code>post.save()</code> zachov&#xE1; zm&#x11B;ny (p&#x159;id&#xE1; autora) a vytvo&#x159;&#xED; nov&#xFD; p&#x159;&#xED;sp&#x11B;vek na blogu!</p><p>A nakonec by bylo &#xFA;&#x17E;asn&#xE9;, pokud bychom okam&#x17E;it&#x11B; p&#x159;e&#x161;li na str&#xE1;nku <code>post_detail</code> s nov&#x11B; vytvo&#x159;en&#xFD;m p&#x159;&#xED;sp&#x11B;vkem, &#x17E;e ano? K tomu pot&#x159;ebujeme jeden dal&#x161;&#xED; import:</p><pre><code class="lang-python"><span class="hljs-keyword">from</span> django.shortcuts <span class="hljs-keyword">import</span> redirect</code></pre>
+<p>P&#x159;idej to na sam&#xFD; za&#x10D;&#xE1;tek souboru. A nyn&#xED; m&#x16F;&#x17E;e&#x161; &#x159;&#xED;ci: Jdi na str&#xE1;nku <code>post_detail</code> s nov&#x11B; vytvo&#x159;en&#xFD;m p&#x159;&#xED;sp&#x11B;vkem.</p><pre><code class="lang-python"><span class="hljs-keyword">return</span> redirect(<span class="hljs-string">&apos;post_detail&apos;</span>, pk=post.pk)</code></pre>
+<p><code>post_detail</code> je n&#xE1;zev pohledu, na kter&#xFD; chceme j&#xED;t. Pamatuj si, &#x17E;e tento <em>view</em> vy&#x17E;aduje prom&#x11B;nnou <code>pk</code>. Pro p&#x159;ed&#xE1;n&#xED; do view pou&#x17E;ijeme <code>pk=post.pk</code>, kde <code>post</code> je nov&#x11B; vytvo&#x159;en&#xFD; p&#x159;&#xED;sp&#x11B;vek!</p><p>U&#x17E; jsme si toho &#x159;ekly hodn&#x11B;, ale pravd&#x11B;podobn&#x11B; chce&#x161; vid&#x11B;t, jak nyn&#xED; cel&#xFD; <em>view</em> vypad&#xE1; nyn&#xED;, nem&#xE1;m pravdu?</p><pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">post_new</span><span class="hljs-params">(request)</span>:</span>
+    <span class="hljs-keyword">if</span> request.method == <span class="hljs-string">&quot;POST&quot;</span>:
+        form = PostForm(request.POST)
+        <span class="hljs-keyword">if</span> form.is_valid():
+            post = form.save(commit=<span class="hljs-keyword">False</span>)
+            post.author = request.user
+            post.published_date = timezone.now()
+            post.save()
+            <span class="hljs-keyword">return</span> redirect(<span class="hljs-string">&apos;post_detail&apos;</span>, pk=post.pk)
+    <span class="hljs-keyword">else</span>:
+        form = PostForm()
+    <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;blog/post_edit.html&apos;</span>, {<span class="hljs-string">&apos;form&apos;</span>: form})</code></pre>
+<p>Poj&#x10F;me se pod&#xED;vat, jestli to funguje. P&#x159;ejdi na str&#xE1;nku <a href="http://127.0.0.1:8000/post/new/" target="_blank">http://127.0.0.1:8000/post/new/</a>, p&#x159;idej <code>title</code> a <code>text</code>, ulo&#x17E; jej... a hle! Byl p&#x159;id&#xE1;n nov&#xFD; p&#x159;&#xED;sp&#x11B;vek na blog a my jsme p&#x159;esm&#x11B;rov&#xE1;ny na str&#xE1;nku <code>post_detail</code>!</p><p>Mo&#x17E;n&#xE1; jsi si v&#x161;imla, &#x17E;e jsme nastavili prom&#x11B;nnou publish_date p&#x159;ed ulo&#x17E;en&#xED;m postu. Pozd&#x11B;ji si uk&#xE1;&#x17E;eme <em>tla&#x10D;&#xED;tko Publikovat</em> v <strong>Django girls tutorial: roz&#x161;&#xED;&#x159;en&#xED;</strong>.</p><h2 id="ov&#x11B;&#x159;en&#xED;-formul&#xE1;&#x159;e">Ov&#x11B;&#x159;en&#xED; formul&#xE1;&#x159;e</h2><p>A te&#x10F; ti uk&#xE1;&#x17E;eme, jak cool jsou formul&#xE1;&#x159;e v Djangu. Blog p&#x159;&#xED;sp&#x11B;vek mus&#xED; m&#xED;t <code>title</code> a <code>text</code> pole. V na&#x161;em modelu <code>Post</code> jsme ne&#x159;ekly (na rozd&#xED;l od <code>published_date</code>), &#x17E;e jsou tato pole nepovinn&#xE1;, tak&#x17E;e Django ve v&#xFD;choz&#xED;m nastaven&#xED; o&#x10D;ek&#xE1;v&#xE1;, &#x17E;e budou vypln&#x11B;n&#xE1;.</p><p>Pokus se ulo&#x17E;it formul&#xE1;&#x159; bez <code>nadpisu</code> a <code>textu</code>. H&#xE1;dej, co se stane!</p><p><a href="images/form_validation2.png">Ov&#x11B;&#x159;en&#xED; formul&#xE1;&#x159;e</a></p><p>Django se star&#xE1; o ov&#x11B;&#x159;ov&#xE1;n&#xED;, &#x17E;e v&#x161;echna pole v na&#x161;em formul&#xE1;&#x159;i jsou spr&#xE1;vn&#x11B;. Nen&#xED; to skv&#x11B;l&#xE9;?</p><blockquote><p>Jeliko&#x17E; jsme ned&#xE1;vno pou&#x17E;ily Django admin rozhran&#xED;, syst&#xE9;m si v sou&#x10D;asn&#xE9; dob&#x11B; mysl&#xED;, &#x17E;e jsme p&#x159;ihl&#xE1;&#x161;eni. Existuje n&#x11B;kolik situac&#xED;, kter&#xE9; by mohly v&#xE9;st k na&#x161;emu odhl&#xE1;&#x161;en&#xED; (zav&#x159;en&#xED; prohl&#xED;&#x17E;e&#x10D;e, restartov&#xE1;n&#xED;m DB, atd.). Pokud p&#x159;i vytv&#xE1;&#x159;en&#xED; p&#x159;&#xED;sp&#x11B;vku dostane&#x161; chybu, upozor&#x148;uj&#xED;c&#xED; na nep&#x159;ihl&#xE1;&#x161;en&#xE9;ho u&#x17E;ivatele, zami&#x159; na <a href="http://127.0.0.1:8000/admin" target="_blank">http://127.0.0.1:8000/admin</a> a p&#x159;ihlas se znovu. T&#xED;m se do&#x10D;asn&#x11B; vy&#x159;e&#x161;&#xED; tento probl&#xE9;m. Existuje trval&#xE1; oprava, kter&#xE1; na tebe &#x10D;ek&#xE1; v <strong>dom&#xE1;c&#xED;m &#xFA;kolu: zabezpe&#x10D; sv&#x16F;j web!</strong> v kapitole za hlavn&#xED;m tutorialem.</p></blockquote><p><a href="images/post_create_error.png">Chyba p&#x159;ihl&#xE1;&#x161;en&#xED;</a></p><h2 id="upravit-formul&#xE1;&#x159;">Upravit formul&#xE1;&#x159;</h2><p>Te&#x10F; v&#xED;me, jak p&#x159;idat nov&#xFD; formul&#xE1;&#x159;. Ale co kdy&#x17E; chceme upravit st&#xE1;vaj&#xED;c&#xED;? Je to velmi podobn&#xE9; tomu, co jsme p&#x159;ed chv&#xED;l&#xED; d&#x11B;laly. Vytvo&#x159;&#xED;me te&#x10F; rychle n&#x11B;kter&#xE9; d&#x16F;le&#x17E;it&#xE9; v&#x11B;ci (pokud n&#x11B;&#x10D;emu neporozum&#xED;&#x161;, m&#x11B;la bys po&#x17E;&#xE1;dat sv&#xE9;ho kou&#x10D;e nebo se pod&#xED;vat do p&#x159;edchoz&#xED;ch kapitol, proto&#x17E;e jsme ji&#x17E; v&#x161;echny tyto kroky prob&#xED;raly).</p><p>Otev&#x159;i <code>blog/templates/blog/post_detail.html</code> a p&#x159;idej n&#xE1;sleduj&#xED;c&#xED; &#x159;&#xE1;dek:</p><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-default&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_edit&apos; pk=post.pk %}&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-pencil&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre>
+<p>tak, aby &#x161;ablona vypadala takto:</p><pre><code class="lang-html">{% extends &apos;blog/base.html&apos; %}
+{% block content %}
+     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;post&quot;</span>&gt;</span>
+         {% if post.published_date %}
+             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;date&quot;</span>&gt;</span>
+                 {{ post.published_date }}
+             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+         {% endif %}
+         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-default&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_edit&apos; pk=post.pk %}&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-pencil&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>{{ post.title }}<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{{ post.text|linebreaksbr }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+{% endblock %}</code></pre>
+<p>V <code>blog/urls.py</code> p&#x159;idej tento &#x159;&#xE1;dek:</p><pre><code class="lang-python">     url(<span class="hljs-string">r&apos;^post/(?P&lt;pk&gt;[0-9]+)/edit/$&apos;</span>, views.post_edit, name=<span class="hljs-string">&apos;post_edit&apos;</span>),</code></pre>
+<p>Znovu pou&#x17E;ijeme &#x161;ablonu <code>blog/templates/blog/post_edit.html</code>, tak&#x17E;e jedin&#xE9;, co chyb&#xED;, je <em>view</em>.</p><p>Otev&#x159;i <code>blog/views.py</code> a p&#x159;idej na sam&#xFD; konec souboru:</p><pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">post_edit</span><span class="hljs-params">(request, pk)</span>:</span>
+     post = get_object_or_404(Post, pk=pk)
+     <span class="hljs-keyword">if</span> request.method == <span class="hljs-string">&quot;POST&quot;</span>:
+         form = PostForm(request.POST, instance=post)
+         <span class="hljs-keyword">if</span> form.is_valid():
+             post = form.save(commit=<span class="hljs-keyword">False</span>)
+             post.author = request.user
+             post.published_date = timezone.now()
+             post.save()
+             <span class="hljs-keyword">return</span> redirect(<span class="hljs-string">&apos;blog.views.post_d etail&apos;</span>, pk=post.pk)
+     <span class="hljs-keyword">else</span>:
+         form = PostForm(instance=post)
+     <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;blog/post_edit.html&apos;</span>, {<span class="hljs-string">&apos;form&apos;</span>: form})</code></pre>
+<p>Vypad&#xE1; to t&#xE9;m&#x11B;&#x159; &#xFA;pln&#x11B; stejn&#x11B; jako n&#xE1;&#x161; view <code>post_new</code>. Ale ne zcela. Za prv&#xE9;: m&#xE1;me nav&#xED;c parametr <code>pk</code> z adresy URL. Za druh&#xE9;: z&#xED;sk&#xE1;me model <code>Post</code>, kter&#xFD; chceme upravit, pomoc&#xED; <code>get_object_or_404 (Post, pk = pk)</code>. Kdy&#x17E; potom vytvo&#x159;&#xED;me formul&#xE1;&#x159;, p&#x159;ed&#xE1;me tento post jako parametr <code>instance</code>, kdy&#x17E; ukl&#xE1;d&#xE1;me formul&#xE1;&#x159;:</p><pre><code class="lang-python">form = PostForm(request.POST, instance=post)</code></pre>
+<p>a kdy&#x17E; jsme otev&#x159;ely formul&#xE1;&#x159; s t&#xED;mto p&#x159;&#xED;sp&#x11B;vkem pro &#xFA;pravu:</p><pre><code class="lang-python">form = PostForm(instance=post)</code></pre>
+<p>Ok, vyzkou&#x161;ejme si, jestli to funguje! Poj&#x10F;me na str&#xE1;nku <code>post_detail</code>. Tam by m&#x11B;lo b&#xFD;t tla&#x10D;&#xED;tko Edit v prav&#xE9;m horn&#xED;m rohu:</p><p><a href="images/edit_button2.png">Tla&#x10D;&#xED;tko Upravit</a></p><p>Po klepnut&#xED; na n&#x11B;j se zobraz&#xED; formul&#xE1;&#x159; s na&#x161;&#xED;m p&#x159;&#xED;sp&#x11B;vkem:</p><p><a href="images/edit_form2.png">Upravit formul&#xE1;&#x159;</a></p><p>Neboj se zm&#x11B;nit n&#xE1;zev nebo text a ulo&#x17E; zm&#x11B;ny!</p><p>Blahop&#x159;ejeme! Tvoje aplikace je skoro kompletn&#xED;!</p><p>Pokud pot&#x159;ebuje&#x161; v&#xED;ce informac&#xED; o Django formul&#xE1;&#x159;&#xED;ch, m&#x11B;la by sis p&#x159;e&#x10D;&#xED;st dokumentaci: <a href="https://docs.djangoproject.com/en/1.8/topics/forms/" target="_blank">https://docs.djangoproject.com/en/1.8/topics/forms/</a></p><h2 id="zabezpe&#x10D;en&#xED;">Zabezpe&#x10D;en&#xED;</h2><p>B&#xFD;t schopn&#xE1; vytv&#xE1;&#x159;et nov&#xE9; p&#x159;&#xED;sp&#x11B;vky pouh&#xFD;m klepnut&#xED;m na odkaz je super! Pr&#xE1;v&#x11B; te&#x10F; ale ka&#x17E;d&#xFD;, kdo p&#x159;ijde na tv&#xE9; str&#xE1;nky, je schopen odeslat nov&#xFD; p&#x159;&#xED;sp&#x11B;vek na blog a to asi nechce&#x161;. Ud&#x11B;lejme to tak, &#x17E;e se tla&#x10D;&#xED;tko zobraz&#xED; tob&#x11B;, ale nezobraz&#xED; se nikomu jin&#xE9;mu.</p><p>V <code>blog/templates/blog/base.html</code> najde&#x161; na&#x161;i <code>page-header</code>, <code>div</code> a tag <code>a</code>, kter&#xFD; jsme tam dali d&#x159;&#xED;ve. &#x158;&#xE1;dek by m&#x11B;l vypadat n&#x11B;jak takto:</p><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_new&apos; %}&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;top-menu&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-plus&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre>
+<p>Chceme p&#x159;idat dal&#x161;&#xED; <code>{% if %}</code> p&#x159;&#xED;kaz, kter&#xFD; zajist&#xED;, &#x17E;e se odkaz zobraz&#xED; pouze pro u&#x17E;ivatele, kte&#x159;&#xED; jsou p&#x159;ihl&#xE1;&#x161;eni jako admin. Ve skute&#x10D;nosti jsi j&#xED;m pouze ty! Zm&#x11B;&#x148; tag <code>&lt; a &gt;</code>, aby vypadal takto:</p><pre><code class="lang-html">{% if user.is_authenticated %}
+     <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_new&apos; %}&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;top-menu&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-plus&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+{% endif %}</code></pre>
+<p>Tento <code>{% if %}</code> zp&#x16F;sob&#xED;, &#x17E;e odkaz bude odesl&#xE1;n do prohl&#xED;&#x17E;e&#x10D;e, pouze pokud je u&#x17E;ivatel, kter&#xFD; po&#x17E;aduje str&#xE1;nku, p&#x159;ihl&#xE1;&#x161;en&#xFD;. To zcela nezabr&#xE1;n&#xED; mo&#x17E;nosti vytv&#xE1;&#x159;et nov&#xE9; z&#xE1;znamy, ale je to dobr&#xFD; prvn&#xED; krok. Lep&#x161;&#xED; zabezpe&#x10D;en&#xED; vysv&#x11B;tl&#xED;me v roz&#x161;&#xED;&#x159;en&#xE9; lekci.</p><p>Vzhledem k tomu, &#x17E;e jsi pravd&#x11B;podobn&#x11B; p&#x159;ihl&#xE1;&#x161;en&#xE1;, neuvid&#xED;&#x161; &#x17E;&#xE1;dnou zm&#x11B;nu, pokud aktualizuje&#x161; str&#xE1;nku. P&#x159;i na&#x10D;ten&#xED; str&#xE1;nky v nov&#xE9;m prohl&#xED;&#x17E;e&#x10D;i nebo anonymn&#xED;m okn&#x11B; se odkaz ji&#x17E; neuk&#xE1;&#x17E;e!</p><h2 id="je&#x161;t&#x11B;-jedna-v&#x11B;c-&#x10D;as-nasadit-aplikaci">Je&#x161;t&#x11B; jedna v&#x11B;c: &#x10D;as nasadit aplikaci!</h2><p>Uvid&#xED;me, jestli to funguje na PythonAnywhere. &#x10C;as na dal&#x161;&#xED; nasazen&#xED;!</p><ul><li>Za prv&#xE9; commitni nov&#xFD; k&#xF3;d a po&#x161;li ho na GitHub
+</li></ul>
+<pre><code>$ git status
+$ git add --all .
+$ git status
+$ git commit -m &quot;Added views to create/edit blog post inside the site.&quot;
+$ git push</code></pre>
+<ul><li>Pak v <a href="https://www.pythonanywhere.com/consoles/" target="_blank">Bash konzoli PythonAnywhere</a>:
+</li></ul>
+<pre><code>$ cd my-first-blog
+$ source myvenv/bin/activate
+(myvenv)$ git pull
+[...]
+(myvenv)$ python manage.py collectstatic
+[...]</code></pre>
+<ul><li>Nakonec sko&#x10D; na <a href="https://www.pythonanywhere.com/web_app_setup/" target="_blank">kartu Web</a> a klikni na <strong>Reload</strong>.
+</li></ul>
+<p>A m&#x11B;lo by to b&#xFD;t! Gratulujeme :)</p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../extend_your_application/" class="navigation navigation-prev " aria-label="Previous page: Rozšíření vaší aplikace">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../whats_next/" class="navigation navigation-next " aria-label="Next page: Co dál?">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Django formuláře","level":"1.23","depth":1,"next":{"title":"Co dál?","level":"1.24","depth":1,"path":"whats_next/README.md","ref":"whats_next/README.md","articles":[]},"previous":{"title":"Rozšíření vaší aplikace","level":"1.22","depth":1,"path":"extend_your_application/README.md","ref":"extend_your_application/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"django_version":"2.2.4"},"language":"cs","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"django_forms/README.md","mtime":"2020-06-27T13:00:23.646Z","type":"markdown"},"gitbook":{"version":"3.4.0","time":"2020-06-27T13:00:41.274Z"},"basePath":"..","book":{"language":"cs"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

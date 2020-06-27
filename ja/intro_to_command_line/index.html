@@ -1,0 +1,1022 @@
+
+<!DOCTYPE HTML>
+<html lang="ja" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>コマンドラインを使ってみよう · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.4.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../python_installation/" />
+    
+    
+    <link rel="prev" href="../how_the_internet_works/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="検索ワードを入力" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    はじめに
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    インストール
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../installation/">
+            
+                <a href="../installation/#command-line">
+            
+                    
+                    コマンドライン
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../installation/">
+            
+                <a href="../installation/#python">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../installation/">
+            
+                <a href="../installation/#code-editor">
+            
+                    
+                    コードエディタ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../installation/">
+            
+                <a href="../installation/#virtualenv">
+            
+                    
+                    仮想環境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../installation/">
+            
+                <a href="../installation/#django">
+            
+                    
+                    Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../installation/">
+            
+                <a href="../installation/#git">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../installation/">
+            
+                <a href="../installation/#github">
+            
+                    
+                    GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../installation/">
+            
+                <a href="../installation/#pythonanywhere">
+            
+                    
+                    PythonAnywhere
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    Chromebookのセットアップ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    インターネットのしくみ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    コマンドラインを使ってみよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Pythonのインストール
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    コードエディタ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Python入門
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Djangoってなに？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Djangoのインストール
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    プロジェクトを作成しよう！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Djangoモデル
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    ログインページを作ろう（Django admin）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    デプロイ！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Djangoビュー
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    HTML 入門
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM（クエリセット）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    テンプレート内の動的データ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Djangoテンプレート
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSSでカワイくしよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    テンプレートを拡張しよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    アプリケーションを拡張しよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Djangoフォーム
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    次のステップは？
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKitで公開 
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >コマンドラインを使ってみよう</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30E9;&#x30A4;&#x30F3;&#x3092;&#x4F7F;&#x3063;&#x3066;&#x307F;&#x3088;&#x3046;">&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30E9;&#x30A4;&#x30F3;&#x3092;&#x4F7F;&#x3063;&#x3066;&#x307F;&#x3088;&#x3046;</h1><blockquote><p>&#x5BB6;&#x3067;&#xFF11;&#x4EBA;&#x3067;&#x3053;&#x306E;&#x30C1;&#x30E3;&#x30D7;&#x30BF;&#x30FC;&#x306B;&#x6311;&#x6226;&#x3057;&#x3066;&#x3044;&#x308B;&#x65B9;&#x3078;&#xFF1A;&#x3053;&#x306E;&#x30C1;&#x30E3;&#x30D7;&#x30BF;&#x30FC;&#x306F;&#x3001;&#x52D5;&#x753B;&#xFF08;&#x82F1;&#x8A9E;&#xFF09;&#x3082;&#x3042;&#x308B;&#x306E;&#x3067;&#x53C2;&#x8003;&#x306B;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002; <a href="https://www.youtube.com/watch?v=jvZLWhkzX-8" target="_blank">Your new friend: Command Line</a></p></blockquote><p>&#x3055;&#x3041;&#x3001;&#x3053;&#x308C;&#x304B;&#x3089;&#x6700;&#x521D;&#x306E;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x66F8;&#x3044;&#x3066;&#x3044;&#x304D;&#x307E;&#x3059;&#x3088;&#x3002;&#x697D;&#x3057;&#x3093;&#x3067;&#x3044;&#x304D;&#x307E;&#x3057;&#x3087;&#x3046;&#xFF01;:)</p><p><strong>&#x6700;&#x521D;&#x306B;&#x304A;&#x53CB;&#x9054;&#x306B;&#x306A;&#x308B;&#x306E;&#x306F;&#x30B3;&#x30EC;&#x3067;&#x3059;&#x3002;: &#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30E9;&#x30A4;&#x30F3;!</strong></p><p>&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30DE;&#x30FC;&#x304C;&#x9ED2;&#x3044;&#x753B;&#x9762;&#x306B;&#x5411;&#x304B;&#x3063;&#x3066;&#x3044;&#x308B;&#x5149;&#x666F;&#x3092;&#x898B;&#x305F;&#x3053;&#x3068;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x304B;&#xFF1F;&#x3053;&#x3053;&#x304B;&#x3089;&#x306F;&#x3001;&#x305D;&#x306E;&#x9ED2;&#x3044;&#x753B;&#x9762;&#x3092;&#x89E6;&#x3063;&#x3066;&#x307F;&#x307E;&#x3059;&#x3002;&#x6700;&#x521D;&#x306F;&#x3061;&#x3087;&#x3063;&#x3068;&#x30B3;&#x30EF;&#x30A4;&#x3068;&#x601D;&#x3046;&#x304B;&#x3082;&#x3057;&#x308C;&#x307E;&#x305B;&#x3093;&#x304C;&#x3001;&#x305D;&#x3093;&#x306A;&#x3053;&#x3068;&#x306F;&#x3042;&#x308A;&#x307E;&#x305B;&#x3093;&#x3002;&#x30D7;&#x30ED;&#x30F3;&#x30D7;&#x30C8;&#x3068;&#x547C;&#x3070;&#x308C;&#x308B;&#x3082;&#x306E;&#x304C;&#x3042;&#x306A;&#x305F;&#x306E;&#x547D;&#x4EE4;&#xFF08;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#xFF09;&#x3092;&#x5F85;&#x3063;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p><blockquote><p><strong>&#x5099;&#x8003;&#xFF1A;</strong> &#x3053;&#x306E;&#x30C1;&#x30E5;&#x30FC;&#x30C8;&#x30EA;&#x30A2;&#x30EB;&#x3067;&#x306F;&#x3001;&#x201D;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x201D;&#x3084;&quot;&#x30D5;&#x30A9;&#x30EB;&#x30C0;&quot;&#x3068;&#x3044;&#x3046;&#x7528;&#x8A9E;&#x304C;&#x51FA;&#x3066;&#x304D;&#x307E;&#x3059;&#x304C;&#x3001;&#x540C;&#x3058;&#x610F;&#x5473;&#x3067;&#x3059;&#x3002;</p></blockquote><h2 id="&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30E9;&#x30A4;&#x30F3;&#x3063;&#x3066;&#x4F55;&#xFF1F;">&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30E9;&#x30A4;&#x30F3;&#x3063;&#x3066;&#x4F55;&#xFF1F;</h2><p>&#x3055;&#x3066;&#x3001;<strong>&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30E9;&#x30A4;&#x30F3;</strong> &#x3042;&#x308B;&#x3044;&#x306F; <strong>&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30E9;&#x30A4;&#x30F3; &#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30D5;&#x30A7;&#x30A4;&#x30B9;</strong>&#x3068;&#x547C;&#x3070;&#x308C;&#x308B;&#x3053;&#x306E;&#x753B;&#x9762;&#x306F;&#x3001;&#x30AD;&#x30FC;&#x30DC;&#x30FC;&#x30C9;&#x3067;&#x5165;&#x529B;&#x3057;&#x305F;&#x30C6;&#x30AD;&#x30B9;&#x30C8;&#x3067;&#x547D;&#x4EE4;&#x3092;&#x51FA;&#x3057;&#x3066;&#x30B3;&#x30F3;&#x30D4;&#x30E5;&#x30FC;&#x30BF;&#x30FC;&#x3068;&#x76F4;&#x63A5;&#x5BFE;&#x8A71;&#x3059;&#x308B;&#x3088;&#x3046;&#x306B;&#x3001;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x898B;&#x305F;&#x308A;&#x3001;&#x5909;&#x66F4;&#x3057;&#x305F;&#x308A;&#x3059;&#x308B;&#x3082;&#x306E;&#x3067;&#x3059;&#x3002; &#x30B0;&#x30E9;&#x30D5;&#x30A3;&#x30AB;&#x30EB;&#x30FB;&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30D5;&#x30A7;&#x30A4;&#x30B9;&#x3067;&#x306F;&#x306A;&#x3044;&#x3060;&#x3051;&#x3067;&#x3001;Windows&#x306E;&#x30A8;&#x30AF;&#x30B9;&#x30D7;&#x30ED;&#x30FC;&#x30E9;&#x3084;Mac&#x306E;Finder&#x3068;&#x540C;&#x3058;&#x5F79;&#x5272;&#x3067;&#x3059;&#x3002; &#x3053;&#x306E;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30E9;&#x30A4;&#x30F3;&#x306F;&#x3001; <em>cmd</em>&#x3084;<em>CLI</em>&#x3001;<em>&#x30D7;&#x30ED;&#x30F3;&#x30D7;&#x30C8;</em>&#x3001;<em>&#x30B3;&#x30F3;&#x30BD;&#x30FC;&#x30EB;</em>&#x3001;<em>&#x30BF;&#x30FC;&#x30DF;&#x30CA;&#x30EB;</em>&#x3068;&#x547C;&#x3070;&#x308C;&#x308B;&#x3053;&#x3068;&#x3082;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;</p><h2 id="&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30E9;&#x30A4;&#x30F3;&#x30A4;&#x30F3;&#x30BF;&#x30D5;&#x30A7;&#x30FC;&#x30B9;&#x3092;&#x958B;&#x304F;">&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30E9;&#x30A4;&#x30F3;&#x30A4;&#x30F3;&#x30BF;&#x30D5;&#x30A7;&#x30FC;&#x30B9;&#x3092;&#x958B;&#x304F;</h2><p>&#x3067;&#x306F;&#x3001;&#x5B9F;&#x969B;&#x306B;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30E9;&#x30A4;&#x30F3;&#x3092;&#x958B;&#x3044;&#x3066;&#x3001;&#x89E6;&#x3063;&#x3066;&#x307F;&#x308B;&#x3053;&#x3068;&#x3068;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p><sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Opening: Windows<a class="pull-right section atTitle btn btn-default" target="windows_prompt"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_prompt"><div class="panel-body">
+
+
+<p>&#x4F7F;&#x7528;&#x3057;&#x3066;&#x3044;&#x308B;Windows&#x306E;&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;&#x3068;&#x30AD;&#x30FC;&#x30DC;&#x30FC;&#x30C9;&#x306B;&#x3088;&#x308A;&#x307E;&#x3059;&#x304C;&#x3001;&#x4EE5;&#x4E0B;&#x306E;&#x3044;&#x305A;&#x308C;&#x304B;&#x306E;&#x65B9;&#x6CD5;&#x3067;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30E9;&#x30A4;&#x30F3;&#x3092;&#x958B;&#x3051;&#x308B;&#x306F;&#x305A;&#x3067;&#x3059;(&#x3044;&#x304F;&#x3064;&#x304B;&#x8A66;&#x3059;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308B;&#x304B;&#x3082;&#x3057;&#x308C;&#x307E;&#x305B;&#x3093;&#x304C;&#x3001;&#x3053;&#x308C;&#x3089;&#x306E;&#x65B9;&#x6CD5;&#x306E;&#x3059;&#x3079;&#x3066;&#x3092;&#x8A66;&#x3059;&#x5FC5;&#x8981;&#x306F;&#x3042;&#x308A;&#x307E;&#x305B;&#x3093;):</p><ul><li>[&#x30B9;&#x30BF;&#x30FC;&#x30C8;&#x30E1;&#x30CB;&#x30E5;&#x30FC;] &#x3042;&#x308B;&#x3044;&#x306F;&#x30B9;&#x30BF;&#x30FC;&#x30C8;&#x753B;&#x9762;&#x306E;&#x691C;&#x7D22;&#x30DC;&#x30C3;&#x30AF;&#x30B9;&#x306B;&#x300C;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30D7;&#x30ED;&#x30F3;&#x30D7;&#x30C8;&#x300D;&#x3068;&#x5165;&#x529B;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
+</li>
+<li>[&#x30B9;&#x30BF;&#x30FC;&#x30C8;&#x30E1;&#x30CB;&#x30E5;&#x30FC;] &#x2192; [Windows &#x30B7;&#x30B9;&#x30C6;&#x30E0;&#x30C4;&#x30FC;&#x30EB;] &#x2192; [&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30D7;&#x30ED;&#x30F3;&#x30D7;&#x30C8;] &#x3092;&#x9078;&#x629E;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
+</li>
+<li>[&#x30B9;&#x30BF;&#x30FC;&#x30C8;&#x30E1;&#x30CB;&#x30E5;&#x30FC;] &#x2192; [&#x3059;&#x3079;&#x3066;&#x306E;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;] &#x2192; [&#x30A2;&#x30AF;&#x30BB;&#x30B5;&#x30EA;] &#x2192; [&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30D7;&#x30ED;&#x30F3;&#x30D7;&#x30C8;] &#x3092;&#x9078;&#x629E;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
+</li>
+<li>&#x30B9;&#x30BF;&#x30FC;&#x30C8;&#x753B;&#x9762;&#x3092;&#x958B;&#x304D;&#x3001;&#x753B;&#x9762;&#x306E;&#x5DE6;&#x4E0B;&#x9685;&#x306B;&#x30DE;&#x30A6;&#x30B9;&#x3092;&#x304B;&#x3056;&#x3059;&#x3068;&#x4E0B;&#x77E2;&#x5370;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x308B;&#x306E;&#x3067;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3059;&#xFF08;&#x30BF;&#x30C3;&#x30C1;&#x30D1;&#x30CD;&#x30EB;&#x306E;&#x5834;&#x5408;&#x306F;&#x3001;&#x4EE3;&#x308F;&#x308A;&#x306B;&#x753B;&#x9762;&#x306E;&#x4E0B;&#x304B;&#x3089;&#x4E0A;&#x306B;&#x5411;&#x304B;&#x3063;&#x3066;&#x30D5;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#xFF09;&#x3002; &#x30A2;&#x30D7;&#x30EA;&#x306E;&#x30DA;&#x30FC;&#x30B8;&#x304C;&#x898B;&#x3048;&#x308B;&#x306F;&#x305A;&#x3067;&#x3059;&#x3002; [Windows &#x30B7;&#x30B9;&#x30C6;&#x30E0;&#x30C4;&#x30FC;&#x30EB;] &#x304B;&#x3089; [&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30D7;&#x30ED;&#x30F3;&#x30D7;&#x30C8;] &#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
+</li>
+<li>&#x30AD;&#x30FC;&#x30DC;&#x30FC;&#x30C9;&#x306E; [Windows &#x30AD;&#x30FC;] &#x3092;&#x62BC;&#x3057;&#x306A;&#x304C;&#x3089; [X &#x30AD;&#x30FC;] &#x3092;&#x62BC;&#x3057;&#x307E;&#x3059;&#x3002; &#x30DD;&#x30C3;&#x30D7;&#x30A2;&#x30C3;&#x30D7;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x308B;&#x306E;&#x3067; [&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30D7;&#x30ED;&#x30F3;&#x30D7;&#x30C8;] &#x3092;&#x9078;&#x629E;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
+</li>
+<li>[Windows &#x30AD;&#x30FC;] &#x3092;&#x62BC;&#x3057;&#x306A;&#x304C;&#x3089; [R &#x30AD;&#x30FC;] &#x3092;&#x62BC;&#x3059;&#x3068; [&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x540D;&#x3092;&#x6307;&#x5B9A;&#x3057;&#x3066;&#x5B9F;&#x884C;] &#x3068;&#x3044;&#x3046;&#x30A6;&#x30A3;&#x30F3;&#x30C9;&#x30A6;&#x304C;&#x7ACB;&#x3061;&#x4E0A;&#x304C;&#x308A;&#x307E;&#x3059;&#x3002; &#x300C;cmd&#x300D;&#x3068;&#x5165;&#x529B;&#x3057;&#x3066; [OK] &#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
+</li></ul>
+<p><img alt="\" ファイル名を指定して実行\"="" ウィンドウで="" \"cmd\"="" と入力"="" src="../python_installation/images/windows-plus-r.png"></p><p>&#x3053;&#x306E;&#x30C1;&#x30E5;&#x30FC;&#x30C8;&#x30EA;&#x30A2;&#x30EB;&#x306E;&#x5F8C;&#x308D;&#x306E;&#x65B9;&#x3067;&#x306F;&#x3001;&#x540C;&#x6642;&#x306B;2&#x3064;&#x306E;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30E9;&#x30A4;&#x30F3;&#x3092;&#x958B;&#x304F;&#x5834;&#x9762;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002; &#x3057;&#x304B;&#x3057;&#x3001;Windows&#x306E;&#x3044;&#x304F;&#x3064;&#x304B;&#x306E;&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;&#x3067;&#x306F;&#x3001;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30E9;&#x30A4;&#x30F3;&#x3092;&#x3059;&#x3067;&#x306B;1&#x3064;&#x958B;&#x3044;&#x3066;&#x3044;&#x308B;&#x72B6;&#x614B;&#x3067;2&#x3064;&#x76EE;&#x3092;&#x540C;&#x3058;&#x65B9;&#x6CD5;&#x3067;&#x958B;&#x3053;&#x3046;&#x3068;&#x3057;&#x305F;&#x5834;&#x5408;&#x3001;&#x3059;&#x3067;&#x306B;&#x958B;&#x3044;&#x3066;&#x3044;&#x308B;1&#x3064;&#x76EE;&#x306E;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30E9;&#x30A4;&#x30F3;&#x304C;&#x53C2;&#x7167;&#x3055;&#x308C;&#x3066;&#x3057;&#x307E;&#x3046;&#x3053;&#x3068;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002; &#x81EA;&#x5206;&#x306E;&#x30B3;&#x30F3;&#x30D4;&#x30E5;&#x30FC;&#x30BF;&#x4E0A;&#x3067;&#x8A66;&#x3057;&#x3066;&#x307F;&#x3066;&#x4F55;&#x304C;&#x8D77;&#x3053;&#x308B;&#x304B;&#x898B;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#xFF01; &#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30E9;&#x30A4;&#x30F3;&#x304C;&#x4E00;&#x3064;&#x3057;&#x304B;&#x958B;&#x304B;&#x306A;&#x3044;&#x5834;&#x5408;&#x306F;&#x3001;&#x4E0A;&#x306E;&#x30EA;&#x30B9;&#x30C8;&#x306B;&#x3042;&#x308B;&#x4ED6;&#x306E;&#x65B9;&#x6CD5;&#x3092;&#x8A66;&#x3057;&#x3066;&#x307F;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002; &#x4E0A;&#x306B;&#x3042;&#x308B;&#x3044;&#x305A;&#x308C;&#x304B;&#x306E;&#x65B9;&#x6CD5;&#x3067;&#x65B0;&#x3057;&#x3044;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30E9;&#x30A4;&#x30F3;&#x3092;&#x958B;&#x3051;&#x308B;&#x306F;&#x305A;&#x3067;&#x3059;&#x3002;</p></div></div></div></sec>
+
+
+<sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Opening: OS X<a class="pull-right section atTitle btn btn-default" target="OSX_prompt"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_prompt"><div class="panel-body">
+
+
+<p>[&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;] &#x2192; [&#x30E6;&#x30FC;&#x30C6;&#x30A3;&#x30EA;&#x30C6;&#x30A3;] &#x2192; [&#x30BF;&#x30FC;&#x30DF;&#x30CA;&#x30EB;] &#x3092;&#x9078;&#x629E;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p></div></div></div></sec>
+
+
+<sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Opening: Linux<a class="pull-right section atTitle btn btn-default" target="linux_prompt"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="linux_prompt"><div class="panel-body">
+
+
+<p>&#x4F7F;&#x7528;&#x3057;&#x3066;&#x3044;&#x308B;&#x30B7;&#x30B9;&#x30C6;&#x30E0;&#x306B;&#x3088;&#x308A;&#x307E;&#x3059;&#x304C;&#x3001;[&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;] &#x2192; [&#x30A2;&#x30AF;&#x30BB;&#x30B5;&#x30EA;] &#x306E;&#x4E0B;&#x3001;&#x3042;&#x308B;&#x3044;&#x306F; [&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;] &#x2192; [&#x30B7;&#x30B9;&#x30C6;&#x30E0;] &#x306E;&#x4E0B;&#x306B; [&#x30BF;&#x30FC;&#x30DF;&#x30CA;&#x30EB;] &#x304C;&#x3042;&#x308B;&#x3067;&#x3057;&#x3087;&#x3046;&#x3002; &#x3082;&#x3057;&#x305D;&#x3053;&#x306B;&#x898B;&#x5F53;&#x305F;&#x3089;&#x306A;&#x3044;&#x5834;&#x5408;&#x306F;&#x3001;Google&#x3067;&#x691C;&#x7D22;&#x3057;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002; :)</p></div></div></div></sec>
+
+
+<h2 id="&#x30D7;&#x30ED;&#x30F3;&#x30D7;&#x30C8;">&#x30D7;&#x30ED;&#x30F3;&#x30D7;&#x30C8;</h2><p>&#x304A;&#x305D;&#x3089;&#x304F;&#x4ECA;&#x3001;&#x771F;&#x3063;&#x767D;&#x307E;&#x305F;&#x306F;&#x771F;&#x3063;&#x9ED2;&#x306A;&#x753B;&#x9762;&#x304C;&#x958B;&#x304B;&#x308C;&#x3066;&#x3044;&#x308B;&#x3053;&#x3068;&#x3067;&#x3057;&#x3087;&#x3046;&#x3002;&#x3053;&#x306E;&#x753B;&#x9762;&#x306F;&#x3042;&#x306A;&#x305F;&#x306E;&#x547D;&#x4EE4;&#xFF08;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#xFF09;&#x3092;&#x5F85;&#x3063;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p><sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Prompt: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_prompt"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_prompt"><div class="panel-body">
+
+
+<p>Mac&#x3042;&#x308B;&#x3044;&#x306F;Linux&#x306E;&#x65B9;&#x306F;&#x3001;&#x6B21;&#x306E;&#x3088;&#x3046;&#x306B; <code>$</code> &#x3068;&#x3044;&#x3046;&#x8A18;&#x53F7;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x3053;&#x3068;&#x3067;&#x3057;&#x3087;&#x3046;&#x3002;</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        $</code></pre>
+</div></div></div></sec>
+
+
+<sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Prompt: Windows<a class="pull-right section atTitle btn btn-default" target="windows_prompt2"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_prompt2"><div class="panel-body">
+
+
+<p>Windows&#x306E;&#x65B9;&#x306F;&#x3001; <code>&gt;</code> &#x3068;&#x3044;&#x3046;&#x8A18;&#x53F7;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x3053;&#x3068;&#x3067;&#x3057;&#x3087;&#x3046;&#x3002;</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        &gt;</code></pre>
+<p>&#x4E0A;&#x306E; Linux &#x306E;&#x30BB;&#x30AF;&#x30B7;&#x30E7;&#x30F3;&#x3092;&#x898B;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;&#x3053;&#x306E;&#x30C1;&#x30E5;&#x30FC;&#x30C8;&#x30EA;&#x30A2;&#x30EB;&#x306E;&#x5F8C;&#x308D;&#x306B;&#x3042;&#x308B; PythonAnywhere &#x3092;&#x6271;&#x3046;&#x3068;&#x3053;&#x308D;&#x3067;&#x3001;&#x4F3C;&#x305F;&#x3088;&#x3046;&#x306A;&#x8868;&#x793A;&#x3092;&#x898B;&#x308B;&#x3053;&#x3068;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;</p></div></div></div></sec>
+
+
+<p>&#x5404;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x306E;&#x5148;&#x982D;&#x306B;&#x306F;&#x3001;<code>$</code> &#x3042;&#x308B;&#x3044;&#x306F; <code>&gt;</code> &#x3068;&#x30B9;&#x30DA;&#x30FC;&#x30B9;1&#x3064;&#x304C;&#x3064;&#x304D;&#x307E;&#x3059;&#x3002;&#x30B3;&#x30F3;&#x30D4;&#x30E5;&#x30FC;&#x30BF;&#x30FC;&#x304C;&#x8868;&#x793A;&#x3057;&#x3066;&#x304F;&#x308C;&#x308B;&#x306E;&#x3067;&#x3001;&#x81EA;&#x5206;&#x3067;&#x5165;&#x529B;&#x3059;&#x308B;&#x5FC5;&#x8981;&#x306F;&#x3042;&#x308A;&#x307E;&#x305B;&#x3093;&#x3002;:)</p><blockquote><p>&#x3061;&#x3087;&#x3063;&#x3068;&#x88DC;&#x8DB3;&#x3067;&#x3059;&#x3002;&#x304A;&#x624B;&#x5143;&#x3067;&#x306F; <code>C:\Users\ola&gt;</code> &#x3084; <code>Olas-MacBook-Air:~ ola$</code> &#x306E;&#x3088;&#x3046;&#x306B;&#x30D7;&#x30ED;&#x30F3;&#x30D7;&#x30C8;&#x8A18;&#x53F7;&#x306E;&#x524D;&#x306B;&#x8868;&#x793A;&#x304C;&#x3042;&#x308B;&#x3068;&#x601D;&#x3044;&#x307E;&#x3059;&#x304C;&#x3001;&#x3053;&#x308C;&#x306F;&#x9593;&#x9055;&#x3044;&#x3067;&#x306F;&#x3042;&#x308A;&#x307E;&#x305B;&#x3093;&#x3002;</p></blockquote><p><code>$</code> &#x3084; <code>&gt;</code> &#x3068;&#x66F8;&#x304B;&#x308C;&#x3066;&#x3044;&#x308B;&#x3068;&#x3053;&#x308D;&#x307E;&#x3067;&#x306F;&#x3001; <em>&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30E9;&#x30A4;&#x30F3;&#x30D7;&#x30ED;&#x30F3;&#x30D7;&#x30C8;</em> &#x3042;&#x308B;&#x3044;&#x306F;&#x7565;&#x3057;&#x3066;<em>&#x30D7;&#x30ED;&#x30F3;&#x30D7;&#x30C8;</em>&#x3068;&#x547C;&#x3070;&#x308C;&#x307E;&#x3059;&#x3002;&#x30D7;&#x30ED;&#x30F3;&#x30D7;&#x30C8;&#x306E;&#x610F;&#x5473;&#x306F;&#x300C;&#x4FC3;&#x3059;&#x300D;&#x3067;&#x3001;&#x3042;&#x306A;&#x305F;&#x304C;&#x4F55;&#x304B;&#x5165;&#x529B;&#x3059;&#x308B;&#x3053;&#x3068;&#x3092;&#x4FC3;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p><p>&#x3053;&#x306E;&#x30C1;&#x30E5;&#x30FC;&#x30C8;&#x30EA;&#x30A2;&#x30EB;&#x3067;&#x306F;&#x3001;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3092;&#x5165;&#x529B;&#x3057;&#x3066;&#x307B;&#x3057;&#x3044;&#x6642;&#x306F;&#x3001; <code>$</code> &#x3084; <code>&gt;</code> &#x3092;&#x542B;&#x3081;&#x3066;&#x793A;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#xFF08;&#x305F;&#x307E;&#x306B;&#x3053;&#x308C;&#x3089;&#x306E;&#x5DE6;&#x306B;&#x3082;&#x6587;&#x5B57;&#x304C;&#x304D;&#x307E;&#x3059;&#xFF09;&#x3002; $ &#x3084; &gt; &#x304B;&#x3089;&#x5DE6;&#x5074;&#x306F;&#x7121;&#x8996;&#x3057;&#x3066;&#x3001;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x306E;&#x307F;&#x3092;&#x5165;&#x529B;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x306F;&#x30D7;&#x30ED;&#x30F3;&#x30D7;&#x30C8;&#x306E;&#x3042;&#x3068;&#x306B;&#x7D9A;&#x304D;&#x307E;&#x3059;&#x3002;</p><h2 id="&#x6700;&#x521D;&#x306E;&#x30B3;&#x30DE;&#x30F3;&#x30C9;-&#x30A4;&#x30A7;&#x30A4;&#xFF01;">&#x6700;&#x521D;&#x306E;&#x30B3;&#x30DE;&#x30F3;&#x30C9; (&#x30A4;&#x30A7;&#x30A4;&#xFF01;)</h2><p>&#x6B21;&#x306E;&#x3088;&#x3046;&#x306B;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3092;&#x5165;&#x529B;&#x3057;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;:</p><sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Your first command: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_whoami"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_whoami"><div class="panel-body">
+
+
+<p></p><p class="code-label">command-line</p><p></p><pre><code>        $ whoami</code></pre>
+</div></div></div></sec>
+
+
+<sec data-title="Your first command: Windows" data-id="windows_whoami" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Your first command: Windows<a class="pull-right section atTitle btn btn-default" target="windows_whoami"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_whoami"><div class="panel-body">
+
+
+<p></p><p class="code-label">command-line</p><p></p><pre><code>        &gt; whoami</code></pre>
+</div></div></div></sec>
+
+
+<p>&#x305D;&#x3057;&#x3066;&#x6700;&#x5F8C;&#x306B;<code>Enter&#x30AD;&#x30FC;</code>&#x3092;&#x62BC;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;&#x3053;&#x306E;&#x3088;&#x3046;&#x306A;&#x7D50;&#x679C;&#x304C;&#x8FD4;&#x3063;&#x3066;&#x304D;&#x307E;&#x3059;&#x3002;</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        $ whoami
+        olasitarska</code></pre>
+<p>&#x3054;&#x89A7;&#x306E;&#x3068;&#x304A;&#x308A;&#x3001;&#x30B3;&#x30F3;&#x30D4;&#x30E5;&#x30FC;&#x30BF;&#x30FC;&#x304C;&#x3042;&#x306A;&#x305F;&#x306E;&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x540D;&#x3092;&#x8868;&#x793A;&#x3057;&#x3066;&#x304F;&#x308C;&#x307E;&#x3057;&#x305F;&#x306D;&#x3002;&#x9762;&#x767D;&#x3044;&#x3067;&#x3057;&#x3087;&#xFF1F; :)</p><blockquote><p>&#x30B3;&#x30D4;&#x30FC;&#xFF06;&#x30DA;&#x30FC;&#x30B9;&#x30C8;&#x3067;&#x306F;&#x306A;&#x304F;&#x3001;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3092;&#x5165;&#x529B;&#x3057;&#x3066;&#x8A66;&#x3057;&#x3066;&#x307F;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;&#x305D;&#x306E;&#x3046;&#x3061;&#x81EA;&#x7136;&#x3068;&#x899A;&#x3048;&#x3089;&#x308C;&#x308B;&#x3088;&#x3046;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x304B;&#x3089;&#x306D;&#xFF01;</p></blockquote><h2 id="&#x57FA;&#x672C;">&#x57FA;&#x672C;</h2><p>OS&#x306B;&#x3088;&#x3063;&#x3066;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x304C;&#x82E5;&#x5E72;&#x9055;&#x3044;&#x307E;&#x3059;&#x3002;&#x3042;&#x306A;&#x305F;&#x306E;&#x30B3;&#x30F3;&#x30D4;&#x30E5;&#x30FC;&#x30BF;&#x30FC;&#x306E;OS&#x5411;&#x3051;&#x306E;&#x8AAC;&#x660E;&#x306B;&#x5F93;&#x3063;&#x3066;&#x3001;&#x4EE5;&#x4E0B;&#x306F;&#x9032;&#x3081;&#x3066;&#x3044;&#x3063;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x306D;&#x3002;&#x6B21;&#x306B;&#x3044;&#x3063;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p><h3 id="&#x30AB;&#x30EC;&#x30F3;&#x30C8;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#xFF08;&#x73FE;&#x5728;&#x306E;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#xFF09;">&#x30AB;&#x30EC;&#x30F3;&#x30C8;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#xFF08;&#x73FE;&#x5728;&#x306E;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#xFF09;</h3><p>&#x4ECA;&#x3069;&#x3053;&#x306E;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306B;&#x3044;&#x308B;&#x304B;&#xFF08;&#x3069;&#x306E;&#x30D5;&#x30A9;&#x30EB;&#x30C0;&#x3067;&#x4F5C;&#x696D;&#x3092;&#x3057;&#x3066;&#x3044;&#x308B;&#x304B;&#xFF09;&#x3001;&#x77E5;&#x308A;&#x305F;&#x3044;&#x3067;&#x3059;&#x3088;&#x306D;&#xFF1F;&#x3067;&#x306F;&#x3001;&#x3053;&#x306E;&#x3088;&#x3046;&#x306B;&#x30AD;&#x30FC;&#x30DC;&#x30FC;&#x30C9;&#x304B;&#x3089;&#x5165;&#x529B;&#x3057;&#x3001;<code>Enter&#x30AD;&#x30FC;</code>&#x3092;&#x62BC;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p><sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Current directory: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_pwd"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_pwd"><div class="panel-body">
+
+
+<p></p><p class="code-label">command-line</p><p></p><pre><code>        $ pwd
+        /Users/olasitarska</code></pre>
+<blockquote><p>&#x88DC;&#x8DB3;: &apos;pwd&apos; &#x306F;&apos;print working directory&apos;&#x306E;&#x7565;&#x3067;&#x3001;&#x73FE;&#x5728;&#x3044;&#x308B;&#x4F5C;&#x696D;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x3092;&#x8868;&#x793A;&#x3059;&#x308B;&#x3053;&#x3068;&#x3092;&#x610F;&#x5473;&#x3057;&#x307E;&#x3059;&#x3002;</p></blockquote></div></div></div></sec>
+
+
+<sec data-title="Current directory: Windows" data-id="windows_cd" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Current directory: Windows<a class="pull-right section atTitle btn btn-default" target="windows_cd"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_cd"><div class="panel-body">
+
+
+<p></p><p class="code-label">command-line</p><p></p><pre><code>        &gt; cd
+        C:\Users\olasitarska</code></pre>
+<blockquote><p>&#x88DC;&#x8DB3;: &apos;cd&apos; &#x306F;&#x3001;&apos;change directory&apos;&#x306E;&#x7565;&#x3067;&#x3001;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x3092;&#x5909;&#x3048;&#x308B;&#x3053;&#x3068;&#x3092;&#x610F;&#x5473;&#x3057;&#x307E;&#x3059;&#x3002;PowerShell&#x3092;&#x4F7F;&#x3046;&#x3068;&#x3001;Linux&#x3084;Mac OS X&#x306E;&#x3088;&#x3046;&#x306B;pwd&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3092;&#x4F7F;&#x3048;&#x307E;&#x3059;&#x3002;</p></blockquote></div></div></div></sec>
+
+
+<p>&#x304A;&#x305D;&#x3089;&#x304F;&#x3001;&#x3042;&#x306A;&#x305F;&#x306E;&#x30DE;&#x30B7;&#x30F3;&#x4E0A;&#x3067;&#x3082;&#x4F3C;&#x305F;&#x3088;&#x3046;&#x306A;&#x8868;&#x793A;&#x304C;&#x3055;&#x308C;&#x305F;&#x306E;&#x3067;&#x306F;&#x306A;&#x3044;&#x3067;&#x3057;&#x3087;&#x3046;&#x304B;&#x3002;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30E9;&#x30A4;&#x30F3;&#x3092;&#x8D77;&#x52D5;&#x3059;&#x308B;&#x3068;&#x3001;&#x901A;&#x5E38;&#x306F;&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x306E;&#x30DB;&#x30FC;&#x30E0;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x304C;&#x30AB;&#x30EC;&#x30F3;&#x30C8;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;</p><hr><h3 id="&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x306B;&#x3064;&#x3044;&#x3066;&#x3082;&#x3063;&#x3068;&#x77E5;&#x308B;">&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x306B;&#x3064;&#x3044;&#x3066;&#x3082;&#x3063;&#x3068;&#x77E5;&#x308B;</h3><p>&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30D7;&#x30ED;&#x30F3;&#x30D7;&#x30C8;&#x306B;&#x5165;&#x529B;&#x3059;&#x308B;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x306E;&#x591A;&#x304F;&#x306B;&#x306F;&#x3001;&#x8868;&#x793A;&#x3057;&#x3066;&#x8AAD;&#x3080;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x308B;&#x30D8;&#x30EB;&#x30D7;&#x6A5F;&#x80FD;&#x304C;&#x5099;&#x308F;&#x3063;&#x3066;&#x3044;&#x307E;&#x3059;&#xFF01;&#x4F8B;&#x3068;&#x3057;&#x3066;&#x3001;&#x30AB;&#x30EC;&#x30F3;&#x30C8;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x3092;&#x8868;&#x793A;&#x3059;&#x308B;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x306B;&#x3064;&#x3044;&#x3066;&#x307F;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;:</p><sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Command help: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_man"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_man"><div class="panel-body">
+
+
+<p>OS X &#x3068; Linux &#x306B;&#x306F;&#x3001;<code>man</code> &#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x304C;&#x3042;&#x308A;&#x3001;&#x305D;&#x308C;&#x306F;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x306E;&#x30D8;&#x30EB;&#x30D7;&#x3092;&#x63D0;&#x4F9B;&#x3057;&#x307E;&#x3059;&#x3002; <code>man pwd</code> &#x3092;&#x8A66;&#x3057;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;&#x4ED6;&#x306E;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3082;&#x3001;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x306E;&#x524D;&#x306B; <code>man</code> &#x3068;&#x66F8;&#x304D;&#x3001;&#x30D8;&#x30EB;&#x30D7;&#x3092;&#x898B;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002; <code>man</code> &#x306E;&#x51FA;&#x529B;&#x306F;&#x3001;&#x901A;&#x5E38;&#x306F;&#x30DA;&#x30FC;&#x30B8;&#x5358;&#x4F4D;&#x3067;&#x8868;&#x793A;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002; &#x6B21;&#x306E;&#x30DA;&#x30FC;&#x30B8;&#x306B;&#x79FB;&#x52D5;&#x3059;&#x308B;&#x306B;&#x306F;&#x30B9;&#x30DA;&#x30FC;&#x30B9;&#x30AD;&#x30FC;&#x3092;&#x4F7F;&#x3044;&#x307E;&#x3059;&#x3002; &#x30D8;&#x30EB;&#x30D7;&#x3092;&#x898B;&#x308B;&#x306E;&#x3092;&#x3084;&#x3081;&#x308B;&#x306B;&#x306F; <code>q&#x30AD;&#x30FC;</code> &#x3092;&#x62BC;&#x3057;&#x307E;&#x3059;&#x3002;</p></div></div></div></sec>
+
+
+<sec data-title="Command Help: Windows" data-id="windows_help" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Command Help: Windows<a class="pull-right section atTitle btn btn-default" target="windows_help"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_help"><div class="panel-body">
+
+
+<p>&#x307B;&#x3068;&#x3093;&#x3069;&#x306E;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3067;&#x306F;&#x3001;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x306E;&#x5F8C;&#x308D;&#x306B; <code>/?</code> &#x3092;&#x3064;&#x3051;&#x3066;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x3068;&#x30D8;&#x30EB;&#x30D7;&#x30DA;&#x30FC;&#x30B8;&#x304C;&#x51FA;&#x529B;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;&#x3059;&#x3079;&#x3066;&#x306E;&#x51FA;&#x529B;&#x3092;&#x898B;&#x308B;&#x306B;&#x306F;&#x3001;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30E9;&#x30A4;&#x30F3;&#x3092;&#x4E0A;&#x306B;&#x30B9;&#x30AF;&#x30ED;&#x30FC;&#x30EB;&#x3059;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308B;&#x304B;&#x3082;&#x3057;&#x308C;&#x307E;&#x305B;&#x3093;&#x3002;<code>cd /?</code> &#x3092;&#x8A66;&#x3057;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p></div></div></div></sec>
+
+
+<h3 id="&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3068;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306E;&#x4E00;&#x89A7;">&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3068;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306E;&#x4E00;&#x89A7;</h3><p>&#x3067;&#x306F;&#x3001;&#x30AB;&#x30EC;&#x30F3;&#x30C8;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306E;&#x4E2D;&#x306B;&#x306F;&#x4F55;&#x304C;&#x3042;&#x308B;&#x306E;&#x3067;&#x3057;&#x3087;&#x3046;&#x304B;&#xFF1F;&#x8868;&#x793A;&#x3055;&#x305B;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p><sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>List files and directories: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_ls"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_ls"><div class="panel-body">
+
+
+<p></p><p class="code-label">command-line</p><p></p><pre><code>        $ ls
+        Applications
+        Desktop
+        Downloads
+        Music
+        ...</code></pre>
+</div></div></div></sec>
+
+
+<sec data-title="List files and directories: Windows" data-id="windows_dir" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>List files and directories: Windows<a class="pull-right section atTitle btn btn-default" target="windows_dir"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_dir"><div class="panel-body">
+
+
+<p></p><p class="code-label">command-line</p><p></p><pre><code>        &gt; dir
+         Directory of C:\Users\olasitarska
+        05/08/2014 07:28 PM &lt;DIR&gt;      Applications
+        05/08/2014 07:28 PM &lt;DIR&gt;      Desktop
+        05/08/2014 07:28 PM &lt;DIR&gt;      Downloads
+        05/08/2014 07:28 PM &lt;DIR&gt;      Music
+        ...</code></pre>
+<blockquote><p>&#x88DC;&#x8DB3;&#xFF1A;PowerSell&#x3067;&#x306F;&#x3001;Linux &#x3084; Mac OS X&#x540C;&#x69D8;&#x306B;ls&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x304C;&#x4F7F;&#x3048;&#x307E;&#x3059;&#x3002; </p></blockquote></div></div></div></sec><p></p><hr><h3 id="&#x30AB;&#x30EC;&#x30F3;&#x30C8;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306E;&#x5909;&#x66F4;">&#x30AB;&#x30EC;&#x30F3;&#x30C8;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306E;&#x5909;&#x66F4;</h3><p>&#x6B21;&#x306B;&#x3001;&#x30C7;&#x30B9;&#x30AF;&#x30C8;&#x30C3;&#x30D7;(Desktop)&#x3068;&#x3044;&#x3046;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306B;&#x79FB;&#x52D5;&#x3057;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p><sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Change current directory: OS X<a class="pull-right section atTitle btn btn-default" target="OSX_move_to"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_move_to"><div class="panel-body">
+
+
+<p></p><p class="code-label">command-line</p><p></p><pre><code>        $ cd Desktop</code></pre>
+</div></div></div></sec>
+
+
+<sec data-title="Change current directory: Linux" data-id="Linux_move_to" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Change current directory: Linux<a class="pull-right section atTitle btn btn-default" target="Linux_move_to"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="Linux_move_to"><div class="panel-body">
+
+
+<p></p><p class="code-label">command-line</p><p></p><pre><code>        $ cd Desktop</code></pre>
+<p>Desktop &#x3068;&#x3044;&#x3046;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x540D;&#x306F;&#x3001;&#x4F7F;&#x7528;&#x3057;&#x3066;&#x3044;&#x308B;Linux&#x30A2;&#x30AB;&#x30A6;&#x30F3;&#x30C8;&#x306E;&#x8A00;&#x8A9E;&#x306B;&#x7FFB;&#x8A33;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x304B;&#x3082;&#x3057;&#x308C;&#x307E;&#x305B;&#x3093;&#x3002; &#x305D;&#x306E;&#x5834;&#x5408;&#x306F;&#x3001; <code>Desktop</code> &#x3092;&#x7FFB;&#x8A33;&#x3055;&#x308C;&#x305F;&#x540D;&#x524D;&#x306B;&#x7F6E;&#x304D;&#x63DB;&#x3048;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;; &#x305F;&#x3068;&#x3048;&#x3070;&#x3001;&#x30C9;&#x30A4;&#x30C4;&#x8A9E;&#x306A;&#x3089; <code>Schreibtisch</code> &#x3067;&#x3059;&#x3002;</p></div></div></div></sec>
+
+
+<sec data-title="Change current directory: Windows" data-id="windows_move_to" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Change current directory: Windows<a class="pull-right section atTitle btn btn-default" target="windows_move_to"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_move_to"><div class="panel-body">
+
+
+<p></p><p class="code-label">command-line</p><p></p><pre><code>        &gt; cd Desktop</code></pre>
+</div></div></div></sec>
+
+
+<p>&#x672C;&#x5F53;&#x306B;&#x5909;&#x66F4;&#x3055;&#x308C;&#x305F;&#x304B;&#x3069;&#x3046;&#x304B;&#x78BA;&#x8A8D;&#x3057;&#x3066;&#x307F;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#xFF1A;</p><sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Check if changed: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_pwd2"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_pwd2"><div class="panel-body">
+
+
+<p></p><p class="code-label">command-line</p><p></p><pre><code>        $ pwd
+        /Users/olasitarska/Desktop</code></pre>
+</div></div></div></sec>
+
+
+<sec data-title="Check if changed: Windows" data-id="windows_cd2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Check if changed: Windows<a class="pull-right section atTitle btn btn-default" target="windows_cd2"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_cd2"><div class="panel-body">
+
+
+<p></p><p class="code-label">command-line</p><p></p><pre><code>        &gt; cd
+        C:\Users\olasitarska\Desktop</code></pre>
+</div></div></div></sec>
+
+
+<p>&#x3067;&#x304D;&#x3066;&#x3044;&#x307E;&#x3059;&#x306D;&#xFF01;</p><blockquote><p>&#x30D7;&#x30ED;&#x306E;&#x30B3;&#x30C4;: <code>cd D</code> &#x3068;&#x5165;&#x529B;&#x3057;&#x3066;&#x3001;&#x30AD;&#x30FC;&#x30DC;&#x30FC;&#x30C9;&#x306E;<code>Tab&#x30AD;&#x30FC;</code>&#x3092;&#x62BC;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;&#x3059;&#x308B;&#x3068;&#x3001;D&#x306B;&#x7D9A;&#x304F;&#x6B8B;&#x308A;&#x306E;&#x90E8;&#x5206;&#x304C;&#x81EA;&#x52D5;&#x7684;&#x306B;&#x88DC;&#x5B8C;&#x3055;&#x308C;&#x308B;&#x306E;&#x3067;&#x3001;&#x3088;&#x308A;&#x65E9;&#x304F;&#x5165;&#x529B;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002; &#x3082;&#x3057;&#x3001;D&#x304B;&#x3089;&#x59CB;&#x307E;&#x308B;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x540D;&#x304C;&#x4ED6;&#x306B;&#x3082;&#x3042;&#x308C;&#x3070;&#x3001;<code>Tab&#x30AD;&#x30FC;</code>&#x3092;2&#x5EA6;&#x62BC;&#x3059;&#x3068;&#x5019;&#x88DC;&#x306E;&#x4E00;&#x89A7;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;</p></blockquote><hr><h3 id="&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306E;&#x4F5C;&#x6210;">&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306E;&#x4F5C;&#x6210;</h3><p>&#x305D;&#x308C;&#x3067;&#x306F;&#x3001;practice &#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x3092;&#x30C7;&#x30B9;&#x30AF;&#x30C8;&#x30C3;&#x30D7;&#x306B;&#x4F5C;&#x6210;&#x3057;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p><sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Create directory: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_mkdir"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_mkdir"><div class="panel-body">
+
+
+<p></p><p class="code-label">command-line</p><p></p><pre><code>        $ mkdir practice</code></pre>
+</div></div></div></sec>
+
+
+<sec data-title="Create directory: Windows" data-id="windows_mkdir" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Create directory: Windows<a class="pull-right section atTitle btn btn-default" target="windows_mkdir"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_mkdir"><div class="panel-body">
+
+
+<p></p><p class="code-label">command-line</p><p></p><pre><code>        &gt; mkdir practice</code></pre>
+</div></div></div></sec>
+
+
+<p>&#x3053;&#x306E;&#x77ED;&#x3044;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3067;&#x3001;&#x30C7;&#x30B9;&#x30AF;&#x30C8;&#x30C3;&#x30D7;&#x306B; <code>practice</code> &#x3068;&#x3044;&#x3046;&#x540D;&#x524D;&#x306E;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x304C;&#x4F5C;&#x6210;&#x3055;&#x308C;&#x307E;&#x3057;&#x305F;&#x3002; &#x30C7;&#x30B9;&#x30AF;&#x30C8;&#x30C3;&#x30D7;&#x3092;&#x898B;&#x308B;&#x3068;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x304C;&#x4F5C;&#x6210;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x3053;&#x3068;&#x3092;&#x78BA;&#x8A8D;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;&#x3042;&#x308B;&#x3044;&#x306F;&#x3001;&#x5148;&#x307B;&#x3069;&#x5B66;&#x3093;&#x3060;&#x30B3;&#x30DE;&#x30F3;&#x30C9; <code>ls</code> &#x3084; <code>dir</code> &#x3092;&#x4F7F;&#x3063;&#x3066;&#x3082;&#x78BA;&#x8A8D;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002; &#x3084;&#x3063;&#x3066;&#x307F;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002; :)</p><blockquote><p>&#x30D7;&#x30ED;&#x306E;&#x30B3;&#x30C4;: &#x540C;&#x3058;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3092;&#x4F55;&#x5EA6;&#x3082;&#x5165;&#x529B;&#x3057;&#x305F;&#x304F;&#x306A;&#x3044;&#x6642;&#x306F;&#x3001;&#x30AD;&#x30FC;&#x30DC;&#x30FC;&#x30C9;&#x306E;&#x4E0A;&#x4E0B;&#x77E2;&#x5370;&#x30AD;&#x30FC; <code>&#x2191;</code>&#x3001;<code>&#x2193;</code> &#x3092;&#x62BC;&#x305B;&#x3070;&#x3001;&#x6700;&#x8FD1;&#x4F7F;&#x7528;&#x3057;&#x305F;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x304C;&#x73FE;&#x308C;&#x307E;&#x3059;&#x3002;&#x5185;&#x5BB9;&#x3092;&#x4FEE;&#x6B63;&#x3057;&#x305F;&#x3044;&#x5834;&#x5408;&#x306B;&#x306F;&#xFF0C;&#x5DE6;&#x53F3;&#x77E2;&#x5370;&#x30AD;&#x30FC;&#x2190;&#xFF0C;&#x2192;&#x3092;&#x5229;&#x7528;&#x3057;&#x3066;&#x4FEE;&#x6B63;&#x3057;&#x305F;&#x3044;&#x4F4D;&#x7F6E;&#x306B;&#x30AB;&#x30FC;&#x30BD;&#x30EB;&#x3092;&#x79FB;&#x52D5;&#x3055;&#x305B;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3088;&#x3002;</p></blockquote><hr><h3 id="&#x7DF4;&#x7FD2;&#xFF01;">&#x7DF4;&#x7FD2;&#xFF01;</h3><p>&#x7DF4;&#x7FD2;&#x3092;&#x3057;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;&#x5148;&#x307B;&#x3069;&#x4F5C;&#x6210;&#x3057;&#x305F; <code>practice</code> &#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306E;&#x4E2D;&#x306B;&#x3001;<code>test</code> &#x3068;&#x3044;&#x3046;&#x540D;&#x524D;&#x306E;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;(&#x4F7F;&#x3046;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x306F;&#x3001;<code>cd</code> &#x3068; <code>mkdir</code> &#x3067;&#x3059;&#x3088;)</p><h4 id="&#x89E3;&#x7B54;">&#x89E3;&#x7B54;:</h4><sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Exercise solution: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_test_dir"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_test_dir"><div class="panel-body">
+
+
+<p></p><p class="code-label">command-line</p><p></p><pre><code>        $ cd practice
+        $ mkdir test
+        $ ls
+        test</code></pre>
+</div></div></div></sec>
+
+
+<sec data-title="Exercise solution: Windows" data-id="windows_test_dir" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Exercise solution: Windows<a class="pull-right section atTitle btn btn-default" target="windows_test_dir"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_test_dir"><div class="panel-body">
+
+
+<p></p><p class="code-label">command-line</p><p></p><pre><code>        &gt; cd practice
+        &gt; mkdir test
+        &gt; dir
+        05/08/2014 07:28 PM &lt;DIR&gt;      test</code></pre>
+</div></div></div></sec>
+
+
+<p>&#x304A;&#x3081;&#x3067;&#x3068;&#x3046;&#x3054;&#x3056;&#x3044;&#x307E;&#x3059;&#xFF01;&#x3088;&#x304F;&#x3067;&#x304D;&#x307E;&#x3057;&#x305F;&#xFF01; :)</p><hr><h3 id="&#x7247;&#x4ED8;&#x3051;">&#x7247;&#x4ED8;&#x3051;</h3><p>&#x7DF4;&#x7FD2;&#x3067;&#x4F5C;&#x3063;&#x305F;&#x3082;&#x306E;&#x3092;&#x305D;&#x306E;&#x307E;&#x307E;&#x7F6E;&#x3044;&#x3066;&#x304A;&#x304F;&#x3068;&#x90AA;&#x9B54;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x306D;&#x3002;&#x7DF4;&#x7FD2;&#x304C;&#x304A;&#x308F;&#x3063;&#x305F;&#x3089;&#x3001;&#x524A;&#x9664;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p><p>&#x306F;&#x3058;&#x3081;&#x306B;&#x3001;&#x4F5C;&#x696D;&#x3059;&#x308B;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x3092;&#x30C7;&#x30B9;&#x30AF;&#x30C8;&#x30C3;&#x30D7;&#x306B;&#x623B;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p><sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Clean up: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_back"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_back"><div class="panel-body">
+
+
+<p></p><p class="code-label">command-line</p><p></p><pre><code>        $ cd ..</code></pre>
+</div></div></div></sec>
+
+
+<sec data-title="Clean up: Windows" data-id="windows_back" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Clean up: Windows<a class="pull-right section atTitle btn btn-default" target="windows_back"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_back"><div class="panel-body">
+
+
+<p></p><p class="code-label">command-line</p><p></p><pre><code>        &gt; cd ..</code></pre>
+</div></div></div></sec>
+
+
+<p><code>cd</code> &#x306E;&#x5F8C;&#x306B;&#x3042;&#x308B; <code>..</code> &#x3067;&#x3001;&#x30AB;&#x30EC;&#x30F3;&#x30C8;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x3092;&#x89AA;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306B;&#x5909;&#x66F4;&#x3057;&#x307E;&#x3059;&#x3002;(&#x4ECA;&#x4F5C;&#x696D;&#x3057;&#x3066;&#x3044;&#x308B;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306E;&#x3072;&#x3068;&#x3064;&#x4E0A;&#x306E;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306B;&#x79FB;&#x52D5;&#x3059;&#x308B;&#x3068;&#x3044;&#x3046;&#x3053;&#x3068;&#x3067;&#x3059;&#x306D;&#x3002;)</p><p>&#x73FE;&#x5728;&#x306E;&#x4F5C;&#x696D;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x3066;&#x304A;&#x304D;&#x307E;&#x3057;&#x3087;&#x3046;:</p><sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Check location: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_pwd3"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_pwd3"><div class="panel-body">
+
+
+<p></p><p class="code-label">command-line</p><p></p><pre><code>        $ pwd
+        /Users/olasitarska/Desktop</code></pre>
+</div></div></div></sec>
+
+
+<sec data-title="Check location: Windows" data-id="windows_cd3" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Check location: Windows<a class="pull-right section atTitle btn btn-default" target="windows_cd3"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_cd3"><div class="panel-body">
+
+
+<p></p><p class="code-label">command-line</p><p></p><pre><code>        &gt; cd
+        C:\Users\olasitarska\Desktop</code></pre>
+</div></div></div></sec>
+
+
+<p>&#x3067;&#x306F;&#x3001;<code>practice</code> &#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x3092;&#x524A;&#x9664;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;:</p><blockquote><p><strong>&#x6CE8;&#x610F;</strong>: <code>del</code> &#x3084; <code>rmdir</code>&#x3001;<code>rm</code> &#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3092;&#x4F7F;&#x3063;&#x3066;&#x524A;&#x9664;&#x3057;&#x305F;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306F;&#x5143;&#x306B;&#x623B;&#x305B;&#x307E;&#x305B;&#x3093;&#x3002;<em>&#x5B8C;&#x5168;&#x306B;&#x6D88;&#x3048;&#x3066;&#x3057;&#x307E;&#x3044;&#x307E;&#x3059;</em>&#xFF01; &#x3053;&#x308C;&#x3089;&#x306E;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3092;&#x4F7F;&#x3046;&#x6642;&#x306F;&#x3001;&#x3088;&#x304F;&#x6C17;&#x3092;&#x3064;&#x3051;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x306D;&#x3002;</p></blockquote><sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Delete directory: Windows Powershell, OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_rm"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_rm"><div class="panel-body">
+
+
+<p></p><p class="code-label">command-line</p><p></p><pre><code>        $ rm -r practice</code></pre>
+</div></div></div></sec>
+
+
+<sec data-title="Delete directory: Windows Command Prompt" data-id="windows_rmdir" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Delete directory: Windows Command Prompt<a class="pull-right section atTitle btn btn-default" target="windows_rmdir"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_rmdir"><div class="panel-body">
+
+
+<p></p><p class="code-label">command-line</p><p></p><pre><code>        &gt; rmdir /S practice
+        practice, Are you sure &lt;Y/N&gt;? Y</code></pre>
+</div></div></div></sec>
+
+
+<p>&#x3067;&#x304D;&#x307E;&#x3057;&#x305F;&#xFF01;&#x672C;&#x5F53;&#x306B;&#x524A;&#x9664;&#x3055;&#x308C;&#x305F;&#x304B;&#x3001;&#x78BA;&#x8A8D;&#x3057;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;:</p><sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Check deletion: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_ls2"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_ls2"><div class="panel-body">
+
+
+<p></p><p class="code-label">command-line</p><p></p><pre><code>        $ ls</code></pre>
+</div></div></div></sec>
+
+
+<sec data-title="Check deletion: Windows" data-id="windows_dir2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Check deletion: Windows<a class="pull-right section atTitle btn btn-default" target="windows_dir2"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_dir2"><div class="panel-body">
+
+
+<p></p><p class="code-label">command-line</p><p></p><pre><code>        &gt; dir</code></pre>
+</div></div></div></sec>
+
+
+<h3 id="&#x7D42;&#x4E86;">&#x7D42;&#x4E86;</h3><p>&#x4ECA;&#x56DE;&#x306F;&#x3053;&#x3053;&#x307E;&#x3067;&#x3067;&#x3059;&#x3002;&#x305D;&#x308C;&#x3067;&#x306F;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30E9;&#x30A4;&#x30F3;&#x3092;&#x7D42;&#x4E86;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;&#x304B;&#x3063;&#x3053;&#x3044;&#x3044;&#x3084;&#x308A;&#x65B9;&#x3067;&#x7D42;&#x4E86;&#x3057;&#x305F;&#x3044;&#x3067;&#x3059;&#x3088;&#x306D;? :)</p><sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Exit: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_exit"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_exit"><div class="panel-body">
+
+
+<p></p><p class="code-label">command-line</p><p></p><pre><code>        $ exit</code></pre>
+</div></div></div></sec>
+
+
+<sec data-title="Exit: Windows" data-id="windows_exit" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Exit: Windows<a class="pull-right section atTitle btn btn-default" target="windows_exit"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_exit"><div class="panel-body">
+
+
+<p></p><p class="code-label">command-line</p><p></p><pre><code>        &gt; exit</code></pre>
+</div></div></div></sec>
+
+
+<p>&#x304B;&#x3063;&#x3053;&#x3044;&#x3044;&#x3067;&#x3057;&#x3087;&#x3046;? :)</p><h2 id="&#x307E;&#x3068;&#x3081;">&#x307E;&#x3068;&#x3081;</h2><p>&#x5F79;&#x7ACB;&#x3064;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3092;&#x3044;&#x304F;&#x3064;&#x304B;&#x307E;&#x3068;&#x3081;&#x3066;&#x304A;&#x304D;&#x307E;&#x3059;&#x3002;</p><table>
+<thead>
+<tr><th> &#x30B3;&#x30DE;&#x30F3;&#x30C9; (Windows) </th>
+<th> &#x30B3;&#x30DE;&#x30F3;&#x30C9; (Mac OS / Linux) </th>
+<th> &#x8AAC;&#x660E; </th>
+<th> &#x4F8B; </th>
+</tr></thead><tbody>
+<tr><td style="text-align:left"> exit </td>
+<td style="text-align:left"> exit </td>
+<td style="text-align:left"> &#x30A6;&#x30A4;&#x30F3;&#x30C9;&#x30A6;&#x3092;&#x9589;&#x3058;&#x308B; </td>
+<td style="text-align:left"> <strong>exit</strong> </td>
+</tr><tr><td style="text-align:left"> cd </td>
+<td style="text-align:left"> cd </td>
+<td style="text-align:left"> &#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x3092;&#x5909;&#x66F4; </td>
+<td style="text-align:left"> <strong>cd test</strong> </td>
+</tr><tr><td style="text-align:left"> cd </td>
+<td style="text-align:left"> pwd </td>
+<td style="text-align:left"> &#x73FE;&#x5728;&#x306E;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x3092;&#x8868;&#x793A; </td>
+<td style="text-align:left"> <strong>cd</strong> (Windows) &#x3042;&#x308B;&#x3044;&#x306F; <strong>pwd</strong> (Mac OS / Linux) </td>
+</tr><tr><td style="text-align:left"> dir </td>
+<td style="text-align:left"> ls </td>
+<td style="text-align:left"> &#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;/&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x4E00;&#x89A7;&#x3092;&#x8868;&#x793A; </td>
+<td style="text-align:left"> <strong>dir</strong> </td>
+</tr><tr><td style="text-align:left"> copy </td>
+<td style="text-align:left"> cp </td>
+<td style="text-align:left"> &#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x30B3;&#x30D4;&#x30FC; </td>
+<td style="text-align:left"> <strong>copy c:\test\test.txt c:\windows\test.txt</strong> </td>
+</tr><tr><td style="text-align:left"> move </td>
+<td style="text-align:left"> mv </td>
+<td style="text-align:left"> &#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x79FB;&#x52D5; </td>
+<td style="text-align:left"> <strong>move c:\test\test.txt c:\windows\test.txt</strong> </td>
+</tr><tr><td style="text-align:left"> mkdir </td>
+<td style="text-align:left"> mkdir </td>
+<td style="text-align:left"> &#x65B0;&#x3057;&#x3044;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x3092;&#x4F5C;&#x6210; </td>
+<td style="text-align:left"> <strong>mkdir testdirectory</strong> </td>
+</tr><tr><td style="text-align:left"> rmdir (or del) </td>
+<td style="text-align:left"> rm </td>
+<td style="text-align:left"> &#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x524A;&#x9664; </td>
+<td style="text-align:left"> <strong>del c:\test\test.txt</strong> </td>
+</tr><tr><td style="text-align:left"> rmdir /S </td>
+<td style="text-align:left"> rm -r </td>
+<td style="text-align:left"> &#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x3092;&#x524A;&#x9664; </td>
+<td style="text-align:left"> <strong>rm -r testdirectory</strong> </td>
+</tr><tr><td style="text-align:left"> [CMD] /? </td>
+<td style="text-align:left"> man [CMD] </td>
+<td style="text-align:left"> &#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x306E;&#x30D8;&#x30EB;&#x30D7;&#x3092;&#x8868;&#x793A; </td>
+<td style="text-align:left"> <strong>cd /?</strong> (Windows) &#x3042;&#x308B;&#x3044;&#x306F; <strong>man cd</strong> (Mac OS / Linux)</td>
+</tr></tbody></table>
+
+<p>&#x3053;&#x3053;&#x3067;&#x52C9;&#x5F37;&#x3057;&#x305F;&#x306E;&#x306F;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x306E;&#x307B;&#x3093;&#x306E;&#x4E00;&#x90E8;&#x3067;&#x3057;&#x305F;&#x304C;&#x3001;&#x3053;&#x306E;&#x30EF;&#x30FC;&#x30AF;&#x30B7;&#x30E7;&#x30C3;&#x30D7;&#x3067;&#x4F7F;&#x3046;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x306F;&#x3053;&#x308C;&#x3060;&#x3051;&#x3067;&#x3059;&#x3002;</p><p>&#x3082;&#x3063;&#x3068;&#x52C9;&#x5F37;&#x3057;&#x305F;&#x3044;&#x65B9;&#x306F;&#x3001;<a href="http://ss64.com" target="_blank">ss64.com</a> &#x306B;&#x5404;OS&#x306E;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x4E00;&#x89A7;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;&#x3054;&#x53C2;&#x8003;&#x307E;&#x3067;&#x306B;&#x3002;</p><h2 id="&#x6E96;&#x5099;ok&#xFF1F;">&#x6E96;&#x5099;OK&#xFF1F;</h2><p>&#x3088;&#x3057;&#x3001;&#x6B21;&#x306F;Python&#x3092;&#x52C9;&#x5F37;&#x3057;&#x3066;&#x3044;&#x304D;&#x307E;&#x3057;&#x3087;&#x3046;&#xFF01;</p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../how_the_internet_works/" class="navigation navigation-prev " aria-label="Previous page: インターネットのしくみ">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../python_installation/" class="navigation navigation-next " aria-label="Next page: Pythonのインストール">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"コマンドラインを使ってみよう","level":"1.5","depth":1,"next":{"title":"Pythonのインストール","level":"1.6","depth":1,"path":"python_installation/README.md","ref":"python_installation/README.md","articles":[]},"previous":{"title":"インターネットのしくみ","level":"1.4","depth":1,"path":"how_the_internet_works/README.md","ref":"how_the_internet_works/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"django_version":"2.2.4"},"language":"ja","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"intro_to_command_line/README.md","mtime":"2020-06-27T13:00:23.970Z","type":"markdown"},"gitbook":{"version":"3.4.0","time":"2020-06-27T13:00:41.274Z"},"basePath":"..","book":{"language":"ja"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,596 @@
+
+<!DOCTYPE HTML>
+<html lang="cs" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Editor zdrojového kódu · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.4.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../python_introduction/" />
+    
+    
+    <link rel="prev" href="../python_installation/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Vyhledat" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Úvod
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Instalace
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    Jak funguje internet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Úvod do příkazové řádky
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Instalace Pythonu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Editor zdrojového kódu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Úvod do Pythonu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Co je Django?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Instalace Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    Tvůj první Django projekt!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Django modely
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Nasazení!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django views -- je čas začít tvořit!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    Úvod do HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM (tvorba dotazů)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    Dynamická data v šablonách
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django šablony
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - udělejte svou aplikaci hezčí
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Rozšíření šablon
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Rozšíření vaší aplikace
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Django formuláře
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    Co dál?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Publikováno pomocí HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Editor zdrojového kódu</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="editor-zdrojov&#xE9;ho-k&#xF3;du">Editor zdrojov&#xE9;ho k&#xF3;du</h1><p>Pr&#xE1;v&#x11B; se chyst&#xE1;&#x161; napsat sv&#x16F;j prvn&#xED; &#x159;&#xE1;dek k&#xF3;du, tak&#x17E;e je &#x10D;as s&#xE1;hnout po editoru k&#xF3;du!</p><blockquote><p><strong>Pozn&#xE1;mka</strong> Mohla jsi to ud&#x11B;lat u&#x17E; d&#x159;&#xED;ve v kapitole o instalaci - jestli je to tak, prost&#x11B; jen tuhle kapitolu p&#x159;esko&#x10D; a vrhni se na dal&#x161;&#xED;!</p></blockquote><p>Existuje mnoho r&#x16F;zn&#xFD;ch editor&#x16F; a z velk&#xE9; &#x10D;&#xE1;sti se v&#xFD;b&#x11B;r scvrk&#xE1;v&#xE1; na osobn&#xED; preference. V&#x11B;t&#x161;ina program&#xE1;tor&#x16F;m v Pythonu pou&#x17E;&#xED;v&#xE1; slo&#x17E;it&#xE9;, ale mimo&#x159;&#xE1;dn&#x11B; mocn&#xE9; IDE (integrovan&#xE1; v&#xFD;vojov&#xE1; prost&#x159;ed&#xED;), nap&#x159;&#xED;klad PyCharm. Pro za&#x10D;&#xE1;te&#x10D;n&#xED;ka to m&#x16F;&#x17E;e b&#xFD;t pravd&#x11B;podobn&#x11B; m&#xE9;n&#x11B; vhodn&#xE9;; na&#x161;e doporu&#x10D;en&#xED; jsou stejn&#x11B; mocn&#xE1;, ale mnohem jednodu&#x161;&#x161;&#xED;.</p><p>Na&#x161;e n&#xE1;vrhy jsou napsan&#xE9; n&#xED;&#x17E;e, ale nev&#xE1;hejte se zeptat sv&#xE9;ho kou&#x10D;e, jak&#xE9; jsou jeho preference - pot&#xE9; bude i jednodu&#x161;&#x161;&#xED; z&#xED;skat od n&#x11B;j pomoc s prac&#xED; v editoru.</p><h2 id="gedit">Gedit</h2><p>Gedit je open-source editor. Je k dispozici zdarma pro v&#x161;echny opera&#x10D;n&#xED; syst&#xE9;my.</p><p><a href="https://wiki.gnome.org/Apps/Gedit#Download" target="_blank">St&#xE1;hnout si jej m&#x16F;&#x17E;e&#x161; zde</a></p><h2 id="sublime-text-3">Sublime Text 3</h2><p>Sublime Text je velmi obl&#xED;ben&#xFD; editor s bezplatnou zku&#x161;ebn&#xED; dobou. Lze jej snadno nainstalovat a pou&#x17E;&#xED;vat. Je k dispozici pro v&#x161;echny opera&#x10D;n&#xED; syst&#xE9;my.</p><p><a href="https://www.sublimetext.com/3" target="_blank">St&#xE1;hnout si jej m&#x16F;&#x17E;e&#x161; zde</a></p><h2 id="atom">Atom</h2><p>Atom je velmi nov&#xFD; editor k&#xF3;du vytvo&#x159;en <a href="https://github.com/" target="_blank">GitHub</a>em. Je zdarma, je open-source a m&#xE1; snadnou instalaci a snadn&#xE9; pou&#x17E;it&#xED;. Je k dispozici pro Windows, OS X a Linux.</p><p><a href="https://atom.io/" target="_blank">St&#xE1;hnout si jej m&#x16F;&#x17E;e&#x161; zde</a></p><h2 id="pro&#x10D;-jsme-instalovali-editor-k&#xF3;du">Pro&#x10D; jsme instalovali editor k&#xF3;du?</h2><p>Mo&#x17E;n&#xE1; p&#x159;em&#xFD;&#x161;l&#xED;&#x161;, pro&#x10D; instalujeme speci&#xE1;ln&#xED; editor k&#xF3;du a pro&#x10D; rad&#x11B;ji nezvol&#xED;me n&#x11B;co jako Notepad nebo Word.</p><p>Prvn&#xED; d&#x16F;vod je, &#x17E;e k&#xF3;d mus&#xED; b&#xFD;t <strong>prost&#xFD; text</strong> a programy jako Word a Textedit ve skute&#x10D;nosti produkuj&#xED; bohat&#xFD; text (s fonty a form&#xE1;tov&#xE1;n&#xED;m), pou&#x17E;&#xED;vaj&#xED; vlastn&#xED; form&#xE1;ty jako <a href="https://en.wikipedia.org/wiki/Rich_Text_Format" target="_blank">RTF (Rich Text Format)</a>.</p><p>Druh&#xFD;m d&#x16F;vodem je, &#x17E;e editory k&#xF3;du se specializuj&#xED; na editaci k&#xF3;du, tak&#x17E;e mohou poskytovat u&#x17E;ite&#x10D;n&#xE9; funkce, jako je barevn&#xE9; zv&#xFD;razn&#x11B;n&#xED; k&#xF3;du podle jeho v&#xFD;znamu nebo automatick&#xE9; ukon&#x10D;ov&#xE1;n&#xED; uvozovek apod.</p><p>V&#x161;e to uvid&#xED;me v akci pozd&#x11B;ji. Brzy ti p&#x159;ijde tv&#x16F;j obl&#xED;ben&#xFD; editor k&#xF3;du jako jeden z tv&#xFD;ch nejlep&#x161;&#xED;ch n&#xE1;stroj&#x16F; :)</p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../python_installation/" class="navigation navigation-prev " aria-label="Previous page: Instalace Pythonu">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../python_introduction/" class="navigation navigation-next " aria-label="Next page: Úvod do Pythonu">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Editor zdrojového kódu","level":"1.6","depth":1,"next":{"title":"Úvod do Pythonu","level":"1.7","depth":1,"path":"python_introduction/README.md","ref":"python_introduction/README.md","articles":[]},"previous":{"title":"Instalace Pythonu","level":"1.5","depth":1,"path":"python_installation/README.md","ref":"python_installation/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"django_version":"2.2.4"},"language":"cs","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"code_editor/README.md","mtime":"2020-06-27T13:00:23.642Z","type":"markdown"},"gitbook":{"version":"3.4.0","time":"2020-06-27T13:00:41.274Z"},"basePath":"..","book":{"language":"cs"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

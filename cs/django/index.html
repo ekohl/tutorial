@@ -1,0 +1,596 @@
+
+<!DOCTYPE HTML>
+<html lang="cs" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Co je Django? · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.4.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../django_installation/" />
+    
+    
+    <link rel="prev" href="../python_introduction/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Vyhledat" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Úvod
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Instalace
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    Jak funguje internet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Úvod do příkazové řádky
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Instalace Pythonu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    Editor zdrojového kódu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Úvod do Pythonu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Co je Django?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Instalace Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    Tvůj první Django projekt!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Django modely
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Nasazení!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django views -- je čas začít tvořit!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    Úvod do HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM (tvorba dotazů)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    Dynamická data v šablonách
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django šablony
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - udělejte svou aplikaci hezčí
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Rozšíření šablon
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Rozšíření vaší aplikace
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Django formuláře
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    Co dál?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Publikováno pomocí HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Co je Django?</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="co-je-django">Co je Django?</h1><p>Django (<em>jang-goh/&#x2C8;d&#x292;&#xE6;&#x14B;&#x261;o&#x28A; /</em>) je svobodn&#xFD; a open source webov&#xFD; aplika&#x10D;n&#xED; framework napsan&#xFD; v Pythonu. Webov&#xFD; framework je sada komponent, kter&#xE1; pom&#xE1;h&#xE1; vyv&#xED;jet webov&#xE9; str&#xE1;nky rychleji a snadn&#x11B;ji.</p><p>Kdy&#x17E; vytv&#xE1;&#x159;&#xED;&#x161; webov&#xE9; str&#xE1;nky, v&#x17E;dy pot&#x159;ebuje&#x161; podobnou sadu komponent: zp&#x16F;sob, jak zpracovat ov&#x11B;&#x159;en&#xED; u&#x17E;ivatele (registraci, p&#x159;ihl&#xE1;&#x161;en&#xED;, odhl&#xE1;&#x161;en&#xED;), administra&#x10D;n&#xED; panel pro tv&#xE9; webov&#xE9; str&#xE1;nky, formul&#xE1;&#x159;e, zp&#x16F;sob, jak nahr&#xE1;vat soubory, atd.</p><p>Na&#x161;t&#x11B;st&#xED; si ostatn&#xED; lid&#xE9; ji&#x17E; d&#xE1;vno v&#x161;imli, &#x17E;e v&#xFD;voj&#xE1;&#x159;i &#x10D;el&#xED; stejn&#xFD;m probl&#xE9;m&#x16F;m p&#x159;i vytv&#xE1;&#x159;en&#xED; nov&#xFD;ch str&#xE1;nek. Tak&#x17E;e se spojili a vytvo&#x159;ili frameworky (Django je jedn&#xED;m z nich), kter&#xE9; obsahuj&#xED; sadu hotov&#xFD;ch, snadno pou&#x17E;iteln&#xFD;ch komponent.</p><p>Frameworky existuj&#xED;, aby ti u&#x161;et&#x159;ily &#x10D;as a ty jsi nemusela znovu vynal&#xE9;zat, co u&#x17E; n&#x11B;kdo zdlouhav&#x11B; vym&#xFD;&#x161;lel. Stejn&#x11B; tak by ti m&#x11B;ly u&#x161;et&#x159;it &#x10D;as p&#x159;i vytv&#xE1;&#x159;en&#xED; nov&#xFD;ch webov&#xFD;ch str&#xE1;nek.</p><h2 id="pro&#x10D;-pot&#x159;ebuje&#x161;-framework">Pro&#x10D; pot&#x159;ebuje&#x161; framework?</h2><p>Abychom pochopili, co ve skute&#x10D;nosti Django je, mus&#xED;me se bl&#xED;&#x17E;e pod&#xED;vat na to, co d&#x11B;l&#xE1; server. Prvn&#xED; v&#x11B;c&#xED; je, &#x17E;e server mus&#xED; v&#x11B;d&#x11B;t, &#x17E;e chce&#x161; obslou&#x17E;it tebou zvolenou webovou str&#xE1;nkou.</p><p>P&#x159;edstav si po&#x161;tovn&#xED; schr&#xE1;nku (port), kter&#xE1; na zvolen&#xE9;m portu sleduje p&#x159;&#xED;choz&#xED; zpr&#xE1;vy (po&#x17E;adavky). Podobn&#x11B; se chov&#xE1; webov&#xFD; server. Webov&#xFD; server &#x10D;te po&#x17E;adavky od u&#x17E;ivatele a ode&#x161;le odpov&#x11B;&#x10F; v podob&#x11B; webov&#xE9; str&#xE1;nky. Ale kdy&#x17E; chce&#x161; n&#x11B;co poslat, mus&#xED;&#x161; m&#xED;t n&#x11B;jak&#xFD; obsah. A Django je to, co ti pom&#x16F;&#x17E;e vytvo&#x159;it tento obsah.</p><h2 id="co-se-stane-kdy&#x17E;-n&#x11B;kdo-po&#x17E;aduje-webov&#xE9;-str&#xE1;nky-ze-serveru">Co se stane, kdy&#x17E; n&#x11B;kdo po&#x17E;aduje webov&#xE9; str&#xE1;nky ze serveru?</h2><p>Pokud p&#x159;ijde &#x17E;&#xE1;dost na webov&#xFD; server, je p&#x159;ed&#xE1;na Django frameworku, kter&#xFD; se sna&#x17E;&#xED; p&#x159;ij&#xED;t na to, co vlastn&#x11B; u&#x17E;ivatel po&#x17E;aduje. Nejprve vezme adresu webov&#xE9; str&#xE1;nky a sna&#x17E;&#xED; se p&#x159;ij&#xED;t na to, co ud&#x11B;lat. Tuto &#x10D;&#xE1;st prov&#xE1;d&#xED; Django <strong>urlresolver</strong> (v&#x161;imni si, &#x17E;e adresa webov&#xE9; str&#xE1;nky se naz&#xFD;v&#xE1; URL - Uniform Resource Locator - proto jm&#xE9;no <em>urlresolver</em> d&#xE1;v&#xE1; smysl). Tato &#x10D;innost nen&#xED; slo&#x17E;it&#xE1; - bere si seznam vzor&#x16F; a v n&#x11B;m se pokou&#x161;&#xED; vyhledat shodu s URL. Django kontroluje seznam vzor&#x16F; od shora dol&#x16F; a pokud n&#x11B;kter&#xFD; odpov&#xED;d&#xE1;, pak Django p&#x159;ed&#xE1; &#x17E;&#xE1;dost souvisej&#xED;c&#xED; funkci, kter&#xE1; se naz&#xFD;v&#xE1; <em>view</em>.</p><p>P&#x159;edstav si po&#x161;&#x165;&#xE1;ka s dopisem. Kr&#xE1;&#x10D;&#xED; po ulici a kontroluje ka&#x17E;d&#xE9; &#x10D;&#xED;slo domu, jestli odpov&#xED;d&#xE1; adrese na dopisu. Pokud adresa odpov&#xED;d&#xE1;, dopis vlo&#x17E;&#xED; do schr&#xE1;nky. Stejn&#xFD;m zp&#x16F;sobem funguje urlresolver!</p><p>Ve funkci <em>view</em> se prov&#xE1;d&#xED; v&#x161;echny zaj&#xED;mav&#xE9; v&#x11B;ci: m&#x16F;&#x17E;eme se pod&#xED;vat do datab&#xE1;ze a vyhledat n&#x11B;jak&#xE9; informace. Co kdy&#x17E; chce u&#x17E;ivatel zm&#x11B;nit n&#x11B;co v datech? Dopis m&#x16F;&#x17E;e &#x159;&#xED;kat &quot;pros&#xED;m zm&#x11B;&#x148;te popis m&#xE9; pr&#xE1;ce.&quot; <em>View</em> m&#x16F;&#x17E;e zkontrolovat, zda m&#xE1;&#x161; povolen&#xED; tuto zm&#x11B;nu prov&#xE9;st, pak aktualizuje popis pr&#xE1;ce a ode&#x161;le ti zpr&#xE1;vu: &quot;Hotovo!&quot;. V tuto chv&#xED;li <em>view</em> vygeneruje odpov&#x11B;&#x10F; a Django ji m&#x16F;&#x17E;e odeslat tv&#xE9;mu webov&#xE9;mu prohl&#xED;&#x17E;eci.</p><p>Samoz&#x159;ejm&#x11B;, &#x17E;e v&#xFD;&#x161;e uveden&#xFD; popis je trochu zjednodu&#x161;en&#xFD;, ale prozat&#xED;m nen&#xED; nutn&#xE9; zn&#xE1;t v&#x161;echny technick&#xE9; detaily. Pro obecnou p&#x159;edstavu to posta&#x10D;&#xED;.</p><p>Tak&#x17E;e m&#xED;sto studov&#xE1;n&#xED; p&#x159;&#xED;li&#x161;n&#xFD;ch podrobnost&#xED; jednodu&#x161;e za&#x10D;neme n&#x11B;co vytv&#xE1;&#x159;et pomoc&#xED; Djanga, &#x10D;&#xED;m&#x17E; se nau&#x10D;&#xED;me v&#x161;echny d&#x16F;le&#x17E;it&#xE9; &#x10D;&#xE1;sti!</p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../python_introduction/" class="navigation navigation-prev " aria-label="Previous page: Úvod do Pythonu">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../django_installation/" class="navigation navigation-next " aria-label="Next page: Instalace Django">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Co je Django?","level":"1.8","depth":1,"next":{"title":"Instalace Django","level":"1.9","depth":1,"path":"django_installation/README.md","ref":"django_installation/README.md","articles":[]},"previous":{"title":"Úvod do Pythonu","level":"1.7","depth":1,"path":"python_introduction/README.md","ref":"python_introduction/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"django_version":"2.2.4"},"language":"cs","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"django/README.md","mtime":"2020-06-27T13:00:23.646Z","type":"markdown"},"gitbook":{"version":"3.4.0","time":"2020-06-27T13:00:41.274Z"},"basePath":"..","book":{"language":"cs"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

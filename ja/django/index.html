@@ -1,0 +1,719 @@
+
+<!DOCTYPE HTML>
+<html lang="ja" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Djangoってなに？ · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.4.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../django_installation/" />
+    
+    
+    <link rel="prev" href="../python_introduction/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="検索ワードを入力" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    はじめに
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    インストール
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../installation/">
+            
+                <a href="../installation/#command-line">
+            
+                    
+                    コマンドライン
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../installation/">
+            
+                <a href="../installation/#python">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../installation/">
+            
+                <a href="../installation/#code-editor">
+            
+                    
+                    コードエディタ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../installation/">
+            
+                <a href="../installation/#virtualenv">
+            
+                    
+                    仮想環境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../installation/">
+            
+                <a href="../installation/#django">
+            
+                    
+                    Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../installation/">
+            
+                <a href="../installation/#git">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../installation/">
+            
+                <a href="../installation/#github">
+            
+                    
+                    GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../installation/">
+            
+                <a href="../installation/#pythonanywhere">
+            
+                    
+                    PythonAnywhere
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    Chromebookのセットアップ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    インターネットのしくみ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    コマンドラインを使ってみよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Pythonのインストール
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    コードエディタ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Python入門
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Djangoってなに？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Djangoのインストール
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    プロジェクトを作成しよう！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Djangoモデル
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    ログインページを作ろう（Django admin）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    デプロイ！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Djangoビュー
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    HTML 入門
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM（クエリセット）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    テンプレート内の動的データ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Djangoテンプレート
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSSでカワイくしよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    テンプレートを拡張しよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    アプリケーションを拡張しよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Djangoフォーム
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    次のステップは？
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKitで公開 
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Djangoってなに？</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="django&#x3063;&#x3066;&#x306A;&#x306B;&#xFF1F;">Django&#x3063;&#x3066;&#x306A;&#x306B;&#xFF1F;</h1><p>Django (/&#x2C8;d&#x292;&#xE6;&#x14B;&#x261;o&#x28A;/ <em>jang-goh</em> &#x30B8;&#x30E3;&#x30F3;&#x30B4; &#x3068;&#x8AAD;&#x307F;&#x307E;&#x3059;) &#x306F;&#x7121;&#x6599;&#x3067;&#x30AA;&#x30FC;&#x30D7;&#x30F3;&#x30BD;&#x30FC;&#x30B9;&#x3068;&#x3057;&#x3066;&#x516C;&#x958B;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;Python&#x3092;&#x4F7F;&#x7528;&#x3057;&#x305F;Web&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30D5;&#x30EC;&#x30FC;&#x30E0;&#x30EF;&#x30FC;&#x30AF;&#x3067;&#x3059;&#x3002; Web &#x30D5;&#x30EC;&#x30FC;&#x30E0;&#x30EF;&#x30FC;&#x30AF;&#x306F;&#x3001;&#x7D20;&#x65E9;&#x304F;&#x3001;&#x7C21;&#x5358;&#x306B;&#x30A6;&#x30A7;&#x30D6;&#x30B5;&#x30A4;&#x30C8;&#x3092;&#x958B;&#x767A;&#x3059;&#x308B;&#x306E;&#x306B;&#x5F79;&#x7ACB;&#x3064;&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x306E;&#x4E00;&#x5F0F;&#x304C;&#x542B;&#x307E;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p><p>&#x307B;&#x3089;&#x3001;Web&#x30B5;&#x30A4;&#x30C8;&#x3092;&#x69CB;&#x7BC9;&#x3059;&#x308B;&#x6642;&#x3001;&#x540C;&#x3058;&#x3088;&#x3046;&#x306A;&#x69CB;&#x9020;&#x304C;&#x6BCE;&#x56DE;&#x5FC5;&#x8981;&#x306B;&#x306A;&#x3063;&#x3066;&#x304D;&#x307E;&#x3059;&#x3088;&#x306D;&#x3002;&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x8A8D;&#x8A3C;&#xFF08;&#x30B5;&#x30A4;&#x30F3;&#x30A2;&#x30C3;&#x30D7;&#x3001;&#x30B5;&#x30A4;&#x30F3;&#x30A4;&#x30F3;&#x3001;&#x30B5;&#x30A4;&#x30F3;&#x30A2;&#x30A6;&#x30C8;&#xFF09;&#x3001;&#x7BA1;&#x7406;&#x8005;&#x7528;&#x306E;&#x753B;&#x9762;&#x3001;&#x30D5;&#x30A9;&#x30FC;&#x30E0;&#x3001;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x30A2;&#x30C3;&#x30D7;&#x30ED;&#x30FC;&#x30C9;&#x306A;&#x3069;&#x3002;</p><p>&#x958B;&#x767A;&#x8005;&#x305F;&#x3061;&#x306F;&#x30B5;&#x30A4;&#x30C8;&#x3092;&#x69CB;&#x7BC9;&#x3059;&#x308B;&#x5EA6;&#x306B;&#x540C;&#x3058;&#x554F;&#x984C;&#x3092;&#x62B1;&#x3048;&#x305F;&#x305F;&#x3081;&#x3001;&#x307F;&#x3093;&#x306A;&#x3067;&#x529B;&#x3092;&#x5408;&#x308F;&#x305B;&#x3066;&#x30D5;&#x30EC;&#x30FC;&#x30E0;&#x30EF;&#x30FC;&#x30AF;&#x3092;&#x958B;&#x767A;&#x3057;&#x307E;&#x3057;&#x305F;&#x3002;&#xFF08;Django&#x306F;&#x30D5;&#x30EC;&#x30FC;&#x30E0;&#x30EF;&#x30FC;&#x30AF;&#x306E;&#x3072;&#x3068;&#x3064;&#x3067;&#x3059;&#x3002;&#xFF09;&#x5E78;&#x904B;&#x306A;&#x3053;&#x3068;&#x306B;&#x3001;&#x79C1;&#x305F;&#x3061;&#x306F;&#x3001;&#x958B;&#x767A;&#x306B;&#x5FC5;&#x8981;&#x306A;&#x8981;&#x7D20;&#x304C;&#x3059;&#x3067;&#x306B;&#x542B;&#x307E;&#x308C;&#x3066;&#x3044;&#x308B;&#x30D5;&#x30EC;&#x30FC;&#x30E0;&#x30EF;&#x30FC;&#x30AF;&#x3092;&#x4F7F;&#x3063;&#x3066;&#x958B;&#x767A;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p><p>&#x30D5;&#x30EC;&#x30FC;&#x30E0;&#x30EF;&#x30FC;&#x30AF;&#x3092;&#x4F7F;&#x3046;&#x3053;&#x3068;&#x3067;&#x3001;&#x79C1;&#x305F;&#x3061;&#x306F;&#x958B;&#x767A;&#x3092;&#x30A4;&#x30C1;&#x304B;&#x3089;&#x4F5C;&#x308A;&#x76F4;&#x3057;&#x3066;&#x8ECA;&#x8F2A;&#x306E;&#x518D;&#x767A;&#x660E;&#x3092;&#x3059;&#x308B;&#x3053;&#x3068;&#x3092;&#x907F;&#x3051;&#x3089;&#x308C;&#x307E;&#x3059;&#x3002;&#x307E;&#x305F;&#x3001;&#x65B0;&#x3057;&#x3044;&#x30B5;&#x30A4;&#x30C8;&#x3092;&#x69CB;&#x7BC9;&#x3059;&#x308B;&#x969B;&#x306B;&#x304B;&#x304B;&#x308B;&#x6700;&#x521D;&#x306E;&#x6E96;&#x5099;&#x306B;&#x5FC5;&#x8981;&#x306A;&#x30B3;&#x30B9;&#x30C8;&#x3092;&#x8EFD;&#x6E1B;&#x3057;&#x307E;&#x3059;&#x3002;</p><h2 id="&#x306A;&#x305C;&#x30D5;&#x30EC;&#x30FC;&#x30E0;&#x30EF;&#x30FC;&#x30AF;&#x3092;&#x5FC5;&#x8981;&#x3068;&#x3059;&#x308B;&#x304B;&#x3002;">&#x306A;&#x305C;&#x30D5;&#x30EC;&#x30FC;&#x30E0;&#x30EF;&#x30FC;&#x30AF;&#x3092;&#x5FC5;&#x8981;&#x3068;&#x3059;&#x308B;&#x304B;&#x3002;</h2><p>Django&#x3092;&#x672C;&#x5F53;&#x306B;&#x7406;&#x89E3;&#x3059;&#x308B;&#x305F;&#x3081;&#x306B;&#x3001;&#x30B5;&#x30FC;&#x30D0;&#x30FC;&#x306E;&#x5F79;&#x5272;&#x306B;&#x3064;&#x3044;&#x3066;&#x3082;&#x3046;&#x5C11;&#x3057;&#x8003;&#x3048;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;&#x30B5;&#x30FC;&#x30D0;&#x30FC;&#x306B;Web&#x30DA;&#x30FC;&#x30B8;&#x3092;&#x914D;&#x4FE1;&#x3057;&#x3066;&#x3082;&#x3089;&#x3046;&#x3088;&#x3046;&#x306B;&#x3059;&#x308B;&#x306B;&#x306F;&#x3001;&#x30B5;&#x30FC;&#x30D0;&#x30FC;&#x306B;&#x305D;&#x306E;&#x8A2D;&#x5B9A;&#x3092;&#x3059;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;</p><p>&#x624B;&#x7D19;&#x304C;&#x5C4A;&#x304F;&#x30DD;&#x30B9;&#x30C8;&#x3092;&#x60F3;&#x50CF;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;&#x624B;&#x7D19;&#x306F;&#x30E6;&#x30FC;&#x30B6;&#x304B;&#x3089;Web&#x30B5;&#x30FC;&#x30D0;&#x30FC;&#x306B;&#x9001;&#x3089;&#x308C;&#x308B;&#x30EA;&#x30AF;&#x30A8;&#x30B9;&#x30C8;&#x306E;&#x3053;&#x3068;&#x3067;&#x3001;&#x30DD;&#x30B9;&#x30C8;&#x306F;Web&#x30B5;&#x30FC;&#x30D0;&#x30FC;&#x306E;&#x30DD;&#x30FC;&#x30C8;&#x306E;&#x3053;&#x3068;&#x3067;&#x3059;&#x3002; Web&#x30B5;&#x30FC;&#x30D0;&#x30FC;&#x304C;&#x884C;&#x3063;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002; Web&#x30B5;&#x30FC;&#x30D0;&#x30FC;&#x306F;&#x3053;&#x306E;&#x30DD;&#x30B9;&#x30C8;&#x3092;&#x76E3;&#x8996;&#x3057;&#x3066;&#x3001;&#x624B;&#x7D19;&#x304C;&#x5C4A;&#x304F;&#x3068;&#x305D;&#x308C;&#x3092;&#x8AAD;&#x307F;&#x3001;Web&#x30DA;&#x30FC;&#x30B8;&#x304B;&#x3089;&#x8FD4;&#x4E8B;&#x3092;&#x9001;&#x308A;&#x307E;&#x3059;&#x3002; &#x8FD4;&#x4E8B;&#x3092;&#x9001;&#x308D;&#x3046;&#x3068;&#x3059;&#x308B;&#x6642;&#x3001;&#x30B3;&#x30F3;&#x30C6;&#x30F3;&#x30C4;&#x304C;&#x5FC5;&#x8981;&#x3067;&#x3059;&#x306D;&#x3002; Django&#x306F;&#x3001;&#x3042;&#x306A;&#x305F;&#x304C;&#x305D;&#x306E;&#x30B3;&#x30F3;&#x30C6;&#x30F3;&#x30C4;&#x3092;&#x4F5C;&#x308B;&#x624B;&#x52A9;&#x3051;&#x3092;&#x3059;&#x308B;&#x3082;&#x306E;&#x3067;&#x3059;&#x3002;</p><h2 id="&#x8AB0;&#x304B;&#x304C;&#x3042;&#x306A;&#x305F;&#x306E;web-&#x30B5;&#x30A4;&#x30C8;&#x306B;&#x30EA;&#x30AF;&#x30A8;&#x30B9;&#x30C8;&#x3092;&#x8981;&#x6C42;&#x3057;&#x305F;&#x3068;&#x304D;&#x3069;&#x3046;&#x306A;&#x308A;&#x307E;&#x3059;&#x304B;&#x3002;">&#x8AB0;&#x304B;&#x304C;&#x3042;&#x306A;&#x305F;&#x306E;WEB &#x30B5;&#x30A4;&#x30C8;&#x306B;&#x30EA;&#x30AF;&#x30A8;&#x30B9;&#x30C8;&#x3092;&#x8981;&#x6C42;&#x3057;&#x305F;&#x3068;&#x304D;&#x3069;&#x3046;&#x306A;&#x308A;&#x307E;&#x3059;&#x304B;&#x3002;</h2><p>Web&#x30B5;&#x30FC;&#x30D0;&#x30FC;&#x306B;&#x30EA;&#x30AF;&#x30A8;&#x30B9;&#x30C8;&#x304C;&#x3042;&#x308B;&#x3068;&#x3001;Django&#x306B;&#x4F1D;&#x3048;&#x3089;&#x308C;&#x3001;&#x30EA;&#x30AF;&#x30A8;&#x30B9;&#x30C8;&#x306E;&#x5185;&#x5BB9;&#x3092;&#x628A;&#x63E1;&#x3057;&#x3088;&#x3046;&#x3068;&#x3057;&#x307E;&#x3059;&#x3002; &#x307E;&#x305A;Web&#x30DA;&#x30FC;&#x30B8;&#x306E;&#x30A2;&#x30C9;&#x30EC;&#x30B9;&#x3092;&#x8ABF;&#x3079;&#x3001;&#x30EA;&#x30AF;&#x30A8;&#x30B9;&#x30C8;&#x306B;&#x5BFE;&#x3057;&#x3066;&#x4F55;&#x3092;&#x3059;&#x308B;&#x304B;&#x6C7A;&#x3081;&#x307E;&#x3059;&#x3002; &#x3053;&#x308C;&#x306F;&#x3001;Django&#x306E;<strong>urlresolver</strong>&#x304C;&#x884C;&#x3044;&#x307E;&#x3059;&#x3002;&#xFF08;Web&#x30B5;&#x30A4;&#x30C8;&#x306E;&#x30A2;&#x30C9;&#x30EC;&#x30B9;&#x306F;URL&#x3068;&#x547C;&#x3070;&#x308C;&#x307E;&#x3059;&#x3002; Uniform Resource Locator &#x306E;&#x7565;&#x3067;&#x3059;&#x3002;-resolver&#x3068;&#x306F;&#x300C;&#x89E3;&#x6C7A;&#x3059;&#x308B;&#x3082;&#x306E;&#x300D;&#x3068;&#x3044;&#x3046;&#x610F;&#x5473;&#x3067;&#x3059;&#x306E;&#x3067;&#x3001;<em>urlresolver</em> &#x3068;&#x3044;&#x3046;&#x306E;&#x306F;&#x3046;&#x306A;&#x305A;&#x3051;&#x307E;&#x3059;&#x3088;&#x306D;&#x3002;)&#x3002; &#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x306E;&#x30EA;&#x30B9;&#x30C8;&#x3092;&#x53D7;&#x3051;&#x53D6;&#x3063;&#x3066;&#x3001;URL&#x306B;&#x4E00;&#x81F4;&#x3059;&#x308B;&#x3082;&#x306E;&#x3092;&#x63A2;&#x3057;&#x307E;&#x3059;&#x3002;&#x3042;&#x307E;&#x308A;&#x8CE2;&#x3044;&#x3068;&#x306F;&#x3044;&#x3048;&#x307E;&#x305B;&#x3093;&#x3002; Django&#x306F;&#x4E0A;&#x304B;&#x3089;&#x4E0B;&#x306B;URL&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x3092;&#x9806;&#x306B;&#x8ABF;&#x3079;&#x3066;&#x3044;&#x304D;&#x307E;&#x3059;&#x3002;&#x305D;&#x3053;&#x3067;&#x4F55;&#x304B;&#x304C;&#x30DE;&#x30C3;&#x30C1;&#x3059;&#x308B;&#x3068;&#x3001;Django&#x306F;<em>&#x30D3;&#x30E5;&#x30FC;</em>&#x3068;&#x547C;&#x3070;&#x308C;&#x308B;&#x95A2;&#x6570;&#x306B;&#x30EA;&#x30AF;&#x30A8;&#x30B9;&#x30C8;&#x3092;&#x9001;&#x308A;&#x307E;&#x3059;&#x3002;</p><p>&#x90F5;&#x4FBF;&#x914D;&#x9054;&#x54E1;&#x3092;&#x601D;&#x3044;&#x6D6E;&#x304B;&#x3079;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002; &#x914D;&#x9054;&#x54E1;&#x306F;&#x3001;&#x901A;&#x308A;&#x3092;&#x6B69;&#x304D;&#x3001;&#x3072;&#x3068;&#x3064;&#x3072;&#x3068;&#x3064;&#x306E;&#x5BB6;&#x306E;&#x756A;&#x5730;&#x3068;&#x3001;&#x624B;&#x7D19;&#x306B;&#x66F8;&#x304B;&#x308C;&#x3066;&#x3044;&#x308B;&#x756A;&#x5730;&#x3092;&#x898B;&#x6BD4;&#x3079;&#x3066;&#x884C;&#x304D;&#x307E;&#x3059;&#x3002; &#x30DE;&#x30C3;&#x30C1;&#x3059;&#x308B;&#x756A;&#x5730;&#x304C;&#x3042;&#x3063;&#x305F;&#x3089;&#x3001;&#x624B;&#x7D19;&#x3092;&#x305D;&#x3053;&#x306B;&#x7F6E;&#x3044;&#x3066;&#x3044;&#x304D;&#x307E;&#x3059;&#x3002; urlresolver&#x3082;&#x540C;&#x3058;&#x4ED5;&#x7D44;&#x307F;&#x3067;&#x3059;&#x3002;</p><p><em>&#x30D3;&#x30E5;&#x30FC;</em>&#x95A2;&#x6570;&#x3067;&#x306F;&#x3001;&#x9762;&#x767D;&#x3044;&#x3053;&#x3068;&#x304C;&#x884C;&#x308F;&#x308C;&#x307E;&#x3059;&#x3002;&#x79C1;&#x305F;&#x3061;&#x306F;&#x3001;&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x306B;&#x60C5;&#x5831;&#x3092;&#x63A2;&#x3057;&#x306B;&#x3044;&#x304D;&#x307E;&#x3059;&#x3002; &#x6642;&#x306B;&#x3001;&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x304C;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x5909;&#x66F4;&#x3059;&#x308B;&#x3088;&#x3046;&#x6C42;&#x3081;&#x3066;&#x304D;&#x307E;&#x3059;&#x3088;&#x306D;&#xFF1F; &#x4F8B;&#x3048;&#x3070;&#x3001;&#x300C;&#x79C1;&#x306E;&#x4ED5;&#x4E8B;&#x5185;&#x5BB9;&#x3092;&#x5909;&#x3048;&#x3066;&#x4E0B;&#x3055;&#x3044;&#x300D;&#x3068;&#x3044;&#x3063;&#x305F;&#x624B;&#x7D19;&#x306E;&#x3088;&#x3046;&#x306B;&#x3002;<em>&#x30D3;&#x30E5;&#x30FC;</em>&#x306F;&#x3001;&#x307E;&#x305A;&#x3042;&#x306A;&#x305F;&#x306B;&#x305D;&#x306E;&#x6A29;&#x9650;&#x304C;&#x3042;&#x308B;&#x304B;&#x78BA;&#x8A8D;&#x3057;&#x307E;&#x3059;&#x3002;&#x6B21;&#x306B;&#x3001;&#x4ED5;&#x4E8B;&#x5185;&#x5BB9;&#x3092;&#x66F8;&#x304D;&#x63DB;&#x3048;&#x3066;&#x3001;&#x300C;&#x5B8C;&#x4E86;&#x3057;&#x307E;&#x3057;&#x305F;&#xFF01;&#x300D;&#x3068;&#x3044;&#x3046;&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;&#x3092;&#x3042;&#x306A;&#x305F;&#x306B;&#x9001;&#x308A;&#x8FD4;&#x3057;&#x307E;&#x3059;&#x3002;&#x305D;&#x3057;&#x3066;&#x3001;<em>&#x30D3;&#x30E5;&#x30FC;</em>&#x304C;&#x53CD;&#x5FDC;&#x3092;&#x8FD4;&#x3057;&#x3066;&#x3001;Django&#x304C;&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x306E;Web&#x30D6;&#x30E9;&#x30A6;&#x30B6;&#x306B;&#x60C5;&#x5831;&#x3092;&#x9001;&#x308A;&#x307E;&#x3059;&#x3002;</p><p>&#x4E0A;&#x8A18;&#x306E;&#x8AAC;&#x660E;&#x306F;&#x3001;&#x591A;&#x5C11;&#x7C21;&#x7565;&#x5316;&#x3057;&#x3066;&#x8AAC;&#x660E;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x3057;&#x304B;&#x3057;&#x3001;&#x4ECA;&#x3053;&#x3053;&#x3067;&#x306F;&#x3001;&#x6280;&#x8853;&#x7684;&#x306A;&#x3053;&#x3068;&#x3092;&#x5B8C;&#x74A7;&#x306B;&#x7406;&#x89E3;&#x3059;&#x308B;&#x5FC5;&#x8981;&#x306F;&#x3042;&#x308A;&#x307E;&#x305B;&#x3093;&#x3002;&#x6982;&#x5FF5;&#x304C;&#x5206;&#x304B;&#x308C;&#x3070;&#x5341;&#x5206;&#x3067;&#x3059;&#x3002;</p><p>&#x3053;&#x308C;&#x4EE5;&#x4E0A;&#x8A73;&#x7D30;&#x306B;&#x3064;&#x3044;&#x3066;&#x6DF1;&#x304F;&#x8AAC;&#x660E;&#x3059;&#x308B;&#x3088;&#x308A;&#x3001;&#x304D;&#x3063;&#x3068;&#x3001;Django&#x3092;&#x4F7F;&#x3063;&#x3066;&#x5B9F;&#x969B;&#x306B;&#x624B;&#x3092;&#x52D5;&#x304B;&#x3057;&#x3066;&#x4F5C;&#x3063;&#x3066;&#x307F;&#x308B;&#x65B9;&#x304C;&#x3044;&#x3044;&#x3067;&#x3057;&#x3087;&#x3046;&#x3002;&#x91CD;&#x8981;&#x306A;&#x4E8B;&#x306F;&#x3059;&#x3079;&#x3066;&#x305D;&#x306E;&#x904E;&#x7A0B;&#x3067;&#x5B66;&#x3079;&#x307E;&#x3059;&#x3088;&#xFF01;</p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../python_introduction/" class="navigation navigation-prev " aria-label="Previous page: Python入門">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../django_installation/" class="navigation navigation-next " aria-label="Next page: Djangoのインストール">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Djangoってなに？","level":"1.9","depth":1,"next":{"title":"Djangoのインストール","level":"1.10","depth":1,"path":"django_installation/README.md","ref":"django_installation/README.md","articles":[]},"previous":{"title":"Python入門","level":"1.8","depth":1,"path":"python_introduction/README.md","ref":"python_introduction/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"django_version":"2.2.4"},"language":"ja","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"django/README.md","mtime":"2020-06-27T13:00:23.942Z","type":"markdown"},"gitbook":{"version":"3.4.0","time":"2020-06-27T13:00:41.274Z"},"basePath":"..","book":{"language":"ja"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

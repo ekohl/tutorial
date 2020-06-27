@@ -1,0 +1,707 @@
+
+<!DOCTYPE HTML>
+<html lang="sk" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Django modely · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.4.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../django_admin/" />
+    
+    
+    <link rel="prev" href="../django_start_project/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Úvod
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Inštalácia
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    Inštalácia (chromebook)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    Ako funguje Internet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Úvod do príkazového riadku
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Inštalácia Pythonu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    Editor kódu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Úvod do jazyka Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Čo je Django?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Inštalácia Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    Tvoj prvý Django projekt!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.12" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Django modely
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Nasadenie!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django url
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django views - čas tvoriť!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    Úvod do HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM (tvorba dotazov)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    Dynamické dáta v šablónach
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Šablóny Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - skrášli to
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Rozširovanie šablón
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Ako rozšíriť aplikáciu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Formuláre Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    Čo ďalej?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Django modely</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="django-modely">Django modely</h1><p>Teraz p&#xF4;jdeme vytvori&#x165; nie&#x10D;o, &#x10D;o bude uchov&#xE1;va&#x165; na&#x161;e pr&#xED;spevky v blogu. Aby sme to vedeli spravi&#x165;, mus&#xED;me si najsk&#xF4;r poveda&#x165; nie&#x10D;o o <code>objektoch</code>.</p><h2 id="objekty">Objekty</h2><p>V programovan&#xED; sa pou&#x17E;&#xED;va pojem <code>objektovo orientovan&#xE9; programovanie</code>. My&#x161;lienka spo&#x10D;&#xED;va v tom, &#x17E;e namiesto vypisovania nudn&#xFD;ch sekvenci&#xED; program&#xE1;torsk&#xFD;ch pr&#xED;kazov m&#xF4;&#x17E;eme veci modelova&#x165; a definova&#x165; ako maj&#xFA; navz&#xE1;jom komunikova&#x165;.</p><p>Tak&#x17E;e &#x10D;o je to objekt? Je to zbierka vlastnost&#xED; a akci&#xED;. Znie to &#x10D;udne, ale uk&#xE1;&#x17E;eme si pr&#xED;klad.</p><p>Ak chceme namodelova&#x165; ma&#x10D;ku, vytvor&#xED;me objekt <code>Macka</code>, ktor&#xE1; m&#xE1; nejak&#xE9; vlastnosti, napr&#xED;klad: <code>farba</code>, <code>vek</code>, <code>nalada</code> (t. j. dobr&#xE1;, zl&#xE1;, ospal&#xE1; ;)), a <code>majitel</code> (ktor&#xFD; je objektom <code>Osoba</code> alebo mo&#x17E;no v pr&#xED;pade t&#xFA;lavej ma&#x10D;ky bude t&#xE1;to vlastnos&#x165; pr&#xE1;zdna).</p><p>&#x10E;alej m&#xE1; <code>Macka</code> nieko&#x13E;ko akci&#xED;: <code>priast</code>, <code>skrabat</code> alebo <code>krmit</code> (v ktorej d&#xE1;me ma&#x10D;ke nejak&#xE9; <code>MacacieZradlo</code>, ktor&#xE9; by mohlo by&#x165; samostatn&#xFD;m objektom s vlastnos&#x165;ami, t. j. <code>chut</code>).</p><pre><code>        Macka
+        --------
+        farba
+        vek
+        nalada
+        majitel
+        priast()
+        skrabat()
+        krmit(mac_zradlo)
+
+
+        MacacieZradlo
+        --------
+        chut
+
+
+        MacacieZradlo
+        --------
+        chut</code></pre>
+<p>Tak&#x17E;e v podstate my&#x161;lienka je pop&#xED;sa&#x165; re&#xE1;lne veci k&#xF3;dom pomocou vlastnost&#xED; (ktor&#xFD;m hovor&#xED;me <code>vlastnosti objektu/object properties</code>) a akci&#xED; (tie naz&#xFD;vame <code>met&#xF3;dy</code>).</p><p>Ako teda budeme modelova&#x165; blog post? Chceme predsa vytvori&#x165; blog, nie?</p><p>Mus&#xED;me odpoveda&#x165; na ot&#xE1;zku: &#x10C;o je vlastne blog post? Ak&#xE9; vlastnosti by mal ma&#x165;?</p><p>No, n&#xE1;&#x161; blog post ur&#x10D;ite potrebuje nejak&#xFD; text s obsahom a titulkom, nie? Bolo by tie&#x17E; fajn vedie&#x165;, kto ho nap&#xED;sal - tak&#x17E;e potrebujeme autora. A nakoniec, chceme vedie&#x165;, kedy bol post vytvoren&#xFD; a zverejnen&#xFD;.</p><pre><code>        Post
+        --------
+        title
+        text
+        author
+        created_date
+        published_date</code></pre>
+<p>&#x10C;o v&#x161;etko m&#xF4;&#x17E;eme s blog postom robi&#x165;? Bolo by dobr&#xE9; ma&#x165; nejak&#xFA; <code>met&#xF3;du</code>, ktor&#xE1; post publikuje, v&#x161;ak?</p><p>Tak&#x17E;e budeme potrebova&#x165; met&#xF3;du <code>publish</code>.</p><p>Ke&#x10F;&#x17E;e u&#x17E; vieme, &#x10D;o chceme dosiahnu&#x165;, za&#x10D;nime tvori&#x165; model v Djangu!</p><h2 id="django-model">Django model</h2><p>Ke&#x10F;&#x17E;e u&#x17E; vieme, &#x10D;o je objekt, m&#xF4;&#x17E;eme vytvori&#x165; Django model pre n&#xE1;&#x161; blog post.</p><p>Model v Djangu je &#x161;peci&#xE1;lny typ objektu - je ulo&#x17E;en&#xFD; v <code>datab&#xE1;ze</code>. Datab&#xE1;za je s&#xFA;bor &#xFA;dajov. Je to miesto, kde bude&#x161; uklada&#x165; inform&#xE1;cie o u&#x17E;&#xED;vate&#x13E;och, pr&#xED;spevkoch na blogu, at&#x10F;. Na ukladanie &#xFA;dajov budeme pou&#x17E;&#xED;va&#x165; datab&#xE1;zu SQLite. Je to &#x161;tandardn&#xFD; v&#xFD;chodz&#xED; datab&#xE1;zov&#xFD; adapt&#xE9;r v Djangu -- nateraz n&#xE1;m bude sta&#x10D;i&#x165;.</p><p>Model v datab&#xE1;ze si m&#xF4;&#x17E;e&#x161; predstavi&#x165; ako tabu&#x13E;ku so st&#x13A;pcami (polia) a riadkami (d&#xE1;ta).</p><h3 id="vytvorenie-aplik&#xE1;cie">Vytvorenie aplik&#xE1;cie</h3><p>Aby sme mali v&#x161;etko pekne upratan&#xE9;, vytvor&#xED;me vo vn&#xFA;tri n&#xE1;&#x161;ho projektu samostatn&#xFA; aplik&#xE1;ciu. Je dobr&#xE9; ma&#x165; v&#x161;etko zorganizovan&#xE9; hne&#x10F; od za&#x10D;iatku. Aby sme vytvorili aplik&#xE1;ciu, mus&#xED;&#x161; v konzole spusti&#x165; nasleduj&#xFA;ci pr&#xED;kaz (v adres&#xE1;ri <code>djangogirls</code>, kde sa nach&#xE1;dza s&#xFA;bor <code>manage.py</code>):</p><p></p><p class="code-label">Mac OS X and Linux:</p><p></p><pre><code>        (myvenv) ~/djangogirls$ python manage.py startapp blog</code></pre>
+<p></p><p class="code-label">Windows:</p><p></p><pre><code>        (myvenv) C:\Users\Name\djangogirls&gt; python manage.py startapp blog</code></pre>
+<p>Uvid&#xED;&#x161;, &#x17E;e pribudne nov&#xFD; adres&#xE1;r <code>blog</code>, ktor&#xFD; obsahuje mno&#x17E;stvo s&#xFA;borov. Adres&#xE1;re a s&#xFA;bory v na&#x161;om projekte by mali vyzera&#x165; takto:</p><pre><code>        djangogirls
+        &#x251C;&#x2500;&#x2500; blog
+        &#x2502;   &#x251C;&#x2500;&#x2500; __init__.py
+        &#x2502;   &#x251C;&#x2500;&#x2500; admin.py
+        &#x2502;   &#x251C;&#x2500;&#x2500; apps.py
+        &#x2502;   &#x251C;&#x2500;&#x2500; migrations
+        &#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; __init__.py
+        &#x2502;   &#x251C;&#x2500;&#x2500; models.py
+        &#x2502;   &#x251C;&#x2500;&#x2500; tests.py
+        &#x2502;   &#x2514;&#x2500;&#x2500; views.py
+        &#x251C;&#x2500;&#x2500; db.sqlite3
+        &#x251C;&#x2500;&#x2500; manage.py
+        &#x2514;&#x2500;&#x2500; mysite
+            &#x251C;&#x2500;&#x2500; __init__.py
+            &#x251C;&#x2500;&#x2500; settings.py
+            &#x251C;&#x2500;&#x2500; urls.py
+            &#x2514;&#x2500;&#x2500; wsgi.py</code></pre>
+<p>Po vytvoren&#xED; aplik&#xE1;cie tie&#x17E; mus&#xED;&#x161; Djangu poveda&#x165;, &#x17E;e ju m&#xE1; pou&#x17E;i&#x165;. To urob&#xED;me v s&#xFA;bore <code>mysite/settings.py</code>. Mus&#xED;me n&#xE1;js&#x165; <code>INSTALLED_APPS</code> a prida&#x165; riadok obsahuj&#xFA;ci <code>&apos;blog&apos;</code> tesne pred uzatv&#xE1;raciu z&#xE1;tvorku<code>]</code>. Tak&#x17E;e v&#xFD;sledok n&#xE1;&#x161;ho sna&#x17E;enia bude vyzera&#x165; takto:</p><p></p><p class="code-label">mysite/settings.py</p><p></p><pre><code class="lang-python">INSTALLED_APPS = [
+    <span class="hljs-string">&apos;django.contrib.admin&apos;</span>,
+    <span class="hljs-string">&apos;django.contrib.auth&apos;</span>,
+    <span class="hljs-string">&apos;django.contrib.contenttypes&apos;</span>,
+    <span class="hljs-string">&apos;django.contrib.sessions&apos;</span>,
+    <span class="hljs-string">&apos;django.contrib.messages&apos;</span>,
+    <span class="hljs-string">&apos;django.contrib.staticfiles&apos;</span>,
+    <span class="hljs-string">&apos;blog&apos;</span>,
+]</code></pre>
+<h3 id="vytvorenie-modelu-blog-postu">Vytvorenie modelu blog postu</h3><p>V s&#xFA;bore <code>blog/models.py</code> definujeme v&#x161;etky objekty, ktor&#xE9; sa naz&#xFD;vaj&#xFA; <code>modely</code> - na tomto mieste definujeme n&#xE1;&#x161; blog post.</p><p>Otvor <code>blog/models.py</code>, v&#x161;etko z neho odstr&#xE1;&#x148; a nap&#xED;&#x161; nasledovn&#xFD; k&#xF3;d:</p><p></p><p class="code-label">blog/models.py</p><p></p><pre><code class="lang-python"><span class="hljs-keyword">from</span> django.db <span class="hljs-keyword">import</span> models
+<span class="hljs-keyword">from</span> django.utils <span class="hljs-keyword">import</span> timezone
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Post</span><span class="hljs-params">(models.Model)</span>:</span>
+    author = models.ForeignKey(<span class="hljs-string">&apos;auth.User&apos;</span>, on_delete=models.CASCADE)
+    title = models.CharField(max_length=<span class="hljs-number">200</span>)
+    text = models.TextField()
+    created_date = models.DateTimeField(
+            default=timezone.now)
+    published_date = models.DateTimeField(
+            blank=<span class="hljs-keyword">True</span>, null=<span class="hljs-keyword">True</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">publish</span><span class="hljs-params">(self)</span>:</span>
+        self.published_date = timezone.now()
+        self.save()
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-keyword">return</span> self.title</code></pre>
+<blockquote><p>Dvakr&#xE1;t skontroluj, &#x10D;i si pou&#x17E;ila 2 pod&#x10D;iarkovn&#xED;ky (<code>_</code>) na oboch stran&#xE1;ch <code>str</code>. T&#xE1;to konvencia sa v Pythone &#x10D;asto pou&#x17E;&#xED;va a niekedy sa tomu hovor&#xED; &quot;dunder&quot; (skratka pre anglick&#xE9; Double-UNDERscore).</p></blockquote><p>Vyzer&#xE1; to stra&#x161;idelne, nie? Ale neboj sa, vysvetl&#xED;me si, &#x10D;o tieto riadky znamenaj&#xFA;!</p><p>V&#x161;etky riadky za&#x10D;&#xED;naj&#xFA;ce s <code>from</code> alebo <code>import</code> prid&#xE1;vaj&#xFA; &#x10D;asti z in&#xFD;ch s&#xFA;borov. Tak&#x17E;e namiesto kop&#xED;rovania rovnak&#xFD;ch vec&#xED; v ka&#x17E;dom s&#xFA;bore m&#xF4;&#x17E;eme zahrn&#xFA;&#x165; niektor&#xE9; &#x10D;asti pomocou <code>from ... import ...</code>.</p><p><code>class Post(models.Model):</code> - tento riadok definuje n&#xE1;&#x161; model (je to <code>objekt</code>).</p><ul><li><code>class</code> je &#x161;peci&#xE1;lne k&#x13E;&#xFA;&#x10D;ov&#xE9; slovo, ktor&#xE9; nazna&#x10D;uje, &#x17E;e definujeme objekt.
+</li>
+<li><code>Post</code> je meno n&#xE1;&#x161;ho modelu. M&#xF4;&#x17E;eme mu da&#x165; in&#xFD; n&#xE1;zov (ale mus&#xED;me sa vyhn&#xFA;&#x165; &#x161;peci&#xE1;lnym a pr&#xE1;zdnym znakom). N&#xE1;zov triedy v&#x17E;dy za&#x10D;ni p&#xED;smenami.
+</li>
+<li><code>models.Model</code> znamen&#xE1;, &#x17E;e Post je Django Model, tak&#x17E;e Django vie, &#x17E;e by mal by&#x165; ulo&#x17E;en&#xFD; v datab&#xE1;ze.
+</li></ul>
+<p>Teraz zadefinujeme vlastnosti, o ktor&#xFD;ch sme hovorili: <code>title</code> (titulka), <code>text</code>, <code>created_date</code> (d&#xE1;tum vytvorenia), <code>published_date</code> (d&#xE1;tum zverejnenia) a <code>author</code> (autor). Na to ale mus&#xED;me zadefinova&#x165; typ ka&#x17E;d&#xE9;ho po&#x13E;a (Je to text? &#x10C;&#xED;slo? D&#xE1;tum? Vz&#x165;ah k in&#xE9;mu objektu, napr. objektu User?)</p><ul><li><code>modely. CharField</code> - takto m&#xF4;&#x17E;e&#x161; definova&#x165; text s obmedzen&#xFD;m po&#x10D;tom znakov.
+</li>
+<li><code>models.TextField</code> - toto je pre dlh&#xE9; texty bez obmedzenia. To znie ide&#xE1;lne pre blogov&#xFD; pr&#xED;spevok, nie?
+</li>
+<li><code>models.DateTimeField</code> - d&#xE1;tum a &#x10D;as.
+</li>
+<li><code>models.ForeignKey</code> - odkaz na in&#xFD; model.
+</li></ul>
+<p>Nebudeme si tu vysvet&#x13E;ova&#x165; ka&#x17E;d&#xFD; k&#xFA;sok k&#xF3;du, preto&#x17E;e by to zabralo pr&#xED;li&#x161; ve&#x13E;a &#x10D;asu. Ak chce&#x161; vedie&#x165; viac o poliach modelu a definovan&#xED; &#x10F;al&#x161;&#xED;ch vec&#xED; okrem t&#xFD;ch, &#x10D;o sme pop&#xED;sali vy&#x161;&#x161;ie, sk&#xFA;s sa pozrie&#x165; do dokument&#xE1;cie Djanga (<a href="https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types" target="_blank">https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types</a>).</p><p>A &#x10D;o <code>def publish(self):</code>? To je presne t&#xE1; met&#xF3;da <code>publish</code>, o ktorej sme hovorili predt&#xFD;m. <code>def</code> znamen&#xE1;, &#x17E;e ide o funkciu/met&#xF3;du a <code>publish</code> je n&#xE1;zov met&#xF3;dy. N&#xE1;zov met&#xF3;dy m&#xF4;&#x17E;e&#x161; zmeni&#x165;, ak chce&#x161;. Pravidlo pre n&#xE1;zvy met&#xF3;d je, &#x17E;e pou&#x17E;&#xED;vame mal&#xE9; p&#xED;smen&#xE1; a pod&#x10D;iarkovn&#xED;ky namiesto medzier. Napr&#xED;klad met&#xF3;da, ktor&#xE1; vypo&#x10D;&#xED;ta priemern&#xFA; cenu by sa mohla naz&#xFD;va&#x165; <code>pocitaj_priemernu_cenu</code>.</p><p>Met&#xF3;dy &#x10D;asto nie&#x10D;o vracaj&#xFA; (angl. <code>return</code>). Pr&#xED;klad n&#xE1;jde&#x161; napr&#xED;klad v met&#xF3;de <code>__str__</code>. V tomto pr&#xED;pade, ke&#x10F; zavol&#xE1;me <code>__str__()</code>, dostaneme text (<strong>string</strong>) s n&#xE1;zvom postu.</p><p>Tie&#x17E; si v&#x161;imni, &#x17E;e <code>def publish(self):</code> a <code>def __str__(self):</code> s&#xFA; odsaden&#xE9; vo vn&#xFA;tri na&#x161;ej triedy. Preto&#x17E;e Python je citliv&#xFD; na medzery, mus&#xED;me odsadi&#x165; na&#x161;e met&#xF3;dy vo vn&#xFA;tri triedy. Inak met&#xF3;dy nebud&#xFA; patri&#x165; do triedy, a m&#xF4;&#x17E;e dojs&#x165; k neo&#x10D;ak&#xE1;van&#xE9;mu spr&#xE1;vaniu.</p><p>Ak &#x10D;oko&#x13E;vek nie je jasn&#xE9;, nev&#xE1;haj a sp&#xFD;taj sa mentora/ku! Je n&#xE1;m jasn&#xE9;, &#x17E;e je to komplikovan&#xE9;, najm&#xE4; ak sa u&#x10D;&#xED;&#x161;, &#x10D;o s&#xFA; objekty a funkcie s&#xFA;&#x10D;asne. Ale d&#xFA;fame, &#x17E;e teraz u&#x17E; to vyzer&#xE1; trochu menej magicky!</p><h3 id="vytv&#xE1;ranie-tabuliek-pre-modely-v-datab&#xE1;ze">Vytv&#xE1;ranie tabuliek pre modely v datab&#xE1;ze</h3><p>Posledn&#xFD;m krokom je prida&#x165; n&#xE1;&#x161; nov&#xFD; model do datab&#xE1;zy. Najprv mus&#xED;me Djangu da&#x165; vedie&#x165;, &#x17E;e sme urobili nejak&#xE9; zmeny v na&#x161;om modeli. (Pr&#xE1;ve sme ho vytvorili!) Cho&#x10F; do konzoly a zadaj <code>python manage.py makemigrations blog</code>. Bude to vyzera&#x165; takto:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        (myvenv) ~/djangogirls$ python manage.py makemigrations blog
+        Migrations for &apos;blog&apos;:
+          blog/migrations/0001_initial.py:
+
+          - Create model Post</code></pre>
+<p><strong>Pozn&#xE1;mka:</strong> Nezabudni ulo&#x17E;i&#x165; s&#xFA;bory ktor&#xE9; upravuje&#x161;. Inak po&#x10D;&#xED;ta&#x10D; spust&#xED; star&#xFA; verziu, ktor&#xE1; m&#xF4;&#x17E;e skon&#x10D;i&#x165; chybou.</p><p>Django pripravil migra&#x10D;n&#xFD; s&#xFA;bor, ktor&#xFD; mus&#xED;me aplikova&#x165; na na&#x161;u datab&#xE1;zu. Nap&#xED;&#x161; <code>python manage.py migrate blog</code> a v&#xFD;stup by mal by&#x165;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        (myvenv) ~/djangogirls$ python manage.py migrate blog
+        Operations to perform:
+          Apply all migrations: blog
+        Running migrations:
+          Rendering model states... DONE
+          Applying blog.0001_initial... OK</code></pre>
+<p>Hur&#xE1;! N&#xE1;&#x161; Post model je u&#x17E; v datab&#xE1;ze! Bolo by fajn ho vidie&#x165;, nie? Prejdi na nasleduj&#xFA;cu kapitolu a uvid&#xED;&#x161; ako vyzer&#xE1; tvoj Post!</p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../django_start_project/" class="navigation navigation-prev " aria-label="Previous page: Tvoj prvý Django projekt!">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../django_admin/" class="navigation navigation-next " aria-label="Next page: Django admin">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Django modely","level":"1.12","depth":1,"next":{"title":"Django admin","level":"1.13","depth":1,"path":"django_admin/README.md","ref":"django_admin/README.md","articles":[]},"previous":{"title":"Tvoj prvý Django projekt!","level":"1.11","depth":1,"path":"django_start_project/README.md","ref":"django_start_project/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"django_version":"2.2.4"},"language":"sk","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"django_models/README.md","mtime":"2020-06-27T13:00:24.118Z","type":"markdown"},"gitbook":{"version":"3.4.0","time":"2020-06-27T13:00:41.274Z"},"basePath":"..","book":{"language":"sk"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

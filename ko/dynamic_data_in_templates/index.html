@@ -1,0 +1,631 @@
+
+<!DOCTYPE HTML>
+<html lang="ko" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>템플릿 동적 데이터 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.4.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../django_templates/" />
+    
+    
+    <link rel="prev" href="../django_orm/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="검색어 입력" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    들어가며
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    설치하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    설치하기 (chromebook)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    인터넷은 어떻게 작동할까요
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Command Line 시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Python 설치하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    코드 에디터
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Python 시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Django란 무엇인가요
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Django 설치하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    나의 첫 번째 Django 프로젝트!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Django 모델
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django 관리자
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    배포하기!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django urls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django 뷰 만들기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    HTML 시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM(Querysets)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.19" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    템플릿 동적 데이터
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django 템플릿
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - 예쁘게 만들기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    템플릿 확장하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    애플리케이션 확장하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Django 폼
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    더 나아가기
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKit에 게시
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >템플릿 동적 데이터</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#xD15C;&#xD50C;&#xB9BF;-&#xB3D9;&#xC801;-&#xB370;&#xC774;&#xD130;">&#xD15C;&#xD50C;&#xB9BF; &#xB3D9;&#xC801; &#xB370;&#xC774;&#xD130;</h1><p>&#xBE14;&#xB85C;&#xADF8; &#xAE00;&#xC740; &#xAC01;&#xAC01; &#xB2E4;&#xB978; &#xC7A5;&#xC18C;&#xC5D0; &#xC870;&#xAC01;&#xC870;&#xAC01; &#xB098;&#xB220;&#xC838;&#xC788;&#xC5B4;&#xC694;. <code>Post</code>&#xBAA8;&#xB378;&#xC740; <code>models.py</code>&#xD30C;&#xC77C;&#xC5D0;, <code>post_list</code>&#xBAA8;&#xB378;&#xC740; <code>views.py</code>&#xD30C;&#xC77C;&#xC5D0; &#xC788;&#xC5B4;&#xC694;. &#xADF8;&#xB9AC;&#xACE0; &#xC55E;&#xC73C;&#xB85C; &#xD15C;&#xD50C;&#xB9BF;&#xB3C4; &#xCD94;&#xAC00;&#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;. HTML &#xD15C;&#xD50C;&#xB9BF;&#xC5D0;&#xC11C; &#xAE00; &#xBAA9;&#xB85D;&#xC744; &#xC5B4;&#xB5BB;&#xAC8C; &#xBCF4;&#xC5EC;&#xC904;&#xAE4C;&#xC694;? &#xC774;&#xBC88; &#xC7A5;&#xC5D0;&#xC11C;&#xB294; &#xCF58;&#xD150;&#xCE20;(&#xB370;&#xC774;&#xD130;&#xBCA0;&#xC774;&#xC2A4; &#xC548;&#xC5D0; &#xC800;&#xC7A5;&#xB418;&#xC5B4; &#xC788;&#xB294; &#xBAA8;&#xB378;)&#xB97C; &#xAC00;&#xC838;&#xC640; &#xD15C;&#xD50C;&#xB9BF;&#xC5D0; &#xB123;&#xC5B4; &#xBCF4;&#xC5EC;&#xC8FC;&#xB294; &#xAC83;&#xC744; &#xD574;&#xBCFC; &#xAC70;&#xC5D0;&#xC694;.</p><p><em>&#xBDF0;(view)</em>&#xB294; &#xBAA8;&#xB378;&#xACFC; &#xD15C;&#xD50C;&#xB9BF;&#xC744; &#xC5F0;&#xACB0;&#xD558;&#xB294; &#xC5ED;&#xD560;&#xC744; &#xD569;&#xB2C8;&#xB2E4;. <code>post_list</code>&#xB97C; <em>&#xBDF0;</em>&#xC5D0;&#xC11C; &#xBCF4;&#xC5EC;&#xC8FC;&#xACE0; &#xC774;&#xB97C; &#xD15C;&#xD50C;&#xB9BF;&#xC5D0; &#xC804;&#xB2EC;&#xD558;&#xAE30; &#xC704;&#xD574;&#xC11C;&#xB294;, &#xBAA8;&#xB378;&#xC744; &#xAC00;&#xC838;&#xC640;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;. &#xC77C;&#xBC18;&#xC801;&#xC73C;&#xB85C; <em>&#xBDF0;</em>&#xAC00; &#xD15C;&#xD50C;&#xB9BF;&#xC5D0;&#xC11C; &#xBAA8;&#xB378;&#xC744; &#xC120;&#xD0DD;&#xD558;&#xB3C4;&#xB85D; &#xB9CC;&#xB4E4;&#xC5B4;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;.</p><p>&#xC790;, &#xBAA8;&#xB450; &#xC900;&#xBE44;&#xB410;&#xB098;&#xC694;?</p><p><code>blog/views.py</code>&#xD30C;&#xC77C;&#xC744; &#xC5F4;&#xC5B4;&#xBD05;&#xC2DC;&#xB2E4;. <code>post_list</code> <em>&#xBDF0;</em> &#xB0B4;&#xC6A9;&#xC744; &#xBD05;&#xC2DC;&#xB2E4;.</p><p></p><p class="code-label">blog/views.py</p><p></p><pre><code class="lang-python"><span class="hljs-keyword">from</span> django.shortcuts <span class="hljs-keyword">import</span> render
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">post_list</span><span class="hljs-params">(request)</span>:</span>
+    <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;blog/post_list.html&apos;</span>, {})</code></pre>
+<p>&#xB2E4;&#xB978; &#xD30C;&#xC77C;&#xC5D0; &#xC788;&#xB294; &#xCF54;&#xB4DC;&#xB97C; &#xAC00;&#xC838;&#xC624;&#xB294; &#xBC29;&#xBC95;, &#xAE30;&#xC5B5;&#xB098;&#xB098;&#xC694;? <code>models.py</code>&#xD30C;&#xC77C;&#xC5D0; &#xC815;&#xC758;&#xB41C; &#xBAA8;&#xB378;&#xC744; &#xAC00;&#xC838;&#xC62C; &#xAC70;&#xC5D0;&#xC694;. <code>from .models import Post</code>&#xC744; &#xCD94;&#xAC00;&#xD558;&#xC138;&#xC694;.</p><p></p><p class="code-label">blog/views.py</p><p></p><pre><code class="lang-python"><span class="hljs-keyword">from</span> django.shortcuts <span class="hljs-keyword">import</span> render
+<span class="hljs-keyword">from</span> .models <span class="hljs-keyword">import</span> Post</code></pre>
+<p><code>from</code> &#xB2E4;&#xC74C;&#xC5D0; &#xC788;&#xB294; &#xB9C8;&#xCE68;&#xD45C;(.)&#xB294; &#xD604;&#xC7AC; <em>&#xB514;&#xB809;&#xD1A0;&#xB9AC;</em> &#xB610;&#xB294; <em>&#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;</em>&#xC744; &#xC758;&#xBBF8;&#xD569;&#xB2C8;&#xB2E4;. &#xB3D9;&#xC77C;&#xD55C; &#xB514;&#xB809;&#xD130;&#xB9AC; &#xB0B4; <code>views.py</code>, <code>models.py</code>&#xD30C;&#xC77C;&#xC774; &#xC788;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; <code>. &#xD30C;&#xC77C;&#xBA85;</code> (<code>.py</code>&#xD655;&#xC7A5;&#xC790;&#xB97C; &#xBD99;&#xC774;&#xC9C0; &#xC54A;&#xC544;&#xB3C4;)&#xC73C;&#xB85C; &#xB0B4;&#xC6A9;&#xC744; &#xAC00;&#xC838;&#xC62C; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC774;&#xC81C; <code>Post</code>&#xBAA8;&#xB378;&#xC744; &#xBD88;&#xB7EC;&#xBD05;&#xC2DC;&#xB2E4;.</p><p><code>Post</code>&#xBAA8;&#xB378;&#xC5D0;&#xC11C; &#xBE14;&#xB85C;&#xADF8; &#xAE00;&#xC744; &#xAC00;&#xC838;&#xC624;&#xAE30; &#xC704;&#xD574;&#xC11C;&#xB294; <code>&#xCFFC;&#xB9AC;&#xC14B;(QuerySet)</code>&#xC774; &#xD544;&#xC694;&#xD569;&#xB2C8;&#xB2E4;.</p><h2 id="&#xCFFC;&#xB9AC;&#xC14B;queryset">&#xCFFC;&#xB9AC;&#xC14B;(QuerySet)</h2><p>&#xC5EC;&#xB7EC;&#xBD84;&#xC740; &#xC774;&#xBBF8; &#xCFFC;&#xB9AC;&#xC14B;&#xC5D0; &#xC775;&#xC219;&#xD574;&#xC57C; &#xD574;&#xC694;. &#xC790;&#xC138;&#xD55C; &#xB0B4;&#xC6A9;&#xC740; <a href="../django_orm/">Django ORM&#xACFC; QuerySets</a> &#xC7A5;&#xC5D0;&#xC11C; &#xB2E4;&#xB8E8;&#xC5C8;&#xC5B4;&#xC694;.</p><p>&#xC790;, &#xBE14;&#xB85C;&#xADF8; &#xAE00; &#xBAA9;&#xB85D;&#xC744; &#xC0B4;&#xD3B4;&#xBD05;&#xC2DC;&#xB2E4;. &#xAE00; &#xBAA9;&#xB85D;&#xC744; &#xAC8C;&#xC2DC;&#xC77C; <code>published_date</code>&#xAE30;&#xC900;&#xC73C;&#xB85C; &#xC815;&#xB82C;&#xD574;&#xBCFC;&#xAE4C;&#xC694;? &#xC774;&#xBBF8; Django ORM&#xACFC; QuerySets &#xC7A5;&#xC5D0;&#xC11C; &#xD574;&#xBCF8; &#xB0B4;&#xC6A9;&#xC774;&#xC5D0;&#xC694;.</p><p></p><p class="code-label">blog/views.py</p><p></p><pre><code class="lang-python">Post.objects.filter(published_date__lte=timezone.now()).order_by(<span class="hljs-string">&apos;published_date&apos;</span>)</code></pre>
+<p>&#xB2E4;&#xC74C;&#xC73C;&#xB85C; <code>blog/views.py</code>&#xD30C;&#xC77C; &#xB0B4; <code>def post_list(request)</code>&#xD568;&#xC218;&#xC5D0; &#xC544;&#xB798; &#xCF54;&#xB4DC; &#xB0B4;&#xC6A9;&#xC744; &#xB123;&#xC5B4;&#xBD05;&#xC2DC;&#xB2E4;. &#xC81C;&#xC77C; &#xBA3C;&#xC800; <code>timezone</code> &#xBAA8;&#xB4C8;&#xC744; &#xBD88;&#xB7EC;&#xC640;&#xC57C;&#xD558;&#xB2C8; <code>from django.utils import timezone</code>&#xB97C; &#xCD94;&#xAC00;&#xD558;&#xB294; &#xAC83;&#xC744; &#xC78A;&#xC9C0; &#xB9C8;&#xC138;&#xC694;.</p><p></p><p class="code-label">blog/views.py</p><p></p><pre><code class="lang-python"><span class="hljs-keyword">from</span> django.shortcuts <span class="hljs-keyword">import</span> render
+<span class="hljs-keyword">from</span> django.utils <span class="hljs-keyword">import</span> timezone
+<span class="hljs-keyword">from</span> .models <span class="hljs-keyword">import</span> Post
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">post_list</span><span class="hljs-params">(request)</span>:</span>
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by(<span class="hljs-string">&apos;published_date&apos;</span>)
+    <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;blog/post_list.html&apos;</span>, {})</code></pre>
+<p>&#xC544;&#xC9C1; &#xC548;&#xD55C; &#xBD80;&#xBD84;&#xC740; <code>posts</code> QuerySet&#xC744; &#xD15C;&#xD50C;&#xB9BF; &#xCEE8;&#xD14D;&#xC2A4;&#xD2B8;&#xC5D0; &#xC804;&#xB2EC;&#xD558;&#xB294; &#xAC83;&#xC785;&#xB2C8;&#xB2E4;. &#xAC71;&#xC815;&#xD558;&#xC9C0; &#xB9C8;&#xC138;&#xC694;. &#xB9E8; &#xB9C8;&#xC9C0;&#xB9C9;&#xC5D0; &#xC774; &#xBD80;&#xBD84;&#xC744; &#xB2E4;&#xB8F0; &#xAC70;&#xC5D0;&#xC694;.</p><p>&#xC6B0;&#xB9AC;&#xB294; <code>posts</code>&#xB77C;&#xB294; <em>&#xBCC0;&#xC218;</em>&#xB97C; &#xB9CC;&#xB4E4;&#xACE0; &#xC788;&#xB2E4;&#xB294; &#xAC83;&#xC744; &#xAE30;&#xC5B5;&#xD558;&#xC138;&#xC694;. &#xC774; &#xBCC0;&#xC218;&#xB294; &#xD034;&#xB9AC;&#xC14B;&#xC758; &#xC774;&#xB984;&#xC785;&#xB2C8;&#xB2E4;.</p><p>&#xB2E4;&#xC74C; &#xC7A5;&#xC5D0;&#xC11C; <code>posts</code>&#xCFFC;&#xB9AC;&#xC14B;&#xC744; &#xD15C;&#xD50C;&#xB9BF;&#xC5D0; &#xBCF4;&#xB0B4;&#xB294; &#xBC29;&#xBC95;&#xC744; &#xBC30;&#xC6B8; &#xAC70;&#xC5D0;&#xC694;.</p><p><code>render</code>&#xD568;&#xC218;&#xC5D0;&#xB294; &#xB9E4;&#xAC1C;&#xBCC0;&#xC218; <code>request</code>(&#xC0AC;&#xC6A9;&#xC790;&#xAC00; &#xC694;&#xCCAD;&#xD558;&#xB294; &#xBAA8;&#xB4E0; &#xAC83;)&#xC640; &apos;blog/post_list.html&apos; &#xD15C;&#xD50C;&#xB9BF;&#xC774; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. <code>{}</code>&#xC774; &#xBCF4;&#xC77C; &#xD150;&#xB370;, &#xC774;&#xACF3;&#xC5D0; &#xD15C;&#xD50C;&#xB9BF;&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xAE30; &#xC704;&#xD574; &#xB9E4;&#xAC1C;&#xBCC0;&#xC218;&#xB97C; &#xCD94;&#xAC00;&#xD560; &#xAC70;&#xC5D0;&#xC694;. (&#xC774; &#xB9E4;&#xAC1C;&#xBCC0;&#xC218;&#xB97C;<code>&apos;posts&apos;</code>&#xB77C;&#xACE0; &#xD560;&#xAC70;&#xC5D0;&#xC694;)<code>{&apos;posts&apos;: posts}</code>&#xC774;&#xB807;&#xAC8C; &#xC791;&#xC131;&#xD560;&#xAC70;&#xC5D0;&#xC694;. <code>:</code>&#xC774;&#xC804;&#xC5D0; &#xBB38;&#xC790;&#xC5F4;&#xC774; &#xC640;&#xC57C;&#xD558;&#xACE0;, &#xC791;&#xC740; &#xB530;&#xC634;&#xD45C;<code>&apos;&apos;</code>&#xB97C; &#xC591;&#xCABD;&#xC5D0; &#xBD99;&#xC774;&#xB294; &#xAC83;&#xC744; &#xC78A;&#xC9C0; &#xB9C8;&#xC138;&#xC694;.</p><p>&#xC774;&#xC81C; <code>blog/views.py</code>&#xCF54;&#xB4DC;&#xB294; &#xC544;&#xB798; &#xCF54;&#xB4DC;&#xCC98;&#xB7FC; &#xBCF4;&#xC77C; &#xAC81;&#xB2C8;&#xB2E4;.</p><pre><code class="lang-python"><span class="hljs-keyword">from</span> django.shortcuts <span class="hljs-keyword">import</span> render
+<span class="hljs-keyword">from</span> django.utils <span class="hljs-keyword">import</span> timezone
+<span class="hljs-keyword">from</span> .models <span class="hljs-keyword">import</span> Post
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">post_list</span><span class="hljs-params">(request)</span>:</span>
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by(<span class="hljs-string">&apos;published_date&apos;</span>)
+    <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;blog/post_list.html&apos;</span>, {<span class="hljs-string">&apos;posts&apos;</span>: posts})</code></pre>
+<p>&#xC5EC;&#xAE30;&#xAE4C;&#xC9C0;&#xC5D0;&#xC694;! &#xD15C;&#xD50C;&#xB9BF; &#xD30C;&#xC77C;&#xB85C; &#xB3CC;&#xC544;&#xAC00; &#xCFFC;&#xB9AC;&#xC14B;&#xC744; &#xBCF4;&#xC774;&#xAC8C; &#xB9CC;&#xB4E4;&#xC5B4; &#xBD05;&#xC2DC;&#xB2E4;.</p><p>&#xCFFC;&#xB9AC;&#xC14B;&#xC5D0; &#xB300;&#xD574; &#xB354; &#xC54C;&#xACE0; &#xC2F6;&#xB2E4;&#xBA74; &#xC7A5;&#xACE0; &#xACF5;&#xC2DD; &#xBB38;&#xC11C;&#xB97C; &#xC77D;&#xC5B4;&#xBCF4;&#xC138;&#xC694;. :
+<a href="https://docs.djangoproject.com/en/2.0/ref/models/querysets/" target="_blank">https://docs.djangoproject.com/en/2.0/ref/models/querysets/</a></p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../django_orm/" class="navigation navigation-prev " aria-label="Previous page: Django ORM(Querysets)">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../django_templates/" class="navigation navigation-next " aria-label="Next page: Django 템플릿">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"템플릿 동적 데이터","level":"1.19","depth":1,"next":{"title":"Django 템플릿","level":"1.20","depth":1,"path":"django_templates/README.md","ref":"django_templates/README.md","articles":[]},"previous":{"title":"Django ORM(Querysets)","level":"1.18","depth":1,"path":"django_orm/README.md","ref":"django_orm/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"django_version":"2.2.4"},"language":"ko","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"dynamic_data_in_templates/README.md","mtime":"2020-06-27T13:00:23.986Z","type":"markdown"},"gitbook":{"version":"3.4.0","time":"2020-06-27T13:00:41.274Z"},"basePath":"..","book":{"language":"ko"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

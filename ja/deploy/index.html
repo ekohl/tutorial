@@ -1,0 +1,825 @@
+
+<!DOCTYPE HTML>
+<html lang="ja" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>デプロイ！ · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.4.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../django_urls/" />
+    
+    
+    <link rel="prev" href="../django_admin/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="検索ワードを入力" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    はじめに
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    インストール
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../installation/">
+            
+                <a href="../installation/#command-line">
+            
+                    
+                    コマンドライン
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../installation/">
+            
+                <a href="../installation/#python">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../installation/">
+            
+                <a href="../installation/#code-editor">
+            
+                    
+                    コードエディタ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../installation/">
+            
+                <a href="../installation/#virtualenv">
+            
+                    
+                    仮想環境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../installation/">
+            
+                <a href="../installation/#django">
+            
+                    
+                    Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../installation/">
+            
+                <a href="../installation/#git">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../installation/">
+            
+                <a href="../installation/#github">
+            
+                    
+                    GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../installation/">
+            
+                <a href="../installation/#pythonanywhere">
+            
+                    
+                    PythonAnywhere
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    Chromebookのセットアップ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    インターネットのしくみ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    コマンドラインを使ってみよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Pythonのインストール
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    コードエディタ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Python入門
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Djangoってなに？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Djangoのインストール
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    プロジェクトを作成しよう！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Djangoモデル
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    ログインページを作ろう（Django admin）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.14" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    デプロイ！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Djangoビュー
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    HTML 入門
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM（クエリセット）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    テンプレート内の動的データ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Djangoテンプレート
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSSでカワイくしよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    テンプレートを拡張しよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    アプリケーションを拡張しよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Djangoフォーム
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    次のステップは？
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKitで公開 
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >デプロイ！</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x30C7;&#x30D7;&#x30ED;&#x30A4;&#xFF01;">&#x30C7;&#x30D7;&#x30ED;&#x30A4;&#xFF01;</h1><blockquote><p><strong>&#x88DC;&#x8DB3;</strong> &#x3053;&#x306E;&#x30C1;&#x30E3;&#x30D7;&#x30BF;&#x30FC;&#x306F;&#x3061;&#x3087;&#x3063;&#x3068;&#x96E3;&#x3057;&#x3044;&#x3053;&#x3068;&#x304C;&#x6CA2;&#x5C71;&#x66F8;&#x304B;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002; &#x9811;&#x5F35;&#x3063;&#x3066;&#x6700;&#x5F8C;&#x307E;&#x3067;&#x3084;&#x308A;&#x304D;&#x3063;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;&#x30C7;&#x30D7;&#x30ED;&#x30A4;&#x306F;&#x30A6;&#x30A7;&#x30D6;&#x30B5;&#x30A4;&#x30C8;&#x3092;&#x958B;&#x767A;&#x3059;&#x308B;&#x30D7;&#x30ED;&#x30BB;&#x30B9;&#x306E;&#x4E0A;&#x3067;&#x3001;&#x3068;&#x3066;&#x3082;&#x91CD;&#x8981;&#x306A;&#x90E8;&#x5206;&#x3067;&#x3059;&#x304C;&#x3001;&#x3064;&#x307E;&#x305A;&#x304D;&#x3084;&#x3059;&#x3044;&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#x3082;&#x591A;&#x304F;&#x542B;&#x307E;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002; &#x30C1;&#x30E5;&#x30FC;&#x30C8;&#x30EA;&#x30A2;&#x30EB;&#x306E;&#x9014;&#x4E2D;&#x306B;&#x3053;&#x306E;&#x30C1;&#x30E3;&#x30D7;&#x30BF;&#x30FC;&#x3092;&#x5165;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x305D;&#x3046;&#x3044;&#x3063;&#x305F;&#x3064;&#x307E;&#x305A;&#x304D;&#x3084;&#x3059;&#x3044;&#x7B87;&#x6240;&#x306F;&#x30E1;&#x30F3;&#x30BF;&#x30FC;&#x306B;&#x8CEA;&#x554F;&#x3057;&#x3066;&#x3001;&#x3042;&#x306A;&#x305F;&#x304C;&#x4F5C;&#x3063;&#x3066;&#x3044;&#x308B;&#x30A6;&#x30A7;&#x30D6;&#x30B5;&#x30A4;&#x30C8;&#x3092;&#x30AA;&#x30F3;&#x30E9;&#x30A4;&#x30F3;&#x3067;&#x307F;&#x308C;&#x308B;&#x3088;&#x3046;&#x306B;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002; &#x8A00;&#x3044;&#x63DB;&#x3048;&#x308C;&#x3070;&#x3001;&#x3082;&#x3057;&#x6642;&#x9593;&#x5207;&#x308C;&#x3067;&#x30EF;&#x30FC;&#x30AF;&#x30B7;&#x30E7;&#x30C3;&#x30D7;&#x5185;&#x3067;&#x30C1;&#x30E5;&#x30FC;&#x30C8;&#x30EA;&#x30A2;&#x30EB;&#x3092;&#x7D42;&#x308F;&#x3089;&#x305B;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x306A;&#x304B;&#x3063;&#x305F;&#x3068;&#x3057;&#x3066;&#x3082;&#x3001;&#x3053;&#x306E;&#x5F8C;&#x306E;&#x30C1;&#x30E5;&#x30FC;&#x30C8;&#x30EA;&#x30A2;&#x30EB;&#x306F;&#x304D;&#x3063;&#x3068;&#x81EA;&#x5206;&#x3067;&#x7D42;&#x308F;&#x3089;&#x305B;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x308B;&#x3067;&#x3057;&#x3087;&#x3046;&#x3002;</p></blockquote><p>&#x4ECA;&#x306E;&#x3068;&#x3053;&#x308D;&#x3001;&#x3042;&#x306A;&#x305F;&#x304C;&#x4F5C;&#x3063;&#x305F;&#x30B5;&#x30A4;&#x30C8;&#x306F;&#x3001;&#x3042;&#x306A;&#x305F;&#x306E;&#x30B3;&#x30F3;&#x30D4;&#x30E5;&#x30FC;&#x30BF;&#x30FC;&#x3067;&#x3057;&#x304B;&#x307F;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x305B;&#x3093;&#x3002; &#x3053;&#x3053;&#x3067;&#x306F;&#x3001;&#x30C7;&#x30D7;&#x30ED;&#x30A4;&#x306E;&#x65B9;&#x6CD5;&#x3092;&#x5B66;&#x3073;&#x307E;&#x3057;&#x3087;&#x3046;&#xFF01; &#x30C7;&#x30D7;&#x30ED;&#x30A4;&#x3068;&#x306F;&#x3001;&#x3042;&#x306A;&#x305F;&#x304C;&#x4F5C;&#x3063;&#x3066;&#x3044;&#x308B;&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3092;&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30CD;&#x30C3;&#x30C8;&#x3067;&#x516C;&#x958B;&#x3059;&#x308B;&#x3053;&#x3068;&#x3067;&#x3059;&#x3002;&#x3042;&#x306A;&#x305F;&#x4EE5;&#x5916;&#x306E;&#x4EBA;&#x3082;&#x30A6;&#x30A7;&#x30D6;&#x30B5;&#x30A4;&#x30C8;&#x3092;&#x898B;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x308B;&#x3088;&#x3046;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3088;. :)</p><p>&#x3053;&#x308C;&#x307E;&#x3067;&#x306B;&#x5B66;&#x3093;&#x3060;&#x3068;&#x304A;&#x308A;&#x3001;&#x30A6;&#x30A7;&#x30D6;&#x30B5;&#x30A4;&#x30C8;&#x306F;&#x30B5;&#x30FC;&#x30D0;&#x30FC;&#x306B;&#x7F6E;&#x304B;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002; &#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30CD;&#x30C3;&#x30C8;&#x3067;&#x5229;&#x7528;&#x3067;&#x304D;&#x308B;&#x591A;&#x304F;&#x306E;&#x30B5;&#x30FC;&#x30D0;&#x30FC; &#x30D7;&#x30ED;&#x30D0;&#x30A4;&#x30C0;&#x30FC;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x304C;&#x3001;&#x79C1;&#x9054;&#x306F; <a href="https://www.pythonanywhere.com/" target="_blank">PythonAnywhere</a> &#x3092;&#x4F7F;&#x7528;&#x3057;&#x307E;&#x3059;&#x3002; PythonAnywhere &#x306F;&#x3001;&#x591A;&#x304F;&#x306E;&#x4EBA;&#x304C;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x3059;&#x308B;&#x3082;&#x306E;&#x3067;&#x306F;&#x306A;&#x3044;&#x5C0F;&#x3055;&#x3044;&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3092;&#x7121;&#x6599;&#x3067;&#x516C;&#x958B;&#x3067;&#x304D;&#x307E;&#x3059;&#x306E;&#x3067;&#x4ECA;&#x306E;&#x3042;&#x306A;&#x305F;&#x306B;&#x306F;&#x6700;&#x9069;&#x3067;&#x3057;&#x3087;&#x3046;&#x3002;</p><p>&#x4F7F;&#x7528;&#x3059;&#x308B;&#x305D;&#x306E;&#x4ED6;&#x306E;&#x5916;&#x90E8;&#x30B5;&#x30FC;&#x30D3;&#x30B9;&#x306F; <a href="https://www.github.com" target="_blank">GitHub</a>&#x3001;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x30DB;&#x30B9;&#x30C6;&#x30A3;&#x30F3;&#x30B0; &#x30B5;&#x30FC;&#x30D3;&#x30B9;&#x3067;&#x3059;&#x3002; &#x4ED6;&#x306B;&#x3082;&#x8272;&#x3005;&#x3042;&#x308A;&#x307E;&#x3059;&#x304C;&#x3001;&#x307B;&#x3068;&#x3093;&#x3069;&#x306E;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30DE;&#x306F;GitHub&#x306E;&#x30A2;&#x30AB;&#x30A6;&#x30F3;&#x30C8;&#x3092;&#x6301;&#x3063;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x305D;&#x3057;&#x3066;&#x3042;&#x306A;&#x305F;&#x3082;&#x4ECA;&#x305D;&#x3046;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;</p><p>&#x3053;&#x308C;&#x3089;3&#x3064;&#x306E;&#x5834;&#x6240;&#x304C;&#x91CD;&#x8981;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002; &#x30ED;&#x30FC;&#x30AB;&#x30EB;&#x30B3;&#x30F3;&#x30D4;&#x30E5;&#x30FC;&#x30BF;&#x30FC;&#x306F;&#x3001;&#x958B;&#x767A;&#x304A;&#x3088;&#x3073;&#x30C6;&#x30B9;&#x30C8;&#x3092;&#x884C;&#x3046;&#x5834;&#x6240;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002; &#x5909;&#x66F4;&#x306B;&#x6E80;&#x8DB3;&#x3057;&#x305F;&#x3089;&#x3001;GitHub&#x4E0A;&#x306B;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x306E;&#x30B3;&#x30D4;&#x30FC;&#x3092;&#x914D;&#x7F6E;&#x3057;&#x307E;&#x3059;&#x3002; &#x3042;&#x306A;&#x305F;&#x306E;&#x30A6;&#x30A7;&#x30D6;&#x30B5;&#x30A4;&#x30C8;&#x306F;PythonAnywhere&#x3067;&#x516C;&#x958B;&#x3055;&#x308C;&#x3001;GitHub &#x304B;&#x3089;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x65B0;&#x3057;&#x3044;&#x30B3;&#x30D4;&#x30FC;&#x3092;&#x53D6;&#x5F97;&#x3059;&#x308B;&#x3053;&#x3068;&#x306B;&#x3088;&#x3063;&#x3066;&#x66F4;&#x65B0;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;</p><h1 id="git">Git</h1><blockquote><p><strong>&#x6CE8;&#xFF1A;</strong>&#x3082;&#x3057;&#x3001;&#x3059;&#x3067;&#x306B;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3057;&#x3066;&#x3044;&#x305F;&#x5834;&#x5408;&#x306F;&#x518D;&#x5EA6;&#x884C;&#x3046;&#x5FC5;&#x8981;&#x306F;&#x3042;&#x308A;&#x307E;&#x305B;&#x3093;&#x3002;&#x6B21;&#x306E;&#x30BB;&#x30AF;&#x30B7;&#x30E7;&#x30F3;&#x306B;&#x9032;&#x3093;&#x3067;&#x3042;&#x306A;&#x305F;&#x306E;Git&#x30EA;&#x30DD;&#x30B8;&#x30C8;&#x30EA;&#x3092;&#x4F5C;&#x308A;&#x59CB;&#x3081;&#x3089;&#x308C;&#x307E;&#x3059;&#x3002;</p></blockquote><p>Git&#x306F;&#x305F;&#x304F;&#x3055;&#x3093;&#x306E;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30DE;&#x304C;&#x5229;&#x7528;&#x3059;&#x308B;&#x300C;&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;&#x7BA1;&#x7406;&#x30B7;&#x30B9;&#x30C6;&#x30E0;&#x300D;&#x3067;&#x3059;&#x3002; &#x3053;&#x306E;&#x30BD;&#x30D5;&#x30C8;&#x30A6;&#x30A7;&#x30A2;&#x306F;&#x3001;&#x7279;&#x5B9A;&#x306E;&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;&#x3092;&#x5F8C;&#x3067;&#x547C;&#x3073;&#x51FA;&#x3059;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x308B;&#x3088;&#x3046;&#x306B;&#x3001;&#x6642;&#x9593;&#x306E;&#x7D4C;&#x904E;&#x3068;&#x3068;&#x3082;&#x306B;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3078;&#x306E;&#x5909;&#x66F4;&#x3092;&#x8FFD;&#x8DE1;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002; &#x30EF;&#x30FC;&#x30C9;&#x30D7;&#x30ED;&#x30BB;&#x30C3;&#x30B5;&#x30FC;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0; (&#x4F8B;&#x3048;&#x3070;&#x3001;Microsoft Word&#x3084;LibreOffice Writer&#xFF09;&#x306E;&#x300C;&#x5909;&#x66F4;&#x5C65;&#x6B74;&#x300D;&#x6A5F;&#x80FD;&#x3092;&#x3088;&#x308A;&#x5F37;&#x529B;&#x306B;&#x3057;&#x305F;&#x3088;&#x3046;&#x306A;&#x3082;&#x306E;&#x3067;&#x3059;&#x3002;</p><h2 id="git&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;">Git&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;</h2><sec data-title="Installing Git: Windows" data-id="git_install_windows" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Installing Git: Windows<a class="pull-right section atTitle btn btn-default" target="git_install_windows"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="git_install_windows"><div class="panel-body">
+
+
+<p><a href="https://git-scm.com/" target="_blank">git-scm.com</a> &#x304B;&#x3089;Git&#x3092;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002; 2&#x3064;&#x306E;&#x30B9;&#x30C6;&#x30C3;&#x30D7;&#x3092;&#x9664;&#x3044;&#x3066;&#x300C;&#x6B21;&#x3078;&#x300D;&#x3092;&#x62BC;&#x3057;&#x3066;&#x9032;&#x3093;&#x3067;&#x5927;&#x4E08;&#x592B;&#x3067;&#x3059;&#x3002;&#x30A8;&#x30C7;&#x30A3;&#x30BF;&#x3092;&#x9078;&#x3076;&#x30B9;&#x30C6;&#x30C3;&#x30D7;&#x3067;&#x306F;&#x3001;Nano&#x3092;&#x9078;&#x3093;&#x3067;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;&#x300C;PATH&#x74B0;&#x5883;&#x3092;&#x8ABF;&#x6574;&#x3059;&#x308B;(Adjusting your PATH environment)&#x300D;&#x3068;&#x3044;&#x3046;&#x30B9;&#x30C6;&#x30C3;&#x30D7;&#x3067;&#x306F;&#x3001;&#x300C;Use Git and optional Unix tools from the Windows Command Prompt&#xFF08;Windows&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30D7;&#x30ED;&#x30F3;&#x30D7;&#x30C8;&#x304B;&#x3089;Git&#x3068;&#x30AA;&#x30D7;&#x30B7;&#x30E7;&#x30F3;&#x306E;Unix&#x30C4;&#x30FC;&#x30EB;&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#xFF09;&#x300D;&#xFF08;&#x4E00;&#x756A;&#x4E0B;&#x306E;&#x9078;&#x629E;&#x80A2;&#xFF09;&#x3092;&#x9078;&#x629E;&#x3057;&#x307E;&#x3059;&#x3002; &#x305D;&#x308C;&#x4EE5;&#x5916;&#x306F;&#x30C7;&#x30D5;&#x30A9;&#x30EB;&#x30C8;&#x306E;&#x8A2D;&#x5B9A;&#x5024;&#x3067;&#x69CB;&#x3044;&#x307E;&#x305B;&#x3093;&#x3002; &#x6539;&#x884C;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x5909;&#x63DB;(Configuring the line ending conversions)&#x306B;&#x3064;&#x3044;&#x3066;&#x306F;&#x3001;&#x300C;Checkout Windows-style, commit Unix-style line endings&#x300D;&#x306E;&#x9078;&#x629E;&#x3067;&#x5927;&#x4E08;&#x592B;&#x3067;&#x3059;&#x3002;</p><p>&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x304C;&#x6B63;&#x5E38;&#x306B;&#x7D42;&#x4E86;&#x3057;&#x305F;&#x5F8C;&#x3001;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30D7;&#x30ED;&#x30F3;&#x30D7;&#x30C8;&#x307E;&#x305F;&#x306F;PowerShell&#x3092;&#x518D;&#x8D77;&#x52D5;&#x3059;&#x308B;&#x3053;&#x3068;&#x3092;&#x5FD8;&#x308C;&#x306A;&#x3044;&#x3067;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p></div></div></div></sec><p></p><sec data-title="Installing Git: OS X" data-id="git_install_OSX" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Installing Git: OS X<a class="pull-right section atTitle btn btn-default" target="git_install_OSX"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="git_install_OSX"><div class="panel-body">
+
+
+<p><a href="https://git-scm.com/" target="_blank">git-scm.com</a> &#x304B;&#x3089;Git&#x3092;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3057;&#x3001;&#x6307;&#x793A;&#x306B;&#x5F93;&#x3063;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p><blockquote><p><strong>&#x6CE8;</strong> OS X 10.6,10.7&#x3001;&#x307E;&#x305F;&#x306F;10.8&#x3092;&#x5B9F;&#x884C;&#x3057;&#x3066;&#x3044;&#x308B;&#x5834;&#x5408;&#x306F;&#x3001;&#x3053;&#x3053;&#x304B;&#x3089;git&#x306E;&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;&#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3059;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;: <a href="https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download" target="_blank">Git installer for OS X Snow Leopard</a></p></blockquote></div></div></div></sec>
+
+
+<sec data-title="Installing Git: Debian or Ubuntu" data-id="git_install_debian_ubuntu" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Installing Git: Debian or Ubuntu<a class="pull-right section atTitle btn btn-default" target="git_install_debian_ubuntu"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="git_install_debian_ubuntu"><div class="panel-body">
+
+
+<p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-bash">$ sudo apt install git</code></pre>
+</div></div></div></sec>
+
+
+<sec data-title="Installing Git: Fedora" data-id="git_install_fedora" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Installing Git: Fedora<a class="pull-right section atTitle btn btn-default" target="git_install_fedora"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="git_install_fedora"><div class="panel-body">
+
+
+<p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-bash">$ sudo dnf install git</code></pre>
+</div></div></div></sec>
+
+
+<sec data-title="Installing Git: openSUSE" data-id="git_install_openSUSE" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Installing Git: openSUSE<a class="pull-right section atTitle btn btn-default" target="git_install_openSUSE"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="git_install_openSUSE"><div class="panel-body">
+
+
+<p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-bash">$ sudo zypper install git</code></pre>
+</div></div></div></sec>
+
+
+<h2 id="git&#x30EA;&#x30DD;&#x30B8;&#x30C8;&#x30EA;&#x3092;&#x59CB;&#x3081;&#x308B;">Git&#x30EA;&#x30DD;&#x30B8;&#x30C8;&#x30EA;&#x3092;&#x59CB;&#x3081;&#x308B;</h2><p>Git&#x306F;&#x30B3;&#x30FC;&#x30C9;&#x30EA;&#x30DD;&#x30B8;&#x30C8;&#x30EA;&#xFF08;&#x307E;&#x305F;&#x306F;&#x7565;&#x3057;&#x3066;&#x300C;&#x30EA;&#x30DD;&#x30B8;&#x30C8;&#x30EA;&#x300D;&#xFF09;&#x3068;&#x3044;&#x3046;&#x3082;&#x306E;&#x306E;&#x4E2D;&#x306B;&#x7F6E;&#x304B;&#x308C;&#x308B;&#x7279;&#x5B9A;&#x306E;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3078;&#x306E;&#x5909;&#x66F4;&#x3092;&#x8FFD;&#x8DE1;&#x3057;&#x307E;&#x3059;&#x3002; &#x79C1;&#x305F;&#x3061;&#x306E;&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3092;&#x958B;&#x59CB;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002; &#x3042;&#x306A;&#x305F;&#x306E;&#x30B3;&#x30F3;&#x30BD;&#x30FC;&#x30EB;&#x3092;&#x958B;&#x304D;&#x3001;<code>djangogirls</code> &#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x3067;&#x3053;&#x308C;&#x3089;&#x306E;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3092;&#x5B9F;&#x884C;&#x3057;&#x307E;&#x3059;&#x3002;</p><blockquote><p><strong>&#x5099;&#x8003;&#xFF1A;</strong>&#x30EA;&#x30DD;&#x30B8;&#x30C8;&#x30EA;&#x3092;&#x521D;&#x671F;&#x5316;&#x3059;&#x308B;&#x524D;&#x306B; <code>pwd</code> (OSX/Linux) &#x307E;&#x305F;&#x306F; <code>cd</code> (Windows) &#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3067;&#x73FE;&#x5728;&#x306E;&#x4F5C;&#x696D;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002; <code>djangogirls</code> &#x30D5;&#x30A9;&#x30EB;&#x30C0;&#x30FC;&#x5185;&#x306B;&#x3044;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;</p></blockquote><p></p><p class="code-label">command-line</p><p></p><pre><code>        $ git init
+        Initialized empty Git repository in ~/djangogirls/.git/
+        $ git config --global user.name &quot;Your Name&quot;
+        $ git config --global user.email you@example.com</code></pre>
+<p>git&#x30EA;&#x30DD;&#x30B8;&#x30C8;&#x30EA;&#x3092;&#x521D;&#x671F;&#x5316;&#x3059;&#x308B;&#x3053;&#x3068;&#x306F;&#x3001;&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3054;&#x3068;&#x306B;1&#x56DE;&#x3060;&#x3051;&#x884C;&#x3046;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#xFF08;&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x540D;&#x3068;&#x96FB;&#x5B50;&#x30E1;&#x30FC;&#x30EB;&#x3092;&#x3082;&#x3046;&#x4E00;&#x5EA6;&#x5165;&#x529B;&#x3059;&#x308B;&#x5FC5;&#x8981;&#x306F;&#x3042;&#x308A;&#x307E;&#x305B;&#x3093;&#xFF09;&#x3002;</p><p>Git &#x306F;&#x3053;&#x306E;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x5185;&#x306E;&#x3059;&#x3079;&#x3066;&#x306E;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3068;&#x30D5;&#x30A9;&#x30EB;&#x30C0;&#x306E;&#x5909;&#x66F4;&#x3092;&#x8FFD;&#x8DE1;&#x3057;&#x307E;&#x3059;&#x304C;&#x3001;&#x7121;&#x8996;&#x3057;&#x3066;&#x307B;&#x3057;&#x3044;&#x3044;&#x304F;&#x3064;&#x304B;&#x306E;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002; &#x30D9;&#x30FC;&#x30B9;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x5185;&#x3067; <code>.gitignore</code> &#x3068;&#x3044;&#x3046;&#x540D;&#x524D;&#x306E;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x3053;&#x3068;&#x306B;&#x3088;&#x3063;&#x3066;&#x3053;&#x308C;&#x3092;&#x884C;&#x3044;&#x307E;&#x3059;&#x3002; &#x3042;&#x306A;&#x305F;&#x306E;&#x30A8;&#x30C7;&#x30A3;&#x30BF;&#x30FC;&#x3092;&#x958B;&#x304D;&#x3001;&#x6B21;&#x306E;&#x5185;&#x5BB9;&#x3067;&#x65B0;&#x3057;&#x3044;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3059;&#x3002;</p><p></p><p class="code-label">.gitignore</p><p></p><pre><code>        *.pyc
+        *~
+        /.vscode
+        __pycache__
+        myvenv
+        db.sqlite3
+        /static
+        .DS_Store</code></pre>
+<p>&#x3053;&#x308C;&#x3092; &quot;djangogirls&quot; &#x30D5;&#x30A9;&#x30EB;&#x30C0;&#x5185;&#x306B; <code>.gitignore</code> &#x3068;&#x3044;&#x3046;&#x540D;&#x524D;&#x3067;&#x4FDD;&#x5B58;&#x3057;&#x307E;&#x3059;&#x3002;</p><blockquote><p><strong>&#x5099;&#x8003;&#xFF1A;</strong>&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x540D;&#x306E;&#x5148;&#x982D;&#x306E;&#x30C9;&#x30C3;&#x30C8;&#x306F;&#x91CD;&#x8981;&#x3067;&#x3059;! &#x3082;&#x3057;&#x305D;&#x306E;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x4F5C;&#x308B;&#x306E;&#x304C;&#x96E3;&#x3057;&#x3044;&#x306A;&#x3089;&#x3001;&#xFF08;Mac&#x3092;&#x304A;&#x4F7F;&#x3044;&#x306E;&#x65B9;&#x306F;Finder&#x304B;&#x3089;&#x30C9;&#x30C3;&#x30C8;&#xFF08; . &#xFF09;&#x3067;&#x59CB;&#x307E;&#x308B;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x4F5C;&#x308C;&#x307E;&#x305B;&#x3093;&#x3002;&#xFF09;&#x305D;&#x3046;&#x3044;&#x3046;&#x6642;&#x306F;&#x30A8;&#x30C7;&#x30A3;&#x30BF;&#x3067;Save As&#x304B;&#x3089;&#x4F5C;&#x6210;&#x3059;&#x308C;&#x3070;&#x554F;&#x984C;&#x3042;&#x308A;&#x307E;&#x305B;&#x3093;&#x3002; <code>.txt</code>&#x3084; <code>.py</code>&#x306A;&#x3069;&#x306E;&#x62E1;&#x5F35;&#x5B50;&#x3092;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x540D;&#x306B;&#x5165;&#x308C;&#x306A;&#x3044;&#x3088;&#x3046;&#x306B;&#x6C17;&#x3092;&#x3064;&#x3051;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002; &#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x540D;&#x304C;<code>.gitignore</code>&#x3067;&#x306A;&#x3044;&#x3068;Git&#x306B;&#x8A8D;&#x8B58;&#x3055;&#x308C;&#x307E;&#x305B;&#x3093;&#x3002;</p><p><strong>&#x5099;&#x8003;&#xFF1A;</strong> <code>.gitignore</code>&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3067;&#x6307;&#x5B9A;&#x3057;&#x305F;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;1&#x3064;&#x304C;<code>db.sqlite3</code>&#x3067;&#x3059;&#x3002; &#x305D;&#x306E;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306F;&#x30ED;&#x30FC;&#x30AB;&#x30EB;&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x3067;&#x3001;&#x3059;&#x3079;&#x3066;&#x306E;&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x3068;&#x6295;&#x7A3F;&#x304C;&#x4FDD;&#x5B58;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002; &#x79C1;&#x9054;&#x306F;&#x6A19;&#x6E96;&#x7684;&#x306A;&#x30A6;&#x30A7;&#x30D6;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30DF;&#x30F3;&#x30B0;&#x306E;&#x6163;&#x7FD2;&#x306B;&#x5F93;&#x3044;&#x307E;&#x3059;&#x3002;&#x3064;&#x307E;&#x308A;&#x3001;&#x30ED;&#x30FC;&#x30AB;&#x30EB;&#x306E;&#x30C6;&#x30B9;&#x30C8;&#x30B5;&#x30A4;&#x30C8;&#x3068;PythonAnywhere&#x4E0A;&#x306E;&#x672C;&#x756A;&#x306E;&#x30A6;&#x30A7;&#x30D6;&#x30B5;&#x30A4;&#x30C8;&#x3067;&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x3092;&#x5206;&#x3051;&#x308B;&#x3068;&#x3044;&#x3046;&#x3053;&#x3068;&#x3067;&#x3059;&#x3002; PythonAnywhere&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x306F;&#x958B;&#x767A;&#x7528;&#x306E;&#x30DE;&#x30B7;&#x30F3;&#x3068;&#x540C;&#x3058;&#x3088;&#x3046;&#x306B;SQLite&#x306B;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x304C;&#x3001;&#x901A;&#x5E38;&#x306F;MySQL&#x3068;&#x3044;&#x3046;SQLite&#x3088;&#x308A;&#x3082;&#x305F;&#x304F;&#x3055;&#x3093;&#x306E;&#x30B5;&#x30A4;&#x30C8;&#x8A2A;&#x554F;&#x8005;&#x306B;&#x5BFE;&#x51E6;&#x3067;&#x304D;&#x308B;&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x3092;&#x4F7F;&#x7528;&#x3057;&#x307E;&#x3059;&#x3002; &#x3069;&#x3061;&#x3089;&#x306E;&#x65B9;&#x6CD5;&#x3067;&#x3082;&#x3001;GitHub&#x306E;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x30B3;&#x30D4;&#x30FC;&#x3067;&#x306F;SQLite&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x3092;&#x7121;&#x8996;&#x3059;&#x308B;&#x3053;&#x3068;&#x3067;&#x3001;&#x3053;&#x308C;&#x307E;&#x3067;&#x306B;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x3059;&#x3079;&#x3066;&#x306E;&#x6295;&#x7A3F;&#x3068;&#x7BA1;&#x7406;&#x8005;&#x306F;&#x305D;&#x306E;&#x307E;&#x307E;&#x30ED;&#x30FC;&#x30AB;&#x30EB;&#x3067;&#x5229;&#x7528;&#x3067;&#x304D;&#x307E;&#x3059;&#x304C;&#x3001;&#x672C;&#x756A;&#x74B0;&#x5883;&#xFF08;&#x30D6;&#x30ED;&#x30B0;&#x3092;&#x516C;&#x958B;&#x3059;&#x308B;PythonAnywhere&#x306E;&#x3053;&#x3068;&#x3067;&#x3059;&#xFF09;&#x3067;&#x306F;&#x305D;&#x308C;&#x3089;&#x3092;&#x518D;&#x3073;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002; &#x30ED;&#x30FC;&#x30AB;&#x30EB;&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x306F;&#x672C;&#x5F53;&#x306E;&#x30D6;&#x30ED;&#x30B0;&#x6295;&#x7A3F;&#x3092;&#x30D6;&#x30ED;&#x30B0;&#x304B;&#x3089;&#x524A;&#x9664;&#x3057;&#x3066;&#x3057;&#x307E;&#x3046;&#x3053;&#x3068;&#x3092;&#x5FC3;&#x914D;&#x305B;&#x305A;&#x306B;&#x3001;&#x3055;&#x307E;&#x3056;&#x307E;&#x306A;&#x3053;&#x3068;&#x3092;&#x30C6;&#x30B9;&#x30C8;&#x3067;&#x304D;&#x308B;&#x3088;&#x3044;&#x904A;&#x3073;&#x5834;&#x3068;&#x3057;&#x3066;&#x8003;&#x3048;&#x308B;&#x3068;&#x3044;&#x3044;&#x3067;&#x3057;&#x3087;&#x3046;&#x3002;</p></blockquote><p><code>git add</code> &#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x524D;&#x3084;&#x3001;&#x3069;&#x306E;&#x3088;&#x3046;&#x306A;&#x5909;&#x66F4;&#x3092;&#x52A0;&#x3048;&#x305F;&#x304B;&#x5B9A;&#x304B;&#x3067;&#x306A;&#x3044;&#x6642;&#x306F;&#x3001; <code>git status</code> &#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x4E8B;&#x3092;&#x304A;&#x3059;&#x3059;&#x3081;&#x3057;&#x307E;&#x3059;&#x3002; &#x3053;&#x308C;&#x306F;&#x9593;&#x9055;&#x3063;&#x305F;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x8FFD;&#x52A0;&#x307E;&#x305F;&#x306F;&#x30B3;&#x30DF;&#x30C3;&#x30C8;&#x306A;&#x3069;&#x601D;&#x3044;&#x3082;&#x304B;&#x3051;&#x306A;&#x3044;&#x4E8B;&#x3092;&#x6B62;&#x3081;&#x308B;&#x305F;&#x3081;&#x306B;&#x5F79;&#x7ACB;&#x3061;&#x307E;&#x3059;&#x3002; <code>git status</code> &#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x306F;&#x3001;&#x3042;&#x3089;&#x3086;&#x308B;&#x8FFD;&#x8DE1;&#x3055;&#x308C;&#x3066;&#x3044;&#x306A;&#x3044;/&#x5909;&#x66F4;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;/&#x30B9;&#x30C6;&#x30FC;&#x30B8;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#xFF08;untracked/modifed/staged&#xFF09;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3084;&#x3001;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x306E;&#x72B6;&#x614B;&#x306A;&#x3069;&#x3055;&#x307E;&#x3056;&#x307E;&#x306A;&#x60C5;&#x5831;&#x3092;&#x8FD4;&#x3057;&#x307E;&#x3059;&#x3002; &#x51FA;&#x529B;&#x306F;&#x6B21;&#x306E;&#x3088;&#x3046;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        $ git status
+        On branch master
+
+        No commits yet
+
+        Untracked files:
+          (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+
+                .gitignore
+                blog/
+                manage.py
+                mysite/
+                requirements.txt
+
+        nothing added to commit but untracked files present (use &quot;git add&quot; to track)</code></pre>
+<p>&#x6700;&#x5F8C;&#x306B;&#x3001;&#x5909;&#x66F4;&#x5185;&#x5BB9;&#x3092;&#x4FDD;&#x5B58;&#x3057;&#x307E;&#x3059;&#x3002;&#x30B3;&#x30F3;&#x30BD;&#x30FC;&#x30EB;&#x306B;&#x79FB;&#x52D5;&#x3057;&#x3001;&#x3053;&#x308C;&#x3089;&#x306E;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3092;&#x5B9F;&#x884C;&#x3057;&#x307E;&#x3059;&#x3002;</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        $ git add --all .
+        $ git commit -m &quot;My Django Girls app, first commit&quot;
+         [...]
+         13 files changed, 200 insertions(+)
+         create mode 100644 .gitignore
+         [...]
+         create mode 100644 mysite/wsgi.py</code></pre>
+<h2 id="github&#x306B;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x30D7;&#x30C3;&#x30B7;&#x30E5;&#x3059;&#x308B;">GitHub&#x306B;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x30D7;&#x30C3;&#x30B7;&#x30E5;&#x3059;&#x308B;</h2><p><a href="https://www.github.com" target="_blank">GitHub.com</a>&#x306B;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x3057;&#x3001;Sign up&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x3066;&#x7121;&#x6599;&#x306E;&#x65B0;&#x898F;&#x30A2;&#x30AB;&#x30A6;&#x30F3;&#x30C8;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002; &#xFF08;&#x30EF;&#x30FC;&#x30AF;&#x30B7;&#x30E7;&#x30C3;&#x30D7;&#x306E;&#x524D;&#x306B;&#x3059;&#x3067;&#x306B;&#x4F5C;&#x6210;&#x3057;&#x3066;&#x3044;&#x305F;&#x3089;&#x3001;&#x305D;&#x308C;&#x306F;&#x7D20;&#x6674;&#x3089;&#x3057;&#x3044;&#x3067;&#x3059;!&#xFF09; &#x3042;&#x306A;&#x305F;&#x306E;&#x30D1;&#x30B9;&#x30EF;&#x30FC;&#x30C9;&#x3092;&#x5FD8;&#x308C;&#x306A;&#x3044;&#x3088;&#x3046;&#x306B;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#xFF08;&#x4F7F;&#x3063;&#x3066;&#x3044;&#x305F;&#x3089;&#x3001;&#x30D1;&#x30B9;&#x30EF;&#x30FC;&#x30C9;&#x30DE;&#x30CD;&#x30FC;&#x30B8;&#x30E3;&#x30FC;&#x306B;&#x5165;&#x308C;&#x3066;&#x304A;&#x3044;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#xFF09;</p><p>&#x305D;&#x3057;&#x3066;&#x3001;&#x65B0;&#x3057;&#x3044;&#x30EA;&#x30DD;&#x30B8;&#x30C8;&#x30EA;&#x306B; &quot;my-first-blog&quot;&#x306E;&#x540D;&#x524D;&#x3067;&#x65B0;&#x3057;&#x3044;&#x30EA;&#x30DD;&#x30B8;&#x30C8;&#x30EA;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3059;&#x3002; &quot;README&#x3067;&#x521D;&#x671F;&#x5316;&#x3059;&#x308B;&quot;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x30DC;&#x30C3;&#x30AF;&#x30B9;&#x3092;&#x30AA;&#x30D5;&#x306E;&#x307E;&#x307E;&#x306B;&#x3057;&#x3001;.gitignore&#x30AA;&#x30D7;&#x30B7;&#x30E7;&#x30F3;&#x3092;&#x7A7A;&#x767D;&#x306B;&#x3057;&#x3066;&#xFF08;&#x624B;&#x52D5;&#x3067;&#x884C;&#x3063;&#x3066;&#x3044;&#x307E;&#x3059;&#xFF09;&#x3001;&#x30E9;&#x30A4;&#x30BB;&#x30F3;&#x30B9;&#x3092;None&#x306E;&#x307E;&#x307E;&#x306B;&#x3057;&#x3066;&#x304A;&#x304D;&#x307E;&#x3059;&#x3002;</p><p><img alt="" src="images/new_github_repo.png"></p><blockquote><p><strong>&#x6CE8;</strong> <code>my-first-blog</code>&#x3068;&#x3044;&#x3046;&#x540D;&#x524D;&#x306F;&#x91CD;&#x8981;&#x3067;&#x3059;&#x3002;&#x4F55;&#x304B;&#x4ED6;&#x306E;&#x3082;&#x306E;&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;&#x3053;&#x3068;&#x3082;&#x3067;&#x304D;&#x307E;&#x3059;&#x304C;&#x3001;&#x4EE5;&#x4E0B;&#x306E;&#x624B;&#x9806;&#x3067;&#x306F;&#x4F55;&#x5EA6;&#x3082;&#x7E70;&#x308A;&#x8FD4;&#x3059;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;&#x4ED6;&#x306E;&#x540D;&#x524D;&#x3092;&#x9078;&#x629E;&#x3057;&#x305F;&#x5834;&#x5408;&#x306F;&#x3001; &#x6BCE;&#x56DE;&#x305D;&#x308C;&#x3092;&#x7F6E;&#x304D;&#x63DB;&#x3048;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002; &#x3067;&#x304D;&#x308C;&#x3070;&#x3001;<code>my-first-blog</code> &#x306E;&#x540D;&#x524D;&#x306B;&#x3057;&#x3066;&#x304A;&#x304D;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p></blockquote><p>&#x6B21;&#x306E;&#x753B;&#x9762;&#x3067;&#x306F;&#x3001;&#x30EA;&#x30DD;&#x30B8;&#x30C8;&#x30EA;&#x3092;&#x30AF;&#x30ED;&#x30FC;&#x30F3;&#x3059;&#x308B;&#x305F;&#x3081;&#x306E;URL&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;&#x3053;&#x308C;&#x306F;&#x3053;&#x306E;&#x5F8C;&#x306E;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3067;&#x5229;&#x7528;&#x3057;&#x307E;&#x3059;&#x3002;</p><p><img alt="" src="images/github_get_repo_url_screenshot.png"></p><p>&#x305D;&#x3057;&#x3066;&#x81EA;&#x5206;&#x306E;&#x30B3;&#x30F3;&#x30D4;&#x30E5;&#x30FC;&#x30BF;&#x30FC;&#x4E0A;&#x306E;Git&#x30EA;&#x30DD;&#x30B8;&#x30C8;&#x30EA;&#x3092;GitHub&#x4E0A;&#x306E;Git&#x30EA;&#x30DD;&#x30B8;&#x30C8;&#x30EA;&#x306B;&#x7D50;&#x3073;&#x3064;&#x3051;&#x3066;&#x3042;&#x3052;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;</p><p>&#x30B3;&#x30F3;&#x30BD;&#x30FC;&#x30EB;&#x306B;&#x6B21;&#x306E;&#x3088;&#x3046;&#x306B;&#x5165;&#x529B;&#x3057;&#x307E;&#x3059;&#xFF08;<code>&lt;your-github-username&gt;</code>&#x3092;GitHub&#x30A2;&#x30AB;&#x30A6;&#x30F3;&#x30C8;&#x306E;&#x4F5C;&#x6210;&#x6642;&#x306B;&#x5165;&#x529B;&#x3057;&#x305F;&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x540D;&#x306B;&#x7F6E;&#x304D;&#x63DB;&#x3048;&#x307E;&#x3059;&#x3002;&#x5C71;&#x30AB;&#x30C3;&#x30B3;&lt;&gt;&#x3092;&#x6B8B;&#x3055;&#x306A;&#x3044;&#x3067;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;&#x3053;&#x306E;URL&#x306F;&#x3055;&#x3063;&#x304D;&#x898B;&#x305F;&#x30AF;&#x30ED;&#x30FC;&#x30F3;URL&#x3068;&#x4E00;&#x81F4;&#x3059;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#xFF09;&#x3002;</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        $ git remote add origin https://github.com/&lt;your-github-username&gt;/my-first-blog.git
+        $ git push -u origin master</code></pre>
+<p>GitHub&#x306B;&#x30D7;&#x30C3;&#x30B7;&#x30E5;&#x3059;&#x308B;&#x3068;&#x304D;&#x3001;GitHub&#x306E;&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x540D;&#x3068;&#x30D1;&#x30B9;&#x30EF;&#x30FC;&#x30C9;&#x3092;&#x805E;&#x304B;&#x308C;&#x307E;&#x3059;&#xFF08;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30E9;&#x30A4;&#x30F3;&#x4E0A;&#x304B;&#x30DD;&#x30C3;&#x30D7;&#x30A2;&#x30C3;&#x30D7;&#x30A6;&#x30A3;&#x30F3;&#x30C9;&#x30A6;&#x306B;&#x3066;&#xFF09;&#x3002;&#x8A8D;&#x8A3C;&#x60C5;&#x5831;&#x3092;&#x5165;&#x529B;&#x3057;&#x305F;&#x3089;&#x3053;&#x3093;&#x306A;&#x98A8;&#x306B;&#x8868;&#x793A;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        Counting objects: 6, done.
+        Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
+        Total 3 (delta 0), reused 0 (delta 0)
+
+        To https://github.com/ola/my-first-blog.git
+         * [new branch]      master -&gt; master
+        Branch master set up to track remote branch master from origin.</code></pre>
+<!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
+
+
+<p>&#x3042;&#x306A;&#x305F;&#x306E;&#x30B3;&#x30FC;&#x30C9;&#x306F;&#x4ECA;GitHub&#x4E0A;&#x306B;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002; &#x898B;&#x306B;&#x884C;&#x304D;&#x307E;&#x3057;&#x3087;&#x3046;&#xFF01; <a href="https://github.com/django/django" target="_blank"> Django </a>&#x3084;<a href="https://github.com/DjangoGirls/tutorial" target="_blank"> Django Girls Tutorial </a>&#x3001;&#x305D;&#x306E;&#x4ED6;&#x305F;&#x304F;&#x3055;&#x3093;&#x306E;&#x7D20;&#x6674;&#x3089;&#x3057;&#x3044;&#x30AA;&#x30FC;&#x30D7;&#x30F3;&#x30BD;&#x30FC;&#x30B9;&#x30BD;&#x30D5;&#x30C8;&#x30A6;&#x30A7;&#x30A2;&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3082;GitHub&#x3067;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x30DB;&#x30B9;&#x30C8;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002; :)</p><h1 id="pythonanywhere&#x3067;&#x30D6;&#x30ED;&#x30B0;&#x3092;&#x8A2D;&#x5B9A;&#x3059;&#x308B;">PythonAnywhere&#x3067;&#x30D6;&#x30ED;&#x30B0;&#x3092;&#x8A2D;&#x5B9A;&#x3059;&#x308B;</h1><h2 id="pythonanywhere-&#x30A2;&#x30AB;&#x30A6;&#x30F3;&#x30C8;&#x306B;&#x30B5;&#x30A4;&#x30F3;&#x30A2;&#x30C3;&#x30D7;&#x3059;&#x308B;">PythonAnywhere &#x30A2;&#x30AB;&#x30A6;&#x30F3;&#x30C8;&#x306B;&#x30B5;&#x30A4;&#x30F3;&#x30A2;&#x30C3;&#x30D7;&#x3059;&#x308B;</h2><blockquote><p><strong>&#x5099;&#x8003;&#xFF1A;</strong>&#x3042;&#x306A;&#x305F;&#x304C;&#x3059;&#x3067;&#x306B;PythonAnywhere&#x306E;&#x30A2;&#x30AB;&#x30A6;&#x30F3;&#x30C8;&#x3092;&#x4EE5;&#x524D;&#x306B;&#x4F5C;&#x6210;&#x3057;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x306E;&#x624B;&#x9806;&#x3092;&#x3075;&#x3093;&#x3067;&#x3044;&#x305F;&#x3089;&#x3001;&#x518D;&#x3073;&#x305D;&#x308C;&#x3092;&#x884C;&#x3046;&#x5FC5;&#x8981;&#x306F;&#x3042;&#x308A;&#x307E;&#x305B;&#x3093;&#x3002;</p></blockquote><p>PythonAnywhere&#x306F;&#x30AF;&#x30E9;&#x30A6;&#x30C9;&#x4E0A;&#x306E;&#x30B5;&#x30FC;&#x30D0;&#x30FC;&#x3067;Python&#x306E;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x8D70;&#x3089;&#x305B;&#x308B;&#x305F;&#x3081;&#x306E;&#x30B5;&#x30FC;&#x30D3;&#x30B9;&#x3067;&#x3059;&#x3002;&#x79C1;&#x305F;&#x3061;&#x306E;&#x30B5;&#x30A4;&#x30C8;&#x3092;&#x30DB;&#x30B9;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x3057;&#x3066;&#x3001;&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30CD;&#x30C3;&#x30C8;&#x4E0A;&#x3067;&#x52D5;&#x304B;&#x3057;&#x7D9A;&#x3051;&#x308B;&#x305F;&#x3081;&#x306B;&#x4F7F;&#x3044;&#x307E;&#x3059;&#x3002;</p><p>&#x4ECA;&#x307E;&#x3067;&#x306E;&#x7AE0;&#x3067;&#x4F5C;&#x3063;&#x305F;&#x30D6;&#x30ED;&#x30B0;&#x3092;PythonAnywhere&#x4E0A;&#x306B;&#x30DB;&#x30B9;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x3057;&#x307E;&#x3059;&#x3002;PythonAnywhere&#x306E;&#x300C;Beginner&#x300D;&#x30A2;&#x30AB;&#x30A6;&#x30F3;&#x30C8;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;(&#x30A2;&#x30AB;&#x30A6;&#x30F3;&#x30C8;&#x306F;&#x7121;&#x6599;&#x67A0;&#x3067;&#x5927;&#x4E08;&#x592B;&#x3067;&#x3059;&#x3002;&#x30AF;&#x30EC;&#x30B8;&#x30C3;&#x30C8;&#x30AB;&#x30FC;&#x30C9;&#x306F;&#x5FC5;&#x8981;&#x3042;&#x308A;&#x307E;&#x305B;&#x3093;)&#x3002;</p><ul><li><a href="https://www.pythonanywhere.com/" target="_blank">www.pythonanywhere.com</a>
+</li></ul>
+<p><img alt="PythonAnywhere&#x306E;&#x767B;&#x9332;&#x30DA;&#x30FC;&#x30B8;&#x3002;&#x7121;&#x6599;&#x306E;&#x300C;Beginner&#x300D;&#x30A2;&#x30AB;&#x30A6;&#x30F3;&#x30C8;&#x3092;&#x4F5C;&#x308B;&#x305F;&#x3081;&#x306E;&#x30DC;&#x30BF;&#x30F3;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;" src="images/pythonanywhere_beginner_account_button.png"></p><blockquote><p><strong>&#x6CE8;&#x610F;</strong> &#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x540D;&#x3092;&#x3064;&#x3051;&#x308B;&#x3068;&#x304D;&#x3001;&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x540D;&#x304C; <code>yourusername.pythonanywhere.com</code> &#x3068;&#x3044;&#x3046;&#x3088;&#x3046;&#x306B;&#x30D6;&#x30ED;&#x30B0;&#x306E;URL&#x306B;&#x53CD;&#x6620;&#x3055;&#x308C;&#x308B;&#x3053;&#x3068;&#x306B;&#x6CE8;&#x610F;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;&#x306A;&#x306E;&#x3067;&#x3001;&#x3042;&#x306A;&#x305F;&#x306E;&#x30CB;&#x30C3;&#x30AF;&#x30CD;&#x30FC;&#x30E0;&#x304B;&#x30D6;&#x30ED;&#x30B0;&#x306E;&#x540D;&#x524D;&#x3092;&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x540D;&#x3068;&#x3059;&#x308B;&#x3088;&#x3046;&#x306B;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002; &#x30D1;&#x30B9;&#x30EF;&#x30FC;&#x30C9;&#x306F;&#x5FD8;&#x308C;&#x306A;&#x3044;&#x3088;&#x3046;&#x306B;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;(&#x30D1;&#x30B9;&#x30EF;&#x30FC;&#x30C9;&#x30DE;&#x30CD;&#x30FC;&#x30B8;&#x30E3;&#x30FC;&#x3092;&#x4F7F;&#x3063;&#x3066;&#x3044;&#x308B;&#x306A;&#x3089;&#x899A;&#x3048;&#x3055;&#x305B;&#x3066;&#x304A;&#x304F;&#x306E;&#x3082;&#x826F;&#x3044;&#x3067;&#x3057;&#x3087;&#x3046;&#x3002;)</p></blockquote><h2 id="pythonanywhere-api&#x30C8;&#x30FC;&#x30AF;&#x30F3;&#x306E;&#x4F5C;&#x6210;">PythonAnywhere API&#x30C8;&#x30FC;&#x30AF;&#x30F3;&#x306E;&#x4F5C;&#x6210;</h2><p>&#x30C8;&#x30FC;&#x30AF;&#x30F3;&#x306F;&#x4E00;&#x5EA6;&#x3060;&#x3051;&#x4F5C;&#x308C;&#x3070;&#x3088;&#x3044;&#x3067;&#x3059;&#x3002;PythonAnywhere&#x306E;&#x767B;&#x9332;&#x304C;&#x7D42;&#x308F;&#x308B;&#x3068;&#x30C0;&#x30C3;&#x30B7;&#x30E5;&#x30DC;&#x30FC;&#x30C9;&#x753B;&#x9762;&#x306B;&#x79FB;&#x52D5;&#x3057;&#x307E;&#x3059;&#x3002;&#x300C;Account&#x300D;&#x30DA;&#x30FC;&#x30B8;&#x3078;&#x306E;&#x30EA;&#x30F3;&#x30AF;&#x306F;&#x30DA;&#x30FC;&#x30B8;&#x53F3;&#x4E0A;&#x306E;&#x30D0;&#x30FC;&#x306E;&#x4E2D;&#x306B;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;</p><p><img alt="&#x30DA;&#x30FC;&#x30B8;&#x53F3;&#x4E0A;&#x306B;&#x3042;&#x308B;Account&#x30DA;&#x30FC;&#x30B8;&#x3078;&#x306E;&#x30EA;&#x30F3;&#x30AF;" src="images/pythonanywhere_account.png"></p><p>&#x300C;Account&#x300D;&#x30DA;&#x30FC;&#x30B8;&#x306B;&#x79FB;&#x52D5;&#x3057;&#x305F;&#x3089;&#x3001;&#x300C;API Token&#x300D;&#x3068;&#x3044;&#x3046;&#x30BF;&#x30D6;&#x3092;&#x9078;&#x3093;&#x3067;&#x3001;&#x300C;Create new API token&#x300D;&#x306E;&#x30DC;&#x30BF;&#x30F3;&#x3092;&#x62BC;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p><p><img alt="Account&#x30DA;&#x30FC;&#x30B8;&#x306E;&#x300C;API Token&#x300D;&#x306E;&#x30BF;&#x30D6;" src="images/pythonanywhere_create_api_token.png"></p><h2 id="pythonanywhere-&#x3067;&#x30B5;&#x30A4;&#x30C8;&#x3092;&#x8A2D;&#x5B9A;&#x3059;&#x308B;">PythonAnywhere &#x3067;&#x30B5;&#x30A4;&#x30C8;&#x3092;&#x8A2D;&#x5B9A;&#x3059;&#x308B;</h2><p>&#x30ED;&#x30B4;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x3066;&#x30E1;&#x30A4;&#x30F3;&#x306E;<a href="https://www.pythonanywhere.com/" target="_blank">PythonAnywhere Dashboard</a>&#x306B;&#x623B;&#x308A;&#x3001;&#x300C;Bash&#x300D;&#x30B3;&#x30F3;&#x30BD;&#x30FC;&#x30EB;&#x3092;&#x8D77;&#x52D5;&#x3059;&#x308B;&#x30DC;&#x30BF;&#x30F3;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3059;&#x3002;&#x3053;&#x308C;&#x306F;PythonAnywhere&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;&#x306E;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30E9;&#x30A4;&#x30F3;&#x3067;&#x3001;&#x3061;&#x3087;&#x3046;&#x3069;&#x3042;&#x306A;&#x305F;&#x306E;&#x30B3;&#x30F3;&#x30D4;&#x30E5;&#x30FC;&#x30BF;&#x30FC;&#x306E;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30E9;&#x30A4;&#x30F3;&#x3068;&#x540C;&#x3058;&#x3088;&#x3046;&#x306A;&#x3082;&#x306E;&#x3067;&#x3059;&#x3002;</p><p><img alt="PythonAnywhere&#x306E;&#x30A6;&#x30A7;&#x30D6;&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30D5;&#x30A7;&#x30FC;&#x30B9;&#x306E;&#x300C;New Console&#x300D;&#x3001;&#x300C;bash&#x300D;&#x30DC;&#x30BF;&#x30F3;" src="images/pythonanywhere_bash_console.png"></p><blockquote><p><strong>&#x5099;&#x8003;&#xFF1A;</strong>PythonAnywhere &#x306F; Linux&#x30D9;&#x30FC;&#x30B9;&#x306A;&#x306E;&#x3067;&#x3001;Windows&#x3092;&#x4F7F;&#x3063;&#x3066;&#x3044;&#x308B;&#x5834;&#x5408;&#x306F;&#x3001;&#x30B3;&#x30F3;&#x30BD;&#x30FC;&#x30EB;&#x304C;&#x3042;&#x306A;&#x305F;&#x306E;&#x3082;&#x306E;&#x3068;&#x5C11;&#x3057;&#x9055;&#x3063;&#x3066;&#x898B;&#x3048;&#x308B;&#x3067;&#x3057;&#x3087;&#x3046;&#x3002;</p></blockquote><p>PythonAnywhere&#x306B;Web&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3092;&#x30C7;&#x30D7;&#x30ED;&#x30A4;&#x3059;&#x308B;&#x306B;&#x306F;&#x3001;&#x30B3;&#x30FC;&#x30C9;&#x3092;GitHub&#x304B;&#x3089;&#x30D7;&#x30EB;&#x3057;&#x3001;PythonAnywhere&#x304C;&#x305D;&#x308C;&#x3092;&#x8A8D;&#x8B58;&#x3057;&#x3066;Web&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x306E;&#x30B5;&#x30FC;&#x30D0;&#x3092;&#x52D5;&#x304B;&#x3057;&#x59CB;&#x3081;&#x308B;&#x3088;&#x3046;&#x306B;&#x8A2D;&#x5B9A;&#x3059;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002; &#x305D;&#x308C;&#x3092;&#x624B;&#x52D5;&#x3067;&#x884C;&#x3046;&#x65B9;&#x6CD5;&#x3082;&#x3042;&#x308A;&#x307E;&#x3059;&#x304C;&#x3001;PythonAnywhere&#x306F;&#x305D;&#x308C;&#x3092;&#x3059;&#x3079;&#x3066;&#x884C;&#x3046;&#x30D8;&#x30EB;&#x30D1;&#x30FC;&#x30C4;&#x30FC;&#x30EB;&#x3092;&#x63D0;&#x4F9B;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002; &#x307E;&#x305A;&#x3001;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3057;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p><p></p><p class="code-label">PythonAnywhere command-line</p><p></p><pre><code>        $ pip3.6 install --user pythonanywhere</code></pre>
+<p><code>Collecting pythonanywhere</code> &#x306E;&#x3088;&#x3046;&#x306A;&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;&#x304C;&#x3044;&#x304F;&#x3064;&#x304B;&#x51FA;&#x529B;&#x3055;&#x308C;&#x3001;&#x6700;&#x7D42;&#x7684;&#x306B;<code>Successfully installed (...) pythonanywhere- (...)</code>&#x3068;&#x3044;&#x3046;&#x884C;&#x3067;&#x7D42;&#x308F;&#x308B;&#x3068;&#x601D;&#x3044;&#x307E;&#x3059;&#x3002;</p><p>GitHub &#x304B;&#x3089;&#x30A2;&#x30D7;&#x30EA;&#x3092;&#x81EA;&#x52D5;&#x7684;&#x306B;&#x69CB;&#x6210;&#x3059;&#x308B;&#x305F;&#x3081;&#x306E;&#x30D8;&#x30EB;&#x30D1;&#x30FC;&#x3092;&#x5B9F;&#x884C;&#x3057;&#x307E;&#x3059;&#x3002; PythonAnywhere&#x306E;&#x30B3;&#x30F3;&#x30BD;&#x30FC;&#x30EB;&#x306B;&#x6B21;&#x306E;&#x3088;&#x3046;&#x306B;&#x5165;&#x529B;&#x3057;&#x307E;&#x3059;&#xFF08;GitHub&#x304B;&#x3089;&#x30AF;&#x30ED;&#x30FC;&#x30F3;&#x3059;&#x308B;&#x3068;&#x304D;&#x306E;URL&#x3068;&#x4E00;&#x81F4;&#x3059;&#x308B;&#x3088;&#x3046;&#x306B;&#x3001;<code>&lt;your-github-username&gt;</code>&#x306E;&#x4EE3;&#x308F;&#x308A;&#x306B;&#x3054;&#x81EA;&#x8EAB;&#x306E;GitHub&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x540D;&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x3053;&#x3068;&#x3092;&#x5FD8;&#x308C;&#x306A;&#x3044;&#x3067;&#x304F;&#x3060;&#x3055;&#x3044;&#xFF09;&#xFF1A;</p><p></p><p class="code-label">PythonAnywhere command-line</p><p></p><pre><code>        $ pa_autoconfigure_django.py --python=3.6 https://github.com/&lt;your-github-username&gt;/my-first-blog.git</code></pre>
+<p>&#x5B9F;&#x884C;&#x3057;&#x3066;&#x3044;&#x308B;&#x3068;&#x3053;&#x308D;&#x3092;&#x898B;&#x308C;&#x3070;&#x3001;&#x4F55;&#x3092;&#x3057;&#x3066;&#x3044;&#x308B;&#x306E;&#x304B;&#x308F;&#x304B;&#x308B;&#x3067;&#x3057;&#x3087;&#x3046;&#x3002;</p><ul><li>GitHub&#x304B;&#x3089;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3059;&#x308B;
+</li>
+<li>&#x3061;&#x3087;&#x3046;&#x3069;&#x3042;&#x306A;&#x305F;&#x306E;PC&#x4E0A;&#x3067;&#x3084;&#x3063;&#x305F;&#x3088;&#x3046;&#x306B;&#x3001;PythonAnywhere&#x4E0A;&#x306B;&#x4EEE;&#x60F3;&#x74B0;&#x5883; &#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;
+</li>
+<li>&#x4E00;&#x90E8;&#x306E;&#x30C7;&#x30D7;&#x30ED;&#x30A4;&#x30E1;&#x30F3;&#x30C8;&#x8A2D;&#x5B9A;&#x3067;&#x8A2D;&#x5B9A;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x66F4;&#x65B0;&#x3059;&#x308B;
+</li>
+<li><code>manage.py migrate</code>&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3092;&#x4F7F;&#x3063;&#x3066;PythonAnywhere&#x4E0A;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x3092;&#x30BB;&#x30C3;&#x30C8;&#x30A2;&#x30C3;&#x30D7;&#x3059;&#x308B;
+</li>
+<li>&#x9759;&#x7684;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x8A2D;&#x5B9A;&#xFF08;&#x3053;&#x308C;&#x306B;&#x3064;&#x3044;&#x3066;&#x306F;&#x5F8C;&#x3067;&#x5B66;&#x7FD2;&#x3057;&#x307E;&#x3059;&#xFF09;
+</li>
+<li>API&#x3092;&#x901A;&#x3058;&#x3066;PythonAnywhere&#x304C;&#x3042;&#x306A;&#x305F;&#x306E;Web&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3092;&#x63D0;&#x4F9B;&#x3059;&#x308B;&#x3088;&#x3046;&#x306B;&#x8A2D;&#x5B9A;&#x3059;&#x308B;
+</li></ul>
+<p>PythonAnywhere&#x3067;&#x306F;&#x3053;&#x308C;&#x3089;&#x3059;&#x3079;&#x3066;&#x306E;&#x30B9;&#x30C6;&#x30C3;&#x30D7;&#x306F;&#x81EA;&#x52D5;&#x5316;&#x3055;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x304C;&#x3001;&#x4ED6;&#x306E;&#x30B5;&#x30FC;&#x30D0;&#x30FC;&#x30D7;&#x30ED;&#x30D0;&#x30A4;&#x30C0;&#x30FC;&#x3067;&#x306F;&#x540C;&#x3058;&#x624B;&#x9806;&#x3092;&#x81EA;&#x5206;&#x3067;&#x5B9F;&#x884C;&#x3057;&#x306A;&#x3051;&#x308C;&#x3070;&#x306A;&#x308A;&#x307E;&#x305B;&#x3093;&#x3002;</p><p>&#x4ECA;&#x6CE8;&#x76EE;&#x3059;&#x3079;&#x304D;&#x91CD;&#x8981;&#x306A;&#x70B9;&#x306F;&#x3001;PythonAnywhere&#x4E0A;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x304C;&#x3001;&#x81EA;&#x5206;&#x306E;PC&#x4E0A;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x3068;&#x306F;&#x307E;&#x3063;&#x305F;&#x304F;&#x5225;&#x7269;&#x3067;&#x3042;&#x308B;&#x3053;&#x3068;&#x3067;&#x3059;&#x3002;&#x3064;&#x307E;&#x308A;&#x3001;&#x7570;&#x306A;&#x308B;&#x6295;&#x7A3F;&#x3068;&#x7BA1;&#x7406;&#x8005;&#x30A2;&#x30AB;&#x30A6;&#x30F3;&#x30C8;&#x3092;&#x6301;&#x3064;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002; &#x305D;&#x306E;&#x7D50;&#x679C;&#x3001;&#x81EA;&#x5206;&#x306E;&#x30B3;&#x30F3;&#x30D4;&#x30E5;&#x30FC;&#x30BF;&#x3067;&#x884C;&#x3063;&#x305F;&#x3088;&#x3046;&#x306B;&#x3001;<code>createsuperuser</code>&#x3067;&#x7BA1;&#x7406;&#x8005;&#x30A2;&#x30AB;&#x30A6;&#x30F3;&#x30C8;&#x3092;&#x521D;&#x671F;&#x5316;&#x3059;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002; PythonAnywhere&#x304C;&#x3042;&#x306A;&#x305F;&#x306E;&#x4EE3;&#x308F;&#x308A;&#x306B;&#x4EEE;&#x60F3;&#x74B0;&#x5883;&#x3092;&#x81EA;&#x52D5;&#x7684;&#x306B;&#x8D77;&#x52D5;&#x3057;&#x305F;&#x306E;&#x3067;&#x3001;&#x3042;&#x306A;&#x305F;&#x304C;&#x3059;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308B;&#x306E;&#x306F;&#x4EE5;&#x4E0B;&#x306E;&#x901A;&#x308A;&#x3067;&#x3059;&#xFF1A;</p><p></p><p class="code-label">PythonAnywhere command-line</p><p></p><pre><code>        (ola.pythonanywhere.com) $ python manage.py createsuperuser</code></pre>
+<p>&#x7BA1;&#x7406;&#x8005;&#x306E;&#x8A73;&#x7D30;&#x3092;&#x5165;&#x529B;&#x3057;&#x307E;&#x3059;&#x3002; PythonAnywhere&#x4E0A;&#x306E;&#x30D1;&#x30B9;&#x30EF;&#x30FC;&#x30C9;&#x3092;&#x3088;&#x308A;&#x5B89;&#x5168;&#x306B;&#x3057;&#x305F;&#x3044;&#x5834;&#x5408;&#x3092;&#x9664;&#x304D;&#x3001;&#x6DF7;&#x4E71;&#x3092;&#x907F;&#x3051;&#x308B;&#x305F;&#x3081;&#x306B;&#x81EA;&#x5206;&#x306E;&#x30B3;&#x30F3;&#x30D4;&#x30E5;&#x30FC;&#x30BF;&#x3067;&#x4F7F;&#x7528;&#x3057;&#x3066;&#x3044;&#x308B;&#x306E;&#x3068;&#x540C;&#x3058;&#x3082;&#x306E;&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x3053;&#x3068;&#x3092;&#x304A;&#x52E7;&#x3081;&#x3057;&#x307E;&#x3059;&#x3002;</p><p>PythonAnywhere&#x306E;&#x30B3;&#x30FC;&#x30C9;&#x3092;<code>ls</code>&#x3092;&#x4F7F;&#x3063;&#x3066;&#x898B;&#x3066;&#x307F;&#x308B;&#x3053;&#x3068;&#x3082;&#x3067;&#x304D;&#x307E;&#x3059;&#xFF1A;</p><p></p><p class="code-label">PythonAnywhere command-line</p><p></p><pre><code>        (ola.pythonanywhere.com) $ ls
+        blog  db.sqlite3  manage.py  mysite requirements.txt static
+        (ola.pythonanywhere.com) $ ls blog/
+        __init__.py  __pycache__  admin.py  apps.py  migrations  models.py
+        tests.py  views.py</code></pre>
+<p>&#x307E;&#x305F;&#x3001;Files&#x30DA;&#x30FC;&#x30B8;&#x306B;&#x79FB;&#x52D5;&#x3057;&#x3001;PythonAnywhere&#x306B;&#x7D44;&#x307F;&#x8FBC;&#x307E;&#x308C;&#x3066;&#x3044;&#x308B;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x30D6;&#x30E9;&#x30A6;&#x30B6;&#x3092;&#x4F7F;&#x7528;&#x3057;&#x3066;&#x95B2;&#x89A7;&#x3059;&#x308B;&#x3053;&#x3068;&#x3082;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002; (Console&#x30DA;&#x30FC;&#x30B8;&#x304B;&#x3089;PythonAnywhere&#x306E;&#x4ED6;&#x306E;&#x30DA;&#x30FC;&#x30B8;&#x306B;&#x306F;&#x3001;&#x53F3;&#x4E0A;&#x306E;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x30DC;&#x30BF;&#x30F3;&#x304B;&#x3089;&#x3044;&#x3051;&#x307E;&#x3059;&#x3002; &#x4E00;&#x5EA6;&#x3044;&#x305A;&#x308C;&#x304B;&#x306E;&#x30DA;&#x30FC;&#x30B8;&#x306B;&#x79FB;&#x52D5;&#x3057;&#x305F;&#x3089;&#x3001;&#x4ED6;&#x30DA;&#x30FC;&#x30B8;&#x3078;&#x306E;&#x30EA;&#x30F3;&#x30AF;&#x306F;&#x4E0A;&#x90E8;&#x306B;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;)</p><h2 id="&#x52D5;&#x3044;&#x3066;&#x3044;&#x307E;&#x3059;&#xFF01;">&#x52D5;&#x3044;&#x3066;&#x3044;&#x307E;&#x3059;&#xFF01;</h2><p>&#x3042;&#x306A;&#x305F;&#x306E;&#x30B5;&#x30A4;&#x30C8;&#x306F;&#x73FE;&#x5728;&#x3001;&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30CD;&#x30C3;&#x30C8;&#x4E0A;&#x3067;&#x52D5;&#x4F5C;&#x3057;&#x3066;&#x3044;&#x308B;&#x306F;&#x305A;&#x3067;&#x3059;&#xFF01; PythonAnywhere&#x306E;Web&#x30DA;&#x30FC;&#x30B8;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x3066;&#x30EA;&#x30F3;&#x30AF;&#x3092;&#x53D6;&#x5F97;&#x3057;&#x307E;&#x3059;&#x3002; &#x3042;&#x306A;&#x305F;&#x306F;&#x3042;&#x306A;&#x305F;&#x304C;&#x671B;&#x3080;&#x8AB0;&#x3068;&#x3067;&#x3082;&#x3053;&#x308C;&#x3092;&#x5171;&#x6709;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;:)</p><blockquote><p><strong>&#x6CE8;</strong> &#x3053;&#x308C;&#x306F;&#x521D;&#x5FC3;&#x8005;&#x5411;&#x3051;&#x306E;&#x30C1;&#x30E5;&#x30FC;&#x30C8;&#x30EA;&#x30A2;&#x30EB;&#x3067;&#x3059;&#x3002;&#x3053;&#x306E;&#x30B5;&#x30A4;&#x30C8;&#x3092;&#x30C7;&#x30D7;&#x30ED;&#x30A4;&#x3059;&#x308B;&#x969B;&#x306B;&#x306F;&#x30BB;&#x30AD;&#x30E5;&#x30EA;&#x30C6;&#x30A3;&#x306E;&#x89B3;&#x70B9;&#x304B;&#x3089;&#x306F;&#x7406;&#x60F3;&#x7684;&#x3067;&#x306F;&#x306A;&#x3044;&#x3001;&#x3044;&#x304F;&#x3064;&#x304B;&#x306E;&#x30B7;&#x30E7;&#x30FC;&#x30C8;&#x30AB;&#x30C3;&#x30C8;&#x3092;&#x3057;&#x307E;&#x3057;&#x305F;&#x3002; &#x3082;&#x3057;&#x3053;&#x306E;&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3092;&#x5229;&#x7528;&#x3059;&#x308B;&#x3068;&#x6C7A;&#x3081;&#x305F;&#x308A;&#x3001;&#x65B0;&#x3057;&#x3044;&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3092;&#x958B;&#x59CB;&#x3059;&#x308B;&#x5834;&#x5408;&#x306F;&#x3001;&#x3042;&#x306A;&#x305F;&#x306E;&#x30B5;&#x30A4;&#x30C8;&#x3092;&#x5B89;&#x5168;&#x306B;&#x3059;&#x308B;&#x3044;&#x304F;&#x3064;&#x304B;&#x306E;&#x30D2;&#x30F3;&#x30C8;&#x306B;&#x3064;&#x3044;&#x3066;&#x3001;<a href="https://docs.djangoproject.com/ja/2.2/howto/deployment/checklist/" target="_blank">Django&#x30C7;&#x30D7;&#x30ED;&#x30A4;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x30EA;&#x30B9;&#x30C8;</a>&#x3092;&#x6CE8;&#x610F;&#x6DF1;&#x304F;&#x8AAD;&#x3093;&#x3067;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p></blockquote><h2 id="&#x30C7;&#x30D0;&#x30C3;&#x30AE;&#x30F3;&#x30B0;&#x306E;&#x30D2;&#x30F3;&#x30C8;">&#x30C7;&#x30D0;&#x30C3;&#x30AE;&#x30F3;&#x30B0;&#x306E;&#x30D2;&#x30F3;&#x30C8;</h2><p><code>pa_autoconfigure_django.py</code>&#x30B9;&#x30AF;&#x30EA;&#x30D7;&#x30C8;&#x306E;&#x5B9F;&#x884C;&#x4E2D;&#x306B;&#x30A8;&#x30E9;&#x30FC;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x305F;&#x5834;&#x5408;&#x306F;&#x3001;&#x6B21;&#x306E;&#x3088;&#x3046;&#x306A;&#x539F;&#x56E0;&#x304C;&#x8003;&#x3048;&#x3089;&#x308C;&#x307E;&#x3059;&#x3002;</p><ul><li>PythonAnywhere API&#x30C8;&#x30FC;&#x30AF;&#x30F3;&#x306E;&#x4F5C;&#x6210;&#x3092;&#x5FD8;&#x308C;&#x3066;&#x3044;&#x308B;
+</li>
+<li>&#x3042;&#x306A;&#x305F;&#x306E;GitHub&#x306E;URL&#x3092;&#x9593;&#x9055;&#x3048;&#x3066;&#x3044;&#x308B;
+</li>
+<li><em>Could not find your settings.py</em>&#x3068;&#x3044;&#x3046;&#x30A8;&#x30E9;&#x30FC;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x305F;&#x5834;&#x5408;&#x306F;&#x3001;&#x304A;&#x305D;&#x3089;&#x304F;Git&#x306B;&#x3059;&#x3079;&#x3066;&#x306E;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x8FFD;&#x52A0;&#x3067;&#x304D;&#x3066;&#x3044;&#x306A;&#x304B;&#x3063;&#x305F;&#x304B;&#x3001; GitHub&#x306B;&#x3046;&#x307E;&#x304F;&#x30D7;&#x30C3;&#x30B7;&#x30E5;&#x3067;&#x304D;&#x3066;&#x3044;&#x306A;&#x304B;&#x3063;&#x305F;&#x3002; &#x3053;&#x306E;&#x5834;&#x5408;&#x306F;Git&#x30BB;&#x30AF;&#x30B7;&#x30E7;&#x30F3;&#x3092;&#x3082;&#x3046;&#x4E00;&#x5EA6;&#x898B;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;
+</li>
+<li>PythonAnywhere&#x306E;&#x30A2;&#x30AB;&#x30A6;&#x30F3;&#x30C8;&#x3092;&#x4EE5;&#x524D;&#x306B;&#x4F5C;&#x6210;&#x3057;&#x3066;&#x3044;&#x3066;collectstatic&#x3067;&#x30A8;&#x30E9;&#x30FC;&#x304C;&#x8D77;&#x304D;&#x305F;&#x3068;&#x3057;&#x305F;&#x3089;&#x3001;&#x3042;&#x306A;&#x305F;&#x306E;&#x30A2;&#x30AB;&#x30A6;&#x30F3;&#x30C8;&#x3067;&#x53E4;&#x3044;&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;&#x306E;SQLite&#xFF08;&#x4F8B;&#x3048;&#x3070;&#x3001;3.8.2&#xFF09;&#x3092;&#x4F7F;&#x3063;&#x3066;&#x3044;&#x308B;&#x53EF;&#x80FD;&#x6027;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002; &#x305D;&#x306E;&#x5834;&#x5408;&#x3001;&#x65B0;&#x3057;&#x3044;&#x30A2;&#x30AB;&#x30A6;&#x30F3;&#x30C8;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x3066;&#x3001;&#x4E0A;&#x8A18;&#x306E;PythonAnywhere&#x306E;&#x30BB;&#x30AF;&#x30B7;&#x30E7;&#x30F3;&#x306B;&#x8A18;&#x8F09;&#x3057;&#x3066;&#x3044;&#x308B;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3092;&#x5B9F;&#x884C;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;
+</li></ul>
+<p>&#x30B5;&#x30A4;&#x30C8;&#x306B;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x3057;&#x3088;&#x3046;&#x3068;&#x3059;&#x308B;&#x3068;&#x30A8;&#x30E9;&#x30FC;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x305F;&#x5834;&#x5408;&#x3001;&#x6700;&#x521D;&#x306B;&#x30C7;&#x30D0;&#x30C3;&#x30B0;&#x60C5;&#x5831;&#x3092;&#x63A2;&#x3059;&#x5834;&#x6240;&#x306F;<strong>&#x30A8;&#x30E9;&#x30FC;&#x30ED;&#x30B0;</strong>&#x3067;&#x3059;&#x3002; PythonAnywhere&#x306E;<a href="https://www.pythonanywhere.com/web_app_setup/" target="_blank"> Web&#x30DA;&#x30FC;&#x30B8;</a>&#x306B;&#x306F;&#x3001;&#x30A8;&#x30E9;&#x30FC;&#x30ED;&#x30B0;&#x3078;&#x306E;&#x30EA;&#x30F3;&#x30AF;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002; &#x305D;&#x3053;&#x306B;&#x30A8;&#x30E9;&#x30FC;&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;&#x304C;&#x3042;&#x308B;&#x304B;&#x3069;&#x3046;&#x304B;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002; &#x6700;&#x65B0;&#x306E;&#x3082;&#x306E;&#x306F;&#x4E00;&#x756A;&#x4E0B;&#x306B;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;</p><p><a href="http://help.pythonanywhere.com/pages/DebuggingImportError" target="_blank"> PythonAnywhere&#x30D8;&#x30EB;&#x30D7;&#x30B5;&#x30A4;&#x30C8;&#x306E;&#x4E00;&#x822C;&#x7684;&#x306A;&#x30C7;&#x30D0;&#x30C3;&#x30B0;&#x306E;&#x30D2;&#x30F3;&#x30C8;</a>&#x3082;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;</p><p>&#x3064;&#x307E;&#x3065;&#x3044;&#x305F;&#x6642;&#x306F;&#x3001;&#x30B3;&#x30FC;&#x30C1;&#x306B;&#x52A9;&#x3051;&#x3092;&#x6C42;&#x3081;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p><h1 id="&#x3042;&#x306A;&#x305F;&#x306E;&#x30B5;&#x30A4;&#x30C8;&#x3092;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#xFF01;">&#x3042;&#x306A;&#x305F;&#x306E;&#x30B5;&#x30A4;&#x30C8;&#x3092;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#xFF01;</h1><p>&#x30B5;&#x30A4;&#x30C8;&#x306E;&#x30C7;&#x30D5;&#x30A9;&#x30EB;&#x30C8;&#x30DA;&#x30FC;&#x30B8;&#x3067;&#x306F;&#x3001;&#x30ED;&#x30FC;&#x30AB;&#x30EB;&#x30B3;&#x30F3;&#x30D4;&#x30E5;&#x30FC;&#x30BF;&#x3068;&#x540C;&#x3058;&#x3088;&#x3046;&#x306B;&#x300C;It worked&#xFF01;&#x300D;&#x3068;&#x8868;&#x793A;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002; URL&#x306E;&#x6700;&#x5F8C;&#x306B;<code>/admin/</code>&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;&#x3068;&#x3001;&#x7BA1;&#x7406;&#x30B5;&#x30A4;&#x30C8;&#x306B;&#x79FB;&#x52D5;&#x3057;&#x307E;&#x3059;&#x3002; &#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x540D;&#x3068;&#x30D1;&#x30B9;&#x30EF;&#x30FC;&#x30C9;&#x3067;&#x30ED;&#x30B0;&#x30A4;&#x30F3;&#x3057;&#x305F;&#x3089;&#x3001;Posts&#x3078;&#x306E;&#x30EA;&#x30F3;&#x30AF;&#x304B;&#x3089;&#x30B5;&#x30FC;&#x30D0;&#x30FC;&#x306B;&#x65B0;&#x898F;&#x6295;&#x7A3F;&#x3092;&#x8FFD;&#x52A0;&#x3067;&#x304D;&#x308B;&#x3053;&#x3068;&#x304C;&#x308F;&#x304B;&#x308B;&#x3067;&#x3057;&#x3087;&#x3046;&#x3002;&#x30ED;&#x30FC;&#x30AB;&#x30EB;&#x306E;&#x30C6;&#x30B9;&#x30C8;&#x7528;&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x306E;&#x6295;&#x7A3F;&#x306F;&#x672C;&#x756A;&#x74B0;&#x5883;&#x306E;&#x30D6;&#x30ED;&#x30B0;&#x306B;&#x9001;&#x3089;&#x308C;&#x3066;&#x3044;&#x306A;&#x3044;&#x3053;&#x3068;&#x3082;&#x5FD8;&#x308C;&#x306A;&#x3044;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x306D;&#x3002;</p><p>&#x3044;&#x304F;&#x3064;&#x304B;&#x306E;&#x6295;&#x7A3F;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x3089;&#x3001;&#x30ED;&#x30FC;&#x30AB;&#x30EB;&#x74B0;&#x5883;&#xFF08;PythonAnywhere&#x3067;&#x306F;&#x306A;&#x304F;&#xFF09;&#x306B;&#x623B;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002; &#x3053;&#x3053;&#x304B;&#x3089;&#x3001;&#x5909;&#x66F4;&#x3092;&#x52A0;&#x3048;&#x308B;&#x305F;&#x3081;&#x306B;&#x306F;&#x3042;&#x306A;&#x305F;&#x306E;&#x30ED;&#x30FC;&#x30AB;&#x30EB;&#x74B0;&#x5883;&#x3067;&#x4F5C;&#x696D;&#x3059;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002; &#x3053;&#x308C;&#x304C;Web&#x958B;&#x767A;&#x306E;&#x4E00;&#x822C;&#x7684;&#x306A;&#x30EF;&#x30FC;&#x30AF;&#x30D5;&#x30ED;&#x30FC;&#x3067;&#x3059;&#x3002;&#x30ED;&#x30FC;&#x30AB;&#x30EB;&#x3067;&#x5909;&#x66F4;&#x3057;&#x3001;&#x305D;&#x308C;&#x3089;&#x306E;&#x5909;&#x66F4;&#x3092;GitHub&#x306B;&#x30D7;&#x30C3;&#x30B7;&#x30E5;&#x3057;&#x3001;&#x305D;&#x308C;&#x304B;&#x3089;&#x305D;&#x306E;&#x5909;&#x66F4;&#x3092;&#x516C;&#x958B;&#x3057;&#x3066;&#x3044;&#x308B;Web&#x30B5;&#x30FC;&#x30D0;&#x30FC;&#x306B;&#x30D7;&#x30EB;&#x3057;&#x3066;&#x304D;&#x307E;&#x3059;&#x3002; &#x3053;&#x308C;&#x306B;&#x3088;&#x308A;&#x3001;&#x516C;&#x958B;&#x3057;&#x3066;&#x3044;&#x308B;Web&#x30B5;&#x30A4;&#x30C8;&#x3092;&#x58CA;&#x3059;&#x3053;&#x3068;&#x306A;&#x304F;&#x4F5C;&#x696D;&#x3057;&#x305F;&#x308A;&#x8A66;&#x3057;&#x305F;&#x308A;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002; &#x3068;&#x3063;&#x3066;&#x3082;&#x30AF;&#x30FC;&#x30EB;&#x3067;&#x3057;&#x3087;&#xFF1F;</p><p>&#x81EA;&#x5206;&#x3092;<em>&#x3059;&#x3063;&#x3054;&#x304F;</em>&#x8912;&#x3081;&#x3066;&#x3042;&#x3052;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#xFF01; &#x30B5;&#x30FC;&#x30D0;&#x30FC;&#x306E;&#x30C7;&#x30D7;&#x30ED;&#x30A4;&#x306F;Web&#x958B;&#x767A;&#x306E;&#x6700;&#x3082;&#x96E3;&#x3057;&#x3044;&#x90E8;&#x5206;&#x306E;1&#x3064;&#x3067;&#x3001;&#x3061;&#x3083;&#x3093;&#x3068;&#x52D5;&#x304F;&#x3088;&#x3046;&#x306B;&#x306A;&#x308B;&#x307E;&#x3067;&#x6570;&#x65E5;&#x304B;&#x304B;&#x308B;&#x3053;&#x3068;&#x3082;&#x3088;&#x304F;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002; &#x3057;&#x304B;&#x3057;&#x3001;&#x3042;&#x306A;&#x305F;&#x306F;&#x5B9F;&#x969B;&#x306E;&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30CD;&#x30C3;&#x30C8;&#x4E0A;&#x3067;&#x3001;&#x3042;&#x306A;&#x305F;&#x306E;&#x30B5;&#x30A4;&#x30C8;&#x3092;&#x52D5;&#x304B;&#x3059;&#x4E8B;&#x304C;&#x3067;&#x304D;&#x307E;&#x3057;&#x305F;&#xFF01;</p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../django_admin/" class="navigation navigation-prev " aria-label="Previous page: ログインページを作ろう（Django admin）">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../django_urls/" class="navigation navigation-next " aria-label="Next page: Django URL">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"デプロイ！","level":"1.14","depth":1,"next":{"title":"Django URL","level":"1.15","depth":1,"path":"django_urls/README.md","ref":"django_urls/README.md","articles":[]},"previous":{"title":"ログインページを作ろう（Django admin）","level":"1.13","depth":1,"path":"django_admin/README.md","ref":"django_admin/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"django_version":"2.2.4"},"language":"ja","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"deploy/README.md","mtime":"2020-06-27T13:00:23.942Z","type":"markdown"},"gitbook":{"version":"3.4.0","time":"2020-06-27T13:00:41.274Z"},"basePath":"..","book":{"language":"ja"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

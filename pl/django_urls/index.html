@@ -1,0 +1,632 @@
+
+<!DOCTYPE HTML>
+<html lang="pl" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Adresy URL w Django · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.4.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../django_views/" />
+    
+    
+    <link rel="prev" href="../deploy/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Wpisz szukaną frazę" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Wprowadzenie
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Instalacja
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    Instalacja (chromebook)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    Jak działa internet?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Wprowadzenie do wiersza polecenia
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Instalowanie Pythona
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    Edytor tekstu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Wprowadzenie do Pythona
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Czym jest Django?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Instalowanie Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    Twój pierwszy projekt w Django!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Modele w Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Administracja Django (admin)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Wdrażanie!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.15" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Adresy URL w Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Widoki Django - czas zacząć tworzyć!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    Wprowadzenie do HTML-a
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM (QuerySet)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    Dane dynamiczne w szablonach Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Szablony Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - upiększ to
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Rozbudowa szablonów
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Rozbudowa aplikacji
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Formularze Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    Co dalej?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Opublikowano dzięki HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Adresy URL w Django</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="url-e-django">URL-e Django</h1><p>Zaczynamy budowa&#x107; nasz&#x105; pierwsz&#x105; stron&#x119; internetow&#x105;: b&#x119;dzie to miejsce dla twojego bloga! Ale zanim zaczniemy, nauczmy si&#x119; troch&#x119; na temat URL-i w Django.</p><h2 id="czym-jest-url">Czym jest URL?</h2><p>Adres URL to adres w internecie. Mo&#x17C;esz zobaczy&#x107; URL-a za ka&#x17C;dym razem, gdy odwiedzasz stron&#x119; internetow&#x105; - jest on widoczny w pasku adresu przegl&#x105;darki internetowej. (Tak! <code>127.0.0.1:8000</code> jest adresem URL! Te&#x17C; <code>https://djangogirls.org</code> jest adresem URL.)</p><p><img alt="Adres URL" src="images/url.png"></p><p>Ka&#x17C;da strona w internecie potrzebuje w&#x142;asnego adresu URL. W ten spos&#xF3;b aplikacja wie, co wy&#x15B;wietli&#x107; u&#x17C;ytkownikowi, kt&#xF3;ry otworzy dany URL. W Django u&#x17C;ywamy tak zwanego <code>URLconf</code> (konfiguracji URL). URLconf to zestaw wzorc&#xF3;w, kt&#xF3;re Django spr&#xF3;buje dopasowa&#x107; do &#x17C;&#x105;danego adresu URL, aby znale&#x17A;&#x107; poprawny widok.</p><h2 id="jak-dzia&#x142;aj&#x105;-adresy-url-w-django">Jak dzia&#x142;aj&#x105; adresy URL w Django?</h2><p>Otw&#xF3;rzmy plik <code>mysite/urls.py</code> i przyjrzyjmy si&#x119; jego tre&#x15B;ci:</p><p></p><p class="code-label">mysite/urls.py</p><p></p><pre><code class="lang-python"><span class="hljs-string">&quot;&quot;&quot;mysite URL Configuration
+
+[...]
+&quot;&quot;&quot;</span>
+<span class="hljs-keyword">from</span> django.contrib <span class="hljs-keyword">import</span> admin
+<span class="hljs-keyword">from</span> django.urls <span class="hljs-keyword">import</span> path
+
+urlpatterns = [
+    path(<span class="hljs-string">&apos;admin/&apos;</span>, admin.site.urls),
+]</code></pre>
+<p>Jak zauwa&#x17C;y&#x142;a&#x15B;, Django co&#x15B; nam ju&#x17C; tu umie&#x15B;ci&#x142;.</p><p>Linie mi&#x119;dzy potr&#xF3;jnymi cudzys&#x142;owami (<code>&apos;&apos;&apos;</code> lub <code>&quot;&quot;&quot;</code>) nazywa si&#x119; docstrings - mo&#x17C;esz zapisa&#x107; je na g&#xF3;rze pliku, klasy lub metody, aby opisa&#x107;, co robi. Nie b&#x119;d&#x105; one uruchamiane przez Pythona.</p><p>Adres URL panelu administracyjnego, kt&#xF3;ry odwiedza&#x142;a&#x15B; w poprzednim rozdziale, jest ju&#x17C; tutaj dodany:</p><p></p><p class="code-label">mysite/urls.py</p><p></p><pre><code class="lang-python">    path(<span class="hljs-string">&apos;admin/&apos;</span>, admin.site.urls),</code></pre>
+<p>To znaczy, &#x17C;e dla ka&#x17C;dego adresu zaczynaj&#x105;cego si&#x119; od <code>admin/</code> Django spr&#xF3;buje dopasowa&#x107; odpowiedni <em>widok</em>. W tym przypadku u&#x17C;ywamy wielu adres&#xF3;w URL panelu administracyjnego, dlatego nie wypisujemy ich wszystkich w tym jednym ma&#x142;ym pliku - tak jest czytelniej i bardziej estetycznie.</p><h2 id="tw&#xF3;j-pierwszy-adres-url-w-django">Tw&#xF3;j pierwszy adres URL w Django!</h2><p>Czas utworzy&#x107; nasz pierwszy adres URL! Chcemy, aby adres &apos;<a href="http://127.0.0.1:8000/" target="_blank">http://127.0.0.1:8000/</a>&apos; by&#x142; stron&#x105; g&#x142;&#xF3;wn&#x105; naszego bloga i wy&#x15B;wietla&#x142; list&#x119; wpis&#xF3;w.</p><p>Zale&#x17C;y nam r&#xF3;wnie&#x17C;, aby zachowa&#x107; porz&#x105;dek w pliku <code>mysite/urls.py</code>, dlatego zaimportujemy URL-e z naszej aplikacji <code>blog</code> do g&#x142;&#xF3;wnego pliku <code>mysite/urls.py</code>.</p><p>&#x15A;mia&#x142;o, dodaj lini&#x119;, kt&#xF3;ra spowoduje zaimportowanie <code>blog.urls</code>. B&#x119;dziesz musia&#x142;a tak&#x17C;e zmieni&#x107; pierwszy wiersz <code>from django.urls...</code>, poniewa&#x17C; u&#x17C;yjemy tutaj funkcji <code>include</code>, kt&#xF3;r&#x105; musimy najpierw zaimportowa&#x107;.</p><p>Tw&#xF3;j plik <code>mysite/urls.py</code> powinien teraz wygl&#x105;da&#x107; tak:</p><p></p><p class="code-label">mysite/urls.py</p><p></p><pre><code class="lang-python"><span class="hljs-keyword">from</span> django.contrib <span class="hljs-keyword">import</span> admin
+<span class="hljs-keyword">from</span> django.urls <span class="hljs-keyword">import</span> path, include
+
+urlpatterns = [
+    path(<span class="hljs-string">&apos;admin/&apos;</span>, admin.site.urls),
+    path(<span class="hljs-string">&apos;&apos;</span>, include(<span class="hljs-string">&apos;blog.urls&apos;</span>)),
+]</code></pre>
+<p>Django przekieruje wszystkie regu&#x142;y z adresu &apos;<a href="http://127.0.0.1:8000/" target="_blank">http://127.0.0.1:8000/</a>&apos; do <code>blog.urls</code> i tam b&#x119;dzie szuka&#x142; dalszych wskaz&#xF3;wek.</p><h2 id="blogurls">blog.urls</h2><p>Stw&#xF3;rz nowy pusty plik o nazwie <code>urls.py</code> w katalogu <code>blog</code> i otw&#xF3;rz go w Twoim edytorze. Dok&#x142;adnie tak! Dodaj te pierwsze dwie linie:</p><p></p><p class="code-label">blog/urls.py</p><p></p><pre><code class="lang-python"><span class="hljs-keyword">from</span> django.urls <span class="hljs-keyword">import</span> path
+<span class="hljs-keyword">from</span> . <span class="hljs-keyword">import</span> views</code></pre>
+<p>Tutaj importujemy funkcje <code>path</code> Django i wszystkie nasze widoki (<code>views</code>) z aplikacji <code>blog</code>. (Nie mamy jeszcze &#x17C;adnych, ale do tego dojdziemy za chwil&#x119;!)</p><p>Potem mo&#x17C;emy doda&#x107; nasz pierwszy wzorzec adresu URL:</p><p></p><p class="code-label">blog/urls.py</p><p></p><pre><code class="lang-python">urlpatterns = [
+    path(<span class="hljs-string">&apos;&apos;</span>, views.post_list, name=<span class="hljs-string">&apos;post_list&apos;</span>),
+]</code></pre>
+<p>Jak widzisz, teraz przyporz&#x105;dkowujemy widok (<code>view</code>) o nazwie <code>post_list</code> do strony g&#x142;&#xF3;wnej. Ten wzorzec URL zostanie dopasowany do pustego ci&#x105;gu znak&#xF3;w, a Django zignoruje nazw&#x119; domeny (np. <a href="http://127.0.0.1:8000/" target="_blank">http://127.0.0.1:8000/</a>), kt&#xF3;ra poprzedza pe&#x142;n&#x105; &#x15B;cie&#x17C;k&#x119; URL. Ten wzorzec b&#x119;dzie wskaz&#xF3;wk&#x105; dla Django, &#x17C;e <code>views.post_list</code> jest w&#x142;a&#x15B;ciwym miejscem dla ka&#x17C;dego, kto wejdzie na stron&#x119; poprzez adres &apos;<a href="http://127.0.0.1:8000/" target="_blank">http://127.0.0.1:8000/</a>&apos;.</p><p>Ostatnia cz&#x119;&#x15B;&#x107;, <code>name=&apos;post_list</code> jest nazw&#x105; URL, kt&#xF3;ra b&#x119;dzie u&#x17C;ywana do zidentyfikowania widoku. Nazwa mo&#x17C;e by&#x107; taka sama jak nazwa widoku albo kompletnie inna. W projekcie b&#x119;dziemy p&#xF3;&#x17A;niej u&#x17C;ywa&#x107; nazw URL, wi&#x119;c wa&#x17C;ne jest nazwanie ka&#x17C;dego URL-a w aplikacji. Powinny&#x15B;my r&#xF3;wnie&#x17C; stara&#x107; si&#x119; u&#x17C;ywa&#x107; nazw URL unikalnych i prostych do zapami&#x119;tania.</p><p>Je&#x15B;li teraz spr&#xF3;bujesz odwiedzi&#x107; stron&#x119; <a href="http://127.0.0.1:8000/" target="_blank">http://127.0.0.1:8000/</a>, zobaczysz komunikat &quot;niedost&#x119;pna strona internetowa&quot;. Wynika to z faktu, &#x17C;e serwer (pami&#x119;ta&#x142;a&#x15B; o wpisaniu <code>runserver</code>?) nie jest ju&#x17C; uruchomiony. Sp&#xF3;jrz na okno konsoli serwera, aby dowiedzie&#x107; si&#x119;, dlaczego.</p><p><img alt="B&#x142;&#x105;d" src="images/error1.png"></p><p>Twoja konsola pokazuje b&#x142;&#x105;d, ale nie martw si&#x119; - w rzeczywisto&#x15B;ci jest to ca&#x142;kiem u&#x17C;yteczne: m&#xF3;wi Ci, &#x17C;e<strong> brak atrybutu &apos;post_list&apos;</strong>. To jest nazwa widoku (<em>view</em>), kt&#xF3;r&#x105; Django pr&#xF3;buje znale&#x17A;&#x107; i u&#x17C;y&#x107;, ale jeszcze go nie utworzy&#x142;y&#x15B;my. Na tym etapie Tw&#xF3;j <code>/admin/</code> r&#xF3;wnie&#x17C; nie b&#x119;dzie dzia&#x142;a&#x107;. Nie martw si&#x119;, zajmiemy si&#x119; tym. Je&#x17C;eli pojawi&#x142;a Ci si&#x119; wiadomo&#x15B;&#x107; o innym b&#x142;&#x119;dzie, spr&#xF3;buj zrestartowa&#x107; sw&#xF3;j serwer. Aby to zrobi&#x107;, przejd&#x17A; do wiersza polecenia w kt&#xF3;rym uruchomiony jest serwer strony, zatrzymaj serwer wciskaj&#x105;c Ctrl+C (klawisze Control i C r&#xF3;wnocze&#x15B;nie), a nast&#x119;pnie uruchom go jeszcze raz poleceniem <code>python manage.py runserver</code>.</p><blockquote><p>Je&#x15B;li chcia&#x142;aby&#x15B; dowiedzie&#x107; si&#x119; wi&#x119;cej na temat konfiguracji URL w Django, zajrzyj do oficjalnej dokumentacji: <a href="https://docs.djangoproject.com/en/2.0/topics/http/urls/" target="_blank">https://docs.djangoproject.com/en/2.0/topics/http/urls/</a></p></blockquote>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../deploy/" class="navigation navigation-prev " aria-label="Previous page: Wdrażanie!">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../django_views/" class="navigation navigation-next " aria-label="Next page: Widoki Django - czas zacząć tworzyć!">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Adresy URL w Django","level":"1.15","depth":1,"next":{"title":"Widoki Django - czas zacząć tworzyć!","level":"1.16","depth":1,"path":"django_views/README.md","ref":"django_views/README.md","articles":[]},"previous":{"title":"Wdrażanie!","level":"1.14","depth":1,"path":"deploy/README.md","ref":"deploy/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"django_version":"2.2.4"},"language":"pl","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"django_urls/README.md","mtime":"2020-06-27T13:00:24.018Z","type":"markdown"},"gitbook":{"version":"3.4.0","time":"2020-06-27T13:00:41.274Z"},"basePath":"..","book":{"language":"pl"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

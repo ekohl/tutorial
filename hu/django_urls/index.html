@@ -1,0 +1,632 @@
+
+<!DOCTYPE HTML>
+<html lang="hu" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Django url-ek · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.4.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../django_views/" />
+    
+    
+    <link rel="prev" href="../deploy/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Bevezetés
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Installáció
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    Hogy működik az Internet?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Bevezetés a parancssor használatába
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    A Python telepítése
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    Kódszerkesztő (editor)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Bevezetés a Pythonba
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Mi a Django?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Django telepítés
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    Az első Django projekted!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Django modellek
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Deploy!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.14" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Django url-ek
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django views - itt az ideje alkotni!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    Bevezetés a HTML-be
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM és QuerySet-ek
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    Dinamikus adatok a template-ben
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django sablonok (template)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - Tegyük széppé!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Template-kiegészítés
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Egészítsd ki az applikációdat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Django űrlapok
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    Következő lépések
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Django url-ek</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="django-url-ek">Django url-ek</h1><p>Mindj&#xE1;rt elk&#xE9;sz&#xED;ted az els&#x151; weblapodat: a blogod honlapj&#xE1;t! De el&#x151;bb tanuljunk egy kicsit a Django url-ekr&#x151;l.</p><h2 id="mi-az-url">Mi az URL?</h2><p>Az URL egyszer&#x171;en csak egy webes c&#xED;m. Minden alkalommal l&#xE1;tsz URL-eket, amikor megl&#xE1;togatsz egy weboldalt - a b&#xF6;ng&#xE9;sz&#x151;d c&#xED;msor&#xE1;ban tal&#xE1;lodm meg (igen! a <code>127.0.0.1:8000</code> egy URL! &#xC9;s a <code>https://djangogirls.org</code> is egy URL):</p><p><a href="images/url.png">Url</a></p><p>Az interneten minden oldalnak sz&#xFC;ks&#xE9;ge van egy saj&#xE1;t URL-re. Innen tudja az alkalmaz&#xE1;sod, hogy mit mutasson a felhaszn&#xE1;l&#xF3;nak, aki megnyitott egy URL-t. A Django-ban egy <code>URLconf</code> nev&#x171; dolgot haszn&#xE1;lunk (URL configuration, vagyis URL be&#xE1;ll&#xED;t&#xE1;sok). Az URLConf egy csom&#xF3; minta, amit a Django megpr&#xF3;b&#xE1;l &#xF6;sszehasonl&#xED;tani az URL-lel, amit kapott, &#xE9;s ez alapj&#xE1;n tal&#xE1;lja meg a helyes view-t.</p><h2 id="hogy-m&#x171;k&#xF6;dnek-az-url-ek-a-django-ban">Hogy m&#x171;k&#xF6;dnek az URL-ek a Django-ban?</h2><p>Nyisd meg a <code>mysite/urls.py</code> f&#xE1;jlt a k&#xF3;dszerkeszt&#x151;ben, &#xE9;s n&#xE9;zd meg:</p><p></p><p class="code-label">mysite/urls.py</p><p></p><pre><code class="lang-python"><span class="hljs-string">&quot;&quot;&quot;mysite URL Configuration
+
+[...]
+&quot;&quot;&quot;</span>
+<span class="hljs-keyword">from</span> django.conf.urls <span class="hljs-keyword">import</span> url
+<span class="hljs-keyword">from</span> django.contrib <span class="hljs-keyword">import</span> admin
+
+urlpatterns = [
+    url(<span class="hljs-string">r&apos;^admin/&apos;</span>, admin.site.urls),
+]</code></pre>
+<p>Amint l&#xE1;thatod, a Django m&#xE1;r el&#x151;re iderakott nek&#xFC;nk p&#xE1;r dolgot.</p><p>A h&#xE1;rmas id&#xE9;z&#x151;jelek (<code>&apos;&apos;&apos;</code> vagy <code>&quot;&quot;&quot;</code>) k&#xF6;z&#xF6;tti sorok neve docstring (dokument&#xE1;ci&#xF3;s sztring) &#x2013; &#xCD;rhatsz ilyet egy file, oszt&#xE1;ly (class) vagy method elej&#xE9;n, hogy le&#xED;rhatsd hogy mit csin&#xE1;l. Python nem fogja lefuttatni ezeket a sorokat.</p><p>Az admin URL, amit az el&#x151;z&#x151; fejezetben m&#xE1;r megl&#xE1;togatt&#xE1;l, m&#xE1;r itt van:</p><pre><code class="lang-python">    url(<span class="hljs-string">r&apos;^admin/&apos;</span>, include(admin.site.urls)),</code></pre>
+<p>Ez azt jelenti, hogy minden URL-n&#xE9;l, ami <code>admin/</code>-nal kezd&#x151;dik, a Django meg fogja tal&#xE1;lni a hozz&#xE1;tartoz&#xF3; <em>view</em>-t. Ebben az esetben sok admin URL-t hozz&#xE1;adunk, hogy ne kelljen az eg&#xE9;szet ebbe a kis f&#xE1;jlba t&#xF6;mni - &#xED;gy olvashat&#xF3;bb &#xE9;s letisztultabb.</p><h2 id="regex">Regex</h2><p>K&#xED;v&#xE1;ncsi vagy, hogyan p&#xE1;ros&#xED;tja &#xF6;ssze a Django az URL-eket &#xE9;s a view-kat? Na, ez a r&#xE9;sz tr&#xFC;kk&#xF6;s. A Django <code>regex</code>-et haszn&#xE1;l (a &quot;regular expressions&quot;, vagyis regul&#xE1;ris kifejez&#xE9;sek r&#xF6;vid&#xED;t&#xE9;se). A regexnek nagyon (nagyon!) sok szab&#xE1;lya van arra, hogy hogyan &#xE9;p&#xED;t fel egy keres&#xE9;si mint&#xE1;zatot. Mivel a regex egy magasabb szint&#x171; t&#xE9;ma, most nem megy&#xFC;nk bele a r&#xE9;szletekbe.</p><p>Ha szeretn&#xE9;d meg&#xE9;rteni, hogy hogyan hoztuk l&#xE9;tre a mint&#xE1;kat, itt egy p&#xE9;lda - csak n&#xE9;h&#xE1;ny szab&#xE1;lyra van sz&#xFC;ks&#xE9;g&#xFC;nk, hogy fel&#xE9;p&#xED;ts&#xFC;k a mint&#xE1;t, amit keres&#xFC;nk, p&#xE9;ld&#xE1;ul:</p><pre><code>        ^ a sz&#xF6;veg eleje
+        $ a sz&#xF6;veg v&#xE9;ge
+        \d sz&#xE1;mjegy
+        + ez azt jelzi, hogy az el&#x151;z&#x151; elem egyn&#xE9;l t&#xF6;bbsz&#xF6;r ism&#xE9;tl&#x151;dik
+        () ez a minta egy r&#xE9;sz&#xE9;t fogja &#xF6;ssze</code></pre>
+<p>A Django minden m&#xE1;st, ami az url defin&#xED;ci&#xF3;ban van, sz&#xF3; szerint fog &#xE9;rtelmezni.</p><p>K&#xE9;pzeld el, hogy van egy weboldalad ezzel a c&#xED;mmel: <code>http://www.mysite.com/post/12345/</code>, ahol a <code>12345/</code> a bejegyz&#xE9;sed sz&#xE1;ma.</p><p>Minden egyes poszt sz&#xE1;m&#xE1;hoz &#xFA;j view-t &#xED;rni nagyon ideges&#xED;t&#x151; lenne. A regul&#xE1;ris kifejez&#xE9;sekkel l&#xE9;trehozhatunk egy mint&#xE1;t, ami megtal&#xE1;lja az URL-t, &#xE9;s kiszedi bel&#x151;le a sz&#xE1;mot: <code>^post/(\d+)/$</code>. N&#xE9;zz&#xFC;k meg l&#xE9;p&#xE9;sr&#x151;l l&#xE9;p&#xE9;sre, hogy mi t&#xF6;rt&#xE9;nik itt:</p><ul><li>A <strong>^post/</strong> azt mondja meg a Django-nak, hogy minden olyan url-t tal&#xE1;ljon meg, ami <code>post/</code>-tal kezd&#x151;dik (r&#xF6;gt&#xF6;n ezut&#xE1;n: <code>^</code>)
+</li>
+<li>A <strong>(\d+)</strong> azt jelenti, hogy ezut&#xE1;n egy sz&#xE1;m fog k&#xF6;vetkezni (egy vagy t&#xF6;bb sz&#xE1;mjegy&#x171;), &#xE9;s ezt a sz&#xE1;mot ki szeretn&#xE9;nk olvasni az URL-b&#x151;l
+</li>
+<li>A <strong>/</strong> azt mondja meg a Django-nak, hogy ut&#xE1;na m&#xE9;g egy <code>/</code> karakternek kell k&#xF6;vetkeznie
+</li>
+<li>A <strong>$</strong> az URL v&#xE9;g&#xE9;t jelzi, vagyis csak azok a stringeket fogja megfeleltetni a mint&#xE1;nak, amik &#xED;gy v&#xE9;gz&#x151;dnek: <code>/</code>
+</li></ul>
+<h2 id="az-els&#x151;-django-url-ed">Az els&#x151; Django URL-ed!</h2><p>Itt az ideje, hogy l&#xE9;trehozzuk az els&#x151; URL-t! Azt szeretn&#xE9;nk, ha a &apos;<a href="http://127.0.0.1:8000/" target="_blank">http://127.0.0.1:8000/</a>&apos; lenne a blog kezd&#x151;oldala, &#xE9;s itt egy list&#xE1;t l&#xE1;thatn&#xE1;nk a blogbejegyz&#xE9;sekb&#x151;l.</p><p>Fontos, hogy tiszt&#xE1;n tartsuk a <code>mysite/urls.py</code> f&#xE1;jlt, ez&#xE9;rt a <code>blog</code> alkalmaz&#xE1;sb&#xF3;l fogjuk import&#xE1;lni az url-eket.</p><p>Rajta, add hozz&#xE1; a sort, ami beimport&#xE1;lja <code>blog.urls</code>-t. Figyelmd meg, hogy az <code>include</code> f&#xFC;ggv&#xE9;nyt haszn&#xE1;ljuk, ez&#xE9;rt hozz&#xE1; <strong>kell</strong> adnod azt az import-ot a file els&#x151; sor&#xE1;hoz.</p><p>A <code>mysite/urls.py</code> f&#xE1;jlod most &#xED;gy n&#xE9;z ki:</p><pre><code class="lang-python"><span class="hljs-keyword">from</span> django.conf.urls <span class="hljs-keyword">import</span> include, url
+<span class="hljs-keyword">from</span> django.contrib <span class="hljs-keyword">import</span> admin
+
+urlpatterns = [
+    url(<span class="hljs-string">r&apos;^admin/&apos;</span>, include(admin.site.urls)),
+    url(<span class="hljs-string">r&apos;&apos;</span>, include(<span class="hljs-string">&apos;blog.urls&apos;</span>)),
+]</code></pre>
+<p>Mostant&#xF3;l a Django mindent, ami a &apos;<a href="http://127.0.0.1:8000/&apos;-re" target="_blank">http://127.0.0.1:8000/&apos;-re</a> j&#xF6;n, &#xE1;tir&#xE1;ny&#xED;t a <code>blog.urls</code>-re, &#xE9;s ott fogja keresni a tov&#xE1;bbi tennival&#xF3;kat.</p><p>Amikor Pythonban &#xED;runk regul&#xE1;ris kifejez&#xE9;seket, a stringek el&#x151;tt mindig egy <code>r</code> &#xE1;ll. Ez egy hasznos tipp a Pythonnak, hogy a string tartalmazhat speci&#xE1;lis karaktereket, de ezek a regul&#xE1;ris kifejez&#xE9;s alkot&#xF3;elemei, &#xE9;s nem mag&#xE1;nak a Pythonnak sz&#xF3;lnak.</p><h2 id="blogurls">blog.urls</h2><p>Hozz l&#xE9;tre egy &#xFA;j, &#xFC;res f&#xE1;jlt <code>blog/urls.py</code> n&#xE9;ven. Nagyszer&#x171;! Most &#xED;rd be az els&#x151; k&#xE9;t sort:</p><pre><code class="lang-python"><span class="hljs-keyword">from</span> django.conf.urls <span class="hljs-keyword">import</span> url
+<span class="hljs-keyword">from</span> . <span class="hljs-keyword">import</span> views</code></pre>
+<p>Itt csak annyi t&#xF6;rt&#xE9;nik, hogy import&#xE1;ljuk a Django methodjait &#xE9;s az &#xF6;sszes <code>view</code>nkat a <code>blog</code> alkalmaz&#xE1;sb&#xF3;l (m&#xE9;g egyet sem &#xED;rtunk meg, de mindj&#xE1;rt ezzel is foglalkozunk!)</p><p>Ezut&#xE1;n meg&#xED;rhatjuk az els&#x151; URL mint&#xE1;t:</p><pre><code class="lang-python">urlpatterns = [
+    url(<span class="hljs-string">r&apos;^$&apos;</span>, views.post_list, name=<span class="hljs-string">&apos;post_list&apos;</span>),
+]</code></pre>
+<p>Amint l&#xE1;thatod, itt egy <code>post_list</code> nev&#x171; <code>view</code>t rendelt&#xFC;nk hozz&#xE1; a <code>^$</code> URL-hez. Ez a regex a <code>^</code> karaktert (string kezdete) &#xE9;s az ut&#xE1;na k&#xF6;vetkez&#x151; <code>$</code> karaktert (string v&#xE9;ge) fogja keresni - vagyis csak az &#xFC;res string felel meg neki. Ez &#xED;gy helyes, mert a Django URL resolver&#xE9;ben a &apos;<a href="http://127.0.0.1:8000/" target="_blank">http://127.0.0.1:8000/</a>&apos; nem sz&#xE1;m&#xED;t az URL r&#xE9;sz&#xE9;nek. Ez a minta mondja meg a Django-nak, hogy ha valaki a &apos;<a href="http://127.0.0.1:8000/" target="_blank">http://127.0.0.1:8000/</a>&apos; c&#xED;men l&#xE9;p be a weboldaladra, a <code>views.post_list</code> a helyes l&#xE9;p&#xE9;s.</p><p>Az utols&#xF3; r&#xE9;sz, <code>name=&apos;post_list&apos;</code> az URL neve, amit a view azonos&#xED;t&#xE1;s&#xE1;ra haszn&#xE1;lunk. Ez lehet ugyanaz, mint a view neve, de lehet teljesen m&#xE1;s is. A projekt k&#xE9;s&#x151;bbi r&#xE9;szeiben ezeket az elnevezett URL-eket fogjuk haszn&#xE1;lni, ez&#xE9;rt fontos, hogy az app minden URL-j&#xE9;nek nevet adjunk. T&#xF6;rekedj arra, hogy egyedi &#xE9;s k&#xF6;nnyen megjegyezhet&#x151; neveket adj.</p><p>Minden vil&#xE1;gos? Nyisd meg a <a href="http://127.0.0.1:8000/" target="_blank">http://127.0.0.1:8000/</a> URL-t a b&#xF6;ng&#xE9;sz&#x151;dben, hogy l&#xE1;sd az eredm&#xE9;nyt.</p><p><a href="images/error1.png">Hiba</a></p><p>M&#xE1;r nincs ott az &quot;It works&quot;, igaz? Ne agg&#xF3;dj, ez csak egy hibaoldal, semmi f&#xE9;lelmetes nincs benne! Tulajdonk&#xE9;ppen nagyon is hasznos az ilyesmi:</p><p>Azt olvashatod, hogy <strong>no attribute &apos;post_list&apos;</strong>, vagyis &quot;nincs post_list nev&#x171; attrib&#xFA;tum&quot;. Eszedbe jut valami a <em>post_list</em>-r&#x151;l? &#xCD;gy nevezt&#xFC;k el a view-t! Ez azt jelenti, hogy minden a megfelel&#x151; helyen van, csak m&#xE9;g nem hoztuk l&#xE9;tre a <em>view</em>-t. Ne agg&#xF3;dj, mindj&#xE1;rt eljutunk od&#xE1;ig.</p><blockquote><p>Ha t&#xF6;bbet szeretn&#xE9;l megtudni a Django URLconf-r&#xF3;l, n&#xE9;zz bele a hivatalos dokument&#xE1;ci&#xF3;ba: <a href="https://docs.djangoproject.com/en/1.11/topics/http/urls/" target="_blank">https://docs.djangoproject.com/en/1.11/topics/http/urls/</a></p></blockquote>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../deploy/" class="navigation navigation-prev " aria-label="Previous page: Deploy!">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../django_views/" class="navigation navigation-next " aria-label="Next page: Django views - itt az ideje alkotni!">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Django url-ek","level":"1.14","depth":1,"next":{"title":"Django views - itt az ideje alkotni!","level":"1.15","depth":1,"path":"django_views/README.md","ref":"django_views/README.md","articles":[]},"previous":{"title":"Deploy!","level":"1.13","depth":1,"path":"deploy/README.md","ref":"deploy/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"django_version":"2.2.4"},"language":"hu","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"django_urls/README.md","mtime":"2020-06-27T13:00:23.882Z","type":"markdown"},"gitbook":{"version":"3.4.0","time":"2020-06-27T13:00:41.274Z"},"basePath":"..","book":{"language":"hu"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

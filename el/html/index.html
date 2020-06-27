@@ -1,0 +1,691 @@
+
+<!DOCTYPE HTML>
+<html lang="el" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Εισαγωγή στην HTML · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.4.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../django_orm/" />
+    
+    
+    <link rel="prev" href="../django_views/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Αναζήτηση για ..." />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Εισαγωγή
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Εγκατάσταση
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    Εγκατάσταση (chromebook)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    Πως λειτουργεί το διαδίκτυο
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Εισαγωγή στην γραμμή εντολών
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Εγκατάσταση Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    Επεξεργαστής Κώδικα
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Εισαγωγή στην Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Τι είναι το Django;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Εγκατάσταση του Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    Το πρώτο σου Django project!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Μοντέλα (models) του Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Διαχείριση μέσω Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Ανεβάστε!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django urls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django views - ώρα να δημιουργήσετε!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.17" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Εισαγωγή στην HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM (Querysets)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    Δυναμικά δεδομένα στα templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - κάντε το όμορφο
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Επεκτείνοντας τα templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Επεκτείνοντας την εφαρμογή σας
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Φόρμες Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    Τι υπάρχει μετά;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Δημοσιεύτηκε με το HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Εισαγωγή στην HTML</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x3B5;&#x3B9;&#x3C3;&#x3B1;&#x3B3;&#x3C9;&#x3B3;&#x3AE;-&#x3C3;&#x3C4;&#x3B7;&#x3BD;-html">&#x395;&#x3B9;&#x3C3;&#x3B1;&#x3B3;&#x3C9;&#x3B3;&#x3AE; &#x3C3;&#x3C4;&#x3B7;&#x3BD; HTML</h1><p>&#x38A;&#x3C3;&#x3C9;&#x3C2; &#x3B1;&#x3BD;&#x3B1;&#x3C1;&#x3C1;&#x3C9;&#x3C4;&#x3B9;&#x3AD;&#x3C3;&#x3C4;&#x3B5;, &#x3C4;&#x3B9; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3AD;&#x3BD;&#x3B1; template;</p><p>&#x388;&#x3BD;&#x3B1; template &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3AD;&#x3BD;&#x3B1; &#x3B1;&#x3C1;&#x3C7;&#x3B5;&#x3AF;&#x3BF; &#x3C0;&#x3BF;&#x3C5; &#x3BC;&#x3C0;&#x3BF;&#x3C1;&#x3BF;&#x3CD;&#x3BC;&#x3B5; &#x3BD;&#x3B1; &#x3B5;&#x3C0;&#x3B1;&#x3BD;&#x3B1;&#x3C7;&#x3C1;&#x3B7;&#x3C3;&#x3B9;&#x3BC;&#x3BF;&#x3C0;&#x3BF;&#x3B9;&#x3BF;&#x3CD;&#x3BC;&#x3B5; &#x3B3;&#x3B9;&#x3B1; &#x3BD;&#x3B1; &#x3C0;&#x3B1;&#x3C1;&#x3BF;&#x3C5;&#x3C3;&#x3B9;&#x3AC;&#x3B6;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3B4;&#x3B9;&#x3B1;&#x3C6;&#x3BF;&#x3C1;&#x3B5;&#x3C4;&#x3B9;&#x3BA;&#x3AD;&#x3C2; &#x3C0;&#x3BB;&#x3B7;&#x3C1;&#x3BF;&#x3C6;&#x3BF;&#x3C1;&#x3AF;&#x3B5;&#x3C2; &#x3BC;&#x3AD;&#x3C3;&#x3B1; &#x3B1;&#x3C0;&#x3CC; &#x3BC;&#x3B9;&#x3B1; &#x3C3;&#x3C5;&#x3BD;&#x3B5;&#x3C0;&#x3AE; &#x3BC;&#x3BF;&#x3C1;&#x3C6;&#x3AE;. &#x393;&#x3B9;&#x3B1; &#x3C0;&#x3B1;&#x3C1;&#x3AC;&#x3B4;&#x3B5;&#x3B9;&#x3B3;&#x3BC;&#x3B1;, &#x3B8;&#x3B1; &#x3BC;&#x3C0;&#x3BF;&#x3C1;&#x3BF;&#x3CD;&#x3C3;&#x3B1;&#x3C4;&#x3B5; &#x3BD;&#x3B1; &#x3C7;&#x3C1;&#x3B7;&#x3C3;&#x3B9;&#x3BC;&#x3BF;&#x3C0;&#x3BF;&#x3B9;&#x3AE;&#x3C3;&#x3B5;&#x3C4;&#x3B5; &#x3AD;&#x3BD;&#x3B1; &#x3C0;&#x3C1;&#x3CC;&#x3C4;&#x3C5;&#x3C0;&#x3BF; (template) &#x3B3;&#x3B9;&#x3B1; &#x3BD;&#x3B1; &#x3C3;&#x3B1;&#x3C2; &#x3B2;&#x3BF;&#x3B7;&#x3B8;&#x3AE;&#x3C3;&#x3B5;&#x3B9; &#x3BD;&#x3B1; &#x3B3;&#x3C1;&#x3AC;&#x3C8;&#x3B5;&#x3C4;&#x3B5; &#x3BC;&#x3B9;&#x3B1; &#x3B5;&#x3C0;&#x3B9;&#x3C3;&#x3C4;&#x3BF;&#x3BB;&#x3AE;, &#x3B3;&#x3B9;&#x3B1;&#x3C4;&#x3AF; &#x3B1;&#x3BD; &#x3BA;&#x3B1;&#x3B9; &#x3BA;&#x3AC;&#x3B8;&#x3B5; &#x3B5;&#x3C0;&#x3B9;&#x3C3;&#x3C4;&#x3BF;&#x3BB;&#x3AE; &#x3BC;&#x3C0;&#x3BF;&#x3C1;&#x3B5;&#x3AF; &#x3BD;&#x3B1; &#x3C0;&#x3B5;&#x3C1;&#x3B9;&#x3AD;&#x3C7;&#x3B5;&#x3B9; &#x3B4;&#x3B9;&#x3B1;&#x3C6;&#x3BF;&#x3C1;&#x3B5;&#x3C4;&#x3B9;&#x3BA;&#x3CC; &#x3BC;&#x3AE;&#x3BD;&#x3C5;&#x3BC;&#x3B1; &#x3BA;&#x3B1;&#x3B9; &#x3BD;&#x3B1; &#x3B1;&#x3C0;&#x3B5;&#x3C5;&#x3B8;&#x3CD;&#x3BD;&#x3B5;&#x3C4;&#x3B1;&#x3B9; &#x3C3;&#x3B5; &#x3AD;&#x3BD;&#x3B1; &#x3B4;&#x3B9;&#x3B1;&#x3C6;&#x3BF;&#x3C1;&#x3B5;&#x3C4;&#x3B9;&#x3BA;&#x3CC; &#x3C0;&#x3C1;&#x3CC;&#x3C3;&#x3C9;&#x3C0;&#x3BF;, &#x3BC;&#x3B5;&#x3C1;&#x3B9;&#x3BA;&#x3AC; &#x3C3;&#x3B7;&#x3BC;&#x3B5;&#x3AF;&#x3B1; &#x3B8;&#x3B1; &#x3BC;&#x3BF;&#x3B9;&#x3C1;&#x3B1;&#x3C3;&#x3C4;&#x3BF;&#x3CD;&#x3BD; &#x3C4;&#x3B7;&#x3BD; &#x3AF;&#x3B4;&#x3B9;&#x3B1; &#x3BC;&#x3BF;&#x3C1;&#x3C6;&#x3AE;.</p><p>&#x397; &#x3BC;&#x3BF;&#x3C1;&#x3C6;&#x3AE; &#x3B5;&#x3BD;&#x3CC;&#x3C2; Django template &#x3C0;&#x3B5;&#x3C1;&#x3B9;&#x3B3;&#x3C1;&#x3AC;&#x3C6;&#x3B5;&#x3C4;&#x3B1;&#x3B9; &#x3BC;&#x3B5; &#x3BC;&#x3B9;&#x3B1; &#x3B3;&#x3BB;&#x3CE;&#x3C3;&#x3C3;&#x3B1; &#x3C0;&#x3BF;&#x3C5; &#x3BF;&#x3BD;&#x3BF;&#x3BC;&#x3AC;&#x3B6;&#x3B5;&#x3C4;&#x3B1;&#x3B9; HTML (&#x3C0;&#x3BF;&#x3C5; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3B7; HTML &#x3C0;&#x3BF;&#x3C5; &#x3B1;&#x3BD;&#x3B1;&#x3C6;&#x3AD;&#x3C1;&#x3B1;&#x3BC;&#x3B5; &#x3C3;&#x3C4;&#x3BF; &#x3C0;&#x3C1;&#x3CE;&#x3C4;&#x3BF; &#x3BA;&#x3B5;&#x3C6;&#x3AC;&#x3BB;&#x3B1;&#x3B9;&#x3BF;, <strong>&#x3A0;&#x3CE;&#x3C2; &#x3BB;&#x3B5;&#x3B9;&#x3C4;&#x3BF;&#x3C5;&#x3C1;&#x3B3;&#x3B5;&#x3AF; &#x3C4;&#x3BF; Internet</strong>).</p><h2 id="&#x3C4;&#x3B9;-&#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9;-&#x3B7;-html">&#x3A4;&#x3B9; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3B7; HTML;</h2><p>&#x397; HTML &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3AD;&#x3BD;&#x3B1;&#x3C2; &#x3BA;&#x3CE;&#x3B4;&#x3B9;&#x3BA;&#x3B1;&#x3C2; &#x3C0;&#x3BF;&#x3C5; &#x3B5;&#x3C1;&#x3BC;&#x3B7;&#x3BD;&#x3B5;&#x3CD;&#x3B5;&#x3C4;&#x3B1;&#x3B9; &#x3B1;&#x3C0;&#x3CC; &#x3C4;&#x3BF;&#x3BD; web browser &#x3C3;&#x3B1;&#x3C2; &#x2013; &#x3CC;&#x3C0;&#x3C9;&#x3C2; &#x3BF; Chrome, Firefox &#x3AE; Safari - &#x3B3;&#x3B9;&#x3B1; &#x3BD;&#x3B1; &#x3B5;&#x3BC;&#x3C6;&#x3B1;&#x3BD;&#x3B9;&#x3C3;&#x3C4;&#x3B5;&#x3AF; &#x3BC;&#x3B9;&#x3B1; &#x3B9;&#x3C3;&#x3C4;&#x3BF;&#x3C3;&#x3B5;&#x3BB;&#x3AF;&#x3B4;&#x3B1; &#x3C3;&#x3C4;&#x3BF;&#x3BD; &#x3C7;&#x3C1;&#x3AE;&#x3C3;&#x3C4;&#x3B7;.</p><p>HTML &#x3C3;&#x3B7;&#x3BC;&#x3B1;&#x3AF;&#x3BD;&#x3B5;&#x3B9; &quot;HyperText Markup Language&quot;. &#x397; &#x3BB;&#x3AD;&#x3BE;&#x3B7; <strong>HyperText</strong> &#x3C3;&#x3B7;&#x3BC;&#x3B1;&#x3AF;&#x3BD;&#x3B5;&#x3B9; &#x3CC;&#x3C4;&#x3B9; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3AD;&#x3BD;&#x3B1;&#x3C2; &#x3C4;&#x3CD;&#x3C0;&#x3BF;&#x3C2; &#x3BA;&#x3B5;&#x3B9;&#x3BC;&#x3AD;&#x3BD;&#x3BF;&#x3C5; &#x3C0;&#x3BF;&#x3C5; &#x3C5;&#x3C0;&#x3BF;&#x3C3;&#x3C4;&#x3B7;&#x3C1;&#x3AF;&#x3B6;&#x3B5;&#x3B9; &#x3C5;&#x3C0;&#x3B5;&#x3C1;-&#x3C3;&#x3C5;&#x3BD;&#x3B4;&#x3AD;&#x3C3;&#x3B5;&#x3B9;&#x3C2; &#x3BC;&#x3B5;&#x3C4;&#x3B1;&#x3BE;&#x3CD; &#x3C4;&#x3C9;&#x3BD; &#x3C3;&#x3B5;&#x3BB;&#x3B9;&#x3B4;&#x3CE;&#x3BD;. <strong>Markup</strong> &#x3C3;&#x3B7;&#x3BC;&#x3B1;&#x3AF;&#x3BD;&#x3B5;&#x3B9; &#x3CC;&#x3C4;&#x3B9; &#x3AD;&#x3C7;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3BB;&#x3AC;&#x3B2;&#x3B5;&#x3B9; &#x3AD;&#x3BD;&#x3B1; &#x3AD;&#x3B3;&#x3B3;&#x3C1;&#x3B1;&#x3C6;&#x3BF; &#x3BA;&#x3B1;&#x3B9; &#x3C4;&#x3BF; &#x3AD;&#x3C7;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3B5;&#x3C0;&#x3B9;&#x3C3;&#x3B7;&#x3BC;&#x3AC;&#x3BD;&#x3B5;&#x3B9; &#x3BC;&#x3B5; &#x3BA;&#x3CE;&#x3B4;&#x3B9;&#x3BA;&#x3B1; &#x3BF;&#x3CD;&#x3C4;&#x3C9;&#x3C2; &#x3CE;&#x3C3;&#x3C4;&#x3B5; &#x3BD;&#x3B1; &#x3C0;&#x3B5;&#x3B9; &#x3BA;&#x3AC;&#x3C4;&#x3B9; (&#x3C3;&#x3C4;&#x3B7;&#x3BD; &#x3C0;&#x3C1;&#x3BF;&#x3BA;&#x3B5;&#x3B9;&#x3BC;&#x3AD;&#x3BD;&#x3B7; &#x3C0;&#x3B5;&#x3C1;&#x3AF;&#x3C0;&#x3C4;&#x3C9;&#x3C3;&#x3B7;, &#x3AD;&#x3BD;&#x3B1;&#x3C2; browser) &#x3C0;&#x3CE;&#x3C2; &#x3BD;&#x3B1; &#x3B5;&#x3C1;&#x3BC;&#x3B7;&#x3BD;&#x3B5;&#x3CD;&#x3C3;&#x3B5;&#x3B9; &#x3C4;&#x3B7; &#x3C3;&#x3B5;&#x3BB;&#x3AF;&#x3B4;&#x3B1;. &#x39F; HTML &#x3BA;&#x3CE;&#x3B4;&#x3B9;&#x3BA;&#x3B1;&#x3C2; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3C7;&#x3C4;&#x3B9;&#x3C3;&#x3BC;&#x3AD;&#x3BD;&#x3BF;&#x3C2; &#x3BC;&#x3B5; <strong>tags</strong>, &#x3CC;&#x3C0;&#x3BF;&#x3C5; &#x3BA;&#x3B1;&#x3B8;&#x3AD;&#x3BD;&#x3B1; &#x3B1;&#x3C1;&#x3C7;&#x3AF;&#x3B6;&#x3B5;&#x3B9; &#x3BC;&#x3B5; <code>&lt;</code> &#x3BA;&#x3B1;&#x3B9; &#x3C4;&#x3B5;&#x3BB;&#x3B5;&#x3B9;&#x3CE;&#x3BD;&#x3B5;&#x3B9; &#x3BC;&#x3B5; <code>&gt;</code>. &#x391;&#x3C5;&#x3C4;&#x3AC; &#x3C4;&#x3B1; tags &#x3B1;&#x3BD;&#x3C4;&#x3B9;&#x3C0;&#x3C1;&#x3BF;&#x3C3;&#x3C9;&#x3C0;&#x3B5;&#x3CD;&#x3BF;&#x3C5;&#x3BD; &#x3C4;&#x3B1; markup <strong>elements</strong>.</p><h2 id="&#x3C4;&#x3BF;-&#x3C0;&#x3C1;&#x3CE;&#x3C4;&#x3BF;-&#x3C3;&#x3B1;&#x3C2;-template">&#x3A4;&#x3BF; &#x3C0;&#x3C1;&#x3CE;&#x3C4;&#x3BF; &#x3C3;&#x3B1;&#x3C2; template!</h2><p>H &#x3B4;&#x3B7;&#x3BC;&#x3B9;&#x3BF;&#x3C5;&#x3C1;&#x3B3;&#x3AF;&#x3B1; &#x3B5;&#x3BD;&#x3CC;&#x3C2; template &#x3C3;&#x3B7;&#x3BC;&#x3B1;&#x3AF;&#x3BD;&#x3B5;&#x3B9; &#x3C4;&#x3B7; &#x3B4;&#x3B7;&#x3BC;&#x3B9;&#x3BF;&#x3C5;&#x3C1;&#x3B3;&#x3AF;&#x3B1; &#x3B5;&#x3BD;&#x3CC;&#x3C2; &#x3B1;&#x3C1;&#x3C7;&#x3B5;&#x3AF;&#x3BF;&#x3C5; template. &#x3A4;&#x3B1; &#x3C0;&#x3AC;&#x3BD;&#x3C4;&#x3B1; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3AD;&#x3BD;&#x3B1; &#x3B1;&#x3C1;&#x3C7;&#x3B5;&#x3AF;&#x3BF;, &#x3C3;&#x3C9;&#x3C3;&#x3C4;&#x3AC;; &#x3A0;&#x3B9;&#x3B8;&#x3B1;&#x3BD;&#x3CE;&#x3C2; &#x3BD;&#x3B1; &#x3C4;&#x3BF; &#x3AD;&#x3C7;&#x3B5;&#x3C4;&#x3B5; &#x3C0;&#x3B1;&#x3C1;&#x3B1;&#x3C4;&#x3B7;&#x3C1;&#x3AE;&#x3C3;&#x3B5;&#x3B9; &#x3B1;&#x3C5;&#x3C4;&#x3CC;.</p><p>&#x3A4;&#x3B1; templates &#x3B1;&#x3C0;&#x3BF;&#x3B8;&#x3B7;&#x3BA;&#x3B5;&#x3CD;&#x3BF;&#x3BD;&#x3C4;&#x3B1;&#x3B9; &#x3C3;&#x3C4;&#x3BF; &#x3C6;&#x3AC;&#x3BA;&#x3B5;&#x3BB;&#x3BF; <code>blog/templates/blog</code>. &#x386;&#x3C1;&#x3B1;, &#x3C0;&#x3C1;&#x3CE;&#x3C4;&#x3B1; &#x3B4;&#x3B7;&#x3BC;&#x3B9;&#x3BF;&#x3C5;&#x3C1;&#x3B3;&#x3AE;&#x3C3;&#x3C4;&#x3B5; &#x3AD;&#x3BD;&#x3B1;&#x3BD; &#x3C6;&#x3AC;&#x3BA;&#x3B5;&#x3BB;&#x3BF; &#x3BC;&#x3B5; &#x3C4;&#x3BF; &#x3CC;&#x3BD;&#x3BF;&#x3BC;&#x3B1; <code>templates</code> &#x3BC;&#x3AD;&#x3C3;&#x3B1; &#x3C3;&#x3C4;&#x3BF;&#x3BD; &#x3C6;&#x3AC;&#x3BA;&#x3B5;&#x3BB;&#x3BF; blog. &#x3A3;&#x3C4;&#x3B7; &#x3C3;&#x3C5;&#x3BD;&#x3AD;&#x3C7;&#x3B5;&#x3B9;&#x3B1;, &#x3B4;&#x3B7;&#x3BC;&#x3B9;&#x3BF;&#x3C5;&#x3C1;&#x3B3;&#x3AE;&#x3C3;&#x3C4;&#x3B5; &#x3AD;&#x3BD;&#x3B1;&#x3BD; &#x3AC;&#x3BB;&#x3BB;&#x3BF; &#x3C6;&#x3AC;&#x3BA;&#x3B5;&#x3BB;&#x3BF; &#x3C0;&#x3BF;&#x3C5; &#x3BF;&#x3BD;&#x3BF;&#x3BC;&#x3AC;&#x3B6;&#x3B5;&#x3C4;&#x3B1;&#x3B9; <code>blog</code> &#x3BC;&#x3AD;&#x3C3;&#x3B1; &#x3C3;&#x3C4;&#x3BF;&#x3BD; &#x3C6;&#x3AC;&#x3BA;&#x3B5;&#x3BB;&#x3BF; templates:</p><pre><code>        blog
+        &#x2514;&#x2500;&#x2500;&#x2500;templates
+            &#x2514;&#x2500;&#x2500;&#x2500;blog</code></pre>
+<p>(&#x38A;&#x3C3;&#x3C9;&#x3C2; &#x3BD;&#x3B1; &#x3B1;&#x3BD;&#x3B1;&#x3C1;&#x3C9;&#x3C4;&#x3B7;&#x3B8;&#x3B5;&#x3AF;&#x3C4;&#x3B5; &#x3B3;&#x3B9;&#x3B1;&#x3C4;&#x3AF; &#x3C7;&#x3C1;&#x3B5;&#x3B9;&#x3B1;&#x3B6;&#x3CC;&#x3BC;&#x3B1;&#x3C3;&#x3C4;&#x3B5; &#x3B4;&#x3CD;&#x3BF; &#x3C6;&#x3B1;&#x3BA;&#x3AD;&#x3BB;&#x3BF;&#x3C5;&#x3C2; &#x3C0;&#x3BF;&#x3C5; &#x3BA;&#x3B1;&#x3B9; &#x3BF;&#x3B9; &#x3B4;&#x3CD;&#x3BF; &#x3BF;&#x3BD;&#x3BF;&#x3BC;&#x3AC;&#x3B6;&#x3BF;&#x3BD;&#x3C4;&#x3B1;&#x3B9; <code>blog</code>. &#x38C;&#x3C0;&#x3C9;&#x3C2; &#x3B8;&#x3B1; &#x3B1;&#x3BD;&#x3B1;&#x3BA;&#x3B1;&#x3BB;&#x3CD;&#x3C8;&#x3B5;&#x3C4;&#x3B5; &#x3B1;&#x3C1;&#x3B3;&#x3CC;&#x3C4;&#x3B5;&#x3C1;&#x3B1;, &#x3B1;&#x3C5;&#x3C4;&#x3CC; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3BC;&#x3B9;&#x3B1; &#x3C4;&#x3B5;&#x3C7;&#x3BD;&#x3B9;&#x3BA;&#x3AE; &#x3BF;&#x3BD;&#x3BF;&#x3BC;&#x3B1;&#x3C3;&#x3AF;&#x3B1;&#x3C2; &#x3C0;&#x3BF;&#x3C5; &#x3BA;&#x3AC;&#x3BD;&#x3B5;&#x3B9; &#x3C4;&#x3B7; &#x3B6;&#x3C9;&#x3AE; &#x3B5;&#x3C5;&#x3BA;&#x3BF;&#x3BB;&#x3CC;&#x3C4;&#x3B5;&#x3C1;&#x3B7; &#x3CC;&#x3C4;&#x3B1;&#x3BD; &#x3C4;&#x3B1; &#x3C0;&#x3C1;&#x3AC;&#x3B3;&#x3BC;&#x3B1;&#x3C4;&#x3B1; &#x3B1;&#x3C1;&#x3C7;&#x3AF;&#x3B6;&#x3BF;&#x3C5;&#x3BD; &#x3BD;&#x3B1; &#x3C0;&#x3B5;&#x3C1;&#x3B9;&#x3C0;&#x3BB;&#x3AD;&#x3BA;&#x3BF;&#x3BD;&#x3C4;&#x3B1;&#x3B9;.)</p><p>&#x39A;&#x3B1;&#x3B9; &#x3C4;&#x3CE;&#x3C1;&#x3B1; &#x3B4;&#x3B7;&#x3BC;&#x3B9;&#x3BF;&#x3C5;&#x3C1;&#x3B3;&#x3AE;&#x3C3;&#x3C4;&#x3B5; &#x3AD;&#x3BD;&#x3B1; &#x3B1;&#x3C1;&#x3C7;&#x3B5;&#x3AF;&#x3BF; <code>post_list.html</code> (&#x3B1;&#x3C0;&#x3BB;&#x3AC; &#x3B1;&#x3C6;&#x3AE;&#x3C3;&#x3C4;&#x3B5; &#x3C4;&#x3BF; &#x3BA;&#x3B5;&#x3BD;&#x3CC; &#x3B3;&#x3B9;&#x3B1; &#x3C4;&#x3CE;&#x3C1;&#x3B1;) &#x3BC;&#x3AD;&#x3C3;&#x3B1; &#x3C3;&#x3C4;&#x3BF;&#x3BD; &#x3C6;&#x3AC;&#x3BA;&#x3B5;&#x3BB;&#x3BF; <code>blog/templates/blog</code>.</p><p>&#x394;&#x3B5;&#x3AF;&#x3C4;&#x3B5; &#x3C0;&#x3CE;&#x3C2; &#x3B5;&#x3BC;&#x3C6;&#x3B1;&#x3BD;&#x3AF;&#x3B6;&#x3B5;&#x3C4;&#x3B1;&#x3B9; &#x3B7; &#x3B9;&#x3C3;&#x3C4;&#x3BF;&#x3C3;&#x3B5;&#x3BB;&#x3AF;&#x3B4;&#x3B1; &#x3C3;&#x3B1;&#x3C2; &#x3C3;&#x3C4;&#x3BF;: <a href="http://127.0.0.1:8000" target="_blank">http://127.0.0.1:8000</a> /</p><blockquote><p>&#x391;&#x3BD; &#x3C0;&#x3B1;&#x3C1;&#x3BF;&#x3C5;&#x3C3;&#x3B9;&#x3AC;&#x3B6;&#x3B5;&#x3C4;&#x3B1;&#x3B9; &#x3B1;&#x3BA;&#x3CC;&#x3BC;&#x3B1; &#x3C4;&#x3BF; &#x3C3;&#x3C6;&#x3AC;&#x3BB;&#x3BC;&#x3B1; <code>TemplateDoesNotExist</code>, &#x3B4;&#x3BF;&#x3BA;&#x3B9;&#x3BC;&#x3AC;&#x3C3;&#x3C4;&#x3B5; &#x3BD;&#x3B1; &#x3B5;&#x3C0;&#x3B1;&#x3BD;&#x3B5;&#x3BA;&#x3BA;&#x3B9;&#x3BD;&#x3AE;&#x3C3;&#x3B5;&#x3C4;&#x3B5; &#x3C4;&#x3BF;&#x3BD; server &#x3C3;&#x3B1;&#x3C2;. &#x3A0;&#x3C1;&#x3BF;&#x3C3;&#x3C0;&#x3B1;&#x3B8;&#x3AE;&#x3C3;&#x3C4;&#x3B5; &#x3BD;&#x3B1; &#x3C4;&#x3BF;&#x3BD; &#x3C3;&#x3C4;&#x3B1;&#x3BC;&#x3B1;&#x3C4;&#x3AE;&#x3C3;&#x3B5;&#x3C4;&#x3B5; (&#x3C0;&#x3B9;&#x3AD;&#x3B6;&#x3BF;&#x3BD;&#x3C4;&#x3B1;&#x3C2; Ctrl + C) &#x3BA;&#x3B1;&#x3B9; &#x3B5;&#x3C0;&#x3B1;&#x3BD;&#x3B5;&#x3BA;&#x3BA;&#x3B9;&#x3BD;&#x3AE;&#x3C3;&#x3C4;&#x3B5; &#x3C4;&#x3BF;&#x3BD; &#x3C4;&#x3C1;&#x3AD;&#x3C7;&#x3BF;&#x3BD;&#x3C4;&#x3B1;&#x3C2; &#x3C4;&#x3B7;&#x3BD; &#x3B5;&#x3BD;&#x3C4;&#x3BF;&#x3BB;&#x3AE; <code>python manage.py runserver</code>.</p></blockquote><p><img alt="&#x3A3;&#x3C7;&#x3AE;&#x3BC;&#x3B1; 11.1" src="images/step1.png"></p><p>&#x394;&#x3B5;&#x3BD; &#x3C5;&#x3C0;&#x3AC;&#x3C1;&#x3C7;&#x3B5;&#x3B9; &#x3C3;&#x3C6;&#x3AC;&#x3BB;&#x3BC;&#x3B1; &#x3C0;&#x3B9;&#x3B1;! &#x3A3;&#x3C5;&#x3B3;&#x3C7;&#x3B1;&#x3C1;&#x3B7;&#x3C4;&#x3AE;&#x3C1;&#x3B9;&#x3B1; :) &#x3A9;&#x3C3;&#x3C4;&#x3CC;&#x3C3;&#x3BF;, &#x3B9;&#x3C3;&#x3C4;&#x3BF;&#x3C3;&#x3B5;&#x3BB;&#x3AF;&#x3B4;&#x3B1; &#x3C3;&#x3B1;&#x3C2; &#x3B4;&#x3B5;&#x3BD; &#x3B4;&#x3B5;&#x3AF;&#x3C7;&#x3BD;&#x3B5;&#x3B9; &#x3BA;&#x3AC;&#x3C4;&#x3B9; &#x3C0;&#x3B1;&#x3C1;&#x3AC; &#x3BC;&#x3B9;&#x3B1; &#x3BA;&#x3B5;&#x3BD;&#x3AE; &#x3C3;&#x3B5;&#x3BB;&#x3AF;&#x3B4;&#x3B1; &#x3B5;&#x3C0;&#x3B5;&#x3B9;&#x3B4;&#x3AE; &#x3C4;&#x3BF; template &#x3C3;&#x3B1;&#x3C2; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3BA;&#x3B5;&#x3BD;&#x3CC;. &#x3A0;&#x3C1;&#x3AD;&#x3C0;&#x3B5;&#x3B9; &#x3BD;&#x3B1; &#x3C4;&#x3BF; &#x3B4;&#x3B9;&#x3BF;&#x3C1;&#x3B8;&#x3CE;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3B1;&#x3C5;&#x3C4;&#x3CC;.</p><p>&#x391;&#x3BD;&#x3BF;&#x3AF;&#x3BE;&#x3C4;&#x3B5; &#x3C4;&#x3BF; &#x3BD;&#x3AD;&#x3BF; &#x3B1;&#x3C1;&#x3C7;&#x3B5;&#x3AF;&#x3BF; &#x3BA;&#x3B1;&#x3B9; &#x3C0;&#x3C1;&#x3BF;&#x3C3;&#x3B8;&#x3AD;&#x3C3;&#x3C4;&#x3B5; &#x3C4;&#x3B1; &#x3B5;&#x3BE;&#x3AE;&#x3C2;:</p><p></p><p class="code-label">blog/templates/blog/post_list.html</p><p></p><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hi there!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>It works!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre>
+<p>&#x39F;&#x3C0;&#x3CC;&#x3C4;&#x3B5; &#x3C0;&#x3C9;&#x3C2; &#x3C6;&#x3B1;&#x3AF;&#x3BD;&#x3B5;&#x3C4;&#x3B1;&#x3B9; &#x3C4;&#x3CE;&#x3C1;&#x3B1; &#x3B7; &#x3B9;&#x3C3;&#x3C4;&#x3BF;&#x3C3;&#x3B5;&#x3BB;&#x3AF;&#x3B4;&#x3B1; &#x3BC;&#x3B1;&#x3C2;; &#x395;&#x3C0;&#x3B9;&#x3C3;&#x3BA;&#x3B5;&#x3C6;&#x3B8;&#x3B5;&#x3AF;&#x3C4;&#x3B5; &#x3C4;&#x3BF; &#x3B3;&#x3B9;&#x3B1; &#x3BD;&#x3B1; &#x3BC;&#x3AC;&#x3B8;&#x3B5;&#x3C4;&#x3B5;: <a href="http://127.0.0.1:8000/" target="_blank">http://127.0.0.1:8000/</a></p><p><img alt="&#x3A3;&#x3C7;&#x3AE;&#x3BC;&#x3B1; 11.2" src="images/step3.png"></p><p>&#x39B;&#x3B5;&#x3B9;&#x3C4;&#x3BF;&#x3C5;&#x3C1;&#x3B3;&#x3B5;&#x3AF;! &#x39A;&#x3B1;&#x3BB;&#x3AE; &#x3B4;&#x3BF;&#x3C5;&#x3BB;&#x3B5;&#x3B9;&#x3AC; :)</p><ul><li>&#x3A4;&#x3BF; &#x3C0;&#x3B9;&#x3BF; &#x3B2;&#x3B1;&#x3C3;&#x3B9;&#x3BA;&#x3CC; tag, <code>&lt;html&gt;</code>, &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3C0;&#x3AC;&#x3BD;&#x3C4;&#x3B1; &#x3B7; &#x3B1;&#x3C1;&#x3C7;&#x3AE; &#x3BF;&#x3C0;&#x3BF;&#x3B9;&#x3B1;&#x3C3;&#x3B4;&#x3AE;&#x3C0;&#x3BF;&#x3C4;&#x3B5; &#x3B9;&#x3C3;&#x3C4;&#x3BF;&#x3C3;&#x3B5;&#x3BB;&#x3AF;&#x3B4;&#x3B1;&#x3C2; &#x3BA;&#x3B1;&#x3B9; <code>&lt;/html&gt;</code> &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3C0;&#x3AC;&#x3BD;&#x3C4;&#x3B1; &#x3C3;&#x3C4;&#x3BF; &#x3C4;&#x3AD;&#x3BB;&#x3BF;&#x3C2;. &#x38C;&#x3C0;&#x3C9;&#x3C2; &#x3BC;&#x3C0;&#x3BF;&#x3C1;&#x3B5;&#x3AF;&#x3C4;&#x3B5; &#x3BD;&#x3B1; &#x3B4;&#x3B5;&#x3AF;&#x3C4;&#x3B5;, &#x3CC;&#x3BB;&#x3BF; &#x3C4;&#x3BF; &#x3C0;&#x3B5;&#x3C1;&#x3B9;&#x3B5;&#x3C7;&#x3CC;&#x3BC;&#x3B5;&#x3BD;&#x3BF; &#x3C4;&#x3B7;&#x3C2; &#x3C3;&#x3B5;&#x3BB;&#x3AF;&#x3B4;&#x3B1;&#x3C2; &#x3B5;&#x3BD;&#x3C3;&#x3C9;&#x3BC;&#x3B1;&#x3C4;&#x3CE;&#x3BD;&#x3B5;&#x3C4;&#x3B1;&#x3B9; &#x3BC;&#x3B5;&#x3C4;&#x3B1;&#x3BE;&#x3CD; &#x3C4;&#x3B7;&#x3C2; &#x3B1;&#x3C1;&#x3C7;&#x3AE;&#x3C2; &#x3C4;&#x3BF;&#x3C5; tag <code>&lt;html&gt;</code> &#x3BA;&#x3B1;&#x3B9; &#x3C4;&#x3BF;&#x3C5; tag &#x3BA;&#x3BB;&#x3B5;&#x3B9;&#x3C3;&#x3AF;&#x3BC;&#x3B1;&#x3C4;&#x3BF;&#x3C2; <code>&lt;/html&gt;</code>
+</li>
+<li><code>&lt;p&gt;</code>&#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3AD;&#x3BD;&#x3B1; tag &#x3B3;&#x3B9;&#x3B1; &#x3C3;&#x3C4;&#x3BF;&#x3B9;&#x3C7;&#x3B5;&#x3AF;&#x3B1; &#x3BA;&#x3B5;&#x3B9;&#x3BC;&#x3AD;&#x3BD;&#x3BF;&#x3C5; &#x3C0;&#x3B1;&#x3C1;&#x3B1;&#x3B3;&#x3C1;&#x3AC;&#x3C6;&#x3BF;&#x3C5;. &#x3A4;&#x3BF; tag <code>&lt;/p&gt;</code> &#x3BA;&#x3BB;&#x3B5;&#x3AF;&#x3BD;&#x3B5;&#x3B9; &#x3BA;&#x3AC;&#x3B8;&#x3B5; &#x3C0;&#x3B1;&#x3C1;&#x3AC;&#x3B3;&#x3C1;&#x3B1;&#x3C6;&#x3BF;
+</li></ul>
+<h2 id="head-&#x3BA;&#x3B1;&#x3B9;-body">Head &#x3BA;&#x3B1;&#x3B9; body</h2><p>&#x39A;&#x3AC;&#x3B8;&#x3B5; &#x3C3;&#x3B5;&#x3BB;&#x3AF;&#x3B4;&#x3B1; HTML &#x3C7;&#x3C9;&#x3C1;&#x3AF;&#x3B6;&#x3B5;&#x3C4;&#x3B1;&#x3B9; &#x3C3;&#x3B5; &#x3B4;&#x3CD;&#x3BF; &#x3C3;&#x3C4;&#x3BF;&#x3B9;&#x3C7;&#x3B5;&#x3AF;&#x3B1;: &#x3C4;&#x3BF; <strong>head</strong> &#x3BA;&#x3B1;&#x3B9; &#x3C4;&#x3BF; <strong>body</strong>.</p><ul><li><p>To <strong>head</strong> &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3AD;&#x3BD;&#x3B1; &#x3C3;&#x3C4;&#x3BF;&#x3B9;&#x3C7;&#x3B5;&#x3AF;&#x3BF; (element) &#x3C0;&#x3BF;&#x3C5; &#x3C0;&#x3B5;&#x3C1;&#x3B9;&#x3AD;&#x3C7;&#x3B5;&#x3B9; &#x3C0;&#x3BB;&#x3B7;&#x3C1;&#x3BF;&#x3C6;&#x3BF;&#x3C1;&#x3AF;&#x3B5;&#x3C2; &#x3C3;&#x3C7;&#x3B5;&#x3C4;&#x3B9;&#x3BA;&#x3AC; &#x3BC;&#x3B5; &#x3C4;&#x3BF; &#x3AD;&#x3B3;&#x3B3;&#x3C1;&#x3B1;&#x3C6;&#x3BF; &#x3B1;&#x3BB;&#x3BB;&#x3AC; &#x3B1;&#x3C5;&#x3C4;&#x3AD;&#x3C2; &#x3BF;&#x3B9; &#x3C0;&#x3BB;&#x3B7;&#x3C1;&#x3BF;&#x3C6;&#x3BF;&#x3C1;&#x3AF;&#x3B5;&#x3C2; &#x3B4;&#x3B5;&#x3BD; &#x3B5;&#x3BC;&#x3C6;&#x3B1;&#x3BD;&#x3AF;&#x3B6;&#x3BF;&#x3BD;&#x3C4;&#x3B1;&#x3B9; &#x3C3;&#x3C4;&#x3B7;&#x3BD; &#x3BF;&#x3B8;&#x3CC;&#x3BD;&#x3B7;.</p></li>
+<li><p>&#x3A4;&#x3BF; <strong>body</strong> &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3AD;&#x3BD;&#x3B1; &#x3C3;&#x3C4;&#x3BF;&#x3B9;&#x3C7;&#x3B5;&#x3AF;&#x3BF; &#x3C0;&#x3BF;&#x3C5; &#x3C0;&#x3B5;&#x3C1;&#x3B9;&#x3AD;&#x3C7;&#x3B5;&#x3B9; &#x3CC;&#x3BB;&#x3B1; &#x3C4;&#x3B1; &#x3C5;&#x3C0;&#x3CC;&#x3BB;&#x3BF;&#x3B9;&#x3C0;&#x3B1; &#x3C0;&#x3BF;&#x3C5; &#x3B5;&#x3BC;&#x3C6;&#x3B1;&#x3BD;&#x3AF;&#x3B6;&#x3BF;&#x3BD;&#x3C4;&#x3B1;&#x3B9; &#x3C9;&#x3C2; &#x3BC;&#x3AD;&#x3C1;&#x3BF;&#x3C2; &#x3C4;&#x3B7;&#x3C2; &#x3B9;&#x3C3;&#x3C4;&#x3BF;&#x3C3;&#x3B5;&#x3BB;&#x3AF;&#x3B4;&#x3B1;&#x3C2;.</p></li></ul>
+<p>&#x3A7;&#x3C1;&#x3B7;&#x3C3;&#x3B9;&#x3BC;&#x3BF;&#x3C0;&#x3BF;&#x3B9;&#x3BF;&#x3CD;&#x3BC;&#x3B5; &#x3C4;&#x3BF; tag <code>&lt;head&gt;</code>&#x3B3;&#x3B9;&#x3B1; &#x3BD;&#x3B1; &#x3C0;&#x3BF;&#x3CD;&#x3BC;&#x3B5; &#x3C3;&#x3C4;&#x3BF;&#x3BD; browser &#x3C3;&#x3C7;&#x3B5;&#x3C4;&#x3B9;&#x3BA;&#x3AC; &#x3BC;&#x3B5; &#x3C4;&#x3B7; &#x3B4;&#x3B9;&#x3B1;&#x3BC;&#x3CC;&#x3C1;&#x3C6;&#x3C9;&#x3C3;&#x3B7; &#x3C4;&#x3B7;&#x3C2; &#x3C3;&#x3B5;&#x3BB;&#x3AF;&#x3B4;&#x3B1;&#x3C2; &#x3BA;&#x3B1;&#x3B9; &#x3C4;&#x3BF; tag <code>&lt;body&gt;</code> &#x3B3;&#x3B9;&#x3B1; &#x3BD;&#x3B1; &#x3C0;&#x3BF;&#x3CD;&#x3BC;&#x3B5; &#x3B3;&#x3B9;&#x3B1; &#x3C4;&#x3BF; &#x3C0;&#x3B5;&#x3C1;&#x3B9;&#x3B5;&#x3C7;&#x3CC;&#x3BC;&#x3B5;&#x3BD;&#x3BF; &#x3C4;&#x3B7;&#x3C2;.</p><p>&#x393;&#x3B9;&#x3B1; &#x3C0;&#x3B1;&#x3C1;&#x3AC;&#x3B4;&#x3B5;&#x3B9;&#x3B3;&#x3BC;&#x3B1;, &#x3BC;&#x3C0;&#x3BF;&#x3C1;&#x3B5;&#x3AF;&#x3C4;&#x3B5; &#x3BD;&#x3B1; &#x3C0;&#x3C1;&#x3BF;&#x3C3;&#x3B8;&#x3AD;&#x3C3;&#x3B5;&#x3C4;&#x3B5; &#x3C4;&#x3AF;&#x3C4;&#x3BB;&#x3BF; &#x3C3;&#x3C4;&#x3B7;&#x3BD; &#x3B9;&#x3C3;&#x3C4;&#x3BF;&#x3C3;&#x3B5;&#x3BB;&#x3AF;&#x3B4;&#x3B1; &#x3C3;&#x3B1;&#x3C2; &#x3BC;&#x3AD;&#x3C3;&#x3B1; &#x3B1;&#x3C0;&#x3CC; &#x3C4;&#x3BF; tag <code>&lt;head&gt;</code>, &#x3CC;&#x3C0;&#x3C9;&#x3C2; &#x3C0;&#x3B1;&#x3C1;&#x3B1;&#x3BA;&#x3AC;&#x3C4;&#x3C9;:</p><p></p><p class="code-label">blog/templates/blog/post_list.html</p><p></p><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Ola&apos;s blog<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hi there!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>It works!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre>
+<p>&#x391;&#x3C0;&#x3BF;&#x3B8;&#x3B7;&#x3BA;&#x3B5;&#x3CD;&#x3C3;&#x3C4;&#x3B5; &#x3C4;&#x3BF; &#x3B1;&#x3C1;&#x3C7;&#x3B5;&#x3AF;&#x3BF; &#x3BA;&#x3B1;&#x3B9; &#x3B1;&#x3BD;&#x3B1;&#x3BD;&#x3AD;&#x3C9;&#x3C3;&#x3C4;&#x3B5; &#x3C4;&#x3B7;&#x3BD; &#x3C3;&#x3B5;&#x3BB;&#x3AF;&#x3B4;&#x3B1; &#x3C3;&#x3B1;&#x3C2;.</p><p><img alt="&#x3A3;&#x3C7;&#x3AE;&#x3BC;&#x3B1; 11.3" src="images/step4.png"></p><p>&#x3A0;&#x3B1;&#x3C1;&#x3B1;&#x3C4;&#x3B7;&#x3C1;&#x3AE;&#x3C3;&#x3B1;&#x3C4;&#x3B5; &#x3C0;&#x3C9;&#x3C2; &#x3BF; browser &#x3BA;&#x3B1;&#x3C4;&#x3AC;&#x3BB;&#x3B1;&#x3B2;&#x3B5; &#x3C4;&#x3BF; &quot;Ola&apos;s blog&quot; &#x3C9;&#x3C2; &#x3C4;&#x3AF;&#x3C4;&#x3BB;&#x3BF; &#x3B3;&#x3B9;&#x3B1; &#x3C4;&#x3B7;&#x3BD; &#x3C3;&#x3B5;&#x3BB;&#x3AF;&#x3B4;&#x3B1; &#x3C3;&#x3B1;&#x3C2;; &#x395;&#x3C1;&#x3BC;&#x3AE;&#x3BD;&#x3B5;&#x3C5;&#x3C3;&#x3B5; &#x3C4;&#x3BF; &#x3BA;&#x3B5;&#x3AF;&#x3BC;&#x3B5;&#x3BD;&#x3BF; <code>&lt;title&gt;Ola&apos;s blog&lt;/title&gt;</code> &#x3BA;&#x3B1;&#x3B9; &#x3C4;&#x3BF; &#x3C4;&#x3BF;&#x3C0;&#x3BF;&#x3B8;&#x3AD;&#x3C4;&#x3B7;&#x3C3;&#x3B5; &#x3C3;&#x3C4;&#x3B7;&#x3BD; &#x3BC;&#x3C0;&#x3AC;&#x3C1;&#x3B1; &#x3C4;&#x3AF;&#x3C4;&#x3BB;&#x3C9;&#x3BD; &#x3C4;&#x3BF;&#x3C5; browser &#x3C3;&#x3B1;&#x3C2; (&#x3C4;&#x3BF; &#x3AF;&#x3B4;&#x3B9;&#x3BF; &#x3BA;&#x3B5;&#x3AF;&#x3BC;&#x3B5;&#x3BD;&#x3BF; &#x3B8;&#x3B1; &#x3BB;&#x3B5;&#x3B9;&#x3C4;&#x3BF;&#x3C5;&#x3C1;&#x3B3;&#x3AE;&#x3C3;&#x3B5;&#x3B9; &#x3BA;&#x3B1;&#x3B9; &#x3C9;&#x3C2; &#x3CC;&#x3BD;&#x3BF;&#x3BC;&#x3B1; &#x3C3;&#x3B5;&#x3BB;&#x3B9;&#x3B4;&#x3BF;&#x3B4;&#x3B5;&#x3AF;&#x3BA;&#x3C4;&#x3B7; &#x3BA;&#x3BB;&#x3C0;).</p><p>&#x3A0;&#x3B9;&#x3B8;&#x3B1;&#x3BD;&#x3CE;&#x3C2; &#x3BD;&#x3B1; &#x3AD;&#x3C7;&#x3B5;&#x3C4;&#x3B5; &#x3C0;&#x3B1;&#x3C1;&#x3B1;&#x3C4;&#x3B7;&#x3C1;&#x3AE;&#x3C3;&#x3B5;&#x3B9; &#x3CC;&#x3C4;&#x3B9; &#x3BA;&#x3AC;&#x3B8;&#x3B5; tag &#x3B1;&#x3BD;&#x3C4;&#x3B9;&#x3C3;&#x3C4;&#x3BF;&#x3B9;&#x3C7;&#x3AF;&#x3B6;&#x3B5;&#x3C4;&#x3B1;&#x3B9; &#x3BC;&#x3B5; &#x3AD;&#x3BD;&#x3B1; <em>tag &#x3BA;&#x3BB;&#x3B5;&#x3B9;&#x3C3;&#x3AF;&#x3BC;&#x3B1;&#x3C4;&#x3BF;&#x3C2;</em>, &#x3BC;&#x3B5; &#x3BC;&#x3B9;&#x3B1; &#x3BA;&#x3AC;&#x3B8;&#x3B5;&#x3C4;&#x3BF; <code>/</code> &#x3BA;&#x3B1;&#x3B9; &#x3CC;&#x3C4;&#x3B9; &#x3C4;&#x3B1; &#x3C3;&#x3C4;&#x3BF;&#x3B9;&#x3C7;&#x3B5;&#x3AF;&#x3B1; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; <em>&#x3AD;&#x3BD;&#x3B8;&#x3B5;&#x3C4;&#x3B1;</em> (&#x3B4;&#x3B7;&#x3BB;&#x3B1;&#x3B4;&#x3AE; &#x3B4;&#x3B5;&#x3BD; &#x3BC;&#x3C0;&#x3BF;&#x3C1;&#x3B5;&#x3AF;&#x3C4;&#x3B5; &#x3BD;&#x3B1; &#x3BA;&#x3BB;&#x3B5;&#x3AF;&#x3C3;&#x3B5;&#x3C4;&#x3B5; &#x3BC;&#x3B9;&#x3B1; &#x3C3;&#x3C5;&#x3B3;&#x3BA;&#x3B5;&#x3BA;&#x3C1;&#x3B9;&#x3BC;&#x3AD;&#x3BD;&#x3B7; &#x3B5;&#x3C4;&#x3B9;&#x3BA;&#x3AD;&#x3C4;&#x3B1; &#x3BC;&#x3AD;&#x3C7;&#x3C1;&#x3B9; &#x3BD;&#x3B1; &#x3AD;&#x3C7;&#x3BF;&#x3C5;&#x3BD; &#x3BA;&#x3BB;&#x3B5;&#x3AF;&#x3C3;&#x3B5;&#x3B9; &#x3CC;&#x3BB;&#x3B1; &#x3B1;&#x3C5;&#x3C4;&#x3AC; &#x3C0;&#x3BF;&#x3C5; &#x3AE;&#x3C4;&#x3B1;&#x3BD; &#x3BC;&#x3AD;&#x3C3;&#x3B1; &#x3C3;&#x3B5; &#x3B1;&#x3C5;&#x3C4;&#x3CC;).</p><p>&#x395;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3C3;&#x3B1;&#x3BD; &#x3BD;&#x3B1; &#x3B2;&#x3AC;&#x3B6;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3C0;&#x3C1;&#x3AC;&#x3B3;&#x3BC;&#x3B1;&#x3C4;&#x3B1; &#x3BC;&#x3AD;&#x3C3;&#x3B1; &#x3C3;&#x3B5; &#x3BA;&#x3BF;&#x3C5;&#x3C4;&#x3B9;&#x3AC;. &#x388;&#x3C7;&#x3B5;&#x3C4;&#x3B5; &#x3AD;&#x3BD;&#x3B1; &#x3BC;&#x3B5;&#x3B3;&#x3AC;&#x3BB;&#x3BF; &#x3BA;&#x3BF;&#x3C5;&#x3C4;&#x3AF;, <code>&lt;html&gt;&lt;/html&gt;</code>. &#x3A3;&#x3C4;&#x3BF; &#x3B5;&#x3C3;&#x3C9;&#x3C4;&#x3B5;&#x3C1;&#x3B9;&#x3BA;&#x3CC; &#x3C4;&#x3BF;&#x3C5; &#x3C5;&#x3C0;&#x3AC;&#x3C1;&#x3C7;&#x3B5;&#x3B9; &#x3C4;&#x3BF; <code>&lt;body&gt;&lt;/body&gt;</code> &#x3C4;&#x3BF; &#x3BF;&#x3C0;&#x3BF;&#x3AF;&#x3BF; &#x3BC;&#x3B5; &#x3C4;&#x3B7; &#x3C3;&#x3B5;&#x3B9;&#x3C1;&#x3AC; &#x3C4;&#x3BF;&#x3C5; &#x3C0;&#x3B5;&#x3C1;&#x3B9;&#x3AD;&#x3C7;&#x3B5;&#x3B9; &#x3B1;&#x3BA;&#x3CC;&#x3BC;&#x3B1; &#x3BC;&#x3B9;&#x3BA;&#x3C1;&#x3CC;&#x3C4;&#x3B5;&#x3C1;&#x3B1; &#x3BA;&#x3BF;&#x3C5;&#x3C4;&#x3B9;&#x3AC;: <code>&lt;p&gt;&lt;/p&gt;</code>.</p><p>&#x398;&#x3B1; &#x3C0;&#x3C1;&#x3AD;&#x3C0;&#x3B5;&#x3B9; &#x3BD;&#x3B1; &#x3B1;&#x3BA;&#x3BF;&#x3BB;&#x3BF;&#x3C5;&#x3B8;&#x3B5;&#x3AF;&#x3C4;&#x3B5; &#x3B1;&#x3C5;&#x3C4;&#x3BF;&#x3CD;&#x3C2; &#x3C4;&#x3BF;&#x3C5;&#x3C2; &#x3BA;&#x3B1;&#x3BD;&#x3CC;&#x3BD;&#x3B5;&#x3C2; <em>&#x3BA;&#x3BB;&#x3B5;&#x3B9;&#x3C3;&#x3AF;&#x3BC;&#x3B1;&#x3C4;&#x3BF;&#x3C2; &#x3B5;&#x3C4;&#x3B9;&#x3BA;&#x3AD;&#x3C4;&#x3B1;&#x3C2;</em> &#x3BA;&#x3B1;&#x3B9; <em>&quot;&#x3C6;&#x3C9;&#x3BB;&#x3B9;&#x3AC;&#x3C3;&#x3BC;&#x3B1;&#x3C4;&#x3BF;&#x3C2;&quot;</em> &#x3C4;&#x3C9;&#x3BD; elements. &#x391;&#x3BD; &#x3B4;&#x3B5;&#x3BD; &#x3C4;&#x3BF; &#x3BA;&#x3AC;&#x3BD;&#x3B5;&#x3C4;&#x3B5;, &#x3BF; browser &#x3B5;&#x3BD;&#x3B4;&#x3AD;&#x3C7;&#x3B5;&#x3C4;&#x3B1;&#x3B9; &#x3BD;&#x3B1; &#x3BC;&#x3B7;&#x3BD; &#x3BC;&#x3C0;&#x3BF;&#x3C1;&#x3B5;&#x3AF; &#x3BD;&#x3B1; &#x3C4;&#x3B1; &#x3B5;&#x3C1;&#x3BC;&#x3B7;&#x3BD;&#x3B5;&#x3CD;&#x3C3;&#x3B5;&#x3B9; &#x3BF;&#x3C1;&#x3B8;&#x3AC; &#x3BA;&#x3B1;&#x3B9; &#x3B7; &#x3C3;&#x3B5;&#x3BB;&#x3AF;&#x3B4;&#x3B1; &#x3BD;&#x3B1; &#x3BC;&#x3B7;&#x3BD; &#x3B5;&#x3BC;&#x3C6;&#x3B1;&#x3BD;&#x3AF;&#x3B6;&#x3B5;&#x3C4;&#x3B1;&#x3B9; &#x3C3;&#x3C9;&#x3C3;&#x3C4;&#x3AC;.</p><h2 id="&#x3C0;&#x3B1;&#x3C1;&#x3B1;&#x3BC;&#x3B5;&#x3C4;&#x3C1;&#x3BF;&#x3C0;&#x3BF;&#x3B9;&#x3CE;&#x3BD;&#x3C4;&#x3B1;&#x3C2;-&#x3C4;&#x3BF;-template">&#x3A0;&#x3B1;&#x3C1;&#x3B1;&#x3BC;&#x3B5;&#x3C4;&#x3C1;&#x3BF;&#x3C0;&#x3BF;&#x3B9;&#x3CE;&#x3BD;&#x3C4;&#x3B1;&#x3C2; &#x3C4;&#x3BF; template</h2><p>&#x39C;&#x3C0;&#x3BF;&#x3C1;&#x3B5;&#x3AF;&#x3C4;&#x3B5;, &#x3C4;&#x3CE;&#x3C1;&#x3B1;, &#x3BD;&#x3B1; &#x3B4;&#x3B9;&#x3B1;&#x3C3;&#x3BA;&#x3B5;&#x3B4;&#x3AC;&#x3C3;&#x3B5;&#x3C4;&#x3B5; &#x3BB;&#x3B9;&#x3B3;&#x3AC;&#x3BA;&#x3B9; &#x3BA;&#x3B1;&#x3B9; &#x3BD;&#x3B1; &#x3C4;&#x3C1;&#x3BF;&#x3C0;&#x3BF;&#x3B9;&#x3AE;&#x3C3;&#x3B5;&#x3C4;&#x3B5; &#x3C4;&#x3BF; template &#x3C3;&#x3B1;&#x3C2;! &#x3A0;&#x3B1;&#x3C1;&#x3B1;&#x3BA;&#x3AC;&#x3C4;&#x3C9; &#x3C0;&#x3B1;&#x3C1;&#x3BF;&#x3C5;&#x3C3;&#x3B9;&#x3AC;&#x3B6;&#x3BF;&#x3BD;&#x3C4;&#x3B1;&#x3B9; &#x3BC;&#x3B5;&#x3C1;&#x3B9;&#x3BA;&#x3AC; &#x3C7;&#x3C1;&#x3AE;&#x3C3;&#x3B9;&#x3BC;&#x3B1; tags &#x3B3;&#x3B9;&apos;&#x3B1;&#x3C5;&#x3C4;&#x3CC;:</p><ul><li><code>&lt;h1&gt;A heading&lt;/h1&gt;</code> &#x3B3;&#x3B9;&#x3B1; &#x3B5;&#x3C0;&#x3B9;&#x3BA;&#x3B5;&#x3C6;&#x3B1;&#x3BB;&#x3AF;&#x3B4;&#x3B5;&#x3C2;
+</li>
+<li><code>&lt;h2&gt;A sub-heading&lt;/h2&gt;</code> &#x3B3;&#x3B9;&#x3B1; &#x3B5;&#x3C0;&#x3B9;&#x3BA;&#x3B5;&#x3C6;&#x3B1;&#x3BB;&#x3AF;&#x3B4;&#x3B5;&#x3C2; &#x3C7;&#x3B1;&#x3BC;&#x3B7;&#x3BB;&#x3CC;&#x3C4;&#x3B5;&#x3C1;&#x3BF;&#x3C5; &#x3B5;&#x3C0;&#x3B9;&#x3C0;&#x3AD;&#x3B4;&#x3BF;&#x3C5;
+</li>
+<li><code>&lt;h3&gt;A sub-sub-heading&lt;/h3&gt;</code> &#x2026;&#x3BA;&#x3BF;&#x3BA; &#x3BC;&#x3AD;&#x3C7;&#x3C1;&#x3B9; &#x3C4;&#x3B7;&#x3BD; <code>&lt;h6&gt;</code>
+</li>
+<li><code>&lt;p&gt;&#x39C;&#x3B9;&#x3B1; &#x3C0;&#x3B1;&#x3C1;&#x3AC;&#x3B3;&#x3C1;&#x3B1;&#x3C6;&#x3BF;&#x3C2; &#x3BA;&#x3B5;&#x3B9;&#x3BC;&#x3AD;&#x3BD;&#x3BF;&#x3C5;&lt;/p&gt;</code>
+</li>
+<li><code>&lt;em&gt;text&lt;/em&gt;</code> &#x3B4;&#x3AF;&#x3BD;&#x3B5;&#x3B9; &#x3AD;&#x3BC;&#x3C6;&#x3B1;&#x3C3;&#x3B7; &#x3C3;&#x3C4;&#x3BF; &#x3BA;&#x3B5;&#x3AF;&#x3BC;&#x3B5;&#x3BD;&#x3BF; &#x3C3;&#x3B1;&#x3C2;
+</li>
+<li><code>&lt;strong&gt;text&lt;/strong&gt;</code> &#x3BA;&#x3AC;&#x3BD;&#x3B5;&#x3B9; &#x3C4;&#x3B1; &#x3B3;&#x3C1;&#x3AC;&#x3BC;&#x3BC;&#x3B1;&#x3C4;&#x3B1; &#x3C0;&#x3B9;&#x3BF; &#x3AD;&#x3BD;&#x3C4;&#x3BF;&#x3BD;&#x3B1;
+</li>
+<li><code>&lt;br&gt;</code> &#x3B1;&#x3BB;&#x3BB;&#x3AC;&#x3B6;&#x3B5;&#x3B9; &#x3B3;&#x3C1;&#x3B1;&#x3BC;&#x3BC;&#x3AE; (&#x3B4;&#x3B5;&#x3BD; &#x3BC;&#x3C0;&#x3BF;&#x3C1;&#x3B5;&#x3AF;&#x3C4;&#x3B5; &#x3BD;&#x3B1; &#x3B2;&#x3AC;&#x3BB;&#x3B5;&#x3C4;&#x3B5; &#x3C4;&#x3AF;&#x3C0;&#x3BF;&#x3C4;&#x3B1; &#x3B1;&#x3BD;&#x3AC;&#x3BC;&#x3B5;&#x3C3;&#x3B1; &#x3BA;&#x3B1;&#x3B9; &#x3B4;&#x3B5;&#x3BD; &#x3C5;&#x3C0;&#x3AC;&#x3C1;&#x3C7;&#x3B5;&#x3B9; &#x3B1;&#x3BD;&#x3C4;&#x3AF;&#x3C3;&#x3C4;&#x3BF;&#x3B9;&#x3C7;&#x3BF; tag &#x3C0;&#x3BF;&#x3C5; &#x3BD;&#x3B1; &#x3C4;&#x3BF; &#x3BA;&#x3BB;&#x3B5;&#x3AF;&#x3BD;&#x3B5;&#x3B9;)
+</li>
+<li><code>&lt;a href=&quot;https://djangogirls.org&quot;&gt;link&lt;/a&gt;</code> &#x3B4;&#x3B7;&#x3BC;&#x3B9;&#x3BF;&#x3C5;&#x3C1;&#x3B3;&#x3B5;&#x3AF; &#x3AD;&#x3BD;&#x3B1;&#x3BD; &#x3C3;&#x3CD;&#x3BD;&#x3B4;&#x3B5;&#x3C3;&#x3BC;&#x3BF;
+</li>
+<li><code>&lt;ul&gt;&lt;li&gt;first item&lt;/li&gt;&lt;li&gt;second item&lt;/li&gt;&lt;/ul&gt;</code> &#x3B4;&#x3B7;&#x3BC;&#x3B9;&#x3BF;&#x3C5;&#x3C1;&#x3B3;&#x3B5;&#x3AF; &#x3BC;&#x3B9;&#x3B1; &#x3BB;&#x3AF;&#x3C3;&#x3C4;&#x3B1;, &#x3CC;&#x3C0;&#x3C9;&#x3C2; &#x3B1;&#x3C5;&#x3C4;&#x3AE; &#x3B5;&#x3B4;&#x3CE; &#x3C0;&#x3BF;&#x3C5; &#x3B4;&#x3B9;&#x3B1;&#x3B2;&#x3AC;&#x3B6;&#x3B5;&#x3C4;&#x3B5; &#x3C4;&#x3CE;&#x3C1;&#x3B1;!
+</li>
+<li><code>&lt;div&gt;&lt;/div&gt;</code> &#x3BF;&#x3C1;&#x3AF;&#x3B6;&#x3B5;&#x3B9; &#x3AD;&#x3BD;&#x3B1; &#x3C4;&#x3BC;&#x3AE;&#x3BC;&#x3B1; &#x3C3;&#x3C4;&#x3B7; &#x3C3;&#x3B5;&#x3BB;&#x3AF;&#x3B4;&#x3B1;
+</li></ul>
+<p>&#x3A0;&#x3B1;&#x3C1;&#x3B1;&#x3BA;&#x3AC;&#x3C4;&#x3C9; &#x3C6;&#x3B1;&#x3AF;&#x3BD;&#x3B5;&#x3C4;&#x3B1;&#x3B9; &#x3AD;&#x3BD;&#x3B1; &#x3C0;&#x3BB;&#x3AE;&#x3C1;&#x3B5;&#x3C2; &#x3C0;&#x3B1;&#x3C1;&#x3AC;&#x3B4;&#x3B5;&#x3B9;&#x3B3;&#x3BC;&#x3B1; &#x3B5;&#x3BD;&#x3CC;&#x3C2; template. &#x391;&#x3BD;&#x3C4;&#x3B9;&#x3B3;&#x3C1;&#x3AC;&#x3C8;&#x3C4;&#x3B5;-&#x3B5;&#x3C0;&#x3B9;&#x3BA;&#x3BF;&#x3BB;&#x3BB;&#x3AE;&#x3C3;&#x3C4;&#x3B5; &#x3C4;&#x3BF; &#x3BC;&#x3AD;&#x3C3;&#x3B1; &#x3C3;&#x3C4;&#x3BF; &#x3B1;&#x3C1;&#x3C7;&#x3B5;&#x3AF;&#x3BF; <code>blog/templates/blog/post_list.html</code>:</p><p></p><p class="code-label">blog/templates/blog/post_list.html</p><p></p><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Django Girls blog<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/&quot;</span>&gt;</span>Django Girls Blog<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>published: 14.06.2014, 12:14<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>My first post<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>published: 14.06.2014, 12:14<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>My second post<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre>
+<p>&#x394;&#x3B7;&#x3BC;&#x3B9;&#x3BF;&#x3C5;&#x3C1;&#x3B3;&#x3AE;&#x3C3;&#x3B1;&#x3BC;&#x3B5; &#x3C4;&#x3C1;&#x3AF;&#x3B1; <code>div</code> &#x3B5;&#x3B4;&#x3CE;.</p><ul><li>&#x3A4;&#x3BF; &#x3C0;&#x3C1;&#x3CE;&#x3C4;&#x3BF; <code>div</code> &#x3C0;&#x3B5;&#x3C1;&#x3B9;&#x3AD;&#x3C7;&#x3B5;&#x3B9; &#x3C4;&#x3BF;&#x3BD; &#x3C4;&#x3AF;&#x3C4;&#x3BB;&#x3BF; &#x3C4;&#x3BF;&#x3C5; blog &#x3BC;&#x3B1;&#x3C2; &#x2013; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3BC;&#x3B9;&#x3B1; &#x3B5;&#x3C0;&#x3B9;&#x3BA;&#x3B5;&#x3C6;&#x3B1;&#x3BB;&#x3AF;&#x3B4;&#x3B1; &#x3BA;&#x3B1;&#x3B9; &#x3AD;&#x3BD;&#x3B1;&#x3C2; &#x3C3;&#x3CD;&#x3BD;&#x3B4;&#x3B5;&#x3C3;&#x3BC;&#x3BF;&#x3C2;
+</li>
+<li>&#x3A4;&#x3B1; &#x3C5;&#x3C0;&#x3CC;&#x3BB;&#x3BF;&#x3B9;&#x3C0;&#x3B1; &#x3B4;&#x3CD;&#x3BF; <code>div</code> &#x3C0;&#x3B5;&#x3C1;&#x3B9;&#x3AD;&#x3C7;&#x3BF;&#x3C5;&#x3BD; &#x3C4;&#x3B1; posts &#x3BC;&#x3B1;&#x3C2; &#x3BC;&#x3B5; &#x3B7;&#x3BC;/&#x3BD;&#x3B9;&#x3B1; &#x3B4;&#x3B7;&#x3BC;&#x3BF;&#x3C3;&#x3AF;&#x3B5;&#x3C5;&#x3C3;&#x3B7;&#x3C2;, &#x3C4;&#x3BF; <code>h2</code> &#x3BC;&#x3B5; &#x3C4;&#x3BF;&#x3BD; &#x3C4;&#x3AF;&#x3C4;&#x3BB;&#x3BF; &#x3C4;&#x3BF;&#x3C5; post &#x3BF; &#x3BF;&#x3C0;&#x3BF;&#x3AF;&#x3BF;&#x3C2; &#x3BC;&#x3C0;&#x3BF;&#x3C1;&#x3B5;&#x3AF; &#x3BD;&#x3B1; &#x3BA;&#x3BB;&#x3B9;&#x3BA;&#x3B1;&#x3C1;&#x3B9;&#x3C3;&#x3C4;&#x3B5;&#x3AF; &#x3BA;&#x3B1;&#x3B9; &#x3B5;&#x3C0;&#x3AF;&#x3C3;&#x3B7;&#x3C2; &#x3B4;&#x3CD;&#x3BF; <code>p</code>s (&#x3C0;&#x3B1;&#x3C1;&#x3B1;&#x3B3;&#x3C1;&#x3AC;&#x3C6;&#x3BF;&#x3C5;&#x3C2;) &#x3BA;&#x3B5;&#x3AF;&#x3BC;&#x3B5;&#x3BD;&#x3B1;, &#x3AD;&#x3BD;&#x3B1; &#x3B3;&#x3B9;&#x3B1; &#x3C4;&#x3B7;&#x3BD; &#x3B7;&#x3BC;/&#x3BD;&#x3B9;&#x3B1; &#x3BA;&#x3B1;&#x3B9; &#x3C4;&#x3BF; &#x3AC;&#x3BB;&#x3BB;&#x3BF; &#x3B3;&#x3B9;&#x3B1; &#x3C4;&#x3BF; &#x3BA;&#x3C5;&#x3C1;&#x3AF;&#x3C9;&#x3C2; &#x3BA;&#x3B5;&#x3AF;&#x3BC;&#x3B5;&#x3BD;&#x3BF;.
+</li></ul>
+<p>&#x394;&#x3AF;&#x3BD;&#x3B5;&#x3B9; &#x3B1;&#x3C5;&#x3C4;&#x3AE; &#x3C4;&#x3B7;&#x3BD; &#x3B1;&#x3AF;&#x3C3;&#x3B8;&#x3B7;&#x3C3;&#x3B7;:</p><p><img alt="&#x3A3;&#x3C7;&#x3AE;&#x3BC;&#x3B1; 11.4" src="images/step6.png"></p><p>&#x39D;&#x3B1;&#x3B9;&#x3B9;&#x3B9;! &#x391;&#x3BB;&#x3BB;&#x3AC; &#x3BC;&#x3AD;&#x3C7;&#x3C1;&#x3B9; &#x3C3;&#x3C4;&#x3B9;&#x3B3;&#x3BC;&#x3AE;&#x3C2;, &#x3C4;&#x3BF; template &#x3BC;&#x3B1;&#x3C2; &#x3B5;&#x3BC;&#x3C6;&#x3B1;&#x3BD;&#x3AF;&#x3B6;&#x3B5;&#x3B9; <strong>&#x3C4;&#x3B9;&#x3C2; &#x3AF;&#x3B4;&#x3B9;&#x3B5;&#x3C2; &#x3C0;&#x3BB;&#x3B7;&#x3C1;&#x3BF;&#x3C6;&#x3BF;&#x3C1;&#x3AF;&#x3B5;&#x3C2;</strong> &#x2013; &#x3B5;&#x3BD;&#x3CE; &#x3C0;&#x3C1;&#x3BF;&#x3B7;&#x3B3;&#x3BF;&#x3C5;&#x3BC;&#x3AD;&#x3BD;&#x3C9;&#x3C2; &#x3BC;&#x3B9;&#x3BB;&#x3BF;&#x3CD;&#x3C3;&#x3B1;&#x3BC;&#x3B5; &#x3B3;&#x3B9;&#x3B1; templates &#x3C0;&#x3BF;&#x3C5; &#x3BC;&#x3B1;&#x3C2; &#x3B5;&#x3C0;&#x3AD;&#x3C4;&#x3C1;&#x3B5;&#x3C0;&#x3B1;&#x3BD; &#x3BD;&#x3B1; &#x3B5;&#x3BC;&#x3C6;&#x3B1;&#x3BD;&#x3AF;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; <strong>&#x3B4;&#x3B9;&#x3B1;&#x3C6;&#x3BF;&#x3C1;&#x3B5;&#x3C4;&#x3B9;&#x3BA;&#x3AD;&#x3C2;/&#x3B4;&#x3C5;&#x3BD;&#x3B1;&#x3BC;&#x3B9;&#x3BA;&#x3AD;&#x3C2;</strong> &#x3C0;&#x3BB;&#x3B7;&#x3C1;&#x3BF;&#x3C6;&#x3BF;&#x3C1;&#x3AF;&#x3B5;&#x3C2; &#x3BC;&#x3B5; &#x3C4;&#x3B7;&#x3BD; <strong>&#x3AF;&#x3B4;&#x3B9;&#x3B1; &#x3BC;&#x3BF;&#x3C1;&#x3C6;&#x3AE;</strong>.</p><p>&#x391;&#x3C5;&#x3C4;&#x3CC; &#x3C0;&#x3BF;&#x3C5; &#x3B8;&#x3AD;&#x3BB;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3BD;&#x3B1; &#x3BA;&#x3AC;&#x3BD;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3BD;&#x3B1; &#x3B5;&#x3BC;&#x3C6;&#x3B1;&#x3BD;&#x3AF;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3C0;&#x3C1;&#x3B1;&#x3B3;&#x3BC;&#x3B1;&#x3C4;&#x3B9;&#x3BA;&#x3AC; posts &#x3C4;&#x3B1; &#x3BF;&#x3C0;&#x3BF;&#x3AF;&#x3B1; &#x3B8;&#x3B1; &#x3C4;&#x3B1; &#x3C0;&#x3C1;&#x3BF;&#x3C3;&#x3B8;&#x3AD;&#x3C4;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3BC;&#x3AD;&#x3C3;&#x3C9; &#x3C4;&#x3BF;&#x3C5; Django admin. &#x39A;&#x3B1;&#x3B9; &#x3B1;&#x3C5;&#x3C4;&#x3CC; &#x3B1;&#x3BA;&#x3C1;&#x3B9;&#x3B2;&#x3CE;&#x3C2; &#x3B8;&#x3B1; &#x3BA;&#x3AC;&#x3BD;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3BC;&#x3B5;&#x3C4;&#x3AC;.</p><h2 id="&#x3AD;&#x3BD;&#x3B1;-&#x3C0;&#x3C1;&#x3AC;&#x3B3;&#x3BC;&#x3B1;-&#x3B1;&#x3BA;&#x3CC;&#x3BC;&#x3B1;-&#x3CE;&#x3C1;&#x3B1;-&#x3BD;&#x3B1;-&#x3C4;&#x3BF;-&#x3B1;&#x3BD;&#x3B5;&#x3B2;&#x3AC;&#x3C3;&#x3B5;&#x3C4;&#x3B5;">&#x388;&#x3BD;&#x3B1; &#x3C0;&#x3C1;&#x3AC;&#x3B3;&#x3BC;&#x3B1; &#x3B1;&#x3BA;&#x3CC;&#x3BC;&#x3B1;: &#x3CE;&#x3C1;&#x3B1; &#x3BD;&#x3B1; &#x3C4;&#x3BF; &#x3B1;&#x3BD;&#x3B5;&#x3B2;&#x3AC;&#x3C3;&#x3B5;&#x3C4;&#x3B5;!</h2><p>&#x398;&#x3B1; &#x3AE;&#x3C4;&#x3B1;&#x3BD; &#x3BA;&#x3B1;&#x3BB;&#x3CC; &#x3BD;&#x3B1; &#x3C4;&#x3BF; &#x3B4;&#x3BF;&#x3CD;&#x3BC;&#x3B5; &#x3CC;&#x3BB;&#x3BF; &#x3B1;&#x3C5;&#x3C4;&#x3CC; &#x3C3;&#x3C4;&#x3BF; internet, &#x3C3;&#x3C9;&#x3C3;&#x3C4;&#x3AC;; &#x391;&#x3C2; &#x3BA;&#x3AC;&#x3BD;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3AC;&#x3BB;&#x3BB;&#x3BF; &#x3AD;&#x3BD;&#x3B1; deploy &#x3C3;&#x3C4;&#x3BF; PythonAnywhere:</p><h3 id="&#x3BA;&#x3AC;&#x3BD;&#x3C4;&#x3B5;-commit-&#x3BA;&#x3B1;&#x3B9;-&#x3AD;&#x3C0;&#x3B5;&#x3B9;&#x3C4;&#x3B1;-push-&#x3C4;&#x3BF;&#x3BD;-&#x3BA;&#x3CE;&#x3B4;&#x3B9;&#x3BA;&#x3B1;-&#x3C3;&#x3B1;&#x3C2;-&#x3C3;&#x3C4;&#x3BF;-github">&#x39A;&#x3AC;&#x3BD;&#x3C4;&#x3B5; commit &#x3BA;&#x3B1;&#x3B9; &#x3AD;&#x3C0;&#x3B5;&#x3B9;&#x3C4;&#x3B1; push &#x3C4;&#x3BF;&#x3BD; &#x3BA;&#x3CE;&#x3B4;&#x3B9;&#x3BA;&#x3B1; &#x3C3;&#x3B1;&#x3C2; &#x3C3;&#x3C4;&#x3BF; GitHub</h3><p>&#x3A0;&#x3C1;&#x3CE;&#x3C4;&apos;&#x3B1;&#x3C0;&apos;&#x3CC;&#x3BB;&#x3B1; &#x3B1;&#x3C2; &#x3B4;&#x3BF;&#x3CD;&#x3BC;&#x3B5; &#x3C0;&#x3BF;&#x3B9;&#x3B1; &#x3B1;&#x3C1;&#x3C7;&#x3B5;&#x3AF;&#x3B1; &#x3AD;&#x3C7;&#x3BF;&#x3C5;&#x3BD; &#x3B1;&#x3BB;&#x3BB;&#x3AC;&#x3BE;&#x3B5;&#x3B9; &#x3B1;&#x3C0;&#x3CC; &#x3C4;&#x3B7;&#x3BD; &#x3C4;&#x3B5;&#x3BB;&#x3B5;&#x3C5;&#x3C4;&#x3B1;&#x3AF;&#x3B1; &#x3C6;&#x3BF;&#x3C1;&#x3AC; &#x3C0;&#x3BF;&#x3C5; &#x3BA;&#x3AC;&#x3BD;&#x3B1;&#x3BC;&#x3B5; deploy (&#x3C4;&#x3C1;&#x3AD;&#x3BE;&#x3C4;&#x3B5; &#x3B1;&#x3C5;&#x3C4;&#x3AD;&#x3C2; &#x3C4;&#x3B9;&#x3C2; &#x3B5;&#x3BD;&#x3C4;&#x3BF;&#x3BB;&#x3AD;&#x3C2; &#x3C4;&#x3BF;&#x3C0;&#x3B9;&#x3BA;&#x3AC;, &#x3CC;&#x3C7;&#x3B9; &#x3C3;&#x3C4;&#x3BF; PythonAnywhere):</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        $ git status</code></pre>
+<p>&#x3A3;&#x3B9;&#x3B3;&#x3BF;&#x3C5;&#x3C1;&#x3B5;&#x3C5;&#x3C4;&#x3B5;&#x3AF;&#x3C4;&#x3B5; &#x3CC;&#x3C4;&#x3B9; &#x3B2;&#x3C1;&#x3AF;&#x3C3;&#x3BA;&#x3B5;&#x3C3;&#x3C4;&#x3B5; &#x3BC;&#x3AD;&#x3C3;&#x3B1; &#x3C3;&#x3C4;&#x3BF; &#x3C6;&#x3AC;&#x3BA;&#x3B5;&#x3BB;&#x3BF; <code>djangogirls</code> &#x3BA;&#x3B1;&#x3B9; &#x3B1;&#x3C2; &#x3C0;&#x3BF;&#x3CD;&#x3BC;&#x3B5; &#x3C3;&#x3C4;&#x3BF; <code>git</code> &#x3BD;&#x3B1; &#x3C3;&#x3C5;&#x3BC;&#x3C0;&#x3B5;&#x3C1;&#x3B9;&#x3BB;&#x3AC;&#x3B2;&#x3B5;&#x3B9; &#x3CC;&#x3BB;&#x3B5;&#x3C2; &#x3C4;&#x3B9;&#x3C2; &#x3B1;&#x3BB;&#x3BB;&#x3B1;&#x3B3;&#x3AD;&#x3C2; &#x3BC;&#x3AD;&#x3C3;&#x3B1; &#x3C3;&#x3B5; &#x3B1;&#x3C5;&#x3C4;&#x3CC; &#x3C4;&#x3BF; &#x3C6;&#x3AC;&#x3BA;&#x3B5;&#x3BB;&#x3BF;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        $ git add --all .</code></pre>
+<blockquote><p><strong>&#x3A3;&#x3B7;&#x3BC;&#x3B5;&#x3AF;&#x3C9;&#x3C3;&#x3B7;</strong> <code>--all</code> &#x3C3;&#x3B7;&#x3BC;&#x3B1;&#x3AF;&#x3BD;&#x3B5;&#x3B9; &#x3CC;&#x3C4;&#x3B9; &#x3C4;&#x3BF; <code>git</code> &#x3B8;&#x3B1; &#x3B1;&#x3BD;&#x3B1;&#x3B3;&#x3BD;&#x3C9;&#x3C1;&#x3AF;&#x3C3;&#x3B5;&#x3B9;, &#x3B5;&#x3C0;&#x3AF;&#x3C3;&#x3B7;&#x3C2;, &#x3BA;&#x3B1;&#x3B9; &#x3C4;&#x3C5;&#x3C7;&#x3CC;&#x3BD; &#x3B4;&#x3B9;&#x3B5;&#x3B3;&#x3C1;&#x3B1;&#x3BC;&#x3BC;&#x3AD;&#x3BD;&#x3B1; &#x3B1;&#x3C1;&#x3C7;&#x3B5;&#x3AF;&#x3B1;/&#x3C6;&#x3B1;&#x3BA;&#x3AD;&#x3BB;&#x3BF;&#x3C5;&#x3C2; (&#x3B1;&#x3C0;&#x3CC; &#x3C0;&#x3C1;&#x3BF;&#x3B5;&#x3C0;&#x3B9;&#x3BB;&#x3BF;&#x3B3;&#x3AE;, &#x3B1;&#x3BD;&#x3B1;&#x3B3;&#x3BD;&#x3C9;&#x3C1;&#x3AF;&#x3B6;&#x3B5;&#x3B9; &#x3BC;&#x3CC;&#x3BD;&#x3BF; &#x3BD;&#x3AD;&#x3B1;/&#x3C4;&#x3C1;&#x3BF;&#x3C0;&#x3BF;&#x3C0;&#x3BF;&#x3B9;&#x3B7;&#x3BC;&#x3AD;&#x3BD;&#x3B1; &#x3B1;&#x3C1;&#x3C7;&#x3B5;&#x3AF;&#x3B1;). &#x395;&#x3C0;&#x3AF;&#x3C3;&#x3B7;&#x3C2;, &#x3B8;&#x3C5;&#x3BC;&#x3B7;&#x3B8;&#x3B5;&#x3AF;&#x3C4;&#x3B5; (&#x3B1;&#x3C0;&#x3CC; &#x3C4;&#x3BF; &#x3BA;&#x3B5;&#x3C6;&#x3AC;&#x3BB;&#x3B1;&#x3B9;&#x3BF; 3) &#x3CC;&#x3C4;&#x3B9; &#x3B7; &#x3C4;&#x3B5;&#x3BB;&#x3B5;&#x3AF;&#x3B1; <code>.</code> &#x3C3;&#x3B7;&#x3BC;&#x3B1;&#x3AF;&#x3BD;&#x3B5;&#x3B9; &#x3BF; &#x3C4;&#x3C1;&#x3AD;&#x3C7;&#x3C9;&#x3BD; &#x3C6;&#x3AC;&#x3BA;&#x3B5;&#x3BB;&#x3BF;&#x3C2;.</p></blockquote><p>&#x3A0;&#x3C1;&#x3B9;&#x3BD; &#x3B1;&#x3BD;&#x3B5;&#x3B2;&#x3AC;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3CC;&#x3BB;&#x3B1; &#x3C4;&#x3B1; &#x3B1;&#x3C1;&#x3C7;&#x3B5;&#x3AF;&#x3B1;, &#x3B1;&#x3C2; &#x3B4;&#x3BF;&#x3CD;&#x3BC;&#x3B5; &#x3C4;&#x3B9; &#x3B5;&#x3C0;&#x3C1;&#x3CC;&#x3BA;&#x3B5;&#x3B9;&#x3C4;&#x3BF; &#x3BD;&#x3B1; &#x3B1;&#x3BD;&#x3B5;&#x3B2;&#x3AC;&#x3C3;&#x3B5;&#x3B9; &#x3C4;&#x3BF; <code>git</code> (&#x3CC;&#x3BB;&#x3B1; &#x3C4;&#x3B1; &#x3B1;&#x3C1;&#x3C7;&#x3B5;&#x3AF;&#x3B1; &#x3C0;&#x3BF;&#x3C5; &#x3B5;&#x3C0;&#x3C1;&#x3CC;&#x3BA;&#x3B5;&#x3B9;&#x3C4;&#x3BF; &#x3BD;&#x3B1; &#x3B1;&#x3BD;&#x3B5;&#x3B2;&#x3BF;&#x3CD;&#x3BD; &#x3B1;&#x3C0;&#x3CC; &#x3C4;&#x3BF; <code>git</code> &#x3B8;&#x3B1; &#x3B5;&#x3BC;&#x3C6;&#x3B1;&#x3BD;&#x3AF;&#x3B6;&#x3BF;&#x3BD;&#x3C4;&#x3B1;&#x3B9; &#x3BC;&#x3B5; &#x3C0;&#x3C1;&#x3AC;&#x3C3;&#x3B9;&#x3BD;&#x3BF; &#x3C7;&#x3C1;&#x3CE;&#x3BC;&#x3B1;):</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        $ git status</code></pre>
+<p>&#x3A3;&#x3C7;&#x3B5;&#x3B4;&#x3CC;&#x3BD; &#x3C6;&#x3C4;&#x3AC;&#x3C3;&#x3B1;&#x3BC;&#x3B5;. &#x3A4;&#x3CE;&#x3C1;&#x3B1; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3B7; &#x3CE;&#x3C1;&#x3B1; &#x3BD;&#x3B1; &#x3C4;&#x3BF;&#x3C5; &#x3C0;&#x3BF;&#x3CD;&#x3BC;&#x3B5; &#x3BD;&#x3B1; &#x3B1;&#x3C0;&#x3BF;&#x3B8;&#x3B7;&#x3BA;&#x3B5;&#x3CD;&#x3C3;&#x3B5;&#x3B9; &#x3B1;&#x3C5;&#x3C4;&#x3AE; &#x3C4;&#x3B7;&#x3BD; &#x3B1;&#x3BB;&#x3BB;&#x3B1;&#x3B3;&#x3AE; &#x3C3;&#x3C4;&#x3BF; &#x3B9;&#x3C3;&#x3C4;&#x3BF;&#x3C1;&#x3B9;&#x3BA;&#x3CC; &#x3C4;&#x3BF;&#x3C5;. &#x398;&#x3B1; &#x3C4;&#x3BF;&#x3C5; &#x3B4;&#x3CE;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3AD;&#x3BD;&#x3B1; &quot;commit message&quot; &#x3CC;&#x3C0;&#x3BF;&#x3C5; &#x3B8;&#x3B1; &#x3C0;&#x3B5;&#x3C1;&#x3B9;&#x3B3;&#x3C1;&#x3AC;&#x3C8;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3C4;&#x3B9; &#x3AC;&#x3BB;&#x3BB;&#x3B1;&#x3BE;&#x3B5;. &#x39C;&#x3C0;&#x3BF;&#x3C1;&#x3B5;&#x3AF;&#x3C4;&#x3B5; &#x3BD;&#x3B1; &#x3B3;&#x3C1;&#x3AC;&#x3C8;&#x3B5;&#x3C4;&#x3B5; &#x3CC;&#x3C4;&#x3B9; &#x3B8;&#x3AD;&#x3BB;&#x3B5;&#x3C4;&#x3B5; &#x3C3;&#x3B5; &#x3B1;&#x3C5;&#x3C4;&#x3CC; &#x3C4;&#x3BF; &#x3C3;&#x3B7;&#x3BC;&#x3B5;&#x3AF;&#x3BF; &#x3B1;&#x3BB;&#x3BB;&#x3AC; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3C7;&#x3C1;&#x3AE;&#x3C3;&#x3B9;&#x3BC;&#x3BF; &#x3BD;&#x3B1; &#x3B3;&#x3C1;&#x3AC;&#x3C8;&#x3B5;&#x3C4;&#x3B5; &#x3BA;&#x3AC;&#x3C4;&#x3B9; &#x3C0;&#x3B5;&#x3C1;&#x3B9;&#x3B3;&#x3C1;&#x3B1;&#x3C6;&#x3B9;&#x3BA;&#x3CC; &#x3BF;&#x3CD;&#x3C4;&#x3C9;&#x3C2; &#x3CE;&#x3C3;&#x3C4;&#x3B5; &#x3BD;&#x3B1; &#x3C4;&#x3BF; &#x3B8;&#x3C5;&#x3BC;&#x3AC;&#x3C3;&#x3C4;&#x3B5; &#x3C3;&#x3C4;&#x3BF; &#x3BC;&#x3AD;&#x3BB;&#x3BB;&#x3BF;&#x3BD;.</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        $ git commit -m &quot;Changed the HTML for the site.&quot;</code></pre>
+<blockquote><p><strong>&#x3A3;&#x3B7;&#x3BC;&#x3B5;&#x3AF;&#x3C9;&#x3C3;&#x3B7;</strong> &#x3A3;&#x3B9;&#x3B3;&#x3BF;&#x3C5;&#x3C1;&#x3B5;&#x3C5;&#x3C4;&#x3B5;&#x3AF;&#x3C4;&#x3B5; &#x3CC;&#x3C4;&#x3B9; &#x3C7;&#x3C1;&#x3B7;&#x3C3;&#x3B9;&#x3BC;&#x3BF;&#x3C0;&#x3BF;&#x3B9;&#x3B5;&#x3AF;&#x3C4;&#x3B5; &#x3B4;&#x3B9;&#x3C0;&#x3BB;&#x3AC; &quot;&#x3B1;&#x3C5;&#x3C4;&#x3AC;&#x3BA;&#x3B9;&#x3B1;&quot; &#x3B3;&#x3CD;&#x3C1;&#x3C9; &#x3B1;&#x3C0;&#x3CC; &#x3C4;&#x3BF; commit message.</p></blockquote><p>&#x39C;&#x3CC;&#x3BB;&#x3B9;&#x3C2; &#x3C4;&#x3B5;&#x3BB;&#x3B5;&#x3B9;&#x3CE;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3BC;&#x3B5; &#x3B1;&#x3C5;&#x3C4;&#x3CC;, &#x3B8;&#x3B1; &#x3B1;&#x3BD;&#x3B5;&#x3B2;&#x3AC;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; (push) &#x3C4;&#x3B9;&#x3C2; &#x3B1;&#x3BB;&#x3BB;&#x3B1;&#x3B3;&#x3AD;&#x3C2; &#x3BC;&#x3B1;&#x3C2; &#x3C3;&#x3C4;&#x3BF; GitHub:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        $ git push</code></pre>
+<h3 id="&#x3BA;&#x3AC;&#x3BD;&#x3C4;&#x3B5;-pull-&#x3C4;&#x3BF;&#x3BD;-&#x3BD;&#x3AD;&#x3BF;-&#x3C3;&#x3B1;&#x3C2;-&#x3BA;&#x3CE;&#x3B4;&#x3B9;&#x3BA;&#x3B1;-&#x3C3;&#x3C4;&#x3BF;-pythonanywhere-&#x3BA;&#x3B1;&#x3B9;-&#x3B1;&#x3BD;&#x3B1;&#x3BD;&#x3B5;&#x3CE;&#x3C3;&#x3C4;&#x3B5;-&#x3C4;&#x3B7;&#x3BD;-&#x3B5;&#x3C6;&#x3B1;&#x3C1;&#x3BC;&#x3BF;&#x3B3;&#x3AE;">&#x39A;&#x3AC;&#x3BD;&#x3C4;&#x3B5; pull &#x3C4;&#x3BF;&#x3BD; &#x3BD;&#x3AD;&#x3BF; &#x3C3;&#x3B1;&#x3C2; &#x3BA;&#x3CE;&#x3B4;&#x3B9;&#x3BA;&#x3B1; &#x3C3;&#x3C4;&#x3BF; PythonAnywhere &#x3BA;&#x3B1;&#x3B9; &#x3B1;&#x3BD;&#x3B1;&#x3BD;&#x3B5;&#x3CE;&#x3C3;&#x3C4;&#x3B5; &#x3C4;&#x3B7;&#x3BD; &#x3B5;&#x3C6;&#x3B1;&#x3C1;&#x3BC;&#x3BF;&#x3B3;&#x3AE;</h3><ul><li>&#x388;&#x3C0;&#x3B5;&#x3B9;&#x3C4;&#x3B1; &#x3C3;&#x3C5;&#x3BD;&#x3B4;&#x3B5;&#x3B8;&#x3B5;&#x3AF;&#x3C4;&#x3B5; &#x3C3;&#x3C4;&#x3BF; <a href="https://www.pythonanywhere.com/consoles/" target="_blank">PythonAnywhere</a>, &#x3BC;&#x3B5;&#x3C4;&#x3B1;&#x3B2;&#x3B5;&#x3AF;&#x3C4;&#x3B5; &#x3C3;&#x3C4;&#x3BF; <strong>Bash console</strong> (&#x3AE; &#x3B1;&#x3BD;&#x3BF;&#x3AF;&#x3BE;&#x3C4;&#x3B5; &#x3AD;&#x3BD;&#x3B1; &#x3BD;&#x3AD;&#x3BF;) &#x3BA;&#x3B1;&#x3B9; &#x3C4;&#x3C1;&#x3AD;&#x3BE;&#x3C4;&#x3B5;:
+</li></ul>
+<p></p><p class="code-label">PythonAnywhere command-line</p><p></p><pre><code>        $ cd ~/&lt;your-pythonanywhere-username&gt;.pythonanywhere.com
+        $ git pull
+        [...]</code></pre>
+<p>(&#x398;&#x3C5;&#x3BC;&#x3B7;&#x3B8;&#x3B5;&#x3AF;&#x3C4;&#x3B5; &#x3BD;&#x3B1; &#x3B1;&#x3BD;&#x3C4;&#x3B9;&#x3BA;&#x3B1;&#x3C4;&#x3B1;&#x3C3;&#x3C4;&#x3AE;&#x3C3;&#x3B5;&#x3C4;&#x3B5; &#x3BC;&#x3B5; &#x3C4;&#x3BF; <code>&lt;your-pythonanywhere-username&gt;</code>&#x3C0;&#x3C1;&#x3B1;&#x3B3;&#x3BC;&#x3B1;&#x3C4;&#x3B9;&#x3BA;&#x3CC; &#x3CC;&#x3BD;&#x3BF;&#x3BC;&#x3B1; &#x3C7;&#x3C1;&#x3AE;&#x3C3;&#x3C4;&#x3B7; &#x3C3;&#x3B1;&#x3C2; &#x3C4;&#x3BF;&#x3C5; PythonAnywhere &#x3C7;&#x3C9;&#x3C1;&#x3AF;&#x3C2; &#x3C4;&#x3B1; &lt;&gt;).</p><p>&#x39A;&#x3B1;&#x3B9; &#x3B4;&#x3B5;&#x3AF;&#x3C4;&#x3B5; &#x3C4;&#x3BF;&#x3BD; &#x3BA;&#x3CE;&#x3B4;&#x3B9;&#x3BA;&#x3B1; &#x3C3;&#x3B1;&#x3C2; &#x3BD;&#x3B1; &#x3BA;&#x3B1;&#x3C4;&#x3B5;&#x3B2;&#x3B1;&#x3AF;&#x3BD;&#x3B5;&#x3B9;. &#x391;&#x3BD; &#x3B8;&#x3AD;&#x3BB;&#x3B5;&#x3C4;&#x3B5; &#x3BD;&#x3B1; &#x3B4;&#x3B5;&#x3AF;&#x3C4;&#x3B5; &#x3CC;&#x3C4;&#x3B9; &#x3BF;&#x3BB;&#x3BF;&#x3BA;&#x3BB;&#x3B7;&#x3C1;&#x3CE;&#x3B8;&#x3B7;&#x3BA;&#x3B5;, &#x3BC;&#x3B5;&#x3C4;&#x3B1;&#x3B2;&#x3B5;&#x3AF;&#x3C4;&#x3B5; &#x3C3;&#x3C4;&#x3B7; &#x3C3;&#x3B5;&#x3BB;&#x3AF;&#x3B4;&#x3B1; <strong>&quot;Files&quot; page</strong> &#x3BA;&#x3B1;&#x3B9; &#x3B4;&#x3B5;&#x3AF;&#x3C4;&#x3B5; &#x3C4;&#x3BF;&#x3BD; &#x3BA;&#x3CE;&#x3B4;&#x3B9;&#x3BA;&#x3B1; &#x3C3;&#x3B1;&#x3C2; &#x3C3;&#x3C4;&#x3BF; PythonAnywhere (&#x3BC;&#x3C0;&#x3BF;&#x3C1;&#x3B5;&#x3AF;&#x3C4;&#x3B5; &#x3BD;&#x3B1; &#x3B1;&#x3BD;&#x3BF;&#x3AF;&#x3BE;&#x3B5;&#x3C4;&#x3B5; &#x3BA;&#x3B1;&#x3B9; &#x3AC;&#x3BB;&#x3BB;&#x3B5;&#x3C2; &#x3C3;&#x3B5;&#x3BB;&#x3AF;&#x3B4;&#x3B5;&#x3C2; &#x3C4;&#x3BF;&#x3C5; PythonAnywhere &#x3B1;&#x3C0;&#x3CC; &#x3C4;&#x3BF; &#x3BA;&#x3BF;&#x3C5;&#x3BC;&#x3C0;&#x3AF; &#x3C4;&#x3BF;&#x3C5; &#x3BC;&#x3B5;&#x3BD;&#x3BF;&#x3CD; &#x3C3;&#x3C4;&#x3B7;&#x3BD; &#x3C3;&#x3B5;&#x3BB;&#x3AF;&#x3B4;&#x3B1; &#x3C4;&#x3B7;&#x3C2; &#x3BA;&#x3BF;&#x3BD;&#x3C3;&#x3CC;&#x3BB;&#x3B1;&#x3C2;).</p><ul><li>&#x3A4;&#x3AD;&#x3BB;&#x3BF;&#x3C2;, &#x3C0;&#x3B7;&#x3B3;&#x3B1;&#x3AF;&#x3BD;&#x3B5;&#x3C4;&#x3B5; &#x3C3;&#x3C4;&#x3BF; <a href="https://www.pythonanywhere.com/web_app_setup/" target="_blank">&quot;Web&quot; page</a> &#x3BA;&#x3B1;&#x3B9; &#x3BA;&#x3BB;&#x3B9;&#x3BA;&#x3AC;&#x3C1;&#x3B5;&#x3C4;&#x3B5; <strong>Reload</strong> &#x3C3;&#x3C4;&#x3B7;&#x3BD; &#x3B5;&#x3C6;&#x3B1;&#x3C1;&#x3BC;&#x3BF;&#x3B3;&#x3AE; &#x3C3;&#x3B1;&#x3C2;.
+</li></ul>
+<p>&#x39F;&#x3B9; &#x3B1;&#x3BB;&#x3BB;&#x3B1;&#x3B3;&#x3AD;&#x3C2; &#x3B8;&#x3B1; &#x3C0;&#x3C1;&#x3AD;&#x3C0;&#x3B5;&#x3B9; &#x3BD;&#x3B1; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3BF;&#x3C1;&#x3B1;&#x3C4;&#x3AD;&#x3C2; &#x3C4;&#x3CE;&#x3C1;&#x3B1;! &#x3A0;&#x3B7;&#x3B3;&#x3B1;&#x3AF;&#x3BD;&#x3B5;&#x3C4;&#x3B5; &#x3BA;&#x3B1;&#x3B9; &#x3B1;&#x3BD;&#x3B1;&#x3BD;&#x3B5;&#x3CE;&#x3C3;&#x3C4;&#x3B5; &#x3C4;&#x3B7; &#x3C3;&#x3B5;&#x3BB;&#x3AF;&#x3B4;&#x3B1; &#x3C3;&#x3C4;&#x3BF;&#x3BD; browser &#x3C3;&#x3B1;&#x3C2;. :)</p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../django_views/" class="navigation navigation-prev " aria-label="Previous page: Django views - ώρα να δημιουργήσετε!">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../django_orm/" class="navigation navigation-next " aria-label="Next page: Django ORM (Querysets)">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Εισαγωγή στην HTML","level":"1.17","depth":1,"next":{"title":"Django ORM (Querysets)","level":"1.18","depth":1,"path":"django_orm/README.md","ref":"django_orm/README.md","articles":[]},"previous":{"title":"Django views - ώρα να δημιουργήσετε!","level":"1.16","depth":1,"path":"django_views/README.md","ref":"django_views/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"django_version":"2.2.4"},"language":"el","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"html/README.md","mtime":"2020-06-27T13:00:23.738Z","type":"markdown"},"gitbook":{"version":"3.4.0","time":"2020-06-27T13:00:41.274Z"},"basePath":"..","book":{"language":"el"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

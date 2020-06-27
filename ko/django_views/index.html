@@ -1,0 +1,614 @@
+
+<!DOCTYPE HTML>
+<html lang="ko" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Django 뷰 만들기 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.4.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../html/" />
+    
+    
+    <link rel="prev" href="../django_urls/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="검색어 입력" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    들어가며
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    설치하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    설치하기 (chromebook)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    인터넷은 어떻게 작동할까요
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Command Line 시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Python 설치하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    코드 에디터
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Python 시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Django란 무엇인가요
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Django 설치하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    나의 첫 번째 Django 프로젝트!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Django 모델
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django 관리자
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    배포하기!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django urls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.16" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Django 뷰 만들기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    HTML 시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM(Querysets)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    템플릿 동적 데이터
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django 템플릿
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - 예쁘게 만들기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    템플릿 확장하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    애플리케이션 확장하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Django 폼
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    더 나아가기
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKit에 게시
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Django 뷰 만들기</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#xC7A5;&#xACE0;-&#xBDF0;-&#xB9CC;&#xB4E4;&#xAE30;">&#xC7A5;&#xACE0; &#xBDF0; &#xB9CC;&#xB4E4;&#xAE30;</h1><p>&#xC9C0;&#xB09C; &#xC7A5;&#xC5D0;&#xC11C; &#xB9CC;&#xB4E4;&#xC5C8;&#xB358; &#xBC84;&#xADF8;&#xB97C; &#xC7A1;&#xC744; &#xC2DC;&#xAC04;&#xC774; &#xC654;&#xC5B4;&#xC694;! :)</p><p>&#xBDF0;(<em>view</em>) &#xB294; &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC758; &quot;&#xB85C;&#xC9C1;&quot;&#xC744; &#xB123;&#xB294; &#xACF3;&#xC774;&#xC5D0;&#xC694;. &#xBDF0;&#xB294; &#xC774;&#xC804; &#xC7A5;&#xC5D0;&#xC11C; &#xB9CC;&#xB4E4;&#xC5C8;&#xB358; <code>&#xBAA8;&#xB378;</code>&#xC5D0;&#xC11C; &#xD544;&#xC694;&#xD55C; &#xC815;&#xBCF4;&#xB97C; &#xBC1B;&#xC544;&#xC640;&#xC11C; <code>&#xD15C;&#xD50C;&#xB9BF;</code>&#xC5D0; &#xC804;&#xB2EC;&#xD558;&#xB294; &#xC5ED;&#xD560;&#xC744; &#xD569;&#xB2C8;&#xB2E4;. &#xB2E4;&#xC74C; &#xC7A5;&#xC5D0;&#xC11C; &#xD15C;&#xD50C;&#xB9BF;&#xC744; &#xB9CC;&#xB4E4;&#xC5B4; &#xBCFC; &#xAC70;&#xC5D0;&#xC694;. &#xBDF0;&#xB294; <strong>Python &#xC2DC;&#xC791;&#xD558;&#xAE30;</strong> &#xC7A5;&#xC5D0;&#xC11C; &#xD588;&#xB358; &#xAC83;&#xBCF4;&#xB2E4; &#xC5B4;&#xB824;&#xC6CC;&#xBCF4;&#xC774;&#xC9C0;&#xB9CC;, &#xD30C;&#xC774;&#xC36C; &#xD568;&#xC218;&#xC77C; &#xBFD0;&#xC774;&#xC5D0;&#xC694;.</p><p>&#xBDF0;&#xB294; <code>views.py</code> &#xD30C;&#xC77C; &#xC548;&#xC5D0; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC6B0;&#xB9AC;&#xB294; <em>views</em>&#xB97C; <code>blog/views.py</code>&#xD30C;&#xC77C; &#xC548;&#xC5D0; &#xCD94;&#xAC00;&#xD560; &#xAC70;&#xC5D0;&#xC694;.</p><h2 id="blogviewspy">blog/views.py</h2><p>&#xC88B;&#xC544;&#xC694;. &#xC774;&#xC81C; &#xC774; &#xD30C;&#xC77C;&#xC744; &#xC5F4;&#xACE0; &#xC548;&#xC5D0; &#xC788;&#xB294; &#xB0B4;&#xC6A9;&#xC744; &#xC0B4;&#xD3B4;&#xBD05;&#xC2DC;&#xB2E4;:</p><p></p><p class="code-label">blog/views.py</p><p></p><pre><code class="lang-python"><span class="hljs-keyword">from</span> django.shortcuts <span class="hljs-keyword">import</span> render
+
+<span class="hljs-comment"># Create your views here.</span></code></pre>
+<p>&#xBCC4; &#xB0B4;&#xC6A9;&#xC774; &#xC5C6;&#xB124;&#xC694;. &#xAC04;&#xB2E8;&#xD55C; <em>view</em>&#xB97C; &#xB9CC;&#xB4E4;&#xC5B4;&#xBD05;&#xC2DC;&#xB2E4;.</p><p></p><p class="code-label">blog/views.py</p><p></p><pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">post_list</span><span class="hljs-params">(request)</span>:</span>
+    <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;blog/post_list.html&apos;</span>, {})</code></pre>
+<p>&#xBC29;&#xAE08; <code>post_list</code>&#xB77C;&#xB294; &#xD568;&#xC218;(<code>def</code>)&#xB97C; &#xB9CC;&#xB4E4;&#xC5C8;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC774; &#xD568;&#xC218;&#xB294; <code>&#xC694;&#xCCAD;(request)</code>&#xC744; &#xB118;&#xACA8;&#xBC1B;&#xC544; <code>render</code>&#xBA54;&#xC11C;&#xB4DC;&#xB97C; &#xD638;&#xCD9C;&#xD569;&#xB2C8;&#xB2E4;. &#xC774; &#xD568;&#xC218;&#xB294; <code>render</code> &#xBA54;&#xC11C;&#xB4DC;&#xB97C; &#xD638;&#xCD9C;&#xD558;&#xC5EC; &#xBC1B;&#xC740;(return) <code>blog/post_list.html</code>&#xD15C;&#xD50C;&#xB9BF;&#xC744; &#xBCF4;&#xC5EC;&#xC90D;&#xB2C8;&#xB2E4;.</p><p>&#xD30C;&#xC77C;&#xC744; &#xC800;&#xC7A5;&#xD558;&#xACE0;, <a href="http://127.0.0.1:8000/" target="_blank">http://127.0.0.1:8000/</a> &#xB85C; &#xC811;&#xC18D;&#xD574; &#xD655;&#xC778;&#xD574;&#xBCF4;&#xC138;&#xC694;.</p><p>&#xC5D0;&#xB7EC;&#xAC00; &#xBC1C;&#xC0DD;&#xD588;&#xB124;&#xC694;! &#xC544;&#xB798; &#xB0B4;&#xC6A9;&#xC744; &#xC77D;&#xC5B4;&#xBCF4;&#xC138;&#xC694;.</p><p><img alt="Error" src="images/error.png"></p><p><em>TemplateDoesNotExist</em>&#xB294; &#xC27D;&#xAC8C; &#xD574;&#xACB0;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC798; &#xB530;&#xB77C;&#xC654;&#xB2E4;&#xBA74; &#xBC29;&#xAE08; &#xC5D0;&#xB7EC;&#xAC00; &#xBCF4;&#xC774;&#xB294;&#xAC8C; &#xB9DE;&#xC544;&#xC694;. &#xB2E4;&#xC74C; &#xC7A5;&#xC5D0;&#xC11C; &#xBC84;&#xADF8;&#xB97C; &#xD574;&#xACB0;&#xD558;&#xAE30; &#xC704;&#xD574; &#xD15C;&#xD50C;&#xB9BF; &#xD30C;&#xC77C;&#xC744; &#xB9CC;&#xB4E4; &#xAC70;&#xC5D0;&#xC694;!</p><blockquote><p>&#xC7A5;&#xACE0; &#xBDF0;&#xC5D0; &#xB300;&#xD574; &#xB354; &#xC54C;&#xACE0; &#xC2F6;&#xB2E4;&#xBA74; &#xC7A5;&#xACE0; &#xACF5;&#xC2DD; &#xBB38;&#xC11C;&#xB97C; &#xC77D;&#xC5B4;&#xBCF4;&#xC138;&#xC694;. : <a href="https://docs.djangoproject.com/en/2.0/topics/http/views/" target="_blank">https://docs.djangoproject.com/en/2.0/topics/http/views/</a></p></blockquote>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../django_urls/" class="navigation navigation-prev " aria-label="Previous page: Django urls">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../html/" class="navigation navigation-next " aria-label="Next page: HTML 시작하기">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Django 뷰 만들기","level":"1.16","depth":1,"next":{"title":"HTML 시작하기","level":"1.17","depth":1,"path":"html/README.md","ref":"html/README.md","articles":[]},"previous":{"title":"Django urls","level":"1.15","depth":1,"path":"django_urls/README.md","ref":"django_urls/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"django_version":"2.2.4"},"language":"ko","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"django_views/README.md","mtime":"2020-06-27T13:00:23.986Z","type":"markdown"},"gitbook":{"version":"3.4.0","time":"2020-06-27T13:00:41.274Z"},"basePath":"..","book":{"language":"ko"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

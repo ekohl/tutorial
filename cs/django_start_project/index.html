@@ -1,0 +1,636 @@
+
+<!DOCTYPE HTML>
+<html lang="cs" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Tvůj první Django projekt! · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.4.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../django_models/" />
+    
+    
+    <link rel="prev" href="../django_installation/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Vyhledat" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Úvod
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Instalace
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    Jak funguje internet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Úvod do příkazové řádky
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Instalace Pythonu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    Editor zdrojového kódu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Úvod do Pythonu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Co je Django?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Instalace Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Tvůj první Django projekt!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Django modely
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Nasazení!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django views -- je čas začít tvořit!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    Úvod do HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM (tvorba dotazů)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    Dynamická data v šablonách
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django šablony
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - udělejte svou aplikaci hezčí
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Rozšíření šablon
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Rozšíření vaší aplikace
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Django formuláře
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    Co dál?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Publikováno pomocí HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Tvůj první Django projekt!</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="tv&#x16F;j-prvn&#xED;-django-projekt">Tv&#x16F;j prvn&#xED; Django projekt!</h1><blockquote><p>&#x10C;&#xE1;st t&#xE9;to kapitoly je zalo&#x17E;ena na kurzu Geek Girls Carrots (<a href="https://github.com/ggcarrots/django-carrots" target="_blank">https://github.com/ggcarrots/django-carrots</a>).</p><p>&#x10C;&#xE1;sti t&#xE9;to kapitoly jsou zalo&#x17E;eny na <a href="http://django-marcador.keimlink.de/" target="_blank">django-marcador tutorial</a> licencov&#xE1;no pod Creative Commons Attribution-ShareAlike 4.0 mezin&#xE1;rodn&#xED; licenc&#xED;. Ochranou zn&#xE1;mku pro Django-marcador dr&#x17E;&#xED; Markus Zapke-Gr&#xFC;ndemann et al.</p></blockquote><p>Chceme vytvo&#x159;it jednoduch&#xFD; blog!</p><p>Prvn&#xED;m krokem je za&#x10D;&#xED;t s nov&#xFD;m projektem Django. V podstat&#x11B; to znamen&#xE1;, &#x17E;e bude&#x161; spou&#x161;t&#x11B;t n&#x11B;kter&#xE9; skripty z Djanga, kter&#xE9; vytvo&#x159;&#xED; kostru Django projektu pro tebe. To je jen halda adres&#xE1;&#x159;&#x16F; a soubor&#x16F;, kter&#xE9; budeme pozd&#x11B;ji pou&#x17E;&#xED;vat.</p><p>N&#xE1;zvy n&#x11B;kter&#xFD;ch soubor&#x16F; a adres&#xE1;&#x159;&#x16F; jsou pro Django velmi d&#x16F;le&#x17E;it&#xE9;. Nem&#x11B;la bys p&#x159;ejmenov&#xE1;vat soubory, kter&#xE9; vytvo&#x159;&#xED;me. P&#x159;esouvat je na jin&#xE9; m&#xED;sto tak&#xE9; nen&#xED; dobr&#xFD; n&#xE1;pad. V Django je t&#x159;eba zachovat ur&#x10D;itou strukturu, abychom mohli naj&#xED;t d&#x16F;le&#x17E;it&#xE9; v&#x11B;ci.</p><blockquote><p>Nezapome&#x148; spou&#x161;t&#x11B;t v&#x161;e ve sv&#xE9;m virtualenv. Pokud nevid&#xED;&#x161; p&#x159;edponu <code>(myvenv)</code> ve sv&#xE9; konzoli, je pot&#x159;eba aktivovat virtualenv. Jak se to d&#x11B;l&#xE1; jsme si vysv&#x11B;tlily v kapitole <strong>Django instalace</strong> v &#x10D;&#xE1;sti <strong>pr&#xE1;ce s virtualenv</strong>. Napi&#x161; <code>myvenv\Scripts\activate</code> na syst&#xE9;mu Windows nebo <code>source myvenv/bin/activate</code> na syst&#xE9;mu Mac OS / Linux.</p></blockquote><p>V MacOS a Linux konzoli bys m&#x11B;la spustit n&#xE1;sleduj&#xED;c&#xED; p&#x159;&#xED;kaz; <strong>nezapome&#x148; p&#x159;idat te&#x10D;ku <code>.</code> na konci</strong>:</p><pre><code>(myvenv) ~/djangogirls$ django-admin startproject mysite .</code></pre>
+<p>V syst&#xE9;mu Windows; <strong>nezapome&#x148; p&#x159;idat te&#x10D;ku <code>.</code> na konci</strong>:</p><pre><code>(myvenv) C:\Users\Name\djangogirls&gt; django-admin.py startproject mysite .</code></pre>
+<blockquote><p>Te&#x10D;ka <code>.</code> je z&#xE1;sadn&#xED;, proto&#x17E;e &#x159;&#xED;k&#xE1;, &#x17E;e skript pro instalaci Django se m&#xE1; prov&#xE9;st v aktu&#xE1;ln&#xED;m adres&#xE1;&#x159;i (pro kter&#xFD; je te&#x10D;ka <code>.</code> zkratkou - odkazem)</p><p><strong>Pozn&#xE1;mka:</strong> P&#x159;i zad&#xE1;v&#xE1;n&#xED; t&#x11B;chto p&#x159;&#xED;kaz&#x16F; nezapome&#x148; zadat pouze &#x10D;&#xE1;st, kter&#xE1; za&#x10D;&#xED;n&#xE1; <code>django admin</code> nebo <code>django-admin.py</code>. <code>(myvenv) ~/djangogirls$</code> a <code>(myvenv) C:\Users\Name\djangogirls&gt;</code> &#x2013; tyto &#x10D;&#xE1;sti jsou jen p&#x159;&#xED;klad cesty, kam bude&#x161; zad&#xE1;vat sv&#xE9; p&#x159;&#xED;kazy.</p></blockquote><p><code>django-admin.py</code> je skript, kter&#xFD; za tebe vytvo&#x159;&#xED; adres&#xE1;&#x159;e a soubory. Nyn&#xED; bys m&#x11B;la m&#xED;t adres&#xE1;&#x159;ovou strukturu, kter&#xE1; vypad&#xE1; n&#xE1;sledovn&#x11B;:</p><pre><code>djangogirls
+&#x251C;&#x2500;&#x2500;&#x2500;manage.py
+&#x2514;&#x2500;&#x2500;&#x2500;mysite
+        settings.py
+        urls.py
+        wsgi.py
+        __init__.py</code></pre>
+<p><code>manage.py</code> je skript, kter&#xFD; slou&#x17E;&#xED; k &#x159;&#xED;zen&#xED; tv&#xE9; webov&#xE9; str&#xE1;nky. S n&#xED;m bude mo&#x17E;n&#xE9; krom&#x11B; jin&#xE9;ho spustit webov&#xFD; server na tv&#xE9;m po&#x10D;&#xED;ta&#x10D;i bez instalovan&#xED; &#x10D;ehokoli jin&#xE9;ho.</p><p>Soubor <code>settings.py</code> obsahuje konfiguraci tv&#xE9; webov&#xE9; str&#xE1;nky.</p><p>Pamatuje&#x161;, jak jsme mluvili o po&#x161;&#x165;&#xE1;kovi, kter&#xFD; zji&#x161;&#x165;uje kam doru&#x10D;it dopis? Soubor <code>urls.py</code> obsahuje seznam vzor&#x16F;, kter&#xE9; pou&#x17E;&#xED;v&#xE1; <code>urlresolver</code>.</p><p>Prozat&#xED;m budeme ignorovat ostatn&#xED; soubory - nechceme v nich nic m&#x11B;nit. Jedin&#xE1; v&#x11B;c, na kterou nezapome&#x148;, je, &#x17E;e &#x17E;&#xE1;dn&#xFD; ze soubor&#x16F; se nema&#x17E;e!</p><h2 id="zm&#x11B;na-nastaven&#xED;">Zm&#x11B;na nastaven&#xED;</h2><p>Poj&#x10F;me ud&#x11B;lat n&#x11B;jak&#xE9; zm&#x11B;ny v <code>mysite/settings.py</code>. Otev&#x159;i soubor pomoc&#xED; editoru k&#xF3;du, kter&#xFD; jsi si nainstalovala d&#x159;&#xED;ve.</p><p>Bylo by hezk&#xE9; m&#xED;t na sv&#xFD;ch str&#xE1;nk&#xE1;ch spr&#xE1;vn&#xFD; &#x10D;as. P&#x159;ejdi na <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" target="_blank">wikipedia timezones list</a> a zkop&#xED;ruj p&#x159;&#xED;slu&#x161;n&#xE9; &#x10D;asov&#xE9; p&#xE1;smo (TZ). (nap&#x159;. <code>Europe/Prague</code>)</p><p>V settings.py najdi &#x159;&#xE1;dek, kter&#xFD; obsahuje <code>TIME_ZONE</code>, a uprav jej tak, aby obsahoval tvoje vlastn&#xED; &#x10D;asov&#xE9; p&#xE1;smo:</p><pre><code class="lang-python">TIME_ZONE = <span class="hljs-string">&apos;Europe/Prague&apos;</span></code></pre>
+<p>Uprav &quot;Europe/Prague&quot; podle pot&#x159;eby.</p><p>Budeme tak&#xE9; muset p&#x159;idat cestu pro statick&#xE9; soubory (o statick&#xFD;ch souborech a CSS se dozv&#xED;me d&#xE1;le v tutorialu). P&#x159;ejdi na <em>konec</em> souboru a pod polo&#x17E;kou <code>STATIC_URL</code>, p&#x159;idej nov&#xFD; n&#xE1;zev <code>STATIC_ROOT</code>:</p><pre><code class="lang-python">STATIC_URL = <span class="hljs-string">&apos;/static/&apos;</span>
+STATIC_ROOT = os.path.join(BASE_DIR, <span class="hljs-string">&apos;static&apos;</span>)</code></pre>
+<h2 id="nastaven&#xED;-datab&#xE1;ze">Nastaven&#xED; datab&#xE1;ze</h2><p>Existuje mnoho r&#x16F;zn&#xFD;ch datab&#xE1;zov&#xFD;ch softwar&#x16F;, kter&#xE9; mohou ukl&#xE1;dat data pro tv&#x16F;j web. My budeme pou&#x17E;&#xED;vat v&#xFD;choz&#xED; <code>sqlite3</code>.</p><p>Ta je ji&#x17E; nastavena v konfigura&#x10D;n&#xED;m souboru <code>mysite/settings.py</code>:</p><pre><code class="lang-python">DATABASES = {
+    <span class="hljs-string">&apos;default&apos;</span>: {
+        <span class="hljs-string">&apos;ENGINE&apos;</span>: <span class="hljs-string">&apos;django.db.backends.sqlite3&apos;</span>,
+        <span class="hljs-string">&apos;NAME&apos;</span>: os.path.join(BASE_DIR, <span class="hljs-string">&apos;db.sqlite3&apos;</span>),
+    }
+}</code></pre>
+<p>Chce&#x161;-li vytvo&#x159;it datab&#xE1;zi pro n&#xE1;&#x161; blog, spus&#x165; n&#xE1;sleduj&#xED;c&#xED; p&#x159;&#xED;kaz v konzoli: <code>python manage.py migrate</code> (pro spu&#x161;t&#x11B;n&#xED; mus&#xED;&#x161; b&#xFD;t v adres&#xE1;&#x159;i <code>djangogirls</code>, kter&#xFD; obsahuje soubor <code>manage.py</code>). Pokud v&#x161;e p&#x16F;jde dob&#x159;e, m&#x11B;la bys uvid&#x11B;t n&#x11B;co takov&#xE9;ho:</p><pre><code>(myvenv) ~/djangogirls$ python manage.py migrate
+Operations to perform:
+  Synchronize unmigrated apps: messages, staticfiles
+  Apply all migrations: contenttypes, sessions, admin, auth
+Synchronizing apps without migrations:
+   Creating tables...
+      Running deferred SQL...
+   Installing custom SQL...
+Running migrations:
+  Rendering model states... DONE   Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+   Applying contenttypes.0002_remove_content_type_name... OK
+   Applying auth.0002_alter_permission_name_max_length... OK
+   Applying auth.0003_alter_user_email_max_length... OK
+   Applying auth.0004_alter_user_username_opts... OK
+   Applying auth.0005_alter_user_last_login_null... OK
+   Applying auth.0006_require_contenttypes_0002... OK
+  Applying sessions.0001_initial... OK</code></pre>
+<p>A m&#xE1;me hotovo! &#x10C;as spustit webov&#xFD; server a m&#x11B;la bys vid&#x11B;t na&#x161;e funguj&#xED;c&#xED; webov&#xE9; str&#xE1;nky!</p><p>Pro spu&#x161;t&#x11B;n&#xED; mus&#xED;&#x161; b&#xFD;t v adres&#xE1;&#x159;i, kter&#xFD; obsahuje soubor <code>manage.py</code> (adres&#xE1;&#x159; <code>djangogirls</code>). V konzoli spust&#xED;&#x161; webov&#xFD; server zad&#xE1;n&#xED;m <code>python manage.py runserver</code>:</p><pre><code>(myvenv) ~/djangogirls$ python manage.py runserver</code></pre>
+<p>Pokud pracuje&#x161; v syst&#xE9;mu Windows a nezda&#x159;&#xED; se to s chybovou zpr&#xE1;vou <code>UnicodeDecodeError</code>, pou&#x17E;ij tento p&#x159;&#xED;kaz:</p><pre><code>(myvenv) ~/djangogirls$ python manage.py runserver 0:8000</code></pre>
+<p>Nyn&#xED; v&#x161;e, co mus&#xED;&#x161; ud&#x11B;lat, je zkontrolovat, zda na&#x161;e webov&#xE9; str&#xE1;nky b&#x11B;&#x17E;&#xED; - otev&#x159;i sv&#x16F;j prohl&#xED;&#x17E;e&#x10D; (Firefox, Chrome, Safari, Internet Explorer nebo co pou&#x17E;&#xED;v&#xE1;&#x161;) a zadej adresu:</p><pre><code>http://127.0.0.1:8000/</code></pre>
+<p>Webov&#xFD; server ti znemo&#x17E;n&#xED; pou&#x17E;&#xED;t p&#x159;&#xED;kazovou &#x159;&#xE1;dkou, dokud jej nezastav&#xED;&#x161;. Chce&#x161;-li zadat dal&#x161;&#xED; p&#x159;&#xED;kazy, spus&#x165; nov&#xE9; okno termin&#xE1;lu a aktivuj sv&#x16F;j virtualenv. Chce&#x161;-li zastavit server WWW, p&#x159;epni se zp&#x11B;t do okna, ve kter&#xE9;m je spu&#x161;t&#x11B;n, a kombinac&#xED; kl&#xE1;ves CTRL + C - tla&#x10D;&#xED;tka CTRL a C, kter&#xE9; stiskne&#x161; dohromady (na Windows, mo&#x17E;n&#xE1; mus&#xED;&#x161; stisknout kombinaci kl&#xE1;ves Ctrl + Break) &#x2013; ukon&#x10D;&#xED;&#x161; proces.</p><p>Blahop&#x159;ejeme! Pr&#xE1;v&#x11B; jsi vytvo&#x159;ila sv&#x16F;j prvn&#xED; web a spustila jej pomoc&#xED; webov&#xE9;ho serveru! Nen&#xED; to super?</p><p><a href="images/it_worked2.png">Fungovalo to!</a></p><p>P&#x159;ipravena pro dal&#x161;&#xED; krok? Je tu &#x10D;as k vytvo&#x159;en&#xED; n&#x11B;jak&#xE9;ho obsahu!</p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../django_installation/" class="navigation navigation-prev " aria-label="Previous page: Instalace Django">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../django_models/" class="navigation navigation-next " aria-label="Next page: Django modely">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Tvůj první Django projekt!","level":"1.10","depth":1,"next":{"title":"Django modely","level":"1.11","depth":1,"path":"django_models/README.md","ref":"django_models/README.md","articles":[]},"previous":{"title":"Instalace Django","level":"1.9","depth":1,"path":"django_installation/README.md","ref":"django_installation/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"django_version":"2.2.4"},"language":"cs","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"django_start_project/README.md","mtime":"2020-06-27T13:00:23.650Z","type":"markdown"},"gitbook":{"version":"3.4.0","time":"2020-06-27T13:00:41.274Z"},"basePath":"..","book":{"language":"cs"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

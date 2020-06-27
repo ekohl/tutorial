@@ -1,0 +1,741 @@
+
+<!DOCTYPE HTML>
+<html lang="ko" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>CSS - 예쁘게 만들기 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.4.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../template_extending/" />
+    
+    
+    <link rel="prev" href="../django_templates/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="검색어 입력" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    들어가며
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    설치하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    설치하기 (chromebook)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    인터넷은 어떻게 작동할까요
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Command Line 시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Python 설치하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    코드 에디터
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Python 시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Django란 무엇인가요
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Django 설치하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    나의 첫 번째 Django 프로젝트!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Django 모델
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django 관리자
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    배포하기!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django urls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django 뷰 만들기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    HTML 시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM(Querysets)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    템플릿 동적 데이터
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django 템플릿
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.21" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    CSS - 예쁘게 만들기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    템플릿 확장하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    애플리케이션 확장하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Django 폼
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    더 나아가기
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKit에 게시
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >CSS - 예쁘게 만들기</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="css---&#xC608;&#xC058;&#xAC8C;-&#xB9CC;&#xB4E4;&#xAE30;">CSS - &#xC608;&#xC058;&#xAC8C; &#xB9CC;&#xB4E4;&#xAE30;</h1><p>&#xC544;&#xC9C1; &#xC6B0;&#xB9AC;&#xAC00; &#xB9CC;&#xB4E0; &#xBE14;&#xB85C;&#xADF8;&#xAC00; &#xC608;&#xC058;&#xC9C0; &#xC54A;&#xC8E0;? &#xC774;&#xC81C; &#xB208;&#xC5D0; &#xBCF4;&#xAE30; &#xC88B;&#xAC8C; &#xC608;&#xC058;&#xAC8C; &#xB9CC;&#xB4E4;&#xC5B4; &#xBCFC; &#xC2DC;&#xAC04;&#xC774;&#xC5D0;&#xC694;. CSS&#xB97C; &#xC0AC;&#xC6A9;&#xD574; &#xB9CC;&#xB4E4;&#xC5B4;&#xBCFC; &#xAC70;&#xC5D0;&#xC694;.</p><h2 id="css&#xB294;-&#xBB34;&#xC5C7;&#xC778;&#xAC00;&#xC694;">CSS&#xB294; &#xBB34;&#xC5C7;&#xC778;&#xAC00;&#xC694;?</h2><p>CSS(Cascading Style Sheets)&#xB294; HTML&#xC640; &#xAC19;&#xC774; &#xB9C8;&#xD06C;&#xC5C5;&#xC5B8;&#xC5B4;(Markup Language)&#xB85C; &#xC791;&#xC131;&#xB41C; &#xC6F9;&#xC0AC;&#xC774;&#xD2B8;&#xC758; &#xC678;&#xAD00;&#xC744; &#xAFB8;&#xBBF8;&#xAE30; &#xC704;&#xD574; &#xC0AC;&#xC6A9;&#xB418;&#xB294; &#xC5B8;&#xC5B4;&#xC785;&#xB2C8;&#xB2E4;. &#xC6F9;&#xC0AC;&#xC774;&#xD2B8;&#xC5D0; &#xBA54;&#xC774;&#xD06C;&#xC5C5;&#xC744; &#xD574;&#xBCFC;&#xAE4C;&#xC694;. ;)</p><p>&#xC544;&#xBB34;&#xAC83;&#xB3C4; &#xC5C6;&#xB294; &#xC0C1;&#xD0DC;&#xC5D0;&#xC11C; &#xC2DC;&#xC791;&#xD558;&#xAE30; &#xC5B4;&#xB835;&#xACA0;&#xC8E0;? &#xAC1C;&#xBC1C;&#xC790;&#xB4E4;&#xC774; &#xB9CC;&#xB4E0; &#xC624;&#xD508; &#xC18C;&#xC2A4; &#xCF54;&#xB4DC;&#xB97C; &#xC0AC;&#xC6A9;&#xD574; &#xB9CC;&#xB4E4;&#xC5B4; &#xBCFC; &#xAC70;&#xC5D0;&#xC694;. &#xC774;&#xBBF8; &#xC788;&#xB294; &#xBC14;&#xD034;&#xB97C; &#xB2E4;&#xC2DC; &#xBC1C;&#xBA85;&#xD558;&#xB294; &#xAC83;&#xC740; &#xC7AC;&#xBBF8;&#xAC00; &#xC5C6;&#xC796;&#xC544;&#xC694;.</p><h2 id="&#xBD80;&#xD2B8;&#xC2A4;&#xD2B8;&#xB7A9;&#xC744;-&#xC0AC;&#xC6A9;&#xD574;&#xBD10;&#xC694;">&#xBD80;&#xD2B8;&#xC2A4;&#xD2B8;&#xB7A9;&#xC744; &#xC0AC;&#xC6A9;&#xD574;&#xBD10;&#xC694;!</h2><p>&#xBD80;&#xD2B8;&#xC2A4;&#xD2B8;&#xB7A9;(Bootstrap)&#xC740; &#xC720;&#xBA85;&#xD55C; HTML&#xACFC; CSS&#xD504;&#xB808;&#xC784;&#xC6CC;&#xD06C;&#xB85C; &#xC608;&#xC05C; &#xC6F9;&#xC0AC;&#xC774;&#xD2B8;&#xB97C; &#xB9CC;&#xB4E4; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. : <a href="https://getbootstrap.com/" target="_blank">https://getbootstrap.com/</a></p><p>&#xD2B8;&#xC704;&#xD130; &#xAC1C;&#xBC1C;&#xC790;&#xB4E4;&#xC774; &#xBD80;&#xD2B8;&#xC2A4;&#xD2B8;&#xB7A9;&#xC744; &#xB9CC;&#xB4E4;&#xC5C8;&#xACE0;, &#xC804; &#xC138;&#xACC4; &#xC790;&#xC6D0;&#xBD09;&#xC0AC;&#xC790;&#xB4E4;&#xC774; &#xC9C0;&#xC18D;&#xC801;&#xC73C;&#xB85C; &#xCC38;&#xC5EC;&#xD574; &#xBC1C;&#xC804;&#xC2DC;&#xD0A4;&#xACE0; &#xC788;&#xC5B4;&#xC694;!</p><h2 id="&#xBD80;&#xD2B8;&#xC2A4;&#xD2B8;&#xB7A9;-&#xC124;&#xCE58;&#xD558;&#xAE30;">&#xBD80;&#xD2B8;&#xC2A4;&#xD2B8;&#xB7A9; &#xC124;&#xCE58;&#xD558;&#xAE30;</h2><p>&#xBD80;&#xD2B8;&#xC2A4;&#xD2B8;&#xB7A9;&#xC744; &#xC124;&#xCE58;&#xD558;&#xB824;&#xBA74;, <code>.html</code>&#xD30C;&#xC77C; &#xB0B4; <code>&lt;head&gt;</code>&#xC5D0; &#xC774; &#xB9C1;&#xD06C;&#xB97C; &#xB123;&#xC5B4;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;.</p><p></p><p class="code-label">blog/templates/blog/post_list.html</p><p></p><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css&quot;</span>&gt;</span></code></pre>
+<p>&#xC774; &#xB9C1;&#xD06C;&#xB294; &#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xC5D0; &#xC0C8; &#xD30C;&#xC77C;&#xC744; &#xCD94;&#xAC00;&#xD558;&#xB294; &#xAC8C; &#xC544;&#xB2C8;&#xC5D0;&#xC694;. &#xC778;&#xD130;&#xB137;&#xC5D0; &#xC788;&#xB294; &#xD30C;&#xC77C;&#xC744; &#xC5F0;&#xACB0;&#xD558;&#xB294; &#xAC70;&#xC8E0;. &#xC774;&#xC81C; &#xC6F9;&#xC0AC;&#xC774;&#xD2B8;&#xB97C; &#xC5F4;&#xC5B4; &#xC0C8;&#xB85C;&#xACE0;&#xCE68; &#xBC84;&#xD2BC;&#xC744; &#xB20C;&#xB7EC;&#xBCF4;&#xC138;&#xC694;. &#xC9E0;!</p><p><img alt="Figure 14.1" src="images/bootstrap1.png"></p><p>&#xC5B4;&#xB54C;&#xC694;, &#xBCF4;&#xAE30; &#xC88B;&#xC544;&#xC84C;&#xC8E0;!</p><h2 id="&#xC815;&#xC801;-&#xD30C;&#xC77C;">&#xC815;&#xC801; &#xD30C;&#xC77C;</h2><p>&#xB9C8;&#xC9C0;&#xB9C9;&#xC73C;&#xB85C; <strong>&#xC815;&#xC801; &#xD30C;&#xC77C;(static files)</strong> &#xC744; &#xB2E4;&#xB904;&#xBCFC; &#xAC70;&#xC5D0;&#xC694;. &#xC815;&#xC801; &#xD30C;&#xC77C;&#xC740; CSS&#xC640; &#xC774;&#xBBF8;&#xC9C0; &#xD30C;&#xC77C;&#xC5D0; &#xD574;&#xB2F9;&#xD569;&#xB2C8;&#xB2E4;. &#xC774; &#xCEE8;&#xD150;&#xCE20;&#xB294; &#xC694;&#xCCAD; &#xB0B4;&#xC6A9;&#xC5D0; &#xB530;&#xB77C; &#xBC14;&#xB00C;&#xB294; &#xAC83;&#xC774; &#xC544;&#xB2C8;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xBAA8;&#xB4E0; &#xC0AC;&#xC6A9;&#xC790;&#xB4E4;&#xC774; &#xB3D9;&#xC77C;&#xD55C; &#xB0B4;&#xC6A9;&#xC744; &#xBCFC; &#xC218; &#xC788;&#xC5B4;&#xC694;.</p><h3 id="&#xC815;&#xC801;-&#xD30C;&#xC77C;&#xC740;-&#xC5B4;&#xB514;&#xC5D0;-&#xB123;&#xC5B4;&#xC57C;-&#xD558;&#xB098;&#xC694;">&#xC815;&#xC801; &#xD30C;&#xC77C;&#xC740; &#xC5B4;&#xB514;&#xC5D0; &#xB123;&#xC5B4;&#xC57C; &#xD558;&#xB098;&#xC694;</h3><p>&#xC11C;&#xBC84;&#xC5D0;&#xC11C; <code>collectstatic</code>&#xB97C; &#xC2E4;&#xD589;&#xD560; &#xB54C; &#xCC98;&#xB7FC;, &#xC7A5;&#xACE0;&#xB294; &quot;admin&quot;&#xC571;&#xC5D0;&#xC11C; &#xC815;&#xC801; &#xD30C;&#xC77C;&#xC744; &#xC5B4;&#xB514;&#xC11C; &#xCC3E;&#xC544;&#xC57C;&#xD558;&#xB294;&#xC9C0; &#xC774;&#xBBF8; &#xC54C;&#xACE0; &#xC788;&#xC5B4;&#xC694;. &#xC774;&#xC81C; &quot;blog&quot;&#xC571;&#xC5D0; &#xC815;&#xC801;&#xD30C;&#xC77C;&#xC744; &#xCD94;&#xAC00;&#xD558;&#xBA74; &#xB429;&#xB2C8;&#xB2E4;.</p><p>&quot;blog&quot;&#xC571; &#xC548;&#xC5D0; <code>static</code>&#xB77C;&#xB294; &#xC0C8; &#xD3F4;&#xB354;&#xB97C; &#xB9CC;&#xB4DC;&#xC138;&#xC694;. :</p><pre><code>    djangogirls
+    &#x251C;&#x2500;&#x2500; blog
+    &#x2502;   &#x251C;&#x2500;&#x2500; migrations
+    &#x2502;   &#x251C;&#x2500;&#x2500; static
+    &#x2502;   &#x2514;&#x2500;&#x2500; templates
+    &#x2514;&#x2500;&#x2500; mysite</code></pre>
+<p>&#xC7A5;&#xACE0;&#xB294; app &#xD3F4;&#xB354; &#xC548;&#xC5D0; &#xC788;&#xB294; <code>static</code>&#xD3F4;&#xB354;&#xB97C; &#xC790;&#xB3D9;&#xC73C;&#xB85C; &#xCC3E;&#xC744; &#xC218; &#xC788;&#xC5B4;&#xC694;. &#xC774; &#xCEE8;&#xD150;&#xCE20;&#xB97C; &#xC815;&#xC801; &#xD30C;&#xC77C;&#xB85C; &#xC0AC;&#xC6A9;&#xD558;&#xAC8C; &#xB418;&#xB294; &#xAC83;&#xC785;&#xB2C8;&#xB2E4;.</p><h2 id="&#xB098;&#xC758;-&#xCCAB;-&#xBC88;&#xC9F8;-css-&#xD30C;&#xC77C;">&#xB098;&#xC758; &#xCCAB; &#xBC88;&#xC9F8; CSS &#xD30C;&#xC77C;!</h2><p>CSS&#xD30C;&#xC77C;&#xC744; &#xB9CC;&#xB4E4;&#xC5B4; &#xB098;&#xB9CC;&#xC758; &#xC2A4;&#xD0C0;&#xC77C;&#xC744; &#xAC00;&#xC9C4; &#xC6F9;&#xD398;&#xC774;&#xC9C0;&#xB97C; &#xB9CC;&#xB4E4;&#xC5B4;&#xBD10;&#xC694;. <code>static</code>&#xB514;&#xB809;&#xD1A0;&#xB9AC; &#xC548;&#xC5D0; <code>css</code>&#xB77C;&#xACE0; &#xC0C8;&#xB85C;&#xC6B4; &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xB97C; &#xB9CC;&#xB4DC;&#xC138;&#xC694;. &#xADF8;&#xB9AC;&#xACE0; <code>css</code>&#xB514;&#xB809;&#xD1A0;&#xB9AC; &#xC548;&#xC5D0; <code>blog.css</code>&#xB77C;&#xB294; &#xD30C;&#xC77C;&#xC744; &#xB9CC;&#xB4DC;&#xC138;&#xC694;. &#xC900;&#xBE44;&#xB418;&#xC168;&#xB098;&#xC694;?</p><pre><code>    djangogirls
+    &#x2514;&#x2500;&#x2500;&#x2500; blog
+         &#x2514;&#x2500;&#x2500;&#x2500; static
+              &#x2514;&#x2500;&#x2500;&#x2500; css
+                   &#x2514;&#x2500;&#x2500;&#x2500; blog.css</code></pre>
+<p>CSS&#xB97C; &#xC4F8; &#xCC28;&#xB840;&#xC608;&#xC694;! &#xCF54;&#xB4DC; &#xC5D0;&#xB514;&#xD130;&#xC5D0;&#xC11C; <code>blog/static/css/blog.css</code>&#xD30C;&#xC77C;&#xC744; &#xC5F4;&#xC5B4;&#xBCF4;&#xC138;&#xC694;.</p><p>CSS&#xB294; &#xAF64; &#xC27D;&#xACE0; &#xC6CC;&#xD06C;&#xC0F5; &#xD6C4;&#xC5D0;&#xB3C4; &#xC2A4;&#xC2A4;&#xB85C; &#xBC30;&#xC6B8; &#xC218; &#xC788;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; CSS&#xC5D0; &#xB300;&#xD574; &#xAE4A;&#xC774; &#xC0B4;&#xD3B4;&#xBCF4;&#xC9C0;&#xB294; &#xC54A;&#xC744; &#xAC70;&#xC5D0;&#xC694;. &#xC774; &#xC7A5; &#xB9E8; &#xB9C8;&#xC9C0;&#xB9C9; &#xBD80;&#xBD84;&#xC5D0; &#xCD94;&#xCC9C;&#xD558;&#xB294; &#xBB34;&#xB8CC; &#xC0AC;&#xC774;&#xD2B8;&#xAC00; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p><p>&#xD558;&#xC9C0;&#xB9CC; &#xC870;&#xAE08;&#xC774;&#xB77C;&#xB3C4; &#xD574;&#xBCF4;&#xC790;&#xAD6C;&#xC694;. &#xC81C;&#xBAA9; &#xC0C9;&#xC0C1;&#xC744; &#xBC14;&#xAFD4;&#xBCFC;&#xAE4C;&#xC694;? &#xCEF4;&#xD4E8;&#xD130;&#xB294; &#xD2B9;&#xBCC4;&#xD55C; &#xCF54;&#xB4DC;&#xB97C; &#xC0AC;&#xC6A9;&#xD574; &#xC0C9;&#xC0C1;&#xC744; &#xB098;&#xD0C0;&#xB0B4;&#xC694;. <code>#</code>&#xC73C;&#xB85C; &#xC2DC;&#xC791;&#xD574; &#xC54C;&#xD30C;&#xBCB3;(A-F)&#xC640; &#xC22B;&#xC790;(0-9) &#xC911; 6&#xAC1C;&#xB97C; &#xC870;&#xD569;&#xD574; &#xD5E5;&#xC0AC;&#xCF54;&#xB4DC;(hexacode)&#xB85C; &#xB098;&#xD0C0;&#xB0C5;&#xB2C8;&#xB2E4;. &#xC774; &#xACF3;&#xC5D0;&#xC11C; &#xC6D0;&#xD558;&#xB294; &#xC0C9;&#xC0C1; &#xCF54;&#xB4DC;&#xB97C; &#xCC3E;&#xC744; &#xC218; &#xC788;&#xC5B4;&#xC694;. <a href="https://www.colorpicker.com/" target="_blank">https://www.colorpicker.com/</a> &#xB610;&#xB294; <code>&#xBE68;&#xAC04;&#xC0C9;(red)</code> &#xB610;&#xB294; <code>&#xB179;&#xC0C9;(green)</code> &#xB4F1; <a href="http://www.w3schools.com/colors/colors_names.asp" target="_blank">&#xBBF8;&#xB9AC; &#xBA85;&#xC2DC;&#xB41C; &#xC0C9;&#xC0C1;</a>&#xC744; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xC5B4;&#xC694;.</p><p><code>blog/static/css/blog.css</code> &#xD30C;&#xC77C;&#xC5D0; &#xC544;&#xB798; &#xCF54;&#xB4DC;&#xB97C; &#xCD94;&#xAC00;&#xD558;&#xC138;&#xC694;. :</p><p></p><p class="code-label">blog/static/css/blog.css</p><p></p><pre><code class="lang-css"><span class="hljs-selector-tag">h1</span> <span class="hljs-selector-tag">a</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#FCA205</span>;
+}</code></pre>
+<p><code>h1 a</code>&#xB294; CSS &#xC140;&#xB809;&#xD130;(Selector)&#xB77C;&#xACE0; &#xD569;&#xB2C8;&#xB2E4;. <code>h1</code>&#xC694;&#xC18C; &#xC548;&#xC5D0; &#xC5B4;&#xB5A0;&#xD55C; <code>a</code>&#xC694;&#xC18C;&#xB97C; &#xB123;&#xC5B4; &#xC2A4;&#xD0C0;&#xC77C;&#xC744; &#xC801;&#xC6A9; &#xD560; &#xC218; &#xC788;&#xB2E4;&#xB294; &#xAC70;&#xC8E0;. &#xC608;&#xB97C; &#xB4E4;&#xC5B4; <code>&lt;h1&gt;&lt;a href=&quot;&quot;&gt;link&lt;/a&gt;&lt;/h1&gt;</code> &#xB77C;&#xBA74;, &#xC624;&#xB80C;&#xC9C0;&#xC0C9; <code>#FCA205</code>&#xC73C;&#xB85C; &#xBC14;&#xAFC0; &#xC218; &#xC788;&#xC5B4;&#xC694;. &#xBB3C;&#xB860;, &#xB0B4;&#xAC00; &#xC6D0;&#xD558;&#xB294; &#xB2E4;&#xB978; &#xC0C9;&#xC0C1;&#xC744; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC5B4;&#xC694;!</p><p>CSS &#xD30C;&#xC77C;&#xC5D0;&#xC11C;&#xB294; HTML &#xD30C;&#xC77C;&#xC5D0; &#xC788;&#xB294; &#xAC01; &#xC694;&#xC18C;&#xB4E4;&#xC5D0; &#xC2A4;&#xD0C0;&#xC77C;&#xC744; &#xC815;&#xC758;&#xD560; &#xC218; &#xC788;&#xC5B4;&#xC694;. &#xC694;&#xC18C;&#xB97C; &#xC2DD;&#xBCC4;&#xD558;&#xB294; &#xCCAB; &#xBC88;&#xC9F8; &#xBC29;&#xBC95;&#xC740; &#xC694;&#xC18C; &#xC774;&#xB984;&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xB294; &#xAC83;&#xC785;&#xB2C8;&#xB2E4;. HTML &#xC139;&#xC158;&#xC5D0;&#xC11C; &#xD0DC;&#xADF8;&#xB85C; &#xAE30;&#xC5B5;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. <code>a</code>,<code>h1</code>,<code>body</code>&#xC640; &#xAC19;&#xC740; &#xAC83;&#xC740; &#xBAA8;&#xB450; &#xC694;&#xC18C; &#xC774;&#xB984;&#xC758; &#xC608;&#xC785;&#xB2C8;&#xB2E4;. &#xB610; <code>class</code> &#xC18D;&#xC131;&#xC774;&#xB098; <code>id</code> &#xC18D;&#xC131;&#xC5D0; &#xC758;&#xD574; &#xC694;&#xC18C;&#xB97C; &#xC2DD;&#xBCC4;&#xD569;&#xB2C8;&#xB2E4;. &#xD074;&#xB798;&#xC2A4;&#xC640; ID&#xB294; &#xC694;&#xC18C;&#xC5D0; &#xC9C1;&#xC811; &#xBD80;&#xC5EC;&#xD55C; &#xC774;&#xB984;&#xC774;&#xC5D0;&#xC694;. &#xD074;&#xB798;&#xC2A4;&#xB294; &#xC694;&#xC18C; &#xADF8;&#xB8F9;&#xC744; &#xC815;&#xC758;&#xD558;&#xACE0; ID&#xB294; &#xD2B9;&#xC815; &#xC694;&#xC18C;&#xB97C; &#xAC00;&#xB9AC;&#xD0B5;&#xB2C8;&#xB2E4;. &#xC544;&#xB798; &#xCF54;&#xB4DC;&#xC640; &#xAC19;&#xC774; &#xD0DC;&#xADF8; &#xC774;&#xB984;&#xC740; <code>a</code>, &#xD074;&#xB798;&#xC2A4;&#xB294; <code>external_link</code> &#xB610;&#xB294; ID&#xB294; <code>link_to_wiki_page</code>&#xB85C; &#xC0AC;&#xC6A9;&#xD558;&#xC5EC; &#xD0DC;&#xADF8;&#xB97C; &#xD1B5;&#xD574; &#xC694;&#xC18C;&#xB97C; &#xC2DD;&#xBCC4;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://en.wikipedia.org/wiki/Django&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;external_link&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;link_to_wiki_page&quot;</span>&gt;</span></code></pre>
+<p>W3Schools&#xC5D0;&#xC11C; <a href="https://www.w3schools.com/cssref/css_selectors.asp" target="_blank">CSS &#xC120;&#xD0DD;&#xC790;</a>&#xC5D0; &#xB300;&#xD574; &#xC77D;&#xC5B4;&#xBCF4;&#xC2DC;&#xAE38; &#xBC14;&#xB78D;&#xB2C8;&#xB2E4;.</p><p>&#xC774;&#xC81C; CSS&#xB97C; HTML&#xC5D0; &#xCD94;&#xAC00;&#xD574;&#xBD05;&#xC2DC;&#xB2E4;. <code>blog/templates/blog/post_list.html</code> &#xD30C;&#xC77C;&#xC744; &#xC5F4;&#xACE0; &#xB9E8; &#xCC98;&#xC74C; &#xC904;&#xC5D0; &#xC774; &#xB77C;&#xC778;&#xC744; &#xCD94;&#xAC00;&#xD558;&#xC138;&#xC694;.</p><p></p><p class="code-label">blog/templates/blog/post_list.html</p><p></p><pre><code class="lang-html">{% load static %}</code></pre>
+<p>&#xC5EC;&#xAE30;&#xC5D0;&#xC11C; &#xC815;&#xC801; &#xD30C;&#xC77C;&#xC744; &#xB85C;&#xB529;&#xD558;&#xB294; &#xAC70;&#xC5D0;&#xC694;. :)
+&#xB2E4;&#xC74C; <code>&lt;head&gt;</code>&#xC640; <code>&lt;/head&gt;</code> &#xC0AC;&#xC774;&#xC5D0; &#xBD80;&#xD2B8;&#xC2A4;&#xD2B8;&#xB7A9; CSS&#xD30C;&#xC77C; &#xB9C1;&#xD06C; &#xB2E4;&#xC74C;&#xC5D0; &#xC544;&#xB798; &#xCF54;&#xB4DC;&#xB97C; &#xCD94;&#xAC00;&#xD558;&#xC138;&#xC694;.</p><p></p><p class="code-label">blog/templates/blog/post_list.html</p><p></p><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% static &apos;css/blog.css&apos; %}&quot;</span>&gt;</span></code></pre>
+<p>&#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xB294; &#xC8FC;&#xC5B4;&#xC9C4; &#xC21C;&#xC11C;&#xB300;&#xB85C; &#xD30C;&#xC77C;&#xC744; &#xC77D;&#xC73C;&#xBBC0;&#xB85C; &#xD30C;&#xC77C;&#xC774; &#xC62C;&#xBC14;&#xB978; &#xC704;&#xCE58;&#xC5D0; &#xC788;&#xB294;&#xC9C0; &#xD655;&#xC778;&#xD574;&#xC57C;&#xD569;&#xB2C8;&#xB2E4;. &#xADF8;&#xB807;&#xC9C0; &#xC54A;&#xC73C;&#xBA74; &#xD30C;&#xC77C; &#xCF54;&#xB4DC;&#xAC00; &#xBD80;&#xD2B8; &#xC2A4;&#xD2B8;&#xB7A9; &#xD30C;&#xC77C;&#xC758; &#xCF54;&#xB4DC;&#xB97C; &#xBB34;&#xC2DC;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.
+&#xC774;&#xC81C;&#xAE4C;&#xC9C0; CSS&#xD30C;&#xC77C;&#xC774; &#xC788;&#xB294; &#xD15C;&#xD50C;&#xB9BF;&#xC5D0; &#xB300;&#xD574; &#xC54C;&#xC544;&#xBCF4;&#xC558;&#xC5B4;&#xC694;.</p><p>&#xCF54;&#xB4DC;&#xB294; &#xC544;&#xB798;&#xC640; &#xAC19;&#xC544;&#xC57C; &#xD574;&#xC694;.</p><p></p><p class="code-label">blog/templates/blog/post_list.html</p><p></p><pre><code class="lang-html">{% load static %}
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Django Girls blog<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% static &apos;css/blog.css&apos; %}&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/&quot;</span>&gt;</span>Django Girls Blog<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+        {% for post in posts %}
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>published: {{ post.published_date }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>{{ post.title }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{{ post.text|linebreaksbr }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        {% endfor %}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre>
+<p>&#xC790;, &#xC774;&#xC81C; &#xD30C;&#xC77C;&#xC744; &#xC800;&#xC7A5;&#xD558;&#xACE0; &#xC0C8;&#xB85C;&#xACE0;&#xCE68;&#xC744; &#xD574;&#xBCF4;&#xC138;&#xC694;!</p><p><img alt="Figure 14.2" src="images/color2.png"></p><p>&#xC798;&#xD588;&#xC5B4;&#xC694;! &#xC6F9;&#xC0AC;&#xC774;&#xD2B8; &#xC67C;&#xCABD; &#xC5EC;&#xBC31;&#xC744; &#xC880;&#xB354; &#xC8FC;&#xACE0; &#xC2F6;&#xC9C0; &#xC54A;&#xB098;&#xC694;? &#xD55C;&#xBC88; &#xD574;&#xBD10;&#xC694;!</p><p></p><p class="code-label">blog/static/css/blog.css</p><p></p><pre><code class="lang-css"><span class="hljs-selector-tag">body</span> {
+    <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">15px</span>;
+}</code></pre>
+<p>&#xC774; &#xCF54;&#xB4DC;&#xB97C; CSS&#xC5D0; &#xBD99;&#xC5EC;&#xB123;&#xACE0;, &#xD30C;&#xC77C;&#xC744; &#xC800;&#xC7A5;&#xD558;&#xACE0; &#xC5B4;&#xB5BB;&#xAC8C; &#xBC14;&#xB00C;&#xC5C8;&#xB294;&#xC9C0; &#xD655;&#xC778;&#xD574;&#xBD10;&#xC694;!</p><p><img alt="Figure 14.3" src="images/margin2.png"></p><p>&#xC81C;&#xBAA9; &#xD3F0;&#xD2B8;&#xB97C; &#xBC14;&#xAFB8;&#xACE0; &#xC2F6;&#xB098;&#xC694;? <code>blog/templates/blog/post_list.html</code> &#xD30C;&#xC77C; &#xB0B4; <code>&lt;head&gt;</code>&#xBD80;&#xBD84;&#xC5D0; &#xC544;&#xB798; &#xCF54;&#xB4DC;&#xB97C; &#xBD99;&#xC5EC;&#xB123;&#xAE30; &#xD574;&#xBCF4;&#xC138;&#xC694;.</p><p></p><p class="code-label">blog/templates/blog/post_list.html</p><p></p><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;//fonts.googleapis.com/css?family=Lobster&amp;subset=latin,latin-ext&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/css&quot;</span>&gt;</span></code></pre>
+<p><code>blog/static/css/blog.css</code> &#xD30C;&#xC77C; &#xB0B4; &#xB123;&#xC740; &#xCF54;&#xB4DC;&#xC758; &#xC21C;&#xC11C;&#xC640; &#xC704;&#xCE58;&#xB97C; &#xB2E4;&#xC2DC; &#xD655;&#xC778;&#xD574;&#xBCF4;&#xC138;&#xC694;. &#xC774; &#xB77C;&#xC778;&#xC740; Google &#xAE00;&#xAF34; (<a href="https://www.google.com/fonts" target="_blank">https://www.google.com/fonts)&#xC5D0;&#xC11C;</a>&#xC5D0;&#xC11C;) <em> Lobster</em> &#xB77C;&#xB294; &#xAE00;&#xAF34;&#xC744; &#xAC00;&#xC838;&#xC628; &#xAC83;&#xC744; &#xB9D0;&#xD574;&#xC694;.</p><p>&#xADF8;&#xB9AC;&#xACE0; CSS&#xD30C;&#xC77C;  <code>blog/static/css/blog.css</code> &#xC5D0;&#xC11C;<code>h1 a</code> &#xC120;&#xC5B8; &#xBE14;&#xB85D; (&#xC911;&#xAD04;&#xD638;<code>{</code>&#xC640;<code>}</code>) &#xC0AC;&#xC774;&#xC758; &#xCF54;&#xB4DC;&#xB97C; &#xCC3E;&#xC73C;&#xC138;&#xC694;. <code>font-family : &apos;Lobster&apos;;</code> &#xB97C; &#xC911;&#xAD04;&#xD638; &#xC0AC;&#xC774;&#xC5D0; &#xCD94;&#xAC00;&#xD558;&#xACE0; &#xD398;&#xC774;&#xC9C0;&#xB97C; &#xC0C8;&#xB85C;&#xACE0;&#xCE68; &#xD569;&#xB2C8;&#xB2E4;.</p><p></p><p class="code-label">blog/static/css/blog.css</p><p></p><pre><code class="lang-css"><span class="hljs-selector-tag">h1</span> <span class="hljs-selector-tag">a</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#FCA205</span>;
+    <span class="hljs-attribute">font-family</span>: <span class="hljs-string">&apos;Lobster&apos;</span>;
+}</code></pre>
+<p><img alt="Figure 14.3" src="images/font.png"></p><p>&#xC798;&#xD588;&#xC5B4;&#xC694;!</p><p>&#xC55E;&#xC11C; &#xB9D0;&#xD588;&#xB4EF;&#xC774;, CSS&#xB294; &#xD074;&#xB798;&#xC2A4; &#xAC1C;&#xB150;&#xC744; &#xAC00;&#xC9C0;&#xACE0; &#xC788;&#xC5B4;&#xC694;. &#xD074;&#xB798;&#xC2A4;&#xB294; HTML&#xC758; &#xCF54;&#xB4DC; &#xC77C;&#xBD80;&#xC5D0; &#xC774;&#xB984;&#xC744; &#xBD99;&#xC774;&#xACE0; &#xADF8; &#xBD80;&#xBD84;&#xB9CC; &#xD2B9;&#xC815; &#xC2A4;&#xD0C0;&#xC77C;&#xC744; &#xC801;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xAC8C; &#xD574;&#xC90D;&#xB2C8;&#xB2E4;. &#xAC01;&#xAE30; &#xB2E4;&#xB978; div&#xB97C; (&#xC608;&#xB97C; &#xB4E4;&#xC5B4; &#xD558;&#xB098;&#xB294; &#xC81C;&#xBAA9;&#xC5D0; &#xC788;&#xACE0; &#xD558;&#xB098;&#xB294; &#xAE00; &#xBCF8;&#xBB38;&#xC5D0; &#xC788;&#xB294; &#xACBD;&#xC6B0;) &#xAD6C;&#xBD84;&#xD560; &#xB54C; &#xC815;&#xB9D0; &#xC720;&#xC6A9;&#xD574;&#xC694;. HTML &#xCF54;&#xB4DC;&#xC758; &#xC77C;&#xBD80; &#xC774;&#xB984;&#xC744; &#xC9C0;&#xC815;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.</p><p>&#xC81C;&#xBAA9;&#xC774; &#xD3EC;&#xD568;&#xB41C; <code>div</code>&#xC5D0; <code>page-header</code>&#xB77C;&#xB294; &#xD074;&#xB798;&#xC2A4;&#xBA85;&#xC744; &#xBD99;&#xC5EC;&#xBCF4;&#xC138;&#xC694;. :</p><p></p><p class="code-label">blog/templates/blog/post_list.html</p><p></p><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-header&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/&quot;</span>&gt;</span>Django Girls Blog<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>```
+
+&#xADF8;&#xB9AC;&#xACE0; &#xBE14;&#xB85C;&#xADF8; &#xAC8C;&#xC2DC;&#xAE00;&#xC744; &#xB098;&#xD0C0;&#xB0B4;&#xB294; `div`&#xC5D0; `post`&#xB77C;&#xACE0; &#xD074;&#xB798;&#xC2A4;&#xBA85;&#xC744; &#xBD99;&#xC5EC;&#xBCF4;&#xC138;&#xC694;.
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+```html
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;post&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>published: {{ post.published_date }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>{{ post.title }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{{ post.text|linebreaksbr }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+<p>&#xC774;&#xC81C; &#xC5EC;&#xB7EC; &#xC120;&#xD0DD;&#xC790;&#xB4E4;&#xC744; &#xCD94;&#xAC00;&#xD574;&#xBD05;&#xC2DC;&#xB2E4;. &#xD074;&#xB798;&#xC2A4; &#xC120;&#xD0DD;&#xC790;&#xB294; <code>.</code>&#xC73C;&#xB85C; &#xC2DC;&#xC791;&#xD569;&#xB2C8;&#xB2E4;. &#xC778;&#xD130;&#xB137;&#xC5D0; &#xB9CE;&#xC740; CSS &#xD29C;&#xD1A0;&#xB9AC;&#xC5BC;&#xACFC; &#xC124;&#xBA85; &#xAC00;&#xC774;&#xB4DC;&#xAC00; &#xC788;&#xC73C;&#xB2C8; &#xCC3E;&#xC544;&#xBCF4;&#xBA74; &#xB3C4;&#xC6C0;&#xC774; &#xB420; &#xAC70;&#xC5D0;&#xC694;. &#xC774;&#xC81C; <code>blog/static/css/blog.css</code> &#xD30C;&#xC77C;&#xC5D0; &#xC544;&#xB798; &#xCF54;&#xB4DC;&#xB97C; &#xBCF5;&#xC0AC;, &#xBD99;&#xC5EC;&#xB123;&#xAE30; &#xD558;&#xC138;&#xC694;.</p><p></p><p class="code-label">blog/static/css/blog.css</p><p></p><pre><code class="lang-css"><span class="hljs-selector-class">.page-header</span> {
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#ff9400</span>;
+    <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span> <span class="hljs-number">20px</span> <span class="hljs-number">20px</span> <span class="hljs-number">40px</span>;
+}
+
+<span class="hljs-selector-class">.page-header</span> <span class="hljs-selector-tag">h1</span>, <span class="hljs-selector-class">.page-header</span> <span class="hljs-selector-tag">h1</span> <span class="hljs-selector-tag">a</span>, <span class="hljs-selector-class">.page-header</span> <span class="hljs-selector-tag">h1</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:visited</span>, <span class="hljs-selector-class">.page-header</span> <span class="hljs-selector-tag">h1</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:active</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#ffffff</span>;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">36pt</span>;
+    <span class="hljs-attribute">text-decoration</span>: none;
+}
+
+<span class="hljs-selector-class">.content</span> {
+    <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">40px</span>;
+}
+
+<span class="hljs-selector-tag">h1</span>, <span class="hljs-selector-tag">h2</span>, <span class="hljs-selector-tag">h3</span>, <span class="hljs-selector-tag">h4</span> {
+    <span class="hljs-attribute">font-family</span>: <span class="hljs-string">&apos;Lobster&apos;</span>, cursive;
+}
+
+<span class="hljs-selector-class">.date</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#828282</span>;
+}
+
+<span class="hljs-selector-class">.save</span> {
+    <span class="hljs-attribute">float</span>: right;
+}
+
+<span class="hljs-selector-class">.post-form</span> <span class="hljs-selector-tag">textarea</span>, <span class="hljs-selector-class">.post-form</span> <span class="hljs-selector-tag">input</span> {
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+}
+
+<span class="hljs-selector-class">.top-menu</span>, <span class="hljs-selector-class">.top-menu</span><span class="hljs-selector-pseudo">:hover</span>, <span class="hljs-selector-class">.top-menu</span><span class="hljs-selector-pseudo">:visited</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#ffffff</span>;
+    <span class="hljs-attribute">float</span>: right;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">26pt</span>;
+    <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">20px</span>;
+}
+
+<span class="hljs-selector-class">.post</span> {
+    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">70px</span>;
+}
+
+<span class="hljs-selector-class">.post</span> <span class="hljs-selector-tag">h1</span> <span class="hljs-selector-tag">a</span>, <span class="hljs-selector-class">.post</span> <span class="hljs-selector-tag">h1</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:visited</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#000000</span>;
+}</code></pre>
+<p>&#xC790;, &#xB2E4;&#xC74C;&#xC740; &#xAE00;&#xC744; &#xBCF4;&#xC5EC;&#xC8FC;&#xB294; HTML &#xCF54;&#xB4DC;&#xB97C; post&#xB77C;&#xB294; &#xD074;&#xB798;&#xC2A4; &#xBA85;&#xC744; &#xC120;&#xC5B8;&#xD574; div&#xB85C; &#xAC10;&#xC2F8;&#xC138;&#xC694;. &#xC774;&#xB807;&#xAC8C; &#xBC14;&#xAFB8;&#xBA74; &#xB429;&#xB2C8;&#xB2E4;. :</p><p></p><p class="code-label">blog/templates/blog/post_list.html</p><p></p><pre><code class="lang-html">{% for post in posts %}
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;post&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>published: {{ post.published_date }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>{{ post.title }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{{ post.text|linebreaksbr }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+{% endfor %}</code></pre>
+<p><code>blog/templates/blog/post_list.html</code> &#xD30C;&#xC77C; &#xC548;&#xC5D0; &#xC544;&#xB798; &#xCF54;&#xB4DC;&#xB97C; &#xB123;&#xC73C;&#xC138;&#xC694;.</p><p></p><p class="code-label">blog/templates/blog/post_list.html</p><p></p><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content container&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-md-8&quot;</span>&gt;</span>
+            {% for post in posts %}
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;post&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;date&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>published: {{ post.published_date }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>{{ post.title }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{{ post.text|linebreaksbr }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            {% endfor %}
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+<p>&#xD30C;&#xC77C;&#xC744; &#xC800;&#xC7A5;&#xD558;&#xACE0; &#xC6F9; &#xC0AC;&#xC774;&#xD2B8;&#xB97C; &#xC0C8;&#xB85C;&#xACE0;&#xCE68;&#xD558;&#xC138;&#xC694;.</p><p><img alt="Figure 14.4" src="images/final.png"></p><p>&#xBC29;&#xAE08; &#xBD99;&#xC5EC; &#xB123;&#xC740; &#xCF54;&#xB4DC;&#xB97C;&#xBCF4;&#xACE0; HTML&#xC5D0; &#xD074;&#xB798;&#xC2A4;&#xB97C; &#xCD94;&#xAC00;&#xD558;&#xACE0; CSS&#xC5D0;&#xC11C; &#xC0AC;&#xC6A9;&#xD588;&#xB358; &#xACF3;&#xC744; &#xCC3E;&#xC544;&#xBCF4;&#xC138;&#xC694;. &#xB0A0;&#xC9DC;&#xB97C; &#xCD08;&#xB85D;&#xC0C9;&#xC73C;&#xB85C; &#xBC14;&#xAFB8;&#xB824;&#xBA74; &#xC5B4;&#xB290; &#xBD80;&#xBD84;&#xC744; &#xC218;&#xC815;&#xD558;&#xBA74; &#xB420;&#xAE4C;&#xC694;?</p><p>CSS&#xB97C; &#xBC14;&#xAFD4;&#xBCF4;&#xB294; &#xAC83;&#xC744; &#xB450;&#xB824;&#xC6CC;&#xD558;&#xC9C0; &#xB9C8;&#xC138;&#xC694;. CSS&#xB97C; &#xAC00;&#xC9C0;&#xACE0; &#xB180;&#xB2E4;&#xBCF4;&#xBA74; &#xC5B4;&#xB5BB;&#xAC8C; &#xC791;&#xB3D9;&#xB418;&#xB294;&#xC9C0; &#xC880;&#xB354; &#xC774;&#xD574;&#xD560; &#xC218; &#xC788;&#xC744; &#xAC70;&#xC5D0;&#xC694;. &#xB9DD;&#xAC00;&#xB728;&#xB838;&#xB354;&#xB77C;&#xB3C4; &#xAD1C;&#xCC2E;&#xC544;&#xC694;. &#xC5B8;&#xC81C;&#xB4E0;&#xC9C0; &#xB418;&#xB3CC;&#xB9B4; &#xC218; &#xC788;&#xC73C;&#xB2C8;&#xAE4C;&#xC694;!</p><p>&#xBB34;&#xB8CC; &#xC628;&#xB77C;&#xC778; <a href="https://www.codecademy.com/tracks/web" target="_blank">Codecademy HTML &amp; CSS &#xCF54;&#xC2A4;</a>&#xB97C; &#xC218;&#xAC15;&#xD574;&#xBCF4;&#xB294; &#xAC83;&#xC744; &#xCD94;&#xCC9C;&#xD569;&#xB2C8;&#xB2E4;. CSS&#xB85C; &#xC6F9; &#xC0AC;&#xC774;&#xD2B8;&#xB97C; &#xB354; &#xC544;&#xB984;&#xB2F5;&#xAC8C; &#xB9CC;&#xB4DC;&#xB294; &#xBC29;&#xBC95;&#xC744; &#xBC30;&#xC6B8; &#xC218; &#xC788;&#xC5B4;&#xC694;.</p><p>&#xB2E4;&#xC74C; &#xC7A5;&#xC744; &#xC77D;&#xC744; &#xC900;&#xBE44;&#xAC00; &#xB418;&#xC168;&#xB098;&#xC694;?! :)</p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../django_templates/" class="navigation navigation-prev " aria-label="Previous page: Django 템플릿">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../template_extending/" class="navigation navigation-next " aria-label="Next page: 템플릿 확장하기">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"CSS - 예쁘게 만들기","level":"1.21","depth":1,"next":{"title":"템플릿 확장하기","level":"1.22","depth":1,"path":"template_extending/README.md","ref":"template_extending/README.md","articles":[]},"previous":{"title":"Django 템플릿","level":"1.20","depth":1,"path":"django_templates/README.md","ref":"django_templates/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"django_version":"2.2.4"},"language":"ko","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"css/README.md","mtime":"2020-06-27T13:00:23.970Z","type":"markdown"},"gitbook":{"version":"3.4.0","time":"2020-06-27T13:00:41.274Z"},"basePath":"..","book":{"language":"ko"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

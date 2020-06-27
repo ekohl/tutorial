@@ -1,0 +1,660 @@
+
+<!DOCTYPE HTML>
+<html lang="ko" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Python 설치하기 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.4.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../code_editor/" />
+    
+    
+    <link rel="prev" href="../intro_to_command_line/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="검색어 입력" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    들어가며
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    설치하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    설치하기 (chromebook)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    인터넷은 어떻게 작동할까요
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Command Line 시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Python 설치하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    코드 에디터
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Python 시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Django란 무엇인가요
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Django 설치하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    나의 첫 번째 Django 프로젝트!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Django 모델
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django 관리자
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    배포하기!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django urls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django 뷰 만들기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    HTML 시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM(Querysets)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    템플릿 동적 데이터
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django 템플릿
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - 예쁘게 만들기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    템플릿 확장하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    애플리케이션 확장하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Django 폼
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    더 나아가기
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKit에 게시
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Python 설치하기</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#xD30C;&#xC774;&#xC36C;-&#xC2DC;&#xC791;&#xD558;&#xAE30;">&#xD30C;&#xC774;&#xC36C; &#xC2DC;&#xC791;&#xD558;&#xAE30;</h1><p>&#xC798; &#xC624;&#xC168;&#xC2B5;&#xB2C8;&#xB2E4;!</p><p>&#xC81C;&#xC77C; &#xBA3C;&#xC800; &#xD30C;&#xC774;&#xC36C;(Python)&#xC5D0; &#xB300;&#xD574; &#xC124;&#xBA85;&#xD560;&#xAC8C;&#xC694;. &#xD30C;&#xC774;&#xC36C;&#xC740; &#xC544;&#xC8FC; &#xC778;&#xAE30;&#xC788;&#xB294; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D; &#xC5B8;&#xC5B4;&#xB85C;, &#xC6F9; &#xC0AC;&#xC774;&#xD2B8;&#xB294; &#xBB3C;&#xB860; &#xAC8C;&#xC784;, &#xACFC;&#xD559;&#xC6A9; &#xC18C;&#xD504;&#xD2B8;&#xC6E8;&#xC5B4;, &#xADF8;&#xB798;&#xD53D; &#xC18C;&#xD504;&#xD2B8;&#xC6E8;&#xC5B4; &#xB4F1; &#xB2E4;&#xC591;&#xD55C; &#xAC83;&#xC744; &#xB9CC;&#xB4E4; &#xC218; &#xC788;&#xB2F5;&#xB2C8;&#xB2E4;.</p><p>&#xD30C;&#xC774;&#xC36C;&#xC740; 1980&#xB144;&#xB300; &#xD6C4;&#xBC18;&#xC5D0; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D; &#xC5B8;&#xC5B4;&#xB97C; &#xAE30;&#xACC4; &#xBFD0;&#xB9CC; &#xC544;&#xB2C8;&#xB77C; &#xC778;&#xAC04;&#xB3C4; &#xC77D;&#xC744; &#xC218; &#xC788;&#xB3C4;&#xB85D; &#xB9CC;&#xB4E4;&#xACE0;&#xC790; &#xD0C4;&#xC0DD;&#xD55C; &#xC5B8;&#xC5B4;&#xC785;&#xB2C8;&#xB2E4;. &#xD30C;&#xC774;&#xC36C;&#xC774; &#xB2E4;&#xB978; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D; &#xC5B8;&#xC5B4;&#xBCF4;&#xB2E4; &#xD6E8;&#xC52C; &#xAC04;&#xB2E8;&#xD558;&#xAC8C; &#xBCF4;&#xC774;&#xACE0;, &#xBC30;&#xC6B0;&#xAE30;&#xB3C4; &#xC26C;&#xC6B4; &#xC774;&#xC720;&#xB3C4; &#xADF8; &#xB54C;&#xBB38;&#xC774;&#xC8E0;. &#xD558;&#xC9C0;&#xB9CC; &#xD30C;&#xC774;&#xC36C;&#xC740; &#xC544;&#xC8FC; &#xAC15;&#xB825;&#xD55C; &#xAE30;&#xB2A5;&#xC744; &#xAC00;&#xC9C4; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D; &#xC5B8;&#xC5B4;&#xB78D;&#xB2C8;&#xB2E4;.</p><h1 id="&#xD30C;&#xC774;&#xC36C;-&#xC124;&#xCE58;&#xD558;&#xAE30;">&#xD30C;&#xC774;&#xC36C; &#xC124;&#xCE58;&#xD558;&#xAE30;</h1><blockquote><p><strong>Note</strong> &#xD06C;&#xB86C;&#xBD81; &#xC0AC;&#xC6A9;&#xC790;&#xB294; &#xC774;&#xBC88; &#xC7A5;&#xC744; &#xAC74;&#xB108;&#xB6F0;&#xACE0;,  <a href="../chromebook_setup/">&#xD06C;&#xB86C;&#xBD81;&#xC5D0;&#xC11C; &#xC124;&#xCE58;&#xD558;&#xAE30;</a> &#xC7A5;&#xC73C;&#xB85C; &#xB118;&#xC5B4;&#xAC00;&#xC138;&#xC694;.</p><p><strong>Note</strong> &#xC124;&#xCE58;&#xB97C; &#xB9C8;&#xCE5C; &#xBD84;&#xC740; &#xB2E4;&#xC74C; &#xC7A5;&#xC73C;&#xB85C; &#xB118;&#xC5B4;&#xAC00;&#xC138;&#xC694;!</p><p><strong>Note</strong> &#xC9D1;&#xC5D0;&#xC11C; &#xD559;&#xC2B5;&#xD558;&#xC2DC;&#xB294; &#xBD84;&#xB4E4;&#xC740; <a href="https://www.youtube.com/watch?v=pVTaqzKZCdA" target="_blank">&#xD30C;&#xC774;&#xC36C; &amp; &#xCF54;&#xB4DC;&#xC5D0;&#xB514;&#xD130; &#xC124;&#xCE58;&#xD558;&#xAE30;</a> &#xC601;&#xC0C1;&#xC744; &#xBCF4;&#xC138;&#xC694;.</p><p><strong>Note</strong> &#xC774; &#xC7A5;&#xC740; Geek Girls Carrots (<a href="https://github.com/ggcarrots/django-carrots" target="_blank">https://github.com/ggcarrots/django-carrots</a>) &#xD29C;&#xD1A0;&#xB9AC;&#xC5BC;&#xC744; &#xAE30;&#xCD08;&#xB85C; &#xC791;&#xC131;&#xB418;&#xC5C8;&#xC2B5;&#xB2C8;&#xB2E4;.</p></blockquote><p>&#xC7A5;&#xACE0;&#xB294; &#xD30C;&#xC774;&#xC36C; &#xC5B8;&#xC5B4;&#xB85C; &#xC791;&#xC131;&#xB410;&#xC2B5;&#xB2C8;&#xB2E4;. &#xD30C;&#xC774;&#xC36C;&#xC774; &#xC788;&#xC5B4;&#xC57C; &#xC7A5;&#xACE0;&#xB97C; &#xD560; &#xC218; &#xC788;&#xC5B4;&#xC694;. &#xC6B0;&#xC120; &#xC124;&#xCE58;&#xBD80;&#xD130; &#xD574;&#xBCFC;&#xAE4C;&#xC694;! &#xC6B0;&#xB9AC;&#xB294; &#xD30C;&#xC774;&#xC36C; 3.6&#xB97C; &#xC0AC;&#xC6A9;&#xD560; &#xAC70;&#xC608;&#xC694;. &#xC774;&#xBCF4;&#xB2E4; &#xB0AE;&#xC740; &#xBC84;&#xC804;&#xC774; &#xC124;&#xCE58;&#xB418;&#xC5C8;&#xB2E4;&#xBA74;, &#xBC84;&#xC804; &#xC5C5;&#xADF8;&#xB808;&#xC774;&#xB4DC; &#xD558;&#xC138;&#xC694;.</p><sec data-title="Windows" data-id="python_windows_ko" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Windows<a class="pull-right section atTitle btn btn-default" target="python_windows_ko"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_windows_ko"><div class="panel-body">
+
+
+<p>&#xC0AC;&#xC6A9; &#xC911;&#xC778; &#xCEF4;&#xD4E8;&#xD130; &#xC708;&#xB3C4;&#xC6B0; &#xC6B4;&#xC601;&#xCCB4;&#xC81C;&#xAC00; 32&#xBE44;&#xD2B8;&#xC778;&#xC9C0; 64&#xBE44;&#xD2B8;&#xC778;&#xC9C0; &#xD655;&#xC778;&#xD558;&#xB824;&#xBA74; <a href="https://support.microsoft.com/en-au/kb/827218" target="_blank">https://support.microsoft.com/en-au/kb/827218</a> &#xC5D0;&#xC11C; &#xD655;&#xC778;&#xD558;&#xC138;&#xC694;. &#xC708;&#xB3C4;&#xC6B0; &#xC6A9; &#xD30C;&#xC774;&#xC36C;&#xC740; <a href="https://www.python.org/downloads/windows/" target="_blank">https://www.python.org/downloads/windows/</a> &#xC6F9; &#xC0AC;&#xC774;&#xD2B8;&#xC5D0;&#xC11C; &#xB2E4;&#xC6B4;&#xB85C;&#xB4DC; &#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &quot;Latest Python 3 Release - Python x.x.x&quot;&#xB9C1;&#xD06C;&#xB97C; &#xD074;&#xB9AD;&#xD558;&#xC138;&#xC694;. <strong>64 &#xBE44;&#xD2B8;</strong> &#xBC84;&#xC804;&#xC758; Windows&#xC778; &#xACBD;&#xC6B0; <strong>Windows x86-64 executable installer</strong>&#xB97C; &#xB2E4;&#xC6B4;&#xB85C;&#xB4DC;&#xD558;&#xC138;&#xC694;. &#xC774;&#xC678;&#xC5D0;&#xB294; <strong>Windows x86 executable installer</strong>&#xC744; &#xB2E4;&#xC6B4;&#xB85C;&#xB4DC;&#xD558;&#xC138;&#xC694;. &#xC124;&#xCE58; &#xD504;&#xB85C;&#xADF8;&#xB7A8;&#xC744; &#xB2E4;&#xC6B4;&#xB85C;&#xB4DC; &#xD55C; &#xD6C4;&#xC5D0; &#xC2E4;&#xD589;(&#xB354;&#xBE14; &#xD074;&#xB9AD;)&#xD558;&#xACE0; &#xC9C0;&#xC2DC; &#xC0AC;&#xD56D;&#xC744; &#xB530;&#xB974;&#xC138;&#xC694;.</p><blockquote><p><strong>Note</strong> &#xC124;&#xCE58;&#xD558;&#xB294; &#xB3D9;&#xC548; &quot;Setup(&#xC124;&#xCE58;&#xD558;&#xAE30;)&quot;&#xC774;&#xB77C;&#xACE0; &#xD45C;&#xC2DC;&#xB41C; &#xCC3D;&#xC774; &#xB098;&#xD0C0;&#xB0A9;&#xB2C8;&#xB2E4;. &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; &quot;Add Python 3.6 to PATH(python3.6&#xB97C; &#xACBD;&#xB85C;&#xC5D0; &#xCD94;&#xAC00;)&quot;&#xCCB4;&#xD06C; &#xBC15;&#xC2A4;&#xB97C; &#xCCB4;&#xD06C;&#xD558;&#xACE0; &quot;Install Now(&#xC9C0;&#xAE08; &#xC124;&#xCE58;&#xD558;&#xAE30;)&quot;&#xB97C; &#xD074;&#xB9AD;&#xD558;&#xC138;&#xC694;.</p></blockquote><p><img alt="Don&apos;t forget to add Python to the Path" src="images/python-installation-options.png"></p><p>&#xB2E4;&#xC74C; &#xB2E8;&#xACC4;&#xC5D0;&#xC11C;&#xB294; &#xC708;&#xB3C4;&#xC6B0; &#xBA85;&#xB839; &#xD504;&#xB86C;&#xD504;&#xD2B8;&#xB97C; &#xC0AC;&#xC6A9;&#xD560; &#xAC70;&#xC5D0;&#xC694; (&#xC708;&#xB3C4;&#xC6B0; &#xBA85;&#xB839;&#xC5B4;&#xB3C4; &#xC54C;&#xB824;&#xB4DC;&#xB9B4; &#xAC70;&#xC5D0;&#xC694;. &#xC9C0;&#xAE08;&#xC740; &#xC77C;&#xBD80; &#xBA85;&#xB839;&#xC744; &#xC785;&#xB825;&#xD574;&#xC57C;&#xD558;&#xB294; &#xACBD;&#xC6B0; &#xC2DC;&#xC791; &#xBA54;&#xB274; &#x2192; &#xBAA8;&#xB4E0; &#xD504;&#xB85C;&#xADF8;&#xB7A8; &#x2192; &#xBCF4;&#xC870; &#xD504;&#xB85C;&#xADF8;&#xB7A8; &#x2192; &#xBA85;&#xB839; &#xD504;&#xB86C;&#xD504;&#xD2B8;&#xB85C; &#xC774;&#xB3D9;&#xD558;&#xC138;&#xC694;. Windows &#xD0A4;&#xB97C; &#xB204;&#xB974;&#xACE0; &quot;&#xC2E4;&#xD589;&quot;&#xCC3D;&#xC774; &#xD31D;&#xC5C5; &#xB420; &#xB54C;&#xAE4C;&#xC9C0; &quot;R&quot;&#xD0A4;&#xB97C; &#xB204;&#xB974;&#xBA74; &#xB429;&#xB2C8;&#xB2E4;. &#xBA85;&#xB839;&#xC5B4;&#xB97C; &#xC785;&#xB825;&#xD558;&#xB824;&#xBA74; &quot;cmd&quot;&#xB97C; &#xC785;&#xB825;&#xD558;&#xACE0; &quot;&#xC2E4;&#xD589;&quot;&#xCC3D;&#xC5D0;&#xC11C; &#xC5D4;&#xD130;&#xD0A4;&#xB97C; &#xB204;&#xB974;&#xC138;&#xC694;. (&#xC708;&#xB3C4;&#xC6B0; &#xCD5C;&#xC2E0; &#xBC84;&#xC804;&#xC5D0;&#xC11C;&#xB294; &quot;&#xBA85;&#xB839; &#xD504;&#xB86C;&#xD504;&#xD2B8;&quot;&#xAC00; &#xBA54;&#xB274;&#xC5D0; &#xC5C6;&#xC744; &#xC218; &#xC788;&#xC5B4; &#xAC80;&#xC0C9;&#xD574; &#xC2E4;&#xD589;&#xD558;&#xBA74; &#xB429;&#xB2C8;&#xB2E4;)</p><p><img alt="Type \" cmd\"="" in="" the="" \"run\"="" window"="" src="images/windows-plus-r.png"></p><blockquote><p><strong>Note</strong> &#xC708;&#xB3C4;&#xC6B0; &#xC774;&#xC804; &#xBC84;&#xC804;(&#xC708;&#xB3C4;&#xC6B0;7, Vista &#xB4F1;)&#xC5D0;&#xC11C; &#xD30C;&#xC774;&#xC36C; 3.6.x &#xC124;&#xCE58;&#xC624;&#xB958;&#xAC00; &#xC0DD;&#xAE30;&#xBA74;, &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; &#xD574;&#xBCF4;&#xC138;&#xC694;.</p></blockquote><ol><li>&#xBAA8;&#xB4E0; &#xC708;&#xB3C4;&#xC6B0; &#xC5C5;&#xB370;&#xC774;&#xD2B8; &#xD6C4; &#xD30C;&#xC774;&#xC36C; 3.6&#xB97C; &#xB2E4;&#xC2DC; &#xC124;&#xCE58;&#xD569;&#xB2C8;&#xB2E4;.
+</li>
+<li>&#xB610;&#xB294; <a href="https://www.python.org/downloads/windows/" target="_blank">&#xD30C;&#xC774;&#xC36C; &#xC774;&#xC804; &#xBC84;&#xC804;</a>&#xC744; &#xC124;&#xCE58;&#xD569;&#xB2C8;&#xB2E4;. 
+</li></ol>
+<p>&#xBC84;&#xC804;&#xC774; &#xB0AE;&#xC740; &#xD30C;&#xC774;&#xC36C; &#xC124;&#xCE58; &#xC2DC;, &#xC124;&#xCE58; &#xD654;&#xBA74;&#xC774; &#xC704;&#xC5D0; &#xD45C;&#xC2DC;&#xB41C; &#xAC83;&#xACFC; &#xC57D;&#xAC04; &#xB2E4;&#xB974;&#xAC8C; &#xBCF4;&#xC77C; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &quot;Add Python 3.6. to PATH&quot;&#xB97C; &#xBCF4;&#xB824;&#xBA74; &#xC544;&#xB798;&#xB85C; &#xC2A4;&#xD06C;&#xB864; &#xD55C; &#xB2E4;&#xC74C; &#xC67C;&#xCABD;&#xC758; &#xBC84;&#xD2BC;&#xC744; &#xD074;&#xB9AD;&#xD558;&#xACE0; &quot;Will be installed on local hard drive(&#xB85C;&#xCEEC; &#xD558;&#xB4DC; &#xB4DC;&#xB77C;&#xC774;&#xBE0C;&#xC5D0; &#xC124;&#xCE58;)&quot;&#xB97C; &#xC120;&#xD0DD;&#xD558;&#xC138;&#xC694;.</p><p><img alt="Add Python to the Path, older versions" src="images/add_python_to_windows_path.png"></p></div></div></div></sec>
+
+
+<sec data-title="OS X" data-id="python_OSX_ko" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>OS X<a class="pull-right section atTitle btn btn-default" target="python_OSX_ko"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_OSX_ko"><div class="panel-body">
+
+
+<blockquote><p><strong>Note</strong> OS X&#xC5D0;&#xC11C;&#xB294; &#xD30C;&#xC774;&#xC36C; &#xC124;&#xCE58;&#xD558;&#xAE30; &#xC804;, Mac &#xC124;&#xC815;&#xC5D0;&#xC11C; App Store&#xAC00; &#xC544;&#xB2CC; &#xD328;&#xD0A4;&#xC9C0;&#xB97C; &#xC124;&#xCE58;&#xD560; &#xC218; &#xC788;&#xB3C4;&#xB85D; &#xC124;&#xC815;&#xD574;&#xC57C;&#xD569;&#xB2C8;&#xB2E4;. &#xC2DC;&#xC2A4;&#xD15C; &#xD658;&#xACBD; &#xC124;&#xC815; (&#xC751;&#xC6A9; &#xD504;&#xB85C;&#xADF8;&#xB7A8; &#xD3F4;&#xB354;&#xC5D0; &#xC788;&#xC74C;)&#xC73C;&#xB85C; &#xC774;&#xB3D9;&#xD558;&#xC5EC; &quot;&#xBCF4;&#xC548; &#xBC0F; &#xAC1C;&#xC778; &#xC815;&#xBCF4;&quot;&#xB97C; &#xD074;&#xB9AD; &#xD55C; &#xB2E4;&#xC74C; &quot;&#xC77C;&#xBC18;&quot;&#xD0ED;&#xC744; &#xD074;&#xB9AD;&#xD558;&#xC138;&#xC694;. &quot;&#xB2E4;&#xC6B4;&#xB85C;&#xB4DC; &#xD55C; &#xC751;&#xC6A9; &#xD504;&#xB85C;&#xADF8;&#xB7A8; &#xD5C8;&#xC6A9;&quot;&#xC774; &quot;Mac App Store&quot;&#xB85C; &#xC124;&#xC815;&#xB41C; &#xACBD;&#xC6B0; &quot;Mac App Store &#xBC0F; &#xD655;&#xC778;&#xB41C; &#xAC1C;&#xBC1C;&#xC790;&quot;&#xB85C; &#xBCC0;&#xACBD;&#xD558;&#xC138;&#xC694;.</p></blockquote><p>&#xC6F9; &#xC0AC;&#xC774;&#xD2B8;&#xB85C; &#xAC00;&#xC11C; &#xD30C;&#xC774;&#xC36C; &#xC124;&#xCE58; &#xD30C;&#xC77C;&#xC744; &#xB2E4;&#xC6B4; &#xBC1B;&#xC73C;&#xC138;&#xC694;. : <a href="https://www.python.org/downloads/release/python-351/" target="_blank">https://www.python.org/downloads/release/python-351/</a></p><ul><li><em>Mac OS X 64-bit/32-bit installer</em> &#xD30C;&#xC77C;&#xC744; &#xB2E4;&#xC6B4;&#xBC1B;&#xC2B5;&#xB2C8;&#xB2E4;.
+</li>
+<li><em>python-3.6.1-macosx10.6.pkg</em>&#xC744; &#xB354;&#xBE14;&#xD074;&#xB9AD;&#xD574; &#xC124;&#xCE58;&#xD569;&#xB2C8;&#xB2E4;.
+</li></ul>
+</div></div></div></sec>
+
+
+<sec data-title="Linux" data-id="python_linux_ko" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Linux<a class="pull-right section atTitle btn btn-default" target="python_linux_ko"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_linux_ko"><div class="panel-body">
+
+
+<p>&#xC774;&#xBBF8; &#xD30C;&#xC774;&#xC36C;&#xC774; &#xC124;&#xCE58;&#xB418;&#xC5C8;&#xC744; &#xAC81;&#xB2C8;&#xB2E4;. &#xC124;&#xCE58;&#xB41C; &#xBC84;&#xC804;&#xC744; &#xD655;&#xC778;&#xD558;&#xB824;&#xBA74; &#xCF58;&#xC194;&#xC744; &#xC5F4;&#xACE0; &#xB2E4;&#xC74C; &#xBA85;&#xB839;&#xC744; &#xC785;&#xB825;&#xD558;&#xC138;&#xC694;. :</p><p></p><p class="code-label">command-line</p><p></p><pre><code>$ python3 --version
+Python 3.6.1</code></pre>
+<p>3.6.0 &#xBC84;&#xC804;&#xACFC; &#xAC19;&#xC774; &apos;&#xB9C8;&#xC774;&#xD06C;&#xB85C; &#xBC84;&#xC804;&apos;&#xC758; &#xD30C;&#xC774;&#xC36C;&#xC774; &#xC124;&#xCE58;&#xB418;&#xC5B4;&#xC788;&#xB294; &#xACBD;&#xC6B0; &#xC5C5;&#xADF8;&#xB808;&#xC774;&#xB4DC; &#xD560; &#xD544;&#xC694;&#xAC00; &#xC5C6;&#xC2B5;&#xB2C8;&#xB2E4;. &#xB2E4;&#xB978; &#xBC84;&#xC804;&#xC758; &#xD30C;&#xC774;&#xC36C;&#xC744; &#xC124;&#xCE58;&#xD558;&#xACE0; &#xC2F6;&#xC73C;&#xBA74; &#xC544;&#xB798;&#xC640; &#xAC19;&#xC774;&#xD558;&#xBA74; &#xB429;&#xB2C8;&#xB2E4;. :</p></div></div></div></sec>
+
+
+<sec data-title="Debian / Ubuntu" data-id="python_debian_ko" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Debian / Ubuntu<a class="pull-right section atTitle btn btn-default" target="python_debian_ko"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_debian_ko"><div class="panel-body">
+
+
+<p>&#xCF58;&#xC194;&#xC5D0; &#xC544;&#xB798; &#xBA85;&#xB839;&#xC5B4;&#xB97C; &#xC785;&#xB825;&#xD558;&#xC138;&#xC694;. :</p><p></p><p class="code-label">command-line</p><p></p><pre><code>$ sudo apt install python3.6</code></pre>
+</div></div></div></sec>
+
+
+<sec data-title="Fedora" data-id="python_fedora_ko" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Fedora<a class="pull-right section atTitle btn btn-default" target="python_fedora_ko"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_fedora_ko"><div class="panel-body">
+
+
+<p>&#xCF58;&#xC194;&#xC5D0; &#xC544;&#xB798; &#xBA85;&#xB839;&#xC5B4;&#xB97C; &#xC785;&#xB825;&#xD558;&#xC138;&#xC694;. :</p><p></p><p class="code-label">command-line</p><p></p><pre><code>$ sudo dnf install python3</code></pre>
+</div></div></div></sec>
+
+
+<sec data-title="openSUSE" data-id="python_openSUSE_ko" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>openSUSE<a class="pull-right section atTitle btn btn-default" target="python_openSUSE_ko"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_openSUSE_ko"><div class="panel-body">
+
+
+<p>&#xCF58;&#xC194;&#xC5D0; &#xC544;&#xB798; &#xBA85;&#xB839;&#xC5B4;&#xB97C; &#xC785;&#xB825;&#xD558;&#xC138;&#xC694;. :</p><p></p><p class="code-label">command-line</p><p></p><pre><code>$ sudo zypper install python3</code></pre>
+</div></div></div></sec>
+
+
+<p>&#xC124;&#xCE58;&#xAC00; &#xC131;&#xACF5;&#xC801;&#xC73C;&#xB85C; &#xB9C8;&#xCCE4;&#xB294;&#xC9C0; &#xD655;&#xC778;&#xD558;&#xB824;&#xBA74;, <em>&#xD130;&#xBBF8;&#xB110;</em> &#xC744; &#xC5F4;&#xACE0; <code>python3</code> &#xBA85;&#xB839;&#xC5B4;&#xB97C; &#xC785;&#xB825;&#xD574;&#xBCF4;&#xC138;&#xC694;.</p><p></p><p class="code-label">command-line</p><p></p><pre><code>$ python3 --version
+Python 3.6.1</code></pre>
+<blockquote><p><strong>Note</strong> &#xC708;&#xB3C4;&#xC6B0;&#xC5D0;&#xC11C; <code>python3</code>&#xBA85;&#xB839;&#xC5B4;&#xB97C; &#xC785;&#xB825;&#xD55C; &#xD6C4; &#xC5D0;&#xB7EC; &#xBA54;&#xC138;&#xC9C0;&#xAC00; &#xB098;&#xC628;&#xB2E4;&#xBA74; <code>python</code>(<code>3</code>&#xC744; &#xBE7C;&#xACE0;)&#xC774;&#xB77C; &#xC785;&#xB825;&#xD574;&#xBCF4;&#xACE0; &#xD30C;&#xC774;&#xC36C; 3.6&#xBC84;&#xC804;&#xC778;&#xC9C0; &#xCCB4;&#xD06C;&#xD574;&#xBCF4;&#xC138;&#xC694;.</p></blockquote><p>&#xC124;&#xCE58; &#xB3C4;&#xC911; &#xBB38;&#xC81C;&#xAC00; &#xC0DD;&#xAE30;&#xAC70;&#xB098; &#xC798;&#xB418;&#xC9C0; &#xC54A;&#xC73C;&#xBA74; &#xCF54;&#xCE58;&#xB4E4;&#xC5D0;&#xAC8C; &#xB3C4;&#xC6C0;&#xC744; &#xC694;&#xCCAD;&#xD558;&#xC138;&#xC694;! &#xAC00;&#xB054;&#xC740; &#xACBD;&#xD5D8;&#xC774; &#xB9CE;&#xC740; &#xBD84;&#xB4E4;&#xC5D0;&#xAC8C; &#xB3C4;&#xC6C0;&#xC744; &#xBC1B;&#xB294; &#xAC83;&#xC774; &#xB354; &#xC88B;&#xC744; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../intro_to_command_line/" class="navigation navigation-prev " aria-label="Previous page: Command Line 시작하기">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../code_editor/" class="navigation navigation-next " aria-label="Next page: 코드 에디터">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Python 설치하기","level":"1.6","depth":1,"next":{"title":"코드 에디터","level":"1.7","depth":1,"path":"code_editor/README.md","ref":"code_editor/README.md","articles":[]},"previous":{"title":"Command Line 시작하기","level":"1.5","depth":1,"path":"intro_to_command_line/README.md","ref":"intro_to_command_line/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"django_version":"2.2.4"},"language":"ko","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"python_installation/README.md","mtime":"2020-06-27T13:00:24.006Z","type":"markdown"},"gitbook":{"version":"3.4.0","time":"2020-06-27T13:00:41.274Z"},"basePath":"..","book":{"language":"ko"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

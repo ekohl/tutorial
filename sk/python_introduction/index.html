@@ -1,0 +1,958 @@
+
+<!DOCTYPE HTML>
+<html lang="sk" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Úvod do jazyka Python · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.4.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../django/" />
+    
+    
+    <link rel="prev" href="../code_editor/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Úvod
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Inštalácia
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    Inštalácia (chromebook)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    Ako funguje Internet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Úvod do príkazového riadku
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Inštalácia Pythonu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    Editor kódu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Úvod do jazyka Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Čo je Django?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Inštalácia Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    Tvoj prvý Django projekt!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Django modely
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Nasadenie!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django url
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django views - čas tvoriť!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    Úvod do HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM (tvorba dotazov)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    Dynamické dáta v šablónach
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Šablóny Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - skrášli to
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Rozširovanie šablón
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Ako rozšíriť aplikáciu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Formuláre Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    Čo ďalej?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Úvod do jazyka Python</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#xFA;vod-do-jazyka-python">&#xDA;vod do jazyka Python</h1><blockquote><p>&#x10C;as&#x165; tejto kapitoly je zalo&#x17E;en&#xE1; na tutori&#xE1;li Geek Girls Carrots (<a href="https://github.com/ggcarrots/django-carrots" target="_blank">https://github.com/ggcarrots/django-carrots</a>).</p></blockquote><p>Po&#x10F;me nap&#xED;sa&#x165; nejak&#xFD; k&#xF3;d!</p><h2 id="python-prompt">Python prompt</h2><blockquote><p>Pre &#x10D;itate&#x13E;ov doma: T&#xE1;to kapitola je spracovan&#xE1; v <a href="https://www.youtube.com/watch?v=MO63L4s-20U" target="_blank">Python Basics: Integers, Strings, Lists, Variables and Errors</a> videu.</p></blockquote><p>Aby sme mohli za&#x10D;a&#x165; s Pythonom, mus&#xED;te otvori&#x165; <em>pr&#xED;kazov&#xFD; riadok</em> (angl. command line) na svojom po&#x10D;&#xED;ta&#x10D;i. U&#x17E; by ste mali vedie&#x165; ako sa to rob&#xED; -- nau&#x10D;ili ste sa to v <a href="../intro_to_command_line/"> &#xDA;vode do pr&#xED;kazov&#xE9;ho riadku</a>.</p><p>Ak ste hotov&#xED;, pokra&#x10D;ujte s in&#x161;trukciami ni&#x17E;&#x161;ie.</p><p>Chceme otvori&#x165; Python konzolu, tak&#x17E;e nap&#xED;&#x161;te <code>python</code> na Windowse alebo <code>python3</code> na Mac alebo OS/Linux a stla&#x10D;te <code>enter</code>.</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        $ python3
+        Python 3.6.1 (...)
+        Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+        &gt;&gt;&gt;</code></pre>
+<h2 id="v&#xE1;&#x161;-prv&#xFD;-pr&#xED;kaz-v-pythone">V&#xE1;&#x161; prv&#xFD; pr&#xED;kaz v Pythone!</h2><p>Po spusten&#xED; pr&#xED;kazu Python sa prompt zmenil na <code>&gt;&gt;&gt;</code>. Pre n&#xE1;s to znamen&#xE1; &#x17E;e odteraz by sme mali p&#xED;sa&#x165; pr&#xED;kazy iba v jazyku Python. Nemus&#xED;te p&#xED;sa&#x165; <code>&gt;&gt;&gt;</code> - Python to urob&#xED; pre V&#xE1;s.</p><p>Ak by ste chceli kedyko&#x13E;vek ukon&#x10D;i&#x165; konzolu Pythonu, len nap&#xED;&#x161;te <code>exit()</code> alebo m&#xF4;&#x17E;ete pou&#x17E;i&#x165; aj skratku <code>Ctrl + Z</code> vo Windowse alebo <code>Ctrl + D</code> pre Mac/Linux. Potom u&#x17E; nebudete vidie&#x165; toto: <code>&gt;&gt;&gt;</code>.</p><p>Zatia&#x13E; nechceme opusti&#x165; Python konzolu. Chceme sa o nej dozvedie&#x165; viac. Za&#x10D;nime t&#xFD;m, &#x17E;e sk&#xFA;sime matematiku, napr. <code>2 + 3</code>a stla&#x10D; <code>enter</code>.</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">2</span> + <span class="hljs-number">3</span>
+<span class="hljs-number">5</span></code></pre>
+<p>Super! Vid&#xED;te ako vysko&#x10D;ilo rie&#x161;enie? Python vie po&#x10D;&#xED;ta&#x165;! M&#xF4;&#x17E;ete sk&#xFA;si&#x165; aj &#x10F;al&#x161;ie pr&#xED;kazy, ako:</p><ul><li><code>4 * 5</code>
+</li>
+<li><code>5 - 1</code>
+</li>
+<li><code>40 / 2</code>
+</li></ul>
+<p>Aby sme vypo&#x10D;&#xED;tali mocninu, povedzme 2 na tretiu, zad&#xE1;me: </p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">2</span> ** <span class="hljs-number">3</span>
+<span class="hljs-number">8</span></code></pre>
+<p>Bavte sa s t&#xFD;m tro&#x161;ku, potom sa vr&#xE1;&#x165;te sp&#xE4;&#x165; k n&#xE1;m. :)</p><p>Ako vid&#xED;te, Python je dobr&#xE1; kalkula&#x10D;ka. A ak ste zvedav&#xED;, &#x10D;o v&#x161;etko vie e&#x161;te&#x2026;</p><h2 id="re&#x165;azce">Re&#x165;azce</h2><p>&#x10C;o tak va&#x161;e meno? Nap&#xED;&#x161;te svoje meno v &#xFA;vodzovk&#xE1;ch:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&quot;Ola&quot;</span>
+<span class="hljs-string">&quot;Ola&quot;</span></code></pre>
+<p>Pr&#xE1;ve ste vytvorili svoj prv&#xFD; re&#x165;azec! Je postupnos&#x165; znakov, ktor&#xE9; m&#xF4;&#x17E;u by&#x165; spracovan&#xE9; po&#x10D;&#xED;ta&#x10D;om. Re&#x165;azec mus&#xED; v&#x17E;dy za&#x10D;&#xED;na&#x165; a kon&#x10D;&#xED;&#x165; s rovnak&#xFD;m znakom. S&#xFA; to jednoduch&#xE9; (<code>&apos;</code>) alebo dvojit&#xE9; (<code>&quot;</code>) &#xFA;vodzovky (nie je medzi nimi &#x17E;iadny rozdiel!). &#xDA;vodzovky nazna&#x10D;uj&#xFA;, &#x17E;e to &#x10D;o je medzi nimi je re&#x165;azec (string).</p><p>Re&#x165;azce mo&#x17E;no sp&#xE1;ja&#x165; dohromady. Sk&#xFA;s toto:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&quot;Ahoj&quot;</span> + <span class="hljs-string">&quot;Ola&quot;</span>
+<span class="hljs-string">&apos;Ahoj Ola&apos;</span></code></pre>
+<p>Re&#x165;azce m&#xF4;&#x17E;ete n&#xE1;sobi&#x165; aj s &#x10D;&#xED;slom:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&quot;Ola&quot;</span> * <span class="hljs-number">3</span>
+<span class="hljs-string">&apos;OlaOlaOla&apos;</span></code></pre>
+<p>Ak potrebujete da&#x165; apostrof do vn&#xFA;tra re&#x165;azca, m&#xE1;te dva sp&#xF4;soby, ako to urobi&#x165;.</p><p>Pou&#x17E;it&#xED;m dvojit&#xFD;ch &#xFA;vodzoviek:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&quot;Runnin&apos; down the hill&quot;</span>
+<span class="hljs-string">&quot;Runnin&apos; down the hill&quot;</span></code></pre>
+<p>alebo pomocou sp&#xE4;tn&#xE9;ho lom&#xED;tka - tento znak (ak je nap&#xED;san&#xFD; pred &#xFA;vodzovkou) povie, &#x17E;e ona je s&#xFA;&#x10D;as&#x165;ou re&#x165;azca a nie koniec / za&#x10D;iatok re&#x165;azca (``):</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&apos;Runnin\&apos; down the hill&apos;</span>
+<span class="hljs-string">&quot;Runnin&apos; down the hill&quot;</span></code></pre>
+<p>Pekn&#xE9;, hm? Ak chcete vidie&#x165; svoje meno ve&#x13E;k&#xFD;mi p&#xED;smenami, jednoducho zadajte:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&quot;Ola&quot;</span>.upper()
+<span class="hljs-string">&apos;OLA&apos;</span></code></pre>
+<p>Pr&#xE1;ve si pou&#x17E;ila <code>upper</code> <strong>met&#xF3;du</strong> na re&#x165;azci! Met&#xF3;da (ako <code>upper()</code>) je postupnos&#x165; in&#x161;trukci&#xED;, ktor&#xE9; Python vykon&#xE1;va na danom objekte (<code>&quot;Ola&quot;</code>), potom, &#x10D;o ju zavol&#xE1;&#x161;.</p><p>Ak chcete pozna&#x165; po&#x10D;et p&#xED;smen, ktor&#xE9; s&#xFA; obsiahnut&#xE9; vo va&#x161;om mene, tak na to m&#xE1; Python <strong>funkciu</strong> tie&#x17E;!</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>len(<span class="hljs-string">&quot;Ola&quot;</span>)
+<span class="hljs-number">3</span></code></pre>
+<p>Ste zvedav&#xED;, pre&#x10D;o vol&#xE1;me niekedy funkciu s bodkou (<code>.</code>) na konci re&#x165;azca (ako <code>&quot;Ola&quot;.upper()</code>) a niekedy najprv vol&#xE1;me funkciu a re&#x165;azec vlo&#x17E;&#xED;me do z&#xE1;tvoriek? V niektor&#xFD;ch pr&#xED;padoch funkcie patria k objektom, ako napr. <code>upper()</code>, &#x10D;o m&#xF4;&#x17E;e byt vykonan&#xE1; len na re&#x165;azcoch. V takomto pr&#xED;pade sa tieto funkcie volaj&#xFA; <strong>met&#xF3;dy</strong>. Inokedy funkcie nepatria k &#x17E;iadnemu konkr&#xE9;tnemu objektu a m&#xF4;&#x17E;u by&#x165; pou&#x17E;it&#xE9; na r&#xF4;zne typy objektov, rovnako ako <code>len()</code>. Preto zad&#xE1;me <code>&quot;Ola&quot;</code> ako parameter pre funkciu <code>len</code>.</p><h3 id="zhrnutie">Zhrnutie</h3><p>OK, dos&#x165; u&#x17E; re&#x165;azcoch. Zatia&#x13E; ste sa nau&#x10D;ili o:</p><ul><li><strong>prompt</strong> - p&#xED;&#x161;eme pr&#xED;kazy (k&#xF3;d) do Python promptu, z &#x10D;oho dostaneme v&#xFD;sledky zase v jazyku Python
+</li>
+<li><strong>&#x10D;&#xED;sla a re&#x165;azce</strong> - v Pythone s&#xFA; &#x10D;&#xED;sla pou&#x17E;it&#xE9; pre po&#x10D;&#xED;tanie a re&#x165;azce pre textov&#xE9; objekty
+</li>
+<li><strong>oper&#xE1;tory</strong> - ako <code>+</code> alebo <code>*</code>, z dan&#xFD;ch hodn&#xF4;t vyrobia nov&#xFA; hodnotu
+</li>
+<li><strong>funkcie</strong> - napr. <code>upper()</code> alebo <code>len()</code>, vykon&#xE1;vaj&#xFA; &#x10D;innosti na objektoch.
+</li></ul>
+<p>Toto s&#xFA; z&#xE1;klady ka&#x17E;d&#xE9;ho programovacieho jazyka. Ste pripraven&#xED; na nie&#x10D;o &#x165;a&#x17E;&#x161;ie? Stav&#xED;me sa, &#x17E;e &#xE1;no!</p><h2 id="chyby">Chyby</h2><p>Teraz sk&#xFA;sme nie&#x10D;o nov&#xE9;. Je mo&#x17E;n&#xE9; zisti&#x165; d&#x13A;&#x17E;ku nejak&#xE9;ho &#x10D;&#xED;sla rovnako ako sme to robili s na&#x161;im menom? Nap&#xED;&#x161;te <code>len(304023)</code> a stla&#x10D;te <code>enter</code>:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>len(<span class="hljs-number">304023</span>)
+Traceback (most recent call last):
+  File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+TypeError: object of type <span class="hljs-string">&apos;int&apos;</span> has no len()</code></pre>
+<p>Dostali sme na&#x161;u prv&#xFA; chybov&#xFA; hl&#xE1;&#x161;ku! Hovor&#xED; n&#xE1;m, &#x17E;e objekty typu &quot;int&quot; (cel&#xE9; &#x10D;&#xED;sla, angl. integers) nemaj&#xFA; d&#x13A;&#x17E;ku. Tak &#x10D;o m&#xF4;&#x17E;eme teraz robi&#x165;? Mo&#x17E;no by sme mohli nap&#xED;sa&#x165; na&#x161;e &#x10D;&#xED;slo ako re&#x165;azec? Re&#x165;azce maj&#xFA; d&#x13A;&#x17E;ku, pravda?</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>len(str(<span class="hljs-number">304023</span>))
+<span class="hljs-number">6</span></code></pre>
+<p>Funguje to! Pou&#x17E;ili sme funkciu <code>str</code> vo vn&#xFA;tri funkcie <code>len</code>. Funkcia <code>str()</code> prevedie v&#x161;etko na re&#x165;azce.</p><ul><li>Funkcia <code>str</code> prevedie (konvertuje) v&#x161;etko na <strong>re&#x165;azce</strong> (angl. string)
+</li>
+<li>Funkcia <code>int</code> prevedie v&#x161;etko na <strong>int</strong> (cel&#xE9; &#x10D;&#xED;sla)
+</li></ul>
+<blockquote><p>D&#xF4;le&#x17E;it&#xE9;: je mo&#x17E;n&#xE9; konvertova&#x165; &#x10D;&#xED;sla na re&#x165;azce, ale opa&#x10D;ne sa to ned&#xE1; v&#x17E;dy - inak &#x10D;o by bolo napr. <code>int(&apos;hello&apos;)</code>?</p></blockquote><h2 id="premenn&#xE9;">Premenn&#xE9;</h2><p>Ve&#x13E;mi d&#xF4;le&#x17E;it&#xFD; pojem v programovan&#xED; je pojem premennej. Premenn&#xE1; je ni&#x10D; in&#xE9; ako n&#xE1;zov nie&#x10D;oho, &#x10D;o m&#xF4;&#x17E;eme pou&#x17E;i&#x165; aj neskor&#x161;ie v programe. Program&#xE1;tori pou&#x17E;&#xED;vaj&#xFA; premenn&#xE9; aby v nich ukladali d&#xE1;ta, aby ich zdrojov&#xFD; k&#xF3;d bol preh&#x13E;adnej&#x161;&#xED; a aby nemuseli v&#x161;etko dr&#x17E;a&#x165; v hlave.</p><p>Povedzme, &#x17E;e chceme vytvori&#x165; nov&#xFA; premenn&#xFA; s n&#xE1;zvom <code>meno</code>:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>meno = <span class="hljs-string">&quot;Ola&quot;</span></code></pre>
+<p>Zad&#xE1;me meno sa rovn&#xE1; Ola.</p><p>Ako ste si to zbadali u&#x17E;, v&#xE1;&#x161; program ni&#x10D; nevr&#xE1;til sp&#xE4;&#x165; ako to robil v predch&#xE1;dzaj&#xFA;cich pr&#xED;kladoch. Tak ako vieme, &#x10D;i t&#xE1; premenn&#xE1; existuje? Jednoducho nap&#xED;&#x161;te <code>meno</code> a stla&#x10D;te <code>enter</code>:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>meno
+<span class="hljs-string">&apos;Ola&apos;</span></code></pre>
+<p>Hur&#xE1;! Va&#x161;a prv&#xE1; premenn&#xE1;! :) V&#x17E;dy je mo&#x17E;n&#xE9; zmeni&#x165; jej obsah:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>meno = <span class="hljs-string">&quot;Sonja&quot;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>meno
+<span class="hljs-string">&apos;Sonja&apos;</span></code></pre>
+<p>M&#xF4;&#x17E;ete ju pou&#x17E;i&#x165; aj vo funkci&#xE1;ch:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>len(meno)
+<span class="hljs-number">5</span></code></pre>
+<p>&#xDA;&#x17E;asn&#xE9;, &#x17E;e? Samozrejme premenn&#xE9; m&#xF4;&#x17E;u by&#x165; hoci&#x10D;o, tak&#x17E;e aj &#x10D;&#xED;sla! Sk&#xFA;ste toto:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>a = <span class="hljs-number">4</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>b = <span class="hljs-number">6</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>a * b
+<span class="hljs-number">24</span></code></pre>
+<p>Ale &#x10D;o by sa stalo, keby sme pou&#x17E;ili zl&#xFD; n&#xE1;zov? Uh&#xE1;dnete, &#x10D;o sa stane? Sk&#xFA;sme!</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>mesto = <span class="hljs-string">&quot;Tokyo&quot;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>mseto
+Traceback (most recent call last):
+  File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+NameError: name <span class="hljs-string">&apos;mseto&apos;</span> <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> defined</code></pre>
+<p>Chyba! Ako vid&#xED;te, Python m&#xE1; viacero ch&#xFD;b a t&#xE1;to jedna sa vol&#xE1; <strong>NameError</strong>. Python v&#xE1;m hod&#xED; t&#xFA;to chybu ak sa pok&#xFA;site pou&#x17E;i&#x165; premenn&#xFA; ktor&#xE1; e&#x161;te nebola definovan&#xE1;. Ak sa stretnete s touto chybou v bud&#xFA;cnosti, v&#x17E;dy skontrolujte svoj k&#xF3;d, &#x10D;i nem&#xE1;te preklep v niektorom n&#xE1;zve.</p><p>Hrajte sa s t&#xFD;m tro&#x161;ku, a potom uvid&#xED;me &#x10D;o m&#xF4;&#x17E;eme e&#x161;te urobi&#x165;!</p><h2 id="funkcia-print">Funkcia print</h2><p>Vysk&#xFA;&#x161;ajte toto:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>meno = <span class="hljs-string">&apos;Maria&apos;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>meno
+<span class="hljs-string">&apos;Maria&apos;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(meno)
+Maria</code></pre>
+<p>Ak zad&#xE1;te len <code>meno</code>, Python interpreter odpovie re&#x165;azcovou <em>reprezent&#xE1;ciou</em> premennej &apos;meno&apos;, teda p&#xED;smenami M-a-r-i-a medzi jednoduch&#xFD;mi &#xFA;vodzovkami, &apos;&apos;. Ke&#x10F; nap&#xED;&#x161;ete <code>print(meno)</code>, Python vyp&#xED;&#x161;e obsah premennej na obrazovku, bez &#xFA;vodzoviek, &#x10D;o vyzer&#xE1; kraj&#x161;ie.</p><p>Ako uvid&#xED;me nesk&#xF4;r, funkcia <code>print()</code> je tie&#x17E; u&#x17E;ito&#x10D;n&#xE1;, ke&#x10F; chceme tla&#x10D;i&#x165; veci z funkci&#xED;, alebo ak chceme tla&#x10D;i&#x165; veci na viacer&#xFD;ch riadkoch.</p><h2 id="zoznamy">Zoznamy</h2><p>Okrem re&#x165;azcov a cel&#xFD;ch &#x10D;&#xED;sel, m&#xE1; Python v&#x161;etky mo&#x17E;n&#xE9; typy objektov. Teraz sa zozn&#xE1;mime s typom, ktor&#xFD; sa vol&#xE1; <strong>zoznam</strong> (list). Zoznamy s&#xFA; presne to, &#x10D;o si mysl&#xED;te, &#x17E;e s&#xFA;: objekty, ktor&#xE9; s&#xFA; zoznamami in&#xFD;ch objektov. :)</p><p>Po&#x10F;me na to, vytvorte zoznam:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>[]
+[]</code></pre>
+<p>&#xC1;no, tento zoznam je pr&#xE1;zdny. Nie ve&#x13E;mi u&#x17E;ito&#x10D;n&#xE9;, v&#x161;ak? Vytvorme zoznam s &#x10D;&#xED;slami lot&#xE9;rie. Nechceme sa dokola opakova&#x165;, tak&#x17E;e ho hne&#x10F; aj prirad&#xED;me do premennej:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>loteria = [<span class="hljs-number">3</span>, <span class="hljs-number">42</span>, <span class="hljs-number">12</span>, <span class="hljs-number">19</span>, <span class="hljs-number">30</span>, <span class="hljs-number">59</span>]</code></pre>
+<p>OK, m&#xE1;me zoznam! &#x10C;o s n&#xED;m m&#xF4;&#x17E;eme urobi&#x165;? Pozrime sa, ko&#x13E;ko &#x10D;&#xED;sel lot&#xE9;rie m&#xE1;me v zozname. M&#xE1;te predstavu, ktor&#xFA; funkciu by sme mohli pou&#x17E;i&#x165;? Toto u&#x17E; predsa viete!</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>len(loteria)
+<span class="hljs-number">6</span></code></pre>
+<p>&#xC1;no! <code>len()</code> v&#xE1;m vr&#xE1;ti po&#x10D;et objektov v zozname. &#x160;ikovn&#xE9;, nie? Mo&#x17E;no by sme to teraz mohli usporiada&#x165;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>loteria.sort()</code></pre>
+<p>Ni&#x10D; n&#xE1;m to nevr&#xE1;tilo, iba sa zmenilo poradie poradie, v ktorom sa &#x10D;&#xED;sla zobrazia v zozname. Vytla&#x10D;me to znova a pozrime sa, &#x10D;o sa stalo:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>print(loteria)
+[<span class="hljs-number">3</span>, <span class="hljs-number">12</span>, <span class="hljs-number">19</span>, <span class="hljs-number">30</span>, <span class="hljs-number">42</span>, <span class="hljs-number">59</span>]</code></pre>
+<p>Ako vid&#xED;te, &#x10D;&#xED;sla vo va&#x161;om zozname s&#xFA; teraz zoraden&#xE9; od najni&#x17E;&#x161;ej po najvy&#x161;&#x161;iu hodnotu. Gratulujeme!</p><p>Chceli by sme oto&#x10D;i&#x165; poradie? Urobme to!</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>loteria.reverse()
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(loteria)
+[<span class="hljs-number">59</span>, <span class="hljs-number">42</span>, <span class="hljs-number">30</span>, <span class="hljs-number">19</span>, <span class="hljs-number">12</span>, <span class="hljs-number">3</span>]</code></pre>
+<p>Ak chce&#x161; prida&#x165; nie&#x10D;o do svojho zoznamu, m&#xF4;&#x17E;e&#x161; to urobi&#x165; zadan&#xED;m tohto pr&#xED;kazu:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>loteria.append(<span class="hljs-number">199</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(loteria)
+[<span class="hljs-number">59</span>, <span class="hljs-number">42</span>, <span class="hljs-number">30</span>, <span class="hljs-number">19</span>, <span class="hljs-number">12</span>, <span class="hljs-number">3</span>, <span class="hljs-number">199</span>]</code></pre>
+<p>Ak chcete zobrazi&#x165; iba prv&#xE9; &#x10D;&#xED;slo, m&#xF4;&#x17E;ete to urobi&#x165; pomocou <strong>indexov</strong>. Index je &#x10D;&#xED;slo, ktor&#xE9; hovor&#xED;, kde v zozname sa polo&#x17E;ka nach&#xE1;dza. Program&#xE1;tori radi po&#x10D;&#xED;taj&#xFA; od nuly, tak&#x17E; eprv&#xFD; objekt vo va&#x161;om zozname je na indexe 0, &#x10F;al&#x161;&#xED; je na 1 a tak &#x10F;alej. Vysk&#xFA;&#x161;ajte toto:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>print(loteria[<span class="hljs-number">0</span>])
+<span class="hljs-number">59</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(loteria[<span class="hljs-number">1</span>])
+<span class="hljs-number">42</span></code></pre>
+<p>Ako vid&#xED;te, k r&#xF4;znym objektom vo va&#x161;om zozname m&#xF4;&#x17E;ete pristupova&#x165; pou&#x17E;it&#xED;m n&#xE1;zvu zoznamu a indexom objektu v hranat&#xFD;ch z&#xE1;tvork&#xE1;ch.</p><p>Aby ste odstr&#xE1;nili nie&#x10D;o zo svojho zoznamu, budete potrebova&#x165; <strong>indexy</strong>, ako sme sa dozvedeli vy&#x161;&#x161;ie a pr&#xED;kaz <code>pop()</code>. Vysk&#xFA;&#x161;ajme to na pr&#xED;klade a zopakujme si, &#x10D;o sme sa u&#x17E; nau&#x10D;ili; zma&#x17E;eme prv&#xE9; &#x10D;&#xED;slo v na&#x161;om zozname.</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>print(loteria)
+[<span class="hljs-number">59</span>, <span class="hljs-number">42</span>, <span class="hljs-number">30</span>, <span class="hljs-number">19</span>, <span class="hljs-number">12</span>, <span class="hljs-number">3</span>, <span class="hljs-number">199</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(loteria[<span class="hljs-number">0</span>])
+<span class="hljs-number">59</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>loteria.pop(<span class="hljs-number">0</span>)
+<span class="hljs-number">59</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(loteria)
+[<span class="hljs-number">42</span>, <span class="hljs-number">30</span>, <span class="hljs-number">19</span>, <span class="hljs-number">12</span>, <span class="hljs-number">3</span>, <span class="hljs-number">199</span>]</code></pre>
+<p>Funguje to ako hodinky!</p><p>Pre z&#xE1;bavu vysk&#xFA;&#x161;ajte aj nejak&#xE9; in&#xE9; indexy: 6, 7, 1000, -1, -6 alebo -1000. Sk&#xFA;ste predpoveda&#x165; v&#xFD;sledok predt&#xFD;m ako pr&#xED;kaz pou&#x17E;ijete. D&#xE1;vaj&#xFA; v&#xFD;sledky zmysel?</p><p>Zoznam v&#x161;etk&#xFD;ch dostupn&#xFD;ch met&#xF3;d pre zoznamy v tejto kapitole dokument&#xE1;cie Pythonu: <a href="https://docs.python.org/3/tutorial/datastructures.html" target="_blank">https://docs.python.org/3/tutorial/datastructures.html</a></p><h2 id="slovn&#xED;ky">Slovn&#xED;ky</h2><blockquote><p>Pre &#x10D;itate&#x13E;ov doma: T&#xE1;to kapitola je spracovan&#xE1; v <a href="https://www.youtube.com/watch?v=ZX1CVvZLE6c" target="_blank">Python Basics: Dictionaries</a> videu.</p></blockquote><p>Slovn&#xED;k je podobn&#xFD; ako zoznam, ale k jeho hodnot&#xE1;m pristupujete vyh&#x13E;adan&#xED;m k&#x13E;&#xFA;&#x10D;a namiesto &#x10D;&#xED;seln&#xE9;ho indexu. K&#x13E;&#xFA;&#x10D; m&#xF4;&#x17E;e by&#x165; ak&#xFD;ko&#x13E;vek re&#x165;azec alebo &#x10D;&#xED;slo. Syntax na definovanie pr&#xE1;zdneho slovn&#xED;ka je:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>{}
+{}</code></pre>
+<p>To znamen&#xE1;, &#x17E;e ste pr&#xE1;ve vytvorili pr&#xE1;zdny slovn&#xED;k. Hur&#xE1;!</p><p>Teraz sk&#xFA;ste nap&#xED;sa&#x165; nasleduj&#xFA;ci pr&#xED;kaz (sk&#xFA;ste ale nahradi&#x165; hodnoty vlastn&#xFD;mi &#xFA;dajmi):</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>ucastnicka = {<span class="hljs-string">&apos;meno&apos;</span>: <span class="hljs-string">&apos;Ola&apos;</span>, <span class="hljs-string">&apos;krajina&apos;</span>: <span class="hljs-string">&apos;Slovensko&apos;</span>, <span class="hljs-string">&apos;oblubene_cisla&apos;</span>: [<span class="hljs-number">7</span>, <span class="hljs-number">42</span>, <span class="hljs-number">92</span>]}</code></pre>
+<p>T&#xFD;mto pr&#xED;kazom ste pr&#xE1;ve vytvorili premenn&#xFA; s n&#xE1;zvom <code>ucastnicka</code> s tromi p&#xE1;rmi k&#x13E;&#xFA;&#x10D;-hodnota:</p><ul><li>K&#x13E;&#xFA;&#x10D; <code>meno</code> odkazuje na hodnotu <code>&quot;Ola&quot;</code> (objekt typu <code>re&#x165;azec/string</code>),
+</li>
+<li><code>krajina</code> odkazuje na <code>&quot;Slovensko&quot;</code> (&#x10F;al&#x161;&#xED; <code>re&#x165;azec</code>),
+</li>
+<li>a <code>oblubene_cisla</code> smeruje na <code>[7, 42, 92]</code> (<code>zoznam</code> s tromi &#x10D;&#xED;slami).
+</li></ul>
+<p>Obsah jednotliv&#xFD;ch k&#x13E;&#xFA;&#x10D;ov m&#xF4;&#x17E;ete skontrolova&#x165; touto syntaxou:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>print(ucastnicka[<span class="hljs-string">&apos;meno&apos;</span>])
+Ola</code></pre>
+<p>Ako vid&#xED;te, podob&#xE1; sa to na zoznam. Ale nemus&#xED;te si pam&#xE4;ta&#x165; index - sta&#x10D;&#xED; meno.</p><p>&#x10C;o sa stane ak si od Pythonu vyp&#xFD;tame hodnotu k&#x13E;&#xFA;&#x10D;a, ktor&#xFD; neexistuje? Uh&#xE1;dnete? Vysk&#xFA;&#x161;ajme to a uvid&#xED;me!</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>ucastnicka[<span class="hljs-string">&apos;vek&apos;</span>]
+Traceback (most recent call last):
+  File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+KeyError: <span class="hljs-string">&apos;vek&apos;</span></code></pre>
+<p>Aha, &#x10F;al&#x161;ia chyba! T&#xE1;to sa vol&#xE1; <strong>KeyError</strong> (chyba k&#x13E;&#xFA;&#x10D;a). Python je n&#xE1;pomocn&#xFD; a povie v&#xE1;m, &#x17E;e k&#x13E;&#xFA;&#x10D; <code>&apos;vek&apos;</code> v tomto slovn&#xED;ku neexistuje.</p><p>Kedy by pou&#x17E;&#xED;va&#x165; slovn&#xED;k alebo zoznam? No, to je dobr&#xE1; ot&#xE1;zka. Porozm&#xFD;&#x161;&#x13E;aj predt&#xFD;m, ako si pozrie&#x161; odpove&#x10F; v nasleduj&#xFA;com riadku.</p><ul><li>Potrebuje&#x161; zoraden&#xFA; postupnos&#x165; polo&#x17E;iek? Vyber si zoznam (list).
+</li>
+<li>Potrebuje&#x161; prira&#x10F;ova&#x165; hodnoty k&#x13E;&#xFA;&#x10D;ov&#xFD;m slov&#xE1;m, aby si si ich mohla efekt&#xED;vne (pod&#x13E;a k&#x13E;&#xFA;&#x10D;a) nesk&#xF4;r vyh&#x13E;ada&#x165;? Pou&#x17E;i slovn&#xED;k (dictionary).
+</li></ul>
+<p>Slovn&#xED;ky, rovnako ako zoznamy s&#xFA; <em>premenliv&#xE9;</em>, &#x10D;o znamen&#xE1;, &#x17E;e ich m&#xF4;&#x17E;eme zmeni&#x165; po ich vytvoren&#xED;. Po vytvoren&#xED; m&#xF4;&#x17E;e&#x161; do slovn&#xED;ka prida&#x165; nov&#xE9; dvojice k&#x13E;&#xFA;&#x10D;/hodnota takto:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>ucastnicka[<span class="hljs-string">&apos;oblubeny_jazyk&apos;</span>] = <span class="hljs-string">&apos;Python&apos;</span></code></pre>
+<p>Tak ako pri zoznamoch, pou&#x17E;it&#xED;m met&#xF3;dy <code>len()</code> na slovn&#xED;koch dostane&#x161; po&#x10D;et p&#xE1;rov k&#x13E;&#xFA;&#x10D;-hodnota v slovn&#xED;ku. Po&#x10F;me na to, zadaj tento pr&#xED;kaz:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>len(ucastnicka)
+<span class="hljs-number">4</span></code></pre>
+<p>D&#xFA;fam, &#x17E;e to d&#xE1;va zmysel. :) Pripraven&#xE1; na trochu z&#xE1;bavy so slovn&#xED;kmi? Tak &#x161;up na &#x10F;al&#x161;&#xED; riadok za &#xFA;&#x17E;asn&#xFD;mi vecami.</p><p>Na odstr&#xE1;nenie polo&#x17E;ky zo slovn&#xED;ka m&#xF4;&#x17E;e&#x161; pou&#x17E;i&#x165; met&#xF3;du <code>pop()</code>. Napr&#xED;klad ak chce&#x161; odstr&#xE1;ni&#x165; polo&#x17E;ku zodpovedaj&#xFA;cu k&#x13E;&#xFA;&#x10D;u <code>&apos;oblubene_cisla&apos;</code>, zadaj nasleduj&#xFA;ci pr&#xED;kaz:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>ucastnicka.pop(<span class="hljs-string">&apos;oblubene_cisla&apos;</span>)
+[<span class="hljs-number">7</span>, <span class="hljs-number">42</span>, <span class="hljs-number">92</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>ucastnicka
+{<span class="hljs-string">&apos;meno&apos;</span>: <span class="hljs-string">&apos;Ola&apos;</span>, <span class="hljs-string">&apos;krajina&apos;</span>: <span class="hljs-string">&apos;Slovensko&apos;</span>, <span class="hljs-string">&apos;oblubeny_jazyk&apos;</span>: <span class="hljs-string">&apos;Python&apos;</span>}</code></pre>
+<p>Ako vid&#xED;&#x161; z v&#xFD;stupu, p&#xE1;r k&#x13E;&#xFA;&#x10D;-hodnota zodpovedaj&#xFA;ci k&#x13E;&#xFA;&#x10D;u &apos;oblubene_cisla&apos; bol vymazan&#xFD;.</p><p>Taktie&#x17E; m&#xF4;&#x17E;e&#x161; zmeni&#x165; hodnotu priraden&#xFA; k u&#x17E; vytvoren&#xE9;mu k&#x13E;&#xFA;&#x10D;u v slovn&#xED;ku. Nap&#xED;&#x161;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>ucastnicka[<span class="hljs-string">&apos;krajina&apos;</span>] = <span class="hljs-string">&apos;Nemecko&apos;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>ucastnicka
+{<span class="hljs-string">&apos;krajina&apos;</span>: <span class="hljs-string">&apos;Nemecko&apos;</span>, <span class="hljs-string">&apos;oblubeny_jazyk&apos;</span>: <span class="hljs-string">&apos;Python&apos;</span>, <span class="hljs-string">&apos;meno&apos;</span>: <span class="hljs-string">&apos;Ola&apos;</span>}</code></pre>
+<p>Ako vid&#xED;&#x161;, hodnota k&#x13E;&#xFA;&#x10D;a <code>&quot;krajina&quot;</code> sa zmenila z <code>&quot;Po&#x13E;sko&quot;</code> na <code>&quot;Nemecko&quot;</code>. :) Vzru&#x161;uj&#xFA;ce? Hur&#xE1;! Pr&#xE1;ve si sa nau&#x10D;ila &#x10F;al&#x161;iu &#xFA;&#x17E;asn&#xFA; vec.</p><h3 id="zhrnutie">Zhrnutie</h3><p>Skvel&#xE9;! Teraz u&#x17E; vie&#x161; o programovan&#xED; dos&#x165; ve&#x13E;a. Pozrime sa, &#x10D;o sme si vysvetlili v poslednej &#x10D;asti:</p><ul><li><strong>chyby</strong> (angl. error) - teraz u&#x17E; vie&#x161; ako &#x10D;&#xED;ta&#x165; a rozumie&#x165; chyb&#xE1;m, ktor&#xE9; sa zobrazia, ak Python nerozumie pr&#xED;kazu, ktor&#xFD; mu zad&#xE1;&#x161;
+</li>
+<li><strong>premenn&#xE9;</strong> - n&#xE1;zvy objektov, ktor&#xE9; ti u&#x13E;ah&#x10D;uj&#xFA; p&#xED;sanie k&#xF3;du a robia tie&#x17E; k&#xF3;d zrozumite&#x13E;nej&#x161;&#xED;m
+</li>
+<li><strong>zoznamy</strong> (angl. list) - zoznam objektov ulo&#x17E;en&#xFD;ch v ur&#x10D;itom porad&#xED;
+</li>
+<li><strong>slovn&#xED;ky</strong> (angl. dictionary) - objekty ulo&#x17E;en&#xE9; v p&#xE1;roch k&#x13E;&#xFA;&#x10D;-hodnota
+</li></ul>
+<p>Te&#x161;&#xED;&#x161; sa na &#x10F;al&#x161;iu &#x10D;as&#x165;? :)</p><h2 id="porovn&#xE1;vanie-vec&#xED;">Porovn&#xE1;vanie vec&#xED;</h2><blockquote><p>Pre &#x10D;itate&#x13E;ov doma: T&#xE1;to kapitola je spracovan&#xE1; v <a href="https://www.youtube.com/watch?v=7bzxqIKYgf4" target="_blank">Python Basics: Comparisons</a> videu.</p></blockquote><p>Ve&#x13E;k&#xFA; &#x10D;as&#x165; programovania predstavuje porovn&#xE1;vanie veci. &#x10C;o je najjednoduch&#x161;ia vec na porovnanie? &#x10C;&#xED;sla, samozrejme. Pozrime sa, ako to funguje:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">5</span> &gt; <span class="hljs-number">2</span>
+<span class="hljs-keyword">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">3</span> &lt; <span class="hljs-number">1</span>
+<span class="hljs-keyword">False</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">5</span> &gt; <span class="hljs-number">2</span> * <span class="hljs-number">2</span>
+<span class="hljs-keyword">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">1</span> == <span class="hljs-number">1</span>
+<span class="hljs-keyword">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">5</span> != <span class="hljs-number">2</span>
+<span class="hljs-keyword">True</span></code></pre>
+<p>Dali sme Pythonu p&#xE1;r &#x10D;&#xED;siel na porovnanie. Ako vid&#xED;&#x161;, Python vie porovn&#xE1;va&#x165; nielen &#x10D;&#xED;sla, ale vie porovn&#xE1;va&#x165; aj v&#xFD;sledky met&#xF3;d. Pekn&#xE9;, nie?</p><p>Zauj&#xED;ma &#x165;a, pre&#x10D;o sme pou&#x17E;ili dve &quot;rovn&#xE1; sa&quot; <code>==</code> ved&#x13E;a seba, aby sme porovnali, &#x10D;i s&#xFA; &#x10D;&#xED;sla rovnak&#xE9;? Jeden znak <code>=</code> pou&#x17E;&#xED;vame na prira&#x10F;ovanie hodn&#xF4;t premenn&#xFD;m. Tak&#x17E;e, ak chce&#x161; skontrolova&#x165;, &#x10D;i s&#xFA; veci rovnak&#xE9;, mus&#xED;&#x161; v&#x17E;dy, &#xFA;plne <strong>v&#x17E;dy</strong> pou&#x17E;i&#x165; dve <code>==</code>. Taktie&#x17E; m&#xF4;&#x17E;eme zis&#x165;ova&#x165;, &#x10D;i sa veci navz&#xE1;jom l&#xED;&#x161;ia. Na to pou&#x17E;ijeme symbol <code>!=</code>, ako bolo uveden&#xE9; v pr&#xED;klade vy&#x161;&#x161;ie.</p><p>Zadaj Pythonu e&#x161;te dve &#xFA;lohy:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">6</span> &gt;= <span class="hljs-number">12</span> / <span class="hljs-number">2</span>
+<span class="hljs-keyword">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">3</span> &lt;= <span class="hljs-number">2</span>
+<span class="hljs-keyword">False</span></code></pre>
+<p><code>&gt;</code> a <code>&lt;</code> sme u&#x17E; videli, ale &#x10D;o znamenaj&#xFA; <code>&gt;=</code> a <code>&lt;=</code>? Pre&#x10D;&#xED;ta&#x165; ich m&#xF4;&#x17E;e&#x161; takto:</p><ul><li>x <code>&gt;</code> y znamen&#xE1;: x je v&#xE4;&#x10D;&#x161;ie ako y
+</li>
+<li>x <code>&lt;</code> y znamen&#xE1;: x je men&#x161;ie ako y
+</li>
+<li>x <code>&lt;=</code> y znamen&#xE1;: x je men&#x161;ie alebo sa rovn&#xE1; y
+</li>
+<li>x <code>&gt; =</code> y znamen&#xE1;: x je v&#xE4;&#x10D;&#x161;ie alebo sa rovn&#xE1; y
+</li></ul>
+<p>Skvel&#xE9;! Chce&#x161; vysk&#xFA;&#x161;a&#x165; e&#x161;te jeden? Sk&#xFA;s toto:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">6</span> &gt; <span class="hljs-number">2</span> <span class="hljs-keyword">and</span> <span class="hljs-number">2</span> &lt; <span class="hljs-number">3</span>
+<span class="hljs-keyword">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">3</span> &gt; <span class="hljs-number">2</span> <span class="hljs-keyword">and</span> <span class="hljs-number">2</span> &lt; <span class="hljs-number">1</span>
+<span class="hljs-keyword">False</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">3</span> &gt; <span class="hljs-number">2</span> <span class="hljs-keyword">or</span> <span class="hljs-number">2</span> &lt; <span class="hljs-number">1</span>
+<span class="hljs-keyword">True</span></code></pre>
+<p>M&#xF4;&#x17E;e&#x161; da&#x165; Pythonu to&#x13E;ko &#x10D;&#xED;sel, ko&#x13E;ko chce&#x161; a on ti d&#xE1; v&#x17E;dy odpove&#x10F;! Vcelku &#x161;ikovn&#xE9;, nie?</p><ul><li><strong>and</strong> - ak pou&#x17E;ije&#x161; oper&#xE1;tor <code>and</code>, obidve porovn&#xE1;van&#xE9; veci musia by&#x165; pravdiv&#xE9; (True), aby pr&#xED;kaz bol pravdiv&#xFD; (True)
+</li>
+<li><strong>or</strong> - ak pou&#x17E;ije&#x161; oper&#xE1;tor <code>or</code>, sta&#x10D;&#xED; aby jedna z porovn&#xE1;van&#xFD;ch vec&#xED; bola pravdiv&#xE1;, aby bol cel&#xFD; pr&#xED;kaz pravda (True)
+</li></ul>
+<p>U&#x17E; ste po&#x10D;ula v&#xFD;raz &quot;porovn&#xE1;va&#x165; hru&#x161;ky s jablkami&quot;? Sk&#xFA;sme pythonsk&#xFD; ekvivalent:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">1</span> &gt; <span class="hljs-string">&apos;django&apos;</span>
+Traceback (most recent call last):
+  File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+TypeError: <span class="hljs-string">&apos;&gt;&apos;</span> <span class="hljs-keyword">not</span> supported between instances of <span class="hljs-string">&apos;int&apos;</span> <span class="hljs-keyword">and</span> <span class="hljs-string">&apos;str&apos;</span></code></pre>
+<p>Tu vid&#xED;&#x161;, &#x17E;e tak ako nevieme porovn&#xE1;va&#x165; hru&#x161;ky s jablkami, ani Python neviem porovna&#x165; &#x10D;&#xED;slo (<code>int</code>) s re&#x165;azcom (<code>str</code>). Namiesto toho vyp&#xED;&#x161;e chybu <strong>TypeError</strong> a povie n&#xE1;m, ktor&#xE9; dva typy sa nedaj&#xFA; porovna&#x165;.</p><h2 id="logick&#xE9;-hodnoty-boolean">Logick&#xE9; hodnoty (Boolean)</h2><p>Mimochodom pr&#xE1;ve si sa nau&#x10D;ila nov&#xFD; typ objektu v Pythone. Vol&#xE1; sa <strong>Boolean</strong>.</p><p>Existuj&#xFA; iba dva typy Booleovsk&#xFD;ch objektov:- True (Pravda)- False (Nepravda):</p><ul><li>True
+</li>
+<li>False
+</li></ul>
+<p>Aby ich Python spoznal, mus&#xED;&#x161; v&#x17E;dy nap&#xED;sa&#x165; &apos;True&apos; (s ve&#x13E;k&#xFD;m p&#xED;smenom na za&#x10D;iatku a zvy&#x161;ok mal&#xFD;m p&#xED;smom). <strong>true, TRUE, tRUE nebud&#xFA; fungova&#x165; -- iba True je spr&#xE1;vne.</strong> (Samozrejme, to ist&#xE9; plat&#xED; aj pre &apos;False&apos;.)</p><p>Logick&#xE9; hodnoty m&#xF4;&#x17E;u by&#x165; aj premenn&#xE9;. Aha:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>a = <span class="hljs-keyword">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>a
+<span class="hljs-keyword">True</span></code></pre>
+<p>M&#xF4;&#x17E;e&#x161; to urobi&#x165; aj takto:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>a = <span class="hljs-number">2</span> &gt; <span class="hljs-number">5</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>a
+<span class="hljs-keyword">False</span></code></pre>
+<p>Precvi&#x10D; si to a zabav sa s logick&#xFD;mi premenn&#xFD;mi - sk&#xFA;s spusti&#x165; tieto pr&#xED;kazy:</p><ul><li><code>True and True</code>
+</li>
+<li><code>False and True</code>
+</li>
+<li><code>True or 1 == 1</code>
+</li>
+<li><code>1 != 2</code>
+</li></ul>
+<p>Gratulujeme! Logick&#xE9; hodnoty patria k tomu naju&#x17E;ito&#x10D;nej&#x161;iemu z programovania a ty si sa pr&#xE1;ve nau&#x10D;ila, ako sa pou&#x17E;&#xED;vaj&#xFA;!</p><h1 id="ulo&#x17E;-to">Ulo&#x17E; to!</h1><blockquote><p>Pre &#x10D;itate&#x13E;ov doma: T&#xE1;to kapitola je spracovan&#xE1; v <a href="https://www.youtube.com/watch?v=dOAg6QVAxyk" target="_blank">Python Basics: Saving files and &quot;If&quot; statement</a> videu.</p></blockquote><p>Zatia&#x13E; sme p&#xED;sali v&#x161;etok pythonsk&#xFD; k&#xF3;d do konzoly interpretera, &#x10D;i&#x17E;e m&#xF4;&#x17E;eme na jedenkr&#xE1;t zada&#x165; iba jeden riadok k&#xF3;du. Norm&#xE1;lne programy s&#xFA; ulo&#x17E;en&#xE9; v s&#xFA;boroch, ktor&#xE9; sp&#xFA;&#x161;&#x165;a bu&#x10F; <strong>interpreter</strong> alebo <strong>kompil&#xE1;tor</strong>. Doteraz sme sp&#xFA;&#x161;&#x165;ali na&#x161;e programy riadok po riadku v <strong>interpreteri</strong> Pythonu. Na &#x10F;al&#x161;ie &#xFA;lohy budeme potrebova&#x165; viac ako jeden riadok k&#xF3;du, tak&#x17E;e teraz r&#xFD;chlo mus&#xED;me:</p><ul><li>Ukon&#x10D;i&#x165; interpreter Pythonu
+</li>
+<li>Otvori&#x165; si zvolen&#xFD; editor k&#xF3;du
+</li>
+<li>Ulo&#x17E;i&#x165; v &#x148;om nejak&#xFD; k&#xF3;d do nov&#xE9;ho pythonsk&#xE9;ho s&#xFA;boru
+</li>
+<li>Spusti&#x165; ho!
+</li></ul>
+<p>Pre opustenie interpretera Pythonu, ktor&#xFD; sme doteraz pou&#x17E;&#xED;vali, zadaj jednoducho funkciu <code>exit()</code></p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>exit()
+$</code></pre>
+<p>Tak sa dostane&#x161; sp&#xE4;&#x165; na pr&#xED;kazov&#xFD; riadok.</p><p>U&#x17E; sk&#xF4;r si si vybrala editor k&#xF3;du v kapitole <a href="../code_editor/">editor k&#xF3;du</a>. Teraz ho potrebujeme otvori&#x165; a nap&#xED;sa&#x165; v &#x148;om do nov&#xE9;ho s&#xFA;boru nejak&#xFD; k&#xF3;d:</p><p></p><p class="code-label">editor</p><p></p><pre><code class="lang-python">print(<span class="hljs-string">&apos;Hello, Django girls!&apos;</span>)</code></pre>
+<p>Samozrejme, teraz si u&#x17E; vcelku sk&#xFA;sen&#xE1; Python developerka, tak&#x17E;e k&#x13E;udne nap&#xED;&#x161; nejak&#xFD; k&#xF3;d, ktor&#xFD; si sa dnes nau&#x10D;ila.</p><p>Teraz ulo&#x17E;&#xED;me s&#xFA;bor a d&#xE1;me mu nejak&#xFD; zrozumite&#x13E;n&#xFD; n&#xE1;zov. Nazvime ho <strong>python_intro.py</strong> a ulo&#x17E; ho plochu. Tento s&#xFA;bor m&#xF4;&#x17E;e&#x161; nazva&#x165; akoko&#x13E;vek chce&#x161;, ale d&#xF4;le&#x17E;it&#xE9; je, aby jeho n&#xE1;zov kon&#x10D;il <strong>.py</strong>. Pr&#xED;pona <strong>.py</strong> n&#xE1;&#x161;mu opera&#x10D;n&#xE9;mu syst&#xE9;mu hovor&#xED;, &#x17E;e je to <strong>s&#xFA;bor spustite&#x13E;n&#xFD; Pythonom</strong> a m&#xF4;&#x17E;e ho spusti&#x165; Pythonom.</p><blockquote><p><strong>Pozn&#xE1;mka</strong> V&#x161;imni si jednu z naj&#xFA;&#x17E;asnej&#x161;&#xED;ch vec&#xED; editorov k&#xF3;du: farby! V pythonskej konzole bolo v&#x161;etko nap&#xED;san&#xE9; jednou farbou, teraz v&#x161;ak vid&#xED;&#x161;, &#x17E;e funkcia <code>print</code> je nap&#xED;san&#xE1; inou farbou ako re&#x165;azec. Toto sa naz&#xFD;va &quot;zv&#xFD;raznenie syntaxe&quot; a pri programovan&#xED; je to fakt u&#x17E;ito&#x10D;n&#xE1; vec. Farba v&#xFD;razov ti m&#xF4;&#x17E;e pom&#xF4;c&#x165;, ak m&#xE1;&#x161; neuzavret&#xFD; re&#x165;azec &#x10D;i preklep v n&#xE1;zve &#x161;peci&#xE1;lnych slov (ako napr&#xED;klad <code>def</code> vo funkcii, ktor&#xFA; uvid&#xED;me nesk&#xF4;r). Toto je jedn&#xFD;m z d&#xF4;vodov, pre&#x10D;o pou&#x17E;&#xED;vame editor k&#xF3;du. :)</p></blockquote><p>S&#xFA;bor m&#xE1;me ulo&#x17E;en&#xFD;, je &#x10D;as ho spusti&#x165;! Pomocou poznatkov z kapitoly o pr&#xED;kazovom riadku, pomocou Termin&#xE1;lu <strong>zme&#x148; adres&#xE1;r</strong> na plochu.</p><sec data-title="Change directory: OS X" data-id="python_OSX" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Change directory: OS X<a class="pull-right section atTitle btn btn-default" target="python_OSX"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_OSX"><div class="panel-body">
+
+
+<p>Na Macu bude pr&#xED;kaz vyzera&#x165; takto:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        $ cd ~/Desktop</code></pre>
+</div></div></div></sec>
+
+
+<sec data-title="Change directory: Linux" data-id="python_linux" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Change directory: Linux<a class="pull-right section atTitle btn btn-default" target="python_linux"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_linux"><div class="panel-body">
+
+
+<p>Na Linuxe to bude takto (slovo &quot;Desktop&quot; bude mo&#x17E;no prelo&#x17E;en&#xE9;):</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        $ cd ~/Desktop</code></pre>
+</div></div></div></sec>
+
+
+<sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Change directory: Windows Command Prompt<a class="pull-right section atTitle btn btn-default" target="python_windows"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_windows"><div class="panel-body">
+
+
+<p>Vo Windowse v Command Prompt, to bude takto:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        &gt; cd %HomePath%\Desktop</code></pre>
+</div></div></div></sec>
+
+
+<sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Change directory: Windows Powershell<a class="pull-right section atTitle btn btn-default" target="python_windowsPSH"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_windowsPSH"><div class="panel-body">
+
+
+<p>A vo Windows Powershell bude pr&#xED;kaz vyzera&#x165; takto:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        &gt; cd $Home\Desktop</code></pre>
+</div></div></div></sec>
+
+
+<p>Ak m&#xE1;&#x161; ak&#xE9;ko&#x13E;vek &#x165;a&#x17E;kosti, sta&#x10D;&#xED; po&#x17E;iada&#x165; o pomoc.</p><p>Teraz pou&#x17E;i Python na spustenie k&#xF3;du v s&#xFA;bore:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        $ python3 python_intro.py
+        Hello, Django girls!</code></pre>
+<p>Pozn&#xE1;mka na Windowse python3 pr&#xED;kaz neexistuje. Pou&#x17E;i python na spustenie s&#xFA;boru:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python">&gt; python python_intro.py</code></pre>
+<p>V&#xFD;borne! Pr&#xE1;ve si spustila svoj prv&#xFD; pythonsk&#xFD; program ulo&#x17E;en&#xFD; v s&#xFA;bore. Skvel&#xFD; pocit, v&#x161;ak?</p><p>Teraz sa m&#xF4;&#x17E;e&#x161; posun&#xFA;&#x165; na &#x10F;al&#x161;&#xED; z&#xE1;kladn&#xFD; n&#xE1;stroj v programovan&#xED;:</p><h2 id="if--elif--else">If &#x2026; elif &#x2026; else</h2><p>Kopec vec&#xED; v k&#xF3;de sa m&#xE1; sp&#xFA;&#x161;&#x165;a&#x165; len ak s&#xFA; splnen&#xE9; nejak&#xE9; podmienky. Pr&#xE1;ve na to pou&#x17E;&#xED;va Python pr&#xED;kaz <strong>if</strong>.</p><p>Nahra&#x10F; k&#xF3;d v s&#xFA;bore <strong>python_intro.py</strong> t&#xFD;mto:</p><p></p><p class="code-label">python_intro.py</p><p></p><pre><code class="lang-python"><span class="hljs-keyword">if</span> <span class="hljs-number">3</span> &gt; <span class="hljs-number">2</span>:</code></pre>
+<p>Ak to ulo&#x17E;&#xED;&#x161; a spust&#xED;&#x161;, dostane&#x161; t&#xFA;to chybu:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        $ python3 python_intro.py
+        File &quot;python_intro.py&quot;, line 2
+                 ^
+        SyntaxError: unexpected EOF while parsing</code></pre>
+<p>Python o&#x10D;ak&#xE1;va, &#x17E;e od n&#xE1;s dostane &#x10F;al&#x161;ie in&#x161;trukcie, ktor&#xE9; maj&#xFA; by&#x165; vykonan&#xE9; ak je podmienka <code>3 &gt; 2</code> pravdiv&#xE1; (teda ak bude ma&#x165; hodnotu <code>True</code>). Sk&#xFA;sme zariadi&#x165;, aby Python nap&#xED;sal &quot;Funguje to!&quot;. Zme&#x148; svoj k&#xF3;d v s&#xFA;bore <strong>python_intro.py</strong> takto:</p><p></p><p class="code-label">python_intro.py</p><p></p><pre><code class="lang-python"><span class="hljs-keyword">if</span> <span class="hljs-number">3</span> &gt; <span class="hljs-number">2</span>:
+    print(<span class="hljs-string">&apos;It works!&apos;</span>)</code></pre>
+<p>V&#x161;imla si si, ako sme odsadili druh&#xFD; riadok o 4 medzery? To mus&#xED;me urobi&#x165; preto, aby Python vedel, ktor&#xFA; &#x10D;as&#x165; k&#xF3;du m&#xE1; spusti&#x165; ak je v&#xFD;sledok pravdiv&#xFD;. M&#xF4;&#x17E;e&#x161; pou&#x17E;i&#x165; len jednu medzeru, ale takmer v&#x161;etci program&#xE1;tori v Pythone pou&#x17E;&#xED;vaj&#xFA; 4 medzery, aby bol k&#xF3;d dobre &#x10D;itate&#x13E;n&#xFD;. Jeden <code>tab</code> sa tie&#x17E; po&#x10D;&#xED;ta ako 4 medzery.</p><p>Ulo&#x17E; to a spusti to znova:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python">$ python3 python_intro.py
+Funguje to!</code></pre>
+<p>Pozn&#xE1;mka: Zapam&#xE4;taj si &#x17E;e Windows nepozn&#xE1; pr&#xED;kaz &quot;python3&quot;. Od teraz a na&#x10F;alej, nahra&#x10F; &quot;python3&quot; pr&#xED;kazom &quot;python&quot;pri sp&#xFA;&#x161;&#x165;an&#xED; s&#xFA;borov.</p><h3 id="&#x10D;o-ak-podmienka-nie-je-pravdiv&#xE1;">&#x10C;o ak podmienka nie je pravdiv&#xE1;?</h3><p>V predch&#xE1;dzaj&#xFA;cich pr&#xED;kladoch, bol k&#xF3;d vykonan&#xFD; len vtedy, ke&#x10F; podmienky boli pravdiv&#xE9;. Ale Python m&#xE1; tie&#x17E; pr&#xED;kazy <code>elif</code> a <code>else</code>:</p><p></p><p class="code-label">python_intro.py</p><p></p><pre><code class="lang-python"><span class="hljs-keyword">if</span> <span class="hljs-number">5</span> &gt; <span class="hljs-number">2</span>:
+    print(<span class="hljs-string">&apos;5 is indeed greater than 2&apos;</span>)
+<span class="hljs-keyword">else</span>:
+    print(<span class="hljs-string">&apos;5 is not greater than 2&apos;</span>)</code></pre>
+<p>Ke&#x10F; to spust&#xED;&#x161;, vyp&#xED;&#x161;e to:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        $ python3 python_intro.py
+        5 je naozaj viac ako 2</code></pre>
+<p>Ak by 2 bolo v&#xE4;&#x10D;&#x161;ie ako 5, spustil by sa druh&#xFD; pr&#xED;kaz. Jednoduch&#xE9;, nie? Pozrime sa, ako funguje <code>elif</code>:</p><p></p><p class="code-label">python_intro.py</p><p></p><pre><code class="lang-python">name = <span class="hljs-string">&apos;Sonja&apos;</span>
+<span class="hljs-keyword">if</span> name == <span class="hljs-string">&apos;Ola&apos;</span>:
+    print(<span class="hljs-string">&apos;Ahoj Ola!&apos;</span>)
+<span class="hljs-keyword">elif</span> name == <span class="hljs-string">&apos;Sonja&apos;</span>:
+    print(<span class="hljs-string">&apos;Ahoj Sonja!&apos;</span>)
+<span class="hljs-keyword">else</span>:
+    print(<span class="hljs-string">&apos;Ahoj neznama!&apos;</span>)</code></pre>
+<p>a po spusten&#xED;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        $ python3 python_intro.py
+        Ahoj Sonja!</code></pre>
+<p>V&#x161;imla si si, &#x10D;o sa stalo? <code>elif</code> ti dovol&#xED; prida&#x165; dodato&#x10D;n&#xE9; podmienky, ktor&#xE9; sa spustia, ak s&#xFA; predch&#xE1;dzaj&#xFA;ce nesplnen&#xE9;.</p><p>Za prv&#xFD; <code>if</code> m&#xF4;&#x17E;e&#x161; da&#x165; <code>elif</code> to&#x13E;kokr&#xE1;t, ko&#x13E;ko len chce&#x161;. Napr&#xED;klad:</p><p></p><p class="code-label">python_intro.py</p><p></p><pre><code class="lang-python">volume = <span class="hljs-number">57</span>
+<span class="hljs-keyword">if</span> volume &lt; <span class="hljs-number">20</span>:
+    print(<span class="hljs-string">&quot;It&apos;s kinda quiet.&quot;</span>)
+<span class="hljs-keyword">elif</span> <span class="hljs-number">20</span> &lt;= volume &lt; <span class="hljs-number">40</span>:
+    print(<span class="hljs-string">&quot;It&apos;s nice for background music&quot;</span>)
+<span class="hljs-keyword">elif</span> <span class="hljs-number">40</span> &lt;= volume &lt; <span class="hljs-number">60</span>:
+    print(<span class="hljs-string">&quot;Perfect, I can hear all the details&quot;</span>)
+<span class="hljs-keyword">elif</span> <span class="hljs-number">60</span> &lt;= volume &lt; <span class="hljs-number">80</span>:
+    print(<span class="hljs-string">&quot;Nice for parties&quot;</span>)
+<span class="hljs-keyword">elif</span> <span class="hljs-number">80</span> &lt;= volume &lt; <span class="hljs-number">100</span>:
+    print(<span class="hljs-string">&quot;A bit loud!&quot;</span>)
+<span class="hljs-keyword">else</span>:
+    print(<span class="hljs-string">&quot;My ears are hurting! :(&quot;</span>)</code></pre>
+<p>Python prejde v&#x161;etk&#xFD;mi podmienkami v porad&#xED; a vyp&#xED;&#x161;e:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        $ python3 python_intro.py
+        Super, pocujem vsetky detaily</code></pre>
+<h2 id="koment&#xE1;re">Koment&#xE1;re</h2><p>Koment&#xE1;re su riadky, ktor&#xE9; sa za&#x10D;&#xED;naj&#xFA; s <code>#</code>. Po <code>#</code> m&#xF4;&#x17E;e&#x161; nap&#xED;sa&#x165; hoci&#x10D;o, Python to bude ignorova&#x165;. Koment&#xE1;re urobia tvoj k&#xF3;d &#x10D;itate&#x13E;nej&#x161;&#xED;m pre in&#xFD;ch lud&#xED;.</p><p>Pozrime sa ako to vyzer&#xE1;:</p><p></p><p class="code-label">python_intro.py</p><p></p><pre><code class="lang-python"><span class="hljs-comment"># Change the volume if it&apos;s too loud or too quiet</span>
+<span class="hljs-keyword">if</span> volume &lt; <span class="hljs-number">20</span> <span class="hljs-keyword">or</span> volume &gt; <span class="hljs-number">80</span>:
+    volume = <span class="hljs-number">50</span>
+    print(<span class="hljs-string">&quot;That&apos;s better!&quot;</span>)</code></pre>
+<p>Nemus&#xED;&#x161; p&#xED;sa&#x165; koment&#xE1;r pre ka&#x17E;d&#xFD; riadok k&#xF3;du &#x10D;o nap&#xED;&#x161;e&#x161;, ale je u&#x17E;ito&#x10D;n&#xE9; vysvetli&#x165; pre&#x10D;o tvoj k&#xF3;d nie&#x10D;o rob&#x1D0;, alebo stru&#x10D;ne pop&#xED;sa&#x165; ke&#x10F; rob&#xED; nie&#x10D;o zlo&#x17E;it&#xE9;.</p><h3 id="zhrnutie">Zhrnutie</h3><p>V posledn&#xFD;ch troch cvi&#x10D;eniach si sa nau&#x10D;ila:</p><ul><li><strong>porovn&#xE1;va&#x165; veci</strong> - v Pythone m&#xF4;&#x17E;e&#x161; porovn&#xE1;va&#x165; veci pomocou znamienok <code>&gt;</code>, <code>&gt;=</code>, <code>==</code>, <code>&lt;=</code>, <code>&lt;</code> a oper&#xE1;torov <code>and</code>, <code>or</code>
+</li>
+<li><strong>Booleovsk&#xE9;/logick&#xE9; premenn&#xE9;</strong> - typ objektu, ktor&#xFD; m&#xF4;&#x17E;e ma&#x165; len jednu z dvoch hodn&#xF4;t: <code>True</code> (pravda) alebo <code>False</code> (nepravda)
+</li>
+<li><strong>Uklada&#x165; s&#xFA;bory</strong> - ukladanie k&#xF3;du v s&#xFA;boroch, tak&#x17E;e m&#xF4;&#x17E;ete sp&#xFA;&#x161;&#x165;a&#x165; v&#xE4;&#x10D;&#x161;ie programy.
+</li>
+<li><strong>if... elif... else</strong> - pr&#xED;kazy, ktor&#xE9; ti umo&#x17E;&#x148;uj&#xFA; spusti&#x165; k&#xF3;d, iba ak s&#xFA; splnen&#xE9; ur&#x10D;it&#xE9; podmienky.
+</li>
+<li><strong>comments</strong> - lines that Python won&apos;t run which let you document your code
+</li></ul>
+<p>Teraz je &#x10D;as na posledn&#xFA; &#x10D;as&#x165; tejto kapitoly!</p><h2 id="tvoje-vlastn&#xE9;-funkcie">Tvoje vlastn&#xE9; funkcie!</h2><blockquote><p>Pre &#x10D;itate&#x13E;ov doma: T&#xE1;to kapitola je spracovan&#xE1; v <a href="https://www.youtube.com/watch?v=5owr-6suOl0" target="_blank">Python Basics: Functions</a> videu.</p></blockquote><p>Pam&#xE4;t&#xE1;&#x161; si funkcie ako napr&#xED;klad <code>len()</code>, ktor&#xE9; m&#xF4;&#x17E;e&#x161; v Pythone sp&#xFA;&#x161;&#x165;a&#x165;? M&#xE1;me pre teba dobr&#xFA; spr&#xE1;vu - teraz sa nau&#x10D;&#xED;&#x161; ako nap&#xED;sa&#x165; vlastn&#xFA; funkciu!</p><p>Funkcia je postupnos&#x165; in&#x161;trukci&#xED;, ktor&#xE9; by mal Python spusti&#x165;. Ka&#x17E;d&#xE1; funkcia v Pythone za&#x10D;&#xED;na k&#x13E;&#xFA;&#x10D;ov&#xFD;m slovom <code>def</code>, m&#xE1; svoje meno a m&#xF4;&#x17E;e ma&#x165; nejak&#xE9; parametre. Skusme to. Nahra&#x10F; k&#xF3;d v <strong>python_intro.py</strong> t&#xFD;mto:</p><p></p><p class="code-label">python_intro.py</p><p></p><pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hi</span><span class="hljs-params">()</span>:</span>
+    print(<span class="hljs-string">&apos;Ahoj!&apos;</span>)
+    print(<span class="hljs-string">&apos;Ako sa mas?&apos;</span>)
+
+hi()</code></pre>
+<p>OK, na&#x161;a prv&#xE1; funkcia je pripraven&#xE1;!</p><p>Mo&#x17E;no sa &#x10D;uduje&#x161; pre&#x10D;o sme na koniec s&#xFA;boru nap&#xED;sali n&#xE1;zov funkcie. To preto, lebo Python &#x10D;&#xED;ta s&#xFA;bor a vykon&#xE1;va k&#xF3;d od vrchu po spodok. Tak&#x17E;e aby sme mohli na&#x161;u funkciu pou&#x17E;i&#x165;, mus&#xED;me jej n&#xE1;zov nap&#xED;sa&#x165; op&#xE4;&#x165;.</p><p>Spus&#x165;me to a pozrime sa, &#x10D;o sa stane:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        $ python3 python_intro.py
+        Ahoj!
+        Ako sa mas?</code></pre>
+<p>Pozn&#xE1;mka: Ak nefunguje, nepanik&#xE1;r! V&#xFD;stup ti pom&#xF4;&#x17E;e zisti&#x165; d&#xF4;vod, pre&#x10D;o:</p><ul><li>Ak sa ti zjav&#xED; <code>NameError</code>, to znamen&#xE1;, &#x17E;e si nie&#x10D;o chybne nap&#xED;sala, tak&#x17E;e by si mala overi&#x165;, &#x17E;e si pou&#x17E;ila rovnak&#xE9; meno, ke&#x10F; si vytv&#xE1;rala pomocou <code>def hi()</code> a ke&#x10F; si ju zavolala pomocou <code>hi()</code>.
+</li>
+<li>Ak sa ti zjav&#xED; <code>IndentationError</code>, uisti sa, &#x17E;e oba <code>print</code> riadky, maj&#xFA; rovnak&#xFD; po&#x10D;et medzier od za&#x10D;iatku riadku: python vy&#x17E;aduje aby v&#x161;etky riadky boli pedatne zarovnan&#xE9;.
+</li>
+<li>Ak nevid&#xED;&#x161; &#x17E;iaden v&#xFD;stup, tak sa pozri &#x10D;i posledn&#xE9; <code>hi()</code> <em>nie je</em> odsaden&#xE9; - ak je, ten riadok sa stal s&#xFA;&#x10D;as&#x165;ou funkcie a nikdy nedojde k jeho spusteniu.
+</li></ul>
+<p>Po&#x10F;me vytvori&#x165; na&#x161;u prv&#xFA; funkciu s parametrami. Pou&#x17E;ijeme predch&#xE1;dzaj&#xFA;ci pr&#xED;klad - funkcia, ktor&#xE1; hovor&#xED; &quot;ahoj&quot; osobe, ktor&#xE1; ju spust&#xED; - s menom:</p><p></p><p class="code-label">python_intro.py</p><p></p><pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hi</span><span class="hljs-params">(name)</span>:</span></code></pre>
+<p>Ako vid&#xED;&#x161;, dali sme na&#x161;ej funkcii parameter, ktor&#xFD; sme nazvali <code>meno</code>:</p><p></p><p class="code-label">python_intro.py</p><p></p><pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hi</span><span class="hljs-params">(meno)</span>:</span>
+    <span class="hljs-keyword">if</span> meno == <span class="hljs-string">&apos;Ola&apos;</span>:
+        print(<span class="hljs-string">&apos;Ahoj Ola!&apos;</span>)
+    <span class="hljs-keyword">elif</span> meno == <span class="hljs-string">&apos;Sonja&apos;</span>:
+        print(<span class="hljs-string">&apos;Ahoj Sonja!&apos;</span>)
+    <span class="hljs-keyword">else</span>:
+        print(<span class="hljs-string">&apos;Ahoj neznama!&apos;</span>)
+
+hi()</code></pre>
+<p>Zapam&#xE4;taj si: Funkcia <code>print</code> je odsaden&#xE1; o 4 medzery vo vn&#xFA;tri pr&#xED;kazu <code>if</code>. Je to preto, lebo funkcia sa spust&#xED;, len ak je splnen&#xE1; podmienka. Pozrime sa ako to funguje:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        $ python3 python_intro.py
+        Traceback (most recent call last):
+        File &quot;python_intro.py&quot;, line 10, in &lt;module&gt;
+          hi()
+        TypeError: hi() missing 1 required positional argument: &apos;meno&apos;</code></pre>
+<p>Ups, chyba. Na&#x161;&#x165;astie Python n&#xE1;m d&#xE1;va vcelku u&#x17E;ito&#x10D;n&#xFA; chybov&#xFA; hl&#xE1;&#x161;ku. Hovor&#xED; n&#xE1;m, &#x17E;e funkcia <code>hi()</code> (t&#xE1;, &#x10D;o sme definovali) m&#xE1; jeden povinn&#xFD; argument (s n&#xE1;zvom <code>meno</code>) a &#x17E;e sme mu ju zabudli zada&#x165; pri volan&#xED; funkcie. Opravme to na konci s&#xFA;boru:</p><p></p><p class="code-label">python_intro.py</p><p></p><pre><code class="lang-python">hi(<span class="hljs-string">&quot;Ola&quot;</span>)</code></pre>
+<p>A znova ho spusti:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        $ python3 python_intro.py
+        Ahoj Ola!</code></pre>
+<p>A &#x10D;o ak zmen&#xED;me meno?</p><p></p><p class="code-label">python_intro.py</p><p></p><pre><code class="lang-python">hi(<span class="hljs-string">&quot;Sonja&quot;</span>)</code></pre>
+<p>A spust&#xED;me to:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        $ python3 python_intro.py
+        Ahoj Sonja!</code></pre>
+<p>No a &#x10D;o si mysl&#xED;&#x161;, &#x10D;o sa stane, ak tam nap&#xED;&#x161;e&#x161; in&#xE9; meno? (Nie Ola ani Sonja). Vysk&#xFA;&#x161;aj a uvid&#xED;&#x161;, &#x10D;i bol tvoj predpoklad spr&#xE1;vny. Malo by ti vyp&#xED;sa&#x165; toto:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        Ahoj nezn&#xE1;ma!</code></pre>
+<p>&#xDA;&#x17E;asn&#xE9;, nie? V&#x10F;aka tomu nemus&#xED;&#x161; prepisova&#x165; dokola to ist&#xE9; zaka&#x17E;d&#xFD;m, ke&#x10F; chce&#x161; zmeni&#x165; meno osoby, ktor&#xFA; m&#xE1; funkcia pozdravi&#x165;. A to je presne d&#xF4;vod, pre&#x10D;o potrebujeme funkcie - aby sme nemuseli opakova&#x165; svoj k&#xF3;d!</p><p>Urobme to teda trochu rozumnej&#x161;ie - existuj&#xFA; viac ako dve men&#xE1; a p&#xED;sa&#x165; podmienku pre ka&#x17E;d&#xE9; by bolo trochu n&#xE1;ro&#x10D;n&#xE9;, v&#x161;ak?</p><p></p><p class="code-label">python_intro.py</p><p></p><pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hi</span><span class="hljs-params">(meno)</span>:</span>
+    print(<span class="hljs-string">&apos;Ahoj &apos;</span> + meno + <span class="hljs-string">&apos;!&apos;</span>)
+
+hi(<span class="hljs-string">&quot;Katka&quot;</span>)</code></pre>
+<p>Teraz spus&#x165;me k&#xF3;d:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        $ python3 python_intro.py
+        Ahoj Katka!</code></pre>
+<p>Gratulujeme! Pr&#xE1;ve si sa nau&#x10D;ila ako sa p&#xED;&#x161;u funkcie! :)</p><h2 id="cykly">Cykly</h2><blockquote><p>Pre &#x10D;itate&#x13E;ov doma: T&#xE1;to kapitola je spracovan&#xE1; v <a href="https://www.youtube.com/watch?v=aEA6Rc86HF0" target="_blank">Python Basics: For Loop</a> videu.</p></blockquote><p>Toto je u&#x17E; posledn&#xE1; &#x10D;as&#x165;. I&#x161;lo to r&#xFD;chlo, v&#x161;ak? :)</p><p>Program&#xE1;tori sa neradi opakuj&#xFA;. Programovanie je o automatiz&#xE1;cii vec&#xED;, tak&#x17E;e nechceme zdravi&#x165; ka&#x17E;d&#xFA; osobu manu&#xE1;lne, nie? A vtedy n&#xE1;m pr&#xED;du vhod cykly.</p><p>E&#x161;te si spom&#xED;na&#x161; na zoznamy? Pripravme zoznam diev&#x10D;at:</p><p></p><p class="code-label">python_intro.py</p><p></p><pre><code class="lang-python">dievcata = [<span class="hljs-string">&apos;Katka&apos;</span>, <span class="hljs-string">&apos;Monika&apos;</span>, <span class="hljs-string">&apos;Zuzka&apos;</span>, <span class="hljs-string">&apos;Ola&apos;</span>, <span class="hljs-string">&apos;Ty&apos;</span>]</code></pre>
+<p>Chceme ich pozdravi&#x165; v&#x161;etky menom. Na to m&#xE1;me funkciu <code>hi</code>, tak ju pou&#x17E;ime v cykle:</p><p></p><p class="code-label">python_intro.py</p><p></p><pre><code class="lang-python"><span class="hljs-keyword">for</span> meno <span class="hljs-keyword">in</span> dievcata:</code></pre>
+<p>Pr&#xED;kaz <code>for</code> sa spr&#xE1;va podobne ako <code>if</code>; k&#xF3;d pod oboma z nich mus&#xED; by&#x165; odsaden&#xFD; o &#x161;tyri medzery.</p><p>Tu je pln&#xFD; k&#xF3;d, ktor&#xFD; nap&#xED;&#x161;eme do s&#xFA;boru:</p><p></p><p class="code-label">python_intro.py</p><p></p><pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hi</span><span class="hljs-params">(meno)</span>:</span>
+    print(<span class="hljs-string">&apos;Ahoj &apos;</span> + meno + <span class="hljs-string">&apos;!&apos;</span>)
+
+dievcata = [<span class="hljs-string">&apos;Katka&apos;</span>, <span class="hljs-string">&apos;Monika&apos;</span>, <span class="hljs-string">&apos;Zuzka&apos;</span>, <span class="hljs-string">&apos;Ola&apos;</span>, <span class="hljs-string">&apos;Ty&apos;</span>]
+<span class="hljs-keyword">for</span> meno <span class="hljs-keyword">in</span> dievcata:
+    hi(meno)
+    print(<span class="hljs-string">&apos;Dalsie dievca&apos;</span>)</code></pre>
+<p>A ke&#x10F; to spust&#xED;me:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        $ python3 python_intro.py
+        Ahoj Katka!
+        Dalsie dievca
+        Ahoj Monika!
+        Dalsie dievca
+        Ahoj Zuzka!
+        Dalsie dievca
+        Ahoj Ola!
+        Dalsie dievca
+        Ahoj Ty!
+        Dalsie dievca</code></pre>
+<p>Ako vid&#xED;&#x161;, v&#x161;etko, &#x10D;o d&#xE1;&#x161; do pr&#xED;kazu <code>for</code> s oddsaden&#xED;m sa bude opakova&#x165; pre ka&#x17E;d&#xFD; prvok zoznamu <code>dievcata</code>.</p><p><code>for</code> m&#xF4;&#x17E;e&#x161; pomocou funkcie <code>range</code> pou&#x17E;i&#x165; aj na &#x10D;&#xED;sla:</p><p></p><p class="code-label">python_intro.py</p><p></p><pre><code class="lang-python"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>, <span class="hljs-number">6</span>):
+    print(i)</code></pre>
+<p>&#x10C;o vyp&#xED;&#x161;e:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        1
+        2
+        3
+        4
+        5</code></pre>
+<p><code>range</code> je funkcia, ktor&#xE1; vytv&#xE1;ra zoznam &#x10D;&#xED;sel s postupnos&#x165;ou &#x10D;&#xED;sel (krajn&#xE9; &#x10D;&#xED;sla funkcii poskytne&#x161; ako parametre).</p><p>V&#x161;imni si, &#x17E;e druh&#xE9; &#x10D;&#xED;slo sa nenach&#xE1;dza vo v&#xFD;stupnom zozname (teda <code>range(1, 6)</code> po&#x10D;&#xED;ta od 1 po 5, ale neobsahuje &#x10D;&#xED;slo 6). To je preto, lebo &quot;range&quot; je jednostranne otvoren&#xFD;, &#x10D;o znamen&#xE1;, &#x17E;e obsahuje prv&#xFA; hodnotu, ale nie posledn&#xFA;.</p><h2 id="zhrnutie">Zhrnutie</h2><p>To je v&#x161;etko. <strong>Si &#xFA;plne geni&#xE1;lna!</strong> Toto bola n&#xE1;ro&#x10D;n&#xE1; kapitola, tak&#x17E;e by si mala by&#x165; na seba py&#x161;n&#xE1;. My sme rozhodne hrd&#xED; na teba, &#x17E;e si to zvl&#xE1;dla a&#x17E; potia&#x13E;to!</p><p>Ofici&#xE1;lnu a pln&#xFA; verziu tutori&#xE1;lu najde&#x161; na <a href="https://docs.python.org/3/tutorial/" target="_blank">https://docs.python.org/3/tutorial/</a>. Tam najde&#x161; podrobnej&#x161;ie a &#xFA;pln&#xE9; inform&#xE1;cie o jazyku. Nech sa dar&#xED; :)</p><p>Teraz na chv&#xED;&#x13E;u si daj pauzu - natiahni sa trochu, poprech&#xE1;dzaj sa, nechaj svoje o&#x10D;i odd&#xFD;chnu&#x165; si - a potom prejdeme na &#x10F;al&#x161;iu kapitolu. :)</p><p><img alt="Kol&#xE1;&#x10D;ik" src="images/cupcake.png"></p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../code_editor/" class="navigation navigation-prev " aria-label="Previous page: Editor kódu">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../django/" class="navigation navigation-next " aria-label="Next page: Čo je Django?">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Úvod do jazyka Python","level":"1.8","depth":1,"next":{"title":"Čo je Django?","level":"1.9","depth":1,"path":"django/README.md","ref":"django/README.md","articles":[]},"previous":{"title":"Editor kódu","level":"1.7","depth":1,"path":"code_editor/README.md","ref":"code_editor/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"django_version":"2.2.4"},"language":"sk","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"python_introduction/README.md","mtime":"2020-06-27T13:00:24.138Z","type":"markdown"},"gitbook":{"version":"3.4.0","time":"2020-06-27T13:00:41.274Z"},"basePath":"..","book":{"language":"sk"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,856 @@
+
+<!DOCTYPE HTML>
+<html lang="hu" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Bevezetés a parancssor használatába · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.4.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../python_installation/" />
+    
+    
+    <link rel="prev" href="../how_the_internet_works/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Bevezetés
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Installáció
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    Hogy működik az Internet?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Bevezetés a parancssor használatába
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    A Python telepítése
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    Kódszerkesztő (editor)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Bevezetés a Pythonba
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Mi a Django?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Django telepítés
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    Az első Django projekted!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Django modellek
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Deploy!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django url-ek
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django views - itt az ideje alkotni!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    Bevezetés a HTML-be
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM és QuerySet-ek
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    Dinamikus adatok a template-ben
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django sablonok (template)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - Tegyük széppé!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Template-kiegészítés
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Egészítsd ki az applikációdat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Django űrlapok
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    Következő lépések
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Bevezetés a parancssor használatába</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="bevezet&#xE9;s-a-parancssor-haszn&#xE1;lat&#xE1;ba">Bevezet&#xE9;s a parancssor haszn&#xE1;lat&#xE1;ba</h1><p>Ez nagyon izgalmas, igaz?! P&#xE1;r percen bel&#xFC;l meg&#xED;rod az els&#x151; k&#xF3;dsorodat :)</p><p><strong>Hadd mutassuk be neked az els&#x151; &#xFA;j bar&#xE1;todat: a parancssort!</strong></p><p>A k&#xF6;vetkez&#x151; l&#xE9;p&#xE9;sekben megmutatjuk neked, hogyan haszn&#xE1;ld azt a fekete ablakot &#xFA;gy, ahogy az &#xF6;sszes hacker haszn&#xE1;lja. Els&#x151; r&#xE1;n&#xE9;z&#xE9;sre kiss&#xE9; ijeszt&#x151;nek t&#x171;nhet, de val&#xF3;j&#xE1;ban csak egy egyszer&#x171; parancsot v&#xE1;r t&#x151;led.</p><blockquote><p><strong>Megjegyz&#xE9;s</strong> A k&#xF6;nyvben felv&#xE1;ltva haszn&#xE1;ljuk a &apos;k&#xF6;nyvt&#xE1;r&apos; &#xE9;s &apos;mappa&apos; (&apos;directory&apos; &#xE9;s &apos;folder&apos;) szavakat, de ezek pont ugyanazt jelentik.</p></blockquote><h2 id="mi-az-a-parancssor">Mi az a parancssor?</h2><p>A <strong>parancssor</strong> (command line, vagy <strong>command-line interface</strong>) nev&#x171; ablak egy sz&#xF6;veges alap&#xFA; alkalmaz&#xE1;s, amit arra haszn&#xE1;lhatsz, hogy f&#xE1;jlokat tekinthess meg, szerkeszthess, &#xE9;s k&#xFC;l&#xF6;nb&#xF6;z&#x151; m&#x171;veleteket v&#xE9;gezhess rajtuk. Olyasmi, mint a Windows Explorer, vagy Mac g&#xE9;peken a Finder, de a grafikus fel&#xFC;let n&#xE9;lk&#xFC;l. Egy&#xE9;b megnevez&#xE9;sek a parancssorra: <em>konzol</em>, <em>termin&#xE1;l</em>, <em>cmd</em>, <em>CLI</em>, <em>prompt</em>.</p><h2 id="a-parancssor-megnyit&#xE1;sa">A parancssor megnyit&#xE1;sa</h2><p>Hogy belev&#xE1;ghass a k&#xED;s&#xE9;rletez&#xE9;sbe, el&#x151;sz&#xF6;r meg kell nyitnod a parancssort.</p><sec data-title="Windows" data-id="windows_prompt" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Windows<a class="pull-right section atTitle btn btn-default" target="windows_prompt"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_prompt"><div class="panel-body">
+
+
+<p>Start menu &#x2192; All Programs &#x2192; Accessories &#x2192; Command Prompt.</p></div></div></div></sec>
+
+
+<sec data-title="OS X" data-id="OSX_prompt" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>OS X<a class="pull-right section atTitle btn btn-default" target="OSX_prompt"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_prompt"><div class="panel-body">
+
+
+<p>Applications &#x2192; Utilities &#x2192; Terminal.</p></div></div></div></sec>
+
+
+<sec data-title="Linux" data-id="linux_prompt" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Linux<a class="pull-right section atTitle btn btn-default" target="linux_prompt"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="linux_prompt"><div class="panel-body">
+
+
+<p>Val&#xF3;sz&#xED;n&#x171;leg itt tal&#xE1;lod meg: Applications &#x2192; Accessories &#x2192; Terminal, de ez a rendszeredt&#x151;l f&#xFC;gg. Ha nincs ott, csak keress r&#xE1; a Google-n :)</p></div></div></div></sec>
+
+
+<h2 id="parancssor">Parancssor</h2><p>Egy feh&#xE9;r vagy fekete ablakot kell l&#xE1;tnod, ami csak a te parancsaidra v&#xE1;r.</p><sec data-title="OS X &#xE9;s Linux" data-id="OSX_Linux_prompt" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>OS X &#xE9;s Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_prompt"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_prompt"><div class="panel-body">
+
+
+<p>Ha Mac-ed vagy Linux-od van, val&#xF3;sz&#xED;n&#x171;leg egy <code>$</code>-t kell l&#xE1;tnod:</p><pre><code>        $</code></pre>
+</div></div></div></sec>
+
+
+<sec data-title="Windows" data-id="windows_prompt2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Windows<a class="pull-right section atTitle btn btn-default" target="windows_prompt2"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_prompt2"><div class="panel-body">
+
+
+<p>A Windows-on ez egy <code>&gt;</code> jel:</p><pre><code>        &gt;</code></pre>
+</div></div></div></sec>
+
+
+<p>Minden sornak ezzel a jellel &#xE9;s az azt k&#xF6;vet&#x151; space-el kell kezd&#x151;dnie, de ezt nem neked kell beg&#xE9;pelned. A sz&#xE1;m&#xED;t&#xF3;g&#xE9;ped megteszi helyetted :)</p><blockquote><p>Csak egy gyors megjegyz&#xE9;s: &#xED;gy is kin&#xE9;zhet a parancssorod: <code>C:\Users\ola&gt;</code> vagy <code>Olas-MacBook-Air:~ ola$</code>, &#xE9;s ez teljesen j&#xF3; &#xED;gy. Ebben az &#xFA;tmutat&#xF3;ban csak pr&#xF3;b&#xE1;ljuk a lehet&#x151; legink&#xE1;bb leegyszer&#x171;s&#xED;teni.</p></blockquote><p>A sor elej&#xE9;n l&#xE9;v&#x151; r&#xE9;sz, a  <code>$</code> vagy <code>&gt;</code> karakterig (azt is bele&#xE9;rtve) a <em>parancssori prompt</em> vagy r&#xF6;viden <em>prompt</em> a neve. Azt jelzi, hogy a sz&#xE1;m&#xED;t&#xF3;g&#xE9;p a te utas&#xED;t&#xE1;sodra v&#xE1;r.</p><p>A tutorial sor&#xE1;n, amikor egy parancsot kell be&#xED;rnod, ki fogjuk &#xED;rni a <code>$</code> vagy <code>&gt;</code> karaktert, &#xE9;s olykor m&#xE9;g b&#x151;vebb promptot. Nyugodtan hagyd figyelmen k&#xED;v&#xFC;l a baloldali r&#xE9;szt, &#xE9;s csak a prompt ut&#xE1;n kezd&#x151;d&#x151; parancsot g&#xE9;peld be.</p><h2 id="az-els&#x151;-parancsod-yay">Az els&#x151; parancsod (YAY!)</h2><p>Kezdj&#xFC;k valami egyszer&#x171;vel. G&#xE9;peld be ezt a parancsot:</p><sec data-title="OS X &#xE9;s Linux" data-id="OSX_Linux_whoami" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>OS X &#xE9;s Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_whoami"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_whoami"><div class="panel-body">
+
+
+<p></p><p class="code-label">parancssor</p><p></p><pre><code>$ whoami</code></pre>
+</div></div></div></sec>
+
+
+<sec data-title="Windows" data-id="windows_whoami" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Windows<a class="pull-right section atTitle btn btn-default" target="windows_whoami"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_whoami"><div class="panel-body">
+
+
+<p></p><p class="code-label">parancssor</p><p></p><pre><code>&gt; whoami</code></pre>
+</div></div></div></sec>
+
+
+<p>Majd nyomj <code>enter</code>t. Ezt az eredm&#xE9;nyt kapod:</p><pre><code>        $ whoami
+        olasitarska</code></pre>
+<p>Amint l&#xE1;thatod, a sz&#xE1;m&#xED;t&#xF3;g&#xE9;ped az el&#x151;bb ki&#xED;rta a felhaszn&#xE1;l&#xF3;nevedet. J&#xF3;, mi?:)</p><blockquote><p>Pr&#xF3;b&#xE1;lj meg minden parancsot beg&#xE9;pelni, ahelyett, hogy innen m&#xE1;soln&#xE1;d ki. &#xCD;gy t&#xF6;bbet fogsz megjegyezni!</p></blockquote><h2 id="az-alapok">Az alapok</h2><p>Minden oper&#xE1;ci&#xF3;s rendszer parancssora kiss&#xE9; k&#xFC;l&#xF6;nb&#xF6;z&#x151; prancsokat ig&#xE9;nyel, ez&#xE9;rt k&#xE9;rlek gy&#x151;z&#xF6;dj meg arr&#xF3;l, hogy a te oper&#xE1;ci&#xF3;s rendszerednek megfelel&#x151; utas&#xED;t&#xE1;sokat k&#xF6;veted. Pr&#xF3;b&#xE1;ljuk ki, rendben?</p><h3 id="a-jelenlegi-mappa">A jelenlegi mappa</h3><p>J&#xF3; lenne tudni, hogy most hol vagyunk, nem? N&#xE9;zz&#xFC;k. &#xCD;rd be ezt a parancsot, &#xE9;s nyomj <code>enter</code>t:</p><sec data-title="OS X &#xE9;s Linux" data-id="OSX_Linux_pwd" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>OS X &#xE9;s Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_pwd"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_pwd"><div class="panel-body">
+
+
+<p></p><p class="code-label">parancssor</p><p></p><pre><code>$ pwd
+/Users/olasitarska</code></pre>
+<blockquote><p>Megjegyz&#xE9;s: a &apos;pwd&apos; jelent&#xE9;se: &apos;print working directory&apos; (&apos;munkak&#xF6;nyvt&#xE1;r ki&#xED;r&#xE1;sa&apos;).</p></blockquote></div></div></div></sec>
+
+
+<sec data-title="Windows" data-id="windows_cd" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Windows<a class="pull-right section atTitle btn btn-default" target="windows_cd"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_cd"><div class="panel-body">
+
+
+<p></p><p class="code-label">parancssor</p><p></p><pre><code>&gt; cd
+C:\Users\olasitarska</code></pre>
+<blockquote><p>Megjegyz&#xE9;s: a &apos;cd&apos; jelent&#xE9;se: &apos;change directory&apos; (&apos;k&#xF6;nyvt&#xE1;r v&#xE1;lt&#xE1;sa&apos;). Ha powershell-t haszn&#xE1;lsz, haszn&#xE1;lhatod a pwd parancsot is, mint Linuxon vagy Mac OS X-en.</p></blockquote></div></div></div></sec>
+
+
+<p>Val&#xF3;sz&#xED;n&#x171;leg valami hasonl&#xF3;t fogsz l&#xE1;tni a g&#xE9;peden. Amikor megnyitod a parancssort, &#xE1;ltal&#xE1;ban a felhaszn&#xE1;l&#xF3; &apos;home&apos; k&#xF6;nyvt&#xE1;r&#xE1;ba ker&#xFC;lsz.</p><hr><h3 id="f&#xE1;jlok-&#xE9;s-k&#xF6;nyvt&#xE1;rak-kilist&#xE1;z&#xE1;sa">F&#xE1;jlok &#xE9;s k&#xF6;nyvt&#xE1;rak kilist&#xE1;z&#xE1;sa</h3><p>&#xC9;s mi van benne? Szuper lenne kider&#xED;teni. N&#xE9;zz&#xFC;k meg:</p><sec data-title="OS X &#xE9;s Linux" data-id="OSX_Linux_ls" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>OS X &#xE9;s Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_ls"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_ls"><div class="panel-body">
+
+
+<pre><code>        $ ls
+        Applications
+        Desktop
+        Downloads
+        Music
+        ...</code></pre>
+</div></div></div></sec>
+
+
+<sec data-title="Windows" data-id="windows_dir" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Windows<a class="pull-right section atTitle btn btn-default" target="windows_dir"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_dir"><div class="panel-body">
+
+
+<pre><code>        &gt; dir
+         Directory of C:\Users\olasitarska
+        05/08/2014 07:28 PM &lt;DIR&gt;      Applications
+        05/08/2014 07:28 PM &lt;DIR&gt;      Desktop
+        05/08/2014 07:28 PM &lt;DIR&gt;      Downloads
+        05/08/2014 07:28 PM &lt;DIR&gt;      Music
+        ...</code></pre>
+<h2 id=""></h2></div></div></div></sec><h3 id="jelenlegi-mappa-megv&#xE1;ltoztat&#xE1;sa">Jelenlegi mappa megv&#xE1;ltoztat&#xE1;sa</h3><p>Most pedig l&#xE9;pj&#xFC;nk be a Desktop (vagy Asztal) mapp&#xE1;ba:</p><sec data-title="OS X &#xE9;s Linux" data-id="OSX_Linux_move_to" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>OS X &#xE9;s Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_move_to"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_move_to"><div class="panel-body">
+
+
+<p></p><p class="code-label">parancssor</p><p></p><pre><code>$ cd Desktop</code></pre>
+</div></div></div></sec>
+
+
+<sec data-title="Windows" data-id="windows_move_to" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Windows<a class="pull-right section atTitle btn btn-default" target="windows_move_to"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_move_to"><div class="panel-body">
+
+
+<p></p><p class="code-label">parancssor</p><p></p><pre><code>&gt; cd Desktop</code></pre>
+</div></div></div></sec>
+
+
+<p>N&#xE9;zz&#xFC;k meg, hogy t&#xE9;nyleg megv&#xE1;ltozott-e:</p><sec data-title="OS X &#xE9;s Linux" data-id="OSX_Linux_pwd2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>OS X &#xE9;s Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_pwd2"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_pwd2"><div class="panel-body">
+
+
+<p></p><p class="code-label">parancssor</p><p></p><pre><code>$ pwd
+/Users/olasitarska/Desktop</code></pre>
+</div></div></div></sec>
+
+
+<sec data-title="Windows" data-id="windows_cd2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Windows<a class="pull-right section atTitle btn btn-default" target="windows_cd2"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_cd2"><div class="panel-body">
+
+
+<p></p><p class="code-label">parancssor</p><p></p><pre><code>&gt; cd
+C:\Users\olasitarska\Desktop</code></pre>
+</div></div></div></sec>
+
+
+<p>Itt is van!</p><blockquote><p>PRO tipp: ha beg&#xE9;peled a <code>cd D</code>-t (vagy ha magyarul haszn&#xE1;lod az oper&#xE1;ci&#xF3;s rendszeredet, &#xE9;s &apos;Asztal&apos;-nak h&#xED;vj&#xE1;k a k&#xF6;nyvt&#xE1;radat, a <code>cd A</code>-t) &#xE9;s ezut&#xE1;n megnyomod a <0>tab</0>-ot, a parancssor automatikusan kieg&#xE9;sz&#xED;ti a nevet, lehet&#x151;v&#xE9; t&#xE9;ve sz&#xE1;modra a gyorsabb navig&#xE1;l&#xE1;st. Amennyiben t&#xF6;bb mappa is kezd&#x151;dik ugyanazzal a bet&#x171;vel, nyomd meg k&#xE9;tszer a <code>tab</code>-ot, hogy kilist&#xE1;zza a t&#xF6;bb opci&#xF3;t.</p></blockquote><hr><h3 id="k&#xF6;nyvt&#xE1;r-l&#xE9;trehoz&#xE1;sa">K&#xF6;nyvt&#xE1;r l&#xE9;trehoz&#xE1;sa</h3><p>Mit sz&#xF3;ln&#xE1;l, ha l&#xE9;trehozn&#xE1;nk egy gyakorl&#xF3; (practice) k&#xF6;nyvt&#xE1;rat az asztalon? &#xCD;gy tudod megtenni:</p><sec data-title="OS X &#xE9;s Linux" data-id="OSX_Linux_mkdir" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>OS X &#xE9;s Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_mkdir"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_mkdir"><div class="panel-body">
+
+
+<p></p><p class="code-label">parancssor</p><p></p><pre><code>$ mkdir practice</code></pre>
+</div></div></div></sec>
+
+
+<sec data-title="Windows" data-id="windows_mkdir" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Windows<a class="pull-right section atTitle btn btn-default" target="windows_mkdir"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_mkdir"><div class="panel-body">
+
+
+<p></p><p class="code-label">parancssor</p><p></p><pre><code>&gt; mkdir practice</code></pre>
+</div></div></div></sec>
+
+
+<p>Ez a parancs l&#xE9;tre fog hozni egy <code>practice</code> nev&#x171; mapp&#xE1;t az asztalodon. Ha megn&#xE9;zed az asztalt, meggy&#x151;z&#x151;dhetsz r&#xF3;la, hogy t&#xE9;nyleg ott van-e, de a <code>ls</code> vagy <code>dir</code> paranccsal is megteheted! Pr&#xF3;b&#xE1;ld ki :)</p><blockquote><p>PRO tipp: Ha nem szeretn&#xE9;d &#xFA;jra &#xE9;s &#xFA;jra ugyanazt a parancsot beg&#xE9;pelni, pr&#xF3;b&#xE1;ld meg a <code>felfele</code> &#xE9;s <code>lefele nyilakkal</code> beh&#xED;vni a legut&#xF3;bb futtatott parancsokat.</p></blockquote><hr><h3 id="feladat">Feladat!</h3><p>Egy kis kih&#xED;v&#xE1;s: hozz l&#xE9;tre egy <code>test</code> nev&#x171; mapp&#xE1;t a frissen elk&#xE9;sz&#xED;tett <code>practice</code> k&#xF6;nyvt&#xE1;radban. Haszn&#xE1;ld a <code>cd</code> &#xE9;s <code>mkdir</code> parancsokat.</p><h4 id="megold&#xE1;s">Megold&#xE1;s:</h4><sec data-title="OS X &#xE9;s Linux" data-id="OSX_Linux_test_dir" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>OS X &#xE9;s Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_test_dir"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_test_dir"><div class="panel-body">
+
+
+<p></p><p class="code-label">parancssor</p><p></p><pre><code>$ cd practice
+$ mkdir test
+$ ls
+test</code></pre>
+</div></div></div></sec>
+
+
+<sec data-title="Windows" data-id="windows_test_dir" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Windows<a class="pull-right section atTitle btn btn-default" target="windows_test_dir"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_test_dir"><div class="panel-body">
+
+
+<p></p><p class="code-label">parancssor</p><p></p><pre><code>&gt; cd practice
+&gt; mkdir test
+&gt; dir
+05/08/2014 07:28 PM &lt;DIR&gt;      test</code></pre>
+</div></div></div></sec>
+
+
+<p>Gratul&#xE1;lunk! :)</p><hr><h3 id="takar&#xED;t&#xE1;s">Takar&#xED;t&#xE1;s</h3><p>Nem szeretn&#xE9;nk k&#xE1;oszt hagyni magunk ut&#xE1;n, sz&#xF3;val t&#xF6;r&#xF6;lj&#xFC;nk le mindent, amit eddig csin&#xE1;ltunk.</p><p>El&#x151;sz&#xF6;r vissza kell menn&#xFC;nk az Asztal-ra:</p><sec data-title="OS X &#xE9;s Linux" data-id="OSX_Linux_back" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>OS X &#xE9;s Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_back"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_back"><div class="panel-body">
+
+
+<p></p><p class="code-label">parancssor</p><p></p><pre><code>$ cd ..</code></pre>
+</div></div></div></sec>
+
+
+<sec data-title="Windows" data-id="windows_back" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Windows<a class="pull-right section atTitle btn btn-default" target="windows_back"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_back"><div class="panel-body">
+
+
+<p></p><p class="code-label">parancssor</p><p></p><pre><code>&gt; cd ..</code></pre>
+</div></div></div></sec>
+
+
+<p>Ha a <code>cd</code> parancsot <code>..</code>-tal haszn&#xE1;lod, a jelenlegi k&#xF6;nyvt&#xE1;rb&#xF3;l a parent (sz&#xFC;l&#x151;) k&#xF6;nyvt&#xE1;rba jutsz (ez az a mappa, ami tartalmazza azt a mapp&#xE1;t, ahol &#xE9;ppen vagy).</p><p>Ellen&#x151;rizz&#xFC;k le, hogy hol vagyunk:</p><sec data-title="OS X &#xE9;s Linux" data-id="OSX_Linux_pwd3" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>OS X &#xE9;s Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_pwd3"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_pwd3"><div class="panel-body">
+
+
+<p></p><p class="code-label">parancssor</p><p></p><pre><code>$ pwd
+/Users/olasitarska/Desktop</code></pre>
+</div></div></div></sec>
+
+
+<sec data-title="Windows" data-id="windows_cd3" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Windows<a class="pull-right section atTitle btn btn-default" target="windows_cd3"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_cd3"><div class="panel-body">
+
+
+<p></p><p class="code-label">parancssor</p><p></p><pre><code>&gt; cd
+C:\Users\olasitarska\Desktop</code></pre>
+</div></div></div></sec>
+
+
+<p>Most pedig itt az ideje, hogy kit&#xF6;r&#xF6;lj&#xFC;k a <code>practice</code> k&#xF6;nyvt&#xE1;rat:</p><blockquote><p><strong>Figyelem</strong>: A f&#xE1;jlok t&#xF6;rl&#xE9;se a <code>del</code>, <code>rmdir</code>, vagy a <code>rm</code> parancsokkal visszaford&#xED;thatatlan, teh&#xE1;t a <em>t&#xF6;r&#xF6;lt f&#xE1;jlok &#xF6;r&#xF6;kre elt&#x171;nnek</em>! Legy&#xE9;l nagyon &#xF3;vatos ezzel a paranccsal.</p></blockquote><sec data-title="OS X &#xE9;s Linux" data-id="OSX_Linux_rm" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>OS X &#xE9;s Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_rm"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_rm"><div class="panel-body">
+
+
+<p></p><p class="code-label">parancssor</p><p></p><pre><code>$ rm -r practice</code></pre>
+</div></div></div></sec>
+
+
+<sec data-title="Windows" data-id="windows_rmdir" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Windows<a class="pull-right section atTitle btn btn-default" target="windows_rmdir"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_rmdir"><div class="panel-body">
+
+
+<p></p><p class="code-label">parancssor</p><p></p><pre><code>&gt; rmdir /S practice
+practice, Are you sure &lt;Y/N&gt;? Y</code></pre>
+</div></div></div></sec>
+
+
+<p>K&#xE9;sz! Ellen&#x151;rizz&#xFC;k le, hogy t&#xE9;nyleg megt&#xF6;rt&#xE9;nt-e:</p><sec data-title="OS X &#xE9;s Linux" data-id="OSX_Linux_ls2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>OS X &#xE9;s Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_ls2"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_ls2"><div class="panel-body">
+
+
+<p></p><p class="code-label">parancssor</p><p></p><pre><code>$ ls</code></pre>
+</div></div></div></sec>
+
+
+<sec data-title="Windows" data-id="windows_dir2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Windows<a class="pull-right section atTitle btn btn-default" target="windows_dir2"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_dir2"><div class="panel-body">
+
+
+<p></p><p class="code-label">parancssor</p><p></p><pre><code>&gt; dir</code></pre>
+</div></div></div></sec>
+
+
+<h3 id="kil&#xE9;p&#xE9;s">Kil&#xE9;p&#xE9;s</h3><p>Ennyi volt! Most m&#xE1;r biztons&#xE1;gosan kil&#xE9;phetsz a parancssorb&#xF3;l. Csin&#xE1;ljuk hacker m&#xF3;dra, j&#xF3;?:)</p><sec data-title="OS X &#xE9;s Linux" data-id="OSX_Linux_exit" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>OS X &#xE9;s Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_exit"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_exit"><div class="panel-body">
+
+
+<p></p><p class="code-label">parancssor</p><p></p><pre><code>$ exit</code></pre>
+</div></div></div></sec>
+
+
+<sec data-title="Windows" data-id="windows_exit" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Windows<a class="pull-right section atTitle btn btn-default" target="windows_exit"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_exit"><div class="panel-body">
+
+
+<p></p><p class="code-label">parancssor</p><p></p><pre><code>&gt; exit</code></pre>
+</div></div></div></sec>
+
+
+<p>Szuper, nem? :)</p><h2 id="&#xF6;sszefoglal&#xF3;">&#xD6;sszefoglal&#xF3;</h2><p>Egy kis &#xF6;sszefoglal&#xE1;s n&#xE9;h&#xE1;ny hasznos parancsr&#xF3;l:</p><table>
+<thead>
+<tr><th> Parancs (Windows) </th>
+<th> Parancs (Mac OS/Linux) </th>
+<th> Le&#xED;r&#xE1;s </th>
+<th> P&#xE9;lda </th>
+</tr></thead><tbody>
+<tr><td style="text-align:left"> exit </td>
+<td style="text-align:left"> exit </td>
+<td style="text-align:left"> az ablak bez&#xE1;r&#xE1;sa </td>
+<td style="text-align:left"> <strong>exit</strong> </td>
+</tr><tr><td style="text-align:left"> cd </td>
+<td style="text-align:left"> cd </td>
+<td style="text-align:left"> k&#xF6;nyvt&#xE1;r megv&#xE1;ltoztat&#xE1;sa </td>
+<td style="text-align:left"> <strong>cd test</strong> </td>
+</tr><tr><td style="text-align:left"> dir </td>
+<td style="text-align:left"> ls </td>
+<td style="text-align:left"> k&#xF6;nyvt&#xE1;rak/f&#xE1;jlok kilist&#xE1;z&#xE1;sa </td>
+<td style="text-align:left"> <strong>dir</strong> </td>
+</tr><tr><td style="text-align:left"> copy </td>
+<td style="text-align:left"> cp </td>
+<td style="text-align:left"> f&#xE1;jl m&#xE1;sol&#xE1;sa </td>
+<td style="text-align:left"> <strong>copy c:\test\test.txt c:\windows\test.txt</strong> </td>
+</tr><tr><td style="text-align:left"> move </td>
+<td style="text-align:left"> mv </td>
+<td style="text-align:left"> f&#xE1;jl mozgat&#xE1;sa </td>
+<td style="text-align:left"> <strong>move c:\test\test.txt c:\windows\test.txt</strong> </td>
+</tr><tr><td style="text-align:left"> mkdir </td>
+<td style="text-align:left"> mkdir </td>
+<td style="text-align:left"> &#xFA;j k&#xF6;nyvt&#xE1;r l&#xE9;trehoz&#xE1;sa </td>
+<td style="text-align:left"> <strong>mkdir testdirectory</strong> </td>
+</tr><tr><td style="text-align:left"> del </td>
+<td style="text-align:left"> rm </td>
+<td style="text-align:left"> k&#xF6;nyvt&#xE1;r/f&#xE1;jl t&#xF6;rl&#xE9;se </td>
+<td style="text-align:left"> <strong>del c:\test\test.txt</strong></td>
+</tr></tbody></table>
+
+<p>Ez csak n&#xE9;h&#xE1;ny parancs, azok k&#xF6;z&#xFC;l, amiket a parancssorban futtathatsz, de ma nem lesz sz&#xFC;ks&#xE9;ged enn&#xE9;l t&#xF6;bbre.</p><p>Ha k&#xED;v&#xE1;ncsi vagy, a <a href="http://ss64.com" target="_blank">ss64.com</a> oldalon megtal&#xE1;lod az &#xF6;sszes parancsot b&#xE1;rmelyik oper&#xE1;ci&#xF3;s rendszerre.</p><h2 id="k&#xE9;sz-vagy">K&#xE9;sz vagy?</h2><p>Mer&#xFC;lj&#xFC;nk el a Python-ban!</p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../how_the_internet_works/" class="navigation navigation-prev " aria-label="Previous page: Hogy működik az Internet?">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../python_installation/" class="navigation navigation-next " aria-label="Next page: A Python telepítése">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Bevezetés a parancssor használatába","level":"1.4","depth":1,"next":{"title":"A Python telepítése","level":"1.5","depth":1,"path":"python_installation/README.md","ref":"python_installation/README.md","articles":[]},"previous":{"title":"Hogy működik az Internet?","level":"1.3","depth":1,"path":"how_the_internet_works/README.md","ref":"how_the_internet_works/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"django_version":"2.2.4"},"language":"hu","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"intro_to_command_line/README.md","mtime":"2020-06-27T13:00:23.906Z","type":"markdown"},"gitbook":{"version":"3.4.0","time":"2020-06-27T13:00:41.274Z"},"basePath":"..","book":{"language":"hu"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

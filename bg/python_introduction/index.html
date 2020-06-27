@@ -1,0 +1,1068 @@
+
+<!DOCTYPE HTML>
+<html lang="bg" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Въведение в Python · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.4.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../django/" />
+    
+    
+    <link rel="prev" href="../code_editor/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Въведение
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Инсталиране
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../installation/">
+            
+                <a href="../installation/#command-line">
+            
+                    
+                    Команден ред
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../installation/">
+            
+                <a href="../installation/#python">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../installation/">
+            
+                <a href="../installation/#code-editor">
+            
+                    
+                    Редактор на код
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../installation/">
+            
+                <a href="../installation/#virtualenv">
+            
+                    
+                    Виртуална среда
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../installation/">
+            
+                <a href="../installation/#django">
+            
+                    
+                    Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../installation/">
+            
+                <a href="../installation/#git">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../installation/">
+            
+                <a href="../installation/#github">
+            
+                    
+                    GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../installation/">
+            
+                <a href="../installation/#pythonanywhere">
+            
+                    
+                    PythonAnywhere
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    Инсталиране (chromebook)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    Как работи интернет
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Въведение в команден ред
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Инсталиране на Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    Редактор на код
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Въведение в Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Какво е Django?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Инсталиране на Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    Вашият първи проект с Django!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Django модели
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Администриране на Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Внедряване!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django URL адреси
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django изгледи - време за създаване!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    Въведение в HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM (Querysets)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    Динамични данни в шаблони
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django шаблони
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - направи го красиво
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Разширяване на шаблони
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Разшири своето приложение
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Django Форми
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    Какво следва?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Въведение в Python</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x432;&#x44A;&#x432;&#x435;&#x434;&#x435;&#x43D;&#x438;&#x435;-&#x432;-python">&#x412;&#x44A;&#x432;&#x435;&#x434;&#x435;&#x43D;&#x438;&#x435; &#x432; Python</h1><blockquote><p>&#x427;&#x430;&#x441;&#x442; &#x43E;&#x442; &#x442;&#x430;&#x437;&#x438; &#x433;&#x43B;&#x430;&#x432;&#x430; &#x435; &#x431;&#x430;&#x437;&#x438;&#x440;&#x430;&#x43D;&#x430; &#x43D;&#x430; &#x443;&#x440;&#x43E;&#x446;&#x438; &#x43E;&#x442; Geek Girls Carrots (<a href="https://github.com/ggcarrots/django-carrots" target="_blank">https://github.com/ggcarrots/django-carrots</a>).</p></blockquote><p>&#x414;&#x430; &#x43D;&#x430;&#x43F;&#x438;&#x448;&#x435;&#x43C; &#x43C;&#x430;&#x43B;&#x43A;&#x43E; &#x43A;&#x43E;&#x434;!</p><h2 id="python-&#x437;&#x430;&#x43F;&#x438;&#x442;&#x432;&#x430;&#x43D;&#x435;">Python &#x437;&#x430;&#x43F;&#x438;&#x442;&#x432;&#x430;&#x43D;&#x435;</h2><blockquote><p>&#x417;&#x430; &#x447;&#x438;&#x442;&#x430;&#x442;&#x435;&#x43B;&#x438;&#x442;&#x435; &#x443; &#x434;&#x43E;&#x43C;&#x430;: &#x442;&#x430;&#x437;&#x438; &#x447;&#x430;&#x441;&#x442; &#x435; &#x440;&#x430;&#x437;&#x433;&#x43B;&#x435;&#x434;&#x430;&#x43D;&#x430; &#x432;&#x44A;&#x432; &#x432;&#x438;&#x434;&#x435;&#x43E;&#x442;&#x43E; <a href="https://www.youtube.com/watch?v=MO63L4s-20U" target="_blank">Python Basics: Integers, Strings, Lists, Variables and Errors</a>.</p></blockquote><p>&#x417;&#x430; &#x434;&#x430; &#x437;&#x430;&#x43F;&#x43E;&#x447;&#x43D;&#x435;&#x43C; &#x434;&#x430; &#x438;&#x433;&#x440;&#x430;&#x435;&#x43C; &#x441; Python, &#x442;&#x440;&#x44F;&#x431;&#x432;&#x430; &#x434;&#x430; &#x43E;&#x442;&#x432;&#x43E;&#x440;&#x438;&#x43C; <em>&#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x435;&#x43D; &#x440;&#x435;&#x434;</em> &#x43D;&#x430; &#x432;&#x430;&#x448;&#x438;&#x44F; &#x43A;&#x43E;&#x43C;&#x43F;&#x44E;&#x442;&#x44A;&#x440;. &#x412;&#x435;&#x447;&#x435; &#x442;&#x440;&#x44F;&#x431;&#x432;&#x430; &#x434;&#x430; &#x437;&#x43D;&#x430;&#x435;&#x442;&#x435; &#x43A;&#x430;&#x43A; &#x434;&#x430; &#x433;&#x43E; &#x43D;&#x430;&#x43F;&#x440;&#x430;&#x432;&#x438;&#x442;&#x435; - &#x43D;&#x430;&#x443;&#x447;&#x438;&#x445;&#x442;&#x435; &#x433;&#x43E; &#x432; &#x433;&#x43B;&#x430;&#x432;&#x430;&#x442;&#x430; <a href="../intro_to_command_line/">&#x412;&#x44A;&#x432;&#x435;&#x434;&#x435;&#x43D;&#x438;&#x435; &#x432; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x43D;&#x438;&#x44F; &#x440;&#x435;&#x434;</a>.</p><p>&#x421;&#x43B;&#x435;&#x434; &#x43A;&#x430;&#x442;&#x43E; &#x441;&#x442;&#x435; &#x433;&#x43E;&#x442;&#x43E;&#x432;&#x438;, &#x441;&#x43B;&#x435;&#x434;&#x432;&#x430;&#x439;&#x442;&#x435; &#x438;&#x43D;&#x441;&#x442;&#x440;&#x443;&#x43A;&#x446;&#x438;&#x438;&#x442;&#x435; &#x43F;&#x43E;-&#x434;&#x43E;&#x43B;&#x443;.</p><p>&#x418;&#x441;&#x43A;&#x430;&#x43C;&#x435; &#x434;&#x430; &#x43E;&#x442;&#x432;&#x43E;&#x440;&#x438;&#x43C; &#x43A;&#x43E;&#x43D;&#x437;&#x43E;&#x43B;&#x430; &#x43D;&#x430; Python, &#x437;&#x430;&#x442;&#x43E;&#x432;&#x430; &#x432;&#x44A;&#x432;&#x435;&#x434;&#x435;&#x442;&#x435; <code>python</code> &#x432; Windows &#x438;&#x43B;&#x438; <code>python3</code> &#x432; Mac OS/Linux &#x438; &#x43D;&#x430;&#x442;&#x438;&#x441;&#x43D;&#x435;&#x442;&#x435; <code>enter</code>.</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        $ python3
+        Python 3.6.1 (...)
+        Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+        &gt;&gt;&gt;</code></pre>
+<h2 id="&#x432;&#x430;&#x448;&#x430;&#x442;&#x430;-&#x43F;&#x44A;&#x440;&#x432;&#x430;-python-&#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x430;">&#x412;&#x430;&#x448;&#x430;&#x442;&#x430; &#x43F;&#x44A;&#x440;&#x432;&#x430; Python &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x430;!</h2><p>&#x421;&#x43B;&#x435;&#x434; &#x43A;&#x430;&#x442;&#x43E; &#x438;&#x437;&#x43F;&#x44A;&#x43B;&#x43D;&#x438;&#x442;&#x435; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x430;&#x442;&#x430; Python, &#x43F;&#x43E;&#x434;&#x43A;&#x430;&#x43D;&#x430;&#x442;&#x430; &#x441;&#x435; &#x43F;&#x440;&#x43E;&#x43C;&#x435;&#x43D;&#x438; &#x432; <code>&gt;&gt;&gt;</code>. &#x417;&#x430; &#x43D;&#x430;&#x441; &#x442;&#x43E;&#x432;&#x430; &#x43E;&#x437;&#x43D;&#x430;&#x447;&#x430;&#x432;&#x430;, &#x447;&#x435; &#x437;&#x430;&#x441;&#x435;&#x433;&#x430; &#x43C;&#x43E;&#x436;&#x435;&#x43C; &#x434;&#x430; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x43C;&#x435; &#x441;&#x430;&#x43C;&#x43E; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x438; &#x43D;&#x430; &#x435;&#x437;&#x438;&#x43A;&#x430; Python. &#x41D;&#x435; &#x435; &#x43D;&#x443;&#x436;&#x43D;&#x43E; &#x434;&#x430; &#x43F;&#x438;&#x448;&#x435;&#x442;&#x435; <code>&gt;&gt;&gt;</code> - Python &#x449;&#x435; &#x43D;&#x430;&#x43F;&#x440;&#x430;&#x432;&#x438; &#x442;&#x43E;&#x432;&#x430; &#x432;&#x43C;&#x435;&#x441;&#x442;&#x43E; &#x432;&#x430;&#x441;.</p><p>&#x410;&#x43A;&#x43E; &#x438;&#x441;&#x43A;&#x430;&#x442;&#x435; &#x434;&#x430; &#x438;&#x437;&#x43B;&#x435;&#x437;&#x435;&#x442;&#x435; &#x43E;&#x442; &#x43A;&#x43E;&#x43D;&#x437;&#x43E;&#x43B;&#x430;&#x442;&#x430; &#x43D;&#x430; Python &#x432;&#x44A;&#x432; &#x432;&#x441;&#x435;&#x43A;&#x438; &#x43C;&#x43E;&#x43C;&#x435;&#x43D;&#x442;, &#x43D;&#x430;&#x43F;&#x438;&#x448;&#x435;&#x442;&#x435; <code>exit()</code> &#x438;&#x43B;&#x438; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x439;&#x442;&#x435; &#x43F;&#x440;&#x435;&#x43A;&#x438;&#x44F; &#x43F;&#x44A;&#x442; <code>Ctrl + Z</code> &#x437;&#x430; Windows &#x438; <code>Ctrl + D</code> &#x437;&#x430; Mac/Linux. &#x422;&#x43E;&#x433;&#x430;&#x432;&#x430; &#x432;&#x435;&#x447;&#x435; &#x43D;&#x44F;&#x43C;&#x430; &#x434;&#x430; &#x432;&#x438;&#x436;&#x434;&#x430;&#x442;&#x435; <code>&gt;&gt;&gt;</code>.</p><p>&#x417;&#x430;&#x441;&#x435;&#x433;&#x430; &#x43D;&#x435; &#x438;&#x441;&#x43A;&#x430;&#x43C;&#x435; &#x434;&#x430; &#x438;&#x437;&#x43B;&#x438;&#x437;&#x430;&#x43C;&#x435; &#x43E;&#x442; &#x43A;&#x43E;&#x43D;&#x437;&#x43E;&#x43B;&#x430;&#x442;&#x430; Python. &#x418;&#x441;&#x43A;&#x430;&#x43C;&#x435; &#x434;&#x430; &#x43D;&#x430;&#x443;&#x447;&#x438;&#x43C; &#x43F;&#x43E;&#x432;&#x435;&#x447;&#x435; &#x437;&#x430; &#x43D;&#x435;&#x433;&#x43E;. &#x41D;&#x435;&#x43A;&#x430; &#x437;&#x430;&#x43F;&#x43E;&#x447;&#x43D;&#x435;&#x43C; &#x441; &#x432;&#x44A;&#x432;&#x435;&#x436;&#x434;&#x430;&#x43D;&#x435; &#x43D;&#x430; &#x43D;&#x44F;&#x43A;&#x430;&#x43A;&#x432;&#x430; &#x43C;&#x430;&#x442;&#x435;&#x43C;&#x430;&#x442;&#x438;&#x43A;&#x430;, &#x43A;&#x430;&#x442;&#x43E; <code>2 + 3</code> &#x438; &#x43D;&#x430;&#x442;&#x438;&#x441;&#x43A;&#x430;&#x43D;&#x435; &#x43D;&#x430; <code>enter</code>.</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">2</span> + <span class="hljs-number">3</span>
+<span class="hljs-number">5</span></code></pre>
+<p>&#x425;&#x443;&#x431;&#x430;&#x432;&#x43E;! &#x412;&#x438;&#x436;&#x442;&#x435; &#x43A;&#x430;&#x43A; &#x43E;&#x442;&#x433;&#x43E;&#x432;&#x43E;&#x440;&#x44A;&#x442; &#x438;&#x437;&#x441;&#x43A;&#x43E;&#x447;&#x438;? Python &#x437;&#x43D;&#x430;&#x435; &#x43C;&#x430;&#x442;&#x435;&#x43C;&#x430;&#x442;&#x438;&#x43A;&#x430;! &#x41C;&#x43E;&#x436;&#x435;&#x442;&#x435; &#x434;&#x430; &#x43E;&#x43F;&#x438;&#x442;&#x430;&#x442;&#x435; &#x438; &#x434;&#x440;&#x443;&#x433;&#x438; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x438; &#x43A;&#x430;&#x442;&#x43E;:</p><ul><li><code>4 * 5</code>
+</li>
+<li><code>5 - 1</code>
+</li>
+<li><code>40 / 2</code>
+</li></ul>
+<p>&#x417;&#x430; &#x434;&#x430; &#x438;&#x437;&#x432;&#x44A;&#x440;&#x448;&#x438;&#x43C; &#x435;&#x43A;&#x441;&#x43F;&#x43E;&#x43D;&#x435;&#x43D;&#x446;&#x438;&#x430;&#x43B;&#x43D;&#x43E; &#x438;&#x437;&#x447;&#x438;&#x441;&#x43B;&#x435;&#x43D;&#x438;&#x435;, &#x434;&#x430; &#x43A;&#x430;&#x436;&#x435;&#x43C; 2 &#x43D;&#x430; &#x441;&#x442;&#x435;&#x43F;&#x435;&#x43D; 3, &#x43F;&#x438;&#x448;&#x435;&#x43C; &#x432; &#x43A;&#x43E;&#x43D;&#x437;&#x43E;&#x43B;&#x430;&#x442;&#x430;: </p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">2</span> ** <span class="hljs-number">3</span>
+<span class="hljs-number">8</span></code></pre>
+<p>&#x417;&#x430;&#x431;&#x430;&#x432;&#x43B;&#x44F;&#x432;&#x430;&#x439;&#x442;&#x435; &#x441;&#x435; &#x441; &#x442;&#x43E;&#x432;&#x430; &#x437;&#x430; &#x43C;&#x430;&#x43B;&#x43A;&#x43E; &#x438; &#x441;&#x43B;&#x435;&#x434; &#x442;&#x43E;&#x432;&#x430; &#x441;&#x435; &#x432;&#x44A;&#x440;&#x43D;&#x435;&#x442;&#x435; &#x442;&#x443;&#x43A;. :)</p><p>&#x41A;&#x430;&#x43A;&#x442;&#x43E; &#x43C;&#x43E;&#x436;&#x435;&#x442;&#x435; &#x434;&#x430; &#x432;&#x438;&#x434;&#x438;&#x442;&#x435;, Python &#x435; &#x447;&#x443;&#x434;&#x435;&#x441;&#x435;&#x43D; &#x43A;&#x430;&#x43B;&#x43A;&#x443;&#x43B;&#x430;&#x442;&#x43E;&#x440;. &#x410;&#x43A;&#x43E; &#x441;&#x435; &#x447;&#x443;&#x434;&#x438;&#x442;&#x435; &#x43A;&#x430;&#x43A;&#x432;&#x43E; &#x43E;&#x449;&#x435; &#x43C;&#x43E;&#x436;&#x435;&#x442;&#x435; &#x434;&#x430; &#x43D;&#x430;&#x43F;&#x440;&#x430;&#x432;&#x438;&#x442;&#x435;...</p><h2 id="&#x43D;&#x438;&#x437;&#x43E;&#x432;&#x435;">&#x41D;&#x438;&#x437;&#x43E;&#x432;&#x435;</h2><p>&#x41A;&#x430;&#x43A;&#x432;&#x43E; &#x449;&#x435; &#x43A;&#x430;&#x436;&#x435;&#x442;&#x435; &#x437;&#x430; &#x432;&#x430;&#x448;&#x435;&#x442;&#x43E; &#x438;&#x43C;&#x435;? &#x412;&#x44A;&#x432;&#x435;&#x434;&#x435;&#x442;&#x435; &#x43F;&#x44A;&#x440;&#x432;&#x43E;&#x442;&#x43E; &#x441;&#x438; &#x438;&#x43C;&#x435; &#x432; &#x43A;&#x430;&#x432;&#x438;&#x447;&#x43A;&#x438; &#x442;&#x430;&#x43A;&#x430;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&quot;Ola&quot;</span>
+<span class="hljs-string">&apos;Ola&apos;</span></code></pre>
+<p>&#x421;&#x435;&#x433;&#x430; &#x441;&#x44A;&#x437;&#x434;&#x430;&#x434;&#x43E;&#x445;&#x442;&#x435; &#x43F;&#x44A;&#x440;&#x432;&#x438;&#x44F; &#x441;&#x438; &#x43D;&#x438;&#x437;! &#x422;&#x43E;&#x432;&#x430; &#x435; &#x43F;&#x43E;&#x440;&#x435;&#x434;&#x438;&#x446;&#x430; &#x43E;&#x442; &#x437;&#x43D;&#x430;&#x446;&#x438;, &#x43A;&#x43E;&#x438;&#x442;&#x43E; &#x43C;&#x43E;&#x433;&#x430;&#x442; &#x434;&#x430; &#x431;&#x44A;&#x434;&#x430;&#x442; &#x43E;&#x431;&#x440;&#x430;&#x431;&#x43E;&#x442;&#x435;&#x43D;&#x438; &#x43E;&#x442; &#x43A;&#x43E;&#x43C;&#x43F;&#x44E;&#x442;&#x44A;&#x440;. &#x41D;&#x438;&#x437;&#x44A;&#x442; &#x432;&#x438;&#x43D;&#x430;&#x433;&#x438; &#x442;&#x440;&#x44F;&#x431;&#x432;&#x430; &#x434;&#x430; &#x437;&#x430;&#x43F;&#x43E;&#x447;&#x432;&#x430; &#x438; &#x437;&#x430;&#x432;&#x44A;&#x440;&#x448;&#x432;&#x430; &#x441; &#x435;&#x434;&#x438;&#x43D; &#x438; &#x441;&#x44A;&#x449; &#x441;&#x438;&#x43C;&#x432;&#x43E;&#x43B;. &#x422;&#x43E;&#x432;&#x430; &#x43C;&#x43E;&#x433;&#x430;&#x442; &#x434;&#x430; &#x431;&#x44A;&#x434;&#x430;&#x442; &#x435;&#x434;&#x438;&#x43D;&#x438;&#x447;&#x43D;&#x438; (<code>&apos;</code>) &#x438;&#x43B;&#x438; &#x434;&#x432;&#x43E;&#x439;&#x43D;&#x438; (<code>&quot;</code>) &#x43A;&#x430;&#x432;&#x438;&#x447;&#x43A;&#x438; (&#x43D;&#x44F;&#x43C;&#x430; &#x440;&#x430;&#x437;&#x43B;&#x438;&#x43A;&#x430;!) &#x41A;&#x430;&#x432;&#x438;&#x447;&#x43A;&#x438;&#x442;&#x435; &#x43A;&#x430;&#x437;&#x432;&#x430;&#x442; &#x43D;&#x430; Python, &#x447;&#x435; &#x442;&#x43E;&#x432;&#x430;, &#x43A;&#x43E;&#x435;&#x442;&#x43E; &#x435; &#x432;&#x44A;&#x442;&#x440;&#x435; &#x432; &#x442;&#x44F;&#x445;, &#x435; &#x43D;&#x438;&#x437;.</p><p>&#x41D;&#x438;&#x437;&#x43E;&#x432;&#x435;&#x442;&#x435; &#x43C;&#x43E;&#x433;&#x430;&#x442; &#x434;&#x430; &#x431;&#x44A;&#x434;&#x430;&#x442; &#x43D;&#x430;&#x43D;&#x438;&#x437;&#x430;&#x43D;&#x438; &#x437;&#x430;&#x435;&#x434;&#x43D;&#x43E;. &#x41E;&#x43F;&#x438;&#x442;&#x430;&#x439;&#x442;&#x435; &#x442;&#x43E;&#x432;&#x430;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&quot;Hi there &quot;</span> + <span class="hljs-string">&quot;Ola&quot;</span>
+<span class="hljs-string">&apos;Hi there Ola&apos;</span></code></pre>
+<p>&#x41C;&#x43E;&#x436;&#x435;&#x442;&#x435; &#x441;&#x44A;&#x449;&#x43E; &#x434;&#x430; &#x443;&#x43C;&#x43D;&#x43E;&#x436;&#x438;&#x442;&#x435; &#x43D;&#x438;&#x437;&#x43E;&#x432;&#x435; &#x441; &#x447;&#x438;&#x441;&#x43B;&#x43E;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&quot;Ola&quot;</span> * <span class="hljs-number">3</span>
+<span class="hljs-string">&apos;OlaOlaOla&apos;</span></code></pre>
+<p>&#x410;&#x43A;&#x43E; &#x442;&#x440;&#x44F;&#x431;&#x432;&#x430; &#x434;&#x430; &#x43F;&#x43E;&#x441;&#x442;&#x430;&#x432;&#x438;&#x442;&#x435; &#x430;&#x43F;&#x43E;&#x441;&#x442;&#x440;&#x43E;&#x444; &#x432;&#x44A;&#x432; &#x432;&#x430;&#x448;&#x438;&#x44F; &#x43D;&#x438;&#x437;, &#x438;&#x43C;&#x430;&#x442;&#x435; &#x434;&#x432;&#x430; &#x43D;&#x430;&#x447;&#x438;&#x43D;&#x430; &#x434;&#x430; &#x433;&#x43E; &#x43D;&#x430;&#x43F;&#x440;&#x430;&#x432;&#x438;&#x442;&#x435;.</p><p>&#x418;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x439;&#x43A;&#x438; &#x434;&#x432;&#x43E;&#x439;&#x43D;&#x438; &#x43A;&#x430;&#x432;&#x438;&#x447;&#x43A;&#x438;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&quot;Runnin&apos; down the hill&quot;</span>
+<span class="hljs-string">&quot;Runnin&apos; down the hill&quot;</span></code></pre>
+<p>&#x438;&#x43B;&#x438; &#x434;&#x430; &#x438;&#x437;&#x431;&#x44F;&#x433;&#x430;&#x442;&#x435; &#x43E;&#x442; &#x430;&#x43F;&#x43E;&#x441;&#x442;&#x440;&#x43E;&#x444;&#x430; &#x441; &#x43E;&#x431;&#x440;&#x430;&#x442;&#x43D;&#x430; &#x447;&#x435;&#x440;&#x442;&#x430; (``):</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&apos;Runnin\&apos; down the hill&apos;</span>
+<span class="hljs-string">&quot;Runnin&apos; down the hill&quot;</span></code></pre>
+<p>&#x425;&#x443;&#x431;&#x430;&#x432;&#x43E;, &#x430;? &#x417;&#x430; &#x434;&#x430; &#x432;&#x438;&#x434;&#x438;&#x442;&#x435; &#x438;&#x43C;&#x435;&#x442;&#x43E; &#x441;&#x438; &#x441; &#x433;&#x43B;&#x430;&#x432;&#x43D;&#x438; &#x431;&#x443;&#x43A;&#x432;&#x438;, &#x43D;&#x430;&#x43F;&#x438;&#x448;&#x435;&#x442;&#x435;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&quot;Ola&quot;</span>.upper()
+<span class="hljs-string">&apos;OLA&apos;</span></code></pre>
+<p>&#x422;&#x43E;&#x43A;&#x443; &#x449;&#x43E; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x445;&#x442;&#x435; &#x43C;&#x435;&#x442;&#x43E;&#x434;&#x430; <code>upper</code> &#x432;&#x44A;&#x440;&#x445;&#x443; &#x432;&#x430;&#x448;&#x438;&#x44F; &#x43D;&#x438;&#x437;! &#x41C;&#x435;&#x442;&#x43E;&#x434;&#x44A;&#x442; (&#x43A;&#x430;&#x442;&#x43E; <code>upper()</code>) &#x435; &#x43F;&#x43E;&#x440;&#x435;&#x434;&#x438;&#x446;&#x430; &#x43E;&#x442; &#x438;&#x43D;&#x441;&#x442;&#x440;&#x443;&#x43A;&#x446;&#x438;&#x438;, &#x43A;&#x43E;&#x438;&#x442;&#x43E; Python &#x438;&#x437;&#x43F;&#x44A;&#x43B;&#x43D;&#x44F;&#x432;&#x430; &#x432;&#x44A;&#x440;&#x445;&#x443; &#x434;&#x430;&#x434;&#x435;&#x43D; &#x43E;&#x431;&#x435;&#x43A;&#x442; (<code>&quot;Ola&quot;</code>) &#x441;&#x43B;&#x435;&#x434; &#x43A;&#x430;&#x442;&#x43E; &#x435; &#x43F;&#x43E;&#x432;&#x438;&#x43A;&#x430;&#x43D;.</p><p>&#x410;&#x43A;&#x43E; &#x438;&#x441;&#x43A;&#x430;&#x442;&#x435; &#x434;&#x430; &#x437;&#x43D;&#x430;&#x435;&#x442;&#x435;, &#x43E;&#x442; &#x43A;&#x43E;&#x43B;&#x43A;&#x43E; &#x43D;&#x430; &#x431;&#x440;&#x43E;&#x439; &#x431;&#x443;&#x43A;&#x432;&#x438; &#x435; &#x432;&#x430;&#x448;&#x435;&#x442;&#x43E; &#x438;&#x43C;&#x435;, &#x438;&#x43C;&#x430; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x44F; &#x438; &#x437;&#x430; &#x442;&#x43E;&#x432;&#x430;!</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>len(<span class="hljs-string">&quot;Ola&quot;</span>)
+<span class="hljs-number">3</span></code></pre>
+<p>&#x427;&#x443;&#x434;&#x438;&#x442;&#x435; &#x43B;&#x438; &#x441;&#x435; &#x43F;&#x43E;&#x43D;&#x44F;&#x43A;&#x43E;&#x433;&#x430; &#x437;&#x430;&#x449;&#x43E;, &#x43A;&#x43E;&#x433;&#x430;&#x442;&#x43E; &#x438;&#x437;&#x432;&#x438;&#x43A;&#x432;&#x430;&#x442;&#x435; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x438; &#x441; <code>.</code> &#x43D;&#x430; &#x43A;&#x440;&#x430;&#x44F; &#x43D;&#x430; &#x43D;&#x438;&#x437;&#x430; (&#x43A;&#x430;&#x442;&#x43E; <code>&quot;Ola&quot;.upper()</code>), &#x43A;&#x430;&#x442;&#x43E; &#x43F;&#x43E;&#x43D;&#x44F;&#x43A;&#x43E;&#x433;&#x430; &#x438;&#x437;&#x432;&#x438;&#x43A;&#x432;&#x430;&#x442;&#x435; &#x43F;&#x44A;&#x440;&#x432;&#x43E; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x44F;&#x442;&#x430; &#x438; &#x43F;&#x43E;&#x441;&#x442;&#x430;&#x432;&#x44F;&#x442;&#x435; &#x43D;&#x438;&#x437;&#x430; &#x432; &#x441;&#x43A;&#x43E;&#x431;&#x438;? &#x415;, &#x432; &#x43D;&#x44F;&#x43A;&#x43E;&#x439; &#x441;&#x43B;&#x443;&#x447;&#x430;&#x438; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x438;&#x442;&#x435; &#x43F;&#x440;&#x438;&#x43D;&#x430;&#x434;&#x43B;&#x435;&#x436;&#x430;&#x442; &#x43D;&#x430; &#x43E;&#x431;&#x435;&#x43A;&#x442;&#x438;, &#x43A;&#x430;&#x442;&#x43E; <code>upper()</code>, &#x43A;&#x43E;&#x438;&#x442;&#x43E; &#x43C;&#x43E;&#x433;&#x430;&#x442; &#x434;&#x430; &#x441;&#x435; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430; &#x441;&#x430;&#x43C;&#x43E; &#x432;&#x44A;&#x440;&#x445;&#x443; &#x43D;&#x438;&#x437;&#x43E;&#x432;&#x435;. &#x412; &#x442;&#x43E;&#x437;&#x438; &#x441;&#x43B;&#x443;&#x447;&#x430;&#x439;, &#x43D;&#x430;&#x440;&#x438;&#x447;&#x430;&#x43C; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x44F;&#x442;&#x430; &#x43C;&#x435;&#x442;&#x43E;&#x434;. &#x412; &#x434;&#x440;&#x443;&#x433;&#x438; &#x441;&#x43B;&#x443;&#x447;&#x430;&#x438;, &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x438;&#x442;&#x435; &#x43A;&#x43E;&#x438;&#x442;&#x43E; &#x43D;&#x435; &#x43F;&#x440;&#x438;&#x43D;&#x430;&#x434;&#x43B;&#x435;&#x436;&#x430;&#x442; &#x43A;&#x44A;&#x43C; &#x43E;&#x43F;&#x440;&#x435;&#x434;&#x435;&#x43B;&#x435;&#x43D;&#x438; &#x442;&#x438;&#x43F;&#x43E;&#x432;&#x435; &#x438; &#x43C;&#x43E;&#x433;&#x430;&#x442; &#x434;&#x430; &#x431;&#x44A;&#x434;&#x430;&#x442; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x43D;&#x438; &#x43F;&#x440;&#x438; &#x440;&#x430;&#x437;&#x43B;&#x438;&#x447;&#x43D;&#x438; &#x43E;&#x431;&#x435;&#x43A;&#x442;&#x438;, &#x441;&#x44A;&#x449;&#x43E; &#x43A;&#x430;&#x442;&#x43E; <code>len()</code>. &#x417;&#x430;&#x442;&#x43E;&#x432;&#x430; &#x434;&#x430;&#x432;&#x430;&#x43C;&#x435; <code>&quot;Ola&quot;</code> &#x43A;&#x430;&#x442;&#x43E; &#x43F;&#x430;&#x440;&#x430;&#x43C;&#x435;&#x442;&#x44A;&#x440; &#x43D;&#x430; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x44F;&#x442;&#x430; <code>len</code>.</p><h3 id="&#x43E;&#x431;&#x43E;&#x431;&#x449;&#x435;&#x43D;&#x438;&#x435;">&#x41E;&#x431;&#x43E;&#x431;&#x449;&#x435;&#x43D;&#x438;&#x435;</h3><p>&#x414;&#x43E;&#x431;&#x440;&#x435;, &#x434;&#x43E;&#x441;&#x442;&#x430;&#x442;&#x44A;&#x447;&#x43D;&#x43E; &#x437;&#x430; &#x43D;&#x438;&#x437;&#x43E;&#x432;&#x435;. &#x414;&#x43E;&#x441;&#x435;&#x433;&#x430; &#x43D;&#x430;&#x443;&#x447;&#x438;&#x445;&#x442;&#x435; &#x437;&#x430;:</p><ul><li><strong>&#x437;&#x430;&#x43F;&#x438;&#x442;&#x432;&#x430;&#x43D;&#x435;</strong> -- &#x43F;&#x438;&#x441;&#x430;&#x43D;&#x435; &#x43D;&#x430; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x438; (&#x43A;&#x43E;&#x434;) &#x432; Python &#x441;&#x440;&#x435;&#x434;&#x430; &#x432; &#x440;&#x435;&#x437;&#x443;&#x43B;&#x442;&#x430;&#x442; &#x434;&#x430;&#x432;&#x430; &#x43E;&#x442;&#x433;&#x43E;&#x432;&#x43E;&#x440;&#x438; &#x43D;&#x430; Python &#x435;&#x437;&#x438;&#x43A;.
+</li>
+<li><strong>&#x447;&#x438;&#x441;&#x43B;&#x430; &#x438; &#x43D;&#x438;&#x437;&#x43E;&#x432;&#x435;</strong> -- &#x432; Python &#x447;&#x438;&#x441;&#x43B;&#x430;&#x442;&#x430; &#x441;&#x435; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x442; &#x437;&#x430; &#x43C;&#x430;&#x442;&#x435;&#x43C;&#x430;&#x442;&#x438;&#x447;&#x435;&#x441;&#x43A;&#x438; &#x43E;&#x43F;&#x435;&#x440;&#x430;&#x446;&#x438;&#x438; &#x430; &#x43D;&#x438;&#x437;&#x43E;&#x432;&#x435;&#x442;&#x435; &#x437;&#x430; &#x442;&#x435;&#x43A;&#x441;&#x442;&#x43E;&#x432;&#x438; &#x43E;&#x431;&#x435;&#x43A;&#x442;&#x438;.
+</li>
+<li><strong>&#x43E;&#x43F;&#x435;&#x440;&#x430;&#x442;&#x43E;&#x440;&#x438;</strong> &#x2013; &#x43A;&#x430;&#x442;&#x43E; <code>+</code> &#x438; <code>*</code>, &#x441;&#x44A;&#x431;&#x438;&#x440;&#x430;&#x442; &#x441;&#x442;&#x43E;&#x439;&#x43D;&#x43E;&#x441;&#x442;&#x438; &#x437;&#x430; &#x434;&#x430; &#x43F;&#x43E;&#x43B;&#x443;&#x447;&#x430;&#x442; &#x43D;&#x43E;&#x432;&#x430;
+</li>
+<li><strong>&#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x438;</strong> &#x2013; &#x43A;&#x430;&#x442;&#x43E; <code>upper()</code> &#x438; <code>len()</code>, &#x438;&#x437;&#x432;&#x44A;&#x440;&#x448;&#x432;&#x430;&#x449;&#x438; &#x441;&#x435; &#x432;&#x44A;&#x440;&#x445;&#x443; &#x43E;&#x431;&#x435;&#x43A;&#x442;&#x438;&#x442;&#x435;.
+</li></ul>
+<p>&#x422;&#x43E;&#x432;&#x430; &#x441;&#x430; &#x43E;&#x441;&#x43D;&#x43E;&#x432;&#x438;&#x442;&#x435; &#x43D;&#x430; &#x432;&#x441;&#x435;&#x43A;&#x438; &#x43F;&#x440;&#x43E;&#x433;&#x440;&#x430;&#x43C;&#x435;&#x43D; &#x435;&#x437;&#x438;&#x43A;, &#x43A;&#x43E;&#x439;&#x442;&#x43E; &#x443;&#x447;&#x438;&#x442;&#x435;. &#x413;&#x43E;&#x442;&#x43E;&#x432;&#x438; &#x43B;&#x438; &#x441;&#x442;&#x435; &#x437;&#x430; &#x43D;&#x435;&#x449;&#x43E; &#x43F;&#x43E;-&#x441;&#x43B;&#x43E;&#x436;&#x43D;&#x43E;? &#x417;&#x430;&#x43B;&#x430;&#x433;&#x430;&#x43C;&#x435;, &#x447;&#x435; &#x441;&#x442;&#x435;!</p><h2 id="&#x433;&#x440;&#x435;&#x448;&#x43A;&#x438;">&#x413;&#x440;&#x435;&#x448;&#x43A;&#x438;</h2><p>&#x41D;&#x435;&#x43A;&#x430; &#x43E;&#x43F;&#x438;&#x442;&#x430;&#x43C;&#x435; &#x43D;&#x435;&#x449;&#x43E; &#x43D;&#x43E;&#x432;&#x43E;. &#x41C;&#x43E;&#x436;&#x435;&#x43C; &#x43B;&#x438; &#x434;&#x430; &#x432;&#x437;&#x435;&#x43C;&#x435;&#x43C; &#x434;&#x44A;&#x43B;&#x436;&#x438;&#x43D;&#x430;&#x442;&#x430; &#x43D;&#x430; &#x447;&#x438;&#x441;&#x43B;&#x43E;&#x442;&#x43E; &#x43F;&#x43E; &#x441;&#x44A;&#x449;&#x438;&#x44F;&#x442; &#x43D;&#x430;&#x447;&#x438;&#x43D;, &#x43F;&#x43E; &#x43A;&#x43E;&#x439;&#x442;&#x43E; &#x432;&#x437;&#x435;&#x445;&#x43C;&#x435; &#x434;&#x44A;&#x43B;&#x436;&#x438;&#x43D;&#x430;&#x442;&#x430; &#x43D;&#x430; &#x43D;&#x430;&#x448;&#x435;&#x442;&#x43E; &#x438;&#x43C;&#x435;? &#x41D;&#x430;&#x43F;&#x438;&#x448;&#x435;&#x442;&#x435; <code>len(304023)</code> &#x438; &#x43D;&#x430;&#x442;&#x438;&#x441;&#x43D;&#x435;&#x442;&#x435; <code>enter</code>:</p><p></p><p class="code-label"><span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!"></span> command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>len(<span class="hljs-number">304023</span>)
+Traceback (most recent call last):
+  File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+TypeError: object of type <span class="hljs-string">&apos;int&apos;</span> has no len()</code></pre>
+<p>&#x41F;&#x43E;&#x43A;&#x430;&#x437;&#x430; &#x441;&#x435; &#x43F;&#x44A;&#x440;&#x432;&#x430;&#x442;&#x430; &#x43D;&#x438; &#x433;&#x440;&#x435;&#x448;&#x43A;&#x430;! <span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!"></span> &#x435; &#x43D;&#x430;&#x447;&#x438;&#x43D;&#x430;, &#x43F;&#x43E; &#x43A;&#x43E;&#x439;&#x442;&#x43E; &#x449;&#x435; &#x432;&#x438; &#x43F;&#x43E;&#x43A;&#x430;&#x437;&#x432;&#x430;&#x43C;&#x435;, &#x447;&#x435; &#x43A;&#x43E;&#x434;&#x430; &#x43A;&#x43E;&#x439;&#x442;&#x43E; &#x441;&#x435; &#x43E;&#x43F;&#x438;&#x442;&#x432;&#x430;&#x442;&#x435; &#x434;&#x430; &#x43F;&#x443;&#x441;&#x43D;&#x435;&#x442;&#x435; &#x43D;&#x44F;&#x43C;&#x430; &#x434;&#x430; &#x440;&#x430;&#x431;&#x43E;&#x442;&#x438; &#x43A;&#x430;&#x43A;&#x442;&#x43E; &#x441;&#x435; &#x43E;&#x447;&#x430;&#x43A;&#x432;&#x430;. &#x413;&#x440;&#x435;&#x448;&#x43A;&#x438;&#x442;&#x435; (&#x434;&#x43E;&#x440;&#x438; &#x438; &#x442;&#x435;&#x437;&#x438;, &#x43A;&#x43E;&#x438;&#x442;&#x43E; &#x43F;&#x440;&#x430;&#x432;&#x438;&#x43C; &#x43D;&#x430;&#x440;&#x43E;&#x447;&#x43D;&#x43E;) &#x441;&#x430; &#x432;&#x430;&#x436;&#x43D;&#x430; &#x447;&#x430;&#x441;&#x442; &#x43E;&#x442; &#x43F;&#x440;&#x43E;&#x446;&#x435;&#x441;&#x430; &#x43D;&#x430; &#x443;&#x447;&#x435;&#x43D;&#x435;!</p><p>&#x41A;&#x430;&#x437;&#x432;&#x430;, &#x447;&#x435; &#x43E;&#x431;&#x435;&#x43A;&#x442;&#x44A;&#x442; &#x43E;&#x442; &#x442;&#x438;&#x43F; &quot;int&quot; (integers, &#x438;&#x43B;&#x438; &#x43E;&#x449;&#x435; &#x446;&#x435;&#x43B;&#x438; &#x447;&#x438;&#x441;&#x43B;&#x430;) &#x43D;&#x44F;&#x43C;&#x430;&#x442; &#x434;&#x44A;&#x43B;&#x436;&#x438;&#x43D;&#x430;. &#x41A;&#x430;&#x43A;&#x432;&#x43E; &#x43C;&#x43E;&#x436;&#x435;&#x43C; &#x434;&#x430; &#x43D;&#x430;&#x43F;&#x440;&#x430;&#x432;&#x438;&#x43C; &#x441;&#x435;&#x433;&#x430;? &#x41C;&#x43E;&#x436;&#x435; &#x431;&#x438; &#x434;&#x430; &#x43D;&#x430;&#x43F;&#x438;&#x448;&#x435;&#x43C; &#x447;&#x438;&#x441;&#x43B;&#x43E;&#x442;&#x43E; &#x43D;&#x438; &#x43A;&#x430;&#x442;&#x43E; &#x43D;&#x438;&#x437;? &#x41D;&#x438;&#x437;&#x43E;&#x432;&#x435;&#x442;&#x435; &#x438;&#x43C;&#x430;&#x442; &#x434;&#x44A;&#x43B;&#x436;&#x438;&#x43D;&#x430;, &#x43D;&#x430;&#x43B;&#x438; &#x442;&#x430;&#x43A;&#x430;?</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>len(str(<span class="hljs-number">304023</span>))
+<span class="hljs-number">6</span></code></pre>
+<p>&#x420;&#x430;&#x431;&#x43E;&#x442;&#x438;! &#x418;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x445;&#x43C;&#x435; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x44F;&#x442;&#x430; <code>str</code> &#x432;&#x44A;&#x432; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x44F;&#x442;&#x430; <code>len</code>. <code>str()</code> &#x43F;&#x440;&#x435;&#x43E;&#x431;&#x440;&#x430;&#x437;&#x443;&#x432;&#x430; &#x432;&#x441;&#x438;&#x447;&#x43A;&#x43E; &#x432; &#x43D;&#x438;&#x437;&#x43E;&#x432;&#x435;.</p><ul><li>&#x424;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x44F;&#x442;&#x430; <code>str</code> &#x43F;&#x440;&#x435;&#x43E;&#x431;&#x440;&#x430;&#x437;&#x443;&#x432;&#x430; &#x43D;&#x435;&#x449;&#x430;&#x442;&#x430; &#x43A;&#x430;&#x442;&#x43E; <strong>&#x43D;&#x438;&#x437;&#x43E;&#x432;&#x435;</strong>
+</li>
+<li>&#x424;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x44F;&#x442;&#x430; <code>int</code> &#x43F;&#x440;&#x435;&#x43E;&#x431;&#x440;&#x430;&#x437;&#x443;&#x432;&#x430; &#x43D;&#x435;&#x449;&#x430;&#x442;&#x430; &#x43A;&#x430;&#x442;&#x43E; <strong>&#x446;&#x435;&#x43B;&#x438; &#x447;&#x438;&#x441;&#x43B;&#x430;</strong>
+</li></ul>
+<blockquote><p>&#x412;&#x430;&#x436;&#x43D;&#x43E;: &#x43C;&#x43E;&#x436;&#x435;&#x43C; &#x434;&#x430; &#x43F;&#x440;&#x435;&#x43E;&#x431;&#x440;&#x430;&#x437;&#x443;&#x432;&#x430;&#x43C;&#x435; &#x447;&#x438;&#x441;&#x43B;&#x430; &#x432; &#x442;&#x435;&#x43A;&#x441;&#x442;, &#x43D;&#x43E; &#x43D;&#x435; &#x43C;&#x43E;&#x436;&#x435;&#x43C; &#x434;&#x430; &#x43D;&#x430;&#x43F;&#x440;&#x430;&#x432;&#x438;&#x43C; &#x43E;&#x431;&#x440;&#x430;&#x442;&#x43D;&#x43E;&#x442;&#x43E; -- &#x43A;&#x430;&#x43A;&#x442;&#x43E; &#x438; &#x434;&#x430; &#x435; &#x43A;&#x430;&#x43A;&#x432;&#x43E; &#x431;&#x438; &#x431;&#x438;&#x43B;&#x43E; <code>int(&apos;hello&apos;)</code>?</p></blockquote><h2 id="&#x43F;&#x440;&#x43E;&#x43C;&#x435;&#x43D;&#x43B;&#x438;&#x432;&#x438;">&#x41F;&#x440;&#x43E;&#x43C;&#x435;&#x43D;&#x43B;&#x438;&#x432;&#x438;</h2><p>&#x412;&#x430;&#x436;&#x43D;&#x43E; &#x43F;&#x43E;&#x43D;&#x44F;&#x442;&#x438;&#x435; &#x432; &#x43F;&#x440;&#x43E;&#x433;&#x440;&#x430;&#x43C;&#x438;&#x440;&#x430;&#x43D;&#x435;&#x442;&#x43E; &#x441;&#x430; &#x43F;&#x440;&#x43E;&#x43C;&#x435;&#x43D;&#x43B;&#x438;&#x432;&#x438;&#x442;&#x435;. &#x41F;&#x440;&#x43E;&#x43C;&#x435;&#x43D;&#x43B;&#x438;&#x432;&#x430;&#x442;&#x430; &#x435; &#x43D;&#x438;&#x449;&#x43E; &#x43F;&#x43E;&#x432;&#x435;&#x447;&#x435; &#x43E;&#x442; &#x438;&#x43C;&#x435;, &#x43A;&#x43E;&#x435;&#x442;&#x43E; &#x43C;&#x43E;&#x436;&#x435; &#x434;&#x430; &#x441;&#x435; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430; &#x43F;&#x43E;-&#x43A;&#x44A;&#x441;&#x43D;&#x43E; &#x432; &#x43F;&#x440;&#x43E;&#x433;&#x440;&#x430;&#x43C;&#x430;&#x442;&#x430;. &#x41F;&#x440;&#x43E;&#x433;&#x440;&#x430;&#x43C;&#x438;&#x441;&#x442;&#x438;&#x442;&#x435; &#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x442; &#x442;&#x435;&#x437;&#x438; &#x43F;&#x440;&#x43E;&#x43C;&#x435;&#x43D;&#x43B;&#x438;&#x432;&#x438; &#x434;&#x430; &#x437;&#x430;&#x43F;&#x430;&#x437;&#x432;&#x430;&#x442; &#x434;&#x430;&#x43D;&#x43D;&#x438;. &#x422;&#x43E;&#x432;&#x430; &#x43F;&#x440;&#x430;&#x432;&#x438; &#x43A;&#x43E;&#x434;&#x430; &#x438;&#x43C; &#x43F;&#x43E;-&#x447;&#x435;&#x442;&#x43B;&#x438;&#x432;, &#x442;&#x430;&#x43A;&#x430; &#x447;&#x435; &#x43D;&#x435; &#x441;&#x435; &#x43D;&#x430;&#x43B;&#x430;&#x433;&#x430; &#x434;&#x430; &#x437;&#x430;&#x43F;&#x43E;&#x43C;&#x43D;&#x44F;&#x442; &#x43A;&#x430;&#x43A;&#x432;&#x438; &#x441;&#x430; &#x442;&#x435;&#x437;&#x438; &#x43D;&#x435;&#x449;&#x430;.</p><p>&#x41D;&#x435;&#x43A;&#x430; &#x43A;&#x430;&#x436;&#x435;&#x43C;, &#x447;&#x435; &#x438;&#x441;&#x43A;&#x430;&#x43C;&#x435; &#x434;&#x430; &#x441;&#x44A;&#x437;&#x434;&#x430;&#x434;&#x435; &#x43F;&#x440;&#x43E;&#x43C;&#x435;&#x43D;&#x43B;&#x438;&#x432;&#x430; &#x441; &#x438;&#x43C;&#x435; <code>name</code>:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>name = <span class="hljs-string">&quot;Ola&quot;</span></code></pre>
+<p>&#x41F;&#x438;&#x448;&#x435;&#x43C; name &#x440;&#x430;&#x432;&#x43D;&#x43E; &#x43D;&#x430; Ola.</p><p>&#x410;&#x43A;&#x43E; &#x437;&#x430;&#x431;&#x435;&#x43B;&#x44F;&#x437;&#x430;&#x445;&#x442;&#x435;, &#x43F;&#x440;&#x43E;&#x433;&#x440;&#x430;&#x43C;&#x430;&#x442;&#x430; &#x432;&#x438; &#x43D;&#x435; &#x432;&#x44A;&#x440;&#x43D;&#x430; &#x43D;&#x438;&#x449;&#x43E; &#x43A;&#x430;&#x43A;&#x442;&#x43E; &#x43F;&#x440;&#x435;&#x434;&#x438; &#x442;&#x43E;&#x432;&#x430;. &#x41A;&#x430;&#x43A; &#x434;&#x430; &#x440;&#x430;&#x437;&#x431;&#x435;&#x440;&#x435;&#x43C;, &#x447;&#x435; &#x43F;&#x440;&#x43E;&#x43C;&#x435;&#x43D;&#x43B;&#x438;&#x432;&#x430;&#x442;&#x430; &#x441;&#x44A;&#x449;&#x435;&#x441;&#x442;&#x432;&#x443;&#x432;&#x430;? &#x41D;&#x430;&#x43F;&#x438;&#x448;&#x435;&#x442;&#x435; <code>name</code> &#x438; &#x43D;&#x430;&#x442;&#x438;&#x441;&#x43D;&#x435;&#x442;&#x435; &#x431;&#x443;&#x442;&#x43E;&#x43D;&#x430; <code>enter</code>:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>name
+<span class="hljs-string">&apos;Ola&apos;</span></code></pre>
+<p>&#x418;&#x445;&#x443;&#x443;&#x443;! &#x41F;&#x44A;&#x440;&#x432;&#x430;&#x442;&#x430; &#x442;&#x438; &#x43F;&#x440;&#x43E;&#x43C;&#x435;&#x43D;&#x43B;&#x438;&#x432;&#x430;! :) &#x412;&#x438;&#x43D;&#x430;&#x433;&#x438; &#x43C;&#x43E;&#x436;&#x435; &#x434;&#x430; &#x44F; &#x43F;&#x440;&#x43E;&#x43C;&#x435;&#x43D;&#x438;&#x448; &#x43A;&#x44A;&#x43C; &#x43A;&#x430;&#x43A;&#x432;&#x43E; &#x441;&#x435; &#x43E;&#x442;&#x43D;&#x430;&#x441;&#x44F;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>name = <span class="hljs-string">&quot;Sonja&quot;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>name
+<span class="hljs-string">&apos;Sonja&apos;</span></code></pre>
+<p>&#x41C;&#x43E;&#x436;&#x435; &#x434;&#x430; &#x44F; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x442;&#x435; &#x438; &#x432;&#x44A;&#x432; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x438;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>len(name)
+<span class="hljs-number">5</span></code></pre>
+<p>&#x421;&#x442;&#x440;&#x430;&#x445;&#x43E;&#x442;&#x43D;&#x43E;, &#x43D;&#x430;&#x43B;&#x438;? &#x421;&#x435;&#x433;&#x430;, &#x43F;&#x440;&#x43E;&#x43C;&#x435;&#x43D;&#x43B;&#x438;&#x432;&#x438;&#x442;&#x435; &#x43C;&#x43E;&#x433;&#x430;&#x442; &#x434;&#x430; &#x441;&#x430; &#x43A;&#x430;&#x43A;&#x432;&#x43E; &#x43B;&#x438; &#x43D;&#x435; -- &#x441;&#x44A;&#x449;&#x43E; &#x442;&#x430;&#x43A;&#x430; &#x438; &#x447;&#x438;&#x441;&#x43B;&#x430;! &#x41F;&#x440;&#x43E;&#x431;&#x432;&#x430;&#x439;&#x442;&#x435; &#x442;&#x43E;&#x432;&#x430;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>a = <span class="hljs-number">4</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>b = <span class="hljs-number">6</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>a * b
+<span class="hljs-number">24</span></code></pre>
+<p>&#x41D;&#x43E; &#x43A;&#x430;&#x43A;&#x432;&#x43E; &#x430;&#x43A;&#x43E; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x43C;&#x435; &#x433;&#x440;&#x435;&#x448;&#x43D;&#x43E;&#x442;&#x43E; &#x438;&#x43C;&#x435; &#x41C;&#x43E;&#x436;&#x435;&#x442;&#x435; &#x43B;&#x438; &#x434;&#x430; &#x43E;&#x442;&#x433;&#x430;&#x442;&#x43D;&#x435;&#x442;&#x435; &#x43A;&#x430;&#x43A;&#x432;&#x43E; &#x449;&#x435; &#x441;&#x435; &#x441;&#x43B;&#x443;&#x447;&#x438;? &#x41D;&#x435;&#x43A;&#x430; &#x43E;&#x43F;&#x438;&#x442;&#x430;&#x43C;&#x435;!</p><p></p><p class="code-label"><span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!"></span> command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>city = <span class="hljs-string">&quot;Tokyo&quot;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>ctiy
+Traceback (most recent call last):
+  File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+NameError: name <span class="hljs-string">&apos;ctiy&apos;</span> <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> defined</code></pre>
+<p>&#x413;&#x440;&#x435;&#x448;&#x43A;&#x430;! &#x41A;&#x430;&#x43A;&#x442;&#x43E; &#x432;&#x438;&#x436;&#x434;&#x430;&#x442;&#x435;, Python &#x438;&#x43C;&#x430; &#x440;&#x430;&#x437;&#x43B;&#x438;&#x447;&#x43D;&#x438; &#x432;&#x438;&#x434;&#x43E;&#x432;&#x435; &#x433;&#x440;&#x435;&#x448;&#x43A;&#x438;, &#x43A;&#x430;&#x442;&#x43E; &#x442;&#x430;&#x437;&#x438; &#x441;&#x435; &#x43A;&#x430;&#x437;&#x432;&#x430; <strong>NameError</strong>. Python &#x432;&#x438;&#x43D;&#x430;&#x433;&#x438; &#x449;&#x435; &#x432;&#x438; &#x434;&#x430;&#x432;&#x430; &#x442;&#x430;&#x437;&#x438; &#x433;&#x440;&#x435;&#x448;&#x43A;&#x430;, &#x430;&#x43A;&#x43E; &#x441;&#x435; &#x43E;&#x43F;&#x438;&#x442;&#x432;&#x430;&#x442;&#x435; &#x434;&#x430; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x442;&#x435; &#x43F;&#x440;&#x43E;&#x43C;&#x435;&#x43D;&#x43B;&#x438;&#x432;&#x430;, &#x43A;&#x43E;&#x44F;&#x442;&#x43E; &#x432;&#x441;&#x435; &#x43E;&#x449;&#x435; &#x43D;&#x435; &#x435; &#x434;&#x435;&#x444;&#x438;&#x43D;&#x438;&#x440;&#x430;&#x43D;&#x430;. &#x410;&#x43A;&#x43E; &#x43F;&#x43E;&#x43F;&#x430;&#x434;&#x43D;&#x435;&#x442;&#x435; &#x43D;&#x430; &#x442;&#x430;&#x437;&#x438; &#x433;&#x440;&#x435;&#x448;&#x43A;&#x430; &#x43F;&#x43E;-&#x43A;&#x44A;&#x441;&#x43D;&#x43E;, &#x432;&#x438;&#x436;&#x442;&#x435; &#x434;&#x430;&#x43B;&#x438; &#x43D;&#x435; &#x441;&#x442;&#x435; &#x441;&#x431;&#x44A;&#x440;&#x43A;&#x430;&#x43B;&#x438; &#x43F;&#x440;&#x438; &#x43F;&#x438;&#x441;&#x430;&#x43D;&#x435;&#x442;&#x43E; &#x43D;&#x430; &#x43D;&#x44F;&#x43A;&#x43E;&#x435; &#x43E;&#x442; &#x438;&#x43C;&#x435;&#x43D;&#x430;&#x442;&#x430;.</p><p>&#x41F;&#x43E;&#x438;&#x433;&#x440;&#x430;&#x439;&#x442;&#x435; &#x441;&#x435; &#x43C;&#x430;&#x43B;&#x43A;&#x43E; &#x441; &#x442;&#x43E;&#x432;&#x430; &#x438; &#x432;&#x438;&#x436;&#x442;&#x435; &#x43A;&#x430;&#x43A;&#x432;&#x43E; &#x43C;&#x43E;&#x436;&#x435; &#x434;&#x430; &#x43F;&#x440;&#x430;&#x432;&#x438;&#x442;&#x435;!</p><h2 id="&#x444;&#x443;&#x43D;&#x446;&#x43A;&#x438;&#x44F;&#x442;&#x430;-print">&#x424;&#x443;&#x43D;&#x446;&#x43A;&#x438;&#x44F;&#x442;&#x430; print</h2><p>&#x41F;&#x440;&#x43E;&#x431;&#x432;&#x430;&#x439;&#x442;&#x435; &#x442;&#x43E;&#x432;&#x430;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>name = <span class="hljs-string">&apos;Maria&apos;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>name
+<span class="hljs-string">&apos;Maria&apos;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(name)
+Maria</code></pre>
+<p>&#x41A;&#x43E;&#x433;&#x430;&#x442;&#x43E; &#x43D;&#x430;&#x43F;&#x438;&#x448;&#x435;&#x442;&#x435; <code>name</code>, Python &#x438;&#x43D;&#x442;&#x435;&#x440;&#x43F;&#x440;&#x435;&#x442;&#x430;&#x442;&#x43E;&#x440;&#x430; &#x43E;&#x442;&#x433;&#x43E;&#x432;&#x430;&#x440;&#x44F; &#x441;&#x44A;&#x441; &#x43D;&#x438;&#x437;&#x43E;&#x432;&#x43E; <em>&#x438;&#x437;&#x43E;&#x431;&#x440;&#x430;&#x436;&#x435;&#x43D;&#x438;&#x435;</em> &#x43D;&#x430; &#x43F;&#x440;&#x43E;&#x43C;&#x435;&#x43D;&#x43B;&#x438;&#x432;&#x430;&#x442;&#x430; &apos;name&apos;, &#x43A;&#x44A;&#x434;&#x435;&#x442;&#x43E; &#x431;&#x443;&#x43A;&#x432;&#x438;&#x442;&#x435; &apos;M-a-r-i-a&apos; &#x441;&#x430; &#x43E;&#x431;&#x433;&#x440;&#x430;&#x434;&#x435;&#x43D;&#x438; &#x43E;&#x442; &#x435;&#x434;&#x438;&#x43D;&#x438;&#x447;&#x43D;&#x438; &#x43A;&#x430;&#x432;&#x438;&#x447;&#x43A;&#x438;. &#x41A;&#x43E;&#x433;&#x430;&#x442;&#x43E; &#x43A;&#x430;&#x436;&#x435;&#x43C; <code>print(name)</code>, Python &#x449;&#x435; &quot;&#x43E;&#x442;&#x43F;&#x435;&#x447;&#x430;&#x442;&#x430;&quot; &#x441;&#x44A;&#x434;&#x44A;&#x440;&#x436;&#x430;&#x43D;&#x438;&#x435;&#x442;&#x43E; &#x43D;&#x430; &#x43F;&#x440;&#x43E;&#x43C;&#x435;&#x43D;&#x43B;&#x438;&#x432;&#x430;&#x442;&#x430; &#x43D;&#x430; &#x435;&#x43A;&#x440;&#x430;&#x43D;&#x430;, &#x431;&#x435;&#x437; &#x43A;&#x430;&#x432;&#x438;&#x447;&#x43A;&#x438;&#x442;&#x435;, &#x43A;&#x43E;&#x435;&#x442;&#x43E; &#x435; &#x43F;&#x43E;-&#x43F;&#x440;&#x438;&#x43B;&#x435;&#x436;&#x43D;&#x43E;.</p><p>&#x41A;&#x430;&#x43A;&#x442;&#x43E; &#x449;&#x435; &#x432;&#x438;&#x434;&#x438;&#x43C; &#x43F;&#x43E;-&#x43A;&#x44A;&#x441;&#x43D;&#x43E; <code>print()</code> &#x441;&#x44A;&#x449;&#x43E; &#x435; &#x43F;&#x43E;&#x43B;&#x435;&#x437;&#x435;&#x43D;, &#x43A;&#x43E;&#x433;&#x430;&#x442;&#x43E; &#x438;&#x441;&#x43A;&#x430;&#x43C;&#x435; &#x434;&#x430; &#x43E;&#x442;&#x43F;&#x435;&#x447;&#x430;&#x442;&#x430;&#x43C;&#x435; &#x43D;&#x435;&#x449;&#x430; &#x43E;&#x442; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x438;&#x442;&#x435;, &#x438;&#x43B;&#x438; &#x43A;&#x43E;&#x433;&#x430;&#x442;&#x43E; &#x438;&#x441;&#x43A;&#x430;&#x43C;&#x435; &#x434;&#x430; &#x43E;&#x442;&#x43F;&#x435;&#x447;&#x430;&#x442;&#x430;&#x43C;&#x435; &#x43D;&#x435;&#x449;&#x430; &#x43D;&#x430; &#x43D;&#x44F;&#x43A;&#x43E;&#x43B;&#x43A;&#x43E; &#x440;&#x435;&#x434;&#x430;.</p><h2 id="&#x43B;&#x438;&#x441;&#x442;&#x43E;&#x432;&#x435;">&#x41B;&#x438;&#x441;&#x442;&#x43E;&#x432;&#x435;</h2><p>&#x41E;&#x441;&#x432;&#x435;&#x43D; &#x43D;&#x438;&#x437;&#x43E;&#x432;&#x435;&#x442;&#x435; &#x438; &#x446;&#x435;&#x43B;&#x438;&#x442;&#x435; &#x447;&#x438;&#x441;&#x43B;&#x430;, Python &#x438;&#x43C;&#x430; &#x432;&#x441;&#x44F;&#x43A;&#x430;&#x43A;&#x432;&#x438; &#x432;&#x438;&#x434;&#x43E;&#x432;&#x435; &#x442;&#x438;&#x43F;&#x43E;&#x432;&#x435; &#x43E;&#x442; &#x43E;&#x431;&#x435;&#x43A;&#x442;&#x438;. &#x421;&#x435;&#x433;&#x430; &#x449;&#x435; &#x432;&#x44A;&#x432;&#x435;&#x434;&#x435;&#x43C; &#x435;&#x434;&#x43D;&#x430; &#x43E;&#x442; &#x442;&#x44F;&#x445; &#x43D;&#x430;&#x440;&#x435;&#x447;&#x435;&#x43D;&#x430; <strong>list</strong>. &#x41B;&#x438;&#x441;&#x442;&#x43E;&#x432;&#x435;&#x440;&#x442;&#x435; &#x441;&#x430; &#x442;&#x43E;&#x447;&#x43D;&#x43E; &#x442;&#x43E;&#x432;&#x430;, &#x43A;&#x43E;&#x435;&#x442;&#x43E; &#x441;&#x438; &#x43C;&#x438;&#x441;&#x43B;&#x438;&#x442;&#x435;, &#x447;&#x435; &#x441;&#x430;: &#x43E;&#x431;&#x435;&#x43A;&#x442;&#x438;, &#x43A;&#x43E;&#x438;&#x442;&#x43E; &#x441;&#x430; &#x43B;&#x438;&#x441;&#x442;&#x43E;&#x432;&#x435; &#x43E;&#x442; &#x434;&#x440;&#x443;&#x433;&#x438; &#x43E;&#x431;&#x435;&#x43A;&#x442;&#x438;. :)</p><p>&#x414;&#x430;&#x432;&#x430;&#x439;&#x442;&#x435; &#x43D;&#x430;&#x442;&#x430;&#x442;&#x44A;&#x43A; &#x438; &#x441;&#x44A;&#x437;&#x434;&#x430;&#x439;&#x442;&#x435; &#x43B;&#x438;&#x441;&#x442;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>[]
+[]</code></pre>
+<p>&#x414;&#x430;, &#x442;&#x43E;&#x432;&#x430; &#x435; &#x43F;&#x440;&#x430;&#x437;&#x435;&#x43D; &#x43B;&#x438;&#x441;&#x442;. &#x41D;&#x435; &#x435; &#x43C;&#x43D;&#x43E;&#x433;&#x43E; &#x43F;&#x43E;&#x43B;&#x435;&#x437;&#x435;&#x43D; &#x43D;&#x430;&#x43B;&#x438;? &#x41D;&#x435;&#x43A;&#x430; &#x441;&#x44A;&#x437;&#x434;&#x430;&#x434;&#x435;&#x43C; &#x43B;&#x438;&#x441;&#x442; &#x441; &#x43B;&#x43E;&#x442;&#x430;&#x440;&#x438;&#x439;&#x43D;&#x438; &#x43D;&#x43E;&#x43C;&#x435;&#x440;&#x430;. &#x41D;&#x435; &#x438;&#x441;&#x43A;&#x430;&#x43C;&#x435; &#x434;&#x430; &#x441;&#x435; &#x43F;&#x43E;&#x432;&#x442;&#x430;&#x440;&#x44F;&#x43C;&#x435; &#x43F;&#x43E;&#x441;&#x442;&#x43E;&#x44F;&#x43D;&#x43D;&#x43E;, &#x442;&#x430;&#x43A;&#x430; &#x447;&#x435; &#x449;&#x435; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x43C;&#x435; &#x43F;&#x440;&#x43E;&#x43C;&#x435;&#x43D;&#x43B;&#x438;&#x432;&#x430;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>lottery = [<span class="hljs-number">3</span>, <span class="hljs-number">42</span>, <span class="hljs-number">12</span>, <span class="hljs-number">19</span>, <span class="hljs-number">30</span>, <span class="hljs-number">59</span>]</code></pre>
+<p>&#x418; &#x442;&#x430;&#x43A;&#x430;, &#x438;&#x43C;&#x430;&#x43C;&#x435; &#x43B;&#x438;&#x441;&#x442;! &#x41A;&#x430;&#x43A;&#x432;&#x43E; &#x43C;&#x43E;&#x436;&#x435;&#x43C; &#x434;&#x430; &#x43F;&#x440;&#x430;&#x432;&#x438;&#x43C; &#x441; &#x43D;&#x435;&#x433;&#x43E;? &#x41D;&#x435;&#x43A;&#x430; &#x432;&#x438;&#x434;&#x438;&#x43C; &#x43A;&#x43E;&#x43B;&#x43A;&#x43E; &#x43B;&#x43E;&#x442;&#x430;&#x440;&#x438;&#x439;&#x43D;&#x438; &#x447;&#x438;&#x441;&#x43B;&#x430; &#x438;&#x43C;&#x430; &#x432; &#x43B;&#x438;&#x441;&#x442;&#x430;? &#x418;&#x43C;&#x430;&#x442;&#x435; &#x43B;&#x438; &#x441;&#x438; &#x43D;&#x430; &#x438;&#x434;&#x435;&#x44F; &#x43A;&#x43E;&#x44F; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x44F; &#x43C;&#x43E;&#x436;&#x435; &#x434;&#x430; &#x441;&#x435; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430; &#x437;&#x430; &#x442;&#x43E;&#x432;&#x430;? &#x422;&#x43E;&#x432;&#x430; &#x432;&#x435;&#x447;&#x435; &#x433;&#x43E; &#x437;&#x43D;&#x430;&#x435;&#x442;&#x435;!</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>len(lottery)
+<span class="hljs-number">6</span></code></pre>
+<p>&#x414;&#x430;! <code>len()</code> &#x43C;&#x43E;&#x436;&#x435; &#x434;&#x430; &#x432;&#x438; &#x434;&#x430;&#x434;&#x435; &#x431;&#x440;&#x43E;&#x44F; &#x43D;&#x430; &#x43E;&#x431;&#x435;&#x43A;&#x442;&#x438;&#x442;&#x435; &#x432; &#x43B;&#x438;&#x441;&#x442;&#x430;. &#x41C;&#x43D;&#x43E;&#x433;&#x43E; &#x443;&#x434;&#x43E;&#x431;&#x43D;&#x43E;, &#x43D;&#x430;&#x43B;&#x438;? &#x41C;&#x43E;&#x436;&#x435; &#x431;&#x438; &#x438; &#x449;&#x435; &#x433;&#x43E; &#x441;&#x43E;&#x440;&#x442;&#x438;&#x440;&#x430;&#x43C;&#x435;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>lottery.sort()</code></pre>
+<p>&#x422;&#x43E;&#x432;&#x430; &#x43D;&#x435; &#x432;&#x440;&#x44A;&#x449;&#x430; &#x43D;&#x438;&#x449;&#x43E;, &#x441;&#x430;&#x43C;&#x43E; &#x43F;&#x440;&#x43E;&#x43C;&#x435;&#x43D;&#x44F; &#x440;&#x435;&#x434;&#x430;, &#x432; &#x43A;&#x43E;&#x439;&#x442;&#x43E; &#x447;&#x438;&#x441;&#x43B;&#x430;&#x442;&#x430; &#x441;&#x430; &#x43F;&#x43E;&#x43A;&#x430;&#x437;&#x430;&#x43D;&#x438; &#x432; &#x43B;&#x438;&#x441;&#x442;&#x430;. &#x41D;&#x435;&#x43A;&#x430; &#x433;&#x43E; &#x43E;&#x442;&#x43F;&#x435;&#x447;&#x430;&#x442;&#x430;&#x43C;&#x435; &#x43E;&#x442;&#x43D;&#x43E;&#x432;&#x43E; &#x438; &#x432;&#x438;&#x434;&#x438;&#x43C; &#x43A;&#x430;&#x43A;&#x432;&#x43E; &#x441;&#x435; &#x441;&#x43B;&#x443;&#x447;&#x432;&#x430;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>print(lottery)
+[<span class="hljs-number">3</span>, <span class="hljs-number">12</span>, <span class="hljs-number">19</span>, <span class="hljs-number">30</span>, <span class="hljs-number">42</span>, <span class="hljs-number">59</span>]</code></pre>
+<p>&#x41A;&#x430;&#x43A;&#x442;&#x43E; &#x441;&#x435; &#x432;&#x438;&#x436;&#x434;&#x430;, &#x447;&#x438;&#x441;&#x43B;&#x430;&#x442;&#x430; &#x432; &#x43B;&#x438;&#x441;&#x442;&#x430; &#x441;&#x430; &#x432;&#x435;&#x447;&#x435; &#x43F;&#x43E;&#x434;&#x440;&#x435;&#x434;&#x435;&#x43D;&#x438; &#x43E;&#x442; &#x43F;&#x43E;-&#x43C;&#x430;&#x43B;&#x43A;&#x430;&#x442;&#x430; &#x43A;&#x44A;&#x43C; &#x43F;&#x43E;-&#x433;&#x43E;&#x43B;&#x44F;&#x43C;&#x430;&#x442;&#x430; &#x441;&#x442;&#x43E;&#x439;&#x43D;&#x43E;&#x441;&#x442;. &#x41F;&#x43E;&#x437;&#x434;&#x440;&#x430;&#x432;&#x43B;&#x435;&#x43D;&#x438;&#x44F;!</p><p>&#x41C;&#x43E;&#x436;&#x435; &#x431;&#x438; &#x438;&#x441;&#x43A;&#x430;&#x43C;&#x435; &#x434;&#x430; &#x43D;&#x430;&#x43F;&#x440;&#x430;&#x432;&#x438;&#x43C; &#x43E;&#x431;&#x440;&#x430;&#x442;&#x43D;&#x43E;&#x442;&#x43E;?</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>lottery.reverse()
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(lottery)
+[<span class="hljs-number">59</span>, <span class="hljs-number">42</span>, <span class="hljs-number">30</span>, <span class="hljs-number">19</span>, <span class="hljs-number">12</span>, <span class="hljs-number">3</span>]</code></pre>
+<p>&#x410;&#x43A;&#x43E; &#x438;&#x441;&#x43A;&#x430;&#x442;&#x435; &#x434;&#x430; &#x434;&#x43E;&#x431;&#x430;&#x432;&#x438;&#x442;&#x435; &#x43D;&#x435;&#x449;&#x43E; &#x43A;&#x44A;&#x43C; &#x432;&#x430;&#x448;&#x438;&#x44F; &#x43B;&#x438;&#x441;&#x442;, &#x43C;&#x43E;&#x436;&#x435; &#x434;&#x430; &#x433;&#x43E; &#x43D;&#x430;&#x43F;&#x440;&#x430;&#x432;&#x438;&#x442;&#x435; &#x43A;&#x430;&#x442;&#x43E; &#x43D;&#x430;&#x43F;&#x438;&#x448;&#x435;&#x442;&#x435; &#x441;&#x43B;&#x435;&#x434;&#x43D;&#x430;&#x442;&#x430; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x430;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>lottery.append(<span class="hljs-number">199</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(lottery)
+[<span class="hljs-number">59</span>, <span class="hljs-number">42</span>, <span class="hljs-number">30</span>, <span class="hljs-number">19</span>, <span class="hljs-number">12</span>, <span class="hljs-number">3</span>, <span class="hljs-number">199</span>]</code></pre>
+<p>&#x410;&#x43A;&#x43E; &#x438;&#x441;&#x43A;&#x430;&#x442;&#x435; &#x434;&#x430; &#x43F;&#x43E;&#x43A;&#x430;&#x436;&#x435;&#x442;&#x435; &#x441;&#x430;&#x43C;&#x43E; &#x43F;&#x44A;&#x440;&#x432;&#x43E;&#x442;&#x43E; &#x447;&#x438;&#x441;&#x43B;&#x43E;, &#x43C;&#x43E;&#x436;&#x435; &#x434;&#x430; &#x43D;&#x430;&#x43F;&#x440;&#x430;&#x432;&#x438;&#x442;&#x435; &#x442;&#x43E;&#x432;&#x430; &#x43A;&#x430;&#x442;&#x43E; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x442;&#x435; <strong>&#x438;&#x43D;&#x434;&#x435;&#x43A;&#x441;&#x438;</strong>. &#x418;&#x43D;&#x434;&#x435;&#x43A;&#x441;&#x430; &#x435; &#x43D;&#x43E;&#x43C;&#x435;&#x440;&#x44A;&#x442;, &#x43A;&#x43E;&#x439;&#x442;&#x43E; &#x43A;&#x430;&#x437;&#x432;&#x430; &#x43A;&#x44A;&#x434;&#x435; &#x432; &#x43B;&#x438;&#x441;&#x442;&#x430; &#x441;&#x435; &#x43F;&#x43E;&#x44F;&#x432;&#x44F;&#x432;&#x430; &#x435;&#x43B;&#x435;&#x43C;&#x435;&#x43D;&#x442;&#x430;. &#x41F;&#x440;&#x43E;&#x433;&#x440;&#x430;&#x43C;&#x438;&#x441;&#x442;&#x438;&#x442;&#x435; &#x43F;&#x440;&#x435;&#x434;&#x43F;&#x43E;&#x447;&#x438;&#x442;&#x430;&#x442; &#x434;&#x430; &#x437;&#x430;&#x43F;&#x43E;&#x447;&#x432;&#x430;&#x442; &#x431;&#x440;&#x43E;&#x435;&#x43D;&#x435;&#x442;&#x43E; &#x43E;&#x442; 0, &#x442;&#x430;&#x43A;&#x430; &#x447;&#x435; &#x43F;&#x44A;&#x440;&#x432;&#x438;&#x44F;&#x442; &#x43E;&#x431;&#x435;&#x43A;&#x442; &#x432; &#x43B;&#x438;&#x441;&#x442;&#x430; &#x435; &#x441; &#x438;&#x43D;&#x434;&#x435;&#x43A;&#x441; 0, &#x441;&#x43B;&#x435;&#x434;&#x432;&#x430;&#x449;&#x438;&#x44F; &#x435; &#x441; 1 &#x438; &#x442;.&#x43D;. &#x41E;&#x43F;&#x438;&#x442;&#x430;&#x439;&#x442;&#x435; &#x442;&#x43E;&#x432;&#x430;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>print(lottery[<span class="hljs-number">0</span>])
+<span class="hljs-number">59</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(lottery[<span class="hljs-number">1</span>])
+<span class="hljs-number">42</span></code></pre>
+<p>&#x41A;&#x430;&#x43A;&#x442;&#x43E; &#x43C;&#x43E;&#x436;&#x435; &#x434;&#x430; &#x432;&#x438;&#x434;&#x438;&#x442;&#x435;, &#x43C;&#x43E;&#x436;&#x435;&#x442;&#x435; &#x434;&#x430; &#x434;&#x43E;&#x441;&#x442;&#x44A;&#x43F;&#x438;&#x442;&#x435; &#x440;&#x430;&#x437;&#x43B;&#x438;&#x447;&#x43D;&#x438; &#x43E;&#x431;&#x435;&#x43A;&#x442;&#x438; &#x43E;&#x442; &#x43B;&#x438;&#x441;&#x442;&#x430; &#x441;&#x438; &#x43A;&#x430;&#x442;&#x43E; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x442;&#x435; &#x438;&#x43C;&#x435;&#x442;&#x43E; &#x43D;&#x430; &#x43B;&#x438;&#x441;&#x442;&#x430; &#x438; &#x438;&#x43D;&#x434;&#x435;&#x43A;&#x441; &#x441;&#x44A;&#x441; &#x43A;&#x432;&#x430;&#x434;&#x440;&#x430;&#x442;&#x43D;&#x438; &#x441;&#x43A;&#x43E;&#x431;&#x438;.</p><p>&#x417;&#x430; &#x434;&#x430; &#x43F;&#x440;&#x435;&#x43C;&#x430;&#x445;&#x43D;&#x435;&#x442;&#x435; &#x43D;&#x435;&#x449;&#x43E; &#x43E;&#x442; &#x43B;&#x438;&#x441;&#x442;&#x430; &#x441;&#x438; &#x449;&#x435; &#x442;&#x440;&#x44F;&#x431;&#x432;&#x430; &#x434;&#x430; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x442;&#x435; <strong>&#x438;&#x43D;&#x434;&#x435;&#x43A;&#x441;&#x438;&#x442;&#x435;</strong>, &#x43A;&#x43E;&#x438;&#x442;&#x43E; &#x43D;&#x430;&#x443;&#x447;&#x438;&#x445;&#x43C;&#x435; &#x43F;&#x43E;-&#x433;&#x43E;&#x440;&#x435; &#x438; &#x43C;&#x435;&#x442;&#x43E;&#x434;&#x430; <code>pop()</code>. &#x41D;&#x435;&#x43A;&#x430; &#x43F;&#x440;&#x43E;&#x431;&#x432;&#x430;&#x43C;&#x435; &#x43F;&#x440;&#x438;&#x43C;&#x435;&#x440; &#x438; &#x437;&#x430;&#x442;&#x432;&#x44A;&#x440;&#x434;&#x438;&#x43C; &#x442;&#x43E;&#x432;&#x430;, &#x43A;&#x43E;&#x435;&#x442;&#x43E; &#x43D;&#x430;&#x443;&#x447;&#x438;&#x445;&#x43C;&#x435; &#x434;&#x43E; &#x43C;&#x43E;&#x43C;&#x435;&#x43D;&#x442;&#x430;: &#x449;&#x435; &#x43E;&#x442;&#x441;&#x442;&#x440;&#x430;&#x43D;&#x438;&#x43C; &#x43F;&#x44A;&#x440;&#x432;&#x43E;&#x442;&#x43E; &#x447;&#x438;&#x441;&#x43B;&#x43E; &#x43E;&#x442; &#x43B;&#x438;&#x441;&#x442;&#x430; &#x43D;&#x438;.</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>print(lottery)
+[<span class="hljs-number">59</span>, <span class="hljs-number">42</span>, <span class="hljs-number">30</span>, <span class="hljs-number">19</span>, <span class="hljs-number">12</span>, <span class="hljs-number">3</span>, <span class="hljs-number">199</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(lottery[<span class="hljs-number">0</span>])
+<span class="hljs-number">59</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>lottery.pop(<span class="hljs-number">0</span>)
+<span class="hljs-number">59</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(lottery)
+[<span class="hljs-number">42</span>, <span class="hljs-number">30</span>, <span class="hljs-number">19</span>, <span class="hljs-number">12</span>, <span class="hljs-number">3</span>, <span class="hljs-number">199</span>]</code></pre>
+<p>&#x420;&#x430;&#x431;&#x43E;&#x442;&#x438; &#x431;&#x435;&#x437;&#x443;&#x43F;&#x440;&#x435;&#x447;&#x43D;&#x43E;!</p><p>&#x417;&#x430; &#x43F;&#x43E;&#x432;&#x435;&#x447;&#x435; &#x432;&#x435;&#x441;&#x435;&#x43B;&#x431;&#x430;, &#x43F;&#x440;&#x43E;&#x431;&#x432;&#x430;&#x439;&#x442;&#x435; &#x434;&#x440;&#x443;&#x433;&#x438; &#x438;&#x43D;&#x434;&#x435;&#x43A;&#x441;&#x438;: 6, 7, 1000, -1, -6 or -1000. &#x41F;&#x440;&#x43E;&#x431;&#x432;&#x430;&#x439;&#x442;&#x435; &#x441;&#x435; &#x434;&#x430; &#x43F;&#x440;&#x435;&#x434;&#x43F;&#x43E;&#x43B;&#x43E;&#x436;&#x438;&#x442;&#x435; &#x43A;&#x430;&#x43A;&#x44A;&#x432; &#x431;&#x438; &#x43C;&#x43E;&#x433;&#x44A;&#x43B; &#x434;&#x430; &#x435; &#x440;&#x435;&#x437;&#x443;&#x43B;&#x442;&#x430;&#x442;&#x430; &#x43E;&#x442; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x430;&#x442;&#x430;. &#x418;&#x43C;&#x430;&#x442; &#x43B;&#x438; &#x441;&#x43C;&#x438;&#x441;&#x44A;&#x43B; &#x440;&#x435;&#x437;&#x443;&#x43B;&#x442;&#x430;&#x442;&#x438;&#x442;&#x435;?</p><p>&#x41C;&#x43E;&#x436;&#x435;&#x442;&#x435; &#x434;&#x430; &#x43D;&#x430;&#x43C;&#x435;&#x440;&#x438;&#x442;&#x435; &#x43B;&#x438;&#x441;&#x442; &#x441; &#x432;&#x441;&#x438;&#x447;&#x43A;&#x438; &#x432;&#x44A;&#x437;&#x43C;&#x43E;&#x436;&#x43D;&#x438; &#x43C;&#x435;&#x442;&#x43E;&#x434;&#x438; &#x432; &#x442;&#x430;&#x437;&#x438; &#x433;&#x43B;&#x430;&#x432;&#x430; &#x43E;&#x442; &#x434;&#x43E;&#x43A;&#x443;&#x43C;&#x435;&#x43D;&#x442;&#x430;&#x446;&#x438;&#x44F;&#x442;&#x430; &#x43D;&#x430; Python: <a href="https://docs.python.org/3/tutorial/datastructures.html" target="_blank">https://docs.python.org/3/tutorial/datastructures.html</a></p><h2 id="&#x440;&#x435;&#x447;&#x43D;&#x438;&#x446;&#x438;">&#x420;&#x435;&#x447;&#x43D;&#x438;&#x446;&#x438;</h2><blockquote><p>&#x417;&#x430; &#x447;&#x438;&#x442;&#x430;&#x442;&#x435;&#x43B;&#x438;&#x442;&#x435; &#x443; &#x434;&#x43E;&#x43C;&#x430;: &#x442;&#x430;&#x437;&#x438; &#x447;&#x430;&#x441;&#x442; &#x435; &#x43F;&#x43E;&#x43A;&#x430;&#x437;&#x430;&#x43D;&#x430; &#x432;&#x44A;&#x432; &#x432;&#x438;&#x434;&#x435;&#x43E;&#x442;&#x43E; <a href="https://www.youtube.com/watch?v=ZX1CVvZLE6c" target="_blank">Python Basics: Dictionaries</a>.</p></blockquote><p>&#x420;&#x435;&#x447;&#x43D;&#x438;&#x43A;&#x430; &#x435; &#x43F;&#x43E;&#x434;&#x43E;&#x431;&#x435;&#x43D; &#x43D;&#x430; &#x43B;&#x438;&#x441;&#x442;&#x430;, &#x43D;&#x43E; &#x43C;&#x43E;&#x436;&#x435;&#x442;&#x435; &#x434;&#x430; &#x434;&#x43E;&#x441;&#x442;&#x44A;&#x43F;&#x432;&#x430;&#x442;&#x435; &#x441;&#x442;&#x43E;&#x439;&#x43D;&#x43E;&#x441;&#x442;&#x438;&#x442;&#x435; &#x43C;&#x443; &#x43A;&#x430;&#x442;&#x43E; &#x43F;&#x43E;&#x433;&#x43B;&#x435;&#x434;&#x43D;&#x435;&#x442;&#x435; &#x437;&#x430; &#x43A;&#x43B;&#x44E;&#x447;&#x430; &#x432;&#x43C;&#x435;&#x441;&#x442;&#x43E; &#x447;&#x438;&#x441;&#x43B;&#x435;&#x43D;&#x438;&#x44F; &#x438;&#x43D;&#x434;&#x435;&#x43A;&#x441;. &#x421;&#x438;&#x43D;&#x442;&#x430;&#x43A;&#x441;&#x438;&#x441;&#x44A;&#x442; &#x437;&#x430; &#x434;&#x435;&#x444;&#x438;&#x43D;&#x438;&#x440;&#x430;&#x43D;&#x435; &#x43D;&#x430; &#x43F;&#x440;&#x430;&#x437;&#x435;&#x43D; &#x440;&#x435;&#x447;&#x43D;&#x438;&#x43A; &#x435;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>{}
+{}</code></pre>
+<p>&#x422;&#x43E;&#x432;&#x430; &#x43F;&#x43E;&#x43A;&#x430;&#x437;&#x432;&#x430;, &#x447;&#x435; &#x432; &#x43C;&#x43E;&#x43C;&#x435;&#x43D;&#x442;&#x430; &#x441;&#x44A;&#x437;&#x434;&#x430;&#x434;&#x43E;&#x445;&#x442;&#x435; &#x43F;&#x440;&#x430;&#x437;&#x435;&#x43D; &#x440;&#x435;&#x447;&#x43D;&#x438;&#x43A;. &#x423;&#x440;&#x430;!</p><p>&#x421;&#x435;&#x433;&#x430;, &#x43E;&#x43F;&#x438;&#x442;&#x430;&#x439;&#x442;&#x435; &#x441;&#x435; &#x434;&#x430; &#x43D;&#x430;&#x43F;&#x438;&#x448;&#x435;&#x442;&#x435; &#x441;&#x43B;&#x435;&#x434;&#x43D;&#x430;&#x442;&#x430; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x430; (&#x43E;&#x43F;&#x438;&#x442;&#x430;&#x439;&#x442;&#x435; &#x441;&#x435; &#x434;&#x430; &#x437;&#x430;&#x43C;&#x435;&#x441;&#x442;&#x438;&#x442;&#x435; &#x441;&#x44A;&#x441; &#x441;&#x432;&#x43E;&#x44F; &#x438;&#x43D;&#x444;&#x43E;&#x440;&#x43C;&#x430;&#x446;&#x438;&#x44F;):</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>participant = {<span class="hljs-string">&apos;name&apos;</span>: <span class="hljs-string">&apos;Ola&apos;</span>, <span class="hljs-string">&apos;country&apos;</span>: <span class="hljs-string">&apos;Poland&apos;</span>, <span class="hljs-string">&apos;favorite_numbers&apos;</span>: [<span class="hljs-number">7</span>, <span class="hljs-number">42</span>, <span class="hljs-number">92</span>]}</code></pre>
+<p>&#x421; &#x442;&#x430;&#x437;&#x438; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x430;, &#x442;&#x43E;&#x43A;&#x443; &#x449;&#x43E; &#x441;&#x44A;&#x437;&#x434;&#x430;&#x434;&#x43E;&#x445;&#x442;&#x435; &#x43F;&#x440;&#x43E;&#x43C;&#x435;&#x43D;&#x43B;&#x438;&#x432;&#x430; &#x441; &#x438;&#x43C;&#x435; <code>participant</code> &#x441; &#x442;&#x440;&#x438; &#x435;&#x43B;&#x435;&#x43C;&#x435;&#x43D;&#x442;-&#x441;&#x442;&#x43E;&#x439;&#x43D;&#x43E;&#x441;&#x442; (keys-value) &#x434;&#x432;&#x43E;&#x439;&#x43A;&#x438;.</p><ul><li>&#x415;&#x43B;&#x435;&#x43C;&#x435;&#x43D;&#x442;&#x44A;&#x442; <code>name</code> &#x441;&#x435; &#x43E;&#x442;&#x43D;&#x430;&#x441;&#x44F; &#x437;&#x430; &#x441;&#x442;&#x43E;&#x439;&#x43D;&#x43E;&#x441;&#x442;&#x442;&#x430; <code>&apos;Ola&apos;</code> (<code>&#x43D;&#x438;&#x437;</code> &#x43E;&#x431;&#x435;&#x43A;&#x442;),
+</li>
+<li><code>country</code> &#x441;&#x435; &#x43E;&#x442;&#x43D;&#x430;&#x441;&#x44F; &#x437;&#x430; <code>&apos;Poland&apos;</code> (&#x434;&#x440;&#x443;&#x433; <code>&#x43D;&#x438;&#x437;</code>),
+</li>
+<li>and <code>favorite_numbers</code> &#x441;&#x435; &#x43E;&#x442;&#x43D;&#x430;&#x441;&#x44F; &#x437;&#x430; <code>[7, 42, 92]</code> (<code>&#x43B;&#x438;&#x441;&#x442;</code> &#x441; &#x442;&#x440;&#x438; &#x447;&#x438;&#x441;&#x43B;&#x430; &#x432; &#x43D;&#x435;&#x433;&#x43E;).
+</li></ul>
+<p>&#x41C;&#x43E;&#x436;&#x435; &#x434;&#x430; &#x43F;&#x440;&#x43E;&#x432;&#x435;&#x440;&#x438;&#x442;&#x435; &#x441;&#x44A;&#x434;&#x44A;&#x440;&#x436;&#x430;&#x43D;&#x438;&#x435;&#x442;&#x43E; &#x43D;&#x430; &#x432;&#x441;&#x435;&#x43A;&#x438; &#x43E;&#x442; &#x435;&#x43B;&#x435;&#x43C;&#x435;&#x43D;&#x442;&#x438;&#x442;&#x435; &#x441; &#x442;&#x43E;&#x437;&#x438; &#x441;&#x438;&#x43D;&#x442;&#x430;&#x43A;&#x441;&#x438;&#x441;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>print(participant[<span class="hljs-string">&apos;name&apos;</span>])
+Ola</code></pre>
+<p>&#x412;&#x438;&#x436;&#x434;&#x430;&#x442;&#x435; &#x43B;&#x438;, &#x43F;&#x43E;&#x434;&#x43E;&#x431;&#x43D;&#x43E; &#x435; &#x43D;&#x430; &#x43B;&#x438;&#x441;&#x442;. &#x41D;&#x43E; &#x43D;&#x435; &#x435; &#x43D;&#x435;&#x43E;&#x431;&#x445;&#x43E;&#x434;&#x438;&#x43C;&#x43E; &#x434;&#x430; &#x43F;&#x43E;&#x43C;&#x43D;&#x438;&#x442;&#x435; &#x438;&#x43D;&#x434;&#x435;&#x43A;&#x441;&#x430; -- &#x441;&#x430;&#x43C;&#x43E; &#x438;&#x43C;&#x435;&#x442;&#x43E;.</p><p>&#x41A;&#x430;&#x43A;&#x432;&#x43E; &#x441;&#x435; &#x441;&#x43B;&#x443;&#x447;&#x432;&#x430;, &#x43A;&#x43E;&#x433;&#x430;&#x442;&#x43E; &#x43F;&#x43E;&#x43F;&#x438;&#x442;&#x430;&#x43C;&#x435; Python &#x437;&#x430; &#x441;&#x442;&#x43E;&#x439;&#x43D;&#x43E;&#x441;&#x442;&#x442;&#x430; &#x43D;&#x430; &#x435;&#x43B;&#x435;&#x43C;&#x435;&#x43D;&#x442;, &#x43A;&#x43E;&#x439;&#x442;&#x43E; &#x43D;&#x435; &#x441;&#x44A;&#x449;&#x435;&#x441;&#x442;&#x432;&#x443;&#x432;&#x430;? &#x41C;&#x43E;&#x436;&#x435;&#x442;&#x435; &#x43B;&#x438; &#x434;&#x430; &#x43F;&#x43E;&#x437;&#x43D;&#x430;&#x435;&#x442;&#x435;? &#x41D;&#x435;&#x43A;&#x430; &#x43E;&#x43F;&#x438;&#x442;&#x430;&#x43C;&#x435; &#x438; &#x432;&#x438;&#x434;&#x438;&#x43C;:</p><p></p><p class="code-label"><span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!"></span> command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>participant[<span class="hljs-string">&apos;age&apos;</span>]
+Traceback (most recent call last):
+  File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+KeyError: <span class="hljs-string">&apos;age&apos;</span></code></pre>
+<p>&#x412;&#x438;&#x436;&#x442;&#x435;, &#x434;&#x440;&#x443;&#x433;&#x430; &#x433;&#x440;&#x435;&#x448;&#x43A;&#x430;! &#x422;&#x430;&#x437;&#x438; &#x435; <strong>KeyError</strong>. Python &#x435; &#x43C;&#x43D;&#x43E;&#x433;&#x43E; &#x443;&#x441;&#x43B;&#x443;&#x436;&#x43B;&#x438;&#x432; &#x438; &#x442;&#x438; &#x43A;&#x430;&#x437;&#x432;&#x430;, &#x447;&#x435; &#x435;&#x43B;&#x435;&#x43C;&#x435;&#x43D;&#x442; <code>&apos;age&apos;</code> &#x43D;&#x435; &#x441;&#x44A;&#x449;&#x435;&#x441;&#x442;&#x432;&#x443;&#x432;&#x430; &#x432; &#x442;&#x43E;&#x437;&#x438; &#x440;&#x435;&#x447;&#x43D;&#x438;&#x43A;.</p><p>&#x41A;&#x43E;&#x433;&#x430; &#x434;&#x430; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x442;&#x435; &#x440;&#x435;&#x447;&#x43D;&#x438;&#x43A; &#x438; &#x43A;&#x43E;&#x433;&#x430; &#x43B;&#x438;&#x441;&#x442;? &#x422;&#x43E;&#x432;&#x430; &#x435; &#x434;&#x43E;&#x431;&#x44A;&#x440; &#x432;&#x44A;&#x43F;&#x440;&#x43E;&#x441;. &#x41F;&#x43E;&#x43C;&#x438;&#x441;&#x43B;&#x435;&#x442;&#x435; &#x437;&#x430; &#x43E;&#x442;&#x433;&#x43E;&#x432;&#x43E;&#x440; &#x43F;&#x440;&#x435;&#x434;&#x438; &#x434;&#x430; &#x432;&#x438;&#x434;&#x438;&#x442;&#x435; &#x441;&#x43B;&#x435;&#x434;&#x432;&#x430;&#x449;&#x438;&#x44F; &#x440;&#x435;&#x434;.</p><ul><li>&#x410;&#x43A;&#x43E; &#x438;&#x43C;&#x430;&#x442;&#x435; &#x43D;&#x443;&#x436;&#x434;&#x430; &#x43F;&#x440;&#x43E;&#x441;&#x442;&#x43E; &#x43E;&#x442; &#x43F;&#x43E;&#x434;&#x440;&#x435;&#x434;&#x435;&#x43D;&#x430; &#x43F;&#x43E;&#x441;&#x43B;&#x435;&#x434;&#x43E;&#x432;&#x430;&#x442;&#x435;&#x43B;&#x43D;&#x43E;&#x441;&#x442; &#x43E;&#x442; &#x435;&#x43B;&#x435;&#x43C;&#x435;&#x43D;&#x442;&#x438;? &#x41F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x439;&#x442;&#x435; &#x43B;&#x438;&#x441;&#x442;.
+</li>
+<li>&#x410;&#x43A;&#x43E; &#x442;&#x440;&#x430;&#x431;&#x432;&#x430; &#x434;&#x430; &#x430;&#x441;&#x43E;&#x446;&#x438;&#x438;&#x440;&#x430;&#x442;&#x435; &#x441;&#x442;&#x43E;&#x439;&#x43D;&#x43E;&#x441;&#x442;&#x438; &#x441; &#x435;&#x43B;&#x435;&#x43C;&#x435;&#x43D;&#x442;&#x438;, &#x43A;&#x43E;&#x438;&#x442;&#x43E; &#x438;&#x441;&#x43A;&#x430;&#x442;&#x435; &#x434;&#x430; &#x43C;&#x43E;&#x436;&#x435; &#x434;&#x430; &#x433;&#x438; &#x432;&#x438;&#x434;&#x438;&#x442;&#x435; &#x43D;&#x430; &#x43F;&#x43E;-&#x43A;&#x44A;&#x441;&#x435;&#x43D; &#x435;&#x442;&#x430;&#x43F; (&#x447;&#x440;&#x435;&#x437; &#x435;&#x43B;&#x435;&#x43C;&#x435;&#x43D;&#x442; - by key)? &#x418;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x439;&#x442;&#x435; &#x440;&#x435;&#x447;&#x43D;&#x438;&#x43A;.
+</li></ul>
+<p>&#x420;&#x435;&#x447;&#x43D;&#x438;&#x446;&#x438;&#x442;&#x435; &#x441;&#x430; &#x43A;&#x430;&#x442;&#x43E; &#x43B;&#x438;&#x441;&#x442;&#x43E;&#x432;&#x435;, &#x43D;&#x43E; <em>&#x43D;&#x435;&#x43F;&#x43E;&#x441;&#x442;&#x43E;&#x44F;&#x43D;&#x43D;&#x438;</em>, &#x43A;&#x43E;&#x435;&#x442;&#x43E; &#x43E;&#x437;&#x43D;&#x430;&#x447;&#x430;&#x432;&#x430;, &#x447;&#x435; &#x43C;&#x43E;&#x433;&#x430;&#x442; &#x434;&#x430; &#x431;&#x44A;&#x434;&#x430;&#x442; &#x43F;&#x440;&#x43E;&#x43C;&#x435;&#x43D;&#x435;&#x43D;&#x438; &#x441;&#x43B;&#x435;&#x434; &#x43A;&#x430;&#x442;&#x43E; &#x431;&#x44A;&#x434;&#x430;&#x442; &#x441;&#x44A;&#x437;&#x434;&#x430;&#x434;&#x435;&#x43D;&#x438;. &#x41C;&#x43E;&#x436;&#x435; &#x434;&#x430; &#x434;&#x43E;&#x431;&#x430;&#x432;&#x44F;&#x442;&#x435; &#x43D;&#x43E;&#x432;&#x438; &#x434;&#x432;&#x43E;&#x439;&#x43A;&#x438; &#x435;&#x43B;&#x435;&#x43C;&#x435;&#x43D;&#x442;-&#x441;&#x442;&#x43E;&#x439;&#x43D;&#x43E;&#x441;&#x442; &#x43A;&#x44A;&#x43C; &#x440;&#x435;&#x447;&#x43D;&#x438;&#x43A;&#x430; &#x441;&#x43B;&#x435;&#x434; &#x43A;&#x430;&#x442;&#x43E; &#x435; &#x441;&#x44A;&#x437;&#x434;&#x430;&#x434;&#x435;&#x43D; &#x435;&#x442;&#x43E; &#x442;&#x430;&#x43A;&#x430;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>participant[<span class="hljs-string">&apos;favorite_language&apos;</span>] = <span class="hljs-string">&apos;Python&apos;</span></code></pre>
+<p>&#x41A;&#x430;&#x442;&#x43E; &#x43F;&#x440;&#x438; &#x43B;&#x438;&#x441;&#x442;&#x43E;&#x432;&#x435;&#x442;&#x435;, &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x43D;&#x435;&#x442;&#x43E; &#x43D;&#x430; &#x43C;&#x435;&#x442;&#x43E;&#x434;&#x430; <code>len()</code> &#x432;&#x44A;&#x440;&#x445;&#x443; &#x440;&#x435;&#x447;&#x43D;&#x438;&#x43A;&#x430; &#x432;&#x440;&#x44A;&#x449;&#x430; &#x431;&#x440;&#x43E;&#x44F; &#x43D;&#x430; &#x434;&#x432;&#x43E;&#x439;&#x43A;&#x430;&#x442;&#x430; &#x435;&#x43B;&#x435;&#x43C;&#x435;&#x43D;&#x442;-&#x441;&#x442;&#x43E;&#x439;&#x43D;&#x43E;&#x441;&#x442; &#x432; &#x440;&#x435;&#x447;&#x43D;&#x438;&#x43A;&#x430;. &#x41F;&#x440;&#x43E;&#x434;&#x44A;&#x43B;&#x436;&#x435;&#x442;&#x435; &#x438; &#x43D;&#x430;&#x43F;&#x438;&#x448;&#x435;&#x442;&#x435; &#x442;&#x430;&#x437;&#x438; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x430;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>len(participant)
+<span class="hljs-number">4</span></code></pre>
+<p>&#x41D;&#x430;&#x434;&#x44F;&#x432;&#x430;&#x43C; &#x441;&#x435; &#x434;&#x430; &#x438;&#x43C;&#x430; &#x441;&#x43C;&#x438;&#x441;&#x44A;&#x43B; &#x442;&#x43E;&#x432;&#x430; &#x43A;&#x43E;&#x435;&#x442;&#x43E; &#x43F;&#x440;&#x430;&#x432;&#x438;&#x43C; &#x434;&#x43E;&#x441;&#x435;&#x433;&#x430;. :) &#x413;&#x43E;&#x442;&#x43E;&#x432;&#x438; &#x43B;&#x438; &#x441;&#x442;&#x435; &#x437;&#x430; &#x43E;&#x449;&#x435; &#x432;&#x435;&#x441;&#x435;&#x43B;&#x431;&#x430; &#x441; &#x440;&#x435;&#x447;&#x43D;&#x438;&#x446;&#x438;&#x442;&#x435;? &#x41F;&#x440;&#x43E;&#x447;&#x435;&#x442;&#x435;&#x442;&#x435; &#x43D;&#x44F;&#x43A;&#x43E;&#x438; &#x43D;&#x435;&#x432;&#x435;&#x440;&#x43E;&#x44F;&#x442;&#x43D;&#x438; &#x43D;&#x435;&#x449;&#x430;.</p><p>&#x41C;&#x43E;&#x436;&#x435;&#x442;&#x435; &#x434;&#x430; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x442;&#x435; &#x43C;&#x435;&#x442;&#x43E;&#x434;&#x430; <code>pop()</code> &#x434;&#x430; &#x438;&#x437;&#x442;&#x440;&#x438;&#x435;&#x442;&#x435; &#x435;&#x43B;&#x435;&#x43C;&#x435;&#x43D;&#x442; &#x43E;&#x442; &#x440;&#x435;&#x447;&#x43D;&#x438;&#x43A;&#x430;. &#x414;&#x430; &#x43A;&#x430;&#x436;&#x435;&#x43C;, &#x447;&#x435; &#x438;&#x441;&#x43A;&#x430;&#x43C;&#x435; &#x434;&#x430; &#x43F;&#x440;&#x435;&#x43C;&#x430;&#x445;&#x43D;&#x435;&#x43C; &#x432;&#x44A;&#x432;&#x435;&#x434;&#x435;&#x43D;&#x438;&#x435;&#x442;&#x43E;, &#x43A;&#x43E;&#x435;&#x442;&#x43E; &#x441;&#x435; &#x43E;&#x442;&#x430;&#x43D;&#x441;&#x44F; &#x437;&#x430; &#x435;&#x43B;&#x435;&#x43C;&#x435;&#x43D;&#x442;&#x430; <code>&apos;favorite_numbers&apos;</code>, &#x43D;&#x430;&#x43F;&#x438;&#x448;&#x435;&#x442;&#x435; &#x441;&#x43B;&#x435;&#x434;&#x43D;&#x430;&#x442;&#x430; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x430;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>participant.pop(<span class="hljs-string">&apos;favorite_numbers&apos;</span>)
+[<span class="hljs-number">7</span>, <span class="hljs-number">42</span>, <span class="hljs-number">92</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>participant
+{<span class="hljs-string">&apos;country&apos;</span>: <span class="hljs-string">&apos;Poland&apos;</span>, <span class="hljs-string">&apos;favorite_language&apos;</span>: <span class="hljs-string">&apos;Python&apos;</span>, <span class="hljs-string">&apos;name&apos;</span>: <span class="hljs-string">&apos;Ola&apos;</span>}</code></pre>
+<p>&#x41A;&#x430;&#x43A;&#x442;&#x43E; &#x441;&#x435; &#x432;&#x438;&#x436;&#x434;&#x430;, &#x434;&#x432;&#x43E;&#x439;&#x43A;&#x430;&#x442;&#x430; &#x435;&#x43B;&#x435;&#x43C;&#x435;&#x43D;&#x442;-&#x441;&#x442;&#x43E;&#x439;&#x43D;&#x43E;&#x441;&#x442; &#x43E;&#x442;&#x43D;&#x430;&#x441;&#x44F;&#x449;&#x430; &#x441;&#x435; &#x437;&#x430; &apos;favorite_numbers&apos; &#x431;&#x435;&#x448;&#x435; &#x43F;&#x440;&#x435;&#x43C;&#x430;&#x445;&#x43D;&#x430;&#x442;&#x430;.</p><p>&#x41A;&#x430;&#x43A;&#x442;&#x43E; &#x438; &#x442;&#x43E;&#x432;&#x430;, &#x43C;&#x43E;&#x436;&#x435;&#x442;&#x435; &#x434;&#x430; &#x43F;&#x440;&#x43E;&#x43C;&#x435;&#x43D;&#x438;&#x442;&#x435; &#x441;&#x442;&#x43E;&#x439;&#x43D;&#x43E;&#x441;&#x442;&#x442;&#x430;, &#x43A;&#x43E;&#x44F;&#x442;&#x43E; &#x43E;&#x442;&#x433;&#x43E;&#x432;&#x430;&#x440;&#x44F; &#x43D;&#x430; &#x432;&#x435;&#x447;&#x435; &#x441;&#x44A;&#x437;&#x434;&#x430;&#x434;&#x435;&#x43D; &#x435;&#x43B;&#x435;&#x43C;&#x435;&#x43D;&#x442; &#x432; &#x440;&#x435;&#x447;&#x43D;&#x438;&#x43A;&#x430;. &#x41D;&#x430;&#x43F;&#x438;&#x448;&#x435;&#x442;&#x435; &#x442;&#x43E;&#x432;&#x430;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>participant[<span class="hljs-string">&apos;country&apos;</span>] = <span class="hljs-string">&apos;Germany&apos;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>participant
+{<span class="hljs-string">&apos;country&apos;</span>: <span class="hljs-string">&apos;Germany&apos;</span>, <span class="hljs-string">&apos;favorite_language&apos;</span>: <span class="hljs-string">&apos;Python&apos;</span>, <span class="hljs-string">&apos;name&apos;</span>: <span class="hljs-string">&apos;Ola&apos;</span>}</code></pre>
+<p>&#x41A;&#x430;&#x43A;&#x442;&#x43E; &#x432;&#x438;&#x436;&#x434;&#x430;&#x442;&#x435;, &#x441;&#x442;&#x43E;&#x439;&#x43D;&#x43E;&#x441;&#x442;&#x442;&#x430; &#x43D;&#x430; &#x435;&#x43B;&#x435;&#x43C;&#x435;&#x43D;&#x442;&#x430; <code>&apos;country&apos;</code> &#x431;&#x435;&#x448;&#x435; &#x43F;&#x440;&#x43E;&#x43C;&#x435;&#x43D;&#x435;&#x43D; &#x43E;&#x442; <code>&apos;Poland&apos;</code> &#x43D;&#x430; <code>&apos;Germany&apos;</code>. :) &#x412;&#x44A;&#x43B;&#x43D;&#x443;&#x432;&#x430;&#x449;&#x43E;? &#x423;&#x440;&#x430;&#x430;! &#x422;&#x43E;&#x43A;&#x443; &#x449;&#x43E; &#x43D;&#x430;&#x443;&#x447;&#x438;&#x445;&#x442;&#x435; &#x43E;&#x449;&#x435; &#x435;&#x434;&#x43D;&#x43E; &#x43D;&#x435;&#x432;&#x435;&#x440;&#x43E;&#x44F;&#x442;&#x43D;&#x43E; &#x43D;&#x435;&#x449;&#x43E;.</p><h3 id="&#x43E;&#x431;&#x43E;&#x431;&#x449;&#x435;&#x43D;&#x438;&#x435;">&#x41E;&#x431;&#x43E;&#x431;&#x449;&#x435;&#x43D;&#x438;&#x435;</h3><p>&#x421;&#x442;&#x440;&#x430;&#x445;&#x43E;&#x442;&#x43D;&#x43E;! &#x412;&#x435;&#x447;&#x435; &#x437;&#x43D;&#x430;&#x435;&#x442;&#x435; &#x43C;&#x43D;&#x43E;&#x433;&#x43E; &#x437;&#x430; &#x43F;&#x440;&#x43E;&#x433;&#x440;&#x430;&#x43C;&#x438;&#x440;&#x430;&#x43D;&#x435;&#x442;&#x43E;. &#x412; &#x442;&#x430;&#x437;&#x438; &#x43F;&#x43E;&#x441;&#x43B;&#x435;&#x434;&#x43D;&#x430; &#x447;&#x430;&#x441;&#x442; &#x43D;&#x430;&#x443;&#x447;&#x438;&#x445;&#x442;&#x435; &#x437;&#x430;:</p><ul><li><strong>&#x433;&#x440;&#x435;&#x448;&#x43A;&#x438;</strong> -- &#x437;&#x43D;&#x430;&#x435;&#x442;&#x435; &#x43A;&#x430;&#x43A; &#x434;&#x430; &#x447;&#x435;&#x442;&#x435;&#x442;&#x435; &#x438; &#x440;&#x430;&#x437;&#x431;&#x438;&#x440;&#x430;&#x442;&#x435; &#x433;&#x440;&#x435;&#x448;&#x43A;&#x438;&#x442;&#x435; &#x43A;&#x43E;&#x438;&#x442;&#x43E; &#x441;&#x435; &#x43F;&#x43E;&#x43A;&#x430;&#x437;&#x432;&#x430;&#x442;, &#x430;&#x43A;&#x43E; Python &#x43D;&#x435; &#x440;&#x430;&#x437;&#x431;&#x438;&#x440;&#x430; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x430;&#x442;&#x430; &#x43A;&#x43E;&#x44F;&#x442;&#x43E; &#x441;&#x442;&#x435; &#x437;&#x430;&#x434;&#x430;&#x43B;&#x438;
+</li>
+<li><strong>&#x43F;&#x440;&#x43E;&#x43C;&#x435;&#x43D;&#x43B;&#x438;&#x432;&#x438;</strong> &#x2013; &#x438;&#x43C;&#x435;&#x43D;&#x430; &#x43D;&#x430; &#x43E;&#x431;&#x435;&#x43A;&#x442;&#x438;&#x442;&#x435;, &#x43A;&#x43E;&#x438;&#x442;&#x43E; &#x432;&#x438; &#x43F;&#x43E;&#x437;&#x432;&#x43E;&#x43B;&#x44F;&#x432;&#x430;&#x442; &#x434;&#x430; &#x43F;&#x438;&#x448;&#x435;&#x442;&#x435; &#x43A;&#x43E;&#x434; &#x43F;&#x43E;-&#x43B;&#x435;&#x441;&#x43D;&#x43E; &#x438; &#x434;&#x430; &#x43F;&#x440;&#x430;&#x432;&#x44F;&#x442; &#x43A;&#x43E;&#x434;&#x430; &#x432;&#x438; &#x43F;&#x43E;-&#x447;&#x435;&#x442;&#x43B;&#x438;&#x432;
+</li>
+<li><strong>&#x43B;&#x438;&#x441;&#x442;&#x43E;&#x432;&#x435;</strong> &#x2013;&#x43B;&#x438;&#x441;&#x442;&#x43E;&#x432;&#x435;&#x442;&#x435; &#x441;&#x430; &#x43E;&#x431;&#x435;&#x43A;&#x442;&#x438; &#x437;&#x430;&#x43F;&#x430;&#x437;&#x435;&#x43D;&#x438; &#x432; &#x43E;&#x43F;&#x440;&#x435;&#x434;&#x435;&#x43B;&#x435;&#x43D; &#x440;&#x435;&#x434;
+</li>
+<li><strong>&#x440;&#x435;&#x447;&#x43D;&#x438;&#x446;&#x438;</strong> &#x2013; &#x43E;&#x431;&#x435;&#x43A;&#x442;&#x438; &#x437;&#x430;&#x43F;&#x430;&#x437;&#x435;&#x43D;&#x438; &#x43A;&#x430;&#x442;&#x43E; &#x434;&#x432;&#x43E;&#x439;&#x43A;&#x438; &#x43E;&#x442; &#x435;&#x43B;&#x435;&#x43C;&#x435;&#x43D;&#x442;-&#x441;&#x442;&#x43E;&#x439;&#x43D;&#x43E;&#x441;&#x442; (key-value pairs)
+</li></ul>
+<p>&#x412;&#x44A;&#x43B;&#x43D;&#x443;&#x432;&#x430;&#x442;&#x435; &#x43B;&#x438; &#x441;&#x435; &#x437;&#x430; &#x441;&#x43B;&#x435;&#x434;&#x432;&#x430;&#x449;&#x430;&#x442;&#x430; &#x447;&#x430;&#x441;&#x442;? :)</p><h2 id="&#x441;&#x440;&#x430;&#x432;&#x43D;&#x44F;&#x432;&#x430;&#x43D;&#x435;-&#x43D;&#x430;-&#x43D;&#x435;&#x449;&#x430;">&#x421;&#x440;&#x430;&#x432;&#x43D;&#x44F;&#x432;&#x430;&#x43D;&#x435; &#x43D;&#x430; &#x43D;&#x435;&#x449;&#x430;</h2><blockquote><p>&#x417;&#x430; &#x447;&#x438;&#x442;&#x430;&#x442;&#x435;&#x43B;&#x438;&#x442;&#x435; &#x443; &#x432;&#x43E;&#x43C;&#x430;: &#x442;&#x430;&#x437;&#x438; &#x447;&#x430;&#x441;&#x442; &#x435; &#x43F;&#x43E;&#x43A;&#x430;&#x437;&#x430;&#x43D;&#x430; &#x432;&#x44A;&#x432; &#x432;&#x438;&#x434;&#x435;&#x43E;&#x442;&#x43E; <a href="https://www.youtube.com/watch?v=7bzxqIKYgf4" target="_blank">Python Basics: Comparisons</a>.</p></blockquote><p>&#x413;&#x43E;&#x43B;&#x44F;&#x43C;&#x430; &#x447;&#x430;&#x441;&#x442; &#x43E;&#x442; &#x43F;&#x440;&#x43E;&#x433;&#x440;&#x430;&#x43C;&#x438;&#x440;&#x430;&#x43D;&#x435;&#x442;&#x43E; &#x432;&#x43A;&#x43B;&#x44E;&#x447;&#x432;&#x430; &#x441;&#x440;&#x430;&#x432;&#x43D;&#x44F;&#x432;&#x430;&#x43D;&#x435; &#x43D;&#x430; &#x43D;&#x435;&#x449;&#x430;. &#x41A;&#x430;&#x43A;&#x432;&#x43E; &#x435; &#x43D;&#x430;&#x439;-&#x43B;&#x435;&#x441;&#x43D;&#x43E;&#x442;&#x43E; &#x43D;&#x435;&#x449;&#x43E; &#x43A;&#x43E;&#x435;&#x442;&#x43E; &#x43C;&#x43E;&#x436;&#x435; &#x434;&#x430; &#x441;&#x435; &#x441;&#x440;&#x430;&#x432;&#x43D;&#x438;? &#x427;&#x438;&#x441;&#x43B;&#x430;&#x442;&#x430;! &#x41D;&#x435;&#x43A;&#x430; &#x432;&#x438;&#x434;&#x438;&#x43C; &#x43A;&#x430;&#x43A; &#x440;&#x430;&#x431;&#x43E;&#x442;&#x438;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">5</span> &gt; <span class="hljs-number">2</span>
+<span class="hljs-keyword">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">3</span> &lt; <span class="hljs-number">1</span>
+<span class="hljs-keyword">False</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">5</span> &gt; <span class="hljs-number">2</span> * <span class="hljs-number">2</span>
+<span class="hljs-keyword">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">1</span> == <span class="hljs-number">1</span>
+<span class="hljs-keyword">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">5</span> != <span class="hljs-number">2</span>
+<span class="hljs-keyword">True</span></code></pre>
+<p>&#x414;&#x430;&#x434;&#x43E;&#x445;&#x43C;&#x435; &#x43D;&#x430; Python &#x434;&#x430; &#x441;&#x440;&#x430;&#x432;&#x43D;&#x438; &#x43D;&#x44F;&#x43A;&#x43E;&#x43B;&#x43A;&#x43E; &#x447;&#x438;&#x441;&#x43B;&#x430;. &#x41A;&#x430;&#x43A;&#x442;&#x43E; &#x43C;&#x43E;&#x436;&#x435; &#x434;&#x430; &#x432;&#x438;&#x434;&#x438;&#x442;&#x435;, Python &#x43D;&#x435; &#x441;&#x430;&#x43C;&#x43E; &#x447;&#x435; &#x43C;&#x43E;&#x436;&#x435; &#x434;&#x430; &#x441;&#x440;&#x430;&#x432;&#x43D;&#x438; &#x447;&#x438;&#x441;&#x43B;&#x430;&#x442;&#x430;, &#x43D;&#x43E; &#x43C;&#x43E;&#x436;&#x435; &#x441;&#x44A;&#x449;&#x43E; &#x442;&#x430;&#x43A;&#x430; &#x434;&#x430; &#x441;&#x440;&#x430;&#x432;&#x43D;&#x44F;&#x432;&#x430; &#x438; &#x440;&#x435;&#x437;&#x443;&#x43B;&#x442;&#x430;&#x442;&#x438;&#x442;&#x435; &#x43E;&#x442; &#x43C;&#x435;&#x442;&#x43E;&#x434;&#x430;. &#x421;&#x443;&#x43F;&#x435;&#x440;, &#x43D;&#x430;&#x43B;&#x438;?</p><p>&#x427;&#x443;&#x434;&#x438;&#x442;&#x435; &#x43B;&#x438; &#x441;&#x435; &#x437;&#x430;&#x449;&#x43E; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x445;&#x43C;&#x435; &#x434;&#x432;&#x430; &#x437;&#x43D;&#x430;&#x43A;&#x430; &#x437;&#x430; &#x440;&#x430;&#x432;&#x43D;&#x43E; <code>==</code> &#x435;&#x434;&#x438;&#x43D; &#x434;&#x43E; &#x434;&#x440;&#x443;&#x433; &#x437;&#x430; &#x434;&#x430; &#x441;&#x440;&#x430;&#x432;&#x43D;&#x438;&#x43C; &#x434;&#x430;&#x43B;&#x438; &#x447;&#x438;&#x441;&#x43B;&#x430;&#x442;&#x430; &#x441;&#x430; &#x440;&#x430;&#x432;&#x43D;&#x438;? &#x418;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x43C;&#x435; &#x435;&#x434;&#x43D;&#x43E; &#x440;&#x430;&#x432;&#x43D;&#x43E; <code>=</code> &#x437;&#x430; &#x434;&#x430; &#x43F;&#x440;&#x438;&#x447;&#x438;&#x441;&#x43B;&#x438;&#x43C; &#x441;&#x442;&#x43E;&#x439;&#x43D;&#x43E;&#x441;&#x442; &#x43D;&#x430; &#x43F;&#x440;&#x43E;&#x43C;&#x435;&#x43D;&#x43B;&#x438;&#x432;&#x438;&#x442;&#x435;. &#x412;&#x438;&#x43D;&#x430;&#x433;&#x438;, &#x430;&#x43C;&#x430; <strong>&#x432;&#x438;&#x43D;&#x430;&#x433;&#x438;</strong> &#x442;&#x440;&#x44F;&#x431;&#x432;&#x430; &#x434;&#x430; &#x438;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x43C;&#x435; &#x434;&#x432;&#x435; &#x43E;&#x442; &#x442;&#x44F;&#x445; &#x2013; <code>==</code> &#x2013; &#x430;&#x43A;&#x43E; &#x438;&#x441;&#x43A;&#x430;&#x43C;&#x435; &#x434;&#x430; &#x43F;&#x440;&#x43E;&#x432;&#x435;&#x440;&#x438;&#x43C; &#x434;&#x430;&#x43B;&#x438; &#x434;&#x432;&#x435; &#x43D;&#x435;&#x449;&#x430; &#x441;&#x430; &#x440;&#x430;&#x432;&#x43D;&#x438; &#x435;&#x434;&#x43D;&#x43E; &#x43D;&#x430; &#x434;&#x440;&#x443;&#x433;&#x43E;. &#x41C;&#x43E;&#x436;&#x435;&#x43C; &#x441;&#x44A;&#x449;&#x43E; &#x442;&#x430;&#x43A;&#x430; &#x434;&#x430; &#x43A;&#x430;&#x436;&#x435;&#x43C;, &#x447;&#x435; &#x43D;&#x435; &#x438;&#x441;&#x43A;&#x430;&#x43C;&#x435; &#x434;&#x432;&#x435;&#x442;&#x435; &#x43D;&#x435;&#x449;&#x430; &#x434;&#x430; &#x441;&#x430; &#x440;&#x430;&#x432;&#x43D;&#x438; &#x435;&#x434;&#x43D;&#x43E; &#x43D;&#x430; &#x434;&#x440;&#x443;&#x433;&#x43E;. &#x417;&#x430;&#x442;&#x43E;&#x432;&#x430;, &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x43C;&#x435; &#x441;&#x438;&#x43C;&#x432;&#x43E;&#x43B;&#x430; <code>!=</code>, &#x43A;&#x430;&#x43A;&#x442;&#x43E; &#x435; &#x43F;&#x43E;&#x43A;&#x430;&#x437;&#x430;&#x43D;&#x43E; &#x432; &#x43F;&#x440;&#x438;&#x43C;&#x435;&#x440;&#x430; &#x43F;&#x43E;-&#x433;&#x43E;&#x440;&#x435;.</p><p>&#x414;&#x430;&#x439;&#x442;&#x435; &#x43D;&#x430; Python &#x43E;&#x449;&#x435; &#x434;&#x432;&#x435; &#x437;&#x430;&#x434;&#x430;&#x447;&#x43A;&#x438;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">6</span> &gt;= <span class="hljs-number">12</span> / <span class="hljs-number">2</span>
+<span class="hljs-keyword">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">3</span> &lt;= <span class="hljs-number">2</span>
+<span class="hljs-keyword">False</span></code></pre>
+<p>&#x412;&#x438;&#x436;&#x434;&#x430;&#x43B;&#x438; &#x441;&#x43C;&#x435; <code>&gt;</code> &#x438; <code>&lt;</code>, &#x43D;&#x43E; &#x43A;&#x430;&#x43A;&#x432;&#x43E; &#x43E;&#x437;&#x43D;&#x430;&#x447;&#x430;&#x432;&#x430;&#x442; <code>&gt;=</code> &#x438; <code>&lt;=</code>? &#x427;&#x435;&#x442;&#x435;&#x43C; &#x433;&#x438; &#x43F;&#x43E; &#x442;&#x43E;&#x437;&#x438; &#x43D;&#x430;&#x447;&#x438;&#x43D;:</p><ul><li>x <code>&gt;</code> y &#x43E;&#x437;&#x43D;&#x430;&#x447;&#x430;&#x432;&#x430;: x &#x435; &#x43F;&#x43E;-&#x433;&#x43E;&#x43B;&#x44F;&#x43C;&#x43E; &#x43E;&#x442; y
+</li>
+<li>x <code>&gt;</code> y &#x43E;&#x437;&#x43D;&#x430;&#x447;&#x430;&#x432;&#x430;: x &#x435; &#x43F;&#x43E;-&#x43C;&#x430;&#x43B;&#x43A;&#x43E; &#x43E;&#x442; y
+</li>
+<li>x <code>&lt;=</code> y &#x43E;&#x437;&#x43D;&#x430;&#x447;&#x430;&#x432;&#x430;: x &#x435; &#x43F;&#x43E;-&#x43C;&#x430;&#x43B;&#x43A;&#x43E; &#x438;&#x43B;&#x438; &#x440;&#x430;&#x432;&#x43D;&#x43E; &#x43D;&#x430; y
+</li>
+<li>x <code>&gt;=</code> y &#x43E;&#x437;&#x43D;&#x430;&#x447;&#x430;&#x432;&#x430;: x &#x435; &#x43F;&#x43E;-&#x433;&#x43E;&#x43B;&#x44F;&#x43C;&#x43E; &#x438;&#x43B;&#x438; &#x440;&#x430;&#x432;&#x43D;&#x43E; &#x43D;&#x430; y
+</li></ul>
+<p>&#x421;&#x442;&#x440;&#x430;&#x445;&#x43E;&#x442;&#x43D;&#x43E;! &#x418;&#x441;&#x43A;&#x430;&#x442;&#x435; &#x43B;&#x438; &#x434;&#x430; &#x43D;&#x430;&#x43F;&#x440;&#x430;&#x432;&#x438;&#x442;&#x435; &#x43E;&#x449;&#x435; &#x43D;&#x435;&#x449;&#x43E;? &#x41F;&#x440;&#x43E;&#x431;&#x432;&#x430;&#x439;&#x442;&#x435; &#x442;&#x43E;&#x432;&#x430;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">6</span> &gt; <span class="hljs-number">2</span> <span class="hljs-keyword">and</span> <span class="hljs-number">2</span> &lt; <span class="hljs-number">3</span>
+<span class="hljs-keyword">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">3</span> &gt; <span class="hljs-number">2</span> <span class="hljs-keyword">and</span> <span class="hljs-number">2</span> &lt; <span class="hljs-number">1</span>
+<span class="hljs-keyword">False</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">3</span> &gt; <span class="hljs-number">2</span> <span class="hljs-keyword">or</span> <span class="hljs-number">2</span> &lt; <span class="hljs-number">1</span>
+<span class="hljs-keyword">True</span></code></pre>
+<p>&#x41C;&#x43E;&#x436;&#x435; &#x434;&#x430; &#x434;&#x430;&#x434;&#x435;&#x442;&#x435; &#x43D;&#x430; Python &#x43A;&#x43E;&#x43B;&#x43A;&#x43E;&#x442;&#x43E; &#x441;&#x438; &#x438;&#x441;&#x43A;&#x430;&#x442;&#x435; &#x447;&#x438;&#x441;&#x43B;&#x430; &#x434;&#x430; &#x441;&#x440;&#x430;&#x432;&#x43D;&#x44F;&#x432;&#x430; &#x438; &#x449;&#x435; &#x432;&#x438; &#x434;&#x430;&#x434;&#x435; &#x43E;&#x442;&#x433;&#x43E;&#x432;&#x43E;&#x440;! &#x41C;&#x43D;&#x43E;&#x433;&#x43E; &#x443;&#x43C;&#x43D;&#x43E;, &#x43D;&#x430;&#x43B;&#x438;?</p><ul><li><strong>and</strong> &#x2013; &#x430;&#x43A;&#x43E; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x442;&#x435; &#x43E;&#x43F;&#x435;&#x440;&#x430;&#x442;&#x43E;&#x440;&#x430; <code>and</code>, &#x434;&#x432;&#x435;&#x442;&#x435; &#x441;&#x440;&#x430;&#x432;&#x43D;&#x435;&#x43D;&#x438;&#x44F; &#x442;&#x440;&#x44F;&#x431;&#x432;&#x430; &#x434;&#x430; &#x441;&#x430; True &#x437;&#x430; &#x434;&#x430; &#x431;&#x44A;&#x434;&#x435; &#x446;&#x44F;&#x43B;&#x430;&#x442;&#x430; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x430; True
+</li>
+<li><strong>or</strong> &#x2013; &#x430;&#x43A;&#x43E; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x442;&#x435; &#x43E;&#x43F;&#x435;&#x440;&#x430;&#x442;&#x43E;&#x440;&#x430; <code>or</code>, &#x441;&#x430;&#x43C;&#x43E; &#x435;&#x434;&#x43D;&#x43E;&#x442;&#x43E; &#x441;&#x440;&#x430;&#x432;&#x43D;&#x435;&#x43D;&#x438;&#x435; &#x442;&#x440;&#x44F;&#x431;&#x432;&#x430; &#x434;&#x430; &#x435; True &#x437;&#x430; &#x434;&#x430; &#x431;&#x44A;&#x434;&#x435; &#x446;&#x44F;&#x43B;&#x430;&#x442;&#x430; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x430; True
+</li></ul>
+<p>&#x427;&#x443;&#x432;&#x430;&#x43B;&#x438; &#x43B;&#x438; &#x441;&#x442;&#x435; &#x437;&#x430; &#x438;&#x437;&#x440;&#x430;&#x437;&#x430; &quot;&#x441;&#x440;&#x430;&#x432;&#x43D;&#x435;&#x43D;&#x438;&#x435; &#x43D;&#x430; &#x44F;&#x431;&#x44A;&#x43B;&#x43A;&#x438; &#x438; &#x43F;&#x43E;&#x440;&#x442;&#x43E;&#x43A;&#x430;&#x43B;&#x438;&quot;? &#x41D;&#x435;&#x43A;&#x430; &#x43F;&#x440;&#x43E;&#x431;&#x432;&#x430;&#x43C;&#x435; &#x43F;&#x43E;&#x434;&#x43E;&#x431;&#x43D;&#x43E; &#x43D;&#x435;&#x449;&#x43E; &#x432; Python:</p><p></p><p class="code-label"><span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!"></span> command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">1</span> &gt; <span class="hljs-string">&apos;django&apos;</span>
+Traceback (most recent call last):
+  File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+TypeError: <span class="hljs-string">&apos;&gt;&apos;</span> <span class="hljs-keyword">not</span> supported between instances of <span class="hljs-string">&apos;int&apos;</span> <span class="hljs-keyword">and</span> <span class="hljs-string">&apos;str&apos;</span></code></pre>
+<p>&#x422;&#x443;&#x43A; &#x432;&#x438;&#x436;&#x434;&#x430;&#x442;&#x435;, &#x43A;&#x430;&#x43A;&#x442;&#x43E; &#x43F;&#x440;&#x438; &#x438;&#x437;&#x440;&#x430;&#x437;&#x430;, Python &#x43D;&#x435; &#x435; &#x441;&#x43F;&#x43E;&#x441;&#x43E;&#x431;&#x435;&#x43D; &#x434;&#x430; &#x441;&#x440;&#x430;&#x432;&#x43D;&#x438; &#x447;&#x438;&#x441;&#x43B;&#x43E; (<code>int</code>) &#x438; &#x43D;&#x438;&#x437; (<code>str</code>). &#x412;&#x43C;&#x435;&#x441;&#x442;&#x43E; &#x442;&#x43E;&#x432;&#x430; &#x43D;&#x438; &#x43F;&#x43E;&#x43A;&#x430;&#x437;&#x432;&#x430; &#x433;&#x440;&#x435;&#x448;&#x43A;&#x430; <strong>TypeError</strong> &#x438; &#x43D;&#x438; &#x43A;&#x430;&#x437;&#x432;&#x430;, &#x447;&#x435; &#x434;&#x432;&#x430;&#x442;&#x430; &#x442;&#x438;&#x43F;&#x430; &#x43D;&#x435; &#x43C;&#x43E;&#x433;&#x430;&#x442; &#x434;&#x430; &#x431;&#x44A;&#x434;&#x430;&#x442; &#x441;&#x440;&#x430;&#x432;&#x43D;&#x435;&#x43D;&#x438;.</p><h2 id="&#x431;&#x443;&#x43B;&#x435;&#x432;&#x438;-&#x43F;&#x440;&#x43E;&#x43C;&#x435;&#x43D;&#x43B;&#x438;&#x432;&#x438;">&#x411;&#x443;&#x43B;&#x435;&#x432;&#x438; &#x43F;&#x440;&#x43E;&#x43C;&#x435;&#x43D;&#x43B;&#x438;&#x432;&#x438;</h2><p>&#x41F;&#x43E; &#x43C;&#x435;&#x436;&#x434;&#x443; &#x434;&#x440;&#x443;&#x433;&#x43E;&#x442;&#x43E;, &#x442;&#x43E;&#x43A;&#x443; &#x449;&#x43E; &#x43D;&#x430;&#x443;&#x447;&#x438;&#x445;&#x442;&#x435; &#x437;&#x430; &#x43D;&#x43E;&#x432; &#x442;&#x438;&#x43F; &#x43E;&#x431;&#x435;&#x43A;&#x442; &#x432; Python. &#x41D;&#x430;&#x440;&#x438;&#x447;&#x430; &#x441;&#x435; <strong>&#x411;&#x443;&#x43B;&#x435;&#x432; (Boolean)</strong>.</p><p>&#x418;&#x43C;&#x430; &#x441;&#x430;&#x43C;&#x43E; &#x434;&#x432;&#x430; &#x432;&#x438;&#x434;&#x430; &#x431;&#x443;&#x43B;&#x435;&#x432;&#x438; &#x43F;&#x440;&#x43E;&#x43C;&#x435;&#x43D;&#x43B;&#x438;&#x432;&#x438;:</p><ul><li>True
+</li>
+<li>False
+</li></ul>
+<p>&#x41D;&#x43E; &#x437;&#x430; Python &#x434;&#x430; &#x440;&#x430;&#x437;&#x431;&#x435;&#x440;&#x435; &#x442;&#x43E;&#x432;&#x430;, &#x432;&#x438;&#x43D;&#x430;&#x433;&#x438; &#x442;&#x440;&#x44F;&#x431;&#x432;&#x430; &#x434;&#x430; &#x43F;&#x438;&#x448;&#x435;&#x442;&#x435; &apos;True&apos; (&#x43A;&#x430;&#x442;&#x43E; &#x43F;&#x44A;&#x440;&#x432;&#x430;&#x442;&#x430; &#x431;&#x443;&#x43A;&#x432;&#x430; &#x435; &#x433;&#x43B;&#x430;&#x432;&#x43D;&#x430;, &#x430; &#x441;&#x43B;&#x435;&#x434;&#x432;&#x430;&#x449;&#x438;&#x442;&#x435; &#x43C;&#x430;&#x43B;&#x43A;&#x438;). <strong>true, TRUE, and tRUE &#x43D;&#x44F;&#x43C;&#x430; &#x434;&#x430; &#x440;&#x430;&#x431;&#x43E;&#x442;&#x44F;&#x442; &#x2013; &#x441;&#x430;&#x43C;&#x43E; True &#x435; &#x43F;&#x440;&#x430;&#x432;&#x438;&#x43B;&#x43D;&#x43E;.</strong> (&#x421;&#x44A;&#x449;&#x43E;&#x442;&#x43E; &#x441;&#x435; &#x43E;&#x442;&#x43D;&#x430;&#x441;&#x44F; &#x438; &#x434;&#x43E; &apos;False&apos;.)</p><p>&#x411;&#x443;&#x43B;&#x435;&#x432;&#x438;&#x442;&#x435; &#x441;&#x442;&#x43E;&#x439;&#x43D;&#x43E;&#x441;&#x442;&#x438; &#x43C;&#x43E;&#x433;&#x430;&#x442; &#x441;&#x44A;&#x449;&#x43E; &#x434;&#x430; &#x441;&#x430; &#x43F;&#x440;&#x43E;&#x43C;&#x435;&#x43D;&#x43B;&#x438;&#x432;&#x438;! &#x412;&#x438;&#x436;&#x442;&#x435; &#x442;&#x443;&#x43A;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>a = <span class="hljs-keyword">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>a
+<span class="hljs-keyword">True</span></code></pre>
+<p>&#x41C;&#x43E;&#x436;&#x435; &#x441;&#x44A;&#x449;&#x43E; &#x434;&#x430; &#x433;&#x43E; &#x43D;&#x430;&#x43F;&#x440;&#x430;&#x432;&#x438;&#x442;&#x435; &#x43F;&#x43E; &#x442;&#x43E;&#x437;&#x438; &#x43D;&#x430;&#x447;&#x438;&#x43D;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>a = <span class="hljs-number">2</span> &gt; <span class="hljs-number">5</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>a
+<span class="hljs-keyword">False</span></code></pre>
+<p>&#x41F;&#x440;&#x430;&#x43A;&#x442;&#x438;&#x43A;&#x443;&#x432;&#x430;&#x439;&#x442;&#x435; &#x438; &#x441;&#x435; &#x43F;&#x43E;&#x432;&#x435;&#x441;&#x435;&#x43B;&#x435;&#x442;&#x435; &#x441; &#x431;&#x443;&#x43B;&#x435;&#x432;&#x438;&#x442;&#x435; &#x441;&#x442;&#x43E;&#x439;&#x43D;&#x43E;&#x441;&#x442;&#x438; &#x43A;&#x430;&#x442;&#x43E; &#x441;&#x435; &#x43E;&#x43F;&#x438;&#x442;&#x430;&#x442;&#x435; &#x434;&#x430; &#x43D;&#x430;&#x43F;&#x438;&#x448;&#x435;&#x442;&#x435; &#x441;&#x43B;&#x435;&#x434;&#x43D;&#x438;&#x442;&#x435; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x438;:</p><ul><li><code>True and True</code>
+</li>
+<li><code>False and True</code>
+</li>
+<li><code>True or 1 == 1</code>
+</li>
+<li><code>1 != 2</code>
+</li></ul>
+<p>&#x41F;&#x43E;&#x437;&#x434;&#x440;&#x430;&#x43B;&#x435;&#x43D;&#x438;&#x44F;! &#x411;&#x443;&#x43B;&#x435;&#x432;&#x438;&#x442;&#x435; &#x441;&#x442;&#x43E;&#x439;&#x43D;&#x43E;&#x441;&#x442;&#x438; &#x441;&#x430; &#x435;&#x434;&#x43D;&#x438; &#x43E;&#x442; &#x43D;&#x430;&#x439;-&#x433;&#x43E;&#x442;&#x438;&#x43D;&#x438;&#x442;&#x435; &#x43D;&#x435;&#x449;&#x430; &#x432; &#x43F;&#x440;&#x43E;&#x433;&#x440;&#x430;&#x43C;&#x438;&#x440;&#x430;&#x43D;&#x435;&#x442;&#x43E;, &#x438; &#x442;&#x438; &#x442;&#x43E;&#x43A;&#x443; &#x449;&#x43E; &#x441;&#x435; &#x43D;&#x430;&#x443;&#x447;&#x438; &#x43A;&#x430;&#x43A; &#x434;&#x430; &#x433;&#x438; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x448;!</p><h1 id="&#x437;&#x430;&#x43F;&#x430;&#x437;&#x438;">&#x417;&#x430;&#x43F;&#x430;&#x437;&#x438;!</h1><blockquote><p>&#x417;&#x430; &#x447;&#x438;&#x442;&#x430;&#x442;&#x435;&#x43B;&#x438;&#x442;&#x435; &#x443; &#x434;&#x43E;&#x43C;&#x430;: &#x442;&#x430;&#x437;&#x438; &#x447;&#x430;&#x441;&#x442; &#x435; &#x43F;&#x43E;&#x43A;&#x430;&#x437;&#x430;&#x43D;&#x430; &#x432;&#x44A;&#x432; &#x432;&#x438;&#x434;&#x435;&#x43E;&#x442;&#x43E; <a href="https://www.youtube.com/watch?v=dOAg6QVAxyk" target="_blank">Python Basics: Saving files and &quot;If&quot; statement</a></p></blockquote><p>&#x414;&#x43E; &#x442;&#x443;&#x43A; &#x43F;&#x438;&#x441;&#x430;&#x445;&#x43C;&#x435; &#x432;&#x441;&#x438;&#x447;&#x43A;&#x438;&#x44F; &#x441;&#x438; python &#x43A;&#x43E;&#x434; &#x432; &#x438;&#x43D;&#x442;&#x435;&#x440;&#x43F;&#x440;&#x435;&#x442;&#x430;&#x442;&#x43E;&#x440;&#x430;, &#x43A;&#x43E;&#x439;&#x442;&#x43E; &#x43D;&#x438; &#x43E;&#x433;&#x440;&#x430;&#x43D;&#x438;&#x447;&#x430;&#x432;&#x430; &#x434;&#x430; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x43C;&#x435; &#x441;&#x430;&#x43C;&#x43E; &#x435;&#x434;&#x43D;&#x438; &#x440;&#x435;&#x434; &#x434;&#x430; &#x432;&#x43F;&#x438;&#x448;&#x435;&#x43C; &#x43A;&#x43E;&#x434;&#x430;. &#x41E;&#x431;&#x438;&#x43A;&#x43D;&#x43E;&#x432;&#x435;&#x43D;&#x43E; &#x43F;&#x440;&#x43E;&#x433;&#x440;&#x430;&#x43C;&#x438;&#x442;&#x435; &#x441;&#x430; &#x437;&#x430;&#x43F;&#x430;&#x437;&#x435;&#x43D;&#x438; &#x432;&#x44A;&#x432; &#x444;&#x430;&#x439;&#x43B;&#x43E;&#x432;&#x435; &#x438; &#x43F;&#x43E;&#x441;&#x43B;&#x435; &#x438;&#x437;&#x43F;&#x44A;&#x43B;&#x43D;&#x435;&#x43D;&#x438; &#x43E;&#x442; <strong>&#x438;&#x43D;&#x442;&#x435;&#x440;&#x43F;&#x440;&#x435;&#x442;&#x430;&#x442;&#x43E;&#x440;&#x430;</strong> &#x438;&#x43B;&#x438; <strong>&#x43A;&#x43E;&#x43C;&#x43F;&#x438;&#x43B;&#x430;&#x442;&#x43E;&#x440;&#x430;</strong> &#x43D;&#x438;. &#x414;&#x43E;&#x441;&#x435;&#x433;&#x430; &#x43F;&#x443;&#x441;&#x43A;&#x430;&#x445;&#x43C;&#x435; &#x43D;&#x430;&#x448;&#x438;&#x442;&#x435; &#x43F;&#x440;&#x43E;&#x433;&#x440;&#x430;&#x43C;&#x438; &#x43F;&#x43E; &#x435;&#x434;&#x43D;&#x430; &#x43D;&#x430; &#x440;&#x435;&#x434; &#x432; Python &#x438;&#x43D;&#x442;&#x435;&#x440;&#x43F;&#x440;&#x435;&#x442;&#x430;&#x442;&#x43E;&#x440;&#x430;. &#x429;&#x435; &#x441;&#x430; &#x43D;&#x438; &#x43D;&#x435;&#x43E;&#x431;&#x445;&#x43E;&#x434;&#x438;&#x43C;&#x438; &#x43C;&#x430;&#x43B;&#x43A;&#x43E; &#x43F;&#x43E;&#x432;&#x435;&#x447;&#x435; &#x440;&#x435;&#x434;&#x43E;&#x432;&#x435; &#x43E;&#x442; &#x43A;&#x43E;&#x434; &#x437;&#x430; &#x441;&#x43B;&#x435;&#x434;&#x432;&#x430;&#x449;&#x438;&#x442;&#x435; &#x43D;&#x44F;&#x43A;&#x43E;&#x43B;&#x43A;&#x43E; &#x437;&#x430;&#x434;&#x430;&#x447;&#x438;, &#x437;&#x430;&#x442;&#x43E;&#x432;&#x430; &#x431;&#x44A;&#x440;&#x437;&#x43E; &#x449;&#x435; &#x43D;&#x430;&#x43F;&#x440;&#x430;&#x432;&#x438;&#x43C; &#x442;&#x43E;&#x432;&#x430;:</p><ul><li>&#x418;&#x437;&#x43B;&#x435;&#x437;&#x435;&#x43C; &#x43E;&#x442; Python &#x438;&#x43D;&#x442;&#x435;&#x440;&#x43F;&#x440;&#x435;&#x442;&#x430;&#x442;&#x43E;&#x440;&#x430;
+</li>
+<li>&#x41E;&#x442;&#x432;&#x43E;&#x440;&#x438;&#x43C; &#x440;&#x435;&#x434;&#x430;&#x43A;&#x442;&#x43E;&#x440; &#x437;&#x430; &#x442;&#x435;&#x43A;&#x441; &#x43F;&#x43E; &#x438;&#x437;&#x431;&#x43E;&#x440;
+</li>
+<li>&#x417;&#x430;&#x43F;&#x430;&#x437;&#x438;&#x43C; &#x43C;&#x430;&#x43B;&#x43A;&#x43E; &#x43A;&#x43E;&#x434; &#x432; &#x43D;&#x43E;&#x432; python &#x444;&#x430;&#x439;&#x43B;
+</li>
+<li>&#x41F;&#x443;&#x441;&#x43D;&#x435;&#x442;&#x435; &#x433;&#x43E;!
+</li></ul>
+<p>&#x417;&#x430; &#x434;&#x430; &#x438;&#x437;&#x43B;&#x435;&#x437;&#x43D;&#x435;&#x43C; &#x43E;&#x442; Python &#x438;&#x43D;&#x442;&#x435;&#x440;&#x43F;&#x440;&#x435;&#x442;&#x430;&#x442;&#x43E;&#x440;&#x430;, &#x43A;&#x43E;&#x439;&#x442;&#x43E; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x445;&#x43C;&#x435;, &#x43F;&#x438;&#x448;&#x435; &#x441;&#x43B;&#x435;&#x434;&#x43D;&#x430;&#x442;&#x430; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x44F; <code>exit()</code></p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>exit()
+$</code></pre>
+<p>&#x422;&#x43E;&#x432;&#x430; &#x449;&#x435; &#x432;&#x438; &#x432;&#x44A;&#x440;&#x43D;&#x435; &#x432; &#x43D;&#x430;&#x447;&#x430;&#x43B;&#x43D;&#x43E;&#x442;&#x43E; &#x441;&#x44A;&#x441;&#x442;&#x43E;&#x44F;&#x43D;&#x438;&#x435; &#x43D;&#x430; &#x43A;&#x43E;&#x43D;&#x437;&#x43E;&#x43B;&#x430;&#x442;&#x430; (&#x442;&#x435;&#x440;&#x43C;&#x438;&#x43D;&#x430;&#x43B;&#x430;).</p><p>&#x41F;&#x43E;-&#x440;&#x430;&#x43D;&#x43E; &#x438;&#x437;&#x431;&#x440;&#x430;&#x445;&#x43C;&#x435; &#x43D;&#x430;&#x448;&#x438;&#x44F; &#x440;&#x435;&#x434;&#x430;&#x43A;&#x442;&#x43E;&#x440; &#x43E;&#x442; &#x441;&#x435;&#x43A;&#x446;&#x438;&#x44F;&#x442;&#x430; &#x437;&#x430; <a href="../code_editor/">code editor</a>. &#x421;&#x435;&#x433;&#x430; &#x442;&#x440;&#x44F;&#x431;&#x432;&#x430; &#x434;&#x430; &#x433;&#x43E; &#x43E;&#x442;&#x432;&#x43E;&#x440;&#x438;&#x43C; &#x438; &#x434;&#x430; &#x43D;&#x430;&#x43F;&#x438;&#x448;&#x435;&#x43C; &#x43C;&#x430;&#x43B;&#x43A;&#x43E; &#x43A;&#x43E;&#x434; &#x432; &#x43D;&#x43E;&#x432; &#x444;&#x430;&#x439;&#x43B; (&#x430;&#x43A;&#x43E; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x442;&#x435; Chromebook, &#x441;&#x44A;&#x437;&#x434;&#x430;&#x439;&#x442;&#x435; &#x43D;&#x43E;&#x432; &#x444;&#x430;&#x439;&#x43B; &#x432; cloud IDE &#x438; &#x43E;&#x442;&#x432;&#x43E;&#x440;&#x435;&#x442;&#x435; &#x444;&#x430;&#x439;&#x43B;&#x430;, &#x43A;&#x43E;&#x439;&#x442;&#x43E; &#x449;&#x435; &#x435; &#x432; &#x440;&#x435;&#x434;&#x430;&#x43A;&#x442;&#x43E;&#x440;&#x430;):</p><p></p><p class="code-label">editor</p><p></p><pre><code class="lang-python">print(<span class="hljs-string">&apos;Hello, Django girls!&apos;</span>)</code></pre>
+<p>&#x41E;&#x447;&#x435;&#x432;&#x438;&#x434;&#x43D;&#x43E;, &#x432;&#x435;&#x447;&#x435; &#x441;&#x442;&#x435; &#x43F;&#x43E;-&#x43E;&#x431;&#x438;&#x433;&#x440;&#x430;&#x43D;&#x438; Python &#x440;&#x430;&#x437;&#x440;&#x430;&#x431;&#x43E;&#x442;&#x447;&#x438;&#x446;&#x438;, &#x442;&#x430;&#x43A;&#x430; &#x447;&#x435; &#x43D;&#x430;&#x43F;&#x438;&#x448;&#x435;&#x442;&#x435; &#x43A;&#x43E;&#x434;, &#x43A;&#x43E;&#x439;&#x442;&#x43E; &#x43D;&#x430;&#x443;&#x447;&#x438;&#x445;&#x442;&#x435; &#x434;&#x43D;&#x435;&#x441;.</p><p>&#x421;&#x435;&#x433;&#x430; &#x442;&#x440;&#x44F;&#x431;&#x432;&#x430; &#x434;&#x430; &#x437;&#x430;&#x43F;&#x430;&#x437;&#x438;&#x43C; &#x444;&#x430;&#x439;&#x43B;&#x430; &#x438; &#x434;&#x430; &#x43C;&#x443; &#x434;&#x430;&#x434;&#x435;&#x43C; &#x43E;&#x43F;&#x438;&#x441;&#x430;&#x442;&#x435;&#x43B;&#x43D;&#x43E; &#x438;&#x43C;&#x435;. &#x41D;&#x435;&#x43A;&#x430; &#x43D;&#x430;&#x440;&#x435;&#x447;&#x435;&#x43C; &#x444;&#x430;&#x439;&#x43B;&#x430; <strong>python_intro.py</strong> &#x438; &#x433;&#x43E; &#x437;&#x430;&#x43F;&#x430;&#x437;&#x438;&#x43C; &#x43D;&#x430; &#x43D;&#x430;&#x447;&#x430;&#x43B;&#x43D;&#x438;&#x44F; &#x441;&#x438; &#x435;&#x43A;&#x440;&#x430;&#x43D;. &#x41C;&#x43E;&#x436;&#x435;&#x43C; &#x434;&#x430; &#x438;&#x43C;&#x435;&#x43D;&#x443;&#x432;&#x430;&#x43C;&#x435; &#x444;&#x430;&#x439;&#x43B;&#x430; &#x441;&#x438; &#x43A;&#x430;&#x43A;&#x442;&#x43E; &#x43F;&#x43E;&#x436;&#x435;&#x43B;&#x430;&#x435;&#x43C;, &#x43D;&#x43E; &#x435; &#x432;&#x430;&#x436;&#x43D;&#x43E; &#x434;&#x430; &#x441;&#x43C;&#x435; &#x441;&#x438;&#x433;&#x443;&#x440;&#x43D;&#x438;, &#x447;&#x435; &#x437;&#x430;&#x432;&#x44A;&#x440;&#x448;&#x432;&#x430; &#x43D;&#x430; <strong>.py</strong>. &#x420;&#x430;&#x437;&#x448;&#x438;&#x440;&#x435;&#x43D;&#x438;&#x435;&#x442;&#x43E; <strong>.py</strong> &#x43A;&#x430;&#x437;&#x432;&#x430; &#x43D;&#x430; &#x43E;&#x43F;&#x435;&#x440;&#x430;&#x446;&#x438;&#x43E;&#x43D;&#x43D;&#x430;&#x442;&#x430; &#x441;&#x438;&#x441;&#x442;&#x435;&#x43C;&#x430;, &#x447;&#x435; &#x442;&#x43E;&#x432;&#x430; &#x435; <strong>Python executable file</strong> &#x438; Python &#x43C;&#x43E;&#x436;&#x435; &#x434;&#x430; &#x433;&#x43E; &#x43E;&#x431;&#x440;&#x430;&#x431;&#x43E;&#x442;&#x438;.</p><blockquote><p><strong>&#x417;&#x430;&#x431;&#x435;&#x43B;&#x435;&#x436;&#x43A;&#x430;:</strong> &#x422;&#x440;&#x44F;&#x431;&#x432;&#x430; &#x434;&#x430; &#x437;&#x430;&#x431;&#x435;&#x43B;&#x44F;&#x437;&#x430;&#x445;&#x442;&#x435;, &#x447;&#x435; &#x435;&#x434;&#x43D;&#x438; &#x43E;&#x442; &#x43D;&#x430;&#x439;-&#x433;&#x43E;&#x442;&#x438;&#x43D;&#x438;&#x442;&#x435; &#x43D;&#x435;&#x449;&#x430; &#x432; &#x440;&#x435;&#x434;&#x430;&#x43A;&#x442;&#x43E;&#x440;&#x430; &#x441;&#x430;: &#x446;&#x432;&#x435;&#x442;&#x43E;&#x432;&#x435;&#x442;&#x435;! &#x412; &#x43A;&#x43E;&#x43D;&#x437;&#x43E;&#x43B;&#x430;&#x442;&#x430; &#x43D;&#x430; Python &#x432;&#x441;&#x438;&#x447;&#x43A;&#x43E; &#x431;&#x435;&#x448;&#x435; &#x435;&#x434;&#x438;&#x43D; &#x446;&#x432;&#x430;&#x442;; &#x441;&#x435;&#x433;&#x430; &#x442;&#x440;&#x44F;&#x431;&#x432;&#x430; &#x434;&#x430; &#x432;&#x438;&#x436;&#x434;&#x430;&#x442;&#x435;, &#x447;&#x435; <code>print</code> &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x44F;&#x442;&#x430; &#x435; &#x441; &#x440;&#x430;&#x437;&#x43B;&#x438;&#x447;&#x435;&#x43D; &#x446;&#x432;&#x44F;&#x442; &#x43E;&#x442; &#x446;&#x432;&#x435;&#x442;&#x430; &#x43D;&#x430; &#x43D;&#x438;&#x437;&#x430;. &#x422;&#x43E;&#x432;&#x430; &#x441;&#x435; &#x43D;&#x430;&#x440;&#x438;&#x447;&#x430; &quot;syntax highlighting&quot;, &#x438; &#x435; &#x43C;&#x43D;&#x43E;&#x433;&#x43E; &#x43F;&#x43E;&#x43B;&#x435;&#x437;&#x43D;&#x430; &#x434;&#x43E;&#x431;&#x430;&#x432;&#x43A;&#x430; &#x43A;&#x43E;&#x433;&#x430;&#x442;&#x43E; &#x43F;&#x438;&#x448;&#x435;&#x43C; &#x43A;&#x43E;&#x434;. &#x426;&#x432;&#x435;&#x442;&#x430; &#x43D;&#x430; &#x43D;&#x435;&#x449;&#x430;&#x442;&#x430; &#x449;&#x435; &#x432;&#x438; &#x43F;&#x43E;&#x434;&#x441;&#x43A;&#x430;&#x437;&#x432;&#x430;, &#x43D;&#x430;&#x43F;&#x440;&#x438;&#x43C;&#x435;&#x440; &#x430;&#x43A;&#x43E; &#x438;&#x43C;&#x430;&#x442;&#x435; &#x43D;&#x435;&#x437;&#x430;&#x442;&#x432;&#x43E;&#x440;&#x435;&#x43D;&#x438; &#x43D;&#x438;&#x437;&#x43E;&#x432;&#x435; &#x438;&#x43B;&#x438; &#x441;&#x442;&#x435; &#x43E;&#x431;&#x44A;&#x440;&#x43A;&#x430;&#x43B;&#x438; &#x43A;&#x43B;&#x44E;&#x447;&#x43E;&#x432;&#x430; &#x434;&#x443;&#x43C;&#x430; (&#x43A;&#x430;&#x442;&#x43E; &#x43F;&#x440;&#x438; &#x43F;&#x438;&#x441;&#x430;&#x43D;&#x435;&#x442;&#x43E; &#x43D;&#x430; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x44F;&#x442;&#x430; <code>def</code>, &#x43A;&#x430;&#x43A;&#x442;&#x43E; &#x449;&#x435; &#x432;&#x438;&#x434;&#x438;&#x43C; &#x43F;&#x43E;-&#x434;&#x43E;&#x43B;&#x443;). &#x422;&#x43E;&#x432;&#x430; &#x435; &#x435;&#x434;&#x43D;&#x430; &#x43E;&#x442; &#x43F;&#x440;&#x438;&#x447;&#x438;&#x43D;&#x438;&#x442;&#x435; &#x434;&#x430; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x432;&#x430;&#x43C;&#x435; &#x440;&#x435;&#x434;&#x430;&#x43A;&#x442;&#x43E;&#x440; &#x437;&#x430; &#x43F;&#x438;&#x441;&#x430;&#x43D;&#x435; &#x43D;&#x430; &#x43A;&#x43E;&#x434;. :) :)</p></blockquote><p>&#x421; &#x432;&#x435;&#x447;&#x435; &#x437;&#x430;&#x43F;&#x430;&#x437;&#x435;&#x43D;&#x438;&#x44F; &#x444;&#x430;&#x439;&#x43B; &#x435; &#x432;&#x440;&#x435;&#x43C;&#x435; &#x434;&#x430; &#x433;&#x43E; &#x43F;&#x443;&#x441;&#x43D;&#x435;&#x43C;! &#x414;&#x430; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x43C;&#x435; &#x442;&#x43E;&#x432;&#x430;, &#x43A;&#x43E;&#x435;&#x442;&#x43E; &#x43D;&#x430;&#x443;&#x447;&#x438;&#x445;&#x43C;&#x435; &#x43E;&#x442; &#x441;&#x435;&#x43A;&#x446;&#x438;&#x44F;&#x442;&#x430; &#x441; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x438;&#x442;&#x435;. &#x41F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x439;&#x442;&#x435; &#x442;&#x435;&#x440;&#x43C;&#x438;&#x43D;&#x430;&#x43B;&#x430; (&#x43A;&#x43E;&#x43D;&#x437;&#x43E;&#x43B;&#x430;&#x442;&#x430;) &#x437;&#x430; &#x434;&#x430; &#x441;&#x43C;&#x435;&#x43D;&#x438;&#x442;&#x435; &#x434;&#x438;&#x440;&#x435;&#x43A;&#x442;&#x43E;&#x440;&#x438;&#x44F;&#x442;&#x430; &#x434;&#x43E; &#x43D;&#x430;&#x447;&#x430;&#x43B;&#x43D;&#x438;&#x44F; &#x441;&#x438; &#x435;&#x43A;&#x440;&#x430;&#x43D; (desktop).</p><sec data-title="Change directory: OS X" data-id="python_OSX" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Change directory: OS X<a class="pull-right section atTitle btn btn-default" target="python_OSX"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_OSX"><div class="panel-body">
+
+
+<p>&#x41D;&#x430; Mac, &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x430;&#x442;&#x430; &#x449;&#x435; &#x438;&#x437;&#x43B;&#x433;&#x435;&#x436;&#x434;&#x430; &#x43F;&#x43E; &#x442;&#x43E;&#x437;&#x438; &#x43D;&#x430;&#x447;&#x438;&#x43D;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        $ cd ~/Desktop</code></pre>
+</div></div></div></sec>
+
+
+<sec data-title="Change directory: Linux" data-id="python_linux" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Change directory: Linux<a class="pull-right section atTitle btn btn-default" target="python_linux"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_linux"><div class="panel-body">
+
+
+<p>&#x41D;&#x430; Linux, &#x449;&#x435; &#x438;&#x437;&#x433;&#x43B;&#x435;&#x436;&#x434;&#x430; &#x442;&#x430;&#x43A;&#x430;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        $ cd ~/Desktop</code></pre>
+<p>(&#x41F;&#x43E;&#x43C;&#x43D;&#x435;&#x442;&#x435;, &#x447;&#x435; &#x434;&#x443;&#x43C;&#x430;&#x442;&#x430; &quot;Desktop&quot; &#x43C;&#x43E;&#x436;&#x435; &#x434;&#x430; &#x435; &#x43F;&#x440;&#x435;&#x432;&#x435;&#x434;&#x435;&#x43D;&#x430; &#x43D;&#x430; &#x432;&#x430;&#x448;&#x438;&#x44F; &#x435;&#x437;&#x438;&#x43A;.)</p></div></div></div></sec>
+
+
+<sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Change directory: Windows Command Prompt<a class="pull-right section atTitle btn btn-default" target="python_windows"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_windows"><div class="panel-body">
+
+
+<p>&#x41D;&#x430; Windows Command Prompt &#x449;&#x435; &#x438;&#x437;&#x433;&#x43B;&#x435;&#x436;&#x434;&#x430; &#x442;&#x430;&#x43A;&#x430;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        &gt; cd %HomePath%\Desktop</code></pre>
+</div></div></div></sec>
+
+
+<sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Change directory: Windows Powershell<a class="pull-right section atTitle btn btn-default" target="python_windowsPSH"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_windowsPSH"><div class="panel-body">
+
+
+<p>&#x418; &#x43D;&#x430; Windows Powershell &#x449;&#x435; &#x438;&#x437;&#x433;&#x43B;&#x435;&#x436;&#x434;&#x430; &#x442;&#x430;&#x43A;&#x430;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        &gt; cd $Home\Desktop</code></pre>
+</div></div></div></sec>
+
+
+<p>&#x410;&#x43A;&#x43E; &#x441;&#x435; &#x437;&#x430;&#x442;&#x440;&#x443;&#x434;&#x43D;&#x44F;&#x432;&#x430;&#x442;&#x435;, &#x43F;&#x43E;&#x438;&#x441;&#x43A;&#x430;&#x439;&#x442;&#x435; &#x43F;&#x43E;&#x43C;&#x43E;&#x449;. &#x417;&#x430;&#x442;&#x43E;&#x432;&#x430; &#x441;&#x430; &#x43C;&#x435;&#x43D;&#x442;&#x43E;&#x440;&#x438;&#x442;&#x435;!</p><p>&#x421;&#x435;&#x433;&#x430; &#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x439;&#x442;&#x435; Python &#x437;&#x430; &#x434;&#x430; &#x438;&#x437;&#x43F;&#x44A;&#x43B;&#x43D;&#x438; &#x43A;&#x43E;&#x434;&#x430; &#x432;&#x44A;&#x432; &#x444;&#x430;&#x439;&#x43B;&#x430; &#x435;&#x442;&#x43E; &#x442;&#x430;&#x43A;&#x430;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        $ python3 python_intro.py
+        Hello, Django girls!</code></pre>
+<p>&#x417;&#x430;&#x431;&#x435;&#x43B;&#x435;&#x436;&#x43A;&#x430;: &#x43D;&#x430; Windows &apos;python3&apos; &#x43D;&#x435; &#x435; &#x440;&#x430;&#x437;&#x43F;&#x43E;&#x437;&#x43D;&#x430;&#x442; &#x43A;&#x430;&#x442;&#x43E; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x430;. &#x412;&#x43C;&#x435;&#x441;&#x442;&#x43E; &#x442;&#x43E;&#x432;&#x430;, &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x439;&#x442;&#x435; &apos;python&apos; &#x437;&#x430; &#x434;&#x430; &#x441;&#x442;&#x430;&#x440;&#x442;&#x438;&#x440;&#x430;&#x442;&#x435; &#x444;&#x430;&#x439;&#x43B;&#x430;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python">&gt; python python_intro.py</code></pre>
+<p>&#x411;&#x440;&#x430;&#x432;&#x43E;! &#x422;&#x43E;&#x43A;&#x443; &#x449;&#x43E; &#x43F;&#x443;&#x441;&#x43D;&#x430;&#x445;&#x442;&#x435; &#x43F;&#x44A;&#x440;&#x432;&#x430;&#x442;&#x430; &#x441;&#x438; &#x43F;&#x440;&#x43E;&#x433;&#x440;&#x430;&#x43C;&#x430; &#x43D;&#x430; Python, &#x43A;&#x43E;&#x44F;&#x442;&#x43E; &#x431;&#x435;&#x448;&#x435; &#x437;&#x430;&#x43F;&#x430;&#x437;&#x435;&#x43D;&#x430; &#x43D;&#x430; &#x444;&#x430;&#x439;&#x43B;. &#x427;&#x443;&#x432;&#x441;&#x442;&#x432;&#x430;&#x442;&#x435; &#x43B;&#x438; &#x441;&#x435; &#x441;&#x442;&#x440;&#x430;&#x445;&#x43E;&#x442;&#x43D;&#x43E;?</p><p>&#x421;&#x435;&#x433;&#x430; &#x43C;&#x43E;&#x436;&#x435; &#x434;&#x430; &#x441;&#x435; &#x43F;&#x440;&#x435;&#x445;&#x432;&#x44A;&#x440;&#x43B;&#x438;&#x43C; &#x43D;&#x430; &#x43F;&#x43E;-&#x432;&#x430;&#x436;&#x43D;&#x43E; &#x441;&#x440;&#x435;&#x434;&#x441;&#x442;&#x432;&#x43E; &#x432; &#x43F;&#x440;&#x43E;&#x433;&#x440;&#x430;&#x43C;&#x438;&#x440;&#x430;&#x43D;&#x435;&#x442;&#x43E;:</p><h2 id="if--elif--else">If &#x2026; elif &#x2026; else</h2><p>&#x41C;&#x43D;&#x43E;&#x433;&#x43E; &#x43D;&#x435;&#x449;&#x430; &#x432; &#x43A;&#x43E;&#x434;&#x430; &#x442;&#x440;&#x44F;&#x431;&#x432;&#x430; &#x434;&#x430; &#x441;&#x435; &#x438;&#x437;&#x43F;&#x44A;&#x43B;&#x43D;&#x44F;&#x442; &#x441;&#x430;&#x43C;&#x43E; &#x430;&#x43A;&#x43E; &#x441;&#x430; &#x43F;&#x440;&#x435;&#x43C;&#x438;&#x43D;&#x430;&#x43B;&#x438; &#x43E;&#x43F;&#x440;&#x435;&#x434;&#x435;&#x43B;&#x435;&#x43D;&#x438; &#x443;&#x441;&#x43B;&#x43E;&#x432;&#x438;&#x44F;. &#x417;&#x430;&#x442;&#x43E;&#x432;&#x430; Python &#x438;&#x43C;&#x430; &#x43D;&#x435;&#x449;&#x43E;, &#x43D;&#x430;&#x440;&#x435;&#x447;&#x435;&#x43D;&#x43E; <strong>if &#x443;&#x441;&#x43B;&#x43E;&#x432;&#x43D;&#x430; &#x43A;&#x43E;&#x43D;&#x441;&#x442;&#x440;&#x443;&#x43A;&#x446;&#x438;&#x44F;</strong>.</p><p>&#x417;&#x430;&#x43C;&#x435;&#x441;&#x442;&#x435;&#x442;&#x435; &#x43A;&#x43E;&#x434;&#x430; &#x432;&#x44A;&#x432; &#x444;&#x430;&#x439;&#x43B;&#x430; &#x441;&#x438; <strong>python_intro.py</strong> &#x441; &#x442;&#x43E;&#x432;&#x430;:</p><p></p><p class="code-label">python_intro.py</p><p></p><pre><code class="lang-python"><span class="hljs-keyword">if</span> <span class="hljs-number">3</span> &gt; <span class="hljs-number">2</span>:</code></pre>
+<p>&#x410;&#x43A;&#x43E; &#x437;&#x430;&#x43F;&#x430;&#x437;&#x438;&#x43C; &#x438; &#x441;&#x442;&#x430;&#x440;&#x442;&#x438;&#x440;&#x430;&#x43C;&#x435; &#x444;&#x430;&#x439;&#x43B;&#x430; &#x449;&#x435; &#x432;&#x438;&#x434;&#x438;&#x43C; &#x433;&#x440;&#x435;&#x448;&#x43A;&#x430; &#x43A;&#x430;&#x442;&#x43E; &#x442;&#x430;&#x437;&#x438;:</p><p></p><p class="code-label"><span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!"></span> command-line</p><p></p><pre><code>        $ python3 python_intro.py
+        File &quot;python_intro.py&quot;, line 2
+                 ^
+        SyntaxError: unexpected EOF while parsing</code></pre>
+<p>Python &#x43E;&#x447;&#x430;&#x43A;&#x432;&#x430; &#x43E;&#x442; &#x43D;&#x430;&#x441; &#x434;&#x430; &#x434;&#x430;&#x434;&#x435;&#x43C; &#x441;&#x43B;&#x435;&#x434;&#x432;&#x430;&#x449;&#x438; &#x438;&#x43D;&#x441;&#x43A;&#x442;&#x440;&#x443;&#x43A;&#x446;&#x438;&#x438; &#x43A;&#x430;&#x43A;&#x432;&#x43E; &#x434;&#x430; &#x441;&#x435; &#x438;&#x437;&#x43F;&#x44A;&#x43B;&#x43D;&#x438; &#x432; &#x443;&#x441;&#x43B;&#x43E;&#x432;&#x438;&#x435;&#x442;&#x43E; <code>3 &gt; 2</code> &#x437;&#x430; &#x434;&#x430; &#x431;&#x44A;&#x434;&#x435; &#x432;&#x44F;&#x440;&#x43D;&#x43E; (&#x438;&#x43B;&#x438; <code>True</code> &#x437;&#x430; &#x441;&#x44A;&#x449;&#x430;&#x442;&#x430; &#x446;&#x435;&#x43B;). &#x41D;&#x435;&#x43A;&#x430; &#x43D;&#x430;&#x43A;&#x430;&#x440;&#x430;&#x43C;&#x435; Python &#x434;&#x430; &#x43E;&#x442;&#x43F;&#x435;&#x447;&#x430;&#x442;&#x430; &#x201C;It works!&#x201D;. &#x41F;&#x440;&#x43E;&#x43C;&#x435;&#x43D;&#x435;&#x442;&#x435; &#x43A;&#x43E;&#x434;&#x430; &#x441;&#x438; &#x432;&#x44A;&#x432; &#x444;&#x430;&#x439;&#x43B;&#x430; &#x441; &#x442;&#x43E;&#x432;&#x430;:</p><p></p><p class="code-label">python_intro.py</p><p></p><pre><code class="lang-python"><span class="hljs-keyword">if</span> <span class="hljs-number">3</span> &gt; <span class="hljs-number">2</span>:
+    print(<span class="hljs-string">&apos;It works!&apos;</span>)</code></pre>
+<p>&#x417;&#x430;&#x431;&#x435;&#x43B;&#x44F;&#x437;&#x430;&#x445;&#x442;&#x435; &#x43B;&#x438; &#x43A;&#x430;&#x43A; &#x438;&#x437;&#x43F;&#x438;&#x441;&#x430;&#x445;&#x43C;&#x435; &#x441;&#x43B;&#x435;&#x434;&#x432;&#x430;&#x449;&#x438;&#x44F; &#x440;&#x435;&#x434; &#x43E;&#x442; &#x43A;&#x43E;&#x434; &#x441; 4 &#x43F;&#x440;&#x430;&#x437;&#x43D;&#x438; &#x43C;&#x435;&#x441;&#x442;&#x430; &#x43D;&#x430;&#x432;&#x44A;&#x442;&#x440;&#x435;? &#x422;&#x440;&#x44F;&#x431;&#x432;&#x430; &#x434;&#x430; &#x43D;&#x430;&#x43F;&#x440;&#x430;&#x432;&#x438;&#x43C; &#x442;&#x43E;&#x432;&#x430; &#x437;&#x430; &#x434;&#x430; &#x43C;&#x43E;&#x436;&#x435; Python &#x434;&#x430; &#x437;&#x43D;&#x430;&#x435;, &#x43A;&#x43E;&#x439; &#x43A;&#x43E;&#x434; &#x434;&#x430; &#x438;&#x437;&#x43F;&#x44A;&#x43B;&#x43D;&#x438; &#x432; &#x441;&#x43B;&#x443;&#x447;&#x430;&#x439;, &#x447;&#x435; &#x435; &#x432;&#x44F;&#x440;&#x43D;&#x43E; &#x443;&#x441;&#x43B;&#x43E;&#x432;&#x438;&#x435;&#x442;&#x43E;. &#x41C;&#x43E;&#x436;&#x435; &#x434;&#x430; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x442;&#x435; &#x435;&#x434;&#x43D;&#x43E; &#x43F;&#x440;&#x430;&#x437;&#x43D;&#x43E; &#x43C;&#x44F;&#x441;&#x442;&#x43E;, &#x43D;&#x43E; &#x43F;&#x43E;&#x447;&#x442;&#x438; &#x432;&#x441;&#x435;&#x43A;&#x438; Python &#x43F;&#x440;&#x43E;&#x433;&#x440;&#x430;&#x43C;&#x438;&#x441;&#x442; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430; 4, &#x442;&#x44A;&#x439; &#x43A;&#x430;&#x442;&#x43E; &#x438;&#x437;&#x433;&#x43B;&#x435;&#x436;&#x434;&#x430; &#x43F;&#x43E;-&#x43F;&#x440;&#x438;&#x43B;&#x435;&#x436;&#x43D;&#x43E;. &#x418;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x43D;&#x435;&#x442;&#x43E; &#x43D;&#x430; &#x431;&#x443;&#x442;&#x43E;&#x43D;&#x430; Tab &#x441;&#x44A;&#x449;&#x43E; &#x441;&#x435; &#x440;&#x430;&#x432;&#x43D;&#x44F;&#x432;&#x430; &#x43D;&#x430; 4 &#x43C;&#x435;&#x441;&#x442;&#x430;, &#x430;&#x43A;&#x43E; &#x441;&#x442;&#x435; &#x43D;&#x430;&#x43F;&#x440;&#x430;&#x432;&#x438;&#x43B;&#x438; &#x440;&#x435;&#x434;&#x430;&#x43A;&#x442;&#x43E;&#x440;&#x430; &#x441;&#x438; &#x434;&#x430; &#x43F;&#x440;&#x430;&#x432;&#x438; &#x442;&#x430;&#x43A;&#x430;. &#x41A;&#x43E;&#x433;&#x430;&#x442;&#x43E; &#x43D;&#x430;&#x43F;&#x440;&#x430;&#x432;&#x438;&#x442;&#x435; &#x438;&#x437;&#x431;&#x43E;&#x440; &#x43D;&#x435; &#x433;&#x43E; &#x43F;&#x440;&#x43E;&#x43C;&#x435;&#x43D;&#x44F;&#x439;&#x442;&#x435;! &#x410;&#x43A;&#x43E; &#x432;&#x435;&#x447;&#x435; &#x441;&#x442;&#x435; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x43B;&#x438; 4 &#x43C;&#x435;&#x441;&#x442;&#x430; &#x437;&#x430; &#x432; &#x431;&#x44A;&#x434;&#x435;&#x449;&#x435; &#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x439;&#x442;&#x435; 4 &#x43C;&#x435;&#x441;&#x442;&#x430; - &#x432; &#x43F;&#x440;&#x43E;&#x442;&#x438;&#x432;&#x435;&#x43D; &#x441;&#x43B;&#x443;&#x447;&#x430;&#x439; &#x43C;&#x43E;&#x436;&#x435; &#x434;&#x430; &#x43F;&#x43E;&#x43F;&#x430;&#x434;&#x43D;&#x435;&#x442;&#x435; &#x43D;&#x430; &#x437;&#x430;&#x442;&#x440;&#x443;&#x434;&#x43D;&#x435;&#x43D;&#x438;&#x44F;.</p><p>&#x417;&#x430;&#x43F;&#x430;&#x437;&#x435;&#x442;&#x435; &#x438; &#x433;&#x43E; &#x441;&#x442;&#x430;&#x440;&#x442;&#x438;&#x440;&#x430;&#x439;&#x442;&#x435; &#x43E;&#x442;&#x43D;&#x43E;&#x432;&#x43E;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-python">$ python3 python_intro.py
+It works!</code></pre>
+<p>&#x417;&#x430;&#x431;&#x435;&#x43B;&#x435;&#x436;&#x43A;&#x430;: &#x41F;&#x43E;&#x43C;&#x43D;&#x435;&#x442;&#x435;, &#x447;&#x435; &#x43D;&#x430; Windows, &apos;python3&apos; &#x43D;&#x435; &#x441;&#x435; &#x440;&#x430;&#x437;&#x43F;&#x43E;&#x437;&#x43D;&#x430;&#x432;&#x430; &#x43A;&#x430;&#x442;&#x43E; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x430;. &#x41E;&#x442; &#x441;&#x435;&#x433;&#x430; &#x43D;&#x430;&#x442;&#x430;&#x442;&#x44A;&#x43A;, &#x437;&#x430;&#x43C;&#x435;&#x441;&#x442;&#x435;&#x442;&#x435; &apos;python3&apos; &#x441; &apos;python&apos; &#x437;&#x430; &#x434;&#x430; &#x438;&#x437;&#x43F;&#x44A;&#x43B;&#x43D;&#x438;&#x442;&#x435; &#x444;&#x430;&#x439;&#x43B;&#x430;.</p><h3 id="&#x43A;&#x430;&#x43A;&#x432;&#x43E;-&#x430;&#x43A;&#x43E;-&#x443;&#x441;&#x43B;&#x43E;&#x432;&#x438;&#x435;&#x442;&#x43E;-&#x43D;&#x435;-&#x435;-&#x432;&#x44F;&#x440;&#x43D;&#x43E;-true">&#x41A;&#x430;&#x43A;&#x432;&#x43E; &#x430;&#x43A;&#x43E; &#x443;&#x441;&#x43B;&#x43E;&#x432;&#x438;&#x435;&#x442;&#x43E; &#x43D;&#x435; &#x435; &#x432;&#x44F;&#x440;&#x43D;&#x43E; (True)?</h3><p>&#x412; &#x43F;&#x440;&#x435;&#x434;&#x445;&#x43E;&#x434;&#x43D;&#x438;&#x442;&#x435; &#x43F;&#x440;&#x438;&#x43C;&#x435;&#x440;&#x438;, &#x43A;&#x43E;&#x434;&#x430; &#x441;&#x435; &#x438;&#x437;&#x43F;&#x44A;&#x43B;&#x43D;&#x44F;&#x432;&#x430;&#x448;&#x435; &#x441;&#x430;&#x43C;&#x43E; &#x430;&#x43A;&#x43E; &#x443;&#x441;&#x43B;&#x43E;&#x432;&#x438;&#x435;&#x442;&#x43E; &#x435; &#x432;&#x44F;&#x440;&#x43D;&#x43E; (True). &#x41D;&#x43E; Python &#x438;&#x43C;&#x430; &#x441;&#x44A;&#x449;&#x43E; <code>elif</code> &#x438; <code>else</code> &#x443;&#x441;&#x43B;&#x43E;&#x432;&#x438;&#x44F;:</p><p></p><p class="code-label">python_intro.py</p><p></p><pre><code class="lang-python"><span class="hljs-keyword">if</span> <span class="hljs-number">5</span> &gt; <span class="hljs-number">2</span>:
+    print(<span class="hljs-string">&apos;5 is indeed greater than 2&apos;</span>)
+<span class="hljs-keyword">else</span>:
+    print(<span class="hljs-string">&apos;5 is not greater than 2&apos;</span>)</code></pre>
+<p>&#x41A;&#x43E;&#x433;&#x430;&#x442;&#x43E; &#x442;&#x43E;&#x432;&#x430; &#x441;&#x435; &#x438;&#x437;&#x43F;&#x44A;&#x43B;&#x43D;&#x438; &#x449;&#x435; &#x441;&#x435; &#x43E;&#x442;&#x43F;&#x435;&#x447;&#x430;&#x442;&#x430;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        $ python3 python_intro.py
+        5 is indeed greater than 2</code></pre>
+<p>&#x410;&#x43A;&#x43E; 2 &#x431;&#x435;&#x448;&#x435; &#x43F;&#x43E;-&#x433;&#x43E;&#x43B;&#x44F;&#x43C;&#x43E; &#x447;&#x438;&#x441;&#x43B;&#x43E; &#x43E;&#x442; 5, &#x442;&#x43E;&#x433;&#x430;&#x432;&#x430; &#x432;&#x442;&#x43E;&#x440;&#x430;&#x442;&#x430; &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x430; &#x449;&#x435;&#x448;&#x435; &#x434;&#x430; &#x441;&#x435; &#x438;&#x437;&#x43F;&#x44A;&#x43B;&#x43D;&#x438;. &#x41D;&#x435;&#x43A;&#x430; &#x432;&#x438;&#x434;&#x438;&#x43C; &#x43A;&#x430;&#x43A; &#x440;&#x430;&#x431;&#x43E;&#x442;&#x438; <code>elif</code> :</p><p></p><p class="code-label">python_intro.py</p><p></p><pre><code class="lang-python">name = <span class="hljs-string">&apos;Sonja&apos;</span>
+<span class="hljs-keyword">if</span> name == <span class="hljs-string">&apos;Ola&apos;</span>:
+    print(<span class="hljs-string">&apos;Hey Ola!&apos;</span>)
+<span class="hljs-keyword">elif</span> name == <span class="hljs-string">&apos;Sonja&apos;</span>:
+    print(<span class="hljs-string">&apos;Hey Sonja!&apos;</span>)
+<span class="hljs-keyword">else</span>:
+    print(<span class="hljs-string">&apos;Hey anonymous!&apos;</span>)</code></pre>
+<p>&#x438; &#x441;&#x435; &#x438;&#x437;&#x43F;&#x44A;&#x43B;&#x43D;&#x44F;&#x432;&#x430;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        $ python3 python_intro.py
+        Hey Sonja!</code></pre>
+<p>&#x412;&#x438;&#x434;&#x44F;&#x445;&#x442;&#x435; &#x43B;&#x438; &#x43A;&#x430;&#x43A;&#x432;&#x43E; &#x441;&#x435; &#x441;&#x43B;&#x443;&#x447;&#x438; &#x442;&#x430;&#x43C;? <code>elif</code> &#x432;&#x438; &#x434;&#x430;&#x434;&#x435; &#x432;&#x44A;&#x437;&#x43C;&#x43E;&#x436;&#x43D;&#x43E;&#x441;&#x442; &#x434;&#x430; &#x434;&#x43E;&#x431;&#x430;&#x432;&#x438;&#x442;&#x435; &#x43E;&#x449;&#x435; &#x435;&#x434;&#x43D;&#x43E; &#x443;&#x441;&#x43B;&#x43E;&#x432;&#x438;&#x435; &#x432; &#x441;&#x43B;&#x443;&#x447;&#x430;&#x439;, &#x447;&#x435; &#x43F;&#x440;&#x435;&#x434;&#x43D;&#x43E;&#x442;&#x43E; &#x441;&#x435; &#x43F;&#x440;&#x43E;&#x432;&#x430;&#x43B;&#x438;.</p><p>&#x41C;&#x43E;&#x436;&#x435; &#x434;&#x430; &#x434;&#x43E;&#x431;&#x430;&#x432;&#x44F;&#x442;&#x435; &#x43A;&#x43E;&#x43B;&#x43A;&#x43E;&#x442;&#x43E; &#x441;&#x438; &#x438;&#x441;&#x43A;&#x430;&#x442;&#x435; <code>elif</code> &#x443;&#x441;&#x43B;&#x43E;&#x432;&#x438;&#x44F; &#x441;&#x43B;&#x435;&#x434; &#x43F;&#x44A;&#x440;&#x432;&#x43E;&#x43D;&#x430;&#x447;&#x430;&#x43B;&#x43D;&#x43E;&#x442;&#x43E; <code>if</code> &#x443;&#x441;&#x43B;&#x43E;&#x432;&#x438;&#x435;. &#x41D;&#x430;&#x43F;&#x440;&#x438;&#x43C;&#x435;&#x440;:</p><p></p><p class="code-label">python_intro.py</p><p></p><pre><code class="lang-python">volume = <span class="hljs-number">57</span>
+<span class="hljs-keyword">if</span> volume &lt; <span class="hljs-number">20</span>:
+    print(<span class="hljs-string">&quot;It&apos;s kinda quiet.&quot;</span>)
+<span class="hljs-keyword">elif</span> <span class="hljs-number">20</span> &lt;= volume &lt; <span class="hljs-number">40</span>:
+    print(<span class="hljs-string">&quot;It&apos;s nice for background music&quot;</span>)
+<span class="hljs-keyword">elif</span> <span class="hljs-number">40</span> &lt;= volume &lt; <span class="hljs-number">60</span>:
+    print(<span class="hljs-string">&quot;Perfect, I can hear all the details&quot;</span>)
+<span class="hljs-keyword">elif</span> <span class="hljs-number">60</span> &lt;= volume &lt; <span class="hljs-number">80</span>:
+    print(<span class="hljs-string">&quot;Nice for parties&quot;</span>)
+<span class="hljs-keyword">elif</span> <span class="hljs-number">80</span> &lt;= volume &lt; <span class="hljs-number">100</span>:
+    print(<span class="hljs-string">&quot;A bit loud!&quot;</span>)
+<span class="hljs-keyword">else</span>:
+    print(<span class="hljs-string">&quot;My ears are hurting! :(&quot;</span>)</code></pre>
+<p>Python &#x43F;&#x440;&#x435;&#x43C;&#x438;&#x43D;&#x430;&#x432;&#x430; &#x438; &#x442;&#x435;&#x441;&#x442;&#x432;&#x430; &#x43F;&#x440;&#x435;&#x437; &#x432;&#x441;&#x435;&#x43A;&#x438; &#x440;&#x435;&#x434; &#x438; &#x43E;&#x442;&#x43F;&#x435;&#x447;&#x430;&#x442;&#x432;&#x430;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        $ python3 python_intro.py
+        Perfect, I can hear all the details</code></pre>
+<h2 id="&#x43A;&#x43E;&#x43C;&#x435;&#x43D;&#x442;&#x430;&#x440;&#x438;">&#x41A;&#x43E;&#x43C;&#x435;&#x43D;&#x442;&#x430;&#x440;&#x438;</h2><p>&#x41A;&#x43E;&#x43C;&#x435;&#x43D;&#x442;&#x440;&#x438;&#x442;&#x435; &#x441;&#x430; &#x440;&#x435;&#x434;&#x43E;&#x432;&#x435;, &#x437;&#x430;&#x43F;&#x43E;&#x447;&#x432;&#x430;&#x449;&#x438; &#x441; <code>#</code>. &#x41C;&#x43E;&#x436;&#x435; &#x434;&#x430; &#x43F;&#x438;&#x448;&#x435;&#x442;&#x435; &#x43A;&#x430;&#x43A;&#x432;&#x43E;&#x442;&#x43E; &#x438;&#x441;&#x43A;&#x430;&#x442;&#x435; &#x441;&#x43B;&#x435;&#x434; <code>#</code> &#x438; Python &#x449;&#x435; &#x433;&#x43E; &#x438;&#x433;&#x43D;&#x43E;&#x440;&#x438;&#x440;&#x430;. &#x41A;&#x43E;&#x43C;&#x435;&#x43D;&#x442;&#x430;&#x440;&#x438;&#x442;&#x435; &#x441;&#x430; &#x43D;&#x430;&#x43F;&#x440;&#x430;&#x432;&#x435;&#x43D;&#x438; &#x434;&#x430; &#x43F;&#x440;&#x430;&#x432;&#x44F;&#x442; &#x43A;&#x43E;&#x434;&#x430; &#x43F;&#x43E;-&#x43B;&#x435;&#x441;&#x435;&#x43D; &#x437;&#x430; &#x447;&#x435;&#x442;&#x435;&#x43D;&#x435; &#x438; &#x440;&#x430;&#x437;&#x431;&#x438;&#x440;&#x430;&#x43D;&#x435; &#x43E;&#x442; &#x434;&#x440;&#x443;&#x433;&#x438;&#x442;&#x435; &#x445;&#x43E;&#x440;&#x430;.</p><p>&#x41D;&#x435;&#x43A;&#x430; &#x432;&#x438;&#x434;&#x438;&#x43C; &#x43A;&#x430;&#x43A; &#x438;&#x437;&#x433;&#x43B;&#x435;&#x436;&#x434;&#x430;:</p><p></p><p class="code-label">python_intro.py</p><p></p><pre><code class="lang-python"><span class="hljs-comment"># Change the volume if it&apos;s too loud or too quiet</span>
+<span class="hljs-keyword">if</span> volume &lt; <span class="hljs-number">20</span> <span class="hljs-keyword">or</span> volume &gt; <span class="hljs-number">80</span>:
+    volume = <span class="hljs-number">50</span>
+    print(<span class="hljs-string">&quot;That&apos;s better!&quot;</span>)</code></pre>
+<p>&#x41D;&#x435; &#x435; &#x43D;&#x435;&#x43E;&#x431;&#x445;&#x43E;&#x434;&#x438;&#x43C;&#x43E; &#x434;&#x430; &#x43F;&#x438;&#x448;&#x435;&#x442;&#x435; &#x43A;&#x43E;&#x43C;&#x435;&#x43D;&#x442;&#x430;&#x440; &#x437;&#x430; &#x432;&#x441;&#x435;&#x43A;&#x438; &#x440;&#x435;&#x434; &#x43E;&#x442; &#x43A;&#x43E;&#x434;, &#x43D;&#x43E; &#x442;&#x435; &#x441;&#x430; &#x43C;&#x43D;&#x43E;&#x433;&#x43E; &#x43F;&#x43E;&#x434;&#x445;&#x43E;&#x434;&#x44F;&#x449;&#x438; &#x434;&#x430; &#x43E;&#x431;&#x44F;&#x441;&#x43D;&#x44F;&#x442; &#x43A;&#x430;&#x43A;&#x432;&#x43E; &#x43F;&#x440;&#x430;&#x432;&#x438; &#x441;&#x430;&#x43C;&#x438;&#x44F; &#x43A;&#x43E;&#x434;, &#x438;&#x43B;&#x438; &#x434;&#x430; &#x434;&#x430;&#x434;&#x430;&#x442; &#x43E;&#x431;&#x43E;&#x431;&#x449;&#x435;&#x43D;&#x438;&#x435;, &#x43A;&#x43E;&#x433;&#x430;&#x442;&#x43E; &#x441;&#x435; &#x43F;&#x440;&#x430;&#x432;&#x438; &#x43D;&#x435;&#x449;&#x43E; &#x441;&#x43B;&#x43E;&#x436;&#x43D;&#x43E;.</p><h3 id="&#x43E;&#x431;&#x43E;&#x431;&#x449;&#x435;&#x43D;&#x438;&#x435;">&#x41E;&#x431;&#x43E;&#x431;&#x449;&#x435;&#x43D;&#x438;&#x435;</h3><p>&#x412; &#x43F;&#x43E;&#x441;&#x43B;&#x435;&#x434;&#x43D;&#x438;&#x442;&#x435; &#x43D;&#x44F;&#x43A;&#x43E;&#x43B;&#x43A;&#x43E; &#x443;&#x43F;&#x440;&#x430;&#x436;&#x43D;&#x435;&#x43D;&#x438;&#x44F; &#x43D;&#x430;&#x443;&#x447;&#x438;&#x445;&#x442;&#x435; &#x43A;&#x430;&#x43A; &#x434;&#x430;:</p><ul><li><strong>&#x441;&#x440;&#x430;&#x432;&#x43D;&#x44F;&#x432;&#x430;&#x442;&#x435;</strong> &#x2013; &#x432; Python &#x43C;&#x43E;&#x436;&#x435; &#x434;&#x430; &#x441;&#x440;&#x430;&#x432;&#x43D;&#x44F;&#x432;&#x430;&#x442;&#x435; &#x43A;&#x430;&#x442;&#x43E; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x442;&#x435; <code>&gt;</code>, <code>&gt;=</code>, <code>==</code>, <code>&lt;=</code>, <code>&lt;</code> &#x438; <code>and</code>, <code>or</code> &#x43E;&#x43F;&#x435;&#x440;&#x430;&#x442;&#x43E;&#x440;&#x438;
+</li>
+<li>&#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x442;&#x435; <strong>&#x431;&#x443;&#x43B;&#x435;&#x432;&#x438; &#x43F;&#x440;&#x43E;&#x43C;&#x435;&#x43D;&#x43B;&#x438;&#x432;&#x438;</strong> &#x2013; &#x442;&#x438;&#x43F;&#x430; &#x43D;&#x430; &#x43E;&#x431;&#x435;&#x43A;&#x442;&#x430; &#x43C;&#x43E;&#x436;&#x435; &#x434;&#x430; &#x43F;&#x440;&#x438;&#x435;&#x43C;&#x430; &#x441;&#x430;&#x43C;&#x43E; &#x434;&#x432;&#x435; &#x441;&#x442;&#x43E;&#x439;&#x43D;&#x43E;&#x441;&#x442;&#x438;: <code>True</code> &#x438;&#x43B;&#x438; <code>False</code>
+</li>
+<li><strong>&#x437;&#x430;&#x43F;&#x430;&#x437;&#x432;&#x430;&#x442;&#x435; &#x444;&#x430;&#x439;&#x43B;&#x43E;&#x432;&#x435;</strong> &#x2013; &#x437;&#x430;&#x43F;&#x430;&#x437;&#x432;&#x430;&#x43D;&#x435; &#x43D;&#x430; &#x43A;&#x43E;&#x434;&#x430; &#x432;&#x44A;&#x432; &#x444;&#x430;&#x439;&#x43B;&#x43E;&#x432;&#x435;, &#x442;&#x430;&#x43A;&#x430; &#x447;&#x435; &#x434;&#x430; &#x43C;&#x43E;&#x433;&#x430;&#x442; &#x434;&#x430; &#x441;&#x435; &#x438;&#x437;&#x43F;&#x44A;&#x43B;&#x43D;&#x44F;&#x432;&#x430;&#x442; &#x43F;&#x43E;-&#x433;&#x43E;&#x43B;&#x435;&#x43C;&#x438; &#x43F;&#x440;&#x43E;&#x433;&#x440;&#x430;&#x43C;&#x438;.
+</li>
+<li>&#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x442;&#x435; <strong>if &#x2026; elif &#x2026; else</strong> &#x2013; &#x443;&#x441;&#x43B;&#x43E;&#x432;&#x43D;&#x430; &#x43A;&#x43E;&#x43D;&#x441;&#x442;&#x440;&#x443;&#x43A;&#x446;&#x438;&#x44F;, &#x43A;&#x43E;&#x44F;&#x442;&#x43E; &#x432;&#x438; &#x43F;&#x43E;&#x437;&#x432;&#x43E;&#x43B;&#x44F;&#x432;&#x430; &#x434;&#x430; &#x438;&#x437;&#x43F;&#x44A;&#x43B;&#x43D;&#x44F;&#x432;&#x430;&#x442;&#x435; &#x43A;&#x43E;&#x434; &#x43A;&#x43E;&#x433;&#x430;&#x442;&#x43E; &#x43E;&#x43F;&#x440;&#x435;&#x434;&#x435;&#x43B;&#x435;&#x43D;&#x438; &#x443;&#x441;&#x43B;&#x43E;&#x432;&#x438;&#x44F; &#x441;&#x435; &#x438;&#x437;&#x43F;&#x44A;&#x43B;&#x43D;&#x44F;&#x442;.
+</li>
+<li>&#x43F;&#x438;&#x448;&#x435;&#x442;&#x435; <strong>&#x43A;&#x43E;&#x43C;&#x435;&#x43D;&#x442;&#x430;&#x440;&#x438;</strong> - &#x440;&#x435;&#x434;&#x43E;&#x432;&#x435;&#x442;&#x435; &#x432; Python, &#x43A;&#x43E;&#x438;&#x442;&#x43E; &#x43D;&#x435; &#x441;&#x435; &#x438;&#x437;&#x43F;&#x44A;&#x43B;&#x43D;&#x44F;&#x432;&#x430;&#x442; &#x438; &#x434;&#x430;&#x432;&#x430;&#x442; &#x43F;&#x43E;&#x44F;&#x441;&#x43D;&#x435;&#x43D;&#x438;&#x44F; &#x437;&#x430; &#x43A;&#x43E;&#x434;&#x430; &#x432;&#x438;
+</li></ul>
+<p>&#x412;&#x440;&#x435;&#x43C;&#x435; &#x435; &#x437;&#x430; &#x43F;&#x43E;&#x441;&#x43B;&#x435;&#x434;&#x43D;&#x430;&#x442;&#x430; &#x447;&#x430;&#x441;&#x442; &#x43E;&#x442; &#x442;&#x430;&#x437;&#x438; &#x433;&#x43B;&#x430;&#x432;&#x430;!</p><h2 id="&#x432;&#x430;&#x448;&#x438;&#x442;&#x435;-&#x441;&#x43E;&#x431;&#x441;&#x442;&#x432;&#x435;&#x43D;&#x438;-&#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x438;">&#x412;&#x430;&#x448;&#x438;&#x442;&#x435; &#x441;&#x43E;&#x431;&#x441;&#x442;&#x432;&#x435;&#x43D;&#x438; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x438;!</h2><blockquote><p>&#x417;&#x430; &#x447;&#x438;&#x442;&#x430;&#x442;&#x435;&#x43B;&#x438;&#x442;&#x435; &#x443; &#x434;&#x43E;&#x43C;&#x430;: &#x442;&#x430;&#x437;&#x438; &#x447;&#x430;&#x441;&#x442; &#x435; &#x43F;&#x43E;&#x43A;&#x430;&#x437;&#x430;&#x43D;&#x430; &#x432;&#x44A;&#x432; &#x432;&#x438;&#x434;&#x435;&#x43E;&#x442;&#x43E; <a href="https://www.youtube.com/watch?v=5owr-6suOl0" target="_blank">Python Basics: Functions</a>.</p></blockquote><p>&#x41F;&#x43E;&#x43C;&#x43D;&#x438;&#x442;&#x435; &#x43B;&#x438; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x438;&#x442;&#x435; &#x43A;&#x430;&#x442;&#x43E; <code>len()</code>, &#x43A;&#x43E;&#x438;&#x442;&#x43E; &#x438;&#x437;&#x43F;&#x44A;&#x43B;&#x43D;&#x438;&#x445;&#x442;&#x435; &#x432; Python? &#x422;&#x430;&#x43A;&#x430;, &#x434;&#x43E;&#x431;&#x440;&#x438; &#x43D;&#x43E;&#x432;&#x438;&#x43D;&#x438; - &#x441;&#x435;&#x433;&#x430; &#x449;&#x435; &#x43D;&#x430;&#x443;&#x447;&#x438;&#x442;&#x435; &#x43A;&#x430;&#x43A; &#x434;&#x430; &#x43D;&#x430;&#x43F;&#x438;&#x448;&#x435;&#x442;&#x435; &#x441;&#x432;&#x43E;&#x438; &#x444;&#x443;&#x43A;&#x446;&#x438;&#x438;!</p><p>&#x424;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x44F;&#x442;&#x430; &#x435; &#x43F;&#x43E;&#x441;&#x43B;&#x435;&#x434;&#x43E;&#x432;&#x430;&#x442;&#x435;&#x43B;&#x43D;&#x43E;&#x441;&#x442; &#x43E;&#x442; &#x438;&#x43D;&#x441;&#x442;&#x440;&#x443;&#x43A;&#x446;&#x438;&#x438;, &#x442;&#x430;&#x43A;&#x430; &#x447;&#x435; Python &#x434;&#x430; &#x43C;&#x43E;&#x436;&#x435; &#x434;&#x430; &#x44F; &#x438;&#x437;&#x43F;&#x44A;&#x43B;&#x43D;&#x438;&#x43D;. &#x412;&#x441;&#x44F;&#x43A;&#x430; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x44F; &#x432; Python &#x437;&#x430;&#x43F;&#x43E;&#x447;&#x44F;&#x430; &#x441; &#x43A;&#x43B;&#x44E;&#x447;&#x43E;&#x432;&#x430;&#x442;&#x430; &#x434;&#x443;&#x43C;&#x430; <code>def</code>, &#x441; &#x43A;&#x43E;&#x435;&#x442;&#x43E; &#x441;&#x435; &#x434;&#x430;&#x432;&#x430; &#x438;&#x43C;&#x435; &#x43D;&#x430; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x44F;&#x442;&#x430; &#x438; &#x43C;&#x43E;&#x436;&#x435; &#x434;&#x430; &#x438;&#x43C;&#x430; &#x43D;&#x44F;&#x43A;&#x43E;&#x43B;&#x43A;&#x43E; &#x43F;&#x430;&#x440;&#x430;&#x43C;&#x435;&#x442;&#x44A;&#x440;&#x430;. &#x41D;&#x435;&#x43A;&#x430; &#x43F;&#x440;&#x43E;&#x431;&#x432;&#x430;&#x43C;&#x435;. &#x417;&#x430;&#x43C;&#x435;&#x441;&#x442;&#x435;&#x442;&#x435; &#x43A;&#x43E;&#x434;&#x430; &#x432;&#x44A;&#x432; &#x444;&#x430;&#x439;&#x43B;&#x430; <strong>python_intro.py</strong> &#x441;&#x44A;&#x441; &#x441;&#x43B;&#x435;&#x434;&#x43D;&#x43E;&#x442;&#x43E;:</p><p></p><p class="code-label">python_intro.py</p><p></p><pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hi</span><span class="hljs-params">()</span>:</span>
+    print(<span class="hljs-string">&apos;Hi there!&apos;</span>)
+    print(<span class="hljs-string">&apos;How are you?&apos;</span>)
+
+hi()</code></pre>
+<p>&#x414;&#x43E;&#x431;&#x440;&#x435;, &#x43F;&#x44A;&#x440;&#x432;&#x430;&#x442;&#x430; &#x432;&#x438; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x44F; &#x435; &#x433;&#x43E;&#x442;&#x43E;&#x432;&#x430;!</p><p>&#x41C;&#x43E;&#x436;&#x435; &#x431;&#x438; &#x441;&#x435; &#x447;&#x443;&#x434;&#x438;&#x442;&#x435; &#x437;&#x430;&#x449;&#x43E; &#x43D;&#x430;&#x43F;&#x438;&#x441;&#x430;&#x445;&#x43C;&#x435; &#x438;&#x43C;&#x435;&#x442;&#x43E; &#x43D;&#x430; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x44F;&#x442;&#x430; &#x432; &#x43A;&#x440;&#x430;&#x44F; &#x43D;&#x430; &#x444;&#x430;&#x439;&#x43B;&#x430;. &#x41A;&#x43E;&#x433;&#x430;&#x442;&#x43E; &#x43F;&#x438;&#x448;&#x435;&#x43C; <code>def hi():</code> &#x438; &#x441;&#x43B;&#x435;&#x434;&#x432;&#x430;&#x449;&#x438;&#x442;&#x435; &#x440;&#x435;&#x434;&#x43E;&#x432;&#x435; &#x437;&#x430;&#x43F;&#x43E;&#x447;&#x432;&#x430;&#x442; &#x43F;&#x43E;-&#x43D;&#x430;&#x432;&#x44A;&#x442;&#x440;&#x435;, &#x442;&#x43E;&#x432;&#x430; &#x43E;&#x43A;&#x430;&#x437;&#x432;&#x430; &#x43A;&#x430;&#x43A;&#x432;&#x43E; &#x442;&#x440;&#x44F;&#x431;&#x432;&#x430; &#x434;&#x430; &#x43D;&#x430;&#x43F;&#x440;&#x430;&#x432;&#x438; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x44F;&#x442;&#x430; <code>hi()</code>. Python &#x449;&#x435; &#x43F;&#x440;&#x43E;&#x447;&#x435;&#x442;&#x435; &#x438; &#x437;&#x430;&#x43F;&#x43E;&#x43C;&#x43D;&#x438; &#x442;&#x435;&#x437;&#x438; &#x438;&#x43D;&#x441;&#x442;&#x440;&#x443;&#x43A;&#x446;&#x438;&#x438;, &#x43D;&#x43E; &#x43D;&#x44F;&#x43C;&#x430; &#x434;&#x430; &#x438;&#x437;&#x43F;&#x44A;&#x43B;&#x43D;&#x438; &#x432;&#x441;&#x435; &#x43E;&#x449;&#x435; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x44F;&#x442;&#x430;. &#x417;&#x430; &#x434;&#x430; &#x43A;&#x430;&#x436;&#x435;&#x43C; &#x43D;&#x430; Python &#x434;&#x430; &#x438;&#x437;&#x43F;&#x44A;&#x43B;&#x43D;&#x438; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x44F;&#x442;&#x430;, &#x442;&#x440;&#x44F;&#x431;&#x432;&#x430; &#x434;&#x430; &#x438;&#x437;&#x432;&#x438;&#x43A;&#x430;&#x43C;&#x435; &#x432;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x44F;&#x442;&#x430; &#x441; <code>hi()</code>. Python &#x447;&#x435;&#x442;&#x435; &#x444;&#x430;&#x439;&#x43B;&#x430; &#x438; &#x438;&#x437;&#x43F;&#x44A;&#x43B;&#x43D;&#x44F;&#x432;&#x430; &#x43E;&#x442; &#x433;&#x43E;&#x440;&#x435; &#x434;&#x43E; &#x434;&#x43E;&#x43B;&#x443;, &#x437;&#x430;&#x442;&#x43E;&#x432;&#x430; &#x442;&#x440;&#x44F;&#x431;&#x432;&#x430; &#x434;&#x430; &#x434;&#x435;&#x444;&#x438;&#x43D;&#x438;&#x440;&#x430;&#x43C;&#x435; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x44F;&#x442;&#x430; &#x43F;&#x440;&#x435;&#x434;&#x438; &#x434;&#x430; &#x441;&#x43C;&#x435; &#x44F; &#x43F;&#x43E;&#x432;&#x438;&#x43A;&#x430;&#x43B;&#x438;.</p><p>&#x41D;&#x435;&#x43A;&#x430; &#x433;&#x43E; &#x441;&#x442;&#x430;&#x440;&#x442;&#x438;&#x440;&#x430;&#x43C;&#x435; &#x438; &#x432;&#x438;&#x434;&#x438;&#x43C; &#x43A;&#x430;&#x43A;&#x432;&#x43E; &#x441;&#x435; &#x441;&#x43B;&#x443;&#x447;&#x432;&#x430;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        $ python3 python_intro.py
+        Hi there!
+        How are you?</code></pre>
+<p>&#x417;&#x430;&#x431;&#x435;&#x43B;&#x435;&#x436;&#x43A;&#x430;: &#x430;&#x43A;&#x43E; &#x43D;&#x435; &#x440;&#x430;&#x431;&#x43E;&#x442;&#x438; &#x43D;&#x435; &#x441;&#x435; &#x43F;&#x430;&#x43D;&#x438;&#x43A;&#x44C;&#x43E;&#x441;&#x432;&#x430;&#x439;&#x442;&#x435;! &#x420;&#x435;&#x437;&#x443;&#x43B;&#x442;&#x430;&#x442;&#x44A;&#x442; &#x449;&#x435; &#x432;&#x438; &#x43F;&#x43E;&#x43C;&#x43E;&#x433;&#x43D;&#x435; &#x434;&#x430; &#x440;&#x430;&#x437;&#x431;&#x435;&#x440;&#x435;&#x442;&#x435; &#x437;&#x430;&#x449;&#x43E;:</p><ul><li>&#x410;&#x43A;&#x43E; &#x43F;&#x43E;&#x43B;&#x443;&#x447;&#x438;&#x442;&#x435; &#x433;&#x440;&#x435;&#x448;&#x43A;&#x430; <code>NameError</code>, &#x442;&#x43E;&#x432;&#x430; &#x43D;&#x430;&#x439;-&#x432;&#x435;&#x440;&#x43E;&#x44F;&#x442;&#x43D;&#x43E; &#x43E;&#x437;&#x43D;&#x430;&#x447;&#x430;&#x432;&#x430;, &#x447;&#x435; &#x441;&#x442;&#x435; &#x43D;&#x430;&#x43F;&#x440;&#x430;&#x432;&#x438;&#x43B;&#x438; &#x433;&#x440;&#x435;&#x448;&#x43A;&#x430; &#x43F;&#x440;&#x438; &#x43F;&#x438;&#x441;&#x430;&#x43D;&#x435;&#x442;&#x43E;, &#x442;&#x430;&#x43A;&#x430;&#x447;&#x435; &#x442;&#x440;&#x44F;&#x431;&#x432;&#x430; &#x434;&#x430; &#x43F;&#x440;&#x43E;&#x432;&#x435;&#x440;&#x438;&#x442;&#x435; &#x434;&#x430;&#x43B;&#x438; &#x438;&#x43C;&#x435;&#x43D;&#x430;&#x442;&#x430; &#x441;&#x430; &#x441;&#x44A;&#x449;&#x438;&#x442;&#x435; &#x43F;&#x440;&#x438; &#x441;&#x44A;&#x437;&#x434;&#x430;&#x432;&#x430;&#x43D;&#x435;&#x442;&#x43E; &#x43D;&#x430; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x44F;&#x442;&#x430; <code>def hi():</code> &#x438; &#x43A;&#x43E;&#x433;&#x430;&#x442;&#x43E; &#x44F; &#x438;&#x437;&#x432;&#x438;&#x43A;&#x432;&#x430;&#x442;&#x435; <code>hi()</code>.
+</li>
+<li>&#x410;&#x43A;&#x43E; &#x43F;&#x43E;&#x43B;&#x443;&#x447;&#x438;&#x442;&#x435; &#x433;&#x440;&#x435;&#x448;&#x43A;&#x430; <code>IndentationError</code>, &#x432;&#x438;&#x436;&#x442;&#x435; &#x434;&#x430;&#x43B;&#x438; &#x434;&#x432;&#x430;&#x442;&#x430; &#x440;&#x435;&#x434;&#x430; &#x441; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x44F;&#x442;&#x430; <code>print</code> &#x441;&#x430; &#x43E;&#x442;&#x43C;&#x435;&#x441;&#x442;&#x435;&#x43D;&#x438; &#x43D;&#x430; &#x435;&#x434;&#x43D;&#x43E; &#x438; &#x441;&#x44A;&#x449;&#x43E; &#x440;&#x430;&#x441;&#x442;&#x43E;&#x44F;&#x43D;&#x438;&#x435;: python &#x438;&#x441;&#x43A;&#x430; &#x43A;&#x43E;&#x434;&#x430; &#x432;&#x44A;&#x432; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x44F;&#x442;&#x430; &#x434;&#x430; &#x431;&#x44A;&#x434;&#x435; &#x431;&#x435;&#x437;&#x443;&#x43F;&#x440;&#x435;&#x447;&#x43D;&#x43E; &#x43F;&#x43E;&#x434;&#x440;&#x435;&#x434;&#x435;&#x43D;.
+</li>
+<li>&#x410;&#x43A;&#x43E; &#x43D;&#x430; &#x438;&#x437;&#x445;&#x43E;&#x434;&#x430; &#x43D;&#x44F;&#x43C;&#x430; &#x43D;&#x438;&#x449;&#x43E;, &#x43F;&#x440;&#x43E;&#x432;&#x435;&#x440;&#x435;&#x442;&#x435; &#x434;&#x430;&#x43B;&#x438; &#x43F;&#x43E;&#x441;&#x43B;&#x435;&#x434;&#x43D;&#x43E;&#x442;&#x43E; <code>hi()</code> <em>&#x43D;&#x435; &#x435;</em> &#x43E;&#x442;&#x43C;&#x435;&#x441;&#x442;&#x435;&#x43D;&#x43E; - &#x430;&#x43A;&#x43E; &#x435; , &#x442;&#x430;&#x437;&#x438; &#x447;&#x430;&#x441;&#x442; &#x441;&#x44A;&#x449;&#x43E; &#x449;&#x435; &#x441;&#x435; &#x43F;&#x440;&#x435;&#x432;&#x44A;&#x440;&#x43D;&#x435; &#x432; &#x447;&#x430;&#x441;&#x442; &#x43E;&#x442; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x44F;&#x442;&#x430; &#x438; &#x43D;&#x438;&#x43A;&#x43E;&#x433;&#x430; &#x43D;&#x44F;&#x43C;&#x430; &#x434;&#x430; &#x441;&#x435; &#x438;&#x437;&#x43F;&#x44A;&#x43B;&#x43D;&#x438;
+</li></ul>
+<p>&#x41D;&#x435;&#x43A;&#x430; &#x441;&#x44A;&#x441;&#x442;&#x430;&#x432;&#x438;&#x43C; &#x43F;&#x44A;&#x440;&#x432;&#x430;&#x442;&#x430; &#x441;&#x438; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x44F; &#x441; &#x43F;&#x430;&#x440;&#x430;&#x43C;&#x435;&#x442;&#x440;&#x438;. &#x429;&#x435; &#x43F;&#x440;&#x43E;&#x43C;&#x435;&#x43D;&#x438;&#x43C; &#x43F;&#x440;&#x435;&#x434;&#x43D;&#x438;&#x44F; &#x43F;&#x440;&#x438;&#x43C;&#x435;&#x440; - &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x44F;&#x442;&#x430;, &#x43A;&#x43E;&#x44F;&#x442;&#x43E; &#x43A;&#x430;&#x437;&#x432;&#x430; &apos;hi&apos; &#x43D;&#x430; &#x447;&#x43E;&#x432;&#x435;&#x43A;&#x430;, &#x43A;&#x43E;&#x439;&#x442;&#x43E; &#x43F;&#x443;&#x441;&#x43A;&#x430; &#x43F;&#x440;&#x43E;&#x433;&#x440;&#x430;&#x43C;&#x430;&#x442;&#x430; - &#x441; &#x438;&#x43C;&#x435;:</p><p></p><p class="code-label">python_intro.py</p><p></p><pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hi</span><span class="hljs-params">(name)</span>:</span></code></pre>
+<p>&#x41A;&#x430;&#x43A;&#x442;&#x43E; &#x441;&#x435; &#x432;&#x438;&#x436;&#x434;&#x430;, &#x434;&#x430;&#x434;&#x43E;&#x445;&#x43C;&#x435; &#x43D;&#x430; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x44F;&#x442;&#x430; &#x441;&#x438; &#x441;&#x442;&#x43E;&#x439;&#x43D;&#x43E;&#x441;&#x442;, &#x43A;&#x43E;&#x44F;&#x442;&#x43E; &#x43D;&#x430;&#x440;&#x435;&#x43A;&#x43E;&#x445;&#x43C;&#x435; <code>name</code>:</p><p></p><p class="code-label">python_intro.py</p><p></p><pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hi</span><span class="hljs-params">(name)</span>:</span>
+    <span class="hljs-keyword">if</span> name == <span class="hljs-string">&apos;Ola&apos;</span>:
+        print(<span class="hljs-string">&apos;Hi Ola!&apos;</span>)
+    <span class="hljs-keyword">elif</span> name == <span class="hljs-string">&apos;Sonja&apos;</span>:
+        print(<span class="hljs-string">&apos;Hi Sonja!&apos;</span>)
+    <span class="hljs-keyword">else</span>:
+        print(<span class="hljs-string">&apos;Hi anonymous!&apos;</span>)
+
+hi()</code></pre>
+<p>&#x417;&#x430;&#x43F;&#x43E;&#x43C;&#x43D;&#x435;&#x442;&#x435;: <code>print</code> &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x44F;&#x442;&#x430; &#x435; &#x43F;&#x43E;&#x43C;&#x435;&#x441;&#x442;&#x435;&#x43D;&#x430; 4 &#x43C;&#x435;&#x441;&#x442;&#x430; &#x43D;&#x430;&#x432;&#x44A;&#x442;&#x440;&#x435; &#x441;&#x43F;&#x440;&#x44F;&#x43C;&#x43E; <code>if</code> &#x443;&#x441;&#x43B;&#x43E;&#x432;&#x438;&#x435;&#x442;&#x43E;. &#x422;&#x43E;&#x432;&#x430; &#x435; &#x442;&#x430;&#x43A;&#x430;, &#x437;&#x430;&#x449;&#x43E;&#x442;&#x43E; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x44F;&#x442;&#x430; &#x441;&#x435; &#x438;&#x437;&#x43F;&#x44A;&#x43B;&#x43D;&#x44F;&#x432;&#x430;, &#x430;&#x43A;&#x43E; &#x435; &#x438;&#x437;&#x43F;&#x44A;&#x43B;&#x43D;&#x435;&#x43D;&#x43E; &#x443;&#x441;&#x43B;&#x43E;&#x432;&#x438;&#x435;&#x442;&#x43E;. &#x41D;&#x435;&#x43A;&#x430; &#x432;&#x438;&#x434;&#x438;&#x43C; &#x43A;&#x430;&#x43A; &#x440;&#x430;&#x431;&#x43E;&#x442;&#x438;:</p><p></p><p class="code-label"><span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!"></span> command-line</p><p></p><pre><code>        $ python3 python_intro.py
+        Traceback (most recent call last):
+        File &quot;python_intro.py&quot;, line 10, in &lt;module&gt;
+          hi()
+        TypeError: hi() missing 1 required positional argument: &apos;name&apos;</code></pre>
+<p>&#x41E;&#x43F;&#x430;&#x430;, &#x433;&#x440;&#x435;&#x448;&#x43A;&#x430;. &#x417;&#x430; &#x449;&#x430;&#x441;&#x442;&#x438;&#x435;, Python &#x43D;&#x438; &#x43F;&#x43E;&#x43A;&#x430;&#x437;&#x432;&#x430; &#x43C;&#x43D;&#x43E;&#x433;&#x43E; &#x43F;&#x43E;&#x43B;&#x435;&#x437;&#x43D;&#x43E; &#x441;&#x44A;&#x43E;&#x431;&#x449;&#x435;&#x43D;&#x438;&#x435; &#x437;&#x430; &#x433;&#x440;&#x435;&#x448;&#x43A;&#x430;&#x442;&#x430;. &#x41A;&#x430;&#x437;&#x432;&#x430; &#x43D;&#x438;, &#x447;&#x435; &#x444;&#x443;&#x43A;&#x43D;&#x446;&#x438;&#x44F;&#x442;&#x430; <code>hi()</code> (&#x43A;&#x43E;&#x44F;&#x442;&#x43E; &#x43D;&#x438;&#x435; &#x434;&#x435;&#x444;&#x438;&#x43D;&#x438;&#x440;&#x430;&#x445;&#x43C;&#x435;) &#x438;&#x43C;&#x430; &#x430;&#x440;&#x433;&#x443;&#x43C;&#x435;&#x43D;&#x442;, &#x43A;&#x43E;&#x439;&#x442;&#x43E; &#x441;&#x435; &#x438;&#x437;&#x438;&#x441;&#x43A;&#x432;&#x430; (&#x441; &#x438;&#x43C;&#x435; <code>name</code>) &#x438; &#x447;&#x435; &#x441;&#x43C;&#x435; &#x437;&#x430;&#x431;&#x440;&#x430;&#x432;&#x438;&#x43B;&#x438; &#x434;&#x430; &#x433;&#x43E; &#x43F;&#x440;&#x438;&#x43B;&#x43E;&#x436;&#x438;&#x43C;, &#x43A;&#x43E;&#x433;&#x430;&#x442;&#x43E; &#x438;&#x437;&#x432;&#x438;&#x43A;&#x432;&#x430;&#x43C;&#x435; &#x444;&#x443;&#x43D;&#x446;&#x43A;&#x438;&#x44F;&#x442;&#x430;. &#x41D;&#x435;&#x43A;&#x430; &#x43E;&#x43F;&#x440;&#x430;&#x432;&#x438;&#x43C; &#x442;&#x43E;&#x432;&#x430; &#x432; &#x43A;&#x440;&#x430;&#x44F; &#x43D;&#x430; &#x444;&#x430;&#x439;&#x43B;&#x430;:</p><p></p><p class="code-label">python_intro.py</p><p></p><pre><code class="lang-python">hi(<span class="hljs-string">&quot;Ola&quot;</span>)</code></pre>
+<p>&#x418; &#x434;&#x430; &#x441;&#x442;&#x430;&#x440;&#x442;&#x438;&#x440;&#x430;&#x43C;&#x435; &#x43E;&#x442;&#x43D;&#x430;&#x447;&#x430;&#x43B;&#x43E;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        $ python3 python_intro.py
+        Hi Ola!</code></pre>
+<p>&#x410; &#x430;&#x43A;&#x43E; &#x441;&#x43C;&#x435;&#x43D;&#x438;&#x43C; &#x438;&#x43C;&#x435;&#x442;&#x43E;?</p><p></p><p class="code-label">python_intro.py</p><p></p><pre><code class="lang-python">hi(<span class="hljs-string">&quot;Sonja&quot;</span>)</code></pre>
+<p>&#x418; &#x441;&#x442;&#x430;&#x440;&#x442;&#x438;&#x440;&#x430;&#x43C;&#x435; &#x43E;&#x442;&#x43D;&#x43E;&#x432;&#x43E;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        $ python3 python_intro.py
+        Hi Sonja!</code></pre>
+<p>&#x421;&#x435;&#x433;&#x430;, &#x43A;&#x430;&#x43A;&#x432;&#x43E; &#x43C;&#x438;&#x441;&#x43B;&#x438;&#x442;&#x435;, &#x447;&#x435; &#x449;&#x435; &#x441;&#x442;&#x430;&#x43D;&#x435; &#x430;&#x43A;&#x43E; &#x43D;&#x430;&#x43F;&#x438;&#x448;&#x435;&#x442;&#x435; &#x43D;&#x43E;&#x432;&#x43E; &#x438;&#x43C;&#x435;? (&#x41D;&#x435; Ola &#x438;&#x43B;&#x438; Sonja.) &#x41E;&#x43F;&#x438;&#x442;&#x430;&#x439;&#x442;&#x435; &#x438; &#x432;&#x438;&#x436;&#x442;&#x435; &#x434;&#x430;&#x43B;&#x438; &#x441;&#x442;&#x435; &#x43F;&#x440;&#x430;&#x432;&#x438;. &#x422;&#x440;&#x44F;&#x431;&#x432;&#x430; &#x434;&#x430; &#x43E;&#x442;&#x43F;&#x435;&#x447;&#x430;&#x442;&#x430; &#x442;&#x43E;&#x432;&#x430;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        Hi anonymous!</code></pre>
+<p>&#x422;&#x43E;&#x432;&#x430; &#x435; &#x441;&#x442;&#x440;&#x430;&#x445;&#x43E;&#x442;&#x43D;&#x43E;, &#x43D;&#x430;&#x43B;&#x438;? &#x41F;&#x440;&#x438; &#x442;&#x43E;&#x432;&#x430; &#x43D;&#x435; &#x442;&#x440;&#x431;&#x432;&#x430; &#x434;&#x430; &#x441;&#x435; &#x43F;&#x43E;&#x432;&#x442;&#x430;&#x440;&#x44F;&#x442;&#x435; &#x432;&#x441;&#x435;&#x43A;&#x438; &#x43F;&#x44A;&#x442;, &#x43A;&#x43E;&#x433;&#x430;&#x442;&#x43E; &#x441;&#x43C;&#x435;&#x43D;&#x438;&#x442;&#x435; &#x438;&#x43C;&#x435;&#x442;&#x43E; &#x43D;&#x430; &#x447;&#x43E;&#x432;&#x435;&#x43A;&#x430;, &#x43A;&#x43E;&#x439;&#x442;&#x43E; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x44F;&#x442;&#x430; &#x442;&#x440;&#x44F;&#x431;&#x432;&#x430; &#x434;&#x430; &#x43F;&#x43E;&#x437;&#x434;&#x440;&#x430;&#x432;&#x438;. &#x417;&#x430;&#x442;&#x43E;&#x432;&#x430; &#x441;&#x430; &#x43D;&#x438; &#x43D;&#x435;&#x43E;&#x431;&#x445;&#x43E;&#x434;&#x438;&#x43C;&#x438; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x438;&#x442;&#x435; - &#x43D;&#x438;&#x43A;&#x43E;&#x433;&#x430; &#x434;&#x430; &#x43D;&#x435; &#x43F;&#x43E;&#x432;&#x442;&#x430;&#x440;&#x44F;&#x448; &#x43A;&#x43E;&#x434;&#x430; &#x441;&#x438;!</p><p>&#x41D;&#x435;&#x43A;&#x430; &#x43E;&#x43F;&#x438;&#x442;&#x430;&#x43C;&#x435; &#x43D;&#x435;&#x449;&#x43E; &#x43F;&#x43E;-&#x445;&#x438;&#x442;&#x440;&#x43E; - &#x438;&#x43C;&#x430;&#x43C;&#x435; &#x43F;&#x43E;&#x432;&#x435;&#x447;&#x435; &#x43E;&#x442; &#x434;&#x432;&#x435; &#x438;&#x43C;&#x435;&#x43D;&#x430; &#x438; &#x43F;&#x438;&#x441;&#x430;&#x43D;&#x435;&#x442;&#x43E; &#x43D;&#x430; &#x443;&#x441;&#x43B;&#x43E;&#x432;&#x438;&#x44F; &#x437;&#x430; &#x432;&#x441;&#x44F;&#x43A;&#x43E; &#x435;&#x434;&#x43D;&#x43E; &#x43E;&#x442; &#x442;&#x44F;&#x445; &#x449;&#x435; &#x43E;&#x442;&#x43D;&#x435;&#x43C;&#x435; &#x43C;&#x43D;&#x43E;&#x433;&#x43E; &#x432;&#x440;&#x435;&#x43C;&#x435;, &#x43D;&#x430;&#x43B;&#x438; &#x442;&#x430;&#x43A;&#x430;? &#x417;&#x430;&#x43C;&#x435;&#x441;&#x442;&#x435;&#x442;&#x435; &#x441;&#x44A;&#x434;&#x44A;&#x440;&#x436;&#x430;&#x43D;&#x438;&#x435; &#x43D;&#x430; &#x444;&#x430;&#x439;&#x43B;&#x430; &#x441;&#x438; &#x441;&#x44A;&#x441; &#x441;&#x43B;&#x435;&#x434;&#x43D;&#x43E;&#x442;&#x43E;:</p><p></p><p class="code-label">python_intro.py</p><p></p><pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hi</span><span class="hljs-params">(name)</span>:</span>
+    print(<span class="hljs-string">&apos;Hi &apos;</span> + name + <span class="hljs-string">&apos;!&apos;</span>)
+
+hi(<span class="hljs-string">&quot;Rachel&quot;</span>)</code></pre>
+<p>&#x41D;&#x435;&#x43A;&#x430; &#x438;&#x437;&#x432;&#x438;&#x43A;&#x430;&#x43C;&#x435; &#x43A;&#x43E;&#x434;&#x430;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        $ python3 python_intro.py
+        Hi Rachel!</code></pre>
+<p>&#x41F;&#x43E;&#x437;&#x434;&#x440;&#x430;&#x432;&#x43B;&#x435;&#x43D;&#x438;&#x44F;! &#x422;&#x43E;&#x43A;&#x443; &#x449;&#x43E; &#x43D;&#x430;&#x443;&#x447;&#x438;&#x445;&#x442;&#x435; &#x43A;&#x430;&#x43A; &#x434;&#x430; &#x43F;&#x438;&#x448;&#x435;&#x442;&#x435; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x438;! :)</p><h2 id="&#x446;&#x438;&#x43A;&#x43B;&#x438;">&#x426;&#x438;&#x43A;&#x43B;&#x438;</h2><blockquote><p>&#x417;&#x430; &#x447;&#x438;&#x442;&#x430;&#x442;&#x435;&#x43B;&#x438;&#x442;&#x435; &#x443; &#x434;&#x43E;&#x43C;&#x430;: &#x442;&#x430;&#x437;&#x438; &#x447;&#x430;&#x441;&#x442; &#x435; &#x43F;&#x43E;&#x43A;&#x430;&#x437;&#x430;&#x43D;&#x430; &#x432;&#x44A;&#x432; &#x432;&#x438;&#x434;&#x435;&#x43E;&#x442;&#x43E; <a href="https://www.youtube.com/watch?v=aEA6Rc86HF0" target="_blank">Python Basics: For Loop</a></p></blockquote><p>&#x422;&#x43E;&#x432;&#x430; &#x432;&#x435;&#x447;&#x435; &#x435; &#x43F;&#x43E;&#x441;&#x43B;&#x435;&#x434;&#x43D;&#x430;&#x442;&#x430; &#x447;&#x430;&#x441;&#x442;. &#x41C;&#x438;&#x43D;&#x430; &#x431;&#x44A;&#x440;&#x437;&#x43E;, &#x43D;&#x430;&#x43B;&#x438;? :)</p><p>&#x41F;&#x440;&#x43E;&#x433;&#x440;&#x430;&#x43C;&#x438;&#x441;&#x442;&#x438;&#x442;&#x435; &#x43D;&#x435; &#x43E;&#x431;&#x438;&#x447;&#x430;&#x442; &#x434;&#x430; &#x435; &#x43F;&#x43E;&#x432;&#x442;&#x430;&#x440;&#x44F;&#x442;. &#x41F;&#x440;&#x43E;&#x433;&#x440;&#x430;&#x43C;&#x438;&#x440;&#x430;&#x43D;&#x435;&#x442;&#x43E; &#x441;&#x435; &#x43E;&#x442;&#x43D;&#x430;&#x441;&#x44F; &#x434;&#x43E; &#x430;&#x432;&#x442;&#x43E;&#x43C;&#x430;&#x442;&#x438;&#x437;&#x430;&#x446;&#x438;&#x44F;, &#x442;&#x430;&#x43A;&#x430; &#x447;&#x435; &#x43D;&#x435; &#x438;&#x441;&#x43A;&#x430;&#x43C;&#x435; &#x434;&#x430; &#x43F;&#x43E;&#x437;&#x434;&#x440;&#x430;&#x432;&#x44F;&#x432;&#x430;&#x43C;&#x435; &#x432;&#x441;&#x435;&#x43A;&#x438; &#x447;&#x43E;&#x432;&#x435;&#x43A; &#x43F;&#x43E; &#x438;&#x43C;&#x435; &#x43A;&#x430;&#x442;&#x43E; &#x438;&#x437;&#x43F;&#x438;&#x441;&#x432;&#x430;&#x43C;&#x435; &#x437;&#x430; &#x432;&#x441;&#x435;&#x43A;&#x438; &#x43F;&#x43E; &#x43E;&#x442;&#x434;&#x435;&#x43B;&#x43D;&#x43E;, &#x43D;&#x430;&#x43B;&#x438;? &#x415;&#x442;&#x43E; &#x43A;&#x44A;&#x434;&#x435; &#x446;&#x438;&#x43A;&#x43B;&#x438;&#x442;&#x435; &#x438;&#x434;&#x432;&#x430;&#x442; &#x432; &#x443;&#x43F;&#x43E;&#x442;&#x440;&#x435;&#x431;&#x430;.</p><p>&#x412;&#x441;&#x435; &#x43E;&#x449;&#x435; &#x441;&#x438; &#x441;&#x43F;&#x43E;&#x43C;&#x43D;&#x44F;&#x442;&#x435; &#x43B;&#x438;&#x441;&#x442;&#x43E;&#x432;&#x435;&#x442;&#x435;? &#x41D;&#x435;&#x43A;&#x430; &#x43D;&#x430;&#x43F;&#x440;&#x430;&#x432;&#x438;&#x43C; &#x43B;&#x438;&#x441;&#x442; &#x441; &#x43C;&#x43E;&#x43C;&#x438;&#x447;&#x435;&#x442;&#x430;:</p><p></p><p class="code-label">python_intro.py</p><p></p><pre><code class="lang-python">girls = [<span class="hljs-string">&apos;Rachel&apos;</span>, <span class="hljs-string">&apos;Monica&apos;</span>, <span class="hljs-string">&apos;Phoebe&apos;</span>, <span class="hljs-string">&apos;Ola&apos;</span>, <span class="hljs-string">&apos;You&apos;</span>]</code></pre>
+<p>&#x418;&#x441;&#x43A;&#x430;&#x43C;&#x435; &#x434;&#x430; &#x43F;&#x43E;&#x437;&#x434;&#x440;&#x430;&#x432;&#x438;&#x43C; &#x432;&#x441;&#x44F;&#x43A;&#x430; &#x435;&#x434;&#x43D;&#x430; &#x43E;&#x442; &#x442;&#x44F;&#x445; &#x43F;&#x43E; &#x438;&#x43C;&#x435;. &#x418;&#x43C;&#x430;&#x43C;&#x435; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x44F;&#x442;&#x430; <code>hi</code> &#x434;&#x430; &#x43D;&#x430;&#x43F;&#x440;&#x430;&#x432;&#x438; &#x442;&#x43E;&#x432;&#x430;, &#x442;&#x430;&#x43A;&#x430; &#x447;&#x435; &#x43D;&#x435;&#x43A;&#x430; &#x44F; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x43C;&#x435; &#x432; &#x446;&#x438;&#x43A;&#x44A;&#x43B;:</p><p></p><p class="code-label">python_intro.py</p><p></p><pre><code class="lang-python"><span class="hljs-keyword">for</span> name <span class="hljs-keyword">in</span> girls:</code></pre>
+<p>&#x41A;&#x43E;&#x43D;&#x441;&#x442;&#x440;&#x443;&#x43A;&#x446;&#x438;&#x44F;&#x442;&#x430; <code>for</code> &#x441;&#x435; &#x434;&#x44A;&#x440;&#x436;&#x438; &#x43F;&#x43E;&#x434;&#x43E;&#x431;&#x43D;&#x43E; &#x43D;&#x430; &#x43A;&#x43E;&#x43D;&#x441;&#x442;&#x440;&#x443;&#x43A;&#x446;&#x438;&#x44F;&#x442;&#x430; <code>if</code>; &#x43A;&#x43E;&#x434;&#x430; &#x43F;&#x43E;&#x434; &#x43D;&#x435;&#x433;&#x43E; &#x442;&#x440;&#x44F;&#x431;&#x432;&#x430; &#x434;&#x430; &#x435; &#x43E;&#x442;&#x43C;&#x435;&#x441;&#x442;&#x435;&#x43D; &#x441; &#x447;&#x435;&#x442;&#x438;&#x440;&#x438; &#x43C;&#x435;&#x441;&#x442;&#x430; &#x43D;&#x430;&#x432;&#x44A;&#x442;&#x440;&#x435;.</p><p>&#x415;&#x442;&#x43E; &#x446;&#x435;&#x43B;&#x438;&#x44F; &#x43A;&#x43E;&#x434;, &#x43A;&#x43E;&#x439;&#x442;&#x43E; &#x442;&#x440;&#x44F;&#x431;&#x432;&#x430; &#x434;&#x430; &#x435; &#x432;&#x44A;&#x432; &#x444;&#x430;&#x439;&#x43B;&#x430;:</p><p></p><p class="code-label">python_intro.py</p><p></p><pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hi</span><span class="hljs-params">(name)</span>:</span>
+    print(<span class="hljs-string">&apos;Hi &apos;</span> + name + <span class="hljs-string">&apos;!&apos;</span>)
+
+girls = [<span class="hljs-string">&apos;Rachel&apos;</span>, <span class="hljs-string">&apos;Monica&apos;</span>, <span class="hljs-string">&apos;Phoebe&apos;</span>, <span class="hljs-string">&apos;Ola&apos;</span>, <span class="hljs-string">&apos;You&apos;</span>]
+<span class="hljs-keyword">for</span> name <span class="hljs-keyword">in</span> girls:
+    hi(name)
+    print(<span class="hljs-string">&apos;Next girl&apos;</span>)</code></pre>
+<p>&#x418; &#x43A;&#x43E;&#x433;&#x430;&#x442;&#x43E; &#x433;&#x43E; &#x441;&#x442;&#x430;&#x440;&#x442;&#x438;&#x440;&#x430;&#x43C;&#x435;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        $ python3 python_intro.py
+        Hi Rachel!
+        Next girl
+        Hi Monica!
+        Next girl
+        Hi Phoebe!
+        Next girl
+        Hi Ola!
+        Next girl
+        Hi You!
+        Next girl</code></pre>
+<p>&#x41A;&#x430;&#x43A;&#x442;&#x43E; &#x432;&#x438;&#x436;&#x434;&#x430;&#x442;&#x435; &#x432;&#x441;&#x438;&#x447;&#x43A;&#x43E;, &#x43A;&#x43E;&#x435;&#x442;&#x43E; &#x441;&#x43B;&#x43E;&#x436;&#x438;&#x442;&#x435; &#x432;&#x44A;&#x442;&#x440;&#x435; &#x432;&#x44A;&#x432; <code>for</code> &#x43A;&#x43E;&#x43D;&#x441;&#x442;&#x440;&#x443;&#x43A;&#x446;&#x438;&#x44F;&#x442;&#x430; &#x441; &#x43E;&#x442;&#x43C;&#x435;&#x441;&#x442;&#x432;&#x430;&#x43D;&#x435;&#x442;&#x43E; &#x449;&#x435; &#x431;&#x44A;&#x434;&#x435; &#x43F;&#x43E;&#x432;&#x442;&#x43E;&#x440;&#x435;&#x43D;&#x43E; &#x437;&#x430; &#x432;&#x441;&#x435;&#x43A;&#x438; &#x435;&#x43B;&#x435;&#x43C;&#x435;&#x43D;&#x442; &#x43E;&#x442; &#x43B;&#x438;&#x441;&#x442;&#x430; <code>girls</code>.</p><p>&#x41C;&#x43E;&#x436;&#x435; &#x441;&#x44A;&#x449;&#x43E; &#x434;&#x430; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x442;&#x435; <code>for</code> &#x446;&#x438;&#x43A;&#x44A;&#x43B; &#x437;&#x430; &#x447;&#x438;&#x441;&#x43B;&#x430; &#x43A;&#x430;&#x442;&#x43E; &#x438;&#x437;&#x43F;&#x43E;&#x43B;&#x437;&#x432;&#x430;&#x442;&#x435; &#x444;&#x443;&#x43D;&#x446;&#x43A;&#x438;&#x44F;&#x442;&#x430; <code>range</code> :</p><p></p><p class="code-label">python_intro.py</p><p></p><pre><code class="lang-python"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>, <span class="hljs-number">6</span>):
+    print(i)</code></pre>
+<p>&#x41A;&#x43E;&#x435;&#x442;&#x43E; &#x449;&#x435; &#x43E;&#x442;&#x43F;&#x435;&#x447;&#x430;&#x442;&#x430;:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        1
+        2
+        3
+        4
+        5</code></pre>
+<p><code>range</code> &#x435; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x44F;, &#x43A;&#x43E;&#x44F;&#x442;&#x43E; &#x441;&#x44A;&#x437;&#x434;&#x430;&#x432;&#x430; &#x43B;&#x438;&#x441;&#x442; &#x43E;&#x442; &#x43D;&#x43E;&#x43C;&#x435;&#x440;&#x430; &#x435;&#x434;&#x43D;&#x43E; &#x441;&#x43B;&#x435;&#x434; &#x434;&#x440;&#x443;&#x433;&#x43E; (&#x442;&#x435;&#x437;&#x438; &#x43D;&#x43E;&#x43C;&#x435;&#x440;&#x430; &#x441;&#x430; &#x434;&#x430;&#x434;&#x435;&#x43D;&#x438; &#x43E;&#x442; &#x432;&#x430;&#x441; &#x43A;&#x430;&#x442;&#x43E; &#x441;&#x442;&#x43E;&#x439;&#x43D;&#x43E;&#x441;&#x442;&#x438;).</p><p>&#x417;&#x430;&#x431;&#x435;&#x43B;&#x435;&#x436;&#x435;&#x442;&#x435;, &#x447;&#x435; &#x432;&#x442;&#x43E;&#x440;&#x438;&#x44F; &#x43F;&#x430;&#x440;&#x430;&#x43C;&#x435;&#x442;&#x44A;&#x440;, &#x43A;&#x43E;&#x439;&#x442;&#x43E; &#x441;&#x442;&#x435; &#x434;&#x430;&#x43B;&#x438; &#x43D;&#x435; &#x441;&#x435; &#x432;&#x43A;&#x43B;&#x44E;&#x447;&#x432;&#x430; &#x432; &#x43B;&#x438;&#x441;&#x442;&#x430; &#x441; &#x43F;&#x43E;&#x43A;&#x430;&#x437;&#x430;&#x43D;&#x438;&#x442;&#x435; &#x447;&#x438;&#x441;&#x43B;&#x430; &#x43E;&#x442; Python (&#x43A;&#x43E;&#x435;&#x442;&#x43E; &#x43E;&#x437;&#x43D;&#x430;&#x447;&#x430;&#x432;&#x430;, &#x447;&#x435; <code>range(1, 6)</code> &#x431;&#x440;&#x43E;&#x438; &#x43E;&#x442; 1 &#x434;&#x43E; 5, &#x431;&#x435;&#x437; &#x434;&#x430; &#x432;&#x43A;&#x43B;&#x44E;&#x447;&#x432;&#x430; &#x447;&#x438;&#x441;&#x43B;&#x43E;&#x442;&#x43E; 6). &#x422;&#x43E;&#x432;&#x430; &#x435; &#x442;&#x430;&#x43A;&#x430;, &#x437;&#x430;&#x449;&#x43E;&#x442;&#x43E; &quot;range&quot; &#x435; &#x43F;&#x43E;&#x43B;&#x443;-&#x43E;&#x442;&#x432;&#x43E;&#x440;&#x435;&#x43D;&#x430; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x44F;, &#x43A;&#x43E;&#x435;&#x442;&#x43E; &#x43E;&#x437;&#x43D;&#x430;&#x447;&#x430;&#x432;&#x430;, &#x447;&#x435; &#x432;&#x43A;&#x43B;&#x44E;&#x447;&#x432;&#x430; &#x43F;&#x44A;&#x440;&#x432;&#x430;&#x442;&#x430; &#x441;&#x442;&#x43E;&#x439;&#x43D;&#x43E;&#x441;&#x442;, &#x43D;&#x43E; &#x43D;&#x435; &#x438; &#x43F;&#x43E;&#x441;&#x43B;&#x435;&#x434;&#x43D;&#x430;&#x442;&#x430;.</p><h2 id="&#x43E;&#x431;&#x43E;&#x431;&#x449;&#x435;&#x43D;&#x438;&#x435;">&#x41E;&#x431;&#x43E;&#x431;&#x449;&#x435;&#x43D;&#x438;&#x435;</h2><p>&#x422;&#x43E;&#x432;&#x430; &#x435;! <strong>&#x422;&#x438; &#x441;&#x438; &#x432;&#x44A;&#x440;&#x445;&#x430;!</strong> &#x422;&#x43E;&#x432;&#x430; &#x431;&#x435;&#x448;&#x435; &#x441;&#x43B;&#x43E;&#x436;&#x43D;&#x430; &#x433;&#x43B;&#x430;&#x432;&#x430;, &#x442;&#x430;&#x43A;&#x430; &#x447;&#x435; &#x442;&#x440;&#x44F;&#x431;&#x432;&#x430; &#x434;&#x430; &#x441;&#x442;&#x435; &#x433;&#x43E;&#x440;&#x434;&#x438; &#x441;&#x44A;&#x441; &#x441;&#x435;&#x431;&#x435; &#x441;&#x438;. &#x41D;&#x438;&#x435; &#x43E;&#x43F;&#x440;&#x435;&#x434;&#x435;&#x43B;&#x435;&#x43D;&#x43E; &#x441;&#x43C;&#x435; &#x433;&#x43E;&#x440;&#x434;&#x438; &#x441; &#x442;&#x43E;&#x432;&#x430;, &#x43A;&#x43E;&#x435;&#x442;&#x43E; &#x43F;&#x43E;&#x441;&#x442;&#x438;&#x433;&#x43D;&#x430;&#x445;&#x442;&#x435; &#x434;&#x43E;&#x441;&#x435;&#x433;&#x430;!</p><p>&#x417;&#x430; &#x43E;&#x444;&#x438;&#x446;&#x438;&#x430;&#x43B;&#x43D;&#x43E;&#x442;&#x43E; &#x438; &#x43F;&#x44A;&#x43B;&#x43D;&#x43E; &#x440;&#x44A;&#x43A;&#x43E;&#x432;&#x43E;&#x434;&#x441;&#x442;&#x432;&#x43E; &#x43D;&#x430; Python &#x43F;&#x43E;&#x441;&#x435;&#x442;&#x435;&#x442;&#x435; visit <a href="https://docs.python.org/3/tutorial/" target="_blank">https://docs.python.org/3/tutorial/</a>. &#x422;&#x43E;&#x432;&#x430; &#x449;&#x435; &#x432;&#x438; &#x434;&#x430;&#x434;&#x435; &#x43C;&#x43D;&#x43E;&#x433;&#x43E; &#x43F;&#x43E;-&#x43F;&#x43E;&#x434;&#x440;&#x43E;&#x431;&#x43D;&#x438; &#x438; &#x446;&#x44F;&#x43B;&#x43E;&#x441;&#x442;&#x43D;&#x438; &#x437;&#x43D;&#x430;&#x43D;&#x438;&#x44F; &#x437;&#x430; &#x435;&#x437;&#x438;&#x43A;&#x430;. &#x421;&#x44A;&#x441; &#x437;&#x434;&#x440;&#x430;&#x432;&#x435;! :)</p><p>&#x41C;&#x43E;&#x436;&#x435; &#x431;&#x438; &#x438;&#x441;&#x43A;&#x430;&#x442;&#x435; &#x434;&#x430; &#x43D;&#x430;&#x43F;&#x440;&#x430;&#x432;&#x438;&#x442;&#x435; &#x43D;&#x435;&#x449;&#x43E; &#x434;&#x440;&#x443;&#x433;&#x43E; &#x437;&#x430; &#x43A;&#x440;&#x430;&#x442;&#x43A;&#x43E; - &#x440;&#x430;&#x437;&#x442;&#x44F;&#x433;&#x430;&#x43D;&#x435;, &#x440;&#x430;&#x437;&#x445;&#x43E;&#x434;&#x43A;&#x430;, &#x434;&#x430; &#x432;&#x438; &#x43E;&#x442;&#x43F;&#x43E;&#x447;&#x438;&#x43D;&#x430;&#x442; &#x43E;&#x447;&#x438;&#x442;&#x435; - &#x43F;&#x440;&#x435;&#x434;&#x438; &#x434;&#x430; &#x43E;&#x442;&#x438;&#x434;&#x435;&#x43C; &#x43A;&#x44A;&#x43C; &#x441;&#x43B;&#x435;&#x434;&#x432;&#x430;&#x449;&#x430;&#x442;&#x430; &#x433;&#x43B;&#x430;&#x432;&#x430;. :)</p><p><img alt="&#x41A;&#x435;&#x43A;&#x441;&#x447;&#x435;" src="images/cupcake.png"></p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../code_editor/" class="navigation navigation-prev " aria-label="Previous page: Редактор на код">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../django/" class="navigation navigation-next " aria-label="Next page: Какво е Django?">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Въведение в Python","level":"1.8","depth":1,"next":{"title":"Какво е Django?","level":"1.9","depth":1,"path":"django/README.md","ref":"django/README.md","articles":[]},"previous":{"title":"Редактор на код","level":"1.7","depth":1,"path":"code_editor/README.md","ref":"code_editor/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"django_version":"2.2.4"},"language":"bg","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"python_introduction/README.md","mtime":"2020-06-27T13:00:23.638Z","type":"markdown"},"gitbook":{"version":"3.4.0","time":"2020-06-27T13:00:41.274Z"},"basePath":"..","book":{"language":"bg"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

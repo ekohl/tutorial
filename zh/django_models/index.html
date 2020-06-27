@@ -1,0 +1,685 @@
+
+<!DOCTYPE HTML>
+<html lang="zh" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Django模型 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.4.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../django_admin/" />
+    
+    
+    <link rel="prev" href="../django_start_project/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    互联网是如何工作的？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    命令行介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Python的安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    代码编辑器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Python 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Django 是什么？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Django安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    你的第一个Django 项目 ！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Django模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    部署！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django urls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django视图 - 抓紧时间去创建！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    HTML简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM (查询集)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    模板中的动态数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - 让其更漂亮
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    模板扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    扩展您的应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Django表单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    接下来呢？
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本書使用 HonKit 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Django模型</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="django&#x6A21;&#x578B;">Django&#x6A21;&#x578B;</h1><p>&#x6211;&#x4EEC;&#x73B0;&#x5728;&#x5C06;&#x8981;&#x521B;&#x5EFA;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x80FD;&#x5B58;&#x50A8;&#x6211;&#x4EEC;&#x535A;&#x5BA2;&#x6240;&#x6709;&#x6587;&#x7AE0;&#x7684;&#x4E1C;&#x897F;&#x3002;&#x4E3A;&#x4E86;&#x8FBE;&#x5230;&#x8FD9;&#x4E2A;&#x76EE;&#x7684;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x8981;&#x8BB2;&#x89E3;&#x4E00;&#x4E0B;&#x4E00;&#x4E2A;&#x88AB;&#x79F0;&#x4E3A;<code>objects&#xFF08;&#x5BF9;&#x8C61;&#xFF09;</code>&#x7684;&#x4E1C;&#x897F;.</p><h2 id="&#x5BF9;&#x8C61;">&#x5BF9;&#x8C61;</h2><p>&#x5728;&#x7F16;&#x7A0B;&#x4E2D;&#x6709;&#x4E00;&#x4E2A;&#x6982;&#x5FF5;&#x53EB;&#x505A; <code>&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7F16;&#x7A0B;</code> &#x3002; &#x5B83;&#x7684;&#x601D;&#x60F3;&#x662F;&#xFF0C;&#x4E0E;&#x5176;&#x7528;&#x65E0;&#x804A;&#x7684;&#x4E00;&#x8FDE;&#x4E32;&#x7684;&#x7A0B;&#x5E8F;&#x6307;&#x4EE4;&#x65B9;&#x5F0F;&#x5199;&#x7A0B;&#x5E8F;&#xFF0C;&#x6211;&#x4EEC;&#x4E0D;&#x5982;&#x4E3A;&#x4E8B;&#x7269;&#x5EFA;&#x7ACB;&#x6A21;&#x578B;&#xFF0C;&#x7136;&#x540E;&#x5B9A;&#x4E49;&#x4ED6;&#x4EEC;&#x662F;&#x600E;&#x6837;&#x4E92;&#x76F8;&#x4EA4;&#x4E92;&#x7684;&#x3002;</p><p>&#x90A3;&#x4EC0;&#x4E48;&#x662F;&#x5BF9;&#x8C61;&#x5462;&#xFF1F;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x548C;&#x64CD;&#x4F5C;&#x7684;&#x96C6;&#x5408;&#x3002;&#x5B83;&#x542C;&#x8D77;&#x6765;&#x5F88;&#x5947;&#x602A;&#xFF0C;&#x4F46;&#x6211;&#x4EEC;&#x4F1A;&#x7ED9;&#x4F60;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#x3002;</p><p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x60F3;&#x5851;&#x9020;&#x4E00;&#x53EA;&#x732B;&#x7684;&#x6A21;&#x578B;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;<code>Cat</code>&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x5B83;&#x542B;&#x6709;&#x4E00;&#x4E9B;&#x5C5E;&#x6027;&#x4F8B;&#x5982;&#xFF1A;<code>color</code>, <code>age</code>, <code>mood</code>(&#x53C8;&#x6BD4;&#x5982;&#xFF1A;good, bad, sleepy ;))&#xFF0C;&#x8FD8;&#x6709;<code>owner&#xFF08;&#x4E3B;&#x4EBA;&#xFF09;</code> (&#x90A3;&#x662F;&#x4E00;&#x4E2A;<code>Person</code>&#x5BF9;&#x8C61;&#x6216;&#x8005;&#x5047;&#x82E5;&#x662F;&#x6D41;&#x6D6A;&#x732B;&#xFF0C;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x53EF;&#x4EE5;&#x4E3A;&#x7A7A;)&#x3002;</p><p>&#x7136;&#x540E;&#x8FD9;&#x4E2A;<code>Cat</code>&#x4F1A;&#x6709;&#x4E00;&#x4E9B;&#x884C;&#x4E3A;: <code>purr</code>, <code>scratch</code>, &#x6216;&#x8005;<code>feed</code> (&#x5728;&#x8FD9;&#x5176;&#x4E2D;&#x6211;&#x4EEC;&#x4F1A;&#x7ED9;&#x8FD9;&#x53EA;&#x732B;&#x4E00;&#x4E9B; <code>CatFood</code>&#xFF0C;&#x8FD9;&#x4E2A;<code>CatFood</code>&#x53EF;&#x4EE5;&#x662F;&#x5355;&#x72EC;&#x7684;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x6BD4;&#x5982;<0>taste</0>&#x5C5E;&#x6027;&#x7684;&#x5BF9;&#x8C61;).</p><pre><code>        Cat
+        --------
+        color
+        age
+        mood
+        owner
+        purr()
+        scratch()
+        feed(cat_food)
+
+
+        CatFood
+        --------
+        taste</code></pre>
+<p>&#x6240;&#x4EE5;&#x57FA;&#x672C;&#x601D;&#x60F3;&#x5C31;&#x662F;&#x7528;&#x5305;&#x542B;&#x5C5E;&#x6027;&#x7684;&#x4EE3;&#x7801;&#x6765;&#x63CF;&#x8FF0;&#x771F;&#x5B9E;&#x7684;&#x4E1C;&#x897F;&#xFF08;&#x79F0;&#x4E3A; <code>&#x5BF9;&#x8C61;&#x5C5E;&#x6027;</code>&#xFF09;&#x548C;&#x64CD;&#x4F5C; &#xFF08;&#x79F0;&#x4E3A; <code>&#x65B9;&#x6CD5;</code>).</p><p>&#x6211;&#x4EEC;&#x5C06;&#x5982;&#x4F55;&#x4E3A;&#x535A;&#x5BA2;&#x5E16;&#x5B50;&#x5EFA;&#x7ACB;&#x6A21;&#x578B;&#x5462;&#xFF1F;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#xFF0C;&#x5BF9;&#x5417;&#xFF1F;</p><p>&#x6211;&#x4EEC;&#x9700;&#x8981;&#x56DE;&#x7B54;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#xFF1A;&#x4EC0;&#x4E48;&#x662F;&#x4E00;&#x7BC7;&#x535A;&#x5BA2;&#x6587;&#x7AE0;&#xFF1F;&#x5B83;&#x5E94;&#x8BE5;&#x542B;&#x6709;&#x4EC0;&#x4E48;&#x6837;&#x7684;&#x5C5E;&#x6027;&#xFF1F;</p><p>&#x55EF;&#xFF0C;&#x80AF;&#x5B9A;&#x6211;&#x4EEC;&#x7684;&#x535A;&#x5BA2;&#x6587;&#x7AE0;&#x9700;&#x8981;&#x4E00;&#x4E9B;&#x6587;&#x672C;&#xFF0C;&#x5305;&#x62EC;&#x5185;&#x5BB9;&#x4E0E;&#x6807;&#x9898;&#xFF0C;&#x5BF9;&#x5417;&#xFF1F; &#x6211;&#x4EEC;&#x4E5F;&#x9700;&#x8981;&#x77E5;&#x9053;&#x662F;&#x8C01;&#x5199;&#x7684; &#x2014; &#x2014; &#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4E00;&#x4F4D;&#x4F5C;&#x8005;&#x3002; &#x6700;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x77E5;&#x9053;&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x8BE5;&#x6587;&#x7AE0;&#x521B;&#x5EFA;&#x5E76;&#x53D1;&#x5E03;&#x3002;</p><pre><code>        Post
+        --------
+        title
+        text
+        author
+        created_date
+        published_date</code></pre>
+<p>&#x4E00;&#x7BC7;&#x535A;&#x5BA2;&#x6587;&#x7AE0;&#x9700;&#x8981;&#x505A;&#x4EC0;&#x4E48;&#x6837;&#x7684;&#x4E8B;&#x60C5;&#xFF1F;&#x5E94;&#x8BE5;&#x6709;&#x4E00;&#x4E9B;&#x6B63;&#x786E;&#x7684; <code>&#x65B9;&#x6CD5;</code> &#x6765;&#x53D1;&#x5E03;&#x6587;&#x7AE0;&#xFF0C;&#x5BF9;&#x5417;&#xFF1F;</p><p>&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4E00;&#x4E2A;<code>publish</code>&#x7684;&#x65B9;&#x6CD5;</p><p>&#x65E2;&#x7136;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x77E5;&#x9053;&#x4EC0;&#x4E48;&#x662F;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x5B9E;&#x73B0;&#x7684;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x5F00;&#x59CB;&#x5728;Django&#x91CC;&#x9762;&#x4E3A;&#x5B83;&#x5EFA;&#x6A21;&#xFF01;</p><h2 id="django&#x6A21;&#x578B;">Django&#x6A21;&#x578B;</h2><p>&#x77E5;&#x9053;&#x4EC0;&#x4E48;&#x662F;&#x5BF9;&#x8C61;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4E3A;&#x6211;&#x4EEC;&#x7684;&#x535A;&#x5BA2;&#x6587;&#x7AE0;&#x521B;&#x5EFA;&#x4E00;&#x4E2A; Django &#x6A21;&#x578B;&#x3002;</p><p>Django &#x91CC;&#x7684;&#x6A21;&#x578B;&#x662F;&#x4E00;&#x79CD;&#x7279;&#x6B8A;&#x7684;&#x5BF9;&#x8C61; &#x2014; &#x2014; &#x5B83;&#x4FDD;&#x5B58;&#x5728; <code>&#x6570;&#x636E;&#x5E93;</code> &#x4E2D;&#x3002; &#x6570;&#x636E;&#x5E93;&#x662F;&#x6570;&#x636E;&#x7684;&#x96C6;&#x5408;&#x3002; &#x8FD9;&#x662F;&#x60A8;&#x5B58;&#x50A8;&#x6709;&#x5173;&#x7528;&#x6237;&#x3001; &#x60A8;&#x7684;&#x535A;&#x5BA2;&#x6587;&#x7AE0;&#x7B49;&#x4FE1;&#x606F;&#x7684;&#x5730;&#x65B9;&#x3002; &#x6211;&#x4EEC;&#x5C06;&#x4F7F;&#x7528;SQLite &#x6570;&#x636E;&#x5E93;&#x6765;&#x5B58;&#x50A8;&#x6211;&#x4EEC;&#x7684;&#x6570;&#x636E;&#x3002; &#x8FD9;&#x662F;&#x9ED8;&#x8BA4;&#x7684; Django &#x6570;&#x636E;&#x5E93;&#x9002;&#x914D;&#x5668; &#x2014; &#x2014; &#x5BF9;&#x4E8E;&#x6211;&#x4EEC;&#x73B0;&#x5728;&#x7684;&#x9700;&#x6C42;&#x800C;&#x8A00;&#x5B83;&#x662F;&#x8DB3;&#x591F;&#x7684;&#x3002;</p><p>&#x60A8;&#x53EF;&#x4EE5;&#x5C06;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x6A21;&#x578B;&#x770B;&#x4F5C;&#x662F;&#x7535;&#x5B50;&#x8868;&#x683C;&#x4E2D;&#x7684;&#x5217; &#xFF08;&#x5B57;&#x6BB5;&#xFF09; &#x548C;&#x884C; &#xFF08;&#x6570;&#x636E;&#xFF09;&#x3002;</p><h3 id="&#x521B;&#x5EFA;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;">&#x521B;&#x5EFA;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;</h3><p>&#x4E3A;&#x4E86;&#x8BA9;&#x4E00;&#x5207;&#x4FDD;&#x6301;&#x6574;&#x6D01;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x6211;&#x4EEC;&#x7684;&#x9879;&#x76EE;&#x5185;&#x90E8;&#x521B;&#x5EFA;&#x5355;&#x72EC;&#x7684;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x3002; &#x5982;&#x679C;&#x4E00;&#x5F00;&#x59CB;&#x5C31;&#x8BA9;&#x6BCF;&#x4E00;&#x4EF6;&#x4E1C;&#x897F;&#x4E95;&#x7136;&#x6709;&#x5E8F;&#xFF0C;&#x90A3;&#x5C31;&#x592A;&#x597D;&#x4E86;&#x3002; &#x4E3A;&#x4E86;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x6267;&#x884C;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4; (&#x4ECE;<code>manage.py</code> &#x6587;&#x4EF6;&#x6240;&#x5728;&#x7684;<code>djangogirls</code> &#x76EE;&#x5F55;)&#xFF1A;</p><pre><code>        (myvenv) ~/djangogirls$ python manage.py startapp blog</code></pre>
+<p>&#x4F60;&#x4F1A;&#x6CE8;&#x610F;&#x5230;&#x4E00;&#x4E2A;&#x65B0;&#x7684; <code>blog</code> &#x76EE;&#x5F55;&#x88AB;&#x521B;&#x5EFA;&#xFF0C;&#x5B83;&#x73B0;&#x5728;&#x5305;&#x542B;&#x4E00;&#x4E9B;&#x6587;&#x4EF6;&#x3002;&#x6211;&#x4EEC;&#x7684;&#x76EE;&#x5F55;&#x548C;&#x6211;&#x4EEC;&#x7684;&#x9879;&#x76EE;&#x4E2D;&#x7684;&#x6587;&#x4EF6;&#x73B0;&#x5728;&#x5E94;&#x8BE5;&#x770B;&#x8D77;&#x6765;&#x50CF;&#x8FD9;&#x6837;&#xFF1A;</p><pre><code>        djangogirls
+        &#x251C;&#x2500;&#x2500; mysite
+        |       __init__.py
+        |       settings.py
+        |       urls.py
+        |       wsgi.py
+        &#x251C;&#x2500;&#x2500; manage.py
+        &#x2514;&#x2500;&#x2500; blog
+            &#x251C;&#x2500;&#x2500; migrations
+            |       __init__.py
+            &#x251C;&#x2500;&#x2500; __init__.py
+            &#x251C;&#x2500;&#x2500; admin.py
+            &#x251C;&#x2500;&#x2500; models.py
+            &#x251C;&#x2500;&#x2500; tests.py
+            &#x2514;&#x2500;&#x2500; views.py</code></pre>
+<p>&#x521B;&#x5EFA;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x9700;&#x8981;&#x544A;&#x8BC9; Django &#x5B83;&#x5E94;&#x8BE5;&#x4F7F;&#x7528;&#x5B83;&#x3002; &#x6211;&#x4EEC;&#x662F;&#x5728; <code>mysite/settings.py</code>&#x6587;&#x4EF6;&#x4E2D;&#x8FD9;&#x6837;&#x505A;&#x7684;&#x3002; &#x6211;&#x4EEC;&#x9700;&#x8981;&#x627E;&#x5230; <code>INSTALLED_APPS</code> &#x5E76;&#x5728;&#x5B83;&#x4E0B;&#x9762;&#x6DFB;&#x52A0;&#x4E00;&#x884C;<code>&apos;blog&apos;</code> &#x3002; &#x6240;&#x4EE5;&#x6700;&#x7EC8;&#x7684;&#x4EE3;&#x7801;&#x5E94;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p><pre><code>        INSTALLED_APPS = (
+            &apos;django.contrib.admin&apos;,
+            &apos;django.contrib.auth&apos;,
+            &apos;django.contrib.contenttypes&apos;,
+            &apos;django.contrib.sessions&apos;,
+            &apos;django.contrib.messages&apos;,
+            &apos;django.contrib.staticfiles&apos;,
+            &apos;blog&apos;,
+        )</code></pre>
+<h3 id="&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x6587;&#x7AE0;&#x6A21;&#x578B;">&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x6587;&#x7AE0;&#x6A21;&#x578B;</h3><p>&#x6211;&#x4EEC;&#x5728; <code>blog/models.py</code> &#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x5B9A;&#x4E49;&#x6240;&#x6709;&#x7684; <code>Models</code> &#x5BF9;&#x8C61;&#x2014; &#x2014; &#x6211;&#x4EEC;&#x5C06;&#x5728;&#x5176;&#x4E2D;&#x90FD;&#x5B9A;&#x4E49;&#x6211;&#x4EEC;&#x7684;&#x535A;&#x5BA2;&#x6587;&#x7AE0;&#x3002;</p><p>&#x8BA9;&#x6211;&#x4EEC;&#x6253;&#x5F00; <code>blog/models.py</code>&#xFF0C;&#x4ECE;&#x4E2D;&#x5220;&#x9664;&#x4E00;&#x5207;&#x5E76;&#x7F16;&#x5199;&#x8FD9;&#x6837;&#x7684;&#x4EE3;&#x7801;&#xFF1A;</p><pre><code>        from django.db import models
+        from django.utils import timezone
+
+
+        class Post(models.Model):
+            author = models.ForeignKey(&apos;auth.User&apos;, on_delete=models.CASCADE)
+            title = models.CharField(max_length=200)
+            text = models.TextField()
+            created_date = models.DateTimeField(
+                    default=timezone.now)
+            published_date = models.DateTimeField(
+                    blank=True, null=True)
+
+            def publish(self):
+                self.published_date = timezone.now()
+                self.save()
+
+            def __str__(self):
+                return self.title</code></pre>
+<blockquote><p>&#x5F53;&#x4F60;&#x5728;<code>str</code>&#x7684;&#x4E24;&#x7AEF;&#x4F7F;&#x7528;&#x4E24;&#x4E2A;&#x4E0B;&#x5212;&#x7EBF;&#x5B57;&#x7B26;&#xFF08;<code>_</code>&#xFF09;&#x7684;&#x65F6;&#x5019;&#x52A1;&#x5FC5;&#x4E09;&#x601D;&#x800C;&#x540E;&#x884C;&#x3002; &#x8FD9;&#x662F;Python&#x7F16;&#x7A0B;&#x91CC;&#x9762;&#x7684;&#x4E00;&#x79CD;&#x5E38;&#x89C1;&#x7684;&#x7EA6;&#x5B9A;&#x5199;&#x6CD5;&#xFF0C;&#x6709;&#x65F6;&#x6211;&#x4EEC;&#x4E5F;&#x53EB;&#x8FD9;&#x4E2A;&#x505A;&quot;dunder&quot;(&quot;double-underscore&quot;&#x7684;&#x7F29;&#x5199;)&#x3002;</p></blockquote><p>&#x8FD9;&#x770B;&#x8D77;&#x6765;&#x592A;&#x5413;&#x4EBA;&#x4E86;&#xFF0C;&#x5BF9;&#x5427;&#xFF1F;&#x4E0D;&#x8FC7;&#x4E0D;&#x7528;&#x62C5;&#x5FC3;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x89E3;&#x91CA;&#x8FD9;&#x51E0;&#x884C;&#x662F;&#x4EC0;&#x4E48;&#x610F;&#x601D;&#xFF01;</p><p>&#x6240;&#x6709;&#x4EE5; <code>from</code> &#x6216; <code>import</code> &#x5F00;&#x59CB;&#x7684;&#x6240;&#x6709;&#x884C;&#xFF0C;&#x90FD;&#x662F;&#x9700;&#x8981;&#x4ECE;&#x5176;&#x4ED6;&#x6587;&#x4EF6;&#x4E2D;&#x6DFB;&#x52A0;&#x4E00;&#x4E9B;&#x5185;&#x5BB9;&#x3002; &#x6240;&#x4EE5;&#x4E0E;&#x5176;&#x590D;&#x5236;&#x548C;&#x7C98;&#x8D34;&#x540C;&#x6837;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7528; <code>from...... import......</code>&#x6765;&#x5BFC;&#x5165;&#x8FD9;&#x4E9B;&#x6587;&#x4EF6;.</p><p><code>class Post(models.Model):</code> - &#x8FD9;&#x884C;&#x662F;&#x7528;&#x6765;&#x5B9A;&#x4E49;&#x6211;&#x4EEC;&#x7684;&#x6A21;&#x578B; (&#x8FD9;&#x662F;&#x4E00;&#x4E2A; <code>&#x5BF9;&#x8C61;</code>).</p><ul><li><code>class</code> &#x662F;&#x4E00;&#x4E2A;&#x7279;&#x6B8A;&#x7684;&#x5173;&#x952E;&#x5B57;&#xFF0C;&#x8868;&#x660E;&#x6211;&#x4EEC;&#x5728;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x3002;
+</li>
+<li><code>Post</code>&#x662F;&#x6211;&#x4EEC;&#x6A21;&#x578B;&#x7684;&#x4E00;&#x4E2A;&#x540D;&#x5B57;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7ED9;&#x5B83;&#x53D6;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x540D;&#x5B57;(&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x907F;&#x514D;&#x4F7F;&#x7528;&#x7279;&#x6B8A;&#x5B57;&#x7B26;&#x6216;&#x8005;&#x7A7A;&#x683C;&#x7B26;)&#x3002;&#x603B;&#x662F;&#x4EE5;&#x9996;&#x5B57;&#x6BCD;&#x5927;&#x5199;&#x6765;&#x4F5C;&#x4E3A;&#x7C7B;&#x540D;&#x3002;
+</li>
+<li><code>models.Model</code> &#x8868;&#x660E;Post&#x662F;&#x4E00;&#x4E2A;Django&#x6A21;&#x578B;&#xFF0C;&#x6240;&#x4EE5;Django&#x77E5;&#x9053;&#x5B83;&#x5E94;&#x8BE5;&#x88AB;&#x4FDD;&#x5B58;&#x5728;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x3002;
+</li></ul>
+<p>&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x5B9A;&#x4E49;&#x4E86;&#x6211;&#x4EEC;&#x66FE;&#x7ECF;&#x63D0;&#x53CA;&#x5230;&#x7684;&#x90A3;&#x4E9B;&#x5C5E;&#x6027;&#xFF1A;<code>title</code>, <code>text</code>, <code>created_date</code>, <code>published_date</code>&#x548C;<code>author</code>&#x3002; &#x4E3A;&#x4E86;&#x505A;&#x5230;&#x90A3;&#x6837;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4E3A;&#x6211;&#x4EEC;&#x6BCF;&#x4E2A;&#x5B57;&#x6BB5;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x7C7B;&#x578B;(&#x5B83;&#x662F;&#x6587;&#x672C;&#x5417;&#xFF1F; &#x662F;&#x6570;&#x5B57;&#xFF1F; &#x662F;&#x65E5;&#x671F;&#xFF1F; &#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x5173;&#x8054;&#xFF0C;&#x6BD4;&#x5982;&#x7528;&#x6237;&#x5417;?&#xFF09;&#x3002;</p><ul><li><code>models.CharField</code> - &#x8FD9;&#x662F;&#x4F60;&#x5982;&#x4F55;&#x7528;&#x4E3A;&#x6570;&#x6709;&#x9650;&#x7684;&#x5B57;&#x7B26;&#x6765;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x6587;&#x672C;&#x3002;
+</li>
+<li><code>models.TextField</code> - &#x8FD9;&#x662F;&#x6CA1;&#x6709;&#x957F;&#x5EA6;&#x9650;&#x5236;&#x7684;&#x957F;&#x6587;&#x672C;&#x3002;&#x8FD9;&#x542C;&#x8D77;&#x6765;&#x7528;&#x5728;&#x535A;&#x5BA2;&#x6587;&#x7AE0;&#x7684;&#x5185;&#x5BB9;&#x4E0A;&#x633A;&#x9002;&#x5408;&#x7684;&#xFF0C;&#x5BF9;&#x5427;&#xFF1F;
+</li>
+<li><code>models.DateTimeField</code> - &#x8FD9;&#x662F;&#x65E5;&#x671F;&#x548C;&#x65F6;&#x95F4;&#x3002;
+</li>
+<li><code>models.ForeignKey</code> - &#x8FD9;&#x662F;&#x6307;&#x5411;&#x53E6;&#x4E00;&#x4E2A;&#x6A21;&#x578B;&#x7684;&#x8FDE;&#x63A5;&#x3002;
+</li></ul>
+<p>&#x6211;&#x4EEC;&#x4E0D;&#x4F1A;&#x5BF9;&#x8FD9;&#x91CC;&#x7684;&#x4EE3;&#x7801;&#x89E3;&#x91CA;&#x5F97;&#x9762;&#x9762;&#x4FF1;&#x5230;&#x56E0;&#x4E3A;&#x90A3;&#x4F1A;&#x82B1;&#x592A;&#x591A;&#x65F6;&#x95F4;&#x4E86;&#x3002; &#x5982;&#x679C;&#x4F60;&#x60F3;&#x4E86;&#x89E3;&#x66F4;&#x591A;&#x6709;&#x5173;&#x6A21;&#x578B;&#x5B57;&#x6BB5;&#x4EE5;&#x53CA;&#x5982;&#x4F55;&#x5B9A;&#x4E49;&#x9664;&#x4E0A;&#x9762;&#x63CF;&#x8FF0;&#x4EE5;&#x5916;&#x7684;&#x4E1C;&#x897F;&#xFF0C;&#x90A3;&#x4F60;&#x5E94;&#x8BE5;&#x53BB;&#x770B;&#x770B;Django&#x7684;&#x5B98;&#x65B9;&#x6587;&#x6863;(<a href="https://docs.djangoproject.com/en/1.8/ref/models/fields/#field-types" target="_blank">https://docs.djangoproject.com/en/1.8/ref/models/fields/#field-types)&#x3002;</a>&#x3002;)</p><p><code>def publish(self):</code>&#x53C8;&#x600E;&#x6837;&#x5462;? &#x8FD9;&#x6B63;&#x662F;&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x63D0;&#x53CA;&#x5230;&#x7684;<code>publish</code>&#x65B9;&#x6CD5;&#x3002; <code>def</code>&#x8868;&#x660E;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x6216;&#x8005;&#x65B9;&#x6CD5;&#xFF0C;<code>publish</code>&#x662F;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x7684;&#x540D;&#x5B57;&#x3002; &#x5982;&#x679C;&#x4F60;&#x559C;&#x6B22;&#x7684;&#x8BDD;&#x4F60;&#x53EF;&#x4EE5;&#x6539;&#x53D8;&#x65B9;&#x6CD5;&#x540D;&#x3002; &#x547D;&#x540D;&#x7684;&#x89C4;&#x5219;&#x662F;&#x4F7F;&#x7528;&#x5C0F;&#x5199;&#x5B57;&#x6BCD;&#x4EE5;&#x53CA;&#x4E0B;&#x5212;&#x7EBF;&#x800C;&#x975E;&#x7A7A;&#x767D;&#x7B26;&#x3002; &#x4E3E;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C;&#x4E00;&#x4E2A;&#x8BA1;&#x7B97;&#x5E73;&#x5747;&#x4EF7;&#x683C;&#x7684;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x53EB;&#x505A;<code>calculate_average_price</code>.</p><p>&#x65B9;&#x6CD5;&#x901A;&#x5E38;&#x4F1A;<code>return</code>&#x4E00;&#x4E9B;&#x4E1C;&#x897F;&#x3002; &#x4F8B;&#x5982;&#x5728; <code>__str__</code> &#x65B9;&#x6CD5;&#x4E2D;&#x5C31;&#x6709;&#x8FD9;&#x4E2A;&#x3002; &#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5F53;&#x6211;&#x4EEC;&#x8C03;&#x7528; <code>__str__()</code> &#x6211;&#x4EEC;&#x5C06;&#x5F97;&#x5230;&#x6587;&#x7AE0;&#x6807;&#x9898;&#x7684;&#x6587;&#x672C; &#xFF08;<strong>&#x5B57;&#x7B26;&#x4E32;</strong>&#xFF09;&#x3002;</p><p>&#x5982;&#x679C;&#x5173;&#x4E8E;&#x6A21;&#x578B;&#x5C1A;&#x6709;&#x4E0D;&#x6E05;&#x695A;&#x7684;&#xFF0C;&#x8BF7;&#x968F;&#x65F6;&#x95EE;&#x4F60;&#x7684;&#x6559;&#x7EC3; &#xFF01; &#x6211;&#x4EEC;&#x77E5;&#x9053;&#x5B83;&#x5F88;&#x590D;&#x6742;&#xFF0C;&#x7279;&#x522B;&#x662F;&#x5F53;&#x4F60;&#x540C;&#x65F6;&#x5B66;&#x4E60;&#x5BF9;&#x8C61;&#x548C;&#x51FD;&#x6570;&#x7684;&#x65F6;&#x5019;&#x3002; &#x4F46;&#x5E0C;&#x671B;&#x5B83;&#x5728;&#x4F60;&#x770B;&#x6765;&#x6CA1;&#x6709;&#x90A3;&#x4E48;&#x795E;&#x5947;&#xFF01;</p><h3 id="&#x5728;&#x4F60;&#x7684;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x4E3A;&#x6A21;&#x578B;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;">&#x5728;&#x4F60;&#x7684;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x4E3A;&#x6A21;&#x578B;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;</h3><p>&#x5728;&#x8FD9;&#x91CC;&#x7684;&#x6700;&#x540E;&#x4E00;&#x6B65;&#x662F;&#x5C06;&#x6211;&#x4EEC;&#x65B0;&#x7684;&#x6A21;&#x578B;&#x6DFB;&#x52A0;&#x5230;&#x6211;&#x4EEC;&#x7684;&#x6570;&#x636E;&#x5E93;&#x3002; &#x9996;&#x5148;&#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x8BA9;Django&#x77E5;&#x9053;&#x6211;&#x4EEC;&#x5728;&#x6211;&#x4EEC;&#x7684;&#x6A21;&#x578B;(&#x6211;&#x4EEC;&#x521A;&#x521A;&#x521B;&#x5EFA;&#x7684;&#xFF01;) &#x6709;&#x4E00;&#x4E9B;&#x53D8;&#x66F4;&#x3002; &#x8F93;&#x5165;<code>python manage.py makemigrations blog</code>&#x3002; &#x5B83;&#x770B;&#x8D77;&#x6765;&#x4F1A;&#x50CF;&#x8FD9;&#x6837;&#xFF1A;</p><pre><code>        (myvenv) ~/djangogirls$ python manage.py makemigrations blog
+        Migrations for &apos;blog&apos;:
+          0001_initial.py:
+          - Create model Post</code></pre>
+<p>Django&#x4E3A;&#x6211;&#x4EEC;&#x51C6;&#x5907;&#x4E86;&#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x5E94;&#x7528;&#x5230;&#x6211;&#x4EEC;&#x6570;&#x636E;&#x5E93;&#x7684;&#x8FC1;&#x79FB;&#x6587;&#x4EF6;&#x3002;&#x8F93;&#x5165;<code>python manage.py migrate blog</code>&#xFF0C;&#x7136;&#x540E;&#x5BF9;&#x5E94;&#x7684;&#x8F93;&#x51FA;&#x5E94;&#x8BE5;&#x662F;:</p><pre><code>        (myvenv) ~/djangogirls$ python manage.py migrate blog
+        Operations to perform:
+          Apply all migrations: blog
+        Running migrations:
+          Rendering model states... DONE
+          Applying blog.0001_initial... OK</code></pre>
+<p>&#x4E07;&#x5C81;! &#x6211;&#x4EEC;&#x7684;Post&#x6A21;&#x578B;&#x73B0;&#x5728;&#x5DF2;&#x7ECF;&#x5728;&#x6211;&#x4EEC;&#x7684;&#x6570;&#x636E;&#x5E93;&#x91CC;&#x9762;&#x4E86;! &#x5B83;&#x770B;&#x8D77;&#x6765;&#x5F88;&#x4E0D;&#x9519;, &#x5BF9;&#x5427;? &#x8DF3;&#x8F6C;&#x5230;&#x4E0B;&#x4E00;&#x4E2A;&#x7AE0;&#x8282;&#xFF0C;&#x770B;&#x770B;&#x4F60;&#x535A;&#x5BA2;&#x6587;&#x7AE0;&#x7684;&#x6837;&#x5B50;&#xFF01;</p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../django_start_project/" class="navigation navigation-prev " aria-label="Previous page: 你的第一个Django 项目 ！">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../django_admin/" class="navigation navigation-next " aria-label="Next page: Django管理">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Django模型","level":"1.11","depth":1,"next":{"title":"Django管理","level":"1.12","depth":1,"path":"django_admin/README.md","ref":"django_admin/README.md","articles":[]},"previous":{"title":"你的第一个Django 项目 ！","level":"1.10","depth":1,"path":"django_start_project/README.md","ref":"django_start_project/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"django_version":"2.2.4"},"language":"zh","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"django_models/README.md","mtime":"2020-06-27T13:00:24.206Z","type":"markdown"},"gitbook":{"version":"3.4.0","time":"2020-06-27T13:00:41.274Z"},"basePath":"..","book":{"language":"zh"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

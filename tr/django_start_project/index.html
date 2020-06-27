@@ -1,0 +1,664 @@
+
+<!DOCTYPE HTML>
+<html lang="tr" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>İlk Django projen! · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.4.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../django_models/" />
+    
+    
+    <link rel="prev" href="../django_installation/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Aramak istediğiniz" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Giriş
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Kurulum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    Kurulum (chromebook)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    İnternet nasıl çalışır
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Komut satırına giriş
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Python kurulumu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    Kod editörü
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Python'a giriş
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Django nedir?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Django kurulumu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    İlk Django projen!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Django modelleri
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Yayına alın!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django url'leri
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django views - yaratma zamanı geldi!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    HTML'ye giriş
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM ve QuerySets (Sorgu Setleri)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    Template içinde dinamik veri
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django templateleri
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - Güzelleştirin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Template genişletmek
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Uygulamanı genişlet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Django Formları
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    Sırada ne var?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKit ile yayınla
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >İlk Django projen!</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="i&#x307;lk-django-projen">&#x130;lk Django projen!</h1><blockquote><p>Bu b&#xF6;l&#xFC;m&#xFC;n bir k&#x131;sm&#x131; Geek Girls Carrots taraf&#x131;ndan haz&#x131;rlanm&#x131;&#x15F; e&#x11F;itimlere dayan&#x131;larak haz&#x131;rlanm&#x131;&#x15F;t&#x131;r (<a href="https://github.com/ggcarrots/django-carrots" target="_blank">https://github.com/ggcarrots/django-carrots</a>).</p><p>Bu b&#xF6;l&#xFC;m&#xFC;n <a href="http://django-marcador.keimlink.de/" target="_blank">django-marcador tutorial</a>&apos;a dayanan baz&#x131; k&#x131;s&#x131;mlar&#x131; Creative Commons Attribution-ShareAlike International License alt&#x131;nda lisanslanm&#x131;&#x15F;t&#x131;r. Django-marcador tutorial&apos;&#x131;n&#x131;n haklar&#x131; Markus Zapke-Gr&#xFC;ndemann&apos;e aittir.</p></blockquote><p>K&#xFC;&#xE7;&#xFC;k bir blog olu&#x15F;turaca&#x11F;&#x131;z!</p><p>&#x130;lk ad&#x131;m yeni bir Django projesi ba&#x15F;latmakt&#x131;r. Asl&#x131;nda, bizim i&#xE7;in bir Django projesinin iskeletini yaratacak Django taraf&#x131;ndan sa&#x11F;lanan baz&#x131; komut dosyalar&#x131; &#xE7;al&#x131;&#x15F;t&#x131;raca&#x11F;&#x131;z. Bu sadece daha sonra kullanaca&#x11F;&#x131;m&#x131;z dosyalar ve dizinler grubudur.</p><p>Baz&#x131; dosya ve dizinlerin isimleri Django i&#xE7;in &#xE7;ok &#xF6;nemlidir. Olu&#x15F;turmak &#xFC;zere oldu&#x11F;umuz dosyalar&#x131; yeniden adland&#x131;rmamal&#x131;s&#x131;n&#x131;z. Onlar&#x131; ba&#x15F;ka bir yere ta&#x15F;&#x131;mak da iyi bir fikir de&#x11F;il. Django&apos;nun &#xF6;nemli &#x15F;eyleri bulabilmesi i&#xE7;in belirli yap&#x131;s&#x131;n&#x131; korumas&#x131; gerekir.</p><blockquote><p>virtualenv i&#xE7;indeki her &#x15F;eyi &#xE7;al&#x131;&#x15F;t&#x131;rmay&#x131; unutmay&#x131;n. E&#x11F;er konsolunuzda <code>(myenv)</code> &#xF6;neki g&#xF6;rm&#xFC;yorsan&#x131;z, virtualenv&apos;inizi aktive etmeniz gerekir. <strong>Django y&#xFC;kleme</strong> b&#xF6;l&#xFC;m&#xFC;n&#xFC;n <strong>Virtualenv ile &#xE7;al&#x131;&#x15F;ma</strong> k&#x131;sm&#x131;nda nas&#x131;l yap&#x131;laca&#x11F;&#x131;n&#x131; a&#xE7;&#x131;klad&#x131;k. Windows&apos;ta <code>myvenv\Scripts\activate</code> ya da, Mac OS ya da Linux&apos;ta <code>source myvenv/bin/activate</code> yazmak bunu sizin i&#xE7;in yapacakt&#x131;r.</p></blockquote><sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Create project: OS X or Linux<a class="pull-right section atTitle btn btn-default" target="django_start_project_OSX_Linux"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="django_start_project_OSX_Linux"><div class="panel-body">
+
+
+<p>MacOS veya Linux konsolunuzda a&#x15F;a&#x11F;&#x131;daki komutu &#xE7;al&#x131;&#x15F;t&#x131;rmal&#x131;s&#x131;n&#x131;z; <strong>sonuna nokta <code>(.)</code> koymay&#x131; unutmay&#x131;n</strong></p><p></p><p class="code-label">komut-sat&#x131;r&#x131;</p><p></p><pre><code>        (myvenv) ~/djangogirls$ django-admin startproject mysite .</code></pre>
+<blockquote><p>Nokta <code>.</code> bu durumda &#xE7;ok &#xF6;nemlidir &#xE7;&#xFC;nk&#xFC;; koda, Django&apos;yu &#x15F;u an bulundu&#x11F;unuz dizine kurmas&#x131;n&#x131; s&#xF6;yler. (nokta <code>.</code> &#x15F;u anki dizine bir k&#x131;sayoldur).</p><p><strong>Not</strong> Yukar&#x131;daki komutu yazarken, sadece <code>django-admin</code> ile ba&#x15F;layan k&#x131;sm&#x131; yazman&#x131;z gerekti&#x11F;ini unutmay&#x131;n. Burada g&#xF6;sterilen <code>(myvenv) ~/djangogirls$</code> k&#x131;sm&#x131;, sadece komut sat&#x131;r&#x131;nda girdinizi davet eden komut istemi &#xF6;rne&#x11F;idir.</p></blockquote></div></div></div></sec>
+
+
+<sec data-title="Create project: Windows" data-id="django_start_project_windows" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Create project: Windows<a class="pull-right section atTitle btn btn-default" target="django_start_project_windows"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="django_start_project_windows"><div class="panel-body">
+
+
+<p>Windows&apos;ta a&#x15F;a&#x11F;&#x131;daki komutu &#xE7;al&#x131;&#x15F;t&#x131;rmal&#x131;s&#x131;n&#x131;z. <strong>(Sonuna nokta <code>.</code> koymay&#x131; unutmay&#x131;n)</strong>:</p><p></p><p class="code-label">komut-sat&#x131;r&#x131;</p><p></p><pre><code>        (myvenv) C:\Users\Name\djangogirls&gt; django-admin.exe startproject mysite .</code></pre>
+<blockquote><p>Nokta <code>.</code> bu durumda &#xE7;ok &#xF6;nemlidir &#xE7;&#xFC;nk&#xFC;; koda, Django&apos;yu &#x15F;u an bulundu&#x11F;unuz dizine kurmas&#x131;n&#x131; s&#xF6;yler. (nokta <code>.</code> &#x15F;u anki dizine bir k&#x131;sayoldur).</p><p><strong>Not</strong> Yukar&#x131;daki komutu yazarken, sadece <code>django-admin.exe</code> ile ba&#x15F;layan b&#xF6;l&#xFC;m&#xFC; yazman&#x131;z gerekti&#x11F;ini unutmay&#x131;n. Burada g&#xF6;sterilmi&#x15F; olan <code>(myvenv) C:\Users\Name\djangogirls&gt;</code> k&#x131;sm&#x131; komut sat&#x131;r&#x131;na girdi&#x11F;iniz davet edecek olan komut istemi &#xF6;rne&#x11F;idir.</p></blockquote></div></div></div></sec>
+
+
+<p><code>django-admin.py</code> sizin i&#xE7;in dosya ve dizinler olu&#x15F;turacak bir komut dosyas&#x131;d&#x131;r. &#x15E;imdi a&#x15F;a&#x11F;&#x131;daki gibi g&#xF6;r&#xFC;nen bir dizin yap&#x131;n&#x131;z olmal&#x131;:</p><pre><code>        djangogirls
+        &#x251C;&#x2500;&#x2500;&#x2500;manage.py
+        &#x251C;&#x2500;&#x2500;&#x2500;mysite
+        &#x2502;        settings.py
+        &#x2502;        urls.py
+        &#x2502;        wsgi.py
+        &#x2502;        __init__.py
+        &#x2514;&#x2500;&#x2500;&#x2500;requirements.txt</code></pre>
+<blockquote><p><strong>Not</strong>: Dizin yap&#x131;n&#x131;zda, daha &#xF6;nceden olu&#x15F;turdu&#x11F;umuz <code>venv</code> dizinini de g&#xF6;receksiniz.</p></blockquote><p><code>manage.py</code> site y&#xF6;netimine yard&#x131;mc&#x131; olan bir komut dosyas&#x131;d&#x131;r. Bu dosya sayesinde, ba&#x15F;ka herhangi bir &#x15F;ey kurmadan bilgisayar&#x131;m&#x131;zda bir web sunucusunu ba&#x15F;latabilece&#x11F;iz.</p><p><code>settings.py</code> dosyas&#x131;, web sitesinizin ayarlar&#x131;n&#x131; i&#xE7;erir.</p><p>Bir mektubu nereye g&#xF6;t&#xFC;rece&#x11F;ini kontrol eden postac&#x131;n&#x131;n hakk&#x131;nda konu&#x15F;tu&#x11F;umuzu hat&#x131;rl&#x131;yor musun? <code>urls.py</code> dosyas&#x131; <code>urlresolver</code>(url&#xE7;&#xF6;z&#xFC;mleyici) taraf&#x131;ndan kullan&#x131;lan kal&#x131;plar&#x131;n bir listesini i&#xE7;erir.</p><p>&#x15E;u an i&#xE7;in de&#x11F;i&#x15F;iklik yapmayaca&#x11F;&#x131;m&#x131;z di&#x11F;er dosyalar&#x131; yoksayal&#x131;m. Unutmaman&#x131;z gereken tek &#x15F;ey kazayla onlar&#x131; silmeyin!</p><h2 id="ayarlar&#x131;-de&#x11F;i&#x15F;tirme">Ayarlar&#x131; de&#x11F;i&#x15F;tirme</h2><p>Hadi <code>mysite/settings.py</code> dosyas&#x131;nda baz&#x131; de&#x11F;i&#x15F;iklikler yapal&#x131;m. Daha &#xF6;nceden kurdu&#x11F;unuz kod d&#xFC;zenleyicinizi (edit&#xF6;r) kullanarak dosyay&#x131; a&#xE7;&#x131;n.</p><p><strong>Not</strong>: <code>settings.py</code> dosyas&#x131;n&#x131;n da di&#x11F;erleri gibi normal bir dosya oldu&#x11F;unu akl&#x131;n&#x131;zda tutun. Bunu kod d&#xFC;zenleyicisi i&#xE7;erisinde &quot;dosya -&gt; a&#xE7;&quot; men&#xFC; eylemini kullanarak a&#xE7;abilirsiniz. Bu, size <code>settings.py</code> dosyan&#x131;za gidebilece&#x11F;iniz ve bu dosyay&#x131; se&#xE7;ebilece&#x11F;iniz her zamanki klasik pencereyi a&#xE7;acakt&#x131;r. Alternatif olarak, bu dosyay&#x131; masa&#xFC;st&#xFC;n&#xFC;zdeki djangogirls klas&#xF6;r&#xFC;ne gidip sa&#x11F; t&#x131;klayarak a&#xE7;abilirsiniz. Sonra, listeden kod d&#xFC;zenleyicinizi se&#xE7;in. Dosyay&#x131; a&#xE7;abilen ancak d&#xFC;zenlemenize izin vermeyecek di&#x11F;er programlar&#x131;n y&#xFC;kl&#xFC; olmas&#x131; ihtimaline kar&#x15F;&#x131;n kod d&#xFC;zenleyicinin se&#xE7;ilmesi &#xF6;nem arz etmektedir.</p><p>Web sitemizin do&#x11F;ru bir saate sahip olmas&#x131; g&#xFC;zel olurdu. <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" target="_blank">Wikipedia&apos;n&#x131;n zaman dilimleri listesine</a> gidin ve ilgili saat dilimini kopyalay&#x131;n (ZD) (&#xD6;r. <code>Europe/Berlin</code>).</p><p><code>settings.py</code> dosyas&#x131;nda <code>TIME_ZONE</code> ifadesini i&#xE7;eren sat&#x131;r&#x131; bulun ve kendi se&#xE7;ti&#x11F;iniz zaman dilimine g&#xF6;re uyarlay&#x131;n:</p><p></p><p class="code-label">mysite/settings.py</p><p></p><pre><code class="lang-python">TIME_ZONE = <span class="hljs-string">&apos;Europe/Istanbul&apos;</span></code></pre>
+<p>Bir dil kodu, dil (&#xF6;r. &#x130;ngilizce i&#xE7;in <code>en</code> veya Almanca i&#xE7;in <code>de</code>) ve &#xFC;lke kodundan (&#xF6;r. Almanya i&#xE7;in <code>de</code> veya &#x130;svi&#xE7;re i&#xE7;in <code>ch</code>) olu&#x15F;maktad&#x131;r. E&#x11F;er &#x130;ngilizce ana diliniz de&#x11F;ilse, varsay&#x131;lan butonlar&#x131; ve Django uyar&#x131;lar&#x131;n&#x131;n dilini kendi dilinize de&#x11F;i&#x15F;tirmek i&#xE7;in bunu ekleyebilirsiniz. B&#xF6;ylece &quot;&#x130;ptal&quot; butonu burada tan&#x131;mlad&#x131;&#x11F;&#x131;n&#x131;z dile &#xE7;evrilmi&#x15F; olacakt&#x131;r. <a href="https://docs.djangoproject.com/en/2.0/ref/settings/#language-code" target="_blank">Django bir&#xE7;ok &#xE7;eviri ile birlikte gelmektedir</a>.</p><p>Farkl&#x131; bir dil istiyorsan&#x131;z, a&#x15F;a&#x11F;&#x131;daki sat&#x131;r&#x131; de&#x11F;i&#x15F;tirerek dil kodunu se&#xE7;in:</p><p></p><p class="code-label">mysite/settings.py</p><p></p><pre><code class="lang-python">LANGUAGE_CODE = <span class="hljs-string">&apos;de-ch&apos;</span></code></pre>
+<p>Ayr&#x131;ca statik dosyalar i&#xE7;in bir yol eklememiz gerekmektedir. (E&#x11F;itici ders i&#xE7;erisinde statik dosyalar ve CSS hakk&#x131;nda ayr&#x131;nt&#x131;l&#x131; bilgi bulabilirsiniz.) Dosyan&#x131;n <em>son</em>&apos;una gidin, hemen alt&#x131;nda sadece <code>STATIC_URL</code> giri&#x15F;i yap&#x131;n, <code>STATIC_ROOT</code> ad&#x131;nda yeni birim ekleyin:</p><p></p><p class="code-label">mysite/settings.py</p><p></p><pre><code class="lang-python">STATIC_URL = <span class="hljs-string">&apos;/static/&apos;</span>
+STATIC_ROOT = os.path.join(BASE_DIR, <span class="hljs-string">&apos;static&apos;</span>)</code></pre>
+<p><code>DEBUG(Hata Ay&#x131;klama)</code> <code>True(Do&#x11F;ru)</code> ve <code>ALLOWED_HOSTS</code> bo&#x15F; oldu&#x11F;u zaman ana bilgisayar <code>[&apos;localhost&apos;, &apos;127.0.0.1&apos;, &apos;[::1]&apos;]</code>&apos;a kar&#x15F;&#x131; do&#x11F;rulan&#x131;r. Bu, uygulamam&#x131;z&#x131; da&#x11F;&#x131;tt&#x131;ktan sonra, PythonAnywhere&apos;deki anamakine ad&#x131;yla e&#x15F;le&#x15F;meyecek bu y&#xFC;zden a&#x15F;a&#x11F;&#x131;daki ayarlar&#x131; de&#x11F;i&#x15F;tirece&#x11F;iz:</p><p></p><p class="code-label">mysite/settings.py</p><p></p><pre><code class="lang-python">ALLOWED_HOSTS = [<span class="hljs-string">&apos;127.0.0.1&apos;</span>, <span class="hljs-string">&apos;.pythonanywhere.com&apos;</span>]</code></pre>
+<blockquote><p><strong>Not</strong>: E&#x11F;er Chromebook kullan&#x131;yorsan&#x131;z bu sat&#x131;r&#x131; settings.py dosyan&#x131;z&#x131;n en alt&#x131;na ekleyiniz: <code>MESSAGE_STORAGE = &apos;django.contrib.messages.storage.session.SessionStorage&apos;</code></p><p>Ayr&#x131;ca e&#x11F;er cloud9 kullan&#x131;yorsan&#x131;z <code>ALLOWED_HOSTS</code>&apos;a <code>.c9users.io</code> &apos;i ekleyin</p></blockquote><h2 id="bir-veritaban&#x131;-kur">Bir veritaban&#x131; kur</h2><p>Web uygulamalar&#x131;n&#x131;z i&#xE7;in farkl&#x131; bir&#xE7;ok veritaban&#x131; yaz&#x131;l&#x131;m&#x131; vard&#x131;r. Biz varsay&#x131;lan&#x131; kullanaca&#x11F;&#x131;z, <code>sqlite3</code>.</p><p>Sqlite varsay&#x131;lan oldu&#x11F;u i&#xE7;in zaten <code>mysite/settings.py</code> dosyam&#x131;zda kurulu:</p><p></p><p class="code-label">mysite/settings.py</p><p></p><pre><code class="lang-python">DATABASES = {
+    <span class="hljs-string">&apos;default&apos;</span>: {
+        <span class="hljs-string">&apos;ENGINE&apos;</span>: <span class="hljs-string">&apos;django.db.backends.sqlite3&apos;</span>,
+        <span class="hljs-string">&apos;NAME&apos;</span>: os.path.join(BASE_DIR, <span class="hljs-string">&apos;db.sqlite3&apos;</span>),
+    }
+}</code></pre>
+<p>Blogumuzun veritaban&#x131;n&#x131; olu&#x15F;turmak i&#xE7;in konsolda &#x15F;u komutu &#xE7;al&#x131;&#x15F;t&#x131;r&#x131;n: <code>python manage.py migrate</code> (<code>manage.py</code> dosyas&#x131;n&#x131; i&#xE7;eren <code>djangogirls</code> klas&#xF6;r&#xFC;nde olmal&#x131;y&#x131;z). &#x130;&#x15F;ler iyi giderse &#x15F;&#xF6;yle bir &#x15F;ey g&#xF6;rmelisiniz:</p><p></p><p class="code-label">komut-sat&#x131;r&#x131;</p><p></p><pre><code>        (myvenv) ~/djangogirls$ python manage.py migrate
+        Operations to perform:
+          Apply all migrations: auth, admin, contenttypes, sessions
+        Running migrations:
+          Rendering model states... DONE
+          Applying contenttypes.0001_initial... OK
+          Applying auth.0001_initial... OK
+          Applying admin.0001_initial... OK
+          Applying admin.0002_logentry_remove_auto_add... OK
+          Applying contenttypes.0002_remove_content_type_name... OK
+          Applying auth.0002_alter_permission_name_max_length... OK
+          Applying auth.0003_alter_user_email_max_length... OK
+          Applying auth.0004_alter_user_username_opts... OK
+          Applying auth.0005_alter_user_last_login_null... OK
+          Applying auth.0006_require_contenttypes_0002... OK
+          Applying auth.0007_alter_validators_add_error_messages... OK
+          Applying sessions.0001_initial... OK</code></pre>
+<p>Hepsi bu kadar! Web sunucusunu (web server) &#xE7;al&#x131;&#x15F;t&#x131;rma ve websitemizin &#xE7;al&#x131;&#x15F;t&#x131;&#x11F;&#x131;n&#x131; g&#xF6;rme zaman&#x131;!</p><h2 id="web-sunucusunu-ba&#x15F;latmak">Web sunucusunu ba&#x15F;latmak</h2><p><code>manage.py</code> dosyas&#x131;n&#x131;n bulundu&#x11F;u dizinde olmal&#x131;y&#x131;z (<code>djangogirls</code> klas&#xF6;r&#xFC;). Konsol &#xFC;zerinden <code>python manage.py runserver</code> komutunu &#xE7;al&#x131;&#x15F;t&#x131;rarak web sunucusunu ba&#x15F;latabilirsiniz:</p><p></p><p class="code-label">komut-sat&#x131;r&#x131;</p><p></p><pre><code>        (myvenv) ~/djangogirls$ python manage.py runserver</code></pre>
+<p>E&#x11F;er Chromebook &#xFC;zerindeyseniz, bunun yerine &#x15F;u komutu kullan&#x131;n:</p><p></p><p class="code-label">Cloud 9</p><p></p><pre><code>        (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080</code></pre>
+<p>E&#x11F;er Windows&apos;taysan&#x131;z ve <code>UnicodeDecodeError</code> hatas&#x131; varsa, bu komutu kullan&#x131;n:</p><p></p><p class="code-label">komut-sat&#x131;r&#x131;</p><p></p><pre><code>        (myvenv) ~/djangogirls$ python manage.py runserver 0:8000</code></pre>
+<p>&#x15E;imdi tek yapman&#x131;z gereken sitenizin &#xE7;al&#x131;&#x15F;&#x131;p &#xE7;al&#x131;&#x15F;mad&#x131;&#x11F;&#x131;na bakmak. Taray&#x131;c&#x131;n&#x131;z&#x131; a&#xE7;&#x131;n (Firefox, Chrome, Safari, Internet Explorer veya ne tercih ediyorsan&#x131;z) ve bu adresi girin:</p><p></p><p class="code-label">taray&#x131;c&#x131;</p><p></p><pre><code>        http://127.0.0.1:8000/</code></pre>
+<p>E&#x11F;er Chromebook kullan&#x131;yorsan&#x131;z, her seferinde test sunucusunu ziyaret edeceksiniz ve eri&#x15F;eceksiniz:</p><p></p><p class="code-label">taray&#x131;c&#x131;</p><p></p><pre><code>        https://django-girls-&lt;your cloud9 username&gt;.c9users.io</code></pre>
+<p>Tebrikler! ilk web siteni olu&#x15F;turdun ve web sunucusu kullanarak &#xE7;al&#x131;&#x15F;t&#x131;rd&#x131;n! Harika, de&#x11F;il mi?</p><p><img alt="Kurulum basarili!" src="images/install_worked.png"></p><p>Web sunucusu &#xE7;al&#x131;&#x15F;&#x131;rken ek komutlar girmek i&#xE7;in yeni bir komut sat&#x131;r&#x131; istemi g&#xF6;remezsiniz. Terminal yeni metin kabul edecek ama yeni komutlar&#x131; &#xE7;al&#x131;&#x15F;t&#x131;rmayacakt&#x131;r. Bunun nedeni web sunucusunun duraklamadan gelen talepleri alg&#x131;lamas&#x131;d&#x131;r.</p><blockquote><p>Web sunucular&#x131; nas&#x131;l &#xE7;al&#x131;&#x15F;&#x131;r <strong>How the Internet works (&#x130;nternet Nas&#x131;l &#xC7;al&#x131;&#x15F;&#x131;r)</strong> b&#xF6;l&#xFC;m&#xFC;nde g&#xF6;rm&#xFC;&#x15F;t&#xFC;k.</p></blockquote><p>Web sunucusu a&#xE7;&#x131;kken yeni komut yazmak i&#xE7;in, yeni bir terminal penceresi a&#xE7;&#x131;p virtualenv&apos;inizi aktive etmeniz gerekmektedir. Web sunucusunu durdurmak i&#xE7;in, &#xE7;al&#x131;&#x15F;t&#x131;&#x11F;&#x131; pencereye geri d&#xF6;n&#xFC;n ve CTRL+C ye bas&#x131;n -Control ve C tu&#x15F;lar&#x131;na birlikte. (Windows&apos;ta Ctrl+Break tu&#x15F;lar&#x131; olabilir.).</p><p>Sonraki ad&#x131;m i&#xE7;in haz&#x131;r m&#x131;s&#x131;n? &#x130;&#xE7;erikleri olu&#x15F;turma zaman&#x131;!</p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../django_installation/" class="navigation navigation-prev " aria-label="Previous page: Django kurulumu">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../django_models/" class="navigation navigation-next " aria-label="Next page: Django modelleri">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"İlk Django projen!","level":"1.11","depth":1,"next":{"title":"Django modelleri","level":"1.12","depth":1,"path":"django_models/README.md","ref":"django_models/README.md","articles":[]},"previous":{"title":"Django kurulumu","level":"1.10","depth":1,"path":"django_installation/README.md","ref":"django_installation/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"django_version":"2.2.4"},"language":"tr","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"django_start_project/README.md","mtime":"2020-06-27T13:00:24.146Z","type":"markdown"},"gitbook":{"version":"3.4.0","time":"2020-06-27T13:00:41.274Z"},"basePath":"..","book":{"language":"tr"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

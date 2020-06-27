@@ -1,0 +1,630 @@
+
+<!DOCTYPE HTML>
+<html lang="el" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Δυναμικά δεδομένα στα templates · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.4.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../django_templates/" />
+    
+    
+    <link rel="prev" href="../django_orm/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Αναζήτηση για ..." />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Εισαγωγή
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Εγκατάσταση
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    Εγκατάσταση (chromebook)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    Πως λειτουργεί το διαδίκτυο
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Εισαγωγή στην γραμμή εντολών
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Εγκατάσταση Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    Επεξεργαστής Κώδικα
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Εισαγωγή στην Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Τι είναι το Django;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Εγκατάσταση του Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    Το πρώτο σου Django project!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Μοντέλα (models) του Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Διαχείριση μέσω Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Ανεβάστε!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django urls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django views - ώρα να δημιουργήσετε!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    Εισαγωγή στην HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM (Querysets)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.19" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Δυναμικά δεδομένα στα templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - κάντε το όμορφο
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Επεκτείνοντας τα templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Επεκτείνοντας την εφαρμογή σας
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Φόρμες Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    Τι υπάρχει μετά;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Δημοσιεύτηκε με το HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Δυναμικά δεδομένα στα templates</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x3B4;&#x3C5;&#x3BD;&#x3B1;&#x3BC;&#x3B9;&#x3BA;&#x3AC;-&#x3B4;&#x3B5;&#x3B4;&#x3BF;&#x3BC;&#x3AD;&#x3BD;&#x3B1;-&#x3C3;&#x3C4;&#x3B1;-templates">&#x394;&#x3C5;&#x3BD;&#x3B1;&#x3BC;&#x3B9;&#x3BA;&#x3AC; &#x3B4;&#x3B5;&#x3B4;&#x3BF;&#x3BC;&#x3AD;&#x3BD;&#x3B1; &#x3C3;&#x3C4;&#x3B1; templates</h1><p>&#x39C;&#x3AD;&#x3C7;&#x3C1;&#x3B9; &#x3C4;&#x3CE;&#x3C1;&#x3B1; &#x3AD;&#x3C7;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3B4;&#x3B9;&#x3B1;&#x3C6;&#x3BF;&#x3C1;&#x3B5;&#x3C4;&#x3B9;&#x3BA;&#x3AC; &#x3BA;&#x3BF;&#x3BC;&#x3BC;&#x3AC;&#x3C4;&#x3B9;&#x3B1; &#x3AD;&#x3C4;&#x3BF;&#x3B9;&#x3BC;&#x3B1; &#x3BD;&#x3B1; &#x3C3;&#x3C5;&#x3BD;&#x3B1;&#x3C1;&#x3BC;&#x3BF;&#x3BB;&#x3BF;&#x3B3;&#x3B7;&#x3B8;&#x3BF;&#x3CD;&#x3BD;: &#x3C4;&#x3BF; &#x3BC;&#x3BF;&#x3BD;&#x3C4;&#x3AD;&#x3BB;&#x3BF; <code>Post</code> &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3B4;&#x3B7;&#x3BB;&#x3C9;&#x3BC;&#x3AD;&#x3BD;&#x3BF; &#x3C3;&#x3C4;&#x3BF; &#x3B1;&#x3C1;&#x3C7;&#x3B5;&#x3AF;&#x3BF; <code>models.py</code>, &#x3C4;&#x3B7;&#x3BD; &#x3C3;&#x3C5;&#x3BD;&#x3AC;&#x3C1;&#x3C4;&#x3B7;&#x3C3;&#x3B7; <code>post_list</code> &#x3C3;&#x3C4;&#x3BF; &#x3B1;&#x3C1;&#x3C7;&#x3B5;&#x3AF;&#x3BF; <code>views.py</code> &#x3C4;&#x3BF; template. &#x391;&#x3BB;&#x3BB;&#x3AC; &#x3C0;&#x3C9;&#x3C2; &#x3B8;&#x3B1; &#x3BA;&#x3AC;&#x3BD;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3C4;&#x3B1; posts &#x3BD;&#x3B1; &#x3B5;&#x3BC;&#x3C6;&#x3B1;&#x3BD;&#x3B9;&#x3C3;&#x3C4;&#x3BF;&#x3CD;&#x3BD; &#x3C3;&#x3C4;&#x3BF; HTML template; &#x395;&#x3C0;&#x3B5;&#x3B9;&#x3B4;&#x3AE; &#x3B1;&#x3C5;&#x3C4;&#x3CC; &#x3B8;&#x3AD;&#x3BB;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3BD;&#x3B1; &#x3BA;&#x3AC;&#x3BD;&#x3BF;&#x3C5;&#x3BC;&#x3B5;. &#x39D;&#x3B1; &#x3B1;&#x3BD;&#x3C4;&#x3BB;&#x3AE;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3B4;&#x3B5;&#x3B4;&#x3BF;&#x3BC;&#x3AD;&#x3BD;&#x3B1; (&#x3B1;&#x3C0;&#x3BF;&#x3B8;&#x3B7;&#x3BA;&#x3B5;&#x3C5;&#x3BC;&#x3AD;&#x3BD;&#x3B1; &#x3BC;&#x3BF;&#x3BD;&#x3C4;&#x3AD;&#x3BB;&#x3B1; &#x3C3;&#x3C4;&#x3B7; &#x3B2;&#x3AC;&#x3C3;&#x3B7; &#x3B4;&#x3B5;&#x3B4;&#x3BF;&#x3BC;&#x3AD;&#x3BD;&#x3C9;&#x3BD;) &#x3BA;&#x3B1;&#x3B9; &#x3BD;&#x3B1; &#x3C4;&#x3B1; &#x3C0;&#x3B1;&#x3C1;&#x3BF;&#x3C5;&#x3C3;&#x3B9;&#x3AC;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3CC;&#x3BC;&#x3BF;&#x3C1;&#x3C6;&#x3B1; &#x3BC;&#x3AD;&#x3C3;&#x3B1; &#x3B1;&#x3C0;&#x3CC; &#x3AD;&#x3BD;&#x3B1; template, &#x3C3;&#x3C9;&#x3C3;&#x3C4;&#x3AC;;</p><p>&#x391;&#x3C5;&#x3C4;&#x3CC; &#x3B1;&#x3BA;&#x3C1;&#x3B9;&#x3B2;&#x3CE;&#x3C2; &#x3BA;&#x3AC;&#x3BD;&#x3BF;&#x3C5;&#x3BD; &#x3C4;&#x3B1; <em>views</em>: &#x3C3;&#x3C5;&#x3BD;&#x3B4;&#x3AD;&#x3BF;&#x3C5;&#x3BD; &#x3C4;&#x3B1; &#x3BC;&#x3BF;&#x3BD;&#x3C4;&#x3AD;&#x3BB;&#x3B1; &#x3BC;&#x3B5; &#x3C4;&#x3B1; templates. &#x39C;&#x3AD;&#x3C3;&#x3B1; &#x3C3;&#x3C4;&#x3B7; &#x3C3;&#x3C5;&#x3BD;&#x3AC;&#x3C1;&#x3C4;&#x3B7;&#x3C3;&#x3B7; <code>post_list</code> <em>view</em> &#x3C0;&#x3C1;&#x3AD;&#x3C0;&#x3B5;&#x3B9; &#x3BD;&#x3B1; &#x3C0;&#x3C1;&#x3BF;&#x3C3;&#x3C0;&#x3B5;&#x3BB;&#x3AC;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3C4;&#x3B1; &#x3BC;&#x3BF;&#x3BD;&#x3C4;&#x3AD;&#x3BB;&#x3B1; &#x3C0;&#x3BF;&#x3C5; &#x3B8;&#x3AD;&#x3BB;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3BA;&#x3B1;&#x3B9; &#x3BD;&#x3B1; &#x3C4;&#x3B1; &#x3B4;&#x3CE;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3C3;&#x3C4;&#x3BF; template. &#x39C;&#x3AD;&#x3C3;&#x3B1; &#x3C3;&#x3C4;&#x3BF; <em>view</em> &#x3B1;&#x3C0;&#x3BF;&#x3C6;&#x3B1;&#x3C3;&#x3AF;&#x3C3;&#x3B1;&#x3BC;&#x3B5; &#x3C4;&#x3B9; (&#x3BC;&#x3BF;&#x3BD;&#x3C4;&#x3AD;&#x3BB;&#x3BF;) &#x3B8;&#x3B1; &#x3B5;&#x3BC;&#x3C6;&#x3B1;&#x3BD;&#x3B9;&#x3C3;&#x3C4;&#x3B5;&#x3AF; &#x3C3;&#x3C4;&#x3BF; template.</p><p>&#x3A9;&#x3C1;&#x3B1;&#x3AF;&#x3B1;, &#x3C0;&#x3C9;&#x3C2; &#x3C4;&#x3BF; &#x3BA;&#x3AC;&#x3BD;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3B1;&#x3C5;&#x3C4;&#x3CC;;</p><p>&#x3A0;&#x3C1;&#x3AD;&#x3C0;&#x3B5;&#x3B9; &#x3BD;&#x3B1; &#x3B1;&#x3BD;&#x3BF;&#x3AF;&#x3BE;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3C4;&#x3BF; &#x3B1;&#x3C1;&#x3C7;&#x3B5;&#x3AF;&#x3BF; <code>blog/views.py</code>. &#x39C;&#x3AD;&#x3C7;&#x3C1;&#x3B9; &#x3C4;&#x3CE;&#x3C1;&#x3B1; &#x3B7; &#x3C3;&#x3C5;&#x3BD;&#x3AC;&#x3C1;&#x3C4;&#x3B7;&#x3C3;&#x3B7; <code>post_list</code> <em>view</em> &#x3B4;&#x3B5;&#x3AF;&#x3C7;&#x3BD;&#x3B5;&#x3B9; &#x3BA;&#x3AC;&#x3C0;&#x3C9;&#x3C2; &#x3AD;&#x3C4;&#x3C3;&#x3B9;:</p><p></p><p class="code-label">blog/views.py</p><p></p><pre><code class="lang-python"><span class="hljs-keyword">from</span> django.shortcuts <span class="hljs-keyword">import</span> render
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">post_list</span><span class="hljs-params">(request)</span>:</span>
+    <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;blog/post_list.html&apos;</span>, {})</code></pre>
+<p>&#x398;&#x3C5;&#x3BC;&#x3AC;&#x3C3;&#x3C4;&#x3B5; &#x3CC;&#x3C4;&#x3B1;&#x3BD; &#x3B5;&#x3AF;&#x3C0;&#x3B1;&#x3BC;&#x3B5; &#x3BD;&#x3B1; &#x3C3;&#x3C5;&#x3BC;&#x3C0;&#x3B5;&#x3C1;&#x3B9;&#x3BB;&#x3B1;&#x3BC;&#x3B2;&#x3AC;&#x3BD;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3BA;&#x3CE;&#x3B4;&#x3B9;&#x3BA;&#x3B1; &#x3B3;&#x3C1;&#x3B1;&#x3BC;&#x3BC;&#x3AD;&#x3BD;&#x3BF; &#x3C3;&#x3B5; &#x3B4;&#x3B9;&#x3B1;&#x3C6;&#x3BF;&#x3C1;&#x3B5;&#x3C4;&#x3B9;&#x3BA;&#x3AC; &#x3B1;&#x3C1;&#x3C7;&#x3B5;&#x3AF;&#x3B1;; &#x3A4;&#x3CE;&#x3C1;&#x3B1; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3B7; &#x3C3;&#x3C4;&#x3B9;&#x3B3;&#x3BC;&#x3AE; &#x3BD;&#x3B1; &#x3C3;&#x3C5;&#x3C0;&#x3B5;&#x3C1;&#x3B9;&#x3BB;&#x3AC;&#x3B2;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3C4;&#x3BF; &#x3BC;&#x3BF;&#x3BD;&#x3C4;&#x3AD;&#x3BB;&#x3BF; &#x3C0;&#x3BF;&#x3C5; &#x3B5;&#x3AF;&#x3C7;&#x3B1;&#x3BC;&#x3B5; &#x3B3;&#x3C1;&#x3AC;&#x3C8;&#x3B5;&#x3B9; &#x3C3;&#x3C4;&#x3BF; &#x3B1;&#x3C1;&#x3C7;&#x3B5;&#x3AF;&#x3BF; <code>models.py</code>. &#x398;&#x3B1; &#x3C0;&#x3C1;&#x3BF;&#x3C3;&#x3B8;&#x3AD;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3C4;&#x3B7; &#x3B3;&#x3C1;&#x3B1;&#x3BC;&#x3BC;&#x3AE; <code>from .models import Post</code>, &#x3CC;&#x3C0;&#x3C9;&#x3C2; &#x3BA;&#x3AC;&#x3C4;&#x3C9;&#x3B8;&#x3B9;:</p><p></p><p class="code-label">blog/views.py</p><p></p><pre><code class="lang-python"><span class="hljs-keyword">from</span> django.shortcuts <span class="hljs-keyword">import</span> render
+<span class="hljs-keyword">from</span> .models <span class="hljs-keyword">import</span> Post</code></pre>
+<p>&#x397; &#x3C4;&#x3B5;&#x3BB;&#x3B5;&#x3AF;&#x3B1; &#x3C0;&#x3C1;&#x3B9;&#x3BD; &#x3C4;&#x3B7; &#x3BB;&#x3AD;&#x3BE;&#x3B7; <code>models</code> &#x3C3;&#x3B7;&#x3BC;&#x3B1;&#x3AF;&#x3BD;&#x3B5;&#x3B9; &#x3BF; <em>&#x3C0;&#x3B1;&#x3C1;&#x3CC;&#x3BD; &#x3C6;&#x3AC;&#x3BA;&#x3B5;&#x3BB;&#x3BF;&#x3C2;</em> &#x3AE; &#x3C4;&#x3BF; <em>&#x3C0;&#x3B1;&#x3C1;&#x3CC;&#x3BD; application</em>. &#x39A;&#x3B1;&#x3B9; &#x3C4;&#x3B1; &#x3B4;&#x3CD;&#x3BF; &#x3B1;&#x3C1;&#x3C7;&#x3B5;&#x3AF;&#x3B1; <code>views.py</code> &#x3BA;&#x3B1;&#x3B9; <code>models.py</code> &#x3B2;&#x3C1;&#x3AF;&#x3C3;&#x3BA;&#x3BF;&#x3BD;&#x3C4;&#x3B1;&#x3B9; &#x3C3;&#x3C4;&#x3BF;&#x3BD; &#x3AF;&#x3B4;&#x3B9;&#x3BF; &#x3C6;&#x3AC;&#x3BA;&#x3B5;&#x3BB;&#x3BF;. &#x391;&#x3C5;&#x3C4;&#x3CC; &#x3C3;&#x3B7;&#x3BC;&#x3B1;&#x3AF;&#x3BD;&#x3B5;&#x3B9; &#x3CC;&#x3C4;&#x3B9; &#x3BC;&#x3C0;&#x3BF;&#x3C1;&#x3BF;&#x3CD;&#x3BC;&#x3B5; &#x3BD;&#x3B1; &#x3C7;&#x3C1;&#x3B7;&#x3C3;&#x3B9;&#x3BC;&#x3BF;&#x3C0;&#x3BF;&#x3B9;&#x3AE;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3C4;&#x3B7;&#x3BD; &#x3C4;&#x3B5;&#x3BB;&#x3B5;&#x3AF;&#x3B1; <code>.</code> &#x3BA;&#x3B1;&#x3B9; &#x3BC;&#x3B5;&#x3C4;&#x3AC; &#x3C4;&#x3BF; &#x3CC;&#x3BD;&#x3BF;&#x3BC;&#x3B1; &#x3C4;&#x3BF;&#x3C5; &#x3B1;&#x3C1;&#x3C7;&#x3B5;&#x3AF;&#x3BF;&#x3C5; (&#x3B4;&#x3AF;&#x3C7;&#x3C9;&#x3C2; &#x3C4;&#x3B7;&#x3BD; &#x3BA;&#x3B1;&#x3C4;&#x3AC;&#x3BB;&#x3B7;&#x3BE;&#x3B7; <code>.py</code>). &#x388;&#x3C0;&#x3B5;&#x3B9;&#x3C4;&#x3B1; &#x3BA;&#x3AC;&#x3BD;&#x3BF;&#x3C5;&#x3BC;&#x3B5; import &#x3C4;&#x3BF; &#x3CC;&#x3BD;&#x3BF;&#x3BC;&#x3B1; &#x3C4;&#x3BF;&#x3C5; &#x3BC;&#x3BF;&#x3BD;&#x3C4;&#x3AD;&#x3BB;&#x3BF;&#x3C5;, &#x3B4;&#x3B7;&#x3BB;&#x3B1;&#x3B4;&#x3AE; &#x3C4;&#x3B7;&#x3C2; &#x3BA;&#x3BB;&#x3AC;&#x3C3;&#x3B7;&#x3C2; (<code>Post</code>).</p><p>&#x39A;&#x3B1;&#x3B9; &#x3BC;&#x3B5;&#x3C4;&#x3AC;; &#x393;&#x3B9;&#x3B1; &#x3BD;&#x3B1; &#x3B5;&#x3BE;&#x3AC;&#x3B3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3C4;&#x3B1; posts &#x3B1;&#x3C0;&#x3CC; &#x3C4;&#x3BF; &#x3BC;&#x3BF;&#x3BD;&#x3C4;&#x3AD;&#x3BB;&#x3BF; <code>Post</code> &#x3C7;&#x3C1;&#x3B5;&#x3B9;&#x3B1;&#x3B6;&#x3CC;&#x3BC;&#x3B1;&#x3C3;&#x3C4;&#x3B5; &#x3BA;&#x3AC;&#x3C4;&#x3B9; &#x3C0;&#x3BF;&#x3C5; &#x3BF;&#x3BD;&#x3BF;&#x3BC;&#x3AC;&#x3B6;&#x3B5;&#x3C4;&#x3B1;&#x3B9; <code>QuerySet</code>.</p><h2 id="queryset">QuerySet</h2><p>&#x398;&#x3B1; &#x3C0;&#x3C1;&#x3AD;&#x3C0;&#x3B5;&#x3B9; &#x3BD;&#x3B1; &#x3B5;&#x3AF;&#x3C3;&#x3C4;&#x3B5; &#x3AE;&#x3B4;&#x3B7; &#x3B5;&#x3BE;&#x3BF;&#x3B9;&#x3BA;&#x3B5;&#x3B9;&#x3C9;&#x3BC;&#x3AD;&#x3BD;&#x3BF;&#x3B9; &#x3BC;&#x3B5; &#x3C4;&#x3BF;&#x3BD; &#x3CC;&#x3C1;&#x3BF; QuerySet &#x3BA;&#x3B1;&#x3B9; &#x3C0;&#x3C9;&#x3C2; &#x3B1;&#x3C5;&#x3C4;&#x3CC; &#x3BB;&#x3B5;&#x3B9;&#x3C4;&#x3BF;&#x3C5;&#x3C1;&#x3B3;&#x3B5;&#x3AF;. &#x39C;&#x3B9;&#x3BB;&#x3AE;&#x3C3;&#x3B1;&#x3BC;&#x3B5; &#x3B3;&#x3B9;&apos;&#x3B1;&#x3C5;&#x3C4;&#x3AC; &#x3C3;&#x3C4;&#x3BF; &#x3BA;&#x3B5;&#x3C6;&#x3AC;&#x3BB;&#x3B1;&#x3B9;&#x3BF; <a href="../django_orm/">Django ORM (QuerySets)</a>.</p><p>&#x39F;&#x3C0;&#x3CC;&#x3C4;&#x3B5; &#x3C4;&#x3CE;&#x3C1;&#x3B1; &#x3B8;&#x3AD;&#x3BB;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3B4;&#x3B7;&#x3BC;&#x3BF;&#x3C3;&#x3B9;&#x3B5;&#x3C5;&#x3BC;&#x3AD;&#x3BD;&#x3B1; posts &#x3C4;&#x3B1;&#x3BE;&#x3B9;&#x3BD;&#x3BF;&#x3BC;&#x3B7;&#x3BC;&#x3AD;&#x3BD;&#x3B1; &#x3BA;&#x3B1;&#x3C4;&#x3AC; <code>published_date</code>, &#x3C3;&#x3C9;&#x3C3;&#x3C4;&#x3AC;; &#x391;&#x3C5;&#x3C4;&#x3CC; &#x3C4;&#x3BF; &#x3BA;&#x3AC;&#x3BD;&#x3B1;&#x3BC;&#x3B5; &#x3AE;&#x3B4;&#x3B7; &#x3C3;&#x3C4;&#x3BF; &#x3BA;&#x3B5;&#x3C6;&#x3AC;&#x3BB;&#x3B1;&#x3B9;&#x3BF; &#x3BC;&#x3B5; &#x3C4;&#x3B1; QuerySets!</p><p></p><p class="code-label">blog/views.py</p><p></p><pre><code class="lang-python">Post.objects.filter(published_date__lte=timezone.now()).order_by(<span class="hljs-string">&apos;published_date&apos;</span>)</code></pre>
+<p>&#x395;&#x3C0;&#x3BF;&#x3BC;&#x3AD;&#x3BD;&#x3C9;&#x3C2;, &#x3B1;&#x3C2; &#x3B1;&#x3BD;&#x3BF;&#x3AF;&#x3BE;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3C4;&#x3BF; &#x3B1;&#x3C1;&#x3C7;&#x3B5;&#x3AF;&#x3BF; <code>blog/views.py</code> &#x3BA;&#x3B1;&#x3B9; &#x3B1;&#x3C2; &#x3C0;&#x3C1;&#x3BF;&#x3C3;&#x3B8;&#x3AD;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3B1;&#x3C5;&#x3C4;&#x3CC; &#x3C4;&#x3BF; &#x3BA;&#x3BF;&#x3BC;&#x3BC;&#x3AC;&#x3C4;&#x3B9; &#x3BA;&#x3CE;&#x3B4;&#x3B9;&#x3BA;&#x3B1; &#x3C3;&#x3C4;&#x3B7; &#x3C3;&#x3C5;&#x3BD;&#x3AC;&#x3C1;&#x3C4;&#x3B7;&#x3C3;&#x3B7; <code>def post_list(request)</code>. &#x391;&#x3BB;&#x3BB;&#x3AC; &#x3BC;&#x3B7;&#x3BD; &#x3C0;&#x3B1;&#x3C1;&#x3B1;&#x3BB;&#x3B5;&#x3AF;&#x3C8;&#x3B5;&#x3C4;&#x3B5; &#x3BD;&#x3B1; &#x3C0;&#x3C1;&#x3BF;&#x3C3;&#x3B8;&#x3AD;&#x3C3;&#x3B5;&#x3C4;&#x3B5; <code>from django.utils import timezone</code>:</p><p></p><p class="code-label">blog/views.py</p><p></p><pre><code class="lang-python"><span class="hljs-keyword">from</span> django.shortcuts <span class="hljs-keyword">import</span> render
+<span class="hljs-keyword">from</span> django.utils <span class="hljs-keyword">import</span> timezone
+<span class="hljs-keyword">from</span> .models <span class="hljs-keyword">import</span> Post
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">post_list</span><span class="hljs-params">(request)</span>:</span>
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by(<span class="hljs-string">&apos;published_date&apos;</span>)
+    <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;blog/post_list.html&apos;</span>, {})</code></pre>
+<p>&#x3A4;&#x3BF; &#x3C4;&#x3B5;&#x3BB;&#x3B5;&#x3C5;&#x3C4;&#x3B1;&#x3AF;&#x3BF; &#x3BA;&#x3BF;&#x3BC;&#x3BC;&#x3AC;&#x3C4;&#x3B9; &#x3C4;&#x3BF;&#x3C5; &#x3C0;&#x3B1;&#x3B6;&#x3BB; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3BD;&#x3B1; &#x3C0;&#x3B5;&#x3C1;&#x3AC;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3C4;&#x3BF; <code>posts</code> QuerySet &#x3C3;&#x3C4;&#x3BF; template. &#x39C;&#x3B7;&#x3BD; &#x3B1;&#x3BD;&#x3B7;&#x3C3;&#x3C5;&#x3C7;&#x3B5;&#x3AF;&#x3C4;&#x3B5;. &#x398;&#x3B1; &#x3B4;&#x3BF;&#x3CD;&#x3BC;&#x3B5; &#x3C0;&#x3C9;&#x3C2; &#x3BD;&#x3B1; &#x3C4;&#x3BF; &#x3C0;&#x3B1;&#x3C1;&#x3BF;&#x3C5;&#x3C3;&#x3B9;&#x3AC;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3C3;&#x3B5; &#x3B5;&#x3C0;&#x3CC;&#x3BC;&#x3B5;&#x3BD;&#x3BF; &#x3BA;&#x3B5;&#x3C6;&#x3AC;&#x3BB;&#x3B1;&#x3B9;&#x3BF;.</p><p>&#x3A0;&#x3B1;&#x3C1;&#x3B1;&#x3BA;&#x3B1;&#x3BB;&#x3BF;&#x3CD;&#x3BC;&#x3B5; &#x3C3;&#x3B7;&#x3BC;&#x3B5;&#x3B9;&#x3CE;&#x3C3;&#x3C4;&#x3B5; &#x3CC;&#x3C4;&#x3B9; &#x3B4;&#x3B7;&#x3BC;&#x3B9;&#x3BF;&#x3C5;&#x3C1;&#x3B3;&#x3BF;&#x3CD;&#x3BC;&#x3B5; &#x3BC;&#x3B9;&#x3B1; <em>&#x3BC;&#x3B5;&#x3C4;&#x3B1;&#x3B2;&#x3BB;&#x3B7;&#x3C4;&#x3AE;</em> &#x3B3;&#x3B9;&#x3B1; &#x3C4;&#x3BF; QuerySet: <code>posts</code>. &#x39C;&#x3B5;&#x3C4;&#x3B1;&#x3C7;&#x3B5;&#x3B9;&#x3C1;&#x3B9;&#x3C3;&#x3C4;&#x3B5;&#x3AF;&#x3C4;&#x3B5; &#x3C4;&#x3B7; &#x3C9;&#x3C2; &#x3C4;&#x3BF; &#x3CC;&#x3BD;&#x3BF;&#x3BC;&#x3B1; &#x3C4;&#x3BF;&#x3C5; QuerySet. &#x391;&#x3C0;&#x3BF; &#x3B4;&#x3C9; &#x3BA;&#x3B1;&#x3B9; &#x3C3;&#x3C4;&#x3BF; &#x3B5;&#x3BE;&#x3AE;&#x3C2; &#x3BC;&#x3C0;&#x3BF;&#x3C1;&#x3BF;&#x3CD;&#x3BC;&#x3B5; &#x3BD;&#x3B1; &#x3B1;&#x3BD;&#x3B1;&#x3C6;&#x3B5;&#x3C1;&#x3CC;&#x3BC;&#x3B1;&#x3C3;&#x3C4;&#x3B5; &#x3C3;&#x3B5; &#x3B1;&#x3C5;&#x3C4;&#x3CC; &#x3BC;&#x3B5; &#x3C4;&#x3BF; &#x3CC;&#x3BD;&#x3BF;&#x3BC;&#x3B1; &#x3B1;&#x3C5;&#x3C4;&#x3CC;.</p><p>&#x3A3;&#x3C4;&#x3B7; &#x3C3;&#x3C5;&#x3BD;&#x3AC;&#x3C1;&#x3C4;&#x3B7;&#x3C3;&#x3B7; <code>render</code> &#x3AD;&#x3C7;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3BC;&#x3B9;&#x3B1; &#x3C0;&#x3B1;&#x3C1;&#x3AC;&#x3BC;&#x3B5;&#x3C4;&#x3C1;&#x3BF; <code>request</code> (&#x3BF;&#x3C4;&#x3B9;&#x3B4;&#x3AE;&#x3C0;&#x3BF;&#x3C4;&#x3B5; &#x3BB;&#x3B1;&#x3BC;&#x3B2;&#x3AC;&#x3BD;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3B1;&#x3C0;&#x3CC; &#x3C4;&#x3BF; &#x3C7;&#x3C1;&#x3AE;&#x3C3;&#x3C4;&#x3B7; &#x3BC;&#x3AD;&#x3C3;&#x3C9; &#x3C4;&#x3BF;&#x3C5; Internet) &#x3BA;&#x3B1;&#x3B9; &#x3AC;&#x3BB;&#x3BB;&#x3B7; &#x3BC;&#x3B9;&#x3B1; &#x3B1;&#x3BA;&#x3CC;&#x3BC;&#x3B1;, &#x3B5;&#x3BA;&#x3B5;&#x3AF;&#x3BD;&#x3B7; &#x3C4;&#x3BF;&#x3C5; &#x3B1;&#x3C1;&#x3C7;&#x3B5;&#x3AF;&#x3BF;&#x3C5; template (<code>&apos;blog/post_list.html&apos;</code>). &#x397; &#x3C4;&#x3B5;&#x3BB;&#x3B5;&#x3C5;&#x3C4;&#x3B1;&#x3AF;&#x3B1; &#x3C0;&#x3B1;&#x3C1;&#x3AC;&#x3BC;&#x3B5;&#x3C4;&#x3C1;&#x3BF;&#x3C2; <code>{}</code>, &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3C4;&#x3BF; &#x3C3;&#x3B7;&#x3BC;&#x3B5;&#x3AF;&#x3BF; &#x3C0;&#x3BF;&#x3C5; &#x3BC;&#x3C0;&#x3BF;&#x3C1;&#x3BF;&#x3CD;&#x3BC;&#x3B5; &#x3BD;&#x3B1; &#x3C0;&#x3C1;&#x3BF;&#x3C3;&#x3B8;&#x3AD;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3C0;&#x3C1;&#x3AC;&#x3B3;&#x3BC;&#x3B1;&#x3C4;&#x3B1; &#x3B3;&#x3B9;&#x3B1; &#x3BD;&#x3B1; &#x3C4;&#x3B1; &#x3B1;&#x3BE;&#x3B9;&#x3BF;&#x3C0;&#x3BF;&#x3B9;&#x3AE;&#x3C3;&#x3B5;&#x3B9; &#x3C4;&#x3BF; template. &#x3A7;&#x3C1;&#x3B5;&#x3B9;&#x3B1;&#x3B6;&#x3CC;&#x3BC;&#x3B1;&#x3C3;&#x3C4;&#x3B5; &#x3BD;&#x3B1; &#x3C4;&#x3BF;&#x3C5;&#x3C2; &#x3B4;&#x3CE;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3BF;&#x3BD;&#x3CC;&#x3BC;&#x3B1;&#x3C4;&#x3B1; (&#x3B8;&#x3B1; &#x3BC;&#x3B5;&#x3AF;&#x3BD;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3BC;&#x3B5; &#x3C4;&#x3BF; &#x3CC;&#x3BD;&#x3BF;&#x3BC;&#x3B1; <code>&apos;posts&apos;</code>). :) &#x398;&#x3B1; &#x3B4;&#x3B5;&#x3AF;&#x3C7;&#x3BD;&#x3B5;&#x3B9; &#x3BA;&#x3AC;&#x3C0;&#x3C9;&#x3C2; &#x3AD;&#x3C4;&#x3C3;&#x3B9;: <code>{&apos;posts&apos;: posts}</code>. &#x3A0;&#x3B1;&#x3C1;&#x3B1;&#x3BA;&#x3B1;&#x3BB;&#x3BF;&#x3CD;&#x3BC;&#x3B5; &#x3C3;&#x3B7;&#x3BC;&#x3B5;&#x3B9;&#x3CE;&#x3C3;&#x3C4;&#x3B5; &#x3CC;&#x3C4;&#x3B9; &#x3C4;&#x3BF; &#x3BA;&#x3BF;&#x3BC;&#x3BC;&#x3AC;&#x3C4;&#x3B9; &#x3C0;&#x3C1;&#x3B9;&#x3BD; &#x3C4;&#x3BF; <code>:</code> &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3AD;&#x3BD;&#x3B1; string; &#x3C0;&#x3C1;&#x3AD;&#x3C0;&#x3B5;&#x3B9; &#x3BD;&#x3B1; &#x3C4;&#x3BF; &#x3C0;&#x3B5;&#x3C1;&#x3B9;&#x3BA;&#x3C5;&#x3BA;&#x3BB;&#x3CE;&#x3C3;&#x3B5;&#x3C4;&#x3B5; &#x3BC;&#x3B5; &quot;&#x3B1;&#x3C5;&#x3C4;&#x3AC;&#x3BA;&#x3B9;&#x3B1;&quot;: <code>&apos;&apos;</code>.</p><p>&#x395;&#x3BD; &#x3C4;&#x3AD;&#x3BB;&#x3B5;&#x3B9;, &#x3C4;&#x3BF; &#x3B1;&#x3C1;&#x3C7;&#x3B5;&#x3AF;&#x3BF; <code>blog/views.py</code> &#x3B8;&#x3B1; &#x3B4;&#x3B5;&#x3AF;&#x3C7;&#x3BD;&#x3B5;&#x3B9; &#x3BA;&#x3AC;&#x3C0;&#x3C9;&#x3C2; &#x3AD;&#x3C4;&#x3C3;&#x3B9;:</p><p></p><p class="code-label">blog/views.py</p><p></p><pre><code class="lang-python"><span class="hljs-keyword">from</span> django.shortcuts <span class="hljs-keyword">import</span> render
+<span class="hljs-keyword">from</span> django.utils <span class="hljs-keyword">import</span> timezone
+<span class="hljs-keyword">from</span> .models <span class="hljs-keyword">import</span> Post
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">post_list</span><span class="hljs-params">(request)</span>:</span>
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by(<span class="hljs-string">&apos;published_date&apos;</span>)
+    <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;blog/post_list.html&apos;</span>, {<span class="hljs-string">&apos;posts&apos;</span>: posts})</code></pre>
+<p>&#x391;&#x3C5;&#x3C4;&#x3CC; &#x3AE;&#x3C4;&#x3B1;&#x3BD;! &#x389;&#x3C1;&#x3B8;&#x3B5; &#x3B7; &#x3CE;&#x3C1;&#x3B1; &#x3BD;&#x3B1; &#x3C0;&#x3AC;&#x3BC;&#x3B5; &#x3C0;&#x3AF;&#x3C3;&#x3C9; &#x3C3;&#x3C4;&#x3BF; template &#x3BA;&#x3B1;&#x3B9; &#x3BD;&#x3B1; &#x3B5;&#x3BC;&#x3C6;&#x3B1;&#x3BD;&#x3AF;&#x3C3;&#x3BF;&#x3C5;&#x3BC;&#x3B5; &#x3B1;&#x3C5;&#x3C4;&#x3CC; &#x3C4;&#x3BF; QuerySet!</p><p>&#x398;&#x3AD;&#x3BB;&#x3B5;&#x3C4;&#x3B5; &#x3BD;&#x3B1; &#x3B4;&#x3B9;&#x3B1;&#x3B2;&#x3AC;&#x3C3;&#x3B5;&#x3C4;&#x3B5; &#x3C0;&#x3B5;&#x3C1;&#x3B9;&#x3C3;&#x3C3;&#x3CC;&#x3C4;&#x3B5;&#x3C1;&#x3B1; &#x3B3;&#x3B9;&#x3B1; &#x3C4;&#x3B1; QuerySets &#x3C3;&#x3C4;&#x3BF; Django; &#x398;&#x3B1; &#x3C0;&#x3C1;&#x3AD;&#x3C0;&#x3B5;&#x3B9; &#x3BD;&#x3B1; &#x3B4;&#x3B9;&#x3B1;&#x3B2;&#x3AC;&#x3C3;&#x3B5;&#x3C4;&#x3B5; &#x3B5;&#x3B4;&#x3CE;: <a href="https://docs.djangoproject.com/en/2.0/ref/models/querysets/" target="_blank">https://docs.djangoproject.com/en/2.0/ref/models/querysets/</a></p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../django_orm/" class="navigation navigation-prev " aria-label="Previous page: Django ORM (Querysets)">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../django_templates/" class="navigation navigation-next " aria-label="Next page: Django templates">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Δυναμικά δεδομένα στα templates","level":"1.19","depth":1,"next":{"title":"Django templates","level":"1.20","depth":1,"path":"django_templates/README.md","ref":"django_templates/README.md","articles":[]},"previous":{"title":"Django ORM (Querysets)","level":"1.18","depth":1,"path":"django_orm/README.md","ref":"django_orm/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"django_version":"2.2.4"},"language":"el","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"dynamic_data_in_templates/README.md","mtime":"2020-06-27T13:00:23.718Z","type":"markdown"},"gitbook":{"version":"3.4.0","time":"2020-06-27T13:00:41.274Z"},"basePath":"..","book":{"language":"el"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

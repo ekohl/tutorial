@@ -1,0 +1,628 @@
+
+<!DOCTYPE HTML>
+<html lang="hu" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Django sablonok (template) · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.4.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../css/" />
+    
+    
+    <link rel="prev" href="../dynamic_data_in_templates/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Bevezetés
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Installáció
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    Hogy működik az Internet?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Bevezetés a parancssor használatába
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    A Python telepítése
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    Kódszerkesztő (editor)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Bevezetés a Pythonba
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Mi a Django?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Django telepítés
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    Az első Django projekted!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Django modellek
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Deploy!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django url-ek
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django views - itt az ideje alkotni!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    Bevezetés a HTML-be
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM és QuerySet-ek
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    Dinamikus adatok a template-ben
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.19" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Django sablonok (template)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - Tegyük széppé!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Template-kiegészítés
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Egészítsd ki az applikációdat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Django űrlapok
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    Következő lépések
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Django sablonok (template)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="django-sablonok-template">Django sablonok (template)</h1><p>Itt az id&#x151;, hogy megjelen&#xED;ts&#xFC;nk p&#xE1;r adatot! Ehhez Django felk&#xED;n&#xE1;l nek&#xFC;nk p&#xE1;r be&#xE9;p&#xED;tett <strong>template tag</strong>-et sz&#xE1;munkra.</p><h2 id="mik-a-template-tag-ek">Mik a template tag-ek?</h2><p>Mint l&#xE1;tod, a HTML-ben nem tudsz Python k&#xF3;dot &#xED;rni, mivel a b&#xF6;ng&#xE9;sz&#x151;k nem &#xE9;rtik, csak a HTML-t. Fontos tudni, hogy a HTML ink&#xE1;bb statikus, m&#xED;g Python ink&#xE1;bb dinamikus.</p><p>A <strong>Django template tag-ek</strong> lehet&#x151;v&#xE9; teszik, hogy Python-szer&#x171; dolgokat &#xED;rjunk a HTML-be, ez&#xE1;ltal gyorsabban &#xE9;s k&#xF6;nnyebben tudsz dinamikus weboldalt k&#xE9;sz&#xED;teni. &#xC9;ljen!</p><h2 id="template-a-bejegyz&#xE9;sek-list&#xE1;j&#xE1;hoz">Template a bejegyz&#xE9;sek list&#xE1;j&#xE1;hoz</h2><p>Az el&#x151;z&#x151; fejezetben hozz&#xE1;adtuk a template-hez a bejegyz&#xE9;seink list&#xE1;j&#xE1;t a <code>post</code> v&#xE1;ltoz&#xF3;ban. Most meg fogjuk ezt jelen&#xED;teni a HTML-ben.</p><p>Ahhoz, hogy ki&#xED;rjunk egy v&#xE1;ltoz&#xF3;t a Django template-ben, dupla kapcsos z&#xE1;r&#xF3;jelet haszn&#xE1;lunk, benne a v&#xE1;ltoz&#xF3; nev&#xE9;vel, mint itt:</p><pre><code class="lang-html">{{ posts }}</code></pre>
+<p>Pr&#xF3;b&#xE1;ld ki a <code>blog/templates/blog/post_list.html</code> template-ben. Cser&#xE9;lj ki mindent a m&#xE1;sodik <code>&lt;div&gt;</code> -t&#x151;l a harmadikig a k&#xF6;vetkez&#x151;vel: <code>{{ posts }}</code>. Mentsd el a f&#xE1;jlt &#xE9;s friss&#xED;tsd az oldalt, hogy l&#xE1;sd az eredm&#xE9;nyt:</p><p><a href="images/step1.png">13.1 &#xE1;bra</a></p><p>Ahogy l&#xE1;tod, ez minden, amink van:</p><pre><code>        &lt;QuerySet [&lt;Post: My second post&gt;, &lt;Post: My first post&gt;]&gt;</code></pre>
+<p>Ez azt jelenti, hogy a Django objektumok list&#xE1;jak&#xE9;nt &#xE9;rtelmezi. Eml&#xE9;kszel a <strong>Bevezet&#xE9;s a Python-ba</strong> c&#xED;m&#x171; fejezetb&#x151;l, hogy hogyan jelen&#xED;t&#xFC;nk meg list&#xE1;kat? Igen, for loop-okkal! Egy Django template-ben ezt &#xED;gy tudod megtenni:</p><pre><code class="lang-html">{% for post in posts %}
+    {{ post }}
+{% endfor %}</code></pre>
+<p>Pr&#xF3;b&#xE1;ld ki a template-edben.</p><p><a href="images/step2.png">13.2 &#xE1;bra</a></p><p>&#xC9;s m&#x171;k&#xF6;dik! De azt akarjuk, hogy &#xFA;gy jelenjen meg, mint a statikus bejegyz&#xE9;sek, amit kor&#xE1;bban k&#xE9;sz&#xED;tett&#xFC;nk el a <strong>Bevezet&#xE9;s a HTML-be</strong> c&#xED;m&#x171; fejezetben. A HTML-t &#xE9;s a template tageket haszn&#xE1;lhatod egy&#xFC;tt. A <code>body</code> &#xED;gy fog kin&#xE9;zni:</p><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/&quot;</span>&gt;</span>Django Girls Blog<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+{% for post in posts %}
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>published: {{ post.published_date }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>{{ post.title }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{{ post.text|linebreaksbr }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+{% endfor %}</code></pre>
+<p>Minden, amit a <code>{% for %}</code> &#xE9;s <code>{% endfor %}</code> k&#xF6;z&#xE9; &#xED;rsz, a lista minden egyes elem&#xE9;re meg fog ism&#xE9;tl&#x151;dni. Friss&#xED;tsd az oldalt:</p><p><a href="images/step3.png">13.3 &#xE1;bra</a></p><p>&#xC9;szrevetted, hogy most egy kicsit m&#xE1;s megjel&#xF6;l&#xE9;st haszn&#xE1;ltunk: <code>{{ post.title }}</code>? Az adatokat a <code>Post</code> modelben meghat&#xE1;rozott mez&#x151;k szerint &#xE9;rj&#xFC;k el. Emellett <code>|linebreaksbr</code> k&#xED;s&#xE9;ri a sz&#xF6;veget, ez&#xE1;ltal egy filteren kereszt&#xFC;l &#xFA;j bekezd&#xE9;ss&#xE9; alak&#xED;tja az &#xFA;jsor karaktereket.</p><h2 id="m&#xE9;g-valami">M&#xE9;g valami</h2><p>J&#xF3; lenne l&#xE1;tni, hogy a weblapod m&#xE9;g mindig m&#x171;k&#xF6;dik az Interneten, nem igaz? Telep&#xED;ts&#xFC;k &#xFA;jra a PythonAnywhere-en. Itt a l&#xE9;p&#xE9;sek &#xF6;sszefoglal&#xF3;ja...</p><ul><li><p>El&#x151;sz&#xF6;r tedd fel a k&#xF3;dot a GitHub-ra</p><pre><code>$ git status
+[...]
+$ git add --all .
+$ git status
+[...]
+$ git commit -m &quot;Modified templates to display posts from database.&quot;
+[...]
+$ git push</code></pre>
+<ul><li>Ezut&#xE1;n a <a href="https://www.pythonanywhere.com/consoles/" target="_blank">PythonAnywhere</a>-en menj a <strong>Bash console</strong>-ba (vagy ind&#xED;ts &#xFA;jat), &#xE9;s futtasd le:
+</li></ul>
+</li></ul>
+<pre><code>$ cd my-first-blog
+$ git pull
+[...]</code></pre>
+<ul><li>V&#xE9;g&#xFC;l, a <a href="https://www.pythonanywhere.com/web_app_setup/" target="_blank">Web</a> men&#xFC;pontban klikkelj a <strong>Reload</strong>-ra. A friss&#xED;t&#xE9;sek ott vannak!  Ha a blogposztok a PythonAnywhere oldaladon nem egyeznek a helyi g&#xE9;peden l&#xE9;v&#x151; blogban l&#xE9;v&#x151;kkel, az nem probl&#xE9;ma. Az adatb&#xE1;zisok a helyi g&#xE9;peden &#xE9;s PythonAnywhere-en nem szinkroniz&#xE1;l&#xF3;dnak a t&#xF6;bbi file-al egy&#xFC;tt.
+</li></ul>
+<p>Gratul&#xE1;lunk! Folytat&#xE1;sk&#xE9;pp hozz l&#xE9;tre &#xFA;j bejegyz&#xE9;seket a Django adminban (ne felejts el published_date-t hozz&#xE1;adni). Ellen&#x151;rizd, hogy a pythonanywhere oldalhoz tartoz&#xF3; admin oldalon <a href="https://yourname.pythonanywhere.com/admin" target="_blank">https://yourname.pythonanywhere.com/admin</a> vagy. Majd friss&#xED;tsd az oldalt, hogy l&#xE1;sd, megjelentek-e.</p><p>Olyan, mint a var&#xE1;zslat? B&#xFC;szk&#xE9;k vagyunk R&#xE1;d! Hagy ott egy kicsit a g&#xE9;pet, meg&#xE9;rdemelsz egy kis sz&#xFC;netet. :)</p><p><a href="images/donut.png">13.4 &#xE1;bra</a></p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../dynamic_data_in_templates/" class="navigation navigation-prev " aria-label="Previous page: Dinamikus adatok a template-ben">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../css/" class="navigation navigation-next " aria-label="Next page: CSS - Tegyük széppé!">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Django sablonok (template)","level":"1.19","depth":1,"next":{"title":"CSS - Tegyük széppé!","level":"1.20","depth":1,"path":"css/README.md","ref":"css/README.md","articles":[]},"previous":{"title":"Dinamikus adatok a template-ben","level":"1.18","depth":1,"path":"dynamic_data_in_templates/README.md","ref":"dynamic_data_in_templates/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"django_version":"2.2.4"},"language":"hu","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"django_templates/README.md","mtime":"2020-06-27T13:00:23.882Z","type":"markdown"},"gitbook":{"version":"3.4.0","time":"2020-06-27T13:00:41.274Z"},"basePath":"..","book":{"language":"hu"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

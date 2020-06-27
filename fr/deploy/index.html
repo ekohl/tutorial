@@ -1,0 +1,825 @@
+
+<!DOCTYPE HTML>
+<html lang="fr" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Déployer! · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.4.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../django_urls/" />
+    
+    
+    <link rel="prev" href="../django_admin/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Tapez pour rechercher" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../installation/">
+            
+                <a href="../installation/#command-line">
+            
+                    
+                    Ligne de commande
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../installation/">
+            
+                <a href="../installation/#python">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../installation/">
+            
+                <a href="../installation/#code-editor">
+            
+                    
+                    Éditeur de code
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../installation/">
+            
+                <a href="../installation/#virtualenv">
+            
+                    
+                    Environnement virtuel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../installation/">
+            
+                <a href="../installation/#django">
+            
+                    
+                    Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../installation/">
+            
+                <a href="../installation/#git">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../installation/">
+            
+                <a href="../installation/#github">
+            
+                    
+                    GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../installation/">
+            
+                <a href="../installation/#pythonanywhere">
+            
+                    
+                    PythonAnywhere
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    Installation (chromebook)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    Comment marche l'Internet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Introduction à l'interface en ligne de commande
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Installation de Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    L'éditeur de texte
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Introduction à Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Qu'est-ce que Django?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Installation de Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    Votre premier projet Django !
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Les modèles dans Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.14" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Déployer!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Les URL de Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Vues Django - C'est l'heure de créer !
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    Introduction au HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM (Querysets)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    Données dynamiques dans les templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Templates Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - Rendez votre site joli
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Héritage de template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Finaliser votre application
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Formulaires Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    La suite?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Publié avec HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Déployer!</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="d&#xE9;ployer">D&#xE9;ployer!</h1><blockquote><p><strong>Note</strong> Le chapitre suivant peut-&#xEA;tre un peu difficile &#xE0; comprendre. Accrochez-vous et allez jusqu&apos;au bout : le d&#xE9;ploiement fait partie int&#xE9;grale du processus de d&#xE9;veloppement d&apos;un site internet. Ce chapitre a &#xE9;t&#xE9; plac&#xE9; au milieu du tutoriel afin de permettre &#xE0; votre coach de vous aider dans cette &#xE9;tape un peu compliqu&#xE9;e qu&apos;est la mise en ligne de votre site. Si jamais vous manquez de temps &#xE0; la fin de la journ&#xE9;e, ne vous inqui&#xE9;tez pas ! Une fois ce chapitre termin&#xE9;, vous serez en mesure de finir le tutoriel chez vous :)</p></blockquote><p>Jusqu&apos;&#xE0; maintenant, votre site web est uniquement disponible sur votre ordinateur. Maintenant, vous allez apprendre &#xE0; d&#xE9;ployer! D&#xE9;ployer signifie mettre en ligne votre site pour que d&apos;autres personnes puissent enfin voir votre app. :)</p><p>Comme vous l&apos;avez appris, un site web a besoin d&apos;&#xEA;tre install&#xE9; sur un serveur. Il existe de nombreux fournisseurs de serveurs disponibles sur Internet, nous utiliserons <a href="https://www.pythonanywhere.com/" target="_blank">PythonAnywhere</a>. PythonAnywhere est gratuit pour les petites applications qui n&apos;ont pas trop de visiteurs, donc ce sera certainement suffisant pour vous maintenant.</p><p>Nous allons aussi utiliser les services <a href="https://www.github.com" target="_blank">GitHub</a>, ce qui nous permettra d&apos;h&#xE9;berger notre code en ligne. Il existe d&apos;autres entreprises qui proposent des services similaires. Cependant, presque tous&#x22C5;tes les d&#xE9;veloppeurs&#xB7;ses poss&#xE8;dent aujourd&apos;hui un compte Github et, dans quelques instants, vous aussi !</p><p>Ces trois endroits sont importants pour vous. Votre ordinateur local est l&apos;endroit o&#xF9; vous faites de d&#xE9;veloppement et de test. Lorsque vous &#xEA;tes heureux avec le r&#xE9;sultat, vous sauvegarderez une copie de votre programme sur GitHub. Votre site sera sur PythonAnywhere et vous le mettrez &#xE0; jour en y mettant une copie de votre nouveau code sur GitHub.</p><h1 id="git">Git</h1><blockquote><p><strong>Note</strong> Si vous avez d&#xE9;j&#xE0; effectu&#xE9; l&apos;installation, vous n&apos;avez pas besoin de le re-faire: vous pouvez passer &#xE0; la section suivante et commencer &#xE0; cr&#xE9;er votre d&#xE9;p&#xF4;t Git.</p></blockquote><p>Git est un &quot; syst&#xE8;me de gestion de versions&quot; utilis&#xE9; par de nombreux d&#xE9;veloppeurs. Ce logiciel permet de garder une trace des modifications apport&#xE9;es &#xE0; chaque fichier afin que vous puissiez facilement revenir en arri&#xE8;re ou &#xE0; une version sp&#xE9;cifique. Un peu comme la fonction &#xAB; suivi des modifications &#xBB; dans les programmes de traitement de texte (par exemple, Microsoft Word ou LibreOffice Writer), mais beaucoup plus puissant.</p><h2 id="installer-git">Installer Git</h2><sec data-title="Installing Git: Windows" data-id="git_install_windows" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Installing Git: Windows<a class="pull-right section atTitle btn btn-default" target="git_install_windows"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="git_install_windows"><div class="panel-body">
+
+
+<p>Vous pouvez t&#xE9;l&#xE9;charger Git sur <a href="https://git-scm.com/" target="_blank">git-scm.com</a>. Vous pouvez cliquer sur &quot;suivant&quot; pour toutes les &#xE9;tapes sauf deux : au moment de choisir l&apos;&#xE9;diteur, s&#xE9;lectionnez Nano ; &#xE0; l&apos;&#xE9;tape intitul&#xE9;e &quot;Adjusting your PATH environment&quot;, s&#xE9;lectionnez &quot;Use Git and optional Unix tools from the Windows Command Prompt&quot; (l&apos;option du bas). Les autres choix par d&#xE9;faut n&apos;ont pas besoin d&apos;&#xEA;tre modifi&#xE9;s. Laissez cocher l&apos;option &quot;Checkout Windows-style, commit Unix-style line endings&quot;.</p><p>N&apos;oubliez pas de relancer l&apos;invite de commande ou la fen&#xEA;tre du Powershell une fois l&apos;installation termin&#xE9;e. </p></div></div></div></sec><p></p><sec data-title="Installing Git: OS X" data-id="git_install_OSX" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Installing Git: OS X<a class="pull-right section atTitle btn btn-default" target="git_install_OSX"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="git_install_OSX"><div class="panel-body">
+
+
+<p>T&#xE9;l&#xE9;chargez Git sur <a href="https://git-scm.com/" target="_blank">git-scm.com</a> et suivez les instructions.</p><blockquote><p><strong>Note</strong> Si vous utilisez un OS X 10.6, 10.7 ou 10.8, vous devrez sans doute installer la version de git pr&#xE9;sente ici : <a href="https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download" target="_blank">Git installer for OS X Snow Leopard</a></p></blockquote></div></div></div></sec>
+
+
+<sec data-title="Installing Git: Debian or Ubuntu" data-id="git_install_debian_ubuntu" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Installing Git: Debian or Ubuntu<a class="pull-right section atTitle btn btn-default" target="git_install_debian_ubuntu"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="git_install_debian_ubuntu"><div class="panel-body">
+
+
+<p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-bash">$ sudo apt install git</code></pre>
+</div></div></div></sec>
+
+
+<sec data-title="Installing Git: Fedora" data-id="git_install_fedora" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Installing Git: Fedora<a class="pull-right section atTitle btn btn-default" target="git_install_fedora"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="git_install_fedora"><div class="panel-body">
+
+
+<p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-bash">$ sudo dnf install git</code></pre>
+</div></div></div></sec>
+
+
+<sec data-title="Installing Git: openSUSE" data-id="git_install_openSUSE" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Installing Git: openSUSE<a class="pull-right section atTitle btn btn-default" target="git_install_openSUSE"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="git_install_openSUSE"><div class="panel-body">
+
+
+<p></p><p class="code-label">command-line</p><p></p><pre><code class="lang-bash">$ sudo zypper install git</code></pre>
+</div></div></div></sec>
+
+
+<h2 id="d&#xE9;marrer-un-d&#xE9;p&#xF4;t-git">D&#xE9;marrer un d&#xE9;p&#xF4;t Git</h2><p>Git conserve toutes les modifications apport&#xE9;es &#xE0; un ensemble de fichiers dans un &quot;repository&quot; (ou &quot;d&#xE9;p&#xF4;t&quot;). Nous allons devoir en cr&#xE9;er un pour notre projet. Ouvrez votre terminal et allez dans le r&#xE9;pertoire <code>djangogirls</code>. Ensuite, tapez les commandes suivantes :</p><blockquote><p><strong>Note</strong> : n&apos;oubliez pas de v&#xE9;rifier dans quel r&#xE9;pertoire vous vous trouvez avant d&apos;initialiser votre d&#xE9;p&#xF4;t. Pour cela tapez la commande <code>pwd</code> (OSX/Linux) ou <code>cd</code> (Windows). Vous devriez vous trouver dans le dossier <code>djangogirls</code>.</p></blockquote><p></p><p class="code-label">command-line</p><p></p><pre><code>        $ git init
+        Initialized empty Git repository in ~/djangogirls/.git/
+        $ git config --global user.name &quot;Your Name&quot;
+        $ git config --global user.email you@example.com</code></pre>
+<p>L&apos;initialisation d&apos;un d&#xE9;p&#xF4;t git ne doit &#xEA;tre faite qu&apos;une seule fois par projet (et vous n&apos;avez plus jamais besoin de re-saisir le nom d&apos;utilisateur et adresse email).</p><p>Git va surveiller les modifications faites &#xE0; tous les fichiers et dossiers pr&#xE9;sents dans ce r&#xE9;pertoire, mais il y a certains fichiers que nous voudrions qu&apos;il ignore. Pour cela, nous allons cr&#xE9;er un fichier appel&#xE9; <code>.gitignore</code> dans le r&#xE9;pertoire principal du projet. Ouvrez votre &#xE9;diteur et cr&#xE9;ez un nouveau fichier en copiant le contenu suivant :</p><p></p><p class="code-label">.gitignore</p><p></p><pre><code>        *.pyc
+        *~
+        /.vscode
+        __pycache__
+        myvenv
+        db.sqlite3
+        /static
+        .DS_Store</code></pre>
+<p>Enregistrez ce fichier sous le nom <code>.gitignore</code> dans votre r&#xE9;pertoire principal &quot;djangogirls&quot;.</p><blockquote><p><strong>Attention</strong> : le point au d&#xE9;but du nom du fichier est important ! Si vous avez des difficult&#xE9;s &#xE0; le faire (les Macs n&apos;aiment pas que vous cr&#xE9;iez des fichiers commen&#xE7;ant par un point dans le Finder, par exemple), utilisez la fonction &quot;Enregistrer sous&quot; dans votre &#xE9;diteur; &#xE7;a marche toujours. N&apos;ajoutez pas <code>.txt</code>, <code>.py</code>, ou d&apos;autres extensions &#xE0; la fin du nom. Git va reconnaitre le fichier seulement s&apos;il porte le nom <code>.gitignore</code>.</p><p><strong>Remarque</strong> un de fichiers que vous avez sp&#xE9;cifi&#xE9; dans votre fichier <code>.gitignore</code> est <code>db.sqlite3</code>. Ce fichier est votre base de donn&#xE9;es locale, o&#xF9; tous les utilisateurs et les articles que vous avez cr&#xE9;&#xE9;s sont stock&#xE9;s. Suivant les bonnes pratiques du d&#xE9;veloppement web, nous allons utiliser des bases de donn&#xE9;es distinctes pour votre site de test local et votre site Web en ligne sur PythonAnywhere. La base de donn&#xE9;es sur PythonAnywhere pourrait &#xEA;tre du type SQLite, comme votre version locale. Normalement on lui pr&#xE9;f&#xE8;rerait une base de donn&#xE9;es du type MySQL, car capable de g&#xE9;rer un plus grand nombre de visiteurs. Quoi qu&#x2019;il en soit, le fait que votre base de donn&#xE9;es SQLite soit ignor&#xE9;e lors de l&apos;archivage sur GitHub implique que tous les messages et le superutilisateurs que vous avez cr&#xE9;&#xE9; jusqu&apos;&#xE0; pr&#xE9;sent ne seront disponibles que localement. Vous devrez les cr&#xE9;er de nouveau en production. Vous devriez penser &#xE0; votre base de donn&#xE9;es locale comme un terrain de jeux o&#xF9; vous pouvez tester diff&#xE9;rentes choses et ne pas avoir peur de supprimer vos messages r&#xE9;els sur votre blog.</p></blockquote><p>C&apos;est une bonne id&#xE9;e d&apos;utiliser la commande <code>git status</code> avant <code>git add</code> ou d&#xE8;s que vous n&apos;&#xEA;tes plus s&#xFB;r de ce qui a chang&#xE9; dans le projet. Cela vous &#xE9;vitera des surprises comme ajouter ou envoyer un mauvais fichier. La commande <code>git status</code> permet d&apos;obtenir des informations sur tous les fichiers non-suivis/modifi&#xE9;s/ajout&#xE9;s, l&apos;&#xE9;tat de la branche, et bien plus encore. La commande devrait renvoyer ceci:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        $ git status
+        On branch master
+
+        No commits yet
+
+        Untracked files:
+          (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+
+                .gitignore
+                blog/
+                manage.py
+                mysite/
+                requirements.txt
+
+        nothing added to commit but untracked files present (use &quot;git add&quot; to track)</code></pre>
+<p>Et pour finir, nous allons enregistrer nos modifications. Tapez ces commandes dans votre terminal:</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        $ git add --all .
+        $ git commit -m &quot;Mon app Django Girls, premier commit&quot;
+         [...]
+         13 files changed, 200 insertions(+)
+         create mode 100644 .gitignore
+         [...]
+         create mode 100644 mysite/wsgi.py</code></pre>
+<h2 id="publier-votre-code-sur-github">Publier votre code sur GitHub</h2><p>Allez sur <a href="https://www.github.com" target="_blank">GitHub.com</a> et cr&#xE9;ez-vous un nouveau compte gratuitement. (Si vous l&apos;avez d&#xE9;j&#xE0; fait lors de la pr&#xE9;paration pour l&#x2019;atelier, c&#x2019;est tr&#xE8;s bien !) N&#x2019;oubliez pas de m&#xE9;moriser votre mot de passe (ajoutez-le &#xE0; votre gestionnaire de mot de passe, si vous en utilisez un).</p><p>Ensuite, cr&#xE9;ez un nouveau d&#xE9;p&#xF4;t en lui donnant le nom &quot;mon-nouveau-blog&quot;. Laissez la case &quot;initialisation avec README&quot; d&#xE9;coch&#xE9;e, laissez l&apos;option .gitignore vide (nous l&apos;avons fait manuellement) et laissez la Licence en tant que Aucune.</p><p><img alt="" src="images/new_github_repo.png"></p><blockquote><p><strong>Note</strong> : dans le cadre de ce tutoriel, le nom <code>mon-nouveau-blog</code> est tr&#xE8;s important. Cependant, vous &#xEA;tes libre de le changer mais, attention : &#xE0; chaque fois que ce nom appara&#xEE;tra dans le tutoriel, vous allez devoir le remplacer par le nom que vous avez choisi. Il est probablement plus simple de garder le nom <code>mon-nouveau-blog</code>.</p></blockquote><p>Dans l&apos;image suivante, vous verrez le URL de votre d&#xE9;p&#xF4;t, que vous utiliserez dans certaines commandes qui suivent (ex. pour cloner le d&#xE9;p&#xF4;t) :</p><p><img alt="" src="images/github_get_repo_url_screenshot.png"></p><p>Nous avons maintenant besoin de relier nos deux d&#xE9;p&#xF4;ts (&quot;hook&quot; en anglais) : celui sur notre ordinateur et celui sur GitHub.</p><p>Tapez les instructions suivantes dans votre console (remplacez <code>&lt;your-github-username&gt;</code> avec le nom d&apos;utilisateur de votre compte GitHub et sans les chevrons. Le URL doit correspondre exactement &#xE0; l&apos;URL que vous venez de voir) :</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        $ git remote add origin https://github.com/&lt;your-github-username&gt;/my-first-blog.git
+        $ git push -u origin master</code></pre>
+<p>Lorsque vous &quot;poussez&quot; sur GitHub, votre nom d&#x2019;utilisateur ainsi que le mot de passe vous seront demand&#xE9;s (que ce soit dans la fen&#xEA;tre de ligne de commande ou dans une fen&#xEA;tre pop-up). Apr&#xE8;s avoir entr&#xE9; les informations d&#x2019;identification, vous devriez voir quelque chose comme ceci :</p><p></p><p class="code-label">command-line</p><p></p><pre><code>        Counting objects: 6, done.
+        Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
+        Total 3 (delta 0), reused 0 (delta 0)
+        To https://github.com/ola/my-first-blog.git
+
+         * [new branch]      master -&gt; master
+        Branch master set up to track remote branch master from origin.</code></pre>
+<!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
+
+
+<p>Votre code est maintenant sur GitHub. Allez jeter un coup d&#x2019;&#x153;il ! Votre code est maintenant au m&#xEA;me endroit que d&apos;autres projets super cool : <a href="https://github.com/django/django" target="_blank">Django</a>, <a href="https://github.com/DjangoGirls/tutorial" target="_blank">le tutoriel Django Girls</a> et les nombreux autres projets libres qui sont h&#xE9;berg&#xE9;s sur GitHub. :)</p><h1 id="mettre-votre-blog-en-ligne-avec-pythonanywhere">Mettre votre blog en ligne avec PythonAnywhere</h1><h2 id="cr&#xE9;ez-votre-compte-utilisateur-sur-pythonanywhere">Cr&#xE9;ez votre compte utilisateur sur PythonAnywhere</h2><blockquote><p><strong>Note</strong> Vous avez peut &#xEA;tre d&#xE9;j&#xE0; cr&#xE9;&#xE9; un compte PythonAnyWhere au cours de la phase d&apos;installation - si c&apos;est le cas, inutile de le refaire.</p></blockquote><p>PythonAnywhere est un service qui permet de faire tourner des programmes en Python sur des serveurs &quot;dans le cloud&quot;. Nous allons l&apos;utiliser pour h&#xE9;berger notre site, en direct et sur Internet.</p><p>Nous allons donc mettre le blog que nous sommes en train de construire sur PythonAnywhere. Pour commencer, cr&#xE9;ez un compte &#xAB; D&#xE9;butant &#xBB; (beginner) sur PythonAnywhere (le niveau gratuit est tr&#xE8;s bien, vous n&#x2019;avez pas besoin d&#x2019;une carte de cr&#xE9;dit).</p><ul><li><a href="https://www.pythonanywhere.com/" target="_blank">www.pythonanywhere.com</a>
+</li></ul>
+<p><img alt="La page de login de PythonAnywhere contenant un bouton pour cr&#xE9;er le compte gratuit pour &apos;D&#xE9;butant&apos;" src="images/pythonanywhere_beginner_account_button.png"></p><blockquote><p><strong>Note</strong> Lorsque vous choisissez votre nom d&apos;utilisateur, gardez &#xE0; l&apos;esprit que l&apos;URL de votre blog prendra la forme <code>nomutilisateur.pythonanywhere.com</code>, alors choisissez un pseudonyme ou un nom adapt&#xE9; pour votre blog. M&#xE9;morisez votre mot de passe (ajoutez-le &#xE0; votre gestionnaire de mot de passe, si vous en utilisez un).</p></blockquote><h2 id="cr&#xE9;ation-dun-jeton-api-pour-pythonanywhere">Cr&#xE9;ation d&#x2019;un jeton API pour PythonAnywhere</h2><p>C&apos;est quelque chose que vous n&apos;aurez &#xE0; faire qu&apos;une seule fois. Lorsque vous serez inscrit &#xE0; PythonAnywhere, vous vous retrouverez sur votre tableau de bord. Trouvez le lien en haut &#xE0; droit de votre page &quot;Compte&quot;:</p><p><img alt="Lien du compte en haut &#xE0; droite sur la page" src="images/pythonanywhere_account.png"></p><p>s&#xE9;lectionnez l&apos;onglet nomm&#xE9; &quot;API token&quot;, et cliquez sur le bouton &quot;Cr&#xE9;er un nouveau jeton API&quot;.</p><p><img alt="L&apos;onglet API sur la page Compte" src="images/pythonanywhere_create_api_token.png"></p><h2 id="configurer-votre-site-sur-pythonanywhere">Configurer votre site sur PythonAnywhere</h2><p>Allez sur le <a href="https://www.pythonanywhere.com/" target="_blank">Panneau de Contr&#xF4;le de PythonAnywhere</a> en cliquant sur le logo, et choisissez l&apos;option de d&#xE9;marrer un terminal &quot;Bash&quot;. C&apos;est comme votre terminal &#xE0; vous, mais chez PythonAnywhere.</p><p><img alt="La section \" nouveau="" terminal\"="" sur="" l'interface="" web="" de="" pythonanywhere,="" avec="" un="" bouton="" pour="" \"bash\""="" src="images/pythonanywhere_bash_console.png"></p><blockquote><p><strong>Note</strong> : PythonAnywhere utilise Linux. Si vous &#xEA;tes sous Windows, la console sera un peu diff&#xE9;rente de celle de votre ordinateur.</p></blockquote><p>Pour d&#xE9;ployer une application sur PythonAnywhere, vous devez y t&#xE9;l&#xE9;charger votre code depuis GitHub, puis configurer PythonAnywhere pour qu&apos;il la reconnaisse et commence &#xE0; la faire tourner en tant qu&apos;application web. Cela peut se faire de fa&#xE7;on manuelle, mais PythonAnywhere fourni un outil qui va tout faire pour vous. Commen&#xE7;ons par l&apos;installer:</p><p></p><p class="code-label">PythonAnywhere command-line</p><p></p><pre><code>        $ pip3.6 install --user pythonanywhere</code></pre>
+<p>Vous devriez voir quelque chose comme <code>Collecting pythonanywhere</code>, et au bout d&apos;un moment une derni&#xE8;re ligne disant <code>Successfully installed (...) pythonanywhere-(...)</code>.</p><p>Maintenant, nous ex&#xE9;cutez l&apos;assistant pour configurer automatiquement votre application &#xE0; partir de GitHub. Tapez ce qui suit dans la console sur PythonAnywhere (n&apos;oubliez pas d&apos;utiliser votre nom d&apos;utilisateur GitHub &#xE0; la place de <code>&lt;your-github-username&gt;</code>, afin que l&apos;URL corresponde &#xE0; celle du clone de GitHub) :</p><p></p><p class="code-label">PythonAnywhere command-line</p><p></p><pre><code>        $ pa_autoconfigure_django.py --python=3.6 https://github.com/&lt;your-github-username&gt;/my-first-blog.git</code></pre>
+<p>En regardant la commande s&apos;ex&#xE9;cuter, vous devriez voir ce qui ce passe:</p><ul><li>T&#xE9;l&#xE9;chargement de votre code depuis GitHub
+</li>
+<li>Cr&#xE9;ation d&apos;un virtualenv chez PythonAnywhere, comme celui sur votre propre ordinateur
+</li>
+<li>Mise &#xE0; jour de votre fichier de param&#xE8;tres avec des param&#xE8;tres de d&#xE9;ploiement
+</li>
+<li>Mise en place d&#x2019;une base de donn&#xE9;es sur PythonAnywhere en utilisant la commande <code>manage.py migrate</code>
+</li>
+<li>Mise en place de vos fichiers statiques (nous verrons ce que c&apos;est plus tard)
+</li>
+<li>Et configuration de PythonAnywhere pour servir votre application web via son API
+</li></ul>
+<p>Sur PythonAnywhere toutes ces &#xE9;tapes sont automatis&#xE9;es, mais ce sont les m&#xEA;mes &#xE9;tapes que vous auriez &#xE0; faire avec n&apos;importe quel autre fournisseur de serveurs.</p><p>La principale chose &#xE0; remarquer maintenant est que votre base de donn&#xE9;e sur PythonAnywhere est compl&#xE8;tement s&#xE9;par&#xE9;e de votre base de donn&#xE9;es sur votre propre ordinateur. Cela veut dire qu&apos;elle peut contenir des messages diff&#xE9;rents et avoir des comptes administrateurs diff&#xE9;rents. Et donc, exactement comme on l&apos;avait fait sur votre ordinateur, on doit initialiser le compte administrateur avec <code>createsuperuser</code>. PythonAnywhere a initialis&#xE9; votre virtualenv pour vous automatiquement, donc la seule chose que vous avez &#xE0; faire est d&apos;ex&#xE9;cuter:</p><p></p><p class="code-label">PythonAnywhere command-line</p><p></p><pre><code>        (ola.pythonanywhere.com) $ python manage.py createsuperuser</code></pre>
+<p>Entrez les informations pour votre compte administrateur. Mieux vaut utiliser les m&#xEA;mes que sur votre ordinateur pour &#xE9;viter toute confusion, sauf si vous voulez utiliser un mot de passe plus s&#xE9;curis&#xE9; sur PythonAnywhere.</p><p>Maintenant, si vous voulez, vous pouvez aussi jeter un &#x153;il &#xE0; votre code sur PythonAnywhere en utilisant la commande <code>ls</code>:</p><p></p><p class="code-label">PythonAnywhere command-line</p><p></p><pre><code>        (ola.pythonanywhere.com) $ ls
+        blog  db.sqlite3  manage.py  mysite requirements.txt static
+        (ola.pythonanywhere.com) $ ls blog/
+        __init__.py  __pycache__  admin.py  apps.py  migrations  models.py
+        tests.py  views.py</code></pre>
+<p>Vous pouvez &#xE9;galement acc&#xE9;der &#xE0; la page &quot;Fichiers&quot; et naviguer &#xE0; l&apos;aide du navigateur de fichiers PythonAnywhere int&#xE9;gr&#xE9;. (Depuis la page Console, vous pouvez visiter d&apos;autres pages PythonAnywhere en cliquant sur le bouton Menu en haut &#xE0; droite. Une fois que vous vous trouvez dans une de ces pages, les liens vers les autres pages se trouve en haut.)</p><h2 id="vous-&#xEA;tes-d&#xE9;sormais-sur-internet-">Vous &#xEA;tes d&#xE9;sormais sur Internet !</h2><p>Votre site devrait d&#xE9;sormais &#xEA;tre accessible sur Internet ! Cliquez sur la page &quot;Web&quot; dans PythonAnywhere pour obtenir un lien. Vous pouvez partagez ce lien avec qui vous voulez :)</p><blockquote><p><strong>Note</strong> Ce tutoriel est con&#xE7;u pour les d&#xE9;butants, et pendant le d&#xE9;ploiement on a pris quelques raccourcis qui, d&apos;un point de vue de la s&#xE9;curit&#xE9;, ne sont pas id&#xE9;aux. Quand vous voudrez aller plus loin dans ce projet, ou commencer un nouveau projet, vous devriez consulter la <a href="https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/" target="_blank">Checklist de d&#xE9;ploiement pour Django</a> pour obtenir des conseils sur comment s&#xE9;curiser votre site.</p></blockquote><h2 id="conseils-en-cas-de-bug">Conseils en cas de bug</h2><p>Si vous constatez une erreur en ex&#xE9;cutant le script <code>pa_autoconfigure_django.py</code>, voici quelques causes courantes :</p><ul><li>Oubli de cr&#xE9;er votre &quot;jeton API&quot; pour PythonAnywhere.
+</li>
+<li>Faire une erreur dans votre URL GitHub
+</li>
+<li>Si vous voyez un message d&#x2019;erreur indiquant <em>&#xAB; Could not find your settings.py &#xBB;</em>, vous avez probablement oubli&#xE9; d&apos;ajouter tous vos fichiers sur Git, et/ou vous ne les avez pas envoy&#xE9; &#xE0; GitHub. Regardez &#xE0; nouveau la section Git ci-dessus
+</li>
+<li>Si vous avez pr&#xE9;c&#xE9;demment cr&#xE9;&#xE9; un compte PythonAnywhere et avez rencontr&#xE9; une erreur avec collectstatic, vous avez probablement une version ant&#xE9;rieure de SQLite (par ex : 3.8.2) sur votre compte. Dans ce cas, cr&#xE9;ez un nouveau compte et essayez les commandes pr&#xE9;sentes dans la section PythonAnywhere ci-dessus.
+</li></ul>
+<p>Si vous constatez une erreur lorsque vous essayez de visiter votre site web, les <strong>logs d&apos;erreurs</strong> devraient vous permettre de comprendre ce qui ne marche pas. Vous trouverez un lien vers les logs dans la page <a href="https://www.pythonanywhere.com/web_app_setup/" target="_blank">Web</a> de PythonAnywhere. Regardez s&#x2019;il y a des messages d&#x2019;erreurs ; les plus r&#xE9;cents seront en bas du fichier.</p><p>Vous pourrez aussi trouver des astuces pour le d&#xE9;bogage sur le site d&apos;aide de<a href="http://help.pythonanywhere.com/pages/DebuggingImportError" target="_blank">PythonAnywhere</a>.</p><p>Et n&apos;oubliez pas, votre coach est l&#xE0; pour vous aider !</p><h1 id="jetez-un-il-&#xE0;-votre-site-">Jetez un &#x153;il &#xE0; votre site !</h1><p>La page par d&#xE9;faut de votre site doit dire &quot;&#xC7;a marche!&quot;, comme c&apos;est le cas sur votre ordinateur local. Vous pouvez essayer d&apos;acc&#xE9;der &#xE0; l&apos;interface d&#x2019;administration en ajoutant <code>/admin/</code> &#xE0; la fin de l&apos;URL. Normalement, une page de login devrait s&apos;afficher. Identifiez-vous avec votre nom d&apos;utilisateur et mot de passe et vous verrez que vous pourrez cr&#xE9;er de nouveaux messages sur le serveur. N&apos;oubliez pas que les messages dans votre base de donn&#xE9;es locale n&apos;ont pas &#xE9;t&#xE9; envoy&#xE9;s sur la version en ligne de votre blog.</p><p>Une fois que vous avez cr&#xE9;&#xE9; des messages, vous pouvez revenir &#xE0; votre configuration locale (pas PythonAnywhere). De l&#xE0;, vous devez travailler sur votre installation locale pour apporter des modifications. C&apos;est la fa&#xE7;on habituelle de proc&#xE9;der dans le d&#xE9;veloppement web : faire des modifications localement, envoyer ces modifications sur GitHub, puis t&#xE9;l&#xE9;charger ces modifications vers votre serveur Web de production. Cela vous permet de faire des exp&#xE9;riences sans endommager votre site web de production (celui sur Internet). Cool, non ?</p><p><em>F&#xE9;licitations !</em> Le d&#xE9;ploiement est l&#x2019;une des parties les plus &#xE9;pineuses du d&#xE9;veloppement web et il faut souvent plusieurs jours avant d&apos;obtenir quelque chose de fonctionnel. Mais vous avez r&#xE9;ussi &#xE0; mettre votre site en ligne, dans le vrai Internet !</p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../django_admin/" class="navigation navigation-prev " aria-label="Previous page: Django admin">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../django_urls/" class="navigation navigation-next " aria-label="Next page: Les URL de Django">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Déployer!","level":"1.14","depth":1,"next":{"title":"Les URL de Django","level":"1.15","depth":1,"path":"django_urls/README.md","ref":"django_urls/README.md","articles":[]},"previous":{"title":"Django admin","level":"1.13","depth":1,"path":"django_admin/README.md","ref":"django_admin/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"django_version":"2.2.4"},"language":"fr","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"deploy/README.md","mtime":"2020-06-27T13:00:23.842Z","type":"markdown"},"gitbook":{"version":"3.4.0","time":"2020-06-27T13:00:41.274Z"},"basePath":"..","book":{"language":"fr"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
