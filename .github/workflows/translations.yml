@@ -2,6 +2,11 @@ name: Update translations
 
 on:
   workflow_dispatch:
+    inputs:
+      include_beta:
+        type: boolean
+        default: false
+        description: Include beta languages
 
 env:
   GIT_AUTHOR_NAME: Django Girls Automation
@@ -19,7 +24,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Set the language list
         id: set_list
-        run: ./.github/list_languages
+        run: ./.github/list_languages --include-beta ${{ inputs.include_beta }}
 
   update_language:
     name: 'Update ${{ matrix.language }} translations from Crowdin'
