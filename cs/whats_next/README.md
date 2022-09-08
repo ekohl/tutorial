@@ -1,40 +1,43 @@
 # Co dál?
 
-Můžeš si pogratulovat! **Jsi naprosto úžasná**. Jsme na tebe hrdí! < 3
+Můžeš si pogratulovat! **Jsi naprosto úžasná**. Jsme na tebe hrdí! <3
 
 ### Co mám dělat teď?
 
-Odpočiň si a relaxuj. Právě jsi udělala něco opravdu obrovského.
+Take a break and relax! You have just done something really huge.
 
-Poté nezapomeň:
-
-*   Sleduj Django Girls na [Facebooku][1] nebo [Twitteru][2] a zůstaň v obraze
-
- [1]: http://facebook.com/djangogirls
- [2]: https://twitter.com/djangogirls
+After that, make sure to follow Django Girls on [Facebook](http://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) to stay up to date.
 
 ### Můžete mi doporučit nějaké další zdroje?
 
-Ano! Zaprvé, jdi a zkus naši další knihu, jmenuje se [Django Girls Tutorial: Extensions][3].
+Yes! There are a *lot* of resources online for learning all kinds of programming skills – it can be pretty daunting to work out where to go next, but we've got you covered. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
 
- [3]: https://tutorial-extensions.djangogirls.org
+#### Django
 
-Později můžeš zkusit, některý ze zdrojů uvedených níže. Všechny můžeme velmi doporučit!
+- Our other book, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
+- [Django's official tutorial](https://docs.djangoproject.com/en/3.2/intro/tutorial01/)
+- [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
+- [Django for Everybody Specialization](https://www.coursera.org/specializations/django) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
 
-- [Django's official tutorial][4]
-- [New Coder tutorials][5]
-- [Code Academy Python course][6]
-- [Code Academy HTML & CSS course][7]
-- [Django Carrots tutorial][8]
-- [Learn Python The Hard Way book][9]
-- [Getting Started With Django video lessons][10]
-- [Two Scoops of Django: Best Practices for Django 1.8 book][11]
+#### HTML, CSS and JavaScript
 
- [4]: https://docs.djangoproject.com/en/1.8/intro/tutorial01/
- [5]: http://newcoder.io/tutorials/
- [6]: https://www.codecademy.com/en/tracks/python
- [7]: https://www.codecademy.com/tracks/web
- [8]: https://github.com/ggcarrots/django-carrots/
- [9]: http://learnpythonthehardway.org/book/
- [10]: http://www.gettingstartedwithdjango.com/
- [11]: https://twoscoopspress.com/products/two-scoops-of-django-1-8
+- [Codecademy's web development course](https://www.codecademy.com/learn/paths/web-development)
+- [freeCodeCamp](https://www.freecodecamp.org/)
+
+#### Python
+
+- [Codecademy's Python course](https://www.codecademy.com/learn/learn-python)
+- [Google's Python course](https://developers.google.com/edu/python/)
+- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – the initial exercises are free
+- [New Coder tutorials](http://newcoder.io/tutorials/) – this is a variety of practical examples of how you might use Python
+- [edX](https://www.edx.org/course?search_query=python) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
+- [Coursera's Python specialization](https://www.coursera.org/specializations/python) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
+- [Python for Everybody](https://www.py4e.com/) - a free and open version of the Coursera Python for Everybody specialization
+
+#### Working with data
+
+- [Codecademy's data science course](https://www.codecademy.com/learn/paths/data-science)
+- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
+- [Dataquest](https://www.dataquest.io/) – the first 30 "missions" are free
+
+We can't wait to see what you build next!
