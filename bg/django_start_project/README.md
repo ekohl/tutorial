@@ -1,8 +1,8 @@
 # Вашият първи проект с Django!
 
-> Част от тази глава е базирана на уроци от Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> Част от тази глава е базирана на ръководства от Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 > 
-> Части от тази глава се основават на [django-marcador tutorial](http://django-marcador.keimlink.de/), лицензиран съгласно лиценза Creative Commons Attribution-ShareAlike 4.0 International. Урокът за django-marcador е защитен с авторско право от Markus Zapke-Gründemann и сие.
+> Части от тази глава са базирани на [django-marcador ръководство](http://django-marcador.keimlink.de/), лицензирано съгласно лиценза Creative Commons Attribution-ShareAlike 4.0 International. Ръководството на django-marcador е защитено с авторско право от Markus Zapke-Gründemann et al.
 
 Ще създадем малък блог!
 
@@ -23,7 +23,7 @@
 
 > Точката `.` е от решаващо значение, тъй като казва на скрипта да инсталира Django във вашата текуща директория (за която точката `.` е препратка).
 > 
-> **Забележка** Когато пишете командата по-горе, не забравяйте, че въвеждате само частта, която започва от `django-admin`. Частта `(myvenv) ~/djangogirls$`, показана тук, е само пример за подкана, която ще покани вашия вход във вашия команден ред.
+> **Забележка** Когато пишете командата по-горе, не забравяйте, че въвеждате само частта, която започва от `django-admin`. Частта `(myvenv) ~/djangogirls$`, показана тук, е само пример за подкана, която ще покани твоето въвеждане във твоя команден ред.
 
 <!--endsec-->
 
@@ -38,7 +38,7 @@
 
 > Точката `.` е от решаващо значение, тъй като казва на скрипта да инсталира Django във вашата текуща директория (за която точката `.` е препратка).
 > 
-> **Забележка** Когато пишете командата по-горе, не забравяйте, че въвеждате само частта, която започва от `django-admin.exe`. Частта `(myvenv) C:\Users\Name\djangogirls>`, показана тук, е само пример за подкана, която ще покани вашия вход във вашия команден ред.
+> **Забележка** Когато пишете командата по-горе, не забравяйте, че въвеждате само частта, която започва от `django-admin.exe`. Частта `(myvenv) C:\Users\Name\djangogirls>`, показана тук, е само пример за подкана, която ще покани твоето въвеждане във твоя команден ред.
 
 <!--endsec-->
 
@@ -47,12 +47,13 @@
     djangogirls
     ├── manage.py
     ├── mysite
-    │   ├── __init__.py
-    │   ├── settings.py
-    │   ├── urls.py
-    │   └── wsgi.py
+    │   ├── asgi.py
+    │   ├── __init__.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
     ├── myvenv
-    │   └── ...
+    │   └── ...
     └── requirements.txt
     
 
@@ -82,7 +83,7 @@
 TIME_ZONE = 'Europe/Berlin'
 ```
 
-Езиков код се състои от езика, напр. `en` за английски или `de` за немски, и кодът на държавата, напр. `de` за Германия или `ch` за Швейцария. Ако английският не е вашият роден език, можете да добавите това, за да промените бутоните по подразбиране и известията от Django, за да бъдат на вашия език. Така че ще имате бутон „Отказ“, преведен на езика, който сте дефинирали тук. [Django идва с много подготвени преводи](https://docs.djangoproject.com/en/2.2/ref/settings/#language-code).
+Езиков код се състои от езика, напр. `en` за английски или `de` за немски, и кодът на държавата, напр. `de` за Германия или `ch` за Швейцария. Ако английският не е вашият роден език, можете да добавите това, за да промените бутоните по подразбиране и известията от Django, за да бъдат на вашия език. Така че ще имате бутон „Отказ“, преведен на езика, който сте дефинирали тук. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/3.2/ref/settings/#language-code).
 
 Ако искате друг език, променете езиковия код, като промените следния ред:
 
@@ -92,13 +93,13 @@ TIME_ZONE = 'Europe/Berlin'
 LANGUAGE_CODE = 'de-ch'
 ```
 
-Ще трябва също да добавим път за статични файлове. (Ще разберем всичко за статичните файлове и CSS по-късно в урока.) Слезте до *края* на файла и точно под надписа `STATIC_URL` добавете нов, наречен `STATIC_ROOT`:
+Ще трябва също да добавим път за статични файлове. (Ще разберем всичко за статичните файлове и CSS по-късно в ръководството.) Слезте до *края* на файла и точно под надписа `STATIC_URL` добавете нов, наречен `STATIC_ROOT`:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
 ```python
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = BASE_DIR / 'static'
 ```
 
 Когато `DEBUG` е `True` и `ALLOWED_HOSTS` е празен, хостът е валидиран срещу `['localhost', '127.0.0.1', '[::1]']`. Това няма да съвпада с името на хоста ни в PythonAnywhere, след като разширим нашето приложение, така че ще променим следната настройка:
@@ -112,6 +113,48 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 > **Забележка**: Ако използвате Chromebook, добавете този ред в долната част на вашия settings.py файл:    `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 > 
 > Също така добавете `.amazonaws.com` към `ALLOWED_HOSTS`, ако използвате cloud9
+> 
+> If you are hosting your project on `Glitch.com`, let us protect the Django secret key that needs to remain confidential (otherwise, anyone remixing your project could see it):
+> 
+> - First, we are going to create a random secret key. Open the Glitch terminal again, and type the following command:
+>     
+>     {% filename %}command-line{% endfilename %}
+>     
+>     ```bash
+>     python -c 'from django.core.management.utils import get_random_secret_key; \
+>           print(get_random_secret_key())'
+>     ```
+>     
+>     This should display a long random string, perfect to use as a secret key for your brand new Django web site. We will now paste this key into a `.env` file that Glitch will only show you if you are the owner of the web site.
+> 
+> - Create a file `.env` at the root of your project and add the following property in it:
+>     
+>     {% filename %}.env{% endfilename %}
+>     
+>     ```bash
+>     # Here, inside the single quotes, you can cut and paste the random key generated above
+>     SECRET='3!0k#7ds5mp^-x$lqs2%le6v97h#@xopab&oj5y7d=hxe511jl'
+>     ```
+> 
+> - Then update the Django settings file to inject this secret value and set the Django web site name:
+>     
+>     {% filename %}mysite/settings.py{% endfilename %}
+>     
+>     ```python
+>     import os
+>     
+>     SECRET_KEY = os.getenv('SECRET')
+>     ```
+> 
+> - And a little further down in the same file, we inject the name of your new Glitch website:
+>     
+>     {% filename %}mysite/settings.py{% endfilename %}
+>     
+>     ```python
+>     ALLOWED_HOSTS = [os.getenv('PROJECT_DOMAIN') + ".glitch.me"]
+>     ```
+>     
+>     The `PROJECT_DOMAIN` value is automatically generated by Glitch. It will correspond to the name of your project.
 
 ## Създаване на база данни
 
@@ -125,7 +168,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 ```
@@ -136,13 +179,13 @@ DATABASES = {
 
     (myvenv) ~/djangogirls$ python manage.py migrate
     Operations to perform:
-      Apply all migrations: auth, admin, contenttypes, sessions
+      Apply all migrations: admin, auth, contenttypes, sessions
     Running migrations:
-      Rendering model states... DONE
       Applying contenttypes.0001_initial... OK
       Applying auth.0001_initial... OK
       Applying admin.0001_initial... OK
       Applying admin.0002_logentry_remove_auto_add... OK
+      Applying admin.0003_logentry_add_action_flag_choices... OK
       Applying contenttypes.0002_remove_content_type_name... OK
       Applying auth.0002_alter_permission_name_max_length... OK
       Applying auth.0003_alter_user_email_max_length... OK
@@ -152,7 +195,10 @@ DATABASES = {
       Applying auth.0007_alter_validators_add_error_messages... OK
       Applying auth.0008_alter_user_username_max_length... OK
       Applying auth.0009_alter_user_last_name_max_length... OK
-      Applying sessions.0001_initial... ОК
+      Applying auth.0010_alter_group_name_max_length... OK
+      Applying auth.0011_update_proxy_permissions... OK
+      Applying auth.0012_alter_user_first_name_max_length... OK
+      Applying sessions.0001_initial... OK
     
 
 И ние сме готови! Време е да стартирате уеб сървъра и да видите дали уебсайтът ни работи!
@@ -173,35 +219,48 @@ DATABASES = {
     (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
     
 
-Ако сте в Windows и това не успее с `UnicodeDecodeError`, използвайте вместо това тази команда:
+or this one if you are using Glitch:
+
+{% filename %}Glitch.com terminal{% endfilename %}
+
+    $ refresh
+    
+    
+
+If you are on Windows and this fails with `UnicodeDecodeError`, use this command instead:
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-Сега трябва да проверите дали уебсайтът ви работи. Отворете браузъра си (Firefox, Chrome, Safari, Internet Explorer или каквото използвате) и въведете този адрес:
+Now you need to check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:
 
 {% filename %}browser{% endfilename %}
 
     http://127.0.0.1:8000/
     
 
-Ако използвате Chromebook и Cloud9, вместо това щракнете върху URL адреса в изскачащия прозорец, който би трябвало да се появи в горния десен ъгъл на командния прозорец, където работи уеб сървърът. URL адресът ще изглежда като:
+If you're using a Chromebook and Cloud9, instead click the URL in the pop-up window that should have appeared in the upper right corner of the command window where the web server is running. The URL will look something like:
 
 {% filename %}browser{% endfilename %}
 
     https://<a bunch of letters and numbers>.vfs.cloud9.us-west-2.amazonaws.com
     
 
-Честито! Току-що създадохте първия си уебсайт и го стартирате с помощта на уеб сървър! Това не е ли страхотно?
+or on Glitch:
 
-![Инсталирането работи!](images/install_worked.png)
+    https://name-of-your-glitch-project.glitch.me
+    
 
-Обърнете внимание, че командният прозорец може да стартира само едно по едно и командният прозорец, който отворихте по-рано, работи на уеб сървъра. Докато уеб сървърът работи и чака допълнителни входящи заявки, терминалът ще приема нов текст, но няма да изпълнява нови команди.
+Congratulations! You've just created your first website and run it using a web server! Isn't that awesome?
+
+![Install worked!](images/install_worked.png)
+
+Note that a command window can only run one thing at a time, and the command window you opened earlier is running the web server. As long as the web server is running and waiting for additional incoming requests, the terminal will accept new text but will not execute new commands.
 
 > Прегледахме как работят уеб сървърите в главата **Как работи Интернет**.
 
-За да въведете допълнителни команди, докато уеб сървърът работи, отворете нов прозорец на терминала и активирайте своята virtualenv - за да прегледате инструкциите как да отворите втори прозорец на терминала, вижте [Въведение в командния ред](../intro_to_command_line/README.md). За да спрете уеб сървъра, върнете се обратно към прозореца, в който работи, и натиснете CTRL + C - Control и C клавиши заедно (във Windows може да се наложи да натиснете Ctrl + Break).
+To type additional commands while the web server is running, open a new terminal window and activate your virtualenv -- to review instructions on how to open a second terminal window, see [Introduction to the command line](../intro_to_command_line/README.md). To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
 
-Готови ли сте за следващата стъпка? Време е да създадете малко съдържание!
+Ready for the next step? It's time to create some content!

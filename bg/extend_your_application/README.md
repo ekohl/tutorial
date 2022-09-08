@@ -19,13 +19,13 @@
 
 {% block content %}
     {% for post in posts %}
-        <div class="post">
-            <div class="date">
+        <article class="post">
+            <time class="date">
                 {{ post.published_date }}
-            </div>
+            </time>
             <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
-        </div>
+        </article>
     {% endfor %}
 {% endblock %}
 ```
@@ -78,7 +78,19 @@ urlpatterns = [
 
 И така, добавихме нов URL образец към `blog/urls.py`! Нека презаредим страницата: http://127.0.0.1:8000/ Бум! Сървърът отново спря да работи. Погледнете в конзолата -- както се очакваше, има нова грешка!
 
-![AttributeError](images/attribute_error2.png)
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
+
+        return _bootstrap._gcd_import(name[level:], package, level)
+      File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+      File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+      File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+      File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+      File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+      File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+      File "/Users/ola/djangogirls/blog/urls.py", line 6, in <module>
+        path('post/<int:pk>/', views.post_detail, name='post_detail'),
+    AttributeError: module 'blog.views' has no attribute 'post_detail'
+    
 
 Помните ли каква е следващата стъпка? Добавяне на нов изглед (view)!
 
@@ -114,7 +126,6 @@ Post.objects.get(pk=pk)
 
 ```python
 from django.shortcuts import render, get_object_or_404
-
 ```
 
 И накрая на файла ще добавим нашия изглед (*view*):
@@ -149,15 +160,15 @@ def post_detail(request, pk):
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <div class="post">
+    <article class="post">
         {% if post.published_date %}
-            <div class="date">
+            <time class="date">
                 {{ post.published_date }}
-            </div>
+            </time>
         {% endif %}
         <h2>{{ post.title }}</h2>
         <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    </article>
 {% endblock %}
 ```
 
@@ -178,7 +189,7 @@ def post_detail(request, pk):
 {% filename %}command-line{% endfilename %}
 
     $ git status
-    $ git add --all .
+    $ git add .
     $ git status
     $ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
     $ git push
@@ -212,4 +223,4 @@ def post_detail(request, pk):
 
 Във всеки случай сега сме готови да отидем на ["Web" страницата](https://www.pythonanywhere.com/web_app_setup/) (от бутона на менюто в горния десен ъгъл) и натиснем **Reload**, след това погледнете страницата https://subdomain.pythonanywhere.com за да видите резултата.
 
-Та това е! Поздравления :)
+And that should be it. Congrats! :)

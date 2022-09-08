@@ -20,7 +20,7 @@
 {{ posts }}
 ```
 
-Пробвайте това във вашия шаблон `blog/templates/blog/post_list.html`. Отворете го в редактора си и заместете всичко от вторият `<div>` до третият `</div>` с `{{ posts }}`. Запазете файла и опреснете страницата за да видите резултатите:
+Пробвайте това във вашия шаблон `blog/templates/blog/post_list.html`. Open it up in the code editor, and replace the existing `<article>` elements with `{{ posts }}`. Запазете файла и опреснете страницата за да видите резултатите:
 
 ![Фигура 13.1](images/step1.png)
 
@@ -51,16 +51,16 @@
 {% filename %}blog/templates/blog/post_list.html{% endfilename %} 
 
 ```html
-<div>
+<header>
     <h1><a href="/">Django Girls Blog</a></h1>
-</div>
+</header>
 
 {% for post in posts %}
-    <div>
-        <p>published: {{ post.published_date }}</p>
+    <article>
+        <time>published: {{ post.published_date }}</time>
         <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    </article>
 {% endfor %}
 ```
 
@@ -80,7 +80,7 @@
 
     $ git status
     [...]
-    $ git add --all .
+    $ git add .
     $ git status
     [...]
     $ git commit -m "Modified templates to display posts from database."

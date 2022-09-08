@@ -15,8 +15,9 @@
 #### Django
 
 - Другата ни книга, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
-- [Официалното ръководство на Django](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
+- [Официалното ръководство на Django](https://docs.djangoproject.com/en/3.2/intro/tutorial01/)
 - [Първи стъпки с видео уроци на Django](http://www.gettingstartedwithdjango.com/)
+- [Django for Everybody Specialization](https://www.coursera.org/specializations/django) - някои видео лекции могат да бъдат одитирани безплатно и можете да спечелите сертификат Coursera, като вземете тези курсове
 
 #### HTML, CSS и JavaScript
 
