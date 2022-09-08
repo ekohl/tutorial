@@ -47,6 +47,7 @@ Auf Windows solltest du den folgenden Befehl ausführen. **(Vergiss den Punkt (`
     djangogirls
     ├── manage.py
     ├── mysite
+    │   ├── asgi.py
     │   ├── __init__.py
     │   ├── settings.py
     │   ├── urls.py
@@ -82,7 +83,7 @@ Suche in `settings.py` die Zeile, die `TIME_ZONE` enthält und ändere sie ab, u
 TIME_ZONE = 'Europe/Berlin'
 ```
 
-Ein Sprachkennung besteht aus einem Kürzel für die Sprache, z.B. `en` für Englisch oder `de` für Deutsch, und einem Länder-Kürzel z.B. `de` für Deutschland oder `ch` für die Schweiz. Falls Englisch nicht deine Muttersprache ist, kannst du damit die Standard-Knöpfe und -Meldungen von Django auf deine Sprache wechseln. Der "Cancel"-Knopf würde dann in diese Sprache übersetzt (und z.B. bei Deutsch mit "Abbrechen" beschriftet). [Django enthält viele fix-fertige Übsersetzungen](https://docs.djangoproject.com/en/2.2/ref/settings/#language-code).
+Ein Sprachkennung besteht aus einem Kürzel für die Sprache, z.B. `en` für Englisch oder `de` für Deutsch, und einem Länder-Kürzel z.B. `de` für Deutschland oder `ch` für die Schweiz. Falls Englisch nicht deine Muttersprache ist, kannst du damit die Standard-Knöpfe und -Meldungen von Django auf deine Sprache wechseln. Der "Cancel"-Knopf würde dann in diese Sprache übersetzt (und z.B. bei Deutsch mit "Abbrechen" beschriftet). [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/3.2/ref/settings/#language-code).
 
 Wenn du eine andere Sprache als Englisch willst, ändere die Sprachkennung, indem du die folgende Zeile änderst:
 
@@ -98,7 +99,7 @@ Ausserdem müssen wir einen Pfad für statische Dateien festlegen. (Über statis
 
 ```python
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = BASE_DIR / 'static'
 ```
 
 Wenn `DEBUG` auf `True` gesetzt ist und `ALLOWED_HOSTS` leer, dann wird der "Host" gegen `['localhost', '127.0.0.1', '[::1]']` validiert. Unser Hostname auf PythonAnywhere, wo wir unsere Anwendung deployen werden, würde da nicht passen. Deswegen ändern wir folgende Einstellung:
@@ -113,7 +114,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 > 
 > Falls du Cloud9 benutzt, füge auch `.amazonaws.com` zu den `ALLOWED_HOSTS` hinzu
 > 
-> Wenn du dein Projekt auf `Glitch.com` hostest, dann lass uns den Django-Sekret-Key schützen, der vertraulich bleiben muss (andernfalls könnte jeder, der dein Projekt remixt, diesen sehen):
+> If you are hosting your project on `Glitch.com`, let us protect the Django secret key that needs to remain confidential (otherwise, anyone remixing your project could see it):
 > 
 > - Zuerst erstellen wir einen zufälligen geheimen Schlüssel. Öffne erneut das Glitch-Terminal und gib den folgenden Befehl ein:
 >     
@@ -140,6 +141,8 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 >     {% filename %}mysite/settings.py{% endfilename %}
 >     
 >     ```python
+>     import os
+>     
 >     SECRET_KEY = os.getenv('SECRET')
 >     ```
 > 
@@ -165,7 +168,7 @@ Das sollte schon in der `mysite/settings.py`-Datei eingestellt sein:
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 ```
@@ -176,13 +179,13 @@ Um eine Datenbank für unseren Blog zu erstellen, müssen wir folgenden Befehl i
 
     (myvenv) ~/djangogirls$ python manage.py migrate
     Operations to perform:
-      Apply all migrations: auth, admin, contenttypes, sessions
+      Apply all migrations: admin, auth, contenttypes, sessions
     Running migrations:
-      Rendering model states... DONE 
       Applying contenttypes.0001_initial... OK
       Applying auth.0001_initial... OK
       Applying admin.0001_initial... OK
-      Applying admin.0002_logentry_remove_auto_add... OK 
+      Applying admin.0002_logentry_remove_auto_add... OK
+      Applying admin.0003_logentry_add_action_flag_choices... OK 
       Applying contenttypes.0002_remove_content_type_name... OK 
       Applying auth.0002_alter_permission_name_max_length... OK 
       Applying auth.0003_alter_user_email_max_length... OK 
@@ -192,6 +195,9 @@ Um eine Datenbank für unseren Blog zu erstellen, müssen wir folgenden Befehl i
       Applying auth.0007_alter_validators_add_error_messages... OK
       Applying auth.0008_alter_user_username_max_length... OK
       Applying auth.0009_alter_user_last_name_max_length... OK
+      Applying auth.0010_alter_group_name_max_length... OK
+      Applying auth.0011_update_proxy_permissions... OK
+      Applying auth.0012_alter_user_first_name_max_length... OK
       Applying sessions.0001_initial... OK
     
 
