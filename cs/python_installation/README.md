@@ -2,12 +2,14 @@
 
 Konečně jsme u něj!
 
-Nejdříve si pojďme říci, co Python je. Python je velmi populární programovací jazyk, který lze použít k vytváření webových stránek, her, vědeckého software, grafického software a mnoho, mnoho dalšího.
+Nejdříve si pojďme říci co Python je. Python je velmi populární programovací jazyk, který lze použít k vytváření webových stránek, her, vědeckého software, grafického software a mnoho, mnoho dalšího.
 
-Python vznikl na konci 80. let a jeho hlavním cílem je být pro lidské bytosti čitelný (nejen pro stroje!). Právě proto vypadá mnohem jednodušeji než jiné programovací jazyky. Díky tomu je snadné se ho naučit, ale neboj, Python je opravdu mocný!
+Python vznikl na konci 80. let a jeho hlavním cílem je být čitelný lidským bytostem (nejen strojům!). This is why it looks simpler than other programming languages, but don't worry – Python is also really powerful!
 
 # Instalace Pythonu
 
-> **Poznámka:** Pokud jsi již prošla přes kroky instalace, není třeba se k tomu znovu vracet - můžeš přeskočit přímo vpřed na další kapitolu!
+> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions.
+> 
+> **Note** If you already worked through the [installation steps](../installation/README.md), there's no need to do this again – you can skip straight ahead to the next chapter!
 
 {% include "/python_installation/instructions.md" %}

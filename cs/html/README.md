@@ -1,216 +1,227 @@
 # Úvod do HTML
 
-Co je to šablona?
+Co je to šablona, se ami ptáš?
 
-Šablona je soubor, který můžeme opakovaně použít pro prezentaci různých informací v konzistentním formátu - například bys mohla šablonu použít pro psaní dopisu, protože ačkoli každý dopis může obsahovat jinou zprávu a být adresován jiné osobě, všechny dopisy budou sdílet stejný formát.
+A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter because although each letter might contain a different message and be addressed to a different person, they will share the same format.
 
-Formát Django šablony je popsán v jazyku nazývaném HTML (Je to to stejné HTML, které jsme zmínili v první kapitole **Jak funguje internet**).
+A Django template's format is described in a language called HTML (that's the HTML we mentioned in the first chapter, **How the Internet works**).
 
 ## Co je HTML?
 
-HTML je jednoduchý kód, který je interpretován tvým webovým prohlížečem - jako je Chrome, Firefox nebo Safari - aby se uživateli zobrazila webová stránka.
+HTML is a code that is interpreted by your web browser – such as Chrome, Firefox or Safari – to display a web page for the user.
 
-HTML je zkratka od "HyperText Markup Language". **HyperText** znamená, že je to typ textu, který podporuje hypertextové odkazy mezi stránkami. **Markup** znamená, že jsme vzali dokument a označili ho kódem, abychom něčemu (v tomto případě prohlížeči) řekli, jak interpretovat stránku. HTML kód se vytváží pomocí **tagů**. Každý začíná znakem `<` a končí znakem `>`. Tyto tagy představují **elementy** značkovacího jazyka (Markup).
+HTML je zkratka od "HyperText Markup Language". **HyperText** znamená, že je to typ textu, který podporuje hypertextové odkazy mezi stránkami. **Markup** znamená, že jsme vzali dokument a označili ho kódem, abychom něčemu (v tomto případě prohlížeči) řekli, jak interpretovat stránku. HTML kód se vytváží pomocí **tagů**. Každý začíná znakem `<` a končí znakem `>`. Tyto tagy representují **elementy** značkovacího jazyka (Markup.
 
 ## Tvá první šablona!
 
-Vytvoření šablony znamená vytvoření souboru šablony. Všechno je soubor, že? Toho sis už asi všimla.
+Vytvoření šablony znamená vytvoření souboru šablony. Všechno je soubor, dobře? Toho sis už asi všimla.
 
 Šablony jsou uloženy v adresáři `blog/templates/blog`. Takže nejdříve vytvoř adresář `templates` uvnitř tvé blog složky. Potom vytvoř další složku nazvanou `blog` uvnitř templates složky:
 
-```
-blog
-└───templates
-    └───blog
-```  
+    blog
+    └───templates
+        └───blog
+    
 
-(Mohlo by tě zajímat proč potřebujeme dva adresáře s názvem `blog` - jak později zjistíš, je to pouze užitečná konvence, která dělá život jednodušším, když věci začnou být komplikovanější.)
+(You might wonder why we need two directories both called `blog` – as you will discover later, this is a useful naming convention that makes life easier when things start to get more complicated.)
 
-A teď vytvoř soubor `post_list.html` uvnitř adresáře `blog/templates/blog`. Prozatím ho nech prázdný.
+A teď vytvoř soubor `post_list.html` (pro teď ho nech prázdný) uvnitř adresáře `blog/templates/blog`.
 
-Podívej se, jak tvá stránka vypadá teď: http://127.0.0.1:8000/
+Podívej se jak tvá stránka vypadá teď: http://127.0.0.1:8000/
 
-> Pokud máš stále chybu `TemplateDoesNotExists`, zkus restartovat server. Běž do příkazové řádky, zastav server zmáčknutím Ctrl+C (Control a C zároveň) a znovu ho rozběhni pomocí příkazu `python manage.py runserver`.
+> Pokud se ti stále zobrazuje chyba`TemplateDoesNotExists`, zkus restartovat server. Go to the command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
 
-![Figure 11.1][1]
+![Figure 11.1](images/step1.png)
 
- [1]: images/step1.png
+No error anymore! Congratulations! :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
 
-Žádná chybová hláška! Gratulujeme :) Nicméně na tvé stránce se ještě nezveřejnilo nic kromě prázdné stránky, protože tvá šablona je také prázdná. To musíme napravit.
+Open the new file in the code editor, and add the following:
 
-Do souboru šablony (template) přidej následující:
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
-    <p>Ahoj!</p>
-    <p>Funguje to!</p>
+<body>
+    <p>Hi there!</p>
+    <p>It works!</p>
+</body>
 </html>
-```  
+```
 
-Tak jak tvá stránka vypadá teď? Klikni a zjisti to: http://127.0.0.1:8000/
+So how does your website look now? Visit it to find out: http://127.0.0.1:8000/
 
-![Figure 11.2][2]
+![Figure 11.2](images/step3.png)
 
- [2]: images/step3.png
+It worked. Nice work there! :)
 
-Fungovalo to! Pěkná práce :)
+* The line `<!DOCTYPE html>` is not a HTML tag. It only declares the document type. Here, it informs the browser that document type is [HTML5](https://html.spec.whatwg.org/#the-doctype). This is always the beginning of any HTML5 file.
+* The most basic tag, `<html>`, is always the beginning of html content and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
+* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
 
-*   Nejzákladnější tag, `<html>`, je vždy na začátku jakékoli stránky a `</html>` na jejím konci. Jak vidíš, celý obsah stránky je mezi otevíracím tagem `<html>` a zavíracím tagem `</html>`
-*   `<p>` je tag pro element paragraf; `</p>` každý paragraf ukončuje
+## Head and body
 
-## Head & body
+Každá HTML stránka je také rozdělena na dva elementy: **head** (hlavu) a **body** (tělo.
 
-Každá HTML stránka je také rozdělena na dva elementy: **head** (hlavu) a **body** (tělo).
+* **head** je element, který obsahuje informace o dokumentu, které se nezobrazují na webu.
 
-*   **head** je element, který obsahuje informace o dokumentu, které se nezobrazují na webu.
+* **body** je element který obsahuje vše ostatní, co se zobrazuje jakou součást webové stránky.
 
-*   **body** je element, který obsahuje vše ostatní, co se zobrazuje jakou součást webové stránky.
+`<head>` používáme abychom prohlížeči sdělili konfiguraci stránky, `<body>` abychom sdělili co na té stránce skutečně je.
 
-`<head>` používáme, abychom prohlížeči sdělili konfiguraci stránky, `<body>`, abychom řekli, co na té stránce skutečně je.
+For example, you can put a web page title element inside the `<head>`, like this:
 
-Například dovnitř `<head>` můžeš dát element title (titulek), třeba takhle:
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
     <head>
         <title>Ola's blog</title>
     </head>
     <body>
-        <p>Ahoj!</p>
-        <p>Funguje to!</p>
+        <p>Hi there!</p>
+        <p>It works!</p>
     </body>
 </html>
-```  
+```
 
 Ulož soubor a načti znovu svou stránku.
 
-![Figure 11.3][3]
-
- [3]: images/step4.png
+![Figure 11.3](images/step4.png)
 
 Všimla sis, že prohlížeč už ví, že "Ola's blog" je titulek stránky? Interpretoval `<title>Ola's blog</title>` a umístil text jako název záložky.
 
-Pravděpodobně sis také všimla, že každý otevírací tag je doplněn *zavíracím tagem* se znakem `/`, a že elementy jsou *vnořené* (tzn. že nemůžeš zavřít daný tag, dokud nejsou zavřeny všechny tagy uvnitř).
+Pravděpodobně jsi si také všimla, že každý otevírací tag je doplněn *zavíracím tagem* se znakem `/`, a že elementy jsou *vnořené* (tzn. že nemůžeš zavřít daný tag dokud nejsou zavřeny všechny tagy uvnitř).
 
-Je to jako dávat věci do krabic. Máš jednu velkou krabici, `<html></html>`; uvnitř je `<body></body>`. A ta obsahuje další, menší krabice: `<p></p>`.
+Je to jako dávat věci do krabic. Máš jednu velkou krabici, `<html></html>`; uvnitř je `<body></body>`, A ta obsahuje další, menší krabice: `<p></p>`.
 
-Musíš dodržovat pravidlo *zavíracích* tagů a *vnořených* elementů - pokud ne, prohlížeč je nemusí správně interpretovat a tvá webová stránka se bude zobrazovat nesprávně.
+You need to follow these rules of *closing* tags, and of *nesting* elements – if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.
 
 ## Přizpůsob si šablonu
 
 Teď si můžeš užít trochu zábavy a pokusit se přizpůsobit si svou šablonu! Tady je pár užitečných tagů:
 
-*   `<h1>Hlavní nadpis</h1>` - Pro tvůj nejdůležitější nadpis
-*   `<h2>Pod-nadpis</h2>` pro nadpis na nižší úrovni
-*   `<h3>Pod-pod-nadpis</h3>` ... a tak dále, až k `<h6>`
-*   `<em>text</em>` zvýrazňuje tvůj text
-*   `<strong>text</strong>` zvýrazňuje tvůj text silnějji
-*   `<br />` vkládá novou řádku (dovnitř br nemůžeš nic dát)
-*   `<a href="https://djangogirls.org">link</a>` vytváří odkaz
-*   `<ul><li>První položka seznamu</li><li>druhá položka seznamu</li></ul>` vytváří seznam, zrovna jako tento!
-*   `<div></div>` definuje sekce stránky
+* `<h1>A heading</h1>` for your most important heading
+* `<h2>Pod-nadpis</h2>` pro nadpis na nižší úrovni
+* `<h3>A sub-sub-heading</h3>` …and so on, up to `<h6>`
+* `<p>A paragraph of text</p>`
+* `<em>text</em>` zvýrazňuje tvůj text
+* `<strong>text</strong>` hodně zvýrazňuje tvůj text
+* `<br>` goes to another line (you can't put anything inside br and there's no closing tag)
+* `<a href="https://djangogirls.org">link</a>` vytváří odkaz
+* `<ul><li>První položka seznamu</li><li>second item</li></ul>` vytváří seznam, zrovna jako tento!
+* `<div></div>` definuje sekce stránky
+* `<nav></nav>` defines a set of navigation links
+* `<article></article>` specifies independent, self-contained content
+* `<section></section>` defines a section in a document
+* `<header></header>` specifies a header for a document or section
+* `<main></main>` specifies the main content of a document
+* `<aside></aside>` defines some content aside from the content it is placed in (like a sidebar)
+* `<footer></footer>` defines a footer for a document or section
+* `<time></time>` defines a specific time (or datetime)
 
-Zde je příklad celé šablony:
+Here's an example of a full template, copy and paste it into `blog/templates/blog/post_list.html`:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
     <head>
         <title>Django Girls blog</title>
     </head>
     <body>
-        <div>
-            <h1><a href="">Django Girls Blog</a></h1>
-        </div>
+        <header>
+            <h1><a href="/">Django Girls Blog</a></h1>
+        </header>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">Můj první příspěvek</a></h2>
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
+            <h2><a href="">My first post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div>
+        </article>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">Můj druhý příspěvek</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-        </div>
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
+            <h2><a href="">My second post</a></h2>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
+        </article>
     </body>
 </html>
-```  
+```
 
-Tady vytvoříme tři `div` sekce.
+We've created one `header` section and two `article` section here.
 
-*   První `div` element obsahuje titulek našeho blogu - jeho nadpis a odkaz
-*   Další dva `div` elementy obsahují naše příspěvky s datem zveřejnění, na `h2` s titulkem příspěvku se dá kliknout a dva `p` (paragrafy) obsahují text, jeden datum a druhý samotný příspěvek.
+* The `header` element contains the title of our blog – it's a heading and a link
+* The two `article` elements contain our blog posts with a published date in a `time` element, a `h2` element with a post title that is clickable and a `p` (paragraph) element for text of our blog post.
 
-To nám dá následující výsledek:
+To nám dá následující efekt:
 
-![Figure 11.4][4]
+![Figure 11.4](images/step6.png)
 
- [4]: images/step6.png
+Jupííí! But so far, our template only ever displays exactly **the same information** – whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
 
-Jupííí! Ale teď naše šablona zobrazuje jen **neměnné informace** - dříve jsme ovšem mluvily o tom, že šablony nám umožňují zobrazovat **různé** informace ve **stejném formátu**.
-
-Co ve skutečnosti chceme, je zobrazit opravdové příspěvky přidané v našem Django administrátorském rozhraní - a to se chystáme udělat za chvilku.
+What we really want to do is display real posts added in our Django admin – and that's where we're going next.
 
 ## Ještě jedna věc: nasaďme to!
 
-Bylo by fajn vidět všecho tohle venku a živě na internetu, že ano? Pojďme udělat další PythonAnywhere nasazení (deploy):
+Bylo by fajn vidět všecho tohle venku a živé na internetu, že jo? Pojďme udělat další PythonAnywhere nasazení (deploy):
 
-### Commitni a hoď svůj kód na GitHub
+### Commit, and push your code up to GitHub
 
-Nejdříve se podívejme, které soubory se změnily od posledního nasazení (deploy). Zadej tyto příkazy lokálně (ne na PythonAnywhere):
+Nejdříve se podívejme které soubory se změnily od posledního nasazení (deploy). Zadej tyto příkazy lokálně (ne na PythonAnywhere):
 
-```
-$ git status
-```  
+{% filename %}command-line{% endfilename %}
 
-Ujisti se, že jsi v `djangogirls` adresáři a řekni `gitu`, ať zahrne všechny nové změny v adresáři:
+    $ git status
+    
 
-```
-$ git add --all .
-```  
+Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes in this directory:
 
-> **Poznámka** `-A` (zkratka pro "all", tj. "vše") znamená, že `git` také rozpozná, jestli jsi smazala nějaké soubory (defaultně rozpoznává pouze nové a modifikované soubory). Taky si vzpomeň (ze 3. kapitoly), že `.` znamená aktuální adresář.
+{% filename %}command-line{% endfilename %}
 
-Než nahrajeme všechny soubory, zkontrolujme, co bude `git` nahrávat (všechny soubory, které bude `git` nahrávat, se zobrazí zeleně):
+    $ git add .
+    
 
-```
-$ git status
-```  
+Než nahrajeme všechny soubory, zkontrolujme co bude `git` nahrávat (všechny soubory, které bude `git` nahrávat, se zobrazí zeleně):
 
-Jsme skoro u konce, teď je čas uložit změny do historie. Vytvoříme "commit zprávu", kde popíšeme, co jsme změnily. Můžeš napsat, cokoli tě napadne, ale je užitečné napsat něco popisného, aby sis v budoucnosti mohla vzpomenout, cos udělala.
+{% filename %}command-line{% endfilename %}
 
-```
-$ git commit -m "Změněn HTML kód stránek."
-```  
+    $ git status
+    
 
-> **Poznámka** Ujisti se, že používáš dvojité uvozovky kolem zprávy.
+Jsme skoro u konce, teď je čas uložit změny do historie. Vytvoříme "commit zprávu" kde popíšeme co jsme změnili. Můžeš napsat cokoli tě napadne, ale je užitečné napsat něco popisného, aby sis v budoucnosti mohla vzpomenout cos udělala.
 
-Jakmile jsme s tímto hotovy, nahrajeme (push) naše změny na GitHub:
+{% filename %}command-line{% endfilename %}
 
-```
-git push
-```  
+    $ git commit -m "Změněn HTML kód stránek."
+    
+
+> **Note** Make sure you use double quotes around the commit message.
+
+Once we've done that, we upload (push) our changes up to GitHub:
+
+{% filename %}command-line{% endfilename %}
+
+    $ git push
+    
 
 ### Stáhni svůj nový kód na PythonAnywhere a načti webovou aplikaci
 
-*   Otevři [stránku s konzolí na PythonAnywhere][5] a jdi do své **Bash konzole** (nebo začni novou). Potom zadej:
+* Otevři [stránku s konzolí na PythonAnywhere](https://www.pythonanywhere.com/consoles/) a jdi do své **Bash konzole** (nebo začni novou). Potom zadej:
 
- [5]: https://www.pythonanywhere.com/consoles/
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
-```
-$ cd ~/my-first-blog
-$ source myvenv/bin/activate
-(myvenv)$ git pull
-[...]
-(myvenv)$ python manage.py collectstatic
-[...]
-```  
+    $ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
+    $ git pull
+    [...]
+    
 
-A sleduj svůj kód, jak se stahuje. Pokud si chceš zkontrolovat, že se kód opravdu nahrál, můžeš skočit do záložky **Files** a podívat se na svůj kód na PythonAnywhere.
+You'll need to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain name, without the angle-brackets. Your subdomain name is normally your PythonAnywhere user name, but in some cases it might be a bit different (such as if your user name contains capital letters). So if this command doesn't work, use the `ls` (list files) command to find your actual subdomain/folder name, and then `cd` to there.
 
-*   A konečně, skoč na záložku [Web][6] a klikni na **Reload** (Znovu načíst).
+Now watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **"Files" page** and view your code on PythonAnywhere (you can reach other PythonAnywhere pages from the menu button on the console page).
 
- [6]: https://www.pythonanywhere.com/web_app_setup/
+* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.
 
-Tvůj update by měl běžet živě! Obnov svou stránku v prohlížeči. Měla bys vidět změny :)
+Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)

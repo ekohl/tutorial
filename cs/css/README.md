@@ -1,135 +1,135 @@
-# CSS - aby byla tvoje aplikace krásná!
+# CSS - zkrášli svou stránku!
 
 Náš blog nevypadá stále dost pěkně, že? Je na čase ho udělat hezčí! Použijeme na to CSS.
 
 ## Co je to CSS?
 
-CSS (neboli Cascading Style Sheets) je jazyk používaný pro popis vzhledu a formátování webové stránky. Je to značkovací jazyk (jako HTML). Ber ho jako make-up pro náš web ;).
+Kaskádové styly (Cascading Style Sheets, CSS) je jazyk používáný pro popis vzhledu a formátu webové stránky napsané ve značkovacím jazyce (jako například HTML). Berte to jako make-up pro naši webovou stránku. ;)
 
-Nechceme ale zase začínat úplně od začátku, že? Opět použijeme něco, co již bylo vytvořeno jinými programátory a sdíleno zdarma na internetu. Vymýšlet znovu, co již před námi někdo vymyslel, to by nebyla žádná legrace.
+Ale nechceme začínat od nuly, že? Znovu použijeme něco, co už někdo vytvořil a umístil na Internet aby to mohli ostatní programátoři používat zdarma. Vymýšlení už vymyšlených věcí není zábava.
 
 ## Použijme Bootstrap!
 
-Bootstrap je jedním z nejpopulárnějších HTML a CSS frameworků pro vývoj pěkné webové stránky: https://getbootstrap.com/
+Bootstrap je jeden z nejpopulárnějších frameworků pro HTML a CSS na vytváření krásných webových stránek: https://getbootstrap.com/
 
-Napsali ho programátoři, kteří pracovali pro Twitter, a nyní ho vyvíjí dobrovolníci z celého světa.
+Byl vytvořen programátory, kteří pracovali pro Twitter. Nyní je Bootstrap vyvíjen dobrovolníky po celém světě!
 
 ## Instalace Bootstrapu
 
-Chceš-li nainstalovat Bootstrap, je třeba přidat do `< head >` v souboru `.html` (`blog/templates/blog/post_list.html`):
+Pro instalaci Bootstrapu otevři svůj `.html` soubor v kódovém editoru a přidej tohle do `<head>` sekce:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 ```
 
-To nepřidá žádné soubory do projektu. Jen to odkazuje na soubory, které existují na internetu. Jen do toho, otevři tvůj web a aktualizuj stránku. Hurá!
+Nepřidá to žádné soubory do tvého projektu. Jen to ukazuje na soubory, které existují na Internet. Takže do toho, otevři svoji webovou stránku a obnov ji. To je ono!
 
-![Obrázek 14.1][1]
-
- [1]: images/bootstrap1.png
+![Obrázek 14.1](images/bootstrap1.png)
 
 Hned to vypadá lépe!
 
 ## Statické soubory v Djangu
 
-Konečně se podíváme zblízka na téma, které jsme již zmínili, **statické soubory**. Statické soubory jsou všechny naše CSS soubory a obrázky, které nejsou dynamické, takže jejich obsah není závislý na kontextu požadavku a budou pro každého uživatele stejné.
+Konečně se podíváme zblízka na téma, které jsme již zmínili, **statické soubory**. Statické soubory jsou všechna tvá CSS a obrázky. Jejich obsah nezávisí na kontextu požadavku a bude stejný pro každého uživatele.
 
 ### Kam umístit statické soubory pro Django
 
-Jak jsi viděla, když jsme spustili `collectstatic` na serveru, Django už ví, kde najít statické soubory pro vestavěnou aplikaci "admin". Teď jen musíme přidat nějaké statické soubory pro vlastní aplikaci, `blog`.
+Django již ví, kde najít statické soubory pro vestavěnou "admin" aplikaci. Nyní potřebujeme přidat nějaké statické soubory do naší vlastní aplikace, `blog`.
 
 Uděláš to tak, že vytvoříš složku s názvem `static` uvnitř aplikace blog:
 
-```
-djangogirls
-├── blog
-│   ├── migrations
-│   ├── static
-│   └── templates
-└── mysite
-```    
+    djangogirls
+    ├── blog
+    │   ├── migrations
+    │   ├── static
+    │   └── templates
+    └── mysite
+    
 
-Django automaticky najde všechny složky s názvem "static" uvnitř vašich složek aplikací a bude moci využívat jejich obsah jako statické soubory.
+Django bude automaticky hledat jakékoliv složky nazvané "static" uvnitř tvých složek v aplikaci. Poté bude schopný použít jejich obsah jako statické soubory.
 
 ## Tvůj první soubor CSS!
 
-Pokud chceš na webovou stránku přidat svůj vlastní styl, vytvoř css soubor. Vytvoř nový adresář s názvem `css` uvnitř adresáře `static`. Vytvoř nový soubor s názvem `blog.css` uvnitř tohoto adresáře `css`. Připraveno?
+Pojďme vytvořit nějaký CSS soubor a přidat vlastní styly pro tvou webovou stránku. Vytvoř nový adresář s názvem `css` uvnitř adresáře `static`. Vytvoř nový soubor s názvem `blog.css` uvnitř tohoto adresáře `css`. Připraveno?
 
-```
-djangogirls
-└─── blog
-     └─── static
-          └─── css
-               └─── blog.css
-```
+    djangogirls
+    └─── blog
+         └─── static
+              └─── css
+                   └─── blog.css
+    
 
-Čas napsat nějaké CSS! Otevři soubor `blog/static/css/blog.css` v editoru kódu.
+Čas k napsání nějakého CSS! Otevři soubor `blog/static/css/blog.css` v editoru kódu.
 
-Nepůjdeme příliš hluboko do tématu přizpůsobení webu a učení o CSS, protože je to docela snadné a můžeš se o tom naučit více sama po tomto workshopu. Opravdu můžeme doporučit [Codeacademy HTML & CSS kurz][2], kde se dozvíš vše, co potřebuješ vědět, aby tvoje stránky s CSS vypadaly dobře.
+Zde nebudeme zacházet příliš do detailů a učit se CSS nebo jej přizpůsobovat. Pokud se budeš chtít naučit více o CSS, na konci této stránky najdeš doporučení na CSS kurz zdarma.
 
- [2]: https://www.codecademy.com/tracks/web
-
-Ale pojďme něco málo udělat. Co třeba změnit barvu našeho záhlaví? Pro interpretaci barev počítače používají speciální kódy. Začínají `#` a následuje 6 písmen (A-F) a číslic (0-9). Kódy barev můžeš najít například zde: http://www.colorpicker.com/. Můžeš také použít [předdefinované barvy][3], `červená/red` a `zelená/green`.
-
- [3]: http://www.w3schools.com/cssref/css_colornames.asp
+Ale pojďme něco málo udělat. Možná bychom mohli změnit barvu našich nadpisů? Pro interpretaci barev, počítače používají speciální kódy. Tyto kódy začínají `#` a následuje 6 písmen(A-F) a číslic(0-9). Například kód pro modrou barvu bude vypadat takto: `#0000FF`. Kódy všech barev můžeš najít například zde: http://www.colorpicker.com/. Můžeš také použít [předdefinované barvy](http://www.w3schools.com/colors/colors_names.asp), `červená/red` a `zelená/green`.
 
 V souboru `blog/static/css/blog.css` přidej následující kód:
 
+{% filename %}blog/static/css/blog.css{% endfilename %}
+
 ```css
-h1 a {
-    color: #FCA205;
+h1 a, h2 a {
+    color: #C25100;
 }
-```  
 
-`h1` je CSS selector. To znamená, že budeme aplikovat naše styly na jakýkoliv `a` element uvnitř `h1` (např. když máme v kódu něco jako: `< h1 ><a href = "" > odkaz < /a >< / h1 >`). V takovém případě sdělujeme, že barvu elementu měníme na `#FCA205`, což je oranžová. Samozřejmě sem můžeš vložit vlastní barvu!
+```
 
-V CSS souboru určujeme styly pro prvky v souboru HTML. Prvky jsou identifikovány pomocí názvu prvku (tj, `a`,`h1`, `body`), atributem `class` nebo atributem `id`. Třídy/Class a id jsou jména, která pojmenovávají samotný prvek. Třídy definují skupiny prvků a id poukazují na konkrétní prvky. Například následující tag může identifikovat pomocí CSS tag `a`, třídu `external_link` nebo id `link_to_wiki_page`:
+`h1` je CSS selector. Toto znamená, že aplikujeme naše styly na každý element `a` uvnitř elementu `h1` , selektor `h2` dělá to samé pro elementy `h2`. Takže když máme něco jako `<h1><a href="">odkaz</a></h1>`, použije se styl `h1`. V tomto případě říkáme, že barvu elementu měníme na `#C25100`, což je oranžová. Nebo zde můžeš vložit vlastní barvu, ale ujisti se, že bude kontrastní vůči bílé barvě pozadí stránky.
+
+V CSS souboru určujeme styly pro prvky v souboru HTML. První způsob, jak identifikovat prvky je pomocí názvu elementu. Možná si vzpomeneš na tyto tagy ze sekce HTML. Věci jako `a`, `h1` a `body`jsou všechny příklady názvů elementů. Také identifikujeme elementy podle atributu `class` nebo atributu `id`. Třídy/Class a id jsou jména, které pojmenovávají samotný prvek. Třídy definují skupiny prvků a Id poukazují na konkrétní prvky. Například můžete určit následující prvek pomocí názvu prvku `a`, třída `external_link`nebo id `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
-```  
+```
 
-Přečti si o [CSS selektorech ve w3schools][4].
+Více si můžeš přečíst [CSS Selectoryna w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
 
- [4]: http://www.w3schools.com/cssref/css_selectors.asp
+Pak je třeba také říct naší HTML šabloně, že jsme přidali nějaké CSS. Otevři soubor `blog/templates/blog/post_list.html` a přidej tento řádek na úplný začátek:
 
-Pak je třeba také říct naší HTML šabloně, že jsme přidali nějaké CSS. Otevři soubor `blog/templates/blog/post_list.html` a přidej tento řádek na samý začátek:
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-{% load staticfiles %}
-```  
+{% load static %}
+```
 
-Právě nahráváme statické soubory :). Pak mezi `< head >` a `< / head >` za odkazy na soubory Bootstrap CSS (prohlížeč načte soubory v pořadí, ve kterém jsou zapsány, takže kód v našem souboru může přepsat kód v Bootstrap souborech) přidejte tento řádek:
+Právě zde načítáme statické soubory. :) mezi značkami `<head>` a `</head>` , po odkazech na Bootstrap CSS soubory přidejte tento řádek:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-Právě jsi řekla naší šabloně, kde je umístěn náš soubor CSS.
+Prohlížeč čte soubory v pořadí, ve kterém jsou zadány, takže se musíme ujistit, že jsme na správném místě. V opačném případě může být kód v našem souboru přepsán kódem z Bootstrap souborů. Právě jsi řekla naší šabloně, kde je umístěn náš soubor CSS.
 
 Soubor by měl nyní vypadat takto:
 
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
 ```html
-{% load staticfiles %}
+{% load static %}
+<!DOCTYPE html>
 <html>
     <head>
         <title>Django Girls blog</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
-        <div>
+        <header>
             <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
+        </header>
 
         {% for post in posts %}
-            <div>
-                <p>published: {{ post.published_date }}</p>
-                <h1><a href="">{{ post.title }}</a></h1>
+            <article>
+                <time>published: {{ post.published_date }}</time>
+                <h2><a href="">{{ post.title }}</a></h2>
                 <p>{{ post.text|linebreaksbr }}</p>
-            </div>
+            </article>
         {% endfor %}
     </body>
 </html>
@@ -137,161 +137,194 @@ Soubor by měl nyní vypadat takto:
 
 OK, ulož soubor a aktualizuj stránky!
 
-![Obrázek 14.2][5]
+![Obrázek 14.2](images/color2.png)
 
- [5]: images/color2.png
+Dobrá práce! Možná bychom také chtěli provzdušnit náš web a zvětšit okraj na levé straně? Pojďme to zkusit!
 
-Dobrá práce! Co kdybychom také chtěli provzdušnit náš web a zvětšit okraj na levé straně? Pojďme to zkusit!
+{% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
 body {
     padding-left: 15px;
 }
-```  
+```
 
 Přidej toto do svého CSS souboru, ulož soubor a koukni se, jak to funguje!
 
-![Obrázek 14.3][6]
+![Obrázek 14.3](images/margin2.png)
 
- [6]: images/margin2.png
+Možná můžeme také chtít přizpůsobit písmo v našem záhlaví? Vlož mezi tag `< head >` v souboru `blog/templates/blog/post_list.html`:
 
-Možná můžeme také chtít přizpůsobit písmo v našem záhlaví. Vlož za tag `< head >` v souboru `blog/templates/blog/post_list.html`:
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-```  
+<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+```
 
-Tento řádek bude importovat písmo s názvem *Lobster* z Google písem (https://www.google.com/fonts).
+Stejně jako předtím, zkontroluj pořadí a místo před odkazem na `blog/static/css/blog.css`. Tento řádek importuje font s názvem *Lobster* z Google Fonts (https://www.google.com/fonts).
 
-Nyní přidej řádek `font-family: "Lobster";` do CSS souboru `blog/static/css/blog.css` uvnitř deklarace `h1` bloku (kód mezi závorkami `{` a `}`) a aktualizuj stránky:
+Najdi blok `h1 deklarací` (kód mezi závorkami `{` a `}`) v CSS souboru `blog/static/css/blog.css`. Nyní přidej řádek `font-family: 'Lobster';` mezi závorkami a obnov stránku:
+
+{% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a {
-    color: #FCA205;
+h1 a, h2 a {
+    color: #C25100;
     font-family: 'Lobster';
 }
-```  
+```
 
-![Obrázek 14.3][7]
-
- [7]: images/font.png
+![Obrázek 14.3](images/font.png)
 
 Skvěle!
 
-Jak jsme si řekli výše, CSS má koncept tříd, který v podstatě umožňuje pojmenovat části kódu HTML a styly aplikovat pouze na tyto části bez ovlivnění ostatních částí. Je to zvlášť užitečné, pokud máš dva div tagy, ale každý dělá něco jiného (jako záhlaví a příspěvek), takže nechceš, aby vypadaly stejně.
+Jak bylo uvedeno výše, CSS má koncepci tříd. Ty ti umožňují pojmenovat část HTML kódu a aplikovat styly pouze na danou část, aniž by to ovlivnilo ostatní části. To může být super užitečné! Možná máš dva prvky 'div' , které dělají něco jiného (jako je hlavička a tvůj příspěvek). Třída ti může pomoci, aby element vypadal jinak.
 
-Pokračuj a pojmenuj některé části kódu HTML. Přidáš třídu s názvem `page-header` do tvého `div` tagu, který obsahuje záhlaví, jako je tento:
+Go ahead and name some parts of the HTML code. Replace the `header` that contains your header with the following:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<div class="page-header">
-     <h1><a href="/">Django Girls Blog</a></h1>
-</div>
+<header class="page-header">
+    <div class="container">
+        <h1><a href="/">Django Girls Blog</a></h1>
+    </div>
+</header>
 ```
 
-A nyní přidej třídu `post` do svého `div` obsahující blog post.
+And now add a class `post` to your `article` containing a blog post.
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<div class="post">
-     <p>published: {{ post.published_date }}</p>
-     <h1><a href="">{{ post.title }}</a></h1>
-     <p>{{ post.text|linebreaksbr }}</p>
-</div>
-```    
+<article class="post">
+    <time>published: {{ post.published_date }}</time>
+    <h2><a href="">{{ post.title }}</a></h2>
+    <p>{{ post.text|linebreaksbr }}</p>
+</article>
+```
 
 Nyní přidáme deklaraci bloků pro jiné selektory. Selektory začínající `.` se týkají tříd. Existuje mnoho skvělých návodů a vysvětlení CSS na webu, které ti pomohou pochopit následující kód. Pro tuto chvíli stačí zkopírovat a vložit do souboru `blog/static/css/blog.css`:
 
+{% filename %}blog/static/css/blog.css{% endfilename %}
+
 ```css
 .page-header {
-     background-color: #ff9400;
-     margin-top: 0;
-     padding: 20px 20px 20px 40px;
+    background-color: #C25100;
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding: 20px 20px 20px 40px;
 }
 
-.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-     color: #ffffff;
-     font-size: 36pt;
-     text-decoration: none;
+.page-header h1,
+.page-header h1 a,
+.page-header h1 a:visited,
+.page-header h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
 }
 
-.content {
-     margin-left: 40px;
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Lobster', cursive;
 }
 
-h1, h2, h3, h4 {
-     font-family: 'Lobster', cursive;
-}
-
- .date {
-     float: right;
-     color: #828282;
+.date {
+    color: #828282;
 }
 
 .save {
-     float: right;
+    float: right;
 }
 
- .post-form textarea, .post-form input {
-     width: 100%;
+.post-form textarea,
+.post-form input {
+    width: 100%;
 }
 
- .top-menu, .top-menu:hover, .top-menu:visited {
-     color: #ffffff;
-     float: right;
-     font-size: 26pt;
-     margin-right: 20px;
+.top-menu,
+.top-menu:hover,
+.top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
 }
 
- .post {
-     margin-bottom: 70px;
+.post {
+    margin-bottom: 70px;
 }
 
- .post h1 a, .post h1 a:visited {
-     color: #000000;
+.post h2 a,
+.post h2 a:visited {
+    color: #000000;
 }
-```  
 
-Pak obklopující HTML kód, který zobrazuje příspěvek s deklaracemi tříd, nahraď tímto:
+.post > .date,
+.post > .actions {
+    float: right;
+}
+
+.btn-secondary,
+.btn-secondary:visited {
+    color: #C25100;
+    background: none;
+    border-color: #C25100;
+}
+
+.btn-secondary:hover {
+    color: #FFFFFF;
+    background-color: #C25100;
+}
+```
+
+Pak obklopující HTML kód, který zobrazuje příspěvek s deklaracemi tříd. Nahraď tímto:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% for post in posts %}
-     <div class="post">
-         <p>published: {{ post.published_date }}</p>
-         <h1><a href="">{{ post.title }}</a></h1>
-         <p>{{ post.text|linebreaksbr }}</p>
-     </div>
+    <article class="post">
+        <time>published: {{ post.published_date }}</time>
+        <h2><a href="">{{ post.title }}</a></h2>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </article>
 {% endfor %}
-```    
+```
 
 v `blog/templates/blog/post_list.html` tímto:
 
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
 ```html
-<div class="content container">
-     <div class="row">
-         <div class="col-md-8">
-             {% for post in posts %}
-                 <div class="post">
-                     <div class="date">
-                         {{ post.published_date }}
-                     </div>
-                     <h1><a href="">{{ post.title }}</a></h1>
-                     <p>{{ post.text|linebreaksbr }}</p>
-                 </div>
-             {% endfor %}
-         </div>
-     </div>
-</div>
-```    
+<main class="container">
+    <div class="row">
+        <div class="col">
+            {% for post in posts %}
+                <article class="post">
+                    <time class="date">
+                        {{ post.published_date }}
+                    </time>
+                    <h2><a href="">{{ post.title }}</a></h2>
+                    <p>{{ post.text|linebreaksbr }}</p>
+                </article>
+            {% endfor %}
+        </div>
+    </div>
+</main>
+```
 
 Tyto soubory ulož a aktualizuj své webové stránky.
 
-![Obrázek 14.4][8]
+![Obrázek 14.4](images/final.png)
 
- [8]: images/final.png
+Jupí! To je paráda, co? Podívej se na kód, který jsme právě vložili, abychom našli místa, kde jsme přidali třídy v HTML a používali je v CSS. Kde bys provedla změnu, pokud chceš, aby datum bylo tyrkysové?
 
-Woohoo! Vypadá to super, ne? Kód, který jsme vložili, opravdu není tak těžké pochopit. Měla bys být schopna pochopit většinu z něj jen jeho čtením.
+Neboj se trochu pohrát s tímto CSS a pokus se některé věci změnit. Hraní s CSS ti pomůže pochopit, co dělají různé věci. Pokud něco rozbiješ, nedělej si starosti - vždy to můžeš vrátit zpět!
 
-Neobávej se trochu poupravit CSS a pokusit se změnit některé věci. Když něco rozbiješ, můžeš to vždy vrátit zpět!
-
-Mimochodem opravdu doporučujeme tento bezplatný online [Codeacademy HTML & CSS kurz][2] jako post-workshop úkol, naučíš se vše, co potřebuješ vědět, aby tvoje stránky byly díky CSS hezčí.
+Opravdu doporučujeme vzít zdarma online kurzy "Základní HTML & HTML5" a "Základní CSS" na [freeCodeCamp](https://learn.freecodecamp.org/). Mohou ti pomoci naučit se, jak udělat tvé webové stránky hezčí pomocí HTML a CSS.
 
 Připravena na další kapitolu?! :)

@@ -1,113 +1,127 @@
 # Django modely
 
-Nyní chceme vytvořit něco, co bude ukládat všechny příspěvky na náš blog. Ale abychom to mohly udělat, musíme si nejdříve říct něco o `objektech`.
+Nyní chceme vytvořit něco, co bude ukládat všechny příspěvky na našem blogu. Ale aby jsme to mohli udělat, musíme si nejdříve říct něco o `objektech`.
 
 ## Objekty
 
-V programování se používá koncept zvaný `objektově orientované programování`. Tato myšlenka předpokládá, že místo psaní všeho jako nudný sled programovacích instrukcí můžeme modelovat věci a definovat, jak komunikují mezi sebou navzájem.
+There is a concept in programming called `object-oriented programming`. The idea is that instead of writing everything as a boring sequence of programming instructions, we can model things and define how they interact with each other.
 
 Co tedy je objekt? Je to kolekce vlastností a činností. Zní to divně, ale dáme ti příklad.
 
-Pokud chceme modelovat kočku, vytvoříme objekt `kočka`, který má nějaké vlastnosti, například `barva`, `věk`, `nálada` (ta je dobrá, špatná, ospalá ;)), `vlastník` (který je objektem `osoba` nebo je možný případ zatoulané kočky, kde bude tato vlastnost prázdná).
+If we want to model a cat, we will create an object `Cat` that has some properties such as `color`, `age`, `mood` (like good, bad, or sleepy ;)), and `owner` (which could be assigned a `Person` object – or maybe, in case of a stray cat, this property could be empty).
 
-`Kočka` má také některé akce: `předení`, `škrábání` nebo `žraní` (v němž dáváme kočce nějaké `kočičí granule`, které by mohlo být samostatný objekt s vlastnostmi, například `chuť`).
+Then the `Cat` has some actions: `purr`, `scratch`, or `feed` (in which case, we will give the cat some `CatFood`, which could be a separate object with properties, like `taste`).
 
-```
-Cat
---------
-color
-age
-mood
-owner
-purr()
-scratch()
-feed(cat_food)
+    Cat
+    --------
+    color
+    age
+    mood
+    owner
+    purr()
+    scratch()
+    feed(cat_food)
+    
 
-
-CatFood
---------
-taste
-```  
+    CatFood
+    --------
+    taste
+    
 
 Základní představa je popsat skutečné věci v kódu vlastnostmi (nazývané `vlastnosti objektu/object properties`) a akcemi (nazývané `metody/methods`).
 
-Jak tedy bude vypadat model blogu?
+Jak tedy bude vypadat model blogu? Chceme vytvořit blog, ne?
 
 Musíme odpovědět na otázku: Co je blog post/příspěvek? Jaké by měl mít vlastnosti?
 
-Určitě budeme v naše blogu potřebovat nějaký text s jeho obsahem a titulkem, že? Bylo by také dobré vědět, kdo příspěvek napsal, takže potřebujeme autora. Nakonec také chceme vědět, kdy byl příspěvek vytvořen a publikován.
+Určitě budeme v naše blogu potřebovat nějaký text s jeho obsahem a titulkem, že? It would be also nice to know who wrote it – so we need an author. Nakonec také chceme vědět, kdy byl příspěvek vytvořen a publikován.
 
-```
-Post
---------
-title
-text
-author
-created_date
-published_date
-```  
+    Post 
+    -------- 
+    title 
+    text 
+    author 
+    created_date 
+    published_date
+    
 
-Jaký druh věcí můžeme s příspěvkem dělat? Bylo by hezké mít nějakou `metodu`, která publikuje příspěvek.
+Jaký druh věcí můžeme s příspěvkem dělat? Bylo by hezké mít nějakou `metodu`, která publikuje příspěvek, že ano?
 
 Takže budeme potřebovat metodu `publish`.
 
-Vzhledem k tomu, že už víme, čeho chceme dosáhnout, můžeme začít modelování v Djangu!
+Vzhledem k tomu, že už víme, co chceme dosáhnout, můžeme začít modelování v Django!
 
 ## Django model
 
-Nyní víme, jaký objekt chceme vytvořit, takže můžeme přistoupit k tvorbě Django modelu pro náš příspěvek v blogu.
+Nyní víme jaký objekt chceme vytvořit, tak můžeme přistoupit k tvorbě Django modelu pro náš příspěvek v blogu.
 
-Model v Django je zvláštní druh objektu - který je uložen v `databázi`. Databáze je soubor dat. Je to místo, kam budeš ukládat informace o uživatelích a tvých příspěvcích v blogu, atd. Budeme používat SQLite databázi k ukládání dat. To je výchozí databázový adaptér v Djangu – to nám bude nyní stačit.
+A model in Django is a special kind of object – it is saved in the `database`. Databáze je soubor dat. Je to místo, ve kterém budeš ukládat informace o uživatelích a tvých příspěvcích v blogu, atd. Budeme používat SQLite databázi k ukládání dat. This is the default Django database adapter – it'll be enough for us right now.
 
 Model v databázi si lze představit jako tabulku s řádky (data) a sloupci (údaje).
 
 ### Vytvoření aplikace
 
-Abychom udržely pořádek, vytvoříme si samostatnou aplikaci uvnitř našeho projektu. Je velmi příjemné mít všechno zorganizované od samého začátku. Chceš-li vytvořit novou aplikaci, je třeba spustit následující příkaz v konzoli (z `djangogirls` adresáře, kde je `manage.py` soubor):
+Abychom udrželi pořádek, vytvoříme si samostatnou aplikaci uvnitř našeho projektu. Je velmi příjemné mít všechno zorganizované od samého začátku. Chceš-li vytvořit novou aplikaci, je třeba spustit následující příkaz v konzoli (z `djangogirls` adresáře, kde je `manage.py` soubor):
 
-```
-(myvenv) ~/djangogirls$ python manage.py startapp blog
-```  
+{% filename %}Mac OS X and Linux:{% endfilename %}
 
-Zjistíš, že nový adresář `blog` nyní obsahuje řadu souborů. Adresáře a soubory v našem projektu by měly vypadat následovně:
+    (myvenv) ~/djangogirls$ python manage.py startapp blog
+    
 
-```
-djangogirls
-├── mysite
-|       __init__.py
-|       settings.py
-|       urls.py
-|       wsgi.py
-├── manage.py
-└── blog
-    ├── migrations
-    |       __init__.py
-    ├── __init__.py
-    ├── admin.py
-    ├── models.py
-    ├── tests.py
-    └── views.py
-```    
+{% filename %}Windows:{% endfilename %}
 
-Po vytvoření aplikace musíš také Djangu říct, že by ji měl použít. Uděláme to v souboru `mysite/settings.py`. Musíme najít `INSTALLED_APPS` a přidat řádek, který bude obsahovat `"blog",` `)`. Takže konečná konfigurace by měla vypadat takto:
+    (myvenv) C:\Users\Name\djangogirls> python manage.py startapp blog
+    
+
+You will notice that a new `blog` directory is created and it contains a number of files now. The directories and files in our project should look like this:
+
+    djangogirls
+    ├── blog
+    │   ├── admin.py
+    │   ├── apps.py
+    │   ├── __init__.py
+    │   ├── migrations
+    │   │   └── __init__.py
+    │   ├── models.py
+    │   ├── tests.py
+    │   └── views.py
+    ├── db.sqlite3
+    ├── manage.py
+    ├── mysite
+    │   ├── asgi.py
+    │   ├── __init__.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
+    ├── myvenv
+    │   └── ...
+    └── requirements.txt
+    
+    
+
+After creating an application, we also need to tell Django that it should use it. We do that in the file `mysite/settings.py` -- open it in your code editor. We need to find `INSTALLED_APPS` and add a line containing `'blog',` just above `]`. So the final product should look like this:
+
+{% filename %}mysite/settings.py{% endfilename %}
 
 ```python
-INSTALLED_APPS = (
-     'django.contrib.admin',
-     'django.contrib.auth',
-     'django.contrib.contenttypes',
-     'django.contrib.sessions',
-     'django.contrib.messages',
-     'django.contrib.staticfiles',
-     'blog',
-)
-```  
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'blog',
+]
+```
 
 ### Vytvoření modelu pro blog post
 
-V souboru `blog/models.py` budeme definovat všechny objekty nazývané `modely` - na tomto místě budeme definovat náš blog post.
+In the `blog/models.py` file we define all objects called `Models` – this is a place in which we will define our blog post.
 
-Otevři `blog/models.py`, odstraň vše, co v něm je, a vlož následující kód:
+Let's open `blog/models.py` in the code editor, remove everything from it, and write code like this:
+
+{% filename %}blog/models.py{% endfilename %}
 
 ```python
 from django.conf import settings
@@ -119,10 +133,8 @@ class Post(models.Model):
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
     text = models.TextField()
-    created_date = models.DateTimeField(
-            default=timezone.now)
-    published_date = models.DateTimeField(
-            blank=True, null=True)
+    created_date = models.DateTimeField(default=timezone.now)
+    published_date = models.DateTimeField(blank=True, null=True)
 
     def publish(self):
         self.published_date = timezone.now()
@@ -132,53 +144,59 @@ class Post(models.Model):
         return self.title
 ```
 
-> Dvakrát si zkontroluj, že jsi použila dva znaky podtržítko(`_`) na každé straně `str`. Tato konvence se v Pythonu používá často. Někdy je také nazýváme "dunder" (zkratka pro "Double-UNDERscore").
+> Double-check that you use two underscore characters (`_`) on each side of `str`. Tato konvence se v Pythonu používá často. Někdy je také nazýváme "dunder" (zktratka pro "Double-UNDERscore").
 
-Vypadá to děsivě, že? Ale žádný strach, vysvětlíme ti, co tyto řádky znamenají!
+It looks scary, right? But don't worry – we will explain what these lines mean!
 
-Všechny řádky začínající `from` nebo `import` jsou řádky, které přidávají některé kousky z jiných souborů. Takže namísto kopírování a vkládání stejných věcí v každém souboru, můžeš zahrnout některé části s `from... import...`.
+All lines starting with `from` or `import` are lines that add some bits from other files. So instead of copying and pasting the same things in every file, we can include some parts with `from ... import ...`.
 
-`class Post(models.Model):` - Tento řádek definuje náš model (Jedná se o `objekt`).
+`class Post(models.Model):` – this line defines our model (it is an `object`).
 
-*   `class` je speciální klíčové slovo, které říká, že definujeme objekt.
-*   `Post` je jméno našeho modelu, můžeme mu dát jiné jméno (ale musíme se vyvarovat speciálních znaků a bílých znaků). Název třídy vždy začínej velkým písmenem.
-*   `models. Model` znamená, že Post je Django Model, takže Django ví, že by to mělo být uloženo v databázi.
+- `class` je speciální klíčové slovo, které říká, že definujeme objekt.
+- `Post` is the name of our model. We can give it a different name (but we must avoid special characters and whitespace). Always start a class name with an uppercase letter.
+- `models. Model` znamená, že Post je Django Model, takže Django ví, že by to mělo být uloženo v databázi.
 
-Nyní definujeme vlastnosti, mluvily jsme o: `title`, `text`, `created_date`, `published_date` a `autor`. To uděláš tak, že definuješ typ každého pole (Je to text? Číslo? Datum? Vztah k jinému objektu, například uživateli?).
+Now we define the properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define the type of each field (Is it text? A number? A date? A relation to another object, like a User?)
 
-*   `models. CharField` - takto definuješ text s omezeným počtem znaků.
-*   `models. TextField` - toto použiješ na dlouhý text bez omezení. To zní ideálně pro obsah blog post, ne?
-*   `models. DateTimeField` - definuje datum a čas.
-*   `models. ForeignKey` - definuje odkaz do jiného modelu.
+- `models.CharField` – this is how you define text with a limited number of characters.
+- `models.TextField` – this is for long text without a limit. Sounds ideal for blog post content, right?
+- `models.DateTimeField` – this is a date and time.
+- `models.ForeignKey` – this is a link to another model.
 
-Nebudeme vysvětlovat každý kousek kódu, vzhledem k tomu, že by trvalo příliš dlouho. Měla bys se podívat do Django dokumentace, pokud se chceš dozvědět víc o polích modelu a jak definovat jiné věci než výše uvedené (https://docs.djangoproject.com/en/1.8/ref/models/fields/#field-types).
+We will not explain every bit of code here since it would take too much time. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/3.2/ref/models/fields/#field-types).
 
-Co je `def publish(self):`? Je to `publish` metoda, o které jsme mluvili dříve. `def` znamená, že definuješ funkci/metodu, a `publish` je název metody. Název metody můžeš změnit, pokud chceš. Pravidlo pro pojmenovávání je, že používáme malá písmena a podtržítka místo mezer. Například metoda, která vypočítá průměrnou cenu, se bude jmenovat `calculate_average_price`.
+What about `def publish(self):`? This is exactly the `publish` method we were talking about before. `def` means that this is a function/method and `publish` is the name of the method. You can change the name of the method if you want. The naming rule is that we use lowercase and underscores instead of spaces. For example, a method that calculates average price could be called `calculate_average_price`.
 
-Metody často něco `vrací/return`. Zde je příklad metoda `__str__`. V tomto případě, když zavoláme metodu `__str__()`, dostaneme text (**řetězec/string**) s názvem Postu.
+Methods often `return` something. There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
 
-Pokud ti něco stále ještě není jasné o modelech, neváhej se zeptat svého kouče! Víme, že je to složité, zvláště, když se dozvíte, co jsou objekty a funkce takto naráz. Doufejme, že to je nyní pro tebe trochu méně magické!
+Also notice that both `def publish(self):` and `def __str__(self):` are indented inside our class. Because Python is sensitive to whitespace, we need to indent our methods inside the class. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
+
+If something is still not clear about models, feel free to ask your coach! We know it is complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
 
 ### Vytvoření tabulek pro modely v databázi
 
-V posledním kroku přidáš náš nový model do databáze. Nejprve musíme dát Djangu vědět, že mám nějaké změny v modelu (které jsme právě vytvořily!). Napiš `Python manage.py makemigrations blog`. Celý příkaz bude vypadat takto:
+The last step here is to add our new model to our database. Nejprve musíme dát Djangu vědět, že máme nějaké změny v modelu (které jsme právě vytvořili). (We have just created it!) Go to your console window and type `python manage.py makemigrations blog`. It will look like this:
 
-```
-(myvenv) ~/djangogirls$ python manage.py makemigrations blog
-Migrations for 'blog':
-  0001_initial.py:
-  - Create model Post
-```  
+{% filename %}command-line{% endfilename %}
 
-Django pro nás připravil soubor migrace, který budeme muset aplikovat na naši databázi. Napiš `Python manage.py migrate blog` a výstup by měl vypadat takto:
+    (myvenv) ~/djangogirls$ python manage.py makemigrations blog
+    Migrations for 'blog':
+      blog/migrations/0001_initial.py
+    
+        - Create model Post
+    
 
-```
-(myvenv) ~/djangogirls$ python manage.py migrate blog
-Operations to perform:
-  Apply all migrations: blog
-Running migrations:
-  Rendering model states... DONE
-  Applying blog.0001_initial... OK
-```  
+**Note:** Remember to save the files you edit. Otherwise, your computer will execute the previous version which might give you unexpected error messages.
 
-Hurá! Náš Post model je nyní v naší databázi! Bylo by hezké vidět ho v akci, že ano? Přeskoč na další kapitolu a podívej se, jak vypadá tvůj příspěvek!
+Django prepared a migration file for us that we now have to apply to our database. Type `python manage.py migrate blog` and the output should be as follows:
+
+{% filename %}command-line{% endfilename %}
+
+    (myvenv) ~/djangogirls$ python manage.py migrate blog
+    Operations to perform:
+      Apply all migrations: blog
+    Running migrations:
+      Applying blog.0001_initial... OK
+    
+
+Hurray! Our Post model is now in our database! It would be nice to see it, right? Jump to the next chapter to see what your Post looks like!
