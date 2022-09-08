@@ -6,9 +6,9 @@
 
 Możemy się założyć, że używasz go każdego dnia. Ale czy naprawdę wiesz, co się dzieje, gdy wpisujesz w przeglądarce adres https://djangogirls.org i wciskasz `enter`?
 
-Aby zrozumieć, jak działa internet, powinnaś najpierw dowiedzieć się, czym tak naprawdę jest strona internetowa - a jest ona zbiorem plików zapisanych na dysku twardym. Tak samo jak Twoje zdjęcia, muzyka czy filmy. Aczkolwiek strony internetowe różnią się od nich tym, że zawierają kod komputerowy zwany HTML.
+Aby zrozumieć, jak działa internet, powinnaś najpierw dowiedzieć się, czym tak naprawdę jest strona internetowa, a jest ona zbiorem plików zapisanych na dysku twardym --tak jak filmy, muzyka lub zdjęcia. Aczkolwiek strony internetowe różnią się od nich tym, że zawierają kod komputerowy zwany HTML.
 
-Jeśli nie miałaś wcześniej do czynienia z programowaniem, może być Ci na początku trudno zrozumieć HTML, ale przeglądarki internetowe (takie jak Chrome, Safari, Firefox itd.) uwielbiają go. Zostały one zaprojektowane po to, by czytać ten kod, przetwarzać go i postępować zgodnie z jego instrukcjami. Prezentują pliki, z których składa się Twoja strona - by wyglądała dokładnie tak jak Ty chcesz.
+Jeśli do tej pory nie miałaś stycznoście z programowaniem, na początku może być Ci trudno zrozumieć czym jest HTML ale Twoje przeglądarki (takie jak Chrome, Safari, Firefox itp.) go uwielbiają. Zostały one zaprojektowane po to, by czytać ten kod, przetwarzać go i postępować zgodnie z jego instrukcjami. Prezentują pliki, z których składa się Twoja strona - by wyglądała dokładnie tak jak Ty chcesz.
 
 Tak jak w przypadku każdego innego pliku, musimy umiejscowić pliki HTML na dysku twardym. Do przechowywania plików HTML używamy specjalnych, potężnych komputerów zwanych *serwerami (ang. servers)*. Serwery nie posiadają monitorów, myszy ani klawiatur, ponieważ ich głownym celem jest przechowywanie danych i serwowanie ich. Dlatego są one nazywane *serwerami* -- ponieważ służą do *serwowania* danych.
 

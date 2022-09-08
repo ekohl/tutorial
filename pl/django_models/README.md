@@ -77,26 +77,29 @@ Zauważysz, że nowy katalog `blog` został utworzony i zawiera kilka plików. K
 
     djangogirls
     ├── blog
-    │   ├── __init__.py
     │   ├── admin.py
     │   ├── apps.py
+    │   ├── __init__.py
     │   ├── migrations
     │   │   └── __init__.py
     │   ├── models.py
     │   ├── tests.py
-    |   ├── urls.py
     │   └── views.py
     ├── db.sqlite3
     ├── manage.py
     ├── mysite
+    │   ├── asgi.py
     │   ├── __init__.py
     │   ├── settings.py
     │   ├── urls.py
     │   └── wsgi.py
+    ├── myvenv
+    │   └── ...
     └── requirements.txt
     
+    
 
-Po stworzeniu aplikacji, musimy dać znać Django, że powinien jej używać. Robimy to w pliku `mysite/settings.py` - otwórz go w swoim edytorze kodu. Musimy odnaleźć nagłówek `INSTALLED_APPS` i dodać wiersz o treści `'blog',` tuż przed nawiasem zamykającym `]`. Czyli efekt końcowy powinien wyglądać tak:
+Po stworzeniu aplikacji, musimy dać znać Django, że powinien jej używać. Robimy to w pliku `mysite/settings.py` - otwórz go w swoim edytorze kodu. We need to find `INSTALLED_APPS` and add a line containing `'blog',` just above `]`. Czyli efekt końcowy powinien wyglądać tak:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -121,13 +124,12 @@ Otwórz plik `blog/models.py` w swoim edytorze kodu, usuń z niego całą zawart
 {% filename %}blog/models.py{% endfilename %}
 
 ```python
-from django.conf import settings
 from django.db import models
 from django.utils import timezone
 
 
 class Post(models.Model):
-    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
     text = models.TextField()
     created_date = models.DateTimeField(
@@ -162,7 +164,7 @@ Teraz dodamy właściwości, o których wspomniałyśmy już wcześniej: `title`
 - `models.DateTimeField` - to jest data i godzina.
 - `models.ForeignKey` - to jest odnośnik do innego modelu.
 
-Nie będziemy tutaj wyjaśniać drobiazgowo każdego elementu kodu, gdyż zajęłoby to zbyt dużo czasu. Zajrzyj do dokumentacji Django, jeżeli chcesz dowiedzieć się więcej o polach modelu oraz jak definiować rzeczy inne niż opisane powyżej (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
+Nie będziemy tutaj wyjaśniać drobiazgowo każdego elementu kodu, gdyż zajęłoby to zbyt dużo czasu. Zajrzyj do dokumentacji Django, jeżeli chcesz dowiedzieć się więcej o polach modelu oraz jak definiować typy inne niż opisywane powyżej (https://docs.djangoproject.com/en/3.2/ref/models/fields/#field-types).
 
 A co to takiego `def publish(self):`? To jest dokładnie metoda publikująca wpis (`publish`), o której wspominaliśmy wcześniej. Wyraz `def` oznacza, że mamy do czynienia z funkcją/metodą, a `publish` to nazwa metody. Możesz zmienić nazwę metody, jeśli chcesz. Zasadą jest, że używamy małych liter oraz znaków podkreślenia zamiast spacji. Na przykład metodę, która oblicza średnią cenę, można nazwać `calculate_average_price`.
 
@@ -180,9 +182,9 @@ Został nam ostatni krok, a mianowicie dodanie naszego nowego modelu do bazy dan
 
     (myvenv) ~/djangogirls$ python manage.py makemigrations blog
     Migrations for 'blog':
-      blog/migrations/0001_initial.py:
+      blog/migrations/0001_initial.py
     
-      - Create model Post
+        - Create model Post
     
 
 **Uwaga:** Pamiętaj, aby zapisać pliki, które edytujesz. W przeciwnym razie Twój komputer wykona poprzednią wersję, która może dać Tobie nieoczekiwane komunikaty o błędach.

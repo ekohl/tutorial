@@ -2,6 +2,12 @@ Istnieje wiele programów tego typu, jednak który wybrać? To nie takie proste,
 
 Nasze propozycje prezentujemy poniżej, ale w razie czego spytaj o sugestie swojego mentora - będzie on w stanie wybrać coś zgodnego z Twoimi preferencjami.
 
+## Visual Studio Code
+
+Visual Studio Code jest edytorem kodu źródłowego opracowanym przez Microsoft dla Windows, Linux i macOS. Obejmuje on wsparcie debugowania, kontrolę wbudowanego Git, podświetlanie składni, inteligentne uzupełnianie kodu, fragmenty i refaktoryzację kodu.
+
+[Pobierz tutaj](https://code.visualstudio.com/)
+
 ## Gedit
 
 Gedit to open source'owy i darmowy edytor dostępny dla wszystkich systemów operacyjnych. Czasami nie jest jednak zbyt prosty w zainstalowaniu.
