@@ -1,6 +1,6 @@
-> Част от този раздел е базиран на уроци от Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> Част от този раздел е базирана на ръководства от Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 > 
-> Част от този раздел е базиран на [ django-marcador    урок ](http://django-marcador.keimlink.de/) лицензиран съгласно Creative Commons    Attribution-ShareAlike 4.0 международен лиценз. Урокът за джанго-маркадор е защитен с авторско право от Markus Zapke-Gründemann et al.
+> Част от този раздел е базирана на [django-marcador ръководство](http://django-marcador.keimlink.de/) лицензиранo съгласно Creative Commons Attribution-ShareAlike 4.0 International License. Ръководството django-marcador е защитено с авторско право от Markus Zapke-Gründemann et al.
 
 ## Виртуална среда
 
@@ -12,7 +12,7 @@
 
 > **ЗАБЕЛЕЖКА:** В Windows се уверете, че тази директория не съдържа акцентирани или специални знаци; ако вашето потребителско име съдържа символи с ударение, използвайте друга директория, например, `C:\djangogirls`.
 
-За този урок ще използваме нова директория `djangogirls` от вашата домашна директория:
+За това ръководство ще използваме нова директория `djangogirls` от вашата домашна директория:
 
 {% filename %}command-line{% endfilename %}
 
@@ -30,14 +30,14 @@
 <!--sec data-title="Virtual environment: Windows" data-id="virtualenv_installation_windows"
 data-collapse=true ces-->
 
-За да създадете нов `virtualenv `, трябва да отворите командния ред и да стартирате `python -m venv myvenv`. Ще изглежда така:
+За да създадеш нов `virtualenv`, трябва да отвориш командния ред и да стартираш `python -m venv myvenv`. Ще изглежда така:
 
 {% filename %}command-line{% endfilename %}
 
     C:\Users\Name\djangogirls> python -m venv myvenv
     
 
-Където `myvenv` е името на вашата `virtualenv`. Можете да използвате всяко друго име, но се придържайте към малки букви и не използвайте интервали, ударения или специални знаци. Също така е добре името да бъде кратко - ще го препращате много!
+Където `myvenv` е името на вашата `virtualenv`. Можете да използвате всяко друго име, но се придържайте към малки букви и не използвайте интервали, ударения или специални знаци. It is also a good idea to keep the name short – you'll be referencing it a lot!
 
 <!--endsec-->
 
@@ -79,7 +79,7 @@ data-collapse=true ces-->
 > {% filename %}command-line{% endfilename %}
 > 
 >     $ sudo apt install python-virtualenv
->     $ virtualenv --python=python3.6 myvenv
+>     $ virtualenv --python=python{{ book.py_version }} myvenv
 >     
 > 
 > **ЗАБЕЛЕЖКА:** Ако получите грешка като
@@ -93,14 +93,14 @@ data-collapse=true ces-->
 > 
 > {% filename %}command-line{% endfilename %}
 > 
->     sudo apt install python3.6-venv
+>     sudo apt install python{{ book.py_version }}-venv
 >     
 
 <!--endsec-->
 
 ## Работа с virtualenv
 
-Командата по-горе ще създаде директория с име `myvenv` (или каквото име сте си избрали), която съдържа нашата виртуална среда (по същество куп директории и файлове). 
+The command above will create a directory called `myvenv` (or whatever name you chose) that contains our virtual environment (basically a bunch of directories and files).
 
 <!--sec data-title="Working with virtualenv: Windows" data-id="virtualenv_windows"
 data-collapse=true ces-->
@@ -112,7 +112,7 @@ data-collapse=true ces-->
     C:\Users\Name\djangogirls> myvenv\Scripts\activate
     
 
-> **Забележка:** При Windows 10 можете да получите грешка в прозореца на PowerShell `execution of scripts is disabled on this system`. В този случай трябва да отворите нов прозорец на PowerShell като изберете "Run as Administrator." След това напишете следната команда преди да стартирате виртуалната си среда:
+> **NOTE:** On Windows 10 you might get an error in the Windows PowerShell that says `execution of scripts is disabled on this system`. В този случай трябва да отворите нов прозорец на PowerShell като изберете "Run as Administrator." След това напишете следната команда преди да стартирате виртуалната си среда:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -123,12 +123,12 @@ data-collapse=true ces-->
 
 <!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
 
-> **Забележка:** За потребителите на популярният редактор VS Code, който идва с интегриран терминал базиран на windows PowerShell, и ако искате да се придържате към интегрирания терминал, трябва да напишете следната команда за да активирате виртуалната си среда:
+> **NOTE:** For users of the popular editor VS Code, which comes with an integrated terminal based off windows PowerShell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
 > 
 >     $ . myvenv\Scripts\activate.ps1
 >     
 > 
-> Предимството е, че не трябва да сменяте прозорците между IDE и command-line.
+> Предимството е, че не е необходимо да сменяте между прозорците на IDE и командния ред.
 
 <!--endsec-->
 
@@ -144,7 +144,7 @@ data-collapse=true ces-->
 
 Помнете, че трябва да заместите `myvenv` с името на вашата избрана `virtualenv`.
 
-> **Забележка:** понякога `source` може да не е на лице. В тези случаи трябва да направите следното: 
+> **NOTE:** If the command `source` is not available, try doing this instead:
 > 
 > {% filename %}command-line{% endfilename %} 
 > 
@@ -154,7 +154,7 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-Ще разберете, че виртуалната ви среда е стартирана като видите подсказването в конзолата ви, което започва с `(myvenv)`.
+Ще разбереш, че `virtualenv` е стартирана като видиш че подканата в конзолата ти започва с `(myvenv)`.
 
 Когато работите от виртуална среда, `python` автоматично ще се насочи към правилната версия, така че може да използвате команда `python` вместо `python3`.
 
@@ -197,7 +197,7 @@ data-collapse=true ces-->
 
     (myvenv) ~$ pip install -r requirements.txt
     Collecting Django~={{ book.django_version }} (from -r requirements.txt (line 1))
-      Downloading Django-{{ book.django_version }}-py3-none-any.whl (7.1MB)
+      Downloading Django-{{ book.django_version }}-py3-none-any.whl (7.9MB)
     Installing collected packages: Django
     Successfully installed Django-{{ book.django_version }}
     
@@ -205,14 +205,14 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> Ако се появи грешка когато извикате команда pip на Windows платформа, проверете дали името на пътя на проекта ви съдържа празно място, знак за ударение или други специални знаци. (например , `C:\Users\User Name\djangogirls`). Ако съдържа, моля помислете за друго място без разстояние, знак за ударение или други специални знаци (предложение: `C:\djangogirls`). Създайте нова виртуална среда в новата директория, след това изтрийте старата и опитайте отново командата. (Преместването на папката с виртуална среда няма да работи, тъй като виртуалната среда използва абсолютни пътеки.)
+> If you get an error when calling pip on Windows, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). Ако съдържа, моля помислете за друго място без разстояние, знак за ударение или други специални знаци (предложение: `C:\djangogirls`). Създайте нова виртуална среда в новата директория, след това изтрийте старата и опитайте отново командата. (Преместването на папката с виртуална среда няма да работи, тъй като виртуалната среда използва абсолютни пътеки.)
 
 <!--endsec-->
 
 <!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
-> Вашият command line може да забие след като се опитате да инсталирате Django. Ако това се случи напишете следната команда вместо горната:
+> Your command line might freeze when you try to install Django. If this happens, instead of the above command use:
 > 
 > {% filename %}command-line{% endfilename %}
 > 

@@ -56,7 +56,10 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-Последната липсваща част е подаването на QuerySet постове към контекста на шаблона. Не се притеснявайте -- ще обясним как става в по-следваща глава.
+За да покажем нашия QuerySet в списъка с публикации на нашия блог, ни остават две неща:
+
+1. Натиснете `posts` QuerySet в контекста на шаблона, като промените функцията `render`. Ще направим това сега.
+2. Променете шаблона да показва `posts` QuerySet. Ще разгледаме това в следващата глава.
 
 Моля забележете, че създадохме променлива за нашия QuerySet: `posts`. Ползвайте това като име на нашия QuerySet. От сега нататък можем да се отнасяме към него с това име.
 
@@ -78,4 +81,4 @@ def post_list(request):
 
 Това е! Време е да се върнем към нашия шаблон и да покажем на екрана QuerySet!
 
-Искате да прочетете малко повече за QuerySets в Django? Трябва да погледнете тук: https://docs.djangoproject.com/en/2.2/ref/models/querysets/
+Want to read a little bit more about QuerySets in Django? You should look here: https://docs.djangoproject.com/en/3.2/ref/models/querysets/

@@ -29,17 +29,18 @@ HTML идва от "HyperText Markup Language". **HyperText** означава, 
 
 Вижте как изглежда сайта ви: http://127.0.0.1:8000/
 
-> Ако все още имате грешка `TemplateDoesNotExist`, опитайте се да заредите сървъра си отново. Отидете в конзолата си, спрете сървъра като натиснете едновременно Ctrl+C и го стартирате отново като напишете команда `python manage.py runserver` .
+> Ако все още имате грешка `TemplateDoesNotExist`, опитайте се да заредите сървъра си отново. Отидете в командния си ред, спрете сървъра като натиснете едновременно Ctrl+C (Клавишите Control и C заедно) и го стартирайте отново като напишете команда `python manage.py runserver` .
 
 ![Фигура 11.1](images/step1.png)
 
-Вече нямаме грешка! Поздравления :) Въпреки това, сайта ви всъщност не публикува нищо освен празна страница, защото шаблонът ви също е празен. Можем да оправим това.
+No error anymore! Congratulations! :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
 
 Отворете новият файл в редактора и добавете следното:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
 <body>
     <p>Hi there!</p>
@@ -52,10 +53,11 @@ HTML идва от "HyperText Markup Language". **HyperText** означава, 
 
 ![Фигура 11.2](images/step3.png)
 
-Работи! Добра работа :)
+It worked. Nice work there! :)
 
-* Най-простия етикет `<html>` е винаги в началото на една страница и `</html>` е винаги в края и. Както може да видите, цялото съдържание на страницата е между отварящият `<html>` и затварящият етикет `</html>`
-* `<p>` е етикет за абзацни елементи; `</p>` затваря всеки един абзац
+* The line `<!DOCTYPE html>` is not a HTML tag. It only declares the document type. Here, it informs the browser that document type is [HTML5](https://html.spec.whatwg.org/#the-doctype). This is always the beginning of any HTML5 file.
+* The most basic tag, `<html>`, is always the beginning of html content and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
+* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
 
 ## Глава и тяло на страницата (head и body)
 
@@ -72,6 +74,7 @@ HTML идва от "HyperText Markup Language". **HyperText** означава, 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
     <head>
         <title>Ola's blog</title>
@@ -109,40 +112,49 @@ HTML идва от "HyperText Markup Language". **HyperText** означава, 
 * `<a href="https://djangogirls.org">връзка</a>` създава връзка 
 * `<ul><li>първи елемент</li><li>втори елемент</li></ul>` прави лист, точно като този! 
 * `<div></div>` дефинира секция от страницата
+* `<nav></nav>` defines a set of navigation links
+* `<article></article>` specifies independent, self-contained content
+* `<section></section>` defines a section in a document
+* `<header></header>` specifies a header for a document or section
+* `<main></main>` specifies the main content of a document
+* `<aside></aside>` defines some content aside from the content it is placed in (like a sidebar)
+* `<footer></footer>` defines a footer for a document or section
+* `<time></time>` defines a specific time (or datetime)
 
 Ето пример на пълен шаблон, копирайте и пренесете в `blog/templates/blog/post_list.html`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
     <head>
         <title>Django Girls blog</title>
     </head>
     <body>
-        <div>
+        <header>
             <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
+        </header>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
             <h2><a href="">My first post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div>
+        </article>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
             <h2><a href="">My second post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </div>
+        </article>
     </body>
 </html>
 ```
 
-Създадохме три `div` секции тук.
+We've created one `header` section and two `article` section here.
 
-* Първият `div` елемент съдържа името на блога -- неговото заглавие и връзката
-* Другите два `div` елемента съдържат нашите блог постове с датата на публикуване, `h2` със заглавието, на което може да се кликне и два `p`-елемента (абзаца) от текст, единия за датата, а другия за нашия пост.
+* The `header` element contains the title of our blog – it's a heading and a link
+* The two `article` elements contain our blog posts with a published date in a `time` element, a `h2` element with a post title that is clickable and a `p` (paragraph) element for text of our blog post.
 
 Дава ни този ефект:
 
@@ -169,10 +181,8 @@ HTML идва от "HyperText Markup Language". **HyperText** означава, 
 
 {% filename %}command-line{% endfilename %}
 
-    $ git add --all .
+    $ git add .
     
-
-> **Забележка** `--all` означава, че `git` ще разпознае и файлове, които сте изтрили (по подразбиране, разпознава нови/модифицирани файлове). Също помните (от 3-та глава), че `.` означава настоящата директория.
 
 Преди да качим всички файлове, нека проверим какво ще качи `git` (всички файлове, които `git` ще качи ще се появят в зелено):
 
@@ -188,7 +198,7 @@ HTML идва от "HyperText Markup Language". **HyperText** означава, 
     $ git commit -m "Changed the HTML for the site."
     
 
-> **Забележка:** Бъдете сигурни, че сте сложили съобщението в двойни кавички.
+> **Note** Make sure you use double quotes around the commit message.
 
 След като сме направили това, качваме (push) нашите промени на GitHub:
 

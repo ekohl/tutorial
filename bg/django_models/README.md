@@ -77,28 +77,29 @@
 
     djangogirls
     ├── blog
-    │   ├── admin.py
-    │   ├── apps.py
-    │   ├── __init__.py
-    │   ├── migrations
-    │   │   └── __init__.py
-    │   ├── models.py
-    │   ├── tests.py
-    │   └── views.py
+    │   ├── admin.py
+    │   ├── apps.py
+    │   ├── __init__.py
+    │   ├── migrations
+    │   │   └── __init__.py
+    │   ├── models.py
+    │   ├── tests.py
+    │   └── views.py
     ├── db.sqlite3
     ├── manage.py
     ├── mysite
-    │   ├── __init__.py
-    │   ├── settings.py
-    │   ├── urls.py
-    │   └── wsgi.py
+    │   ├── asgi.py
+    │   ├── __init__.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
     ├── myvenv
-    │   └── ...
+    │   └── ...
     └── requirements.txt
     
     
 
-След създаването на приложение също трябва да кажем на Django, че трябва да го използва. Правим това във файла `mysite/settings.py` -- отваряме го във вашия редактор на кодове. Трябва да намерим `INSTALLED_APPS` и да добавим ред, съдържащ `'blog.apps.BlogConfig'`. Така че крайният продукт трябва да изглежда така:
+След създаването на приложение също трябва да кажем на Django, че трябва да го използва. Правим това във файла `mysite/settings.py` -- отваряме го във вашия редактор на кодове. We need to find `INSTALLED_APPS` and add a line containing `'blog',` just above `]`. Така че крайният продукт трябва да изглежда така:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -110,7 +111,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog.apps.BlogConfig',
+    'blog',
 ]
 ```
 
@@ -162,7 +163,7 @@ class Post(models.Model):
 - `models.DateTimeField` -- това е дата и час.
 - `models.ForeignKey` -- това е връзка към друг модел.
 
-Тук няма да обясняваме всяка част от кода, тъй като това ще отнеме твърде много време. Трябва да разгледате документацията на Django, ако искате да знаете повече за моделните полета и как да дефинирате неща, различни от описаните по-горе (https://docs.djangoproject.com/en/2.2/ref/models/fields/#field -types).
+Тук няма да обясняваме всяка част от кода, тъй като това ще отнеме твърде много време. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/3.2/ref/models/fields/#field-types).
 
 Какво ще кажете за `def publish(self):`? Това е точно методът `publish`, за който говорихме преди. `def` означава, че това е функция/метод и `publish` е името на метода. Можете да промените името на метода, ако искате. Правилото за именуване е, че използваме малки букви и подчертавки вместо интервали (прасни места). Например метод, който изчислява средна цена, може да се нарече `calculate_average_price`.
 
@@ -180,9 +181,9 @@ class Post(models.Model):
 
     (myvenv) ~/djangogirls$ python manage.py makemigrations blog
     Migrations for 'blog':
-      blog/migrations/0001_initial.py:
+      blog/migrations/0001_initial.py
     
-      - Create model Post
+        - Create model Post
     
 
 **Забележка:** Не забравяйте да запазите файловете, които редактирате. В противен случай компютърът ви ще изпълни предишната версия, която може да ви даде неочаквани съобщения за грешка.
