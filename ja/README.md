@@ -2,13 +2,13 @@
 
 [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
-> これは、Creative Commons Attribution-ShareAlike 4.0 International License のライセンスの下で提供しています。ライセンスについてはこちらをご確認ください。 https://creativecommons.org/licenses/by-sa/4.0/
+> これは、Creative Commons Attribution-ShareAlike 4.0 International License のライセンスの下で提供しています。ライセンスについてはこちらをご確認ください。 https://creativecommons.org/licenses/by-sa/4.0/deed.ja
 
 ## ウェルカム！
 
-Django Girlsのチュートリアルにようこそ！ お会いできて嬉しいです :) このチュートリアルでは、ウェブテクノロジーの中身を見て回る旅へあなたをお連れします。私たちが知っているようにウェブを動かすのに必要なものすべてを垣間見ることができるでしょう。
+Django Girlsのチュートリアルにようこそ！ ここでお会いできてうれしいです :) このチュートリアルでは、ウェブテクノロジーの内側を見るたびにお連れします。私たちが知っているように、ウェブを動かすのに必要な技術を垣間見ることができるでしょう。
 
-知らないことを学ぶことは冒険のようなものです - でも心配はいりません。あなたはすでに勇気を出してここにいらっしゃるのですから、きっとうまくいくでしょう :)
+全てが知らないことのように、これは冒険のようになるでしょう。けれど心配しないでください。あなたはすでに勇気をだしてここにいるのですから。上手くいくでしょう :)
 
 ## はじめに
 

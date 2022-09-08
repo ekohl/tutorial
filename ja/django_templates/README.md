@@ -20,7 +20,7 @@ Djangoテンプレートで変数を表示するためには、次のように�
 {{ posts }}
 ```
 
-これを `blog/templates/blog/post_list.html` テンプレートでやってみましょう。 エディタでこのファイルを開き、2つめの `<div>` から3つめの `</div>` までをまるごと `{{ posts }}` に置き換えて下さい。 ファイルを保存してページをリロードすると：
+これを `blog/templates/blog/post_list.html` テンプレートでやってみましょう。 Open it up in the code editor, and replace the existing `<article>` elements with `{{ posts }}`. ファイルを保存してページをリロードすると：
 
 ![図 13.1](images/step1.png)
 
@@ -51,16 +51,16 @@ Djangoはposts変数をオブジェクトのリストと認識します。 **Pyt
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<div>
+<header>
     <h1><a href="/">Django Girls Blog</a></h1>
-</div>
+</header>
 
 {% for post in posts %}
-    <div>
-        <p>published: {{ post.published_date }}</p>
+    <article>
+        <time>published: {{ post.published_date }}</time>
         <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    </article>
 {% endfor %}
 ```
 
@@ -80,7 +80,7 @@ post変数がさっきと違って、`{{ post.title }}` や `{{ post.text }}` �
 
     $ git status
     [...]
-    $ git add --all .
+    $ git add .
     $ git status
     [...]
     $ git commit -m "Modified templates to display posts from database."

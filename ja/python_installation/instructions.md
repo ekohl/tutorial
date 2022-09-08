@@ -2,7 +2,7 @@
 > 
 > このセクションはGeek Girls Carrots (https://github.com/ggcarrots/django-carrots) のチュートリアルをベースに作成しました。
 
-DjangoはPythonで書かれています。 Djangoを使うにはPythonが必要です。 では、インストールするところから始めましょう！ 最新のPython３をインストールしてください。それ以前のPythonがインストールされていたら、アップグレードする必要があります。 3.4以降のバージョンであれば問題ありません。
+DjangoはPythonで書かれています。 Djangoを使うにはPythonが必要です。 では、インストールするところから始めましょう！ 最新のPython３をインストールしてください。それ以前のPythonがインストールされていたら、アップグレードする必要があります。 もしあなたが{{ book.py_min_version }}かそれ以上のバージョンを持っているのなら大丈夫です。
 
 下に書いたとおりのやり方で、Pythonをインストールしてください。すでにAnacondaが入っていても以下のとおりにインストールしてください。
 
@@ -13,63 +13,59 @@ DjangoはPythonで書かれています。 Djangoを使うにはPythonが必要�
 * WindowsキーとPause/Breakキーを同時に押します。
 * Windowsのスタートからコントロールパネルを開き、”システムとセキュリティ”、”システム”と順にクリックします。
 * Windowsロゴをクリック、設定 > システム > バージョン情報 とクリックしていきましょう。
+* Windowsのスタートメニューから「システムの詳細設定」を検索します。 これを行うためには、スタートのボタンをクリックするかWindowsキーを押して、`システムの詳細設定`を入力し始めます。 入力するとすぐに候補を提案します。 表示されたら、選択することができます。
 
 https://www.python.org/downloads/windows/ からWindows版のPythonをダウンロードできます。 "Latest Python 3 Release - Python x.x.x" というリンクをクリックします。 あなたのWindowsが**64-bit版**なら、**Windows x86-64 executable installer**をダウンロードしてください。 そうでなければ**Windows x86 executable installer**をダウンロードしてください。 インストーラーがダウンロードできたら、ダブルクリックして実行し、指示に従ってください。
 
-インストールの途中で、「Setup」というタイトルのウィンドウがでてきたら注意してください。 下にあるとおり、「Add Python 3.6 to PATH」か「Add Python to your environment variables」をチェックしてから「Install Now」をクリックしてください (バージョンが違うと表示が違うこともあります)。
+インストールの途中で、「Setup」というタイトルのウィンドウがでてきたら注意してください。 以下に書かれてあるように（インストールしているバージョンが違った場合は表示されている内容が少し異なるかもしれません）、"Python {{ book.py_version }} to PATH" か "Add Python to your environment variables" のチェックボックスをチェックし、"Install Now"をクリックします。
 
 ![Pythonのパスを通すのを忘れないようにしてください。](../python_installation/images/python-installation-options.png)
 
 インストールが終わったら、ダイアログボックスが出てきます。ボックス内のリンクを開くと、Pythonやインストールしたバージョンを説明したページに行けます。 ダイアログは閉じてしまいましょう。Pythonの使い方はこのチュートリアルでたっぷり勉強します！
 
-注意: あなたのWindowsがWindows7、Windows Vistaや、それ以前のバージョンの場合で、Python 3.6.x のインストールがエラーがでて失敗する場合は、下のどちらかのやり方を試してください。
+注意: もしあなたが古いバージョンのWindows(7, Vistaなど)使用している場合、Python {{ book.py_version }} インストーラーはエラーを起こし失敗します。Windowsアップデートをインストールし再度Pythonをインストールしてください。 もしもエラーが起こり続けているのなら、Python バージョン {{ book.py_min_release }} を[Python.org](https://www.python.org/downloads/windows/)からダウンロードしてみてください。
 
-1. Windows Updateを実行してすべての更新ファイルを入れてから、Pythonを入れ直す
-2. [古いバージョンのPython](https://www.python.org/downloads/windows/)をインストールしてみる。例えば[3.4.6](https://www.python.org/downloads/release/python-346/)。
-
-古いバージョンのPythonをインストールした場合、インストール画面は上のものと違うことがあります。 下にスクロールして「Add python.exe to Path」の左のボタンをクリックして「Will be installed on local hard drive（ローカルハードドライブにインストールされます）」を選択してください
-
-![古いバージョンでも、Pythonのパスを通してください。](../python_installation/images/add_python_to_windows_path.png)
+> Django {{ book.django_version }} はWindows XP以前のバージョンがサポートしていない Python {{ book.py_min_version }} 以上のバージョンを必要とします。
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **注意**：OS XにPythonをインストールする前に、Macの設定でApp Store以外のパッケージをインストールできるようにする必要があります。 「システム環境設定」（「アプリケーション」フォルダ内）に移動し、「セキュリティとプライバシー」、「一般」タブの順にクリックします。 「ダウンロードしたアプリを許可する」が「Mac App Store」に設定されている場合は、「Mac App Storeと識別された開発者」に変更します。
+> **注意** OS X にPython をインストールする前に、Mac の設定がApp Store以外からのパッケージのインストールを許可しているか確認してください。 「システム環境設定」（「アプリケーション」フォルダ内）に移動し、「セキュリティとプライバシー」、「一般」タブの順にクリックします。 「ダウンロードしたアプリケーションの実行許可：」が「App Store」に設定されている場合は、「App Storeと確認済みの開発元からのアプリケーションを許可」に変更します。
 
-https://www.python.org/downloads/release/python-361/ からPythonインストーラーをダウンロードします。
+https://www.python.org/downloads/mac-osx/ のウェブサイトから最新のPython のインストーラーをダウンロードします。
 
 * *Mac OS X 64-bit/32-bit installer* というファイルをダウンロードします。 
-* ダウンロードできたら *python-3.6.1-macosx10.6.pkg* をダブルクリックして実行します。
+* *python-{{ book.py_release }}-macosx10.9.pkg*をダブルクリックしてインストーラーを実行してください。
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-すでにPythonがインストールされているかもしれません。インストールされているか、そしてどのバージョンが入っているか確かめるには、コンソールを開いて下のコマンドを入力してください。
+おそらく殆どの場合は、すでに Python をインストールしていると思います。Python をインストールしているか確認するために（またどのばーじょんかかを）、コンソールを開いて以下のコマンドをうってください。
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 --version
-    Python 3.6.5
+    Python {{ book.py_release }}
     
 
-表示されたバージョンが違っても、3.4.0以降(例えば 3.6.0など)であれば、アップグレードの必要はありません。 Pythonがインストールされていなかったり、違うバージョンをインストールしたい場合は、下のコマンドを実行して、まずパソコンのLinuxディストリビューションがなにか確かめてください。
+異なるバージョンの Python をインストールしている場合、少なくとも{{ book.py_min_version }} （例: {{ book.py_min_release }}）、アップグレードの必要はありません。 Pythonがインストールされていなかったり、異なるバージョンをインストールしたい場合は、はじめに下記のコマンドでどの Linux ディストリビューションを使っているか確認してください。
 
 {% filename %}command-line{% endfilename %}
 
-    $ grep ^NAME= /etc/os-release
+    $ grep '^NAME=' /etc/os-release
     
 
-表示されたディストリビューション名に従って、以下のインストール方法の1つを実行してください。
+その後、結果によって、以下のセクションのいづれかのインストール手順に従います。
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
-下のコマンドをコンソールに入力します。
+次のコマンドをコンソールに打ち込みます。
 
 {% filename %}command-line{% endfilename %}
 
@@ -81,21 +77,21 @@ data-collapse=true ces-->
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-下のコマンドをコンソールに入力します。
+次のコマンドをコンソールで使用します。
 
 {% filename %}command-line{% endfilename %}
 
     $ sudo dnf install python3
     
 
-Fedoraのバージョンが古い場合、 `dnf` コマンドが見つからないというエラーが出るかもしれません。そんなときは代わりに `yum` コマンドを使ってください。
+Fedora バージョンが古い場合は、`dnf`が見つかりませんというエラーが起きるかもしれません。その場合は、`yum` を変わりに使用してください。
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-下のコマンドをコンソールに入力します。
+以下のコマンドをコンソールで使用してください。
 
 {% filename %}command-line{% endfilename %}
 
@@ -104,18 +100,18 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-インストールがうまくいったか確認するために、コマンドプロンプトを開いて `python3` と打ち込んでください。
+インストールが成功しているか確認するために、コマンドプロンプトを開いて`Python3`コマンドを使用します。
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 --version
-    Python 3.6.1
+    Python {{ book.py_release }}
     
 
-バージョンはあなたがインストールしたものが表示されます。なのでPython 3.6.1 と表示されないかもしれません。
+表示されているバージョンは{{ book.py_release }} と異なるかもしれません。あなたがインストールしたバージョンが表示されています。
 
-**注意:** Windowsで `python3` を実行して、コマンドが見つからないとエラーが出た場合、代わりに `python` (`3` をコマンドに入れていません) を使ってみてください。そして、3.4.0以降のPythonのバージョンが表示されるか確認してください。 どちらのコマンドもうまく動かない場合は、新しいコマンドプロンプトを開いて同じことを試してください。Pythonのインストール前にコマンドプロンプトを使っていて、それが開きっぱなしだとこういうことが起きます。
+**注意:**Windowsでpython3は見つかりませんというエラーが出たときは、python（`3抜きで`）実行してみてください。そして、{{ book.py_min_version }} 以降のバージョンが表示されているか確認してください。 どちらもうまく行かない場合は、新しくコマンドプロンプトを開いて再び試してみてください。Pythonのインストール前にコマンドプロントを開き続けていると、これが起こります。
 
 * * *
 
-わからないことがあったり、うまくいかなくて次にどうしたらいいかわからなかったりするときは、コーチに質問してください! うまくいかないこともあります。そういうときは、経験豊富な人に聞くといいですよ。
+なにか疑問や上手く行かないことがある時、また次に何をすればいいかわからに時は、コーチに質問しましょう。 時々上手く行かないときもあります。そんなときは、経験豊富な人に聞くのが良いです。

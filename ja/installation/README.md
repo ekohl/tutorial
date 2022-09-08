@@ -19,14 +19,13 @@
 このチュートリアルではブログを作成します。 そのために、チュートリアルを進める中で必要に応じて、さまざまなソフトウェアをコンピュータにインストールする方法や、いくつかのオンラインアカウントを設定する方法について教わります。 このページでは、インストールとアカウント作成の手順すべてを一ヶ所にまとめています（ワークショップのやり方によっては、このページは役に立ちます）。
 
 <!--sec data-title="Chromebook setup (if you're using one)"
-data-id="chromebook_setup" data-collapse=true ces-->
-{% include "/chromebook_setup/instructions.md" %}
+data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
+
 <!--endsec-->
 
 # コマンドラインの簡単な紹介 {#command-line}
 
-以下の手順の多くに、「コンソール」、「ターミナル」、「コマンドウィンドウ」、「コマンドライン」という言葉が出てきます。これらはすべて同じものを意味します。コマンドを入力できる、コンピュータのウィンドウです。 メインのチュートリアルに進むと、コマンドラインについてさらに学ぶことができます。 今は、コマンドウィンドウの開き方と、それがどのように見えるかを覚えましょう：
-{% include "/intro_to_command_line/open_instructions.md" %}
+以下の手順の多くに、「コンソール」、「ターミナル」、「コマンドウィンドウ」、「コマンドライン」という言葉が出てきます。これらはすべて同じものを意味します。コマンドを入力できる、コンピュータのウィンドウです。 メインのチュートリアルに進むと、コマンドラインについてさらに学ぶことができます。 今は、コマンドウィンドウの開き方と、それがどのように見えるかを覚えましょう： {% include "/intro_to_command_line/open_instructions.md" %}
 
 # Pythonのインストール {#python}
 
@@ -44,11 +43,11 @@ data-id="chromebook_setup" data-collapse=true ces-->
 
 {% include "/deploy/install_git.md" %}
 
-# GitHubのアカウント作成 {#github}
+# GitHubのアカウント作成 {#github-account}
 
 [GitHub.com](https://www.github.com)へ行って、新しく無料のユーザーアカウントを登録しましょう。パスワードを忘れないようにしてください（もしパスワードマネージャーを使っているなら、追加しましょう）。
 
-# PythonAnywhereのアカウント作成 {#pythonanywhere}
+# PythonAnywhereのアカウント作成 {#pythonanywhere-account}
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 

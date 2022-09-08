@@ -12,7 +12,7 @@
 
 # Git
 
-> **注：**もし、すでにインストールしていた場合は再度行う必要はありません。次のセクションに進んであなたのGitリポジトリを作り始められます。
+> **注意** もしすでに[インストール手順](../installation/README.md)を行っていた場合は、このステップを再び行う必要はありません。次のステップにスキップして Git リポジトリを作り始めてください。
 
 {% include "/deploy/install_git.md" %}
 
@@ -32,32 +32,75 @@ Gitはコードリポジトリ（または略して「リポジトリ」）と�
 
 gitリポジトリを初期化することは、プロジェクトごとに1回だけ行う必要があります（ユーザー名と電子メールをもう一度入力する必要はありません）。
 
-Git はこのディレクトリ内のすべてのファイルとフォルダの変更を追跡しますが、無視してほしいいくつかのファイルがあります。 ベースディレクトリ内で `.gitignore` という名前のファイルを作成することによってこれを行います。 あなたのエディターを開き、次の内容で新しいファイルを作成します。
+### ブランチ名の調整
+
+使用しているGitのバージョンが **2.28** よりも古い場合は、ブランチの名前を「main」に変更する必要があります。 Gitのバージョンを調べるには、以下のコマンドを入力してください。
+
+{% filename %}command-line{% endfilename %}
+
+    $ git --version
+    git version 2.xx...
+    
+
+上記のように「xx」と表示されているバージョンの2番目の数が28未満の場合のみ、ブランチの名前を変更するために次のコマンドを入力する必要があります。 28以上の場合は「無視するファイル」へ続いてください。 As in "Initializing", this is something we need to do only once per project, as well as only when your version of Git is less than 2.28:
+
+{% filename %}command-line{% endfilename %}
+
+    $ git branch -M main
+    
+
+### Ignoring files
+
+Git will track changes to all the files and folders in this directory, but there are some files we want it to ignore. We do this by creating a file called `.gitignore` in the base directory. Open up your editor and create a new file with the following contents:
 
 {% filename %}.gitignore{% endfilename %}
 
+    # Python
     *.pyc
     *~
-    /.vscode
     __pycache__
-    myvenv
+    
+    # Env
+    .env
+    myvenv/
+    venv/
+    
+    # Database
     db.sqlite3
-    /static
+    
+    # Static folder at project root
+    /static/
+    
+    # macOS
+    ._*
     .DS_Store
+    .fseventsd
+    .Spotlight-V100
+    
+    # Windows
+    Thumbs.db*
+    ehthumbs*.db
+    [Dd]esktop.ini
+    $RECYCLE.BIN/
+    
+    # Visual Studio
+    .vscode/
+    .history/
+    *.code-workspace
     
 
-これを "djangogirls" フォルダ内に `.gitignore` という名前で保存します。
+そして"djangogirls"フォルダーに`.gitignore`という名前で保存します。
 
-> **備考：**ファイル名の先頭のドットは重要です! もしそのファイルを作るのが難しいなら、（Macをお使いの方はFinderからドット（ . ）で始まるファイルを作れません。）そういう時はエディタでSave Asから作成すれば問題ありません。 `.txt`や `.py`などの拡張子をファイル名に入れないように気をつけてください。 ファイル名が`.gitignore`でないとGitに認識されません。
+> **備考：**ファイル名の先頭のドットは重要です! もしそのファイルを作るのが難しいなら、（Macをお使いの方はFinderからドット（ . ）で始まるファイルを作れません。）そういう時はエディタでSave Asから作成すれば問題ありません。 `.txt`や `.py`などの拡張子をファイル名に入れないように気をつけてください。 ファイル名が`.gitignore`でないとGitに認識されません。 LinuxとMacOSは、（`.gitignore` のように） `.<code>で始まる名前のファイルを隠しファイルとして扱います。通常の<code>ls`コマンドでは、これらのファイルは表示されません。 `.gitignore`fileを見つけるために、代わりに`ls -a`を使います。
 > 
 > **備考：** `.gitignore`ファイルで指定したファイルの1つが`db.sqlite3`です。 そのファイルはローカルデータベースで、すべてのユーザーと投稿が保存されます。 私達は標準的なウェブプログラミングの慣習に従います。つまり、ローカルのテストサイトとPythonAnywhere上の本番のウェブサイトでデータベースを分けるということです。 PythonAnywhereのデータベースは開発用のマシンと同じようにSQLiteにすることができますが、通常はMySQLというSQLiteよりもたくさんのサイト訪問者に対処できるデータベースを使用します。 どちらの方法でも、GitHubのコードのコピーではSQLiteデータベースを無視することで、これまでに作成したすべての投稿と管理者はそのままローカルで利用できますが、本番環境（ブログを公開するPythonAnywhereのことです）ではそれらを再び作成する必要があります。 ローカルデータベースは本当のブログ投稿をブログから削除してしまうことを心配せずに、さまざまなことをテストできるよい遊び場として考えるといいでしょう。
 
-`git add` コマンドを実行する前や、どのような変更を加えたか定かでない時は、 `git status` コマンドを使用する事をおすすめします。 これは間違ったファイルを追加またはコミットなど思いもかけない事を止めるために役立ちます。 `git status` コマンドは、あらゆる追跡されていない/変更されている/ステージされている（untracked/modifed/staged）ファイルや、ブランチの状態などさまざまな情報を返します。 出力は次のようになります。
+It's a good idea to use a `git status` command before `git add` or whenever you find yourself unsure of what has changed. This will help prevent any surprises from happening, such as wrong files being added or committed. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. The output should be similar to the following:
 
 {% filename %}command-line{% endfilename %}
 
     $ git status
-    On branch master
+    On branch main
     
     No commits yet
     
@@ -73,11 +116,11 @@ Git はこのディレクトリ内のすべてのファイルとフォルダの�
     nothing added to commit but untracked files present (use "git add" to track)
     
 
-最後に、変更内容を保存します。コンソールに移動し、これらのコマンドを実行します。
+And finally we save our changes. Go to your console and run these commands:
 
 {% filename %}command-line{% endfilename %}
 
-    $ git add --all .
+    $ git add .
     $ git commit -m "My Django Girls app, first commit"
      [...]
      13 files changed, 200 insertions(+)
@@ -88,135 +131,51 @@ Git はこのディレクトリ内のすべてのファイルとフォルダの�
 
 ## GitHubにコードをプッシュする
 
-[GitHub.com](https://www.github.com)にアクセスし、Sign upをクリックして無料の新規アカウントを作成してください。 （ワークショップの前にすでに作成していたら、それは素晴らしいです!） あなたのパスワードを忘れないようにしてください（使っていたら、パスワードマネージャーに入れておいてください）
+Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!) Be sure to remember your password (add it to your password manager, if you use one).
 
-そして、新しいリポジトリに "my-first-blog"の名前で新しいリポジトリを作成します。 "READMEで初期化する"チェックボックスをオフのままにし、.gitignoreオプションを空白にして（手動で行っています）、ライセンスをNoneのままにしておきます。
+Then, create a new repository, giving it the name "my-first-blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
 
 ![](images/new_github_repo.png)
 
 > **注** `my-first-blog`という名前は重要です。何か他のものを選択することもできますが、以下の手順では何度も繰り返す必要があります。他の名前を選択した場合は、 毎回それを置き換えてください。 できれば、`my-first-blog` の名前にしておきましょう。
 
-次の画面では、リポジトリをクローンするためのURLが表示されます。これはこの後のコマンドで利用します。
+On the next screen, you'll be shown your repo's clone URL, which you will use in some of the commands that follow:
 
 ![](images/github_get_repo_url_screenshot.png)
 
-そして自分のコンピューター上のGitリポジトリをGitHub上のGitリポジトリに結びつけてあげる必要があります。
+Now we need to hook up the Git repository on your computer to the one up on GitHub.
 
-コンソールに次のように入力します（`<your-github-username>`をGitHubアカウントの作成時に入力したユーザー名に置き換えます。山カッコ&lt;&gt;を残さないでください。このURLはさっき見たクローンURLと一致する必要があります）。
+Type the following into your console (replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets -- the URL should match the clone URL you just saw).
 
 {% filename %}command-line{% endfilename %}
 
     $ git remote add origin https://github.com/<your-github-username>/my-first-blog.git
-    $ git push -u origin master
+    $ git push -u origin main
     
 
-GitHubにプッシュするとき、GitHubのユーザー名とパスワードを聞かれます（コマンドライン上かポップアップウィンドウにて）。認証情報を入力したらこんな風に表示されます。
+When you push to GitHub, you'll be asked for your GitHub username and password (either right there in the command-line window or in a pop-up window), and after entering credentials you should see something like this:
 
 {% filename %}command-line{% endfilename %}
 
     Counting objects: 6, done.
     Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
     Total 3 (delta 0), reused 0 (delta 0)
-    
     To https://github.com/ola/my-first-blog.git
-     * [new branch]      master -> master
-    Branch master set up to track remote branch master from origin.
+    
+     * [new branch]      main -> main
+    Branch main set up to track remote branch main from origin.
     
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
 
-あなたのコードは今GitHub上にあります。 見に行きましょう！ [ Django ](https://github.com/django/django)や[ Django Girls Tutorial ](https://github.com/DjangoGirls/tutorial)、その他たくさんの素晴らしいオープンソースソフトウェアプロジェクトもGitHubでコードをホストしています。 :)
+Your code is now on GitHub. Go and check it out! You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
 
-# PythonAnywhereでブログを設定する
+{% include "/deploy/pythonanywhere.md" %}
 
-## PythonAnywhere アカウントにサインアップする
+# Check out your site!
 
-> **備考：**あなたがすでにPythonAnywhereのアカウントを以前に作成しインストールの手順をふんでいたら、再びそれを行う必要はありません。
+The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server -- remember, the posts from your local test database were not sent to your live blog.
 
-{% include "/deploy/signup_pythonanywhere.md" %}
+Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
 
-## PythonAnywhere でサイトを設定する
-
-ロゴをクリックしてメインの[PythonAnywhere Dashboard](https://www.pythonanywhere.com/)に戻り、「Bash」コンソールを起動するボタンをクリックします。これはPythonAnywhereバージョンのコマンドラインで、ちょうどあなたのコンピューターのコマンドラインと同じようなものです。
-
-![PythonAnywhereのウェブインターフェースの「New Console」、「bash」ボタン](images/pythonanywhere_bash_console.png)
-
-> **備考：**PythonAnywhere は Linuxベースなので、Windowsを使っている場合は、コンソールがあなたのものと少し違って見えるでしょう。
-
-PythonAnywhereにWebアプリケーションをデプロイするには、コードをGitHubからプルし、PythonAnywhereがそれを認識してWebアプリケーションのサーバを動かし始めるように設定する必要があります。 それを手動で行う方法もありますが、PythonAnywhereはそれをすべて行うヘルパーツールを提供しています。 まず、インストールしてみましょう。
-
-{% filename %}PythonAnywhere command-line{% endfilename %}
-
-    $ pip3.6 install --user pythonanywhere
-    
-
-`Collecting pythonanywhere` のようなメッセージがいくつか出力され、最終的に`Successfully installed (...) pythonanywhere- (...)`という行で終わると思います。
-
-GitHub からアプリを自動的に構成するためのヘルパーを実行します。 PythonAnywhereのコンソールに次のように入力します（GitHubからクローンするときのURLと一致するように、`<your-github-username>`の代わりにご自身のGitHubユーザー名を使用することを忘れないでください）：
-
-{% filename %}PythonAnywhere command-line{% endfilename %}
-
-    $ pa_autoconfigure_django.py --python=3.6 https://github.com/<your-github-username>/my-first-blog.git
-    
-
-実行しているところを見れば、何をしているのかわかるでしょう。
-
-- GitHubからコードをダウンロードする
-- ちょうどあなたのPC上でやったように、PythonAnywhere上に仮想環境 を作成する
-- 一部のデプロイメント設定で設定ファイルを更新する
-- `manage.py migrate`コマンドを使ってPythonAnywhere上のデータベースをセットアップする
-- 静的ファイルの設定（これについては後で学習します）
-- APIを通じてPythonAnywhereがあなたのWebアプリケーションを提供するように設定する
-
-PythonAnywhereではこれらすべてのステップは自動化されていますが、他のサーバープロバイダーでは同じ手順を自分で実行しなければなりません。
-
-今注目すべき重要な点は、PythonAnywhere上のデータベースが、自分のPC上のデータベースとはまったく別物であることです。つまり、異なる投稿と管理者アカウントを持つことができます。 その結果、自分のコンピュータで行ったように、`createsuperuser`で管理者アカウントを初期化する必要があります。 PythonAnywhereがあなたの代わりに仮想環境を自動的に起動したので、あなたがする必要があるのは以下の通りです：
-
-{% filename %}PythonAnywhere command-line{% endfilename %}
-
-    (ola.pythonanywhere.com) $ python manage.py createsuperuser
-    
-
-管理者の詳細を入力します。 PythonAnywhere上のパスワードをより安全にしたい場合を除き、混乱を避けるために自分のコンピュータで使用しているのと同じものを使用することをお勧めします。
-
-PythonAnywhereのコードを`ls`を使って見てみることもできます：
-
-{% filename %}PythonAnywhere command-line{% endfilename %}
-
-    (ola.pythonanywhere.com) $ ls
-    blog  db.sqlite3  manage.py  mysite requirements.txt static
-    (ola.pythonanywhere.com) $ ls blog/
-    __init__.py  __pycache__  admin.py  apps.py  migrations  models.py
-    tests.py  views.py
-    
-
-また、Filesページに移動し、PythonAnywhereに組み込まれているファイルブラウザを使用して閲覧することもできます。 (ConsoleページからPythonAnywhereの他のページには、右上のメニューボタンからいけます。 一度いずれかのページに移動したら、他ページへのリンクは上部にあります。)
-
-## 動いています！
-
-あなたのサイトは現在、インターネット上で動作しているはずです！ PythonAnywhereのWebページをクリックしてリンクを取得します。 あなたはあなたが望む誰とでもこれを共有することができます:)
-
-> **注** これは初心者向けのチュートリアルです。このサイトをデプロイする際にはセキュリティの観点からは理想的ではない、いくつかのショートカットをしました。 もしこのプロジェクトを利用すると決めたり、新しいプロジェクトを開始する場合は、あなたのサイトを安全にするいくつかのヒントについて、[Djangoデプロイチェックリスト](https://docs.djangoproject.com/ja/2.2/howto/deployment/checklist/)を注意深く読んでください。
-
-## デバッギングのヒント
-
-`pa_autoconfigure_django.py`スクリプトの実行中にエラーが表示された場合は、次のような原因が考えられます。
-
-- PythonAnywhere APIトークンの作成を忘れている
-- あなたのGitHubのURLを間違えている
-- *Could not find your settings.py*というエラーが表示された場合は、おそらくGitにすべてのファイルを追加できていなかったか、 GitHubにうまくプッシュできていなかった。 この場合はGitセクションをもう一度見てください
-- PythonAnywhereのアカウントを以前に作成していてcollectstaticでエラーが起きたとしたら、あなたのアカウントで古いバージョンのSQLite（例えば、3.8.2）を使っている可能性があります。 その場合、新しいアカウントを作成して、上記のPythonAnywhereのセクションに記載しているコマンドを実行してください。
-
-サイトにアクセスしようとするとエラーが表示された場合、最初にデバッグ情報を探す場所は**エラーログ**です。 PythonAnywhereの[ Webページ](https://www.pythonanywhere.com/web_app_setup/)には、エラーログへのリンクがあります。 そこにエラーメッセージがあるかどうかを確認してください。 最新のものは一番下にあります。
-
-[ PythonAnywhereヘルプサイトの一般的なデバッグのヒント](http://help.pythonanywhere.com/pages/DebuggingImportError)もあります。
-
-つまづいた時は、コーチに助けを求めましょう。
-
-# あなたのサイトをチェック！
-
-サイトのデフォルトページでは、ローカルコンピュータと同じように「It worked！」と表示されます。 URLの最後に`/admin/`を追加すると、管理サイトに移動します。 ユーザー名とパスワードでログインしたら、Postsへのリンクからサーバーに新規投稿を追加できることがわかるでしょう。ローカルのテスト用データベースの投稿は本番環境のブログに送られていないことも忘れないてくださいね。
-
-いくつかの投稿を作成したら、ローカル環境（PythonAnywhereではなく）に戻ることができます。 ここから、変更を加えるためにはあなたのローカル環境で作業する必要があります。 これがWeb開発の一般的なワークフローです。ローカルで変更し、それらの変更をGitHubにプッシュし、それからその変更を公開しているWebサーバーにプルしてきます。 これにより、公開しているWebサイトを壊すことなく作業したり試したりできます。 とってもクールでしょ？
-
-自分を*すっごく*褒めてあげてください！ サーバーのデプロイはWeb開発の最も難しい部分の1つで、ちゃんと動くようになるまで数日かかることもよくあります。 しかし、あなたは実際のインターネット上で、あなたのサイトを動かす事ができました！
+Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet!

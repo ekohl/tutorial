@@ -33,13 +33,14 @@ HTMLは、「HyperText Markup Language」の頭文字を取ったものです。
 
 ![図 11.1](images/step1.png)
 
-もうエラーはありませんか！おめでとうございます:)。しかし、あなたのウェブサイトは実際には空白のページ以外は何も表示していないでしょう。テンプレートも空白だからです。それを直していく必要があります。
+もうエラーはありません。おめでとうございます! :)　しかし、あなたのウェブサイトは空白ページ以外は何も表示しいません。テンプレートが空白だからです。これを直していく必要があります。
 
 この新しく作ったファイルをコードエディタで開いて、次の内容を書き加えます。
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
 <body>
     <p>Hi there!</p>
@@ -52,10 +53,11 @@ HTMLは、「HyperText Markup Language」の頭文字を取ったものです。
 
 ![図 11.2](images/step3.png)
 
-うまく動いています！よくできました:)
+動いています。よくできました! :)
 
-* どんなウェブページでも、最も基本的なタグである`<html>`から始まり、そして常に、`</html>`で終わります。 みなさん見てとれるように、ウェブサイトの全てのコンテンツは、開始タグの`<html>`と閉じタグ`</html>`の間にあります。
-* `<p>`は、段落要素のためのタグです; `</p>` でそれぞれの段落を閉じます。
+* この `<!DOCTYPE html>` という行は、HTMLタグではありません。 ドキュメントのタイプを宣言しているものです。 ここでは、ドキュメントの種類が [HTML5](https://html.spec.whatwg.org/#the-doctype) であることをブラウザに伝えています。 HTML5 ファイルの先頭は、いつもこれが必要です。
+* htmlの中身は、最も基本的なタグである `<html>`で始まり、 `</html>` で終わります。 ご覧のとおり、ウェブサイトのコンテンツ全体は、開始タグ `<html>` と閉じタグ `</html>` の間にあります。
+* `<p>` は段落要素のタグです; `</p>` で各段落を閉じます。
 
 ## HeadとBody
 
@@ -72,6 +74,7 @@ HTMLは、「HyperText Markup Language」の頭文字を取ったものです。
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
     <head>
         <title>Ola's blog</title>
@@ -109,40 +112,49 @@ HTMLは、「HyperText Markup Language」の頭文字を取ったものです。
 * `<a href="https://djangogirls.org">リンク</a>` はリンクを生成します
 * `<ul><li>第１の項目</li><li>第２の項目</li></ul>` でリストを作成する、こんな感じに！
 * `<div></div>`はページ内のセクションを定義
+* `<nav></nav>` はナビゲーションリンクを定義。
+* `<article></article>` は、文書内の独立した記事セクションを表します。
+* `<section></section>` は、ドキュメント内のセクションを定義
+* `<header></header>` ドキュメントやセクションのヘッダーを定義
+* `<main></main>` ドキュメント内のメインとなるコンテンツを定義
+* `<aside></aside>` は、メインコンテンツと間接的にしか関わらない補足的なコンテンツ（例えば、サイドバー）
+* `<footer></footer>` ドキュメントやセクションのフッターを定義
+* `<time></time>` は特定の時間（あるいは日時）を定義
 
 いろんな要素をまとめたテンプレートの例がこれです。コピーして`blog/templates/blog/post_list.html`に貼り付けてみましょう:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
     <head>
         <title>Django Girls blog</title>
     </head>
     <body>
-        <div>
+        <header>
             <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
+        </header>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
             <h2><a href="">My first post</a></h2>
-            <p>Aenean eu leo quam. こんにちは！ よろしくお願いします！ </p>
-        </div>
+            <p>これは最初の投稿です。 こんにちは！ よろしくお願いします！ これはダミーの文章です。.</p>
+        </article>
 
-        <div>
-            <p>公開日: 2014/06/14, 12:14</p>
-            <h2><a href="">2番目の投稿</a></h2>
-            <p> こんにちは！ よろしくお願いします！ </p>
-        </div>
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
+            <h2><a href="">My second post</a></h2>
+            <p>Aenean eu leo quam. こんにちは！ よろしくお願いします！ これは長いダミー文章です。すきな文章に置き換えても大丈夫ですよ。</p>
+        </article>
     </body>
 </html>
 ```
 
-ここで3つの `div` セクションを作成しました。
+`ヘッダー` セクションと `記事` セクションを 2 つ作成しました。
 
-* 最初の `div` 要素には、私たちのブログのタイトルが含まれています。見出しとリンクです。
-* その他の２つの`div`要素には、このブログにポストされた記事が公開日とともに記載されています。`h2`はクリック可能な記事のタイトルです。２つの`p`(段落) は、１つが日付で、１つがブログにポストされた記事です。
+* 最初の `header` セクションには、ブログのタイトルが含まれています。つまり、見出し１とリンクです。
+* ２つの`article`は、ブログ記事です。まず、`time`タグは投稿日時です。そして、`h2`タグは、記事のタイトルで、これはクリックすることができます。`p`（パラグラフ・段落）タグは、ブログ記事のテキストです。
 
 その結果、次のような結果が得られます。
 
@@ -169,10 +181,8 @@ HTMLは、「HyperText Markup Language」の頭文字を取ったものです。
 
 {% filename %}command-line{% endfilename %}
 
-    $ git add --all .
+    $ git add .
     
-
-> **ノート** `--all` をつけると、 `git` は、ファイルを削除したかどうかも判定します (これがない初期設定の状態では、新しいファイルと変更されたファイルしか認識しません)。 `.` が、今いるディレクトリを表すということも思い出してくださいね(第３章にありました)。
 
 全てのファイルをアップロードする前に、`git`が何をアップロードするのかチェックしておきましょう(`git`がアップロードする全ファイルは緑で表示されます):
 
@@ -188,7 +198,7 @@ HTMLは、「HyperText Markup Language」の頭文字を取ったものです。
     $ git commit -m "Changed the HTML for the site."
     
 
-> **ノート** コミットメッセージは二重クォート記号で囲みましょう。
+> **注意** コミットメッセージでダブルクォーテーションを使用していることを確認してください。
 
 ここまで終われば、GitHubに変更部分をアップロード(push) しましょう。
 

@@ -19,13 +19,13 @@
 
 {% block content %}
     {% for post in posts %}
-        <div class="post">
-            <div class="date">
+        <article class="post">
+            <time class="date">
                 {{ post.published_date }}
-            </div>
+            </time>
             <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
-        </div>
+        </article>
     {% endfor %}
 {% endblock %}
 ```
@@ -42,7 +42,7 @@
 
 `post_detail`の部分は、Djangoが`blog/urls.py`に書かれた name=post_detail のURLを待ち受けることを表しています。
 
-そして`pk=post.pk`についてはどうでしょうか？ `pk`はプライマリキーの略で、データベースの各レコードのユニークな名前です。 `Post`モデルでプライマリキーを指定しなかったので、Djangoは私たちのために1つのキーを作成し（デフォルトでは、各レコードごとに1ずつ増える数字で、たとえば1、2、3です）、各投稿に`pk`というフィールド名で追加します。 `Post`オブジェクトの他のフィールド（`title`、`author`など）にアクセスするのと同じ方法で、`post.pk`と書くことによってプライマリキーにアクセスします！
+そして`pk=post.pk`についてはどうでしょうか？ `pk` は primary keyの略で、データベースの各レコードのユニークな名前です。 すべてのDjangoモデルには、そのプライマリーキーとして機能するフィールドがあります。 どのような名前を持っていたとしても、「pk」と呼ばれることもあります `Post`モデルでプライマリキーを指定しなかったので、Djangoは私たちのために1つのキーを作成し（デフォルトでは、"id"という各レコードごとに1ずつ増える数字で、たとえば1、2、3です）、各投稿に`pk`というフィールド名で追加します。 `post.pk`と書くことによってプライマリキーにアクセスします。これは、`Post`オブジェクトの他のフィールド（`title`、`author`など）にアクセスするのと同じ方法ですね！
 
 さて、私たちが http://127.0.0.1:8000/ に行くとエラーが出ます（知っての通り、URLも`post_detail`の*ビュー*もまだ作っていないので）。 このようになります：
 
@@ -78,13 +78,25 @@ urlpatterns = [
 
 よし、私たちは `blog/urls.py` に新しい URL パターンを追加しました！ ページを更新しましょう：http://127.0.0.1:8000/ ドーン！ サーバーが再び実行を停止しました。 コンソールを見てください - 予想通り、もう一つのエラーがあります！
 
-![AttributeError](images/attribute_error2.png)
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
+
+        return _bootstrap._gcd_import(name[level:], package, level)
+      File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+      File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+      File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+      File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+      File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+      File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+      File "/Users/ola/djangogirls/blog/urls.py", line 6, in <module>
+        path('post/<int:pk>/', views.post_detail, name='post_detail'),
+    AttributeError: module 'blog.views' has no attribute 'post_detail'
+    
 
 あなたは次のステップが何であるか覚えていますか？ ビューを追加する！ですね。
 
 ## 投稿の詳細ビューを追加する
 
-今回は*ビュー*に追加のパラメータ`pk`が与えられます。 私たちの*ビュー*はそれを受け取る必要がありますね？ そこで関数を`def post_detail(request, pk):`として定義します。 `urls`で指定した名前（`pk`）とまったく同じ名前を使用する必要があることに注意してください。 この変数を省略するのは正しくないのでエラーになってしまいます！
+今回は*ビュー*に追加のパラメータ`pk`が与えられます。 私たちの*ビュー*はそれを受け取る必要がありますね？ そこで関数を`def post_detail(request, pk):`として定義します。 注意 このパラメーターは`urls` で指定した名前と（`pk`）全く同じものを使用しなければなりません。 そして、この変数を省略することは正しくなく、エラーになってしまします。
 
 今、私たちは1つだけブログ投稿を取得したいと考えています。 これを行うには、次のようなクエリセットが使用できます。
 
@@ -140,7 +152,7 @@ def post_detail(request, pk):
 
 `blog/templates/blog`に`post_detail.html`というファイルを作成し、コードエディタで開きます。
 
-こんな感じですね。
+以下のコードを入力してください：
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -148,15 +160,15 @@ def post_detail(request, pk):
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <div class="post">
+    <article class="post">
         {% if post.published_date %}
-            <div class="date">
+            <time class="date">
                 {{ post.published_date }}
-            </div>
+            </time>
         {% endif %}
         <h2>{{ post.title }}</h2>
         <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    </article>
 {% endblock %}
 ```
 
@@ -177,7 +189,7 @@ def post_detail(request, pk):
 {% filename %}command-line{% endfilename %}
 
     $ git status
-    $ git add --all .
+    $ git add .
     $ git status
     $ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
     $ git push
@@ -211,4 +223,4 @@ PythonAnywhereのようなサーバは、（CSSファイルのような）「静
 
 いずれにしても、[「Web」ページ](https://www.pythonanywhere.com/web_app_setup/)を（コンソールの右上のメニューボタンから）開き、**Reload**をクリックする準備ができました。そうしたらhttps://subdomain.pythonanywhere.comを見て結果を確認しましょう。
 
-うまくいってるはずです！おめでとう :)
+うまくいってるはずです！おめでとうございます! :)

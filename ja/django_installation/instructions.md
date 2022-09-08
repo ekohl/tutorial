@@ -37,7 +37,7 @@ data-collapse=true ces-->
     C:\Users\Name\djangogirls> python -m venv myvenv
     
 
-`myvenv` というところが、あなたの`virtualenv（仮想環境）` の名前です。 どんな名前でも使うことができますが、必ず小文字で表記し、スペース・アクセント記号・特殊文字は入れないでください。 短い名前にしておくのもいいアイデアですーあなたはこの名前を何度も参照しますから！
+`myvenv` というところが、あなたの`virtualenv（仮想環境）` の名前です。 どんな名前でも使うことができますが、必ず小文字で表記し、スペース・アクセント記号・特殊文字は入れないでください。 短い名前にしておくことは、いいアイデアです。今後あなたはこの名前を何度も参照して使いうことになりますからね！
 
 <!--endsec-->
 
@@ -80,7 +80,7 @@ LinuxやOS Xで`virtualenv`を作るときは、`python3 -m venv myvenv`と実�
 > {% filename %}command-line{% endfilename %}
 > 
 >     $ sudo apt install python-virtualenv
->     $ virtualenv --python=python3.6 myvenv
+>     $ virtualenv --python=python{{ book.py_version }} myvenv
 >     
 > 
 > **補足：**もし以下のようなエラーがでたら、
@@ -94,14 +94,14 @@ LinuxやOS Xで`virtualenv`を作るときは、`python3 -m venv myvenv`と実�
 > 
 > {% filename %}command-line{% endfilename %}
 > 
->     sudo apt install python3.6-venv
+>     sudo apt install python{{ book.py_version }}-venv
 >     
 
 <!--endsec-->
 
 ## 仮想環境の操作
 
-上に示したコマンドは仮想環境（基本的には一連のディレクトリとファイル）を含む`myvenv` という名前（あるいはあなたが選んだ名前）のディレクトリを生成します。次に我々がしたいのは、仮想環境を起動することです。
+上に示したコマンドで、`myvenv` という名前（あるいはあなたが選んだ名前）の仮想環境のディレクトリ（基本的には一連のディレクトリとファイルを含む）を作成しました。次に、私たちはこれを実行し開始することが必要です。
 
 <!--sec data-title="Working with virtualenv: Windows" data-id="virtualenv_windows"
 data-collapse=true ces-->
@@ -124,7 +124,7 @@ data-collapse=true ces-->
 
 <!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
 
-> **補足：** 人気のあるエディタであるVS Codeを使っている方は、VS CodeはWindows Powershellベースの統合ターミナルが一緒になっているので、統合ターミナルを使う場合、仮想環境を有効にするために下記のコマンドを実行してください：
+> **補足:**人気のエディタであるVS Codeを使っている方は、Windows Powershellベースの統合型ターミナルが一緒になっているので、もしあなたが統合ターミナルを使い続けたいのであれば以下のコマンドを実行して仮想環境を有効化してください。
 > 
 >     $ . myvenv\Scripts\activate.ps1
 >     
@@ -145,7 +145,7 @@ data-collapse=true ces-->
 
 `myvenv` のところを、あなたが選んだ `仮想環境(virtualenv)` の名前に置き換えることを忘れないで下さいね！
 
-> **備考:** `source` ではできない場合もあります。その場合は、代わりに以下のように入力してみてください：
+> **注意:** コマンド `source` が使用できない場合は、代わりにこれを行ってみてください:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -196,7 +196,7 @@ requirementsファイルは `pip install` でインストールする依存関�
 
     (myvenv) ~$ pip install -r requirements.txt
     Collecting Django~={{ book.django_version }} (from -r requirements.txt (line 1))
-      Downloading Django-{{ book.django_version }}-py3-none-any.whl (7.1MB)
+      Downloading Django-{{ book.django_version }}-py3-none-any.whl (7.9MB)
     Installing collected packages: Django
     Successfully installed Django-{{ book.django_version }}
     
@@ -204,14 +204,14 @@ requirementsファイルは `pip install` でインストールする依存関�
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> Windowsでpipを実行してエラーが起きた場合は、あなたのプロジェクトのパス名がスペースかアクセント記号か特殊文字を含んでいないか確認して下さい （例 `C:\Users\User Name\djangogirls`）。 もし含んでいる場合は、スペース・アクセント記号・特殊文字を含まない別の場所（`C:\djangogirls`をオススメします）でディレクトリを作成することを検討してみてください。 新しいディレクトリに新しい仮想環境を作成してから、古いディレクトリを削除して、上記のコマンドを試してください。 （仮想環境には絶対パスが使われているので、仮想環境のディレクトリを移動させてもうまくいきません。）
+> Windowsでpipを呼んだときにエラーが起きた場合は、あなたのプロジェクトのパス名がスペース・アクセント・特殊文字を含んでいないか確認してみて下さい （例 `C:\Users\User Name\djangogirls`）。 もし含んでいる場合は、スペース・アクセント記号・特殊文字を含まない別の場所（`C:\djangogirls`をオススメします）でディレクトリを作成することを検討してみてください。 新しいディレクトリに新しい仮想環境を作成してから、古いディレクトリを削除して、上記のコマンドを試してください。 （仮想環境には絶対パスが使われているので、仮想環境のディレクトリを移動させてもうまくいきません。）
 
 <!--endsec-->
 
 <!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
-> Djangoをインストールしようとした後でコマンドラインがフリーズして動かなくなってしまうことがあります。その時は、以下のコマンドを代わりに入力してみてください。
+> Djangoをインストールしようとしてコマンドラインがフリーズして動かなくなってしまうことがあります。その時は、以下のコマンドを代わりに入力してみてください。
 > 
 > {% filename %}command-line{% endfilename %}
 > 
