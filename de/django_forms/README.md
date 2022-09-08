@@ -44,7 +44,7 @@ Also erstellen wir hier auch wieder einen Link auf die Seite, eine URL, eine Vie
 
 ## Link auf eine Seite mit dem Formular
 
-Bevor wir den Link hinzufügen, benötigen wir einige Icons als Buttons für den Link. Lade für dieses Tutorial [file-earmark-plus.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/file-earmark-plus.svg) herunter und speicher es im Ordner `blog/templates/blog/blog/icons/`
+Bevor wir den Link hinzufügen, benötigen wir einige Icons als Buttons für den Link. Lade für dieses Tutorial [file-earmark-plus.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/file-earmark-plus.svg) herunter und speichere es im Ordner `blog/templates/blog/blog/icons/`
 
 > Hinweis: Um das SVG-Bild herunterzuladen, öffne das Kontextmenü auf dem Link (normalerweise durch einen Rechtsklick darauf) und wähle "Link speichern unter". Im Dialog, in dem du gefragt wirst, wo du die Datei speichern willst, navigiere zum `djangogirls`-Verzeichnis deines Django-Projekts und innerhalb davon in das Unterverzeichnis `blog/templates/blog/icons/` und speicher die Datei dort.
 
@@ -72,7 +72,7 @@ Nach dem Bearbeiten der Zeile sieht deine HTML-Datei so aus:
 <html>
     <head>
         <title>Django Girls blog</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
@@ -169,7 +169,7 @@ Ok, also schauen wir mal, wie der HTML-Code in `post_edit.html` aussehen sollte:
     <h2>New post</h2>
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
-        <button type="submit" class="save btn btn-default">Save</button>
+        <button type="submit" class="save btn btn-secondary">Save</button>
     </form>
 {% endblock %}
 ```
@@ -302,7 +302,7 @@ Lass uns zunächst das Symbol speichern, das den Bearbeiten-Button darstellt. La
 
 ```html
 <aside class="actions">
-    <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
+    <a class="btn btn-secondary" href="{% url 'post_edit' pk=post.pk %}">
       {% include './icons/pencil-fill.svg' %}
     </a>
 </aside>
@@ -318,7 +318,7 @@ damit die Vorlage so aussieht:
 {% block content %}
     <article class="post">
         <aside class="actions">
-            <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
+            <a class="btn btn-secondary" href="{% url 'post_edit' pk=post.pk %}">
                 {% include './icons/pencil-fill.svg' %}
             </a>
         </aside>
@@ -391,7 +391,7 @@ Probier doch einmal, den Titel oder den Text zu ändern und die Änderungen zu s
 
 Herzlichen Glückwunsch! Deine Anwendung nimmt immer mehr Gestalt an!
 
-Falls du mehr Informationen über Django-Formulare benötigst, solltest du die offizielle Dokumentation lesen: https://docs.djangoproject.com/en/2.2/topics/forms/
+If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/3.2/topics/forms/
 
 ## Sicherheit
 
@@ -428,7 +428,7 @@ Erinnerst du dich an den Editier-Button, den wir gerade zu unserer Seite hinzuge
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
 ```html
-<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
+<a class="btn btn-secondary" href="{% url 'post_edit' pk=post.pk %}">
     {% include './icons/pencil-fill.svg' %}
 </a>
 ```
@@ -439,7 +439,7 @@ Erinnerst du dich an den Editier-Button, den wir gerade zu unserer Seite hinzuge
 
 ```html
 {% if user.is_authenticated %}
-     <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
+     <a class="btn btn-secondary" href="{% url 'post_edit' pk=post.pk %}">
         {% include './icons/pencil-fill.svg' %}
      </a>
 {% endif %}

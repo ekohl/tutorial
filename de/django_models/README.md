@@ -88,6 +88,7 @@ Wie du sehen kannst, wurde ein neues `blog`-Verzeichnis erstellt, welches schon 
     ├── db.sqlite3
     ├── manage.py
     ├── mysite
+    │   ├── asgi.py
     │   ├── __init__.py
     │   ├── settings.py
     │   ├── urls.py
@@ -98,7 +99,7 @@ Wie du sehen kannst, wurde ein neues `blog`-Verzeichnis erstellt, welches schon 
     
     
 
-Nach dem Erstellen der Applikation müssen wir Django noch sagen, dass diese auch genutzt werden soll. Das tun wir in der Datei `mysite/settings.py` -- öffne diese in deinem Code-Editor. Wir suchen den Eintrag `INSTALLED_APPS` und fügen darin die Zeile `'blog.apps.BlogConfig',` direkt über der schließenden Klammer `]` ein. Danach sollte es also so aussehen:
+Nach dem Erstellen der Applikation müssen wir Django noch sagen, dass diese auch genutzt werden soll. Das tun wir in der Datei `mysite/settings.py` -- öffne diese in deinem Code-Editor. We need to find `INSTALLED_APPS` and add a line containing `'blog',` just above `]`. Danach sollte es also so aussehen:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -110,7 +111,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog.apps.BlogConfig',
+    'blog',
 ]
 ```
 
@@ -162,7 +163,7 @@ Jetzt definieren wir die Eigenschaften, über welche wir gesprochen haben: `titl
 - `models.DateTimeField` – ein Feld für einen Zeitpunkt (ein Datum und eine Uhrzeit).
 - `models.ForeignKey` – definiert eine Verknüpfung/Beziehung zu einem anderen Model.
 
-Wir werden nicht den gesamten Code hier erklären, da das zu lange dauern würde. Du solltest einen Blick in die offizielle Django-Dokumentation werfen, wenn du mehr über Modelfelder und darüber wissen möchtest, wie man auch andere Dinge als die oben beschriebenen definiert (https://docs.djangoproject.com/en/2.2/ref/models/fields/#field-types).
+Wir werden nicht den gesamten Code hier erklären, da das zu lange dauern würde. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/3.2/ref/models/fields/#field-types).
 
 Was ist mit `def publish(self):`? Das ist genau die `publish`-Methode zum Veröffentlichen unserer Blogposts, über die wir vorher bereits sprachen. `def` zeigt an, dass es sich nachfolgend um eine Funktion/Methode handelt, und `publish` ist der Name der Methode. Du kannst den Namen der Methode auch ändern, wenn du möchtest. Die Benennungsregel ist, dass wir Kleinbuchstaben verwenden, und anstatt Leerzeichen (die in Funktionsnamen nicht vorkommend dürfen) Unterstriche. Eine Methode, die einen Durchschnittspreis berechnet, könnte zum Beispiel `calculate_average_price` genannt werden.
 
@@ -180,9 +181,9 @@ Als letzten Schritt wollen wir unser neues Model der Datenbank hinzufügen. Dazu
 
     (myvenv) ~/djangogirls$ python manage.py makemigrations blog
     Migrations for 'blog':
-      blog/migrations/0001_initial.py:
+      blog/migrations/0001_initial.py
     
-      - Create model Post
+        - Create model Post
     
 
 **Hinweis:** Denke daran, die Dateien nach dem Editieren zu speichern. Ansonsten führt dein Computer die vorherige Version aus, was zu unerwarteten Fehlermeldungen führen kann.
