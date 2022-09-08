@@ -1,6 +1,6 @@
 # Djangoフォーム
 
-私たちのWebサイトで最終的にやりたいことは、記事を追加したり編集したりするためのよい方法を作ることです。 `Django admin`はかなりいいですが、カスタマイズしたりかわいくいい感じにするのはちょっと大変です。 `フォーム` によってインターフェイスを完璧にコントロールできるようになります。想像するほとんど全てのことができます！
+私たちのWebサイトで最終的にやりたいことは、投稿を追加したり編集したりするためのよい方法を作ることです。 `Django admin`はかなりいいですが、カスタマイズしたりかわいくいい感じにするのはちょっと大変です。 `フォーム` によってインターフェイスを完璧にコントロールできるようになります。想像するほとんど全てのことができます！
 
 Djangoフォームのよいところは、フォームをゼロから定義できたり、フォームの結果をモデルに保存できる`ModelForm`を作れたりするところです。
 
@@ -36,7 +36,7 @@ class PostForm(forms.ModelForm):
 
 次に`class Meta`ですが、ここでDjangoにフォームを作るときにどのモデルを使えばいいか (`model = Post`) を伝えます。
 
-最後にフォームのフィールドに何を置くか書きます。 ここでは、私たちは`title`（タイトル）と `text`（本文）のみをフォームで使用します。 `author` は現在ログインしている人（あなた）です。 `created_date` は（コードによって）自動的に記事を書いた日時が設定されます。
+最後にフォームのフィールドに何を置くか書きます。 今回は、私たちは`title`（タイトル）と `text`（本文）のみをフォームで使用します。 `author` は現在ログインしている人（あなた）です。 `created_date` は（コードによって）自動的に投稿を作った日時が設定されます。
 
 ひとまずこれでおしまいです！あとはフォームを*ビュー*で使い、それをテンプレート内に表示しさえすればいいです。
 
@@ -44,15 +44,23 @@ class PostForm(forms.ModelForm):
 
 ## フォームにおけるページへのリンク
 
-`blog/templates/blog/base.html` をエディタで開きましょう。`page-header` と名付けた `div` 中に次のリンクを追加します：
+リンクを追加する前に、いくつかのアイコンをリンクのボタンとして使用する必要があります。 このチュートリアルでは、 [file-earmark-plus.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/file-earmark-plus.svg) をダウンロードし、 `blog/templates/blog/icons/` に保存してください。
+
+> 注意: SVG 画像をダウンロードするには、リンク上のコンテキストメニュー(通常は右クリックして)を開き、「名前を付けてリンクを保存」を選択します。 ファイルを保存する場所を尋ねるダイアログでは、Djangoプロジェクトの `djangogirls` ディレクトリに移動し、その中のサブディレクトリ `blog/templates/blog/icons/` に移動して、そこにファイルを保存します。
+
+`blog/templates/blog/base.html` をエディタで開きましょう。 これで基本テンプレート内のアイコンファイルを以下のように使用できます。 `header` セクション内の `div` 要素では、`h1` 要素の前にリンクを追加します。
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
-<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+<a href="{% url 'post_new' %}" class="top-menu">
+    {% include './icons/file-earmark-plus.svg' %}
+</a>
 ```
 
-新しいビュー` post_new `を呼び出すことに注意してください。 ` "glyphicon glyphicon-plus" `クラスは、使用しているBootstrapテーマによって提供され、プラス記号を表示します。
+`post_new`という新しいビューを作ります。 SVGアイコン [](https://icons.getbootstrap.com/icons/file-earmark-plus/) は [ブートストラップアイコン](https://icons.getbootstrap.com/) によって提供され、プラス記号のページアイコンが表示されます。 Djangoテンプレートディレクティブの `include` を使います。 これにより、Djangoテンプレートにファイルの内容が挿入されます。 ウェブブラウザは、この種のコンテンツを処理する方法を知っているので、これ以上の処理は必要ありません。
+
+> ブートストラップアイコンは [こちら](https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip)からダウンロードできます。 ファイルを解凍し、すべてのSVG画像ファイルを `blog/templates/blog/` の中の `icon` という新しいフォルダにコピーします。 これにより、`blog/templates/blog/icons/pencil-fill.svg` というファイルパスで `pencil-fill.svg` のようなアイコンにアクセスすることができます。
 
 行を追加すると、このような html ファイルになります。
 
@@ -60,27 +68,31 @@ class PostForm(forms.ModelForm):
 
 ```html
 {% load static %}
+<!DOCTYPE html>
 <html>
     <head>
         <title>Django Girls blog</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
-        <div class="page-header">
-            <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-            <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
-        <div class="content container">
+        <header class="page-header">
+            <div class="container">
+                <a href="{% url 'post_new' %}" class="top-menu">
+                    {% include './icons/file-earmark-plus.svg' %}
+                </a>
+                <h1><a href="/">Django Girls Blog</a></h1>
+            </div>
+        </header>
+        <main class="content container">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col">
                     {% block content %}
                     {% endblock %}
                 </div>
             </div>
-        </div>
+        </main>
     </body>
 </html>
 ```
@@ -97,7 +109,7 @@ class PostForm(forms.ModelForm):
 path('post/new/', views.post_new, name='post_new'),
 ```
 
-すると最終的なコードは次のようになります:
+次に、このような内容を追加します。
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -134,20 +146,20 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-`Post`フォームを新しく作るには、`PostForm()`を呼び出し、それをテンプレートに渡す必要があります。 あとでこの *ビュー* に戻ってきますが、今はフォームのためのテンプレートをすぐに作ってしまいましょう。
+新しい `Post` フォームを作成するには、 `PostForm()` を呼び出してテンプレートに渡す必要があります。 あとでこの *ビュー* に戻ってきますが、今はフォームのためのテンプレートをすぐに作ってしまいましょう。
 
 ## テンプレート
 
-`blog/templates/blog`ディレクトリに`post_edit.html`ファイルを作り、エディタで開きましょう。フォームを動かすにはいくつかやることがあります。
+`blog/templates/blog` ディレクトリに `post_edit.html` ファイルを作成し、それをコード エディターで開きます。 フォームを動かすにはいくつかやることがあります。
 
 * フォームを表示する必要があります。 私たちは（例えば）{% raw %}`{{ form.as_p }}`{% endraw %} でこれを行うことができます。
 * 上記の行は HTMLのformタグでラップする必要があります：`<form method="POST">...</form>`
 * `Save` ボタンが必要です。これをHTMLのbuttonタグで行います：`<button type="submit">Save</button>`
 * 最後に`<form ...>` タグの開始直後に、 `{% raw %}{% csrf_token %}{% endraw %}`を追加する必要があります。 フォームをセキュアにするためこれは非常に重要です！ これを忘れると、Djangoはフォームを保存しようとすると文句を言うでしょう：
 
-![CSFR 禁止のページ](images/csrf2.png)
+![CSFR Forbiddenページ](images/csrf2.png)
 
-では、`post_edit.html` のHTMLがどのようになるか見てみましょう:
+では、 `post_edit.html` の HTML がどのように見えるか見てみましょう。
 
 {% filename %}blog/templates/blog/post_edit.html{% endfilename %}
 
@@ -158,14 +170,14 @@ def post_new(request):
     <h2>New post</h2>
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
-        <button type="submit" class="save btn btn-default">Save</button>
+        <button type="submit" class="save btn btn-secondary">Save</button>
     </form>
 {% endblock %}
 ```
 
 更新をしてみましょう。やった！フォームが表示されます。
 
-![New form](images/new_form2.png)
+![新規フォーム](images/new_form2.png)
 
 ちょっと待ってみて下さい。`title` と `text` フィールドに何か入力して保存するとどうなりますか？
 
@@ -185,9 +197,9 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-フォームを送信したとき、同じビューに戻されていましたが、このとき`request`、もっと詳しくいうと `request.POST` にデータが追加されています (このPOSTという名前はブログ投稿 "post" とは関係ありません。このデータは送られてきたもの、というコトと関係しています) 。 HTMLファイルの `<form>` タグで、`method="POST"` という変数があったのを覚えていますか？ これによってフォームのすべてのフィールドは今 `request.POST` にあります。 `POST` という名前を何か別のものに変えることはできません (他に唯一の有効な `method` の値は `GET` ですが、その違いを説明する時間がありません) 。
+フォームを送信すると、同じビューに戻ります。ただ、今回は `request` にいくつかのデータを足していきます。具体的には `request.POST` です。（ここでいう「POST」はブログの投稿を表す「post」とは関係ありません。「このデータは送られてきたもの」という意味で使われています）。 HTMLファイルの `<form>` タグで、`method="POST"` という変数があったのを覚えていますか？ フォームのすべてのフィールドが `request.POST` に入っています。 `POST` という名前を何か別のものに変えることはできません (他に唯一の有効な `method` の値は `GET` ですが、その違いを説明する時間がありません) 。
 
-私たちの *ビュー* では、扱わなくてはならない２つの別々のシチュエーションがあります: １つ目は、最初にページにアクセスしてきた時で空白のフォームが必要な場合。２つ目はすべてのフォームデータが入力された状態で*ビュー*に戻ってくる場合です。 したがって条件分岐を追加する必要があります（そのために`if`を使います）：
+私たちの *ビュー* では、扱わなくてはならない２つの別々のシチュエーションがあります: １つ目は、最初にページにアクセスしてきた時で空白のフォームが必要な場合。２つ目はすべてのフォームデータが入力された状態で*ビュー*に戻ってくる場合です。 したがって条件分岐を追加する必要があります（そのために`if`を使います）。それでは[...]の部分を埋めていきます。
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -198,7 +210,7 @@ else:
     form = PostForm()
 ```
 
-ドット `[...]` の部分を埋めていきましょう。 `method`が`POST`の場合、フォームのデータを使って`PostForm`を構築します。 私たちはそれを次のようにします：
+`[...]` の部分を埋めていきましょう。 `method`が`POST`の場合、フォームのデータを使って`PostForm`を構築します。 以下のようにします。
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -220,9 +232,9 @@ if form.is_valid():
     post.save()
 ```
 
-基本的にここでは2つのことを行います。まず `form.save` でフォームを保存することと author を追加することです (`PostForm` 内に `author` フィールドがありませんし、このフィールドは必須です) 。 `commit=False` は `Post` モデルをまだ保存しないという意味です。保存前に author を追加したいので。 ほとんどの場合、`commit=False`なしで`form.save()`を使用しますが、この場合はそれを指定する必要があります。 `post.save()`は変更を保存し（作成者を追加しつつ）、新しいブログ投稿が作成されます！
+基本的にここでは2つのことを行います。まず `form.save` でフォームを保存することと author を追加することです (`PostForm` 内に `author` フィールドがありませんし、このフィールドは必須です) 。 `commit=False` は、`Post` モデルをまだ保存したくない、まず author を追加したいという意味です。 ほとんどの場合、 `commit=False` を指定せずに `form.save()`を使用しますが、この場合はそれを指定する必要があります。 `post.save()` はauthor を追加しつつ変更を保存し、新しいブログ投稿が作成されます！
 
-最後に、新しく作成された記事の `post_detail` ページを表示できれば良いですよね? そのために次のインポートを追加します:
+最後に、新しく作成された投稿の `post_detail` ページを表示できれば良いですよね? そのために次のインポートを追加します:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -230,7 +242,7 @@ if form.is_valid():
 from django.shortcuts import redirect
 ```
 
-ファイルの先頭に追加します。これで新しく作成されたポストの `post_detail` ページに移動する処理を書けます。
+これをファイルの先頭に追加します。これでようやく、新しく作成されたポストのための `post_detail` ページに移動する処理を書けます。
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -238,9 +250,9 @@ from django.shortcuts import redirect
 return redirect('post_detail', pk=post.pk)
 ```
 
-`post_detail` は移動したいビューの名前です。 この *ビュー* では `pk` 変数が必須であることを覚えていますか? ビューにそれを渡すため、`pk=post.pk`を使います。この `post` は新しく作られたブログポストです！
+`post_detail` は移動したいビューの名前です。 この *ビュー* では `pk` 変数が必須であることを覚えていますか? ビューにそれを渡すため、`pk=post.pk`を使います。この `post` は新しく作られたブログの投稿です！
 
-ふー、たくさんのことを話してきましたが、そろそろ *ビュー* の全体がどんな感じか見てみたい頃じゃないでしょうか？
+OK, たくさんのことを説明しました。全体の view は以下のようになります。
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -259,19 +271,19 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-では動作確認してみましょう。 http://127.0.0.1:8000/post/new/ に行き、 `title` と `text` を追加し、保存すると…… じゃじゃーん！ 新しいブログ記事が追加され、post_detail にリダイレクトされます！
+うまくいくかどうか見てみましょう。 http://127.0.0.1:8000/post/new/ に行き、 `title` と `text` を追加し、保存すると…… じゃじゃーん！ 新しいブログ投稿が追加され、 `post_detail` ページにリダイレクトされます！
 
-ブログ記事を保存する前に公開日をセットしていることに気づいたかもしれません。後ほど、**Django Girls Tutorial: Extensions**にて *公開ボタン* を導入します。
+投稿を保存する前に公開日を設定していることに気づいたかもしれません。 後で、 **Django Girls Tutorial: Extensions** にて *publish button* を紹介します。
 
 素晴らしい！
 
-> 最近までDjango adminを使ってきたので、システム上で今まだログイン状態かと思います。 いくつかの状況ではログアウト状態になることがあります(ブラウザを閉じる、DBを再起動するなど..)。 投稿を作成するときに、ログインユーザーがわからないというエラーが発生した場合は、管理ページhttp://127.0.0.1:8000/admin にアクセスして再度ログインしてください。 その問題は一時的に解決します。 メインチュートリアルの後 **Homework: add security to your website!** の章に恒久的な対策がありますので宿題として取り組んでみてください。
+> Django adminを使ってきたので、システム上で今まだログイン状態かと思います。 いくつかの状況ではログアウト状態になることがあります(ブラウザを閉じる、DBを再起動するなど..)。 投稿を作成するときに、ログインユーザーがわからないというエラーが発生した場合は、管理ページhttp://127.0.0.1:8000/admin にアクセスして再度ログインしてください。 これは一時的に問題を解決します。 メインチュートリアルの後 **Homework: add security to your website!** の章に恒久的な対策がありますので宿題として取り組んでみてください。
 
 ![ログインエラー](images/post_create_error.png)
 
 ## フォームのバリデーション(検証)
 
-ここではDjangoのフォームのクールなところを紹介します。 ブログのポストは `title` と `text` のフィールドが必要です。 `Post` モデルではこれらのフィールドがなくてもよいとは書いておらず (`published_date` とは対照的に)、Djangoはその場合、それらのフィールドには何らかの値が設定されることを期待します。
+ここで、Djangoのフォームがいかにクールかをお見せします。 ブログの投稿は `title` と `text` のフィールドが必要です。 Post モデルでは、これらのフィールドがなくてもよいとは書いておらず(デフォルトの値が設定されている published_date とは対照的に)、Djangoではその場合、それらのフィールドには何らかの値が設定されないとエラーが起こるようになっています。
 
 `title` と `text` を入力せずに保存してみましょう。何が起こるでしょうか?
 
@@ -281,14 +293,20 @@ Djangoはフォームのすべてのフィールドが正しいことを検証�
 
 ## フォームの編集
 
-今、私たちは新しいフォームを追加する方法を知っています。 しかし既存のデータを編集するためはどうすれば良いのでしょうか? それは先ほど行ったことと非常に似ています。 すぐにいくつかの重要なものを作成してみましょう。 （もしわからない場合、コーチに尋ねるか、もしくはすでに手順をカバーしているので、前の章を見てください）
+今や、私たちはどのように新しい投稿を追加するか知っています。 しかし、既存のものを編集したい場合はどうでしょうか? それは先ほど行ったことと非常に似ています。 すぐに重要なものを作成してみましょう。 (わからないことがあれば、コーチに聞くか、前の章を見てください。これらのステップはすでにすべてカバーしていますので)
 
-`blog/templates/blog/post_detail.html` をエディタで開いて次の行を追加します
+まず、編集ボタンを表すアイコンを保存しましょう。 [pencil-fill.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/pencil-fill.svg) をダウンロードし、 `blog/templates/blog/icons/` に保存します。
+
+`blog/templates/blog/post_detail.html` をコードエディタで開き、 `article` 要素内に次のコードを追加します。
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
 ```html
-<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+<aside class="actions">
+    <a class="btn btn-secondary" href="{% url 'post_edit' pk=post.pk %}">
+      {% include './icons/pencil-fill.svg' %}
+    </a>
+</aside>
 ```
 
 テンプレートは次のようになります:
@@ -299,16 +317,20 @@ Djangoはフォームのすべてのフィールドが正しいことを検証�
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <div class="post">
+    <article class="post">
+        <aside class="actions">
+            <a class="btn btn-secondary" href="{% url 'post_edit' pk=post.pk %}">
+                {% include './icons/pencil-fill.svg' %}
+            </a>
+        </aside>
         {% if post.published_date %}
-            <div class="date">
+            <time class="date">
                 {{ post.published_date }}
-            </div>
+            </time>
         {% endif %}
-        <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
         <h2>{{ post.title }}</h2>
         <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    </article>
 {% endblock %}
 ```
 
@@ -342,7 +364,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-`post_new` とほとんど同じに見えますか? しかし完全に同じではありません。 まず `urls` から追加の `pk` パラメータを渡します。 次に編集したい`Post` モデルを `get_object_or_404(Post, pk=pk)` で取得し、フォームを作るときは以下の2つのケースのようにそのポストを`instance（インスタンス）`として渡します。フォームを保存するときは…
+`post_new` とほとんど同じに見えますか? しかし完全に同じではありません。 まず `urls` から追加の `pk` パラメータを渡します。 次に編集したい`Post` モデルを `get_object_or_404(Post, pk=pk)` で取得し、フォームを作るときは以下の2つのケースのように、その投稿を `instance` として渡します。フォームを保存するときにも…
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -350,7 +372,7 @@ def post_edit(request, pk):
 form = PostForm(request.POST, instance=post)
 ```
 
-…このポストを編集するためにただフォームを開く場合は:
+…そしてこの投稿を編集するためにフォームを開いたときもそうです。
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -362,48 +384,54 @@ form = PostForm(instance=post)
 
 ![編集ボタン](images/edit_button2.png)
 
-クリックするとブログ記事のフォームが表示されると思います：
+クリックするとブログ投稿のフォームが表示されると思います：
 
-![編集フォーム](images/edit_form2.png)
+![フォームの編集](images/edit_form2.png)
 
-あとはお気軽にタイトルやテキストを変更して保存してください！
+あとは気軽にタイトルやテキストを変更して保存してください！
 
 おめでとう！アプリケーションが完成しました。
 
-Djangoのフォームについてもっと知りたい場合、Djangoのドキュメントを読んでください。https://docs.djangoproject.com/ja/2.2/topics/forms/
+If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/3.2/topics/forms/
 
 ## セキュリティ
 
 リンクをクリックするだけで新しい投稿を作成できることは素晴らしいことです！ しかし、今、あなたのサイトにアクセスした人は誰でも新しいブログ投稿を作成することができます。それはおそらくあなたが望むものではありません。 ボタンはあなたのためには表示されますが、他の人には表示されないようにしましょう。
 
-`blog/templates/blog/base.html` をエディタで開き、`page-header` と名付けた `div` とそこに以前に入力したアンカータグを見つけます。 これは次のようになっています。
+`blog/templates/blog/base.html` をエディタで開き、`page-header` と名付けた `div` と、そこに以前に入力したアンカータグを見つけます。 これは次のようになっています。
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
-<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+<a href="{% url 'post_new' %}" class="top-menu">
+    {% include './icons/file-earmark-plus.svg' %}
+</a>
 ```
 
-これに`{% if %}`タグを追加し、管理者でログインしているユーザーのみにリンクを表示します。 今は、あなただけです！ `<a>` タグを以下のように変更します：
+これに別の `{% if %}` タグを追加します。 このリンクは、管理者にログインしているユーザーのみ表示されます。 今、それはあなただけです! `<a>` タグを以下のように変更します：
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
 {% if user.is_authenticated %}
-    <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+    <a href="{% url 'post_new' %}" class="top-menu">
+        {% include './icons/file-earmark-plus.svg' %}
+    </a>
 {% endif %}
 ```
 
-この`{% if %}`は、ページをリクエストしているユーザーがログインしている場合にのみ、リンクがブラウザに送信されるようにします。 これは新しい投稿の作成を完全に保護するものではありませんが、それは良い第一歩です。 私たちは拡張レッスンでより多くのセキュリティをカバーします。
+この `{% if %}` は、ページをリクエストするユーザーがログインしている場合にのみ、リンクをブラウザに送信します。 これは、新しい投稿の作成を完全に保護するものではありませんが、それは良い第一歩です。 エクステンションレッスンでは、より多くのセキュリティをカバーします。
 
 詳細ページに追加した編集アイコンを覚えていますか？ 他の人が既存の投稿を編集できないように、同じ変更を追加したいと思います。
 
-`blog/templates/blog/post_detail.html` をエディタで開いて次の行を見つけてください：
+`blog/templates/blog/post_detail.html` をエディタで開いて、次の行を見つけてください：
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
 ```html
-<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+<a class="btn btn-secondary" href="{% url 'post_edit' pk=post.pk %}">
+    {% include './icons/pencil-fill.svg' %}
+</a>
 ```
 
 以下のように変更してください：
@@ -412,7 +440,9 @@ Djangoのフォームについてもっと知りたい場合、Djangoのドキ�
 
 ```html
 {% if user.is_authenticated %}
-     <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+     <a class="btn btn-secondary" href="{% url 'post_edit' pk=post.pk %}">
+        {% include './icons/pencil-fill.svg' %}
+     </a>
 {% endif %}
 ```
 
@@ -427,7 +457,7 @@ Djangoのフォームについてもっと知りたい場合、Djangoのドキ�
 {% filename %}command-line{% endfilename %}
 
     $ git status
-    $ git add --all .
+    $ git add .
     $ git status
     $ git commit -m "Added views to create/edit blog post inside the site."
     $ git push
@@ -442,8 +472,8 @@ Djangoのフォームについてもっと知りたい場合、Djangoのドキ�
     [...]
     
 
-(`<your-pythonanywhere-domain>`の部分を、自分の実際のPythonAnywhereのサブドメイン名に山カッコをはずして置き換えることを忘れずに)
+（忘れずに `<your-pythonanywhere-domain>` を自分のPythonAnywhereのサブドメイン名に置き換えましょう、<> は不要です。）
 
 * 最後に、[Webページ](https://www.pythonanywhere.com/web_app_setup/) に飛んで（コンソールの右上のメニューボタンを使ってもいいですね）それから **Reload** を押しましょう。 変更を見るためにあなたのブログ https://subdomain.pythonanywhere.com を再読み込みしましょう。
 
-うまくいってるはずです！おめでとう :)
+うまくいってるはずです！おめでとうございます! :)

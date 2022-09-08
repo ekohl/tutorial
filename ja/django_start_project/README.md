@@ -47,6 +47,7 @@ django-admin.py は、必要なディレクトリとファイルを作成する�
     djangogirls
     ├── manage.py
     ├── mysite
+    │   ├── asgi.py
     │   ├── __init__.py
     │   ├── settings.py
     │   ├── urls.py
@@ -82,7 +83,7 @@ django-admin.py は、必要なディレクトリとファイルを作成する�
 TIME_ZONE = 'Asia/Tokyo'
 ```
 
-言語コードは、言語（例えば、英語の場合は`en`、ドイツ語の場合は`de`のように表します）と、国コード（例えば、ドイツの場合は`de`、スイスの場合は`ch`のように表します）からできています。 あなたの母国語が英語でない場合、これを追加すると、Djangoのデフォルトのボタンや通知が設定した言語に変更されます。 ですのでたとえば「Cancel」ボタンがここで定義した言語に翻訳されます。 [Djangoは多くの言語に対応しています。](https://docs.djangoproject.com/ja/2.2/ref/settings/#language-code)
+言語コードは、言語（例えば、英語の場合は`en`、ドイツ語の場合は`de`のように表します）と、国コード（例えば、ドイツの場合は`de`、スイスの場合は`ch`のように表します）からできています。 あなたの母国語が英語でない場合、これを追加すると、Djangoのデフォルトのボタンや通知が設定した言語に変更されます。 ですのでたとえば「Cancel」ボタンがここで定義した言語に翻訳されます。 [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/3.2/ref/settings/#language-code).
 
 別の言語を使用する場合は、次の行を変更して言語コードを変更します。
 
@@ -98,7 +99,7 @@ LANGUAGE_CODE = 'ja'
 
 ```python
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = BASE_DIR / 'static'
 ```
 
 `DEBUG` が `True` に設定されていて、`ALLOWED_HOSTS` が空のリストの時は、自動的に `['localhost', '127.0.0.1', '[::1]']` という3つのホストに対してチェックが行われます。 このままの設定では、これから私たちがデプロイして使う PythonAnywhere のホストネームが含まれていません。ですから、次のように設定を変更します。
@@ -112,6 +113,48 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 > **メモ**: Chromebook を使っている人は、次の1行を settings.py ファイルの最後に追加してください。 `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 > 
 > cloud9を使っている人は、 `ALLOWED_HOSTS` に、`.amazonaws.com` を追加しましょう。
+> 
+> If you are hosting your project on `Glitch.com`, let us protect the Django secret key that needs to remain confidential (otherwise, anyone remixing your project could see it):
+> 
+> - まず、ランダムな秘密鍵を作成します。 Glitchのターミナル画面を再び開いて、次のコマンドを入力します。
+>     
+>     {% filename %}command-line{% endfilename %}
+>     
+>     ```bash
+>     python -c 'from django.core.management.utils import get_random_secret_key; \
+>           print(get_random_secret_key())'
+>     ```
+>     
+>     このコマンドで、あなたが今回新しく作るDjangoのサイトの秘密鍵として使用するのに最適な、長いランダムな文字列が表示されます。 この秘密鍵のキーを `.env` ファイルにペーストしてください。Glitchで、ウェブサイトのオーナーであるあなただけが見ることができます。
+> 
+> - プロジェクトのルートに `.env` というファイルを作成し、次のプロパティを追加します。
+>     
+>     {% filename %}.env{% endfilename %}
+>     
+>     ```bash
+>     # シングルクォーテーションの中に、生成されたランダムな鍵をコピー＆ペーストします
+>     SECRET='3!0k#7ds5mp^-x$lqs2%le6v97h#@xopab&oj5y7d=hxe511jl'
+>     ```
+> 
+> - 次に、Djangoの設定ファイルを更新して、この秘密の値を挿入し、Djangoのウェブサイト名を設定します:
+>     
+>     {% filename %}mysite/settings.py{% endfilename %}
+>     
+>     ```python
+>     import os
+>     
+>     SECRET_KEY = os.getenv('SECRET')
+>     ```
+> 
+> - そして、同じファイルの少し下に、新しいGlitch ウェブサイトの名前を入れます。
+>     
+>     {% filename %}mysite/settings.py{% endfilename %}
+>     
+>     ```python
+>     ALLOWED_HOSTS = [os.getenv('PROJECT_DOMAIN') + ".glitch.me"]
+>     ```
+>     
+>     `PROJECT_DOMAIN` の値は Glitch によって自動的に生成されます。 これはプロジェクト名に対応しています。
 
 ## データベースをセットアップする
 
@@ -125,7 +168,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 ```
@@ -136,13 +179,13 @@ DATABASES = {
 
     (myvenv) ~/djangogirls$ python manage.py migrate
     Operations to perform:
-      Apply all migrations: auth, admin, contenttypes, sessions
+      Apply all migrations: admin, auth, contenttypes, sessions
     Running migrations:
-      Rendering model states... DONE
       Applying contenttypes.0001_initial... OK
       Applying auth.0001_initial... OK
       Applying admin.0001_initial... OK
       Applying admin.0002_logentry_remove_auto_add... OK
+      Applying admin.0003_logentry_add_action_flag_choices... OK
       Applying contenttypes.0002_remove_content_type_name... OK
       Applying auth.0002_alter_permission_name_max_length... OK
       Applying auth.0003_alter_user_email_max_length... OK
@@ -152,6 +195,9 @@ DATABASES = {
       Applying auth.0007_alter_validators_add_error_messages... OK
       Applying auth.0008_alter_user_username_max_length... OK
       Applying auth.0009_alter_user_last_name_max_length... OK
+      Applying auth.0010_alter_group_name_max_length... OK
+      Applying auth.0011_update_proxy_permissions... OK
+      Applying auth.0012_alter_user_first_name_max_length... OK
       Applying sessions.0001_initial... OK
     
 
@@ -173,35 +219,48 @@ Chromebookを使用している場合は、代わりに次のコマンドを使�
     (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
     
 
-Windows上で、`UnicodeDecodeError`で失敗した場合は、代わりに次のコマンドを使用します。
+グリッチを使っている場合は、以下のとおりです。
+
+{% filename %}Glitch.com terminal{% endfilename %}
+
+    $ refresh
+    
+    
+
+Windowsを使用していて、 `UnicodeDecodeError`で失敗した場合は、代わりに次のコマンドを使用してください:
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-Webサイトが動いていることを確認してください。ブラウザで以下のアドレスを開いてみましょう。（Firefox, Chrome, Safari, Internet Explorerなど、好きなブラウザを使って大丈夫です）
+さて、Webサイトが動いていることを確認してみましょう。ブラウザで以下のアドレスを開いてみましょう。（Firefox, Chrome, Safari, Internet Explorerなど、好きなブラウザを使って大丈夫です）
 
-{% filename %}ブラウザ{% endfilename %}
+{% filename %}browser{% endfilename %}
 
     http://127.0.0.1:8000/
     
 
-Chromebook と Cloud9 を利用している場合は、Webサーバーが起動しているコマンド画面の右上に現れるポップアップウィンドウの中のURLをクリックしましょう。 URLはこんな感じになっていると思います。
+Chromebook と Cloud9 を利用している場合は、Webサーバーが起動しているコマンド画面の右上にあるポップアップウィンドウのURLをクリックしましょう。 URLはこんな感じになっていると思います。
 
-{% filename %}ブラウザ{% endfilename %}
+{% filename %}browser{% endfilename %}
 
     https://<a bunch of letters and numbers>.vfs.cloud9.us-west-2.amazonaws.com
     
 
-おめでとう！ たった今、あなたは最初のウェブサイトを作って、それをWebサーバーの上で起動しました！ 素晴らしいですね！
+Glitchを利用している場合：
+
+    https://name-of-your-glitch-project.glitch.me
+    
+
+おめでとうございます！ たった今、あなたは最初のウェブサイトを作って、それをWebサーバーの上で起動しました！ 素晴らしいですね！
 
 ![インストールできました！](images/install_worked.png)
 
-コマンド画面は、一度に一つのコマンドしか実行できません。先程開いたコマンド画面では、Webサーバーが今動いています。 Webサーバーが動いている間、次のリクエストを待っています。このコマンドラインに新しいテキストを書いても、新しいコマンドとして実行しません。
+コマンド画面は、一度に一つのコマンドしか実行できません。先程開いたコマンド画面では、Webサーバーが今動いています。 Webサーバーが動いている間、次のリクエストを待っています。このコマンドラインに新しいテキストを書いても、新しいコマンドとして実行はされません。
 
 > Webサーバーの仕組みについては、「インターネットの仕組み」の章を参照してください。
 
-Webサーバーを動かしながら、新たにコマンドを入力したい場合は、新しいコマンドプロンプトのウィンドウを開いて、仮想環境を起動してから入力しましょう。2つ目のウィンドウを開く方法が分からなくなったら、[コマンドラインを使ってみよう](../intro_to_command_line/README.md)の章に戻ってやり方を確認しましょう。 Webサーバーを停止するには、実行中のウィンドウに戻り、CTRL + C - ControlキーとCキーを同時に押します（WindowsではCtrl + Breakキーを押す必要があります）。
+Webサーバーを動かしながら、新たにコマンドを入力したい場合は、新しいコマンドプロンプトのウィンドウを開いて、仮想環境を起動してから入力しましょう。2つ目のウィンドウを開く方法が分からなくなった場合は、[コマンドラインを使ってみよう](../intro_to_command_line/README.md)の章に戻ってやり方を確認しましょう。 Webサーバーを停止するには、実行中のウィンドウに戻り、CTRL + C 、つまり ControlキーとCキーを同時に押します。（WindowsではCtrl + Breakキーを押す必要があります）。
 
 次のステップに進む準備はできましたか？ 今度は実際にコンテンツを作り始めましょう！

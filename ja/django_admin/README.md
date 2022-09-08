@@ -1,6 +1,6 @@
 # Django admin
 
-今作成したポストを追加、編集、削除するのにDjango adminを使います。
+ブログの投稿を追加、編集、削除するのにDjango adminを使います。
 
 `blog/admin.py`ファイルをエディタで開いて、内容をこのように変えて下さい：
 
@@ -52,6 +52,6 @@ Postsをクリックして移動し、少し試してみましょう。 5つか6
 
 ![Django admin](images/edit_post3.png)
 
-Django adminについてもっと知りたいときは、Djangoのドキュメントを見るとよいでしょう。https://docs.djangoproject.com/ja/2.2/ref/contrib/admin/
+If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/3.2/ref/contrib/admin/
 
 ここでそろそろコーヒー（または紅茶）か何か食べるものを摂って自分を元気づけるのにいいタイミングでしょう。最初のDjangoモデルを作ったのだから、少し休みをとっていいところです！
