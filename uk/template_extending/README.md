@@ -1,12 +1,12 @@
 # Розширення шаблону
 
-Інша хороша річ, яку має Django в своєму арсеналі - це __розширення шаблону__. Що це означає? Це значить, що ви можете використовувати одні й ті ж частини свого HTML коду для різних сторінок веб-сайту.
+Інша хороша річ, яку має Django у своєму арсеналі це **шаблонне розширення**. Що це означає? А це означає, що ви можете використовувати одні й ті ж частини свого HTML коду для різних сторінок вебсайту.
 
-Шаблони допомогають у випадку, коли ви хочете використати однакову інформацію/схему. Вам не потрібно повторюватись в кожному файлі. І якщо ви захочете щось змінити, то не доведеться це робити в кожному шаблоні, а лише один раз!
+Шаблони допомагають коли ви хочете використати одну і ту ж інформацію чи макет у більш ніж одному місці. Ви можете не повторюватись у кожному файлі. І якщо ви хочете щось змінити, не потрібно робити це в кожному шаблоні, лише в одному!
 
 ## Створення базового шаблону
 
-Базовий шаблон - це основний шаблон, який ви будете розширювати для кожної сторінки вашого веб-сайту.
+Базовий шаблон - це основний шаблон, який ви будете розширювати для кожної сторінки вашого вебсайту.
 
 Створимо файл `base.html` в `blog/templates/blog/`:
 
@@ -15,120 +15,137 @@
         └───blog
                 base.html
                 post_list.html
+    
 
-Відкрийте його і скопіюйте усе з `post_list.html` до файлу `base.html`, як тут:
+Тепер відкрийте його і скопіюйте усе з `post_list.html` до файлу `base.html`, як тут:
+
+{% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
 {% load static %}
+<!DOCTYPE html>
 <html>
     <head>
         <title>Django Girls blog</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
-        <div class="page-header">
-            <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
+        <header class="page-header">
+          <div class="container">
+              <h1><a href="/">Django Girls Blog</a></h1>
+          </div>
+        </header>
 
-        <div class="content container">
+        <main class="container">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col">
                 {% for post in posts %}
-                    <div class="post">
-                        <div class="date">
+                    <article class="post">
+                        <time class="date">
                             {{ post.published_date }}
-                        </div>
-                        <h1><a href="">{{ post.title }}</a></h1>
+                        </time>
+                        <h2><a href="">{{ post.title }}</a></h2>
                         <p>{{ post.text|linebreaksbr }}</p>
-                    </div>
+                    </article>
                 {% endfor %}
                 </div>
             </div>
-        </div>
+        </main>
     </body>
 </html>
 ```
 
-Далі для `base.html`, замініть ціле тіло `<body>` (все між `<body>` і `</body>`) цим:
+Далі в `base.html`, замініть весь вміст `<body>` (все між `<body>` і `</body>`) на це:
+
+{% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
 <body>
-    <div class="page-header">
-        <h1><a href="/">Django Girls Blog</a></h1>
-    </div>
-    <div class="content container">
+    <header class="page-header">
+      <div class="container">
+          <h1><a href="/">Django Girls Blog</a></h1>
+      </div>
+    </header>
+    <main class="container">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col">
             {% block content %}
             {% endblock %}
             </div>
         </div>
-    </div>
+    </main>
 </body>
 ```
 
-{% raw %}Зауважте, це замінило все, починаючи від `{% for post in posts %}` до `{% endfor %}`, цим: {% endraw %}
+{% raw %}Ви могли помітити, що замінилось все від `{% for post in posts %}` до `{% endfor %}` на це: {% endraw %}
+
+{% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
 {% block content %}
 {% endblock %}
 ```
-Що це означає? Ви щойно створили блок `block`! Використали шаблонний тег `{% block %}` для того, щоб створити місце, в яке буде вставлено HTML. Цей HTML міститиметься в інших шаблонах, які розширюють цей шаблон (`base.html`). Скоро ми покажемо вам, як це зробити.
 
-А тепер збережіть зміни і відкрийте знову свій `blog/templates/blog/post_list.html`.
-{% raw %}Видаліть усе, що вище `{% for post in posts %}` і нижче `{% endfor %}`. Коли ви закінчите, файл виглядатиме так:{% endraw %}
+Але навіщо? Ви щойно створили `block`! Ви використали тег шаблону `{% block %}`, щоб зробити область, в яку буде введений HTML. Цей HTML буде взятий з іншого шаблону, який розширить шаблон `base.html`. Скоро ми покажемо вам як це зробити.
+
+Тепер збережіть `base.html` і знову відкрийте ваш `blog/templates/blog/post_list.html` в редакторі коду. {% raw %}Вам треба видалити все перед `{% for post in posts %}` та після `{% endfor %}`. Коли ви закінчите, файл буде виглядати так:{% endraw %}
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% for post in posts %}
-    <div class="post">
-        <div class="date">
+    <article class="post">
+        <time class="date">
             {{ post.published_date }}
-        </div>
-        <h1><a href="">{{ post.title }}</a></h1>
+        </time>
+        <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    </article>
 {% endfor %}
 ```
 
-Ми хочемо використати це як частина нашого шаблону для всіх блоків контенту.
-Час додати теги блоків до цього файлу!
+Ми хочемо використати це як частину нашого шаблону для всіх блоків контенту. Час додати теги блоків до цього файлу!
 
-{% raw %}Ви хочете, щоб ваший тег блоку підходив до тегу у файлі `base.html`. Ви такоже хочете, щоб він включав в себе весь код, що належить вашим блокам з контентом. Щоб зробити це, розмістіть все між `{% block content %}` і `{% endblock %}`. Як тут: {% endraw %}
+{% raw %}Ви хочете, щоб ваш тег блоку відповідав тегу у файлі `base.html`. Ви також хочете включити весь код, який треба до ваших блоків контенту. Для цього вставте все між `{% block content %}` та `{% endblock %}`. Наступним чином:{% endraw %}
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-
 {% block content %}
     {% for post in posts %}
-        <div class="post">
-            <div class="date">
+        <article class="post">
+            <time class="date">
                 {{ post.published_date }}
-            </div>
-            <h1><a href="">{{ post.title }}</a></h1>
+            </time>
+            <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
-        </div>
+        </article>
     {% endfor %}
 {% endblock %}
 ```
-Залишився один момент. Нам потрібно поєднати ці два шаблони разом. Це і є розширенням шаблонів. Ми зробимо це додаванням на початок файлу тегу розширення. Як тут:
+
+Залишилося лише одне. Нам необхідно з'єднати ці два шаблони разом. Це і є розширення шаблону! Ми зробимо це, додавши додатковий тег до початку файлу. Як тут:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
 ```html
 {% extends 'blog/base.html' %}
 
 {% block content %}
     {% for post in posts %}
-        <div class="post">
-            <div class="date">
+        <article class="post">
+            <time class="date">
                 {{ post.published_date }}
-            </div>
-            <h1><a href="">{{ post.title }}</a></h1>
+            </time>
+            <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
-        </div>
+        </article>
     {% endfor %}
 {% endblock %}
 ```
 
-Ось і все! Перевірте, чи ваш сайт все ще коректно працює :)
+Ось і все! Збережіть файл, та перевірте чи ваш сайт все ще працює належним чином. :)
 
-> Якщо з'явилася помилка `TemplateDoesNotExists`, то це говорить про те, що файлу `blog/base.html` не існує і ви маєте в консолі запущений `runserver`, спробуйте зупинити його (натиснувши Ctrl+C - кнопки Control і C buttons разом) і перезавантажити командою `python manage.py runserver`.
+> Якщо з'явилась помилка `TemplateDoesNotExist`, то це означає що відсутній файл `blog/base.html` і у вас запущений `runserver` в консолі. Спробуйте зупинити його (натиснувши Ctrl+C – клавіші Control та C разом) та перезавантажте його, запустивши команду `python manage.py runserver`.
