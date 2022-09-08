@@ -11,8 +11,8 @@ def main():
                        if x.is_dir() and len(x.name) == 2 and x.name != 'en')
 
     if 'GITHUB_ACTION' in os.environ:
-        print(f'::set-output name=languages::{json.dumps(languages)}')
-    for language in languages:
+        print(f'::set-output name=languages::{json.dumps(languages[:2])}')
+    for language in languages[:2]:
         print(language)
 
 
