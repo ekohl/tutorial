@@ -16,7 +16,6 @@ jobs:
   list_languages:
     name: List languages
     runs-on: ubuntu-latest
-    if: github.repository_owner == 'djangogirls'
     outputs:
       languages: ${{ steps.set_list.outputs.languages }}
     steps:
