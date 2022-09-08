@@ -19,36 +19,35 @@ Jeśli uczestniczysz w wydarzeniu Django Girls:
 Na tych warsztatach będziesz budować blog. W tym celu, podczas przechodzenia przez tutorial, zostaniesz poinstruowana, jak zainstalować na Twoim komputerze różnego rodzaju oprogramowanie i jak skonfigurować kilka kont online, które będą Ci potrzebne. Ta strona zbiera wszystkie instrukcje dotyczące instalacji i rejestracji w jednym miejscu (co jest przydatne w niektórych formach warsztatów).
 
 <!--sec data-title="Chromebook setup (if you're using one)"
-data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %}
+data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
 
 <!--endsec-->
 
-# Krótkie wprowadzenie do wiersza polecenia
+# Krótkie wprowadzenie do wiersza poleceń {#command-line}
 
-Wiele z poniższych kroków odnosi się do "konsoli", "terminala", "wiersza poleceń" lub "linii poleceń" - wszystkie one oznaczają to samo: okno na komputerze, w którym można wprowadzać polecenia. Gdy dojdziesz do głównego tutoriala, dowiesz się więcej o wierszu polecenia. Na razie najważniejszą rzeczą jaką musisz wiedzieć to to, jak otworzyć okno wiersza polecenia i jak ono wygląda:
-{% include "/intro_to_command_line/open_instructions.md" %}
+Wiele z poniższych kroków odnosi się do "konsoli", "terminala", "wiersza poleceń" lub "linii poleceń" - wszystkie one oznaczają to samo: okno na komputerze, w którym można wprowadzać polecenia. Gdy dojdziesz do głównego tutoriala, dowiesz się więcej o wierszu polecenia. Na razie najważniejszą rzeczą jaką musisz wiedzieć to to, jak otworzyć okno wiersza polecenia i jak ono wygląda: {% include "/intro_to_command_line/open_instructions.md" %}
 
-# Zainstaluj Pythona
+# Zainstaluj Pythona {#python}
 
 {% include "/python_installation/instructions.md" %}
 
-# Zainstaluj edytor kodu
+# Zainstaluj edytor kodu {#code-editor}
 
-{% include "/code_editor/instructions.md" %}
+{% include "/code_editor/instructions.md" %} 
 
-# Utwórz środowisko wirtualne i zainstaluj Django
+# Skonfiguruj virtualenv i zainstaluj Django {#virtualenv}
 
 {% include "/django_installation/instructions.md" %}
 
-# Zainstaluj Gita
+# Zainstaluj Gita {#git}
 
 {% include "/deploy/install_git.md" %}
 
-# Utwórz konto na GitHubie
+# Utwórz konto na GitHubie {#github-account}
 
 Przejdź do strony [ GitHub.com ](https://www.github.com) i zarejestruj nowe, bezpłatne konto użytkownika. Pamiętaj, aby zapamiętać swoje hasło (dodaj je do swojego menedżera haseł, jeśli go używasz).
 
-# Utwórz konto na PythonAnywhere
+# Utwórz konto na PythonAnywhere {#pythonanywhere-account}
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 

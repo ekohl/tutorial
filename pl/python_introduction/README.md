@@ -6,31 +6,15 @@
 
 Napiszmy jakiś kod!
 
-## Wiersz polecenia Pythona
+{% include "/python_introduction/prompt.md" %}
 
-> Dla czytelniczek w domu: tę część uwzględnia wideo [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U).
+## Your first Python command!
 
-Aby rozpocząć zabawę z Pythonem, musisz otworzyć jego *wiersz polecenia* na swoim komputerze. Powinnaś już wiedzieć, jak to zrobić - nauczyłyśmy się tego w rozdziale [Wprowadzenie do interfejsu wiersza polecenia](../intro_to_command_line/README.md).
+After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` – Python will do that for you.
 
-Gdy już będziesz gotowa, postępuj według instrukcji poniżej.
+If you want to exit the Python console at any point, type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
 
-Chcemy otworzyć konsolę Pythona. Wpisz `python`, jeśli pracujesz na Windowsie, lub `python3`, jeśli pracujesz na MacOS/Linuxie i wciśnij `enter`.
-
-{% filename %}command-line{% endfilename %}
-
-    $ python3
-    Python 3.6.1 (...)
-    Type "help", "copyright", "credits" or "license" for more information.
-    >>>
-
-
-## Twoje pierwsze polecenie w Pythonie!
-
-Po uruchomieniu Pythona wiersz polecenia wygląda tak: `>>>`. Jest to sygnał dla nas, że od tego momentu możemy używać wyłącznie instrukcji języka Python. Nie musisz wpisywać `>>>` - Python zrobi to za Ciebie.
-
-Jeśli w którymkolwiek momencie zechcesz wyjść z konsoli Pythona, wpisz polecenie `exit()` albo użyj kombinacji klawiszy `Ctrl + Z` w Windows lub `Ctrl + D` w Macu/Linuksie. Wtedy już nie będziesz więcej widzieć `>>>`.
-
-Teraz jeszcze nie chcemy wyjść z konsoli Pythona. Chcemy się jeszcze kilku rzeczy nauczyć. Zacznijmy od wpisania działania matematycznego, np. `2 + 3` i naciśnięcia `entera`.
+For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -39,26 +23,26 @@ Teraz jeszcze nie chcemy wyjść z konsoli Pythona. Chcemy się jeszcze kilku rz
 5
 ```
 
-Nieźle! Widzisz, jak pojawiła się odpowiedź? Python zna się na matematyce! Powinnaś spróbować innych działań, np.:
+Nice! See how the answer popped out? Python knows math! You could try other commands like:
 
 - `4 * 5`
 - `5 - 1`
 - `40 / 2`
 
-By wykonać potęgowanie, powiedzmy podnieść 2 do potęgi 3, musimy wpisać: {% filename %}command-line{% endfilename %}
+To perform exponential calculation, say 2 to the power 3, we type: {% filename %}command-line{% endfilename %}
 
 ```python
 >>> 2 ** 3
 8
 ```
 
-Pobaw się tym przez chwilę, a potem wróć tutaj. :)
+Have fun with this for a little while and then get back here. :)
 
-Ja widzisz, Python jest świetnym kalkulatorem. Jeżeli zastanawiasz się, co możesz z nim jeszcze zrobić…
+As you can see, Python is a great calculator. If you're wondering what else you can do…
 
-## Tekstowy typ danych (string)
+## Strings
 
-A jakby tak wpisać swoje własne imię? Wpisz swoje imię używając cudzysłowów, w ten sposób:
+How about your name? Type your first name in quotes like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -67,18 +51,18 @@ A jakby tak wpisać swoje własne imię? Wpisz swoje imię używając cudzysłow
 'Ola'
 ```
 
-Właśnie stworzyłaś swój pierwszy string! Jest to ciąg znaków, który może być przetwarzany przez komputer. String musi zawsze zaczynać się i kończyć tym samym znakiem. Może to być apostrof (`'`) lub cudzysłów (`"`) - nie ma różnicy! Sygnalizują one Pythonowi, że wszystko, co znajduje się pomiędzy nimi, jest stringiem.
+You've now created your first string! It's a sequence of characters that can be processed by a computer. The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
 
-Stringi mogą być łączone. Spróbuj tak:
+Strings can be strung together. Try this:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> "Czesc " + "Ola"
-'Czesc Ola'
+>>> "Hi there " + "Ola"
+'Hi there Ola'
 ```
 
-Da się również mnożyć stringi za pomocą liczb:
+You can also multiply strings with a number:
 
 {% filename %}command-line{% endfilename %}
 
@@ -87,9 +71,9 @@ Da się również mnożyć stringi za pomocą liczb:
 'OlaOlaOla'
 ```
 
-Jeśli chciałabyś użyć apostrofu wewnątrz stringu, możesz to zrobić na dwa sposoby.
+If you need to put an apostrophe inside your string, you have two ways to do it.
 
-Za pomocą cudzysłowu:
+Using double quotes:
 
 {% filename %}command-line{% endfilename %}
 
@@ -98,7 +82,7 @@ Za pomocą cudzysłowu:
 "Runnin' down the hill"
 ```
 
-lub poprzedzając apostrof odwróconym ukośnikiem (``):
+or escaping the apostrophe with a backslash (`\`):
 
 {% filename %}command-line{% endfilename %}
 
@@ -107,7 +91,7 @@ lub poprzedzając apostrof odwróconym ukośnikiem (``):
 "Runnin' down the hill"
 ```
 
-Fajnie, co? Możesz także wyświetlić swoje imię wielkimi literami. Wpisz:
+Nice, huh? To see your name in uppercase letters, type:
 
 {% filename %}command-line{% endfilename %}
 
@@ -116,9 +100,9 @@ Fajnie, co? Możesz także wyświetlić swoje imię wielkimi literami. Wpisz:
 'OLA'
 ```
 
-Właśnie użyłaś **metody** `upper` na swoim stringu! Metoda (jak `upper()`) to sekwencja instrukcji, które Python wykonuje na podanym obiekcie (`"Ola"`) jak tylko ją wywołasz.
+You just used the `upper` **method** on your string! A method (like `upper()`) is a sequence of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
 
-Jeżeli chcesz poznać liczbę liter, którą zawiera twoje imię, istnieje **funkcja** również do tego!
+If you want to know the number of letters contained in your name, there is a **function** for that too!
 
 {% filename %}command-line{% endfilename %}
 
@@ -127,22 +111,22 @@ Jeżeli chcesz poznać liczbę liter, którą zawiera twoje imię, istnieje **fu
 3
 ```
 
-Zastanawiasz się, dlaczego czasami wywołujemy funkcję z `.` na końcu stringu (jak tutaj: `"Ola".upper()`), a czasami najpierw wywołujemy funkcję, a dopiero potem umieszczamy string w nawiasach? Ano, w niektórych przypadkach funkcje są związane z obiektami. Tak jak `upper()`, która może być użyta wyłącznie na stringach. Taką funkcję nazywamy wówczas **metodą**. Są również funkcje, które nie są powiązane z niczym konkretnym i mogą być używane na różnych typach obiektów, jak na przykład `len()`. Dlatego przekazujemy `"Ola"` jako parametr dla funkcji `len`.
+Wonder why sometimes you call functions with a `.` at the end of a string (like `"Ola".upper()`) and sometimes you first call a function and place the string in parentheses? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a **method**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
 
 ### Podsumowanie
 
-OK, wystarczy już stringów. Jak dotąd nauczyłaś się o:
+OK, enough of strings. So far you've learned about:
 
 - **wiersz polecenia** - wpisywanie komend (kodu) w wierszu polecenia Pythona powoduje, że Python zwraca wyniki
 - **liczby i stringi** - w Pythonie liczb używamy do działań matematycznych, a stringów do obiektów tekstowych
 - **operatory** - takie jak `+` i `*`, łączą wartości produkując nowe
 - ** funkcje** - takie jak `upper()` i `len()`, wykonują działania na obiektach.
 
-Są to podstawy każdego języka programowania, jakiego przyjdzie Ci się uczyć. Gotowa na coś trudniejszego? Mamy nadzieję, że tak!
+These are the basics of every programming language you learn. Ready for something harder? We bet you are!
 
-## Błędy
+## Errors
 
-Spróbujmy czegoś nowego. Czy możemy sprawdzić długość liczby w taki sam sposób, jak długość naszego imienia? Wpisz `len(304023)` i wciśnij `enter`:
+Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit `enter`:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -153,9 +137,9 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-Dostałyśmy nasz pierwszy błąd! Ikona {{ warning_icon }} to sposób, w jaki będziemy Ciebie informować, że kod, który zaraz wykonasz, nie powinien zadziałać poprawnie. Popełnianie błędów (nawet intencjonalnie) to ważna część nauki!
+We got our first error! The {{ warning_icon }} icon is our way of giving you a heads up that the code you are about to run won't work as expected. Making mistakes (even intentional ones) are an important part of learning!
 
-Komunikat mówi nam, że obiekty typu "int" (liczby całkowite, ang. integer) nie mają długości. Zatem co możemy zrobić? Może mogłybyśmy przekazać naszą liczbę jako string? Stringi mają ustaloną długość, zgadza się?
+It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
 
 {% filename %}command-line{% endfilename %}
 
@@ -164,56 +148,56 @@ Komunikat mówi nam, że obiekty typu "int" (liczby całkowite, ang. integer) ni
 6
 ```
 
-Działa! Użyłyśmy funkcji `str` wewnątrz funkcji `len`. Funkcja `str()` konwertuje wszystko do postaci stringów.
+It worked! We used the `str` function inside of the `len` function. `str()` converts everything to strings.
 
 - Funkcja `str` przekształca wartości na **stringi**
 - Funkcja `int` przekształca wartości na **liczby**
 
-> Ważne: możemy zamienić liczby na tekst, ale nie zawsze możemy zamienić tekst na liczby - czym w ogóle powinien być wynik działania `int('hello')`?
+> Important: we can convert numbers into text, but we can't necessarily convert text into numbers – what would `int('hello')` be anyway?
 
-## Zmienne
+## Variables
 
-Ważnym zagadnieniem w programowaniu są zmienne. Zmienna to nic innego jak nazwa nadana jakiejś wartości, którą potem możemy się posługiwać. Programiści używają zmiennych do przechowywania danych, dzięki czemu ich kod jest bardziej czytelny i nie muszą każdorazowo zastanawiać się, co jest czym.
+An important concept in programming is variables. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
 
-Przypuśćmy, że chcemy stworzyć nową zmienną zwaną `imie`:
+Let's say we want to create a new variable called `name`:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> imie = "Ola"
+>>> name = "Ola"
 ```
 
-Napisałyśmy własnie, że imie równa się Ola.
+We type name equals Ola.
 
-Jak już zauważyłaś, Twój program nie wyświetlił niczego tak, jak to robił wcześniej. Zatem skąd wiemy, że zmienna faktycznie istnieje? Wpisz `imie` i wciśnij `enter`:
+As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Enter `name` and hit `enter`:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> imie
+>>> name
 'Ola'
 ```
 
-Jupi! Twoja pierwsza zmienna! :) Zawsze możesz zmienić, do czego się ona odnosi:
+Yippee! Your first variable! :) You can always change what it refers to:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> imie = "Sonja"
->>> imie
+>>> name = "Sonja"
+>>> name
 'Sonja'
 ```
 
-Możesz także używać jej w funkcjach:
+You can use it in functions too:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> len(imie)
+>>> len(name)
 5
 ```
 
-Super, co? Zmienne mogą być czymkolwiek - liczbami również! Spróbuj:
+Awesome, right? Now, variables can be anything – numbers too! Try this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -224,45 +208,45 @@ Super, co? Zmienne mogą być czymkolwiek - liczbami również! Spróbuj:
 24
 ```
 
-Ale co by było, gdybyśmy użyły złej nazwy? Masz pomysł, co mogłoby się stać? Sprawdźmy!
+But what if we used the wrong name? Can you guess what would happen? Let's try!
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
 ```python
->>> miasto = "Tokyo"
->>> masto
+>>> city = "Tokyo"
+>>> ctiy
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-NameError: name 'masto' is not defined
+NameError: name 'ctiy' is not defined
 ```
 
-Błąd! Jak widzisz, Python ma różne rodzaje błędów, a ten nosi nazwę **NameError**. Python zwróci Ci taki błąd, gdy będziesz próbowała używać nazwy, która nie została jeszcze utworzona. Gdybyś w przyszłości natrafiła na niego, sprawdź w swoim kodzie czy nie popełniłaś literówek w nazwach zmiennych.
+An error! As you can see, Python has different types of errors and this one is called a **NameError**. Python will give you this error if you try to use a variable that hasn't been defined yet. If you encounter this error later, check your code to see if you've mistyped any names.
 
-Poświęć chwilę czasu na zabawę i przekonaj się, co możesz z tym zrobić!
+Play with this for a while and see what you can do!
 
-## Funkcja print
+## The print function
 
-Spróbuj tego:
+Try this:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> imie = 'Maria'
->>> imie
+>>> name = 'Maria'
+>>> name
 'Maria'
->>> print(imie)
+>>> print(name)
 Maria
 ```
 
-Kiedy wpisujesz po prostu `imie`, interpreter Pythona zwraca *odwzorowanie* stringa będącego wartością zmiennej 'imie', czyli litery M-a-r-i-a zamknięte w pojedynczym cudzysłowie''. Natomiast gdy napiszesz `print(imie)`, Python wypisze zawartość zmiennej na ekran, bez żadnego cudzysłowu, co wygląda lepiej.
+When you just type `name`, the Python interpreter responds with the string *representation* of the variable 'name', which is the letters M-a-r-i-a, surrounded by single quotes, ''. When you say `print(name)`, Python will "print" the contents of the variable to the screen, without the quotes, which is neater.
 
-Jak się później przekonamy, `print()` jest szczególnie użyteczny, gdy chcemy wypisać coś z wnętrza funkcji lub gdy zechcemy wypisać wartości w kilku wierszach.
+As we'll see later, `print()` is also useful when we want to print things from inside functions, or when we want to print things on multiple lines.
 
-## Listy
+## Lists
 
-Oprócz stringów i liczb całkowitych, Python dysponuje szeregiem różnych typów obiektów. Teraz zapoznamy się z typem zwanym **listą**. Listy są dokładnie tym, co myślisz: obiektami, które są listami innych obiektów. :)
+Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce one called **list**. Lists are exactly what you think they are: objects which are lists of other objects. :)
 
-Śmiało, stwórzmy listę:
+Go ahead and create a list:
 
 {% filename %}command-line{% endfilename %}
 
@@ -271,101 +255,101 @@ Oprócz stringów i liczb całkowitych, Python dysponuje szeregiem różnych typ
 []
 ```
 
-Tak, lista jest pusta. Niespecjalnie przydatne, co? Stwórzmy listę numerów totolotka. Nie chcemy się powtarzać za każdym razem, więc tutaj również posłużymy się zmienną:
+Yes, this list is empty. Not very useful, right? Let's create a list of lottery numbers. We don't want to repeat ourselves all the time, so we will put it in a variable, too:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> wyniki = [3, 42, 12, 19, 30, 59]
+>>> lottery = [3, 42, 12, 19, 30, 59]
 ```
 
-Dobrze, mamy listę! Co możemy z nią zrobić? Zobaczmy ile liczb znajduje się w tej liście. Masz pomysł, jakiej funkcji powinnaś użyć? Już z niej korzystałaś!
+All right, we have a list! What can we do with it? Let's see how many lottery numbers there are in a list. Do you have any idea which function you should use for that? You know this already!
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> len(wyniki)
+>>> len(lottery)
 6
 ```
 
-Tak! `len()` może zwrócić Ci liczbę obiektów zawartych w liście. Prawda że przydatne? To może teraz posortujmy listę:
+Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we will sort it now:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> wyniki.sort()
+>>> lottery.sort()
 ```
 
-Polecenie to niczego nie zwraca, po prostu zmieniło kolejność liczb zawartych w liście. Wypiszmy jej zawartość jeszcze raz i zobaczmy co się stało:
+This doesn't return anything, it just changed the order in which the numbers appear in the list. Let's print it out again and see what happened:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> print(wyniki)
+>>> print(lottery)
 [3, 12, 19, 30, 42, 59]
 ```
 
-Jak widzisz, liczby na liście są teraz uporządkowane według wartości od najniższej do najwyższej. Gratulacje!
+As you can see, the numbers in your list are now sorted from the lowest to highest value. Congrats!
 
-A gdybyśmy zapragnęły odwrócić kolejność? Zróbmy to!
+Maybe we want to reverse that order? Let's do that!
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> wyniki.reverse()
->>> print(wyniki)
+>>> lottery.reverse()
+>>> print(lottery)
 [59, 42, 30, 19, 12, 3]
 ```
 
-Jeżeli chcesz dodać coś do swojej listy, możesz to zrobić wpisując polecenie:
+If you want to add something to your list, you can do this by typing this command:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> wyniki.append(199)
->>> print(wyniki)
+>>> lottery.append(199)
+>>> print(lottery)
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
-Jeśli chcesz wyświetlić tylko pierwszą liczbę, możesz to uczynić używając **indeksów**. Indeks jest numerem mówiącym nam, w którym miejscu listy znajduje się dany element. Programiści zaczynają liczenie od zera, zatem pierwszy element Twojej listy znajduje się w miejscu oznaczonym indeksem 0, następny z indeksem 1, i tak dalej. Spróbuj tego:
+If you want to show only the first number, you can do this by using **indexes**. An index is the number that says where in a list an item occurs. Programmers prefer to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> print(wyniki[0])
+>>> print(lottery[0])
 59
->>> print(wyniki[1])
+>>> print(lottery[1])
 42
 ```
 
-Jak widzisz, możesz uzyskać dostęp do każdego z elementów Twojej listy za pomocą jej nazwy oraz numeru indeksu wewnątrz nawiasów kwadratowych.
+As you can see, you can access different objects in your list by using the list's name and the object's index inside of square brackets.
 
-By skasować coś z twojej listy, musisz użyć **indeksów**, których nauczyłyśmy się powyżej i metody `pop()`. Spróbujmy zobaczyć, jak to działa na przykładzie i powtórzmy sobie to, czego się nauczyłyśmy wyżej. Usuńmy pierwszy element z naszej listy.
+To delete something from your list you will need to use **indexes** as we learned above and the `pop()` method. Let's try an example and reinforce what we learned previously; we will be deleting the first number of our list.
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> print(wyniki)
+>>> print(lottery)
 [59, 42, 30, 19, 12, 3, 199]
->>> print(wyniki[0])
+>>> print(lottery[0])
 59
->>> wyniki.pop(0)
+>>> lottery.pop(0)
 59
->>> print(wyniki)
+>>> print(lottery)
 [42, 30, 19, 12, 3, 199]
 ```
 
-Wszystko zadziałało zgodnie z planem!
+That worked like a charm!
 
-Żeby było zabawniej, sprawdź inne indeksy: 6, 7, 1000, -1, -6 czy -1000. Sprawdż, czy jesteś w stanie przewidzieć rezultat przed użyciem instrukcji. Czy otrzymane rezultaty mają sens?
+For extra fun, try some other indexes: 6, 7, 1000, -1, -6 or -1000. See if you can predict the result before trying the command. Do the results make sense?
 
-Wykaz wszystkich metod dostępnych dla list znajdziesz w odpowiednim rozdziale dokumentacji Pythona: https://docs.python.org/3/tutorial/datastructures.html
+You can find a list of all available list methods in this chapter of the Python documentation: https://docs.python.org/3/tutorial/datastructures.html
 
-## Słowniki
+## Dictionaries
 
-> Dla czytelniczek w domu: ten rozdział jest również omówiony w wideo [Installing Python Code Editor](https://www.youtube.com/watch?v=ZX1CVvZLE6c).
+> For readers at home: this part is covered in the [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c) video.
 
-Słownik przypomina nieco listę, jednak różni się tym, że dostęp do wartości uzyskujemy za pomocą klucza, a nie liczbowego indeksu. Kluczem może być dowolny ciąg znaków lub liczba. Pusty słownik tworzymy tak:
+A dictionary is similar to a list, but you access values by looking up a key instead of a numeric index. A key can be any string or number. The syntax to define an empty dictionary is:
 
 {% filename %}command-line{% endfilename %}
 
@@ -374,111 +358,111 @@ Słownik przypomina nieco listę, jednak różni się tym, że dostęp do warto�
 {}
 ```
 
-To pokazuje, że właśnie stworzyłaś pusty słownik. Hura!
+This shows that you just created an empty dictionary. Hurray!
 
-A teraz spróbuj wpisać poniższą instrukcję (spróbuj użyć własnych danych):
+Now, try writing the following command (try substituting your own information, too):
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> uczestniczka = {'imie' : 'Ola', 'kraj' : 'Polska', 'ulubione_liczby' : [7, 42, 92]}
+>>> participant = {'name': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
 ```
 
-Za pomocą tej instrukcji stworzyłaś właśnie zmienną o nazwie `uczestniczka` zawierającą trzy pary klucz-wartość:
+With this command, you just created a variable named `participant` with three key–value pairs:
 
 - Klucz `imie` wskazuje na wartość `'Ola'` (obiekt typu `string`),
 - `kraj` wskazuje na wartość `'Polska'` (kolejny `string`),
 - zaś `ulubione_liczby` odnoszą się do `[7, 42, 92]` (obiekt typu `list` zawierający trzy liczby).
 
-Za pomocą poniższej składni możesz sprawdzać wartości poszczególnych kluczy:
+You can check the content of individual keys with this syntax:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> print(uczestniczka['imie'])
+>>> print(participant['name'])
 Ola
 ```
 
-Widzisz, zupełnie jak w liście. Ale nie trzeba pamiętać numeru indeksu, wystarczy nazwa klucza.
+See, it's similar to a list. But you don't need to remember the index – just the name.
 
-A co się stanie, gdy poprosimy Pythona o wartość klucza, który nie istnieje? Masz pomysł? Spróbujmy tak zrobić i zobaczmy efekt!
+What happens if we ask Python the value of a key that doesn't exist? Can you guess? Let's try it and see!
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
 ```python
->>> uczestniczka['wiek']
+>>> participant['age']
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-KeyError: 'wiek'
+KeyError: 'age'
 ```
 
-Spójrz, kolejny błąd! Tym razem **KeyError**. Python próbuje Ci pomóc i wskazuje, że klucz `'wiek'` nie istnieje w tym słowniku.
+Look, another error! This one is a **KeyError**. Python is helpful and tells you that the key `'age'` doesn't exist in this dictionary.
 
-Kiedy powinniśmy używać słownika, a kiedy listy? To bardzo dobre pytanie! Zastanów się nad rozwiązaniem, zanim spojrzysz na odpowiedź poniżej.
+When should you use a dictionary or a list? Well, that's a good point to ponder. Think about the answer before looking at it in the next line.
 
 - Potrzebujesz ułożyć elementy w określonej kolejności? Wybierz listę.
 - Potrzebujesz powiązać wartości z kluczami, żeby mieć później łatwiejszy dostęp do nich (używając klucza)? Użyj słownika.
 
-Słowniki, podobnie jak listy, są *mutowalne*, co oznacza, że po ich utworzeniu można je nadal zmieniać. Możesz dodać do stworzonego już słownika nowe pary klucz-wartość, w taki sposób:
+Like lists, using the `len()` function on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> uczestniczka['ulubiony_jezyk'] = 'Python'
+>>> len(participant)
+3
 ```
 
-Podobnie jak w przypadku list, metoda `len()` zwraca liczbę par klucz-wartość w danym słowniku. Śmiało, wpisz polecenie:
+Dictionaries, like lists, are *mutable*, meaning that they can be changed after they are created. You can add new key–value pairs to a dictionary after it is created, like this:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> len(uczestniczka)
-4
+>>> participant['favorite_language'] = 'Python'
 ```
 
-Mam nadzieję, że jak dotąd jest to zrozumiałe. :) Gotowa na dalszą zabawę ze słownikami? W następnej linijce czeka nas jeszcze więcej niesamowitości.
+I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Read on for some amazing things.
 
-Za pomocą polecenia `pop()` możesz usunąć element ze słownika. Założmy, że chciałabyś usunąć wpis oznaczony kluczem `'ulubione_liczby'`. Wpisz następującą instrukcję:
+You can use the `pop()` method to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, type in the following command:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> uczestniczka.pop('ulubione_liczby')
+>>> participant.pop('favorite_numbers')
 [7, 42, 92]
->>> uczestniczka
-{'kraj': 'Polska', 'ulubiony_jezyk': 'Python', 'imie': 'Ola'}
+>>> participant
+{'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
-Jak widać z wyświetlonego rezultatu, para klucz-wartość odpowiadająca kluczowi 'ulubione_liczby' została usunięta.
+As you can see from the output, the key–value pair corresponding to the 'favorite_numbers' key has been deleted.
 
-Ponadto możesz także zmienić wartość odpowiadającą kluczowi, który już istnieje w słowniku. Napisz:
+As well as this, you can also change a value associated with an already-created key in the dictionary. Type this:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> uczestniczka['kraj'] = 'Niemcy'
->>> uczestniczka
-{'kraj': 'Niemcy', 'ulubiony_jezyk': 'Python', 'imie': 'Ola'}
+>>> participant['country'] = 'Germany'
+>>> participant
+{'country': 'Germany', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
-Jak widać, wartość klucza `'kraj'` została zmieniona z `'Polska'` na `'Niemcy'`. :) Ekscytujące? Hura! Właśnie nauczyłaś się kolejnej niesamowitej rzeczy.
+As you can see, the value of the key `'country'` has been altered from `'Poland'` to `'Germany'`. :) Exciting? Hurrah! You just learned another amazing thing.
 
 ### Podsumowanie
 
-Doskonale! Wiesz już sporo o programowaniu. W tej części nauczyłaś się o:
+Awesome! You know a lot about programming now. In this last part you learned about:
 
 - **błędach** - umiesz już czytać ze zrozumieniem błędy pojawiające się, gdy Python nie rozumie polecenia, które mu wydałaś
 - **zmiennych** - nazwach dla obiektów, dzięki którym programuje się łatwiej, a Twój kod jest czytelniejszy
 - **listach** - listach obiektów uporządkowanych w określonej kolejności
 - **słownikach** - zbiorach obiektów przechowywanych w postaci par klucz-wartość
 
-Gotowa na następną część? :)
+Excited for the next part? :)
 
-## Porównywanie rzeczy
+## Compare things
 
-> Dla czytelniczek w domu: tę część uwzględnia wideo [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4).
+> For readers at home: this part is covered in the [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) video.
 
-Istotną częścią programowania jest porównywanie różnych rzeczy. Co najłatwiej porównać? Liczby! Zobaczmy, jak to działa:
+A big part of programming involves comparing things. What's the easiest thing to compare? Numbers! Let's see how that works:
 
 {% filename %}command-line{% endfilename %}
 
@@ -493,13 +477,15 @@ True
 True
 >>> 5 != 2
 True
+>>> len([1, 2, 3]) > len([4, 5])
+True
 ```
 
-Dałyśmy Pythonowi różne liczby do porównania. Jak widać, potrafi on nie tylko porównywać liczby, ale również wyniki działań. Fajnie, nie?
+We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare values of mathematical expressions like `2 * 2` and function results like the `2` returned by `len([4, 5])`. Nice, huh?
 
-Zastanawiasz się, dlaczego stawiamy dwa znaki równości `==` obok siebie, gdy sprawdzamy, czy liczby są równe? Pojedynczego znaku równości `=` używamy do nadawania wartości zmiennym. Zawsze, ale to **zawsze** musisz używać dwóch znaków równości `==`, gdy chcesz sprawdzić, czy dane elementy są równe. Możemy również stwierdzić, że dwie rzeczy nie są sobie równe. Aby to zrobić, używamy symbolu `!=`, tak jak to zostało pokazane na przykładzie powyżej.
+Do you wonder why we put two equal signs `==` next to each other to compare if numbers are equal? We use a single `=` for assigning values to variables. You always, **always** need to put two of them – `==` – if you want to check if things are equal to each other. We can also state that things are unequal to each other. For that, we use the symbol `!=`, as shown in the example above.
 
-Użyjmy Pythona do wykonania dwóch innych zadań:
+Give Python two more tasks:
 
 {% filename %}command-line{% endfilename %}
 
@@ -510,14 +496,14 @@ True
 False
 ```
 
-`>` i `<` są zrozumiałe, ale co oznaczają `>=` i `<=`? Czytamy je w ten sposób:
+We've seen `>` and `<`, but what do `>=` and `<=` mean? Read them like this:
 
 - x `>` y oznacza: x jest większe od y
 - x `<` y oznacza: x jest mniejsze od y
 - x `<=` y oznacza: x jest mniejsze lub równe y
 - x `>=` y oznacza: x jest większe lub równe y
 
-Świetnie! A chcesz zrobić coś jeszcze? Spróbuj tak:
+Awesome! Wanna do one more? Try this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -530,12 +516,12 @@ False
 True
 ```
 
-Możesz przekazać Pythonowi tyle liczb, ile Ci się podoba, a on zawsze zwróci Ci wynik! Prawda, że sprytne?
+You can give Python as many numbers to compare as you want, and it will give you an answer! Pretty smart, right?
 
 - **and** - gdy używasz operatora `and`, oba porównania muszą być prawdziwe (True), żeby całe wyrażenie było prawdziwe
 - **or** - gdy używasz operatora `or`, tylko jedno z obu porównań musi być prawdziwe, aby całe wyrażenie było prawdziwe
 
-Znasz powiedzenie "porównywać jabłka z gruszkami"? Zobaczmy, jak działa jego odpowiednik w Pythonie:
+Have you heard of the expression "comparing apples to oranges"? Let's try the Python equivalent:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -546,20 +532,20 @@ Traceback (most recent call last):
 TypeError: '>' not supported between instances of 'int' and 'str'
 ```
 
-Widać, że podobnie jak w powiedzeniu, Python nie jest w stanie porównać liczby (`int`) ze stringiem (`str`). Zamiast tego zwraca nam **TypeError** i mówi nam, że te dwa typy nie mogą być porównywane ze sobą.
+Here you see that just like in the expression, Python is not able to compare a number (`int`) and a string (`str`). Instead, it shows a **TypeError** and tells us the two types can't be compared together.
 
-## Obiekt logiczny (Boolean)
+## Boolean
 
-Przypadkiem się właśnie dowiedziałaś o istnieniu innego typu obiektów w Pythonie. Nazywa się on **Boolean**.
+Incidentally, you just learned about a new type of object in Python. It's called **Boolean**.
 
-Są tylko dwa obiekty logiczne:
+There are only two Boolean objects:
 
 - True - prawda
 - False - fałsz
 
-Jednak żeby Python mógł to zrozumieć, powinnaś zawsze zapisywać je tak: True (pierwsza litera wielka, reszta to małe litery). **true, TRUE, tRUE nie zadziałają -- tylko True jest poprawne.** (to samo dotyczy False.)
+But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well.)
 
-Wartości logiczne mogą także być zmiennymi! Zobacz tutaj:
+Booleans can be variables, too! See here:
 
 {% filename %}command-line{% endfilename %}
 
@@ -569,7 +555,7 @@ Wartości logiczne mogą także być zmiennymi! Zobacz tutaj:
 True
 ```
 
-Możesz też zrobić tak:
+You can also do it this way:
 
 {% filename %}command-line{% endfilename %}
 
@@ -579,27 +565,27 @@ Możesz też zrobić tak:
 False
 ```
 
-Poćwicz i pobaw się wartościami logicznymi wpisując następujące instrukcje:
+Practice and have fun with Booleans by trying to run the following commands:
 
 - `True and True`
 - `False and True`
 - `True or 1 == 1`
 - `1 != 2`
 
-Gratulacje! Wartości logiczne są jedną z najfajniejszych możliwości w programaniu, a Ty właśnie nauczyłaś się ich używać!
+Congrats! Booleans are one of the coolest features in programming, and you just learned how to use them!
 
 # Zapisujemy!
 
-> Dla czytelniczek w domu: tę część uwzględnia wideo [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk).
+> For readers at home: this part is covered in the [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk) video.
 
-Do tej pory pisałyśmy cały nasz kod Pythona w interpreterze, co zmusza nas do pisania linijka po linijce. Prawdziwe programy są zapisywane w plikach i uruchamiane przez **interpreter** lub **kompilator** naszego języka programowania. Dotąd uruchamiałyśmy nasze programy w **interpreterze** Pythona, wprowadzając za każdym razem najwyżej jedną linijkę kodu. Ale w następnych zadaniach będziemy potrzebowały dodać więcej niż jeden wiersz kodu, więc musimy szybko:
+So far we've been writing all our python code in the interpreter, which limits us to entering one line of code at a time. Normal programs are saved in files and executed by our programming language **interpreter** or **compiler**. So far we've been running our programs one line at a time in the Python **interpreter**. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
 
 - wyjść z interpretera Pythona
 - otworzyć wybrany przez nas edytor kodu
 - Zapisać kod do nowego pliku Pythona
 - Uruchomić go!
 
-Aby wyjść z używanego przez nas interpretera Pythona, użyj funkcji `exit()`
+To exit from the Python interpreter that we've been using, type the `exit()` function
 
 {% filename %}command-line{% endfilename %}
 
@@ -608,9 +594,9 @@ Aby wyjść z używanego przez nas interpretera Pythona, użyj funkcji `exit()`
 $
 ```
 
-W ten sposób znajdziesz się z powrotem w wierszu polecenia.
+This will put you back into the command prompt.
 
-Wcześniej wybrałyśmy Edytor kodu z sekcji [Edytor kodu](../code_editor/README.md). Otwórzmy teraz edytor i napiszmy trochę kodu wewnątrz nowego pliku (lub jeśli używasz Chromebooka, stwórz nowy plik w chmurze IDE i otwórz plik, który będzie zawarty w edytorze kodu):
+Earlier, we picked out a code editor from the [code editor](../code_editor/README.md) section. We'll need to open the editor now and write some code into a new file (or if you're using a Chromebook, create a new file in the cloud IDE and open the file, which will be in the included code editor):
 
 {% filename %}editor{% endfilename %}
 
@@ -618,73 +604,73 @@ Wcześniej wybrałyśmy Edytor kodu z sekcji [Edytor kodu](../code_editor/README
 print('Hello, Django girls!')
 ```
 
-Oczywiście jesteś już całkiem kompetentną programistką Pythona, więc śmiało - dodaj tam więcej kodu, który poznałaś wcześniej.
+Obviously, you're a pretty seasoned Python developer now, so feel free to write some code that you've learned today.
 
-Teraz musimy zapisać plik i nadać mu wymowną nazwę. Nazwijmy go **python_intro.py** i zapiszmy na Pulpicie. Możemy nazwać plik jak tylko nam się podoba, ale jedna rzecz jest istotna: na końcu nazwy musi być **.py**. Rozszerzenie **.py** informuje nasz komputer, że to jest **plik wykonywalny Pythona** i Python może go uruchomić.
+Now we need to save the file and give it a descriptive name. Let's call the file **python_intro.py** and save it to your desktop. We can name the file anything we want, but the important part here is to make sure the file ends in **.py**. The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
 
-> **Uwaga** Powinnaś zauważyć jedną z najfajniejszych rzeczy, jeśli chodzi o edytor kodu: kolory! Gdy pisałaś w konsoli Pythona, wszystko miało ten sam kolor. Teraz powinnaś zobaczyć, że funkcja `print` jest innego koloru niż string. Nazywa się to "podświetlanie składni" i jest naprawdę użyteczne podczas kodowania. Kolor wyrazów w edytorze będzie dla Ciebie wskazówką, np. łatwo rozpoznasz dzięki temu niezamknięty string albo literówkę w słowie kluczowym (tak jak `def` w funkcji). To jeden z powodów, dla których używamy edytora kodu. :)
+> **Note** You should notice one of the coolest thing about code editors: colors! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. This is called "syntax highlighting", and it's a really useful feature when coding. The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). This is one of the reasons we use a code editor. :)
 
-Mamy już zapisany plik, a więc czas go uruchomić! Wykorzystując wiadomości poznane w sekcji poświęconej wierszowi polecenia, użyj terminala, aby **zmienić aktualny katalog** na katalog Pulpitu.
+With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
 
 <!--sec data-title="Change directory: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-Na Macu polecenie będzie wyglądać mniej-więcej tak:
+On a Mac, the command will look something like this:
 
 {% filename %}command-line{% endfilename %}
 
     $ cd ~/Desktop
-
+    
 
 <!--endsec-->
 
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-W Linuksie będzie tak (słowo "Desktop" może zostać przetłumaczone na polski jako "Pulpit"):
+On Linux, it will be like this:
 
 {% filename %}command-line{% endfilename %}
 
     $ cd ~/Desktop
+    
 
-
-(Pamiętaj, że słowo "Desktop" może zostać przetłumaczone na polski jako "Pulpit"):
+(Remember that the word "Desktop" might be translated to your local language.)
 
 <!--endsec-->
 
 <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-W wierszu polecenia w systemie Windows będzie tak:
+On Windows Command Prompt, it will be like this:
 
 {% filename %}command-line{% endfilename %}
 
     > cd %HomePath%\Desktop
-
+    
 
 <!--endsec-->
 
 <!--sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
 
-A w Windows Powershell będzie tak:
+And on Windows Powershell, it will be like this:
 
 {% filename %}command-line{% endfilename %}
 
     > cd $Home\Desktop
-
+    
 
 <!--endsec-->
 
-Jeżeli utknęłaś, poproś o pomoc. To właśnie od tego są mentorzy!
+If you get stuck, ask for help. That's exactly what the coaches are here for!
 
-Teraz użyj Pythona do uruchomienia kodu z pliku w następujący sposób:
+Now use Python to execute the code in the file like this:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
     Hello, Django girls!
+    
 
-
-Uwaga: w Windowsie 'python3' nie będzie rozpoznawany jako polecenie. W takim wypadku użyj 'python' by wykonać ten plik:
+Note: on Windows 'python3' is not recognized as a command. Instead, use 'python' to execute the file:
 
 {% filename %}command-line{% endfilename %}
 
@@ -692,15 +678,15 @@ Uwaga: w Windowsie 'python3' nie będzie rozpoznawany jako polecenie. W takim wy
 > python python_intro.py
 ```
 
-Super! Właśnie uruchomiłaś z pliku swój pierwszy program w Pythonie. Wspaniałe uczucie, co?
+Alright! You just ran your first Python program that was saved to a file. Feel awesome?
 
-Teraz możemy przejść do niezwykle istotnego narzędzia w programowaniu:
+You can now move on to an essential tool in programming:
 
-## If… elif… else
+## If … elif … else
 
-Dużo różnych rzeczy w kodzie powinno być uruchamiane tylko wtedy, kiedy zostaną spełnione określone warunki. Dlatego Python posiada coś, co nazywa się **instrukcjami warunkowymi**.
+Lots of things in code should be executed only when given conditions are met. That's why Python has something called **if statements**.
 
-Zastąp kod w pliku **python_intro.py** następującym:
+Replace the code in your **python_intro.py** file with this:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -708,7 +694,7 @@ Zastąp kod w pliku **python_intro.py** następującym:
 if 3 > 2:
 ```
 
-Gdybyśmy to teraz zapisały i uruchomiły, pojawiłby się błąd podobny do poniższego:
+If we were to save and run this, we'd see an error like this:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -716,76 +702,76 @@ Gdybyśmy to teraz zapisały i uruchomiły, pojawiłby się błąd podobny do po
     File "python_intro.py", line 2
              ^
     SyntaxError: unexpected EOF while parsing
+    
 
-
-Python oczekuje od nas dalszych instrukcji, które mają zostać wykonane w przypadku, gdy warunek `3 > 2` okaże się prawdziwy (czyli przyjmie wartość `True`). Sprawmy, żeby Python wypisał na ekranie "To działa!". Zmień kod w pliku **python_intro.py** na poniższy:
+Python expects us to give further instructions to it which are executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
 if 3 > 2:
-    print('To działa!')
+    print('It works!')
 ```
 
-Zauważyłaś, że w kolejnym wierszu nasz kod posiada wcięcie 4 spacji? Musimy tak robić, aby Python wiedział, co ma uruchomić, gdy warunek jest prawdziwy. Możesz używać jednej spacji, ale prawie każdy programista Pythona stosuje 4 spacje, aby kod wyglądał czytelniej. Pojedynczy tabulator również będzie liczył się jako 4 spacje, o ile Twój edytor tekstu został w taki sposób skonfigurowany. Jeżeli dokonałaś już wyboru, nie zmieniaj go! Jeżeli używasz już 4 spacji jako wcięć, wszystkie przyszłe wcięcia wykonuj też za pomocą 4 spacji - inaczej możesz wpaść w kłopoty.
+Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single Tab will also count as 4 spaces as long as your text editor is set to do so. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
 
-Zapisz plik i uruchom go jeszcze raz:
+Save it and give it another run:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
 $ python3 python_intro.py
-To dziala!
+It works!
 ```
 
-Uwaga: pamiętaj, na Windowsie 'python3' nie jest rozpoznawane jako polecenie. Od tego momentu zamieniaj 'python3' na 'python' by wykonać plik.
+Note: Remember that on Windows, 'python3' is not recognized as a command. From now on, replace 'python3' with 'python' to execute the file.
 
 ### A co jeśli warunek nie jest prawdziwy?
 
-W poprzednich przykładach kod był wykonywany wtedy, gdy warunki okazywały się prawdziwe (True). Ale Python posiada również wyrażenia `elif` i `else`:
+In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
 if 5 > 2:
-    print('5 jest jednak większe od 2')
+    print('5 is indeed greater than 2')
 else:
-    print('5 nie jest większe od 2')
+    print('5 is not greater than 2')
 ```
 
-Po uruchomieniu wyświetli się:
+When this is run it will print out:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
-    5 jest jednak większe od 2
+    5 is indeed greater than 2
+    
 
-
-Gdyby 2 było większą liczbą niż 5, wtedy zostałaby wykonana druga instrukcja. Zobaczmy, jak działa `elif`:
+If 2 were a greater number than 5, then the second command would be executed. Let's see how `elif` works:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
 name = 'Sonja'
 if name == 'Ola':
-    print('Hej Ola!')
+    print('Hey Ola!')
 elif name == 'Sonja':
-    print('Hej Sonja!')
+    print('Hey Sonja!')
 else:
-    print('Hej anonimie!')
+    print('Hey anonymous!')
 ```
 
-i uruchommy go:
+and executed:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
-    Hej Sonja!
+    Hey Sonja!
+    
 
+See what happened there? `elif` lets you add extra conditions that run if the previous conditions fail.
 
-Widzisz co się tutaj wydarzyło? `elif` pozwala Ci na dodanie dodatkowego warunku, jeśli poprzedni warunek nie został spełniony.
-
-Po początkowej instrukcji `if` możesz dodać tyle instrukcji `elif`, ile tylko Ci się podoba. Na przykład:
+You can add as many `elif` statements as you like after your initial `if` statement. For example:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -805,19 +791,19 @@ else:
     print("My ears are hurting! :(")
 ```
 
-Python zbada każdy warunek i wyświetli:
+Python runs through each test in sequence and prints:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
-    "Perfect, I can hear all the details"
+    Perfect, I can hear all the details
+    
 
+## Comments
 
-## Komentarze
+Comments are lines beginning with `#`. You can write whatever you want after the `#` and Python will ignore it. Comments can make your code easier for other people to understand.
 
-Komentarze to linie zaczynające się od `#`. Możesz napisać cokolwiek będziesz chciała za `#`, a Python to zignoruje. Komentarze mogą spowodować, że Twój kod będzie łatwiejszy do zrozumienia przez innych.
-
-Zobaczmy, jak to wygląda:
+Let's see how that looks:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -828,11 +814,11 @@ if volume < 20 or volume > 80:
     print("That's better!")
 ```
 
-Nie musisz pisać komentarza dla każdej linijki kodu, ale pamiętaj, że są one pomocne, by wytłumaczyć, czemu program coś robi lub by dodać podsumowanie, gdy program robi coś skomplikowanego.
+You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
 
 ### Podsumowanie
 
-W ostatnich kilku ćwiczeniach nauczyłaś się:
+In the last few exercises you learned about:
 
 - **porównywać rzeczy** - w Pythonie do porównywania rzeczy możesz używać operatorów `>`, `>=`, `==`, `<=`, `<` oraz `and`, `or`
 - **Boolean** - typ obiektu, który może przyjmować jedną z dwóch wartości: `True` (prawda) lub `False` (fałsz)
@@ -840,70 +826,70 @@ W ostatnich kilku ćwiczeniach nauczyłaś się:
 - **if...elif...else** - wyrażenia, które pozwalają Ci uruchamiać kod tylko wtedy, gdy zostaną spełnione określone warunki.
 - **komentarze** - linie, których Python nie wykona, a które pozwalają Ci dokumentować kod programu
 
-Czas na ostatnią część tego rozdziału!
+Time for the last part of this chapter!
 
-## Twoje własne funkcje!
+## Your own functions!
 
-> Dla czytelniczek w domu: tę część uwzględnia wideo [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0).
+> For readers at home: this part is covered in the [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0) video.
 
-Pamiętasz funkcje takie jak `len()`, które możesz uruchamiać w Pythonie? Dobra wiadomość: teraz nauczysz się pisać swoje własne funkcje!
+Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
 
-Funkcja jest zestawem poleceń, które Python ma wykonać. Każda funkcja w Pythonie zaczyna się słowem kluczowym `def`, posiada nazwę i może przyjmować parametry. Spróbujmy! Zastąp kod w pliku **python_intro.py** następującym:
+A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
 def hi():
-    print('Hej!')
-    print('Jak się masz?')
+    print('Hi there!')
+    print('How are you?')
 
 hi()
 ```
 
-OK, nasza pierwsza funkcja gotowa!
+Okay, our first function is ready!
 
-Być może zastanawiasz się, czemu napisałyśmy nazwę funkcji na końcu pliku. Zrobiłyśmy tak, ponieważ Python odczytuje plik i wykonuje go od góry do dołu. Zatem w celu użycia naszej funkcji, musimy ponownie wpisać ją na dole.
+You may wonder why we've written the name of the function at the bottom of the file. When we write `def hi():` and the indented lines following, this is us writing instructions for what the `hi()` function should do. Python will read and remember these instructions, but won't run the function yet. To tell Python we want to run the function, we have to call the function with `hi()`. Python reads the file and executes it from top to bottom, so we have to define the function in the file before we call it.
 
-Uruchommy to teraz i sprawdźmy, co się stanie:
+Let's run this now and see what happens:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
-    Hej!
-    Jak się masz?
+    Hi there!
+    How are you?
+    
 
-
-Uwaga: Jeżeli to nie zadziała, nie panikuj! Wynik działania pozwoli Ci ustalić dlaczego:
+Note: if it didn't work, don't panic! The output will help you to figure why:
 
 - Jeżeli dostajesz `NameError`, znaczy to że prawdopodobnie niepoprawnie coś wpisałaś, więc powinnaś sprawdzić czy użyłaś tej samej nazwy tworząc funkcję w `def hi():` oraz gdy ją wykonujesz w `hi()`.
-- Jeżeli dostajesz `IndentationError`, sprawdź czy obydwie linie z `print` mają tę samą liczbę spacji/tabów na początku linii: Python wymaga, by kod wewnątrz funkcji był odpowiednio wcięty.
-- Jeżeli nie ma żadnego wyniku działania, sprawdź czy ostanie `hi()` *nie* jest przypadkiem wcięte - jeżeli jest, to ta linia stała się również częścią funkcji i nigdy nie zostanie wykonana.
+- Jeżeli dostajesz `IndentationError`, sprawdź czy obydwie linie z `print` mają tę samą liczbę spacji/tabów na początku linii: Python wymaga, by kod wewnątrz funkcji był odpowiednio wcięty. 
+- Jeżeli nie ma żadnego wyniku działania, sprawdź czy ostanie `hi()` *nie* jest przypadkiem wcięte - jeżeli jest, to ta linia stała się również częścią funkcji i nigdy nie zostanie wykonana. 
 
-Zbudujmy naszą pierwszą funkcję z parametrami. Posłużymy się wcześniejszym przykładem - funkcją, która wita każdego, kto ją uruchomi, wraz z imieniem:
+Let's build our first function with parameters. We will change the previous example – a function that says 'hi' to the person running it – with a name:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-def hi(imie):
+def hi(name):
 ```
 
-Jak widać, teraz nasza funkcja przyjmuje parametr, który nazwałyśmy `imie`:
+As you can see, we now gave our function a parameter that we called `name`:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-def hi(imie):
-    if imie == 'Ola':
-        print('Hej Ola!')
-    elif imie == 'Sonja':
-        print('Hej Sonja!')
+def hi(name):
+    if name == 'Ola':
+        print('Hi Ola!')
+    elif name == 'Sonja':
+        print('Hi Sonja!')
     else:
-        print('Hej nieznajoma!')
+        print('Hi anonymous!')
 
 hi()
 ```
 
-Pamiętaj: musiałyśmy dodać cztery dodatkowe spacje (razem osiem) przed funkcją `print`, ponieważ `if` musi dostać informację o tym, co powinno się wydarzyć, gdy warunek zostanie spełniony. Zobaczmy teraz, jak to działa:
+Remember: The `print` function is indented four spaces within the `if` statement. This is because the function runs when the condition is met. Let's see how it works now:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -911,10 +897,10 @@ Pamiętaj: musiałyśmy dodać cztery dodatkowe spacje (razem osiem) przed funkc
     Traceback (most recent call last):
     File "python_intro.py", line 10, in <module>
       hi()
-    TypeError: hi() missing 1 required positional argument: 'imie'
+    TypeError: hi() missing 1 required positional argument: 'name'
+    
 
-
-Ups, błąd. Na szczęście Python zwrócił nam dość przydatny komunikat. Mówi nam, że funkcja `hi()` (ta, którą stworzyłyśmy) posiada jeden wymagany argument (zwany `imie`) i że zapomniałyśmy go przekazać przy wywoływaniu funkcji. Naprawmy to na końcu naszego pliku:
+Oops, an error. Luckily, Python gives us a pretty useful error message. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -922,15 +908,15 @@ Ups, błąd. Na szczęście Python zwrócił nam dość przydatny komunikat. Mó
 hi("Ola")
 ```
 
-I wykonajmy ponownie:
+And run it again:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
-    Hej Ola!
+    Hi Ola!
+    
 
-
-A gdybyśmy zmieniły imię?
+And if we change the name?
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -938,104 +924,104 @@ A gdybyśmy zmieniły imię?
 hi("Sonja")
 ```
 
-I wykonajmy:
+And run it:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
-    Hej Sonja!
+    Hi Sonja!
+    
 
-
-A jak myślisz - co się stanie, jak wprowadzimy tam inne imię (jeszcze inne niż Ola i Sonja)? Spróbuj i przekonaj się, czy miałaś rację. Powinno się wyświetlić coś takiego:
+Now, what do you think will happen if you write another name in there? (Not Ola or Sonja.) Give it a try and see if you're right. It should print out this:
 
 {% filename %}command-line{% endfilename %}
 
-    Hej nieznajoma!
+    Hi anonymous!
+    
 
+This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
 
-Prawda, że fajnie? W ten sposób nie musisz powtarzać się za każdym razem, gdy zechcesz zmienić imię osoby, która ma zostać powitana. To właśnie dlatego funkcje są nam potrzebne - żeby nie powtarzać kodu!
-
-Zróbmy coś mądrzejszego - mamy więcej niż dwa imiona, a podanie warunku dla każdego byłoby trudne, prawda? Zastąp zawartość pliku następującym kodem:
+Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right? Replace the content of your file with the following:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-def hi(imie):
-    print('Hej ' + imie + '!')
+def hi(name):
+    print('Hi ' + name + '!')
 
 hi("Rachel")
 ```
 
-Teraz wywołajmy ten kod:
+Let's call the code now:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
-    Hej Rachel!
+    Hi Rachel!
+    
 
+Congratulations! You just learned how to write functions! :)
 
-Gratulacje! Właśnie nauczyłaś się pisać funkcje! :)
+## Loops
 
-## Pętle
+> For readers at home: this part is covered in the [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0) video.
 
-> Dla czytelniczek w domu: tę część uwzględnia wideo [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0).
+This is the last part already. That was quick, right? :)
 
-To już ostatnia część. Prawda, że szybko poszło? :)
+Programmers don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
 
-Jak już wspomniałyśmy, programiści są leniwi i nie lubią się powtarzać. W programowaniu chodzi o automatyzowanie różnych rzeczy, więc nie chcemy witać ręcznie każdej osoby po imieniu, prawda? I tu właśnie przydają nam się pętle.
-
-Pamiętasz jeszcze listy? Zróbmy listę dziewczyn:
-
-{% filename %}python_intro.py{% endfilename %}
-
-```python
-dziewczyny = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'Ty']
-```
-
-Chcemy powitać po imieniu każdą z nich. Mamy do tego funkcję `hi`, zatem użyjmy jej wewnątrz pętli:
+Still remember lists? Let's do a list of girls:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-for imie in dziewczyny:
+girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
 ```
 
-Wyrażenie `for` zachowuje się podobnie jak `if`, a więc kod pod nimi musi być wcięty 4 spacjami.
-
-Oto kompletny kod, który umieścimy w pliku:
+We want to greet all of them by their name. We have the `hi` function to do that, so let's use it in a loop:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-def hi(imie):
-    print('Witaj ' + imie + '!')
-
-dziewczyny = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'Ty']
-for imie in dziewczyny:
-    hi(imie)
-    print('Kolejna dziewczyna')
+for name in girls:
 ```
 
-A gdy go uruchomimy:
+The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
+
+Here is the full code that will be in the file:
+
+{% filename %}python_intro.py{% endfilename %}
+
+```python
+def hi(name):
+    print('Hi ' + name + '!')
+
+girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
+for name in girls:
+    hi(name)
+    print('Next girl')
+```
+
+And when we run it:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
-    Hej Rachel!
-    Kolejna dziewczyna
-    Hej Monica!
-    Kolejna dziewczyna
-    Hej Phoebe!
-    Kolejna dziewczyna
-    Hej Ola!
-    Kolejna dziewczyna
-    Hej Ty!
-    Kolejna dziewczyna
+    Hi Rachel!
+    Next girl
+    Hi Monica!
+    Next girl
+    Hi Phoebe!
+    Next girl
+    Hi Ola!
+    Next girl
+    Hi You!
+    Next girl
+    
 
+As you can see, everything you put inside a `for` statement with an indent will be repeated for every element of the list `girls`.
 
-Jak widzisz, cokolwiek umieścisz wewnątrz wyrażenia `for` wraz z wcięciem - zostanie powtórzone dla każdego elementu listy `dziewczyny`.
-
-Możesz także użyć `for` na liczbach, używając metody `range`:
+You can also use `for` on numbers using the `range` function:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1044,7 +1030,7 @@ for i in range(1, 6):
     print(i)
 ```
 
-Co wypisze nam na ekranie:
+Which would print:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1053,18 +1039,18 @@ Co wypisze nam na ekranie:
     3
     4
     5
+    
 
+`range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
 
-`range` jest funkcją, która tworzy listę liczb jedna po drugiej (liczby te podajesz jako parametry).
+Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
 
-Zwróć uwagę, że druga z tych liczb nie jest częścią listy stworzonej przez Pythona (to znaczy, że `range(1, 6)` liczy od 1 do 5, ale nie zawiera liczby 6). Dzieje się tak, bo "range" ma przedział jednostronnie otwarty, co oznacza, że zawiera pierwszą wartość z przedziału, ale nie zawiera ostatniej.
+## Summary
 
-## Podsumowanie
+That's it. **You totally rock!** This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
 
-To już wszystko. **Wspaniale Ci idzie!** To nie było wcale takie łatwe, możesz zatem być z siebie dumna. My zdecydowanie jesteśmy z Ciebie dumne, że dotarłaś do tego miejsca!
+For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers! :)
 
-Oficjalny, kompletny tutorial Pythona znajdziesz pod adresem https://docs.python.org/3/tutorial/. Pozwoli on Tobie poznać język kompletnie i dogłębnie. Powodzenia! :)
+You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
 
-Jak myślisz, może czas na małą przerwę? Rozciągnij się, rozprostuj nogi, daj odpocząć oczom zanim przejdziesz do kolejnego rozdziału. :)
-
-![Babeczka](images/cupcake.png)
+![Cupcake](images/cupcake.png)
