@@ -30,6 +30,7 @@ The Django Girls Tutorial is licensed under a [*Creative Commons Attribution-Sha
 The source code of the tutorial is [hosted on GitHub](https://github.com/DjangoGirls/tutorial). The GitHub [Fork & Pull workflow](https://help.github.com/articles/using-pull-requests) is used to accept and review changes.
 
 The tutorial uses the [HonKit](https://github.com/honkit/honkit) project for publishing its documentation. [See more information about how HonKit works](https://honkit.netlify.app/).
+For every pull request, a preview is generated.
 
 The tutorial is written in [Markdown mark up language](https://help.github.com/articles/markdown-basics).
 
