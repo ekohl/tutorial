@@ -68,7 +68,7 @@ You can also go to the "Files" page and navigate around using PythonAnywhere's b
 Your site should now be live on the public Internet!  Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want. :)
 
 
-> **Note** This is a beginners' tutorial, and in deploying this site we've taken a few shortcuts which aren't ideal from a security point of view.  If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/) for some tips on securing your site.
+> **Note** This is a beginners' tutorial, and in deploying this site we've taken a few shortcuts which aren't ideal from a security point of view.  If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/) for some tips on securing your site.
 
 ## Debugging tips
 
@@ -83,6 +83,6 @@ If you see an error while running the `pa_autoconfigure_django.py` script, here 
 
 If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere ["Web" page](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom.
 
-There are also some [general debugging tips on the PythonAnywhere help site](http://help.pythonanywhere.com/pages/DebuggingImportError).
+There are also some [general debugging tips on the PythonAnywhere help site](https://help.pythonanywhere.com/pages/DebuggingImportError).
 
 And remember, your coach is here to help!

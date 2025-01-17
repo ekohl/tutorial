@@ -574,7 +574,7 @@ Now we need to save the file and give it a descriptive name. Let's call the file
 
 With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
 
-<!--sec data-title="Change directory: OS X" data-id="python_OSX"
+<!--sec data-title="Change directory: macOS" data-id="python_OSX"
 data-collapse=true ces-->
 
 On a Mac, the command will look something like this:
@@ -988,7 +988,7 @@ Which would print:
 
 `range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
 
-Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
+Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because `range` is half-open, and by that we mean it includes the first value, but not the last.
 
 ## Summary
 
