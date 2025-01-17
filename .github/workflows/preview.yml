@@ -53,13 +53,14 @@ jobs:
 
       - name: Create diff to current
         run: |
-          diff -Nrwu --exclude search_index.json current/ preview/ > preview/diff.patch || true
-          if [[ -s preview/diff.patch ]] ; then
+          diff -Nrwu --exclude search_index.json current/ preview/ > diff.patch || true
+          if [[ -s diff.patch ]] ; then
             sudo apt-get update
             sudo apt-get install -y diffstat python3-pygments
 
+            mv diff.patch preview/diff.patch
             pygmentize -o preview/diff.html -l diff -f html -O full preview/diff.patch
-            diffstat -l -p2 preview/diff.patch > diff.txt
+            diffstat -l -p1 preview/diff.patch > preview/diff.txt
           fi
 
       - name: Download metadata artifact
