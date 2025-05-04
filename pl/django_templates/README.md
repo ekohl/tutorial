@@ -20,7 +20,7 @@ Aby wyświetlić zmienną w szablonie Django, używamy podwójnych nawiasów kla
 {{ posts }}
 ```
 
-Spróbuj tak zrobić w szablonie` blog/templates/blog/post_list.html`. Otwórz to w edytorze kodu i zastąp wszystko od drugiego `<div>` do trzeciego `</div>` wierszem `{{ posts }}`. Zapisz plik i odśwież stronę, by zobaczyć rezultat:
+Spróbuj tak zrobić w szablonie` blog/templates/blog/post_list.html`. Otwórz go w edytorze kodu i zastąp istniejące `<article>` elementami `{{ posts }}`. Zapisz plik i odśwież stronę, by zobaczyć rezultat:
 
 ![Rysunek 13.1](images/step1.png)
 
@@ -51,16 +51,16 @@ Działa! Ale chcemy, aby posty były wyświetlane jak statyczne posty, które st
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<div>
+<header>
     <h1><a href="/">Django Girls Blog</a></h1>
-</div>
+</header>
 
 {% for post in posts %}
-    <div>
-        <p>published: {{ post.published_date }}</p>
+    <article>
+        <time>published: {{ post.published_date }}</time>
         <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    </article>
 {% endfor %}
 ```
 
@@ -80,7 +80,7 @@ Dobrze byłoby sprawdzić, czy twoja strona wciąż będzie działała w publicz
 
     $ git status
     [...]
-    $ git add --all .
+    $ git add .
     $ git status
     [...]
     $ git commit -m "Modified templates to display posts from database."

@@ -33,13 +33,14 @@ Popatrz, jak Twoja strona wygląda teraz: http://127.0.0.1:8000/
 
 ![Rysunek 11.1](images/step1.png)
 
-Nie ma błędu! Gratulacje! :) Niestety, twoja aplikacja nie wyświetla niczego poza pustą stroną, ponieważ Twój szablon również jest pusty. Naprawmy to.
+No error anymore! Congratulations! :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
 
 Otwórz Twój nowy plik w edytorze kodu i dodaj poniższe:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
 <body>
     <p>Hi there!</p>
@@ -52,10 +53,11 @@ I jak twoja strona wygląda teraz? Odwiedź stronę http://127.0.0.1:8000/, żeb
 
 ![Rysunek 11.2](images/step3.png)
 
-Zadziałało! Dobra robota :)
+It worked. Nice work there! :)
 
-* Najbardziej podstawowy znacznik, `<html>`, jest zawsze na początku każdej strony internetowej, zaś `</html>` jest zawsze na końcu. Jak widzisz, cała zawartość strony zawiera się pomiędzy znacznikiem otwierającym `<html>` i zamykającym `</html>`
-* `<p>` jest znacznikiem akapitów; `</p>` zamyka każdy akapit
+* The line `<!DOCTYPE html>` is not a HTML tag. It only declares the document type. Here, it informs the browser that document type is [HTML5](https://html.spec.whatwg.org/#the-doctype). This is always the beginning of any HTML5 file.
+* The most basic tag, `<html>`, is always the beginning of html content and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
+* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
 
 ## Head i body
 
@@ -72,6 +74,7 @@ Przykładowo, element tytułu strony możesz umieścić wewnątrz `<head>`, o ta
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
     <head>
         <title>Ola's blog</title>
@@ -109,40 +112,49 @@ Teraz nieco się pobawmy i spróbujmy dostosować nasz szablon! Oto kilka znaczn
 * `<a href="https://djangogirls.org">link</a>` tworzy link
 * `<ul><li>pierwsza pozycja</li><li>druga pozycja</li></ul>` tworzy listę, taką samą jak ta!
 * `<div></div>` tworzy sekcję na stronie
+* `<nav></nav>` definiuje zestaw linków nawigacyjnych
+* `<article></article>` specifies independent, self-contained content
+* `<section></section>` definiuje sekcję w dokumencie
+* `<header></header>` określa nagłówek dokumentu lub sekcji
+* `<main></main>` określa główną zawartość dokumentu
+* `<aside></aside>` defines some content aside from the content it is placed in (like a sidebar)
+* `<footer></footer>` definiuje stopkę dla dokumentu lub sekcji
+* `<time></time>` definiuje określony czas (lub datetime)
 
 Tutaj możesz zobaczyć przykład pełnego szablonu, skopiuj i wklej go do `blog/templates/blog/post_list.html`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
     <head>
         <title>Django Girls blog</title>
     </head>
     <body>
-        <div>
+        <header>
             <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
+        </header>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
             <h2><a href="">My first post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div>
+        </article>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
             <h2><a href="">My second post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </div>
+        </article>
     </body>
 </html>
 ```
 
-Stworzyliśmy tutaj trzy sekcje `div`.
+Utworzyliśmy tutaj jedną sekcję `nagłówek` i dwie `pozycje`.
 
-* Pierwszy `div` zawiera w sobie tytuł naszego bloga - jest to nagłówek i link
-* Kolejne dwa elementy `div` zawierają nasze wpisy wraz z opublikowaną datą, `h2` z klikalnym tytułem wpisu oraz dwa elementy `p` (akapity) z tekstem, jeden z datą i drugi z treścią naszego wpisu.
+* Element `nagłówek` zawiera tytuł naszego bloga - nagłówek i link
+* The two `article` elements contain our blog posts with a published date in a `time` element, a `h2` element with a post title that is clickable and a `p` (paragraph) element for text of our blog post.
 
 Daje nam to taki efekt:
 
@@ -169,10 +181,8 @@ Upewnij się, że jesteś w folderze `djangogirls` i powiedz `git`owi aby dodał
 
 {% filename %}command-line{% endfilename %}
 
-    $ git add --all .
+    $ git add .
     
-
-> **Uwaga:** `--all` (czyli "wszystko") oznacza, że `git` weźmie pod uwagę pliki, które usunęłaś (domyślnie rozpoznaje zmiany tylko w nowych lub już istniejących plikach). Pamiętaj również (vide rozdział 3), że `.` oznacza aktualny katalog.
 
 Zanim prześlemy wszystkie pliki, sprawdźmy, co faktycznie `git` zamierza przesłać (wszystkie pliki, które `git` prześle do repozytorium, powinny być zaznaczone na zielono):
 
@@ -188,7 +198,7 @@ Już blisko do końca. Teraz czas poprosić gita, aby zapisał te zmiany w histo
     $ git commit -m "Zmieniony kod HTML na stronie."
     
 
-> **Uwaga:** Nie zapomnij umieścić informacji o zmianach w cudzysłowie (" ").
+> **Note** Make sure you use double quotes around the commit message.
 
 Jak już wszystko to zrobimy, możemy wysłać (push) nasze zmiany na Githuba:
 

@@ -15,8 +15,9 @@ Tak! Jest *wiele* materiałów online do nauki dowolnych umiejętności programi
 #### Django
 
 - Nasza inna książka, [Django Girls Tutorial: Extensions ](https://tutorial-extensions.djangogirls.org/)
-- [Oficjalny tutorial Django](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
+- [Oficjalny tutorial Django](https://docs.djangoproject.com/en/3.2/intro/tutorial01/)
 - [Wideolekcje Getting Started with Django](http://www.gettingstartedwithdjango.com/)
+- [Django for Everybody Specialization](https://www.coursera.org/specializations/django) – niektóre wykłady wideo można przesłuchać za darmo i zdobyć certyfikat Coursera biorąc udział w tych kursach
 
 #### HTML, CSS i JavaScript
 
