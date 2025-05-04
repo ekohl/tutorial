@@ -78,7 +78,19 @@ Wenn du also `http://127.0.0.1:8000/post/5/` in deinen Browser eingibst, wird Dj
 
 So, jetzt haben wir der `blog/urls.py` ein neues URL-Muster hinzugefügt! Lass uns die Seite http://127.0.0.1:8000/ neu laden - Bumm! Der Server läuft wieder nicht mehr. Schau in die Konsole - wie erwartet gibt es noch einen anderen Fehler!
 
-![AttributeError](images/attribute_error2.png)
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
+
+        return _bootstrap._gcd_import(name[level:], package, level)
+      File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+      File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+      File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+      File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+      File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+      File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+      File "/Users/ola/djangogirls/blog/urls.py", line 6, in <module>
+        path('post/<int:pk>/', views.post_detail, name='post_detail'),
+    AttributeError: module 'blog.views' has no attribute 'post_detail'
+    
 
 Erinnerst du dich, was der nächste Schritt ist? Eine View hinzufügen!
 
@@ -179,7 +191,7 @@ Es wäre schön zu sehen, ob deine Website noch auf PythonAnywhere funktioniert,
     $ git status
     $ git add .
     $ git status
-    $ git commit -m "View und Template für Blogpost-Details sowie CSS für die Website hinzugefügt"
+    $ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
     $ git push
     
 
@@ -187,7 +199,7 @@ Dann führe Folgendes in der [PythonAnywhere-Bash-Konsole](https://www.pythonany
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd ~/<deine-pythonanywhere-domain>.pythonanywhere.com
+    $ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
     $ git pull
     [...]
     
@@ -202,7 +214,7 @@ Aktiviere also deine virtuelle Umgebung, wenn sie nicht vom letzten Mal noch akt
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ workon <deine-pythonanywhere-domain>.pythonanywhere.com
+    $ workon <your-pythonanywhere-domain>.pythonanywhere.com
     (ola.pythonanywhere.com)$ python manage.py collectstatic
     [...]
     

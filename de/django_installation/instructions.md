@@ -144,7 +144,7 @@ Starte deine virtuelle Umgebung, indem du eingibst:
 
 Der Name `myvenv` muss mit dem von Dir gewählten Namen des `virtualenv` übereinstimmen!
 
-> **Anmerkung:** Manchmal ist das Kommando `source` nicht verfügbar. In diesen Fällen geht es auch so:
+> **Anmerkung:** Falls der Befehl `source` nicht verfügbar ist, versuche es stattdessen mit:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -195,7 +195,7 @@ Führe nun `pip install -r requirements.txt` aus, um Django zu installieren.
 
     (myvenv) ~$ pip install -r requirements.txt
     Collecting Django~={{ book.django_version }} (from -r requirements.txt (line 1))
-      Downloading Django-{{ book.django_version }}-py3-none-any.whl (7.1MB)
+      Downloading Django-{{ book.django_version }}-py3-none-any.whl (7.9MB)
     Installing collected packages: Django
     Successfully installed Django-{{ book.django_version }}
     
@@ -203,14 +203,14 @@ Führe nun `pip install -r requirements.txt` aus, um Django zu installieren.
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> Wenn du einen Fehler auf einem Windowsrechner bekommst, überprüfe, ob der Pfadname deines Projekts Leerzeichen, Umlaute oder Sonderzeichen enthält (z.B. `C:\Users\User Name\djangogirls`). Ist das der Fall, dann verwende bitte einen anderen Ordner ohne Sonderzeichen, Umlaute oder Leerzeichen. (Vorschlag: `C:\djangogirls`). Erstelle ein neues virtualenv in einem neuen Verzeichnis, lösche danach das alte und wiederhohle den oben genannten Befehl. (Das Verzeichnis des virtualenv zu verschieben funktioniert dabei nicht, da virtualenv absolute Pfade verwendet.)
+> Wenn du auf Windows einen Fehler bekommst, überprüfe, ob der Pfadname deines Projekts Leerzeichen, Umlaute oder Sonderzeichen enthält (z.B. `C:\Users\User Name\djangogirls`). Ist das der Fall, dann verwende bitte einen anderen Ordner ohne Sonderzeichen, Umlaute oder Leerzeichen. (Vorschlag: `C:\djangogirls`). Erstelle ein neues virtualenv in einem neuen Verzeichnis, lösche danach das alte und wiederhohle den oben genannten Befehl. (Das Verzeichnis des virtualenv zu verschieben funktioniert dabei nicht, da virtualenv absolute Pfade verwendet.)
 
 <!--endsec-->
 
 <!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
-> Es kann sein, dass deine Befehlszeile einfriert, wenn du versuchst Django zu installieren. Sollte das passieren, nutze folgenden Befehl anstelle des oben angegebenen:
+> Es kann sein, dass deine Befehlszeile einfriert, wenn du versuchst, Django zu installieren. Sollte das passieren, nutze folgenden Befehl anstelle des oben angegebenen:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
